@@ -666,3 +666,86 @@
 2026-09-07 20:26:52,401 [INFO]   Dosya: articles/apple-katlanabilir-teknoloji-iphone-fold.html
 2026-09-07 20:26:52,401 [INFO]   Kategori: Mobil
 2026-09-07 20:26:52,402 [INFO] ============================================================
+2026-09-07 20:27:34,373 [INFO] ============================================================
+2026-09-07 20:27:34,374 [INFO] İçerik botu başlatılıyor... (2026-09-07 20:27)
+2026-09-07 20:27:34,375 [INFO] ============================================================
+2026-09-07 20:27:34,375 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 20:27:34,808 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 20:27:35,024 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 20:27:35,387 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 20:27:36,282 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 20:27:37,257 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 20:27:38,103 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 20:27:38,118 [INFO]    Seçilen konu: Mobil — Apple Yapay Zekâ Destekli Güvenlik Kamerası Üzerinde Çalışıyor - Webtekno
+2026-09-07 20:27:38,118 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 20:27:38,119 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-07 20:28:02,458 [INFO] Gemini yanıtı alındı. Uzunluk: 7699 karakter
+2026-09-07 20:28:02,490 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-07 20:28:02,490 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-07 20:28:02,491 [INFO] Tekrar deneniyor...
+2026-09-07 20:28:02,491 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-07 20:28:27,444 [INFO] Gemini yanıtı alındı. Uzunluk: 7784 karakter
+2026-09-07 20:28:27,452 [INFO] Görsel aranıyor...
+2026-09-07 20:28:27,453 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 20:28:27,453 [INFO] Fallback görsel kullanılıyor: Mobil
+2026-09-07 20:28:27,454 [INFO] Görsel eklendi: fallback
+2026-09-07 20:28:27,457 [INFO]    Başlık: Apple Yapay Zekâ Destekli Akıllı Güvenlik Kamerası Sektörüne Giriş Yapıyor: Akıllı Ev Güvenliğinde Yeni Dönem
+2026-09-07 20:28:27,458 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-07 20:28:27,458 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 20:28:27,468 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\apple-yapay-zeka-destekli-guvenlik-kamerasi.html
+2026-09-07 20:28:27,469 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 20:28:27,477 [INFO] index.html güncellendi: Apple Yapay Zekâ Destekli Akıllı Güvenlik Kamerası Sektörüne Giriş Yapıyor: Akıllı Ev Güvenliğinde Yeni Dönem makale en üste eklendi.
+2026-09-07 20:28:27,479 [INFO]    Ana sayfa güncellendi.
+2026-09-07 20:28:32,231 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-07 20:28:32,235 [INFO] ============================================================
+2026-09-07 20:28:32,235 [INFO] BAŞARILI! Makale yayımlandı: Apple Yapay Zekâ Destekli Akıllı Güvenlik Kamerası Sektörüne Giriş Yapıyor: Akıllı Ev Güvenliğinde Yeni Dönem
+2026-09-07 20:28:32,235 [INFO]   Dosya: articles/apple-yapay-zeka-destekli-guvenlik-kamerasi.html
+2026-09-07 20:28:32,235 [INFO]   Kategori: Mobil
+2026-09-07 20:28:32,236 [INFO] ============================================================
+2026-09-07 20:47:05,189 [INFO] ============================================================
+2026-09-07 20:47:05,189 [INFO] İçerik botu başlatılıyor... (2026-09-07 20:47)
+2026-09-07 20:47:05,190 [INFO] ============================================================
+2026-09-07 20:47:05,190 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 20:47:05,860 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 20:47:06,670 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 20:47:07,379 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 20:47:08,361 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 20:47:09,287 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 20:47:10,149 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 20:47:10,169 [INFO]    Seçilen konu: Python — Yeni Python Zararlısı Uzaktan Erişimler İçin VMware ESXi Backdoorları Kullanıyor - CozumPark
+2026-09-07 20:47:10,169 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 20:47:10,170 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-07 20:47:49,801 [INFO] Gemini yanıtı alındı. Uzunluk: 7630 karakter
+2026-09-07 20:47:49,807 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-07 20:47:49,808 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-07 20:47:49,808 [INFO] Tekrar deneniyor...
+2026-09-07 20:47:49,808 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-07 20:48:13,447 [INFO] Gemini yanıtı alındı. Uzunluk: 7743 karakter
+2026-09-07 20:48:13,451 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-07 20:48:13,451 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-07 20:48:13,451 [INFO] Tekrar deneniyor...
+2026-09-07 20:48:13,452 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-07 20:48:13,687 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 46.427833244s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2026-09-07 20:48:13,690 [ERROR] Makale üretilemedi!

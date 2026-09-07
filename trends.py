@@ -4,6 +4,7 @@ Google News RSS feed'lerini ve web aramasını kullanır.
 """
 
 import re
+import os
 import random
 import logging
 from datetime import datetime
@@ -11,6 +12,25 @@ from datetime import datetime
 import requests
 
 log = logging.getLogger("content_bot.trends")
+
+
+def get_used_topics(articles_dir):
+    """Önceki makalelerin başlıklarını okur — tekrarları önlemek için."""
+    used = set()
+    if not os.path.exists(articles_dir):
+        return used
+    for fname in os.listdir(articles_dir):
+        if fname.endswith(".html"):
+            # Dosya adından başlığı çıkar (tire ve uzantıyı temizle)
+            slug = fname.replace(".html", "")
+            used.add(slug.lower())
+    return used
+
+
+def is_topic_used(title, used_topics):
+    """Konu başlığının daha önce kullanılıp kullanılmadığını kontrol eder."""
+    slug = re.sub(r'[^a-z0-9\s-]', '', title.lower()).replace(" ", "-").strip("-")[:50]
+    return slug in used_topics
 
 # Engellenmiş kelimeler — makale konusu olarak uygun olmayanlar
 STOP_WORDS = {
@@ -125,7 +145,20 @@ def extract_topics_from_headlines(headlines):
 
 
 def generate_topic_from_trends(trend_sources, web_queries=None):
-    """Trend kaynaklarından rastgele bir konu üretir."""
+    """Trend kaynaklarından rastgele bir konu üretir — tekrarları atlar."""
+    import json
+    
+    # Daha önce kullanılmış konuları yükle
+    config_path = os.path.join(os.path.dirname(__file__), "config.json")
+    try:
+        with open(config_path, "r", encoding="utf-8") as f:
+            config = json.load(f)
+        articles_dir = os.path.join(os.path.dirname(__file__), config.get("articles_dir", "articles"))
+    except Exception:
+        articles_dir = os.path.join(os.path.dirname(__file__), "articles")
+    
+    used_topics = get_used_topics(articles_dir)
+    log.info("Daha önce %d makale yayınlanmış.", len(used_topics))
     all_headlines = []
 
     # RSS feed'lerinden çek
@@ -158,9 +191,20 @@ def generate_topic_from_trends(trend_sources, web_queries=None):
         log.warning("Başlıklardan konu çıkarılamadı, rastgele konu üretiliyor.")
         return generate_random_topic()
 
+    # Kullanılmamış konuları filtrele
+    filtered_topics = {}
+    for cat, headlines in topics.items():
+        valid = [h for h in headlines if not is_topic_used(h, used_topics)]
+        if valid:
+            filtered_topics[cat] = valid
+
+    if not filtered_topics:
+        log.warning("Tüm trend konuları daha önce kullanılmış, rastgele konu üretiliyor.")
+        return generate_random_topic()
+
     # Rastgele bir kategori ve konu seç
-    category = random.choice(list(topics.keys()))
-    headline = random.choice(topics[category])
+    category = random.choice(list(filtered_topics.keys()))
+    headline = random.choice(filtered_topics[category])
 
     # Başlığı temizle
     clean_title = re.sub(r'[^\w\sğüşıöçĞÜŞİÖÇ-]', '', headline)
