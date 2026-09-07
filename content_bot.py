@@ -163,33 +163,47 @@ def deploy_to_github(config):
         log.warning("github_url config'de yok, deploy atlanıyor.")
         return False
 
+    # Git yolunu bul
+    git_cmd = "git"
+    try:
+        subprocess.run([git_cmd, "--version"], capture_output=True, check=True)
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        # Windows'ta varsayılan kurulum yolu
+        git_paths = [
+            r"C:\Program Files\Git\cmd\git.exe",
+            r"C:\Program Files (x86)\Git\cmd\git.exe",
+        ]
+        for p in git_paths:
+            if os.path.exists(p):
+                git_cmd = p
+                break
+        else:
+            log.warning("Git bulunamadı — deploy atlanıyor.")
+            return False
+
     try:
         site_dir = os.path.dirname(ARTICLES_DIR)
 
         # Değişiklikleri ekle
-        subprocess.run(["git", "add", "-A"], cwd=site_dir, check=True, capture_output=True)
+        subprocess.run([git_cmd, "add", "-A"], cwd=site_dir, check=True, capture_output=True)
 
         # Değişiklik var mı kontrol et
-        result = subprocess.run(["git", "status", "--porcelain"], cwd=site_dir, capture_output=True, text=True)
+        result = subprocess.run([git_cmd, "status", "--porcelain"], cwd=site_dir, capture_output=True, text=True)
         if not result.stdout.strip():
             log.info("Yeni değişiklik yok, push atlanıyor.")
             return True
 
         # Commit
-        from datetime import datetime
         now = datetime.now().strftime("%Y-%m-%d %H:%M")
-        subprocess.run(["git", "commit", "-m", f"Otomatik güncelleme: {now}"], cwd=site_dir, check=True, capture_output=True)
+        subprocess.run([git_cmd, "commit", "-m", f"Otomatik güncelleme: {now}"], cwd=site_dir, check=True, capture_output=True)
 
         # Push
-        subprocess.run(["git", "push"], cwd=site_dir, check=True, capture_output=True)
+        subprocess.run([git_cmd, "push"], cwd=site_dir, check=True, capture_output=True)
         log.info("GitHub'a push edildi — Netlify otomatik deploy başlatacak.")
         return True
 
     except subprocess.CalledProcessError as e:
         log.warning("GitHub push hatası: %s", e)
-        return False
-    except FileNotFoundError:
-        log.warning("Git bulunamadı — deploy atlanıyor.")
         return False
 
 
