@@ -773,3 +773,27 @@ Please retry in 46.427833244s. [links {
 2026-09-07 20:48:59,201 [INFO]   Dosya: articles/bulut-biliime-gei-rehberi.html
 2026-09-07 20:48:59,201 [INFO]   Kategori: Bulut Bilişim
 2026-09-07 20:48:59,201 [INFO] ============================================================
+2026-09-07 20:49:10,901 [INFO] ============================================================
+2026-09-07 20:49:10,901 [INFO] İçerik botu başlatılıyor... (2026-09-07 20:49)
+2026-09-07 20:49:10,902 [INFO] ============================================================
+2026-09-07 20:49:10,902 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 20:49:10,902 [INFO] Rastgele konu seçildi: Veri Bilimi - Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 20:49:10,902 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 20:49:10,902 [INFO]    Seçilen konu: Veri Bilimi — Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 20:49:10,903 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 20:49:10,903 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 20:49:10,903 [INFO] Fallback görsel kullanılıyor: Veri Bilimi
+2026-09-07 20:49:10,903 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 20:49:10,903 [INFO]    Başlık: Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 20:49:10,903 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 20:49:10,904 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 20:49:10,906 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\veri-bilimine-giri-temel-kavramlar.html
+2026-09-07 20:49:10,906 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 20:49:10,912 [INFO] index.html güncellendi: Veri Bilimine Giriş: Temel Kavramlar makale en üste eklendi.
+2026-09-07 20:49:10,912 [INFO]    Ana sayfa güncellendi.
+2026-09-07 20:49:15,402 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-07 20:49:15,404 [INFO] ============================================================
+2026-09-07 20:49:15,405 [INFO] BAŞARILI! Makale yayımlandı: Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 20:49:15,405 [INFO]   Dosya: articles/veri-bilimine-giri-temel-kavramlar.html
+2026-09-07 20:49:15,405 [INFO]   Kategori: Veri Bilimi
+2026-09-07 20:49:15,405 [INFO] ============================================================
