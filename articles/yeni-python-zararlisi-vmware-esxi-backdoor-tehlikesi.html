@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VMware ESXi sunucularını hedef alan yeni Python zararlısının detayları, arka kapı (backdoor) teknikleri ve korunma yöntemleri TechWave'da.">
+  <meta name="keywords" content="python, vmware-esxi, siber-guvenlik, backdoor, cozumpark, zararli-yazilim">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi — TechWave</title>
+
+  <meta property="og:title" content="Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi — TechWave">
+  <meta property="og:description" content="VMware ESXi sunucularını hedef alan yeni Python zararlısının detayları, arka kapı (backdoor) teknikleri ve korunma yöntemleri TechWave'da.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+
+  <link rel="canonical" href="https://TechWave.com/articles/yeni-python-zararlisi-vmware-esxi-backdoor-tehlikesi.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi",
+    "author": {"@type": "Person", "name": "TechWave"},
+    "datePublished": "2026-09-07",
+    "description": "VMware ESXi sunucularını hedef alan yeni Python zararlısının detayları, arka kapı (backdoor) teknikleri ve korunma yöntemleri TechWave'da.",
+    "publisher": {"@type": "Organization", "name": "TechWave"}
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Tech<span>Wave</span></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ad-slot ad-slot-728"><span>Reklam Alanı — 728×90</span></div>
+  </div>
+
+  <article>
+    <div class="container article-header">
+      <span class="card-tag">Python</span>
+      <h1>Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi</h1>
+      <div class="article-meta">
+        <span>📅 7 Eylül 2026</span>
+        <span class="read-time">⏱️ 3 dk okuma</span>
+        <span>✍️ TechWave</span>
+      </div>
+    </div>
+
+    <div class="container content-layout">
+      <div class="article-content">
+
+        <div class="ad-slot ad-slot-300"><span>Reklam Alanı — 300×250</span></div>
+
+        <h2>Giriş: VMware ESXi Sunucularında Yeni Siber Tehdit</h2>
+<p>Siber saldırganlar, kurumsal altyapıların kalbi sayılan sanallaştırma platformlarını hedef almaya devam ediyor. Son dönemde siber güvenlik araştırmacıları tarafından tespit edilen yeni bir Python tabanlı zararlı yazılım, VMware ESXi sunucularında kritik güvenlik zafiyetleri yaratarak uzaktan erişim imkanı sağlıyor. Sanallaştırma ortamlarının hedef alınması, tek bir sızma ile onlarca sanal makinenin ve hassas verinin ele geçirilmesi anlamına geldiği için büyük bir risk taşıyor.</p>
+
+<p>CozumPark tarafından da dikkat çekilen bu yeni tehdit, Python'ın esnek ve güçlü yapısını kötüye kullanarak ESXi sistemlerinde arka kapılar (backdoor) açıyor. Saldırganlar, bu yöntemle ağ içinde kalıcılık sağlayıp yetkisiz komutlar çalıştırabiliyor. Peki bu zararlı yazılım tam olarak nasıl çalışıyor ve sistemlerimizi bu tür karmaşık saldırılardan nasıl koruyabiliriz?</p>
+
+<h2>Saldırının Anatomisi: Python Zararlısı Nasıl Çalışıyor?</h2>
+<p>Python, geliştiriciler ve sistem yöneticileri için harika bir otomasyon aracı olsa da, geniş kütüphane desteği nedeniyle siber korsanların da favorisi haline geldi. ESXi gibi Linux tabanlı kabuk (shell) erişimi sunan yapılar, Python betiklerini doğrudan çalıştırma kapasitesine sahiptir. Saldırganlar bu durumdan faydalanarak zararlı kodları sisteme enjekte etmektedir.</p>
+
+<h3>Uzaktan Erişim ve Backdoor Teknikleri</h3>
+<p>Zararlı yazılımın ana amacı, hedef sunucuda gizli bir erişim noktası oluşturmaktır. Saldırganların izlediği temel teknikler şunlardır:</p>
+<ul>
+    <li><strong>SSH Anahtarı Ekleme:</strong> Saldırganlar, ESXi sunucusunun <code>authorized_keys</code> dosyasına kendi SSH açık anahtarlarını ekleyerek şifresiz ve kalıcı erişim sağlar.</li>
+    <li><strong>Ters Bağlantı (Reverse Shell):</strong> Python betiği, saldırganın komut kontrol (C2) sunucusuna dışa doğru (outbound) bir bağlantı başlatır. Bu sayede güvenlik duvarı kuralları kolayca aşılır.</li>
+    <li><strong>Güvenlik Günlüklerini Silme:</strong> İzlerini kaybettirmek isteyen yazılım, sistem günlüklerini (logs) temizler veya kayıt tutma servislerini devre dışı bırakır.</li>
+</ul>
+
+blockquote>
+    "Sanallaştırma katmanına yapılan bir saldırı, sadece tek bir sunucuyu değil, o sunucu üzerinde çalışan tüm kurumsal ekosistemi ve veri tabanlarını felç edebilir."
+</blockquote>
+
+<h2>Temel Teknik Terimler</h2>
+<p>Saldırının boyutunu ve çalışma mekanizmasını daha iyi anlamak için bazı temel kavramları açıklamakta fayda var:</p>
+<ul>
+    <li><strong>VMware ESXi:</strong> Donanım üzerinde doğrudan çalışan (Type-1 Hypervisor) ve birden fazla sanal makine çalıştırmaya yarayan sanallaştırma işletim sistemidir.</li>
+    <li><strong>Backdoor (Arka Kapı):</strong> Bir sisteme normal kimlik doğrulama süreçlerini atlayarak yetkisiz erişim sağlayan gizli yazılımsal geçittir.</li>
+    <li><strong>Reverse Shell:</strong> Hedef sistemin, saldırganın makinesine doğru bağlantı kurması esasına dayanan bir kabuk erişim yöntemidir.</li>
+</ul>
+
+<h2>Zararlı Betik Mantığı: Analiz ve Kod İncelemesi</h2>
+<p>Aşağıdaki kod örneği, saldırganların Python kullanarak bir sistemde nasıl yetki yükseltmeye veya yetkisiz erişim sağlamaya çalıştığını anlamak amacıyla oluşturulmuş basitleştirilmiş bir inceleme simülasyonudur:</p>
+
+<pre><code>import os
+import subprocess
+
+def inject_backdoor_key(ssh_key):
+    # ESXi SSH yetkili anahtar dosyası yolu
+    auth_keys_path = "/etc/ssh/keys-root/authorized_keys"
+    try:
+        with open(auth_keys_path, "a") as key_file:
+            key_file.write(f"\n{ssh_key}\n")
+        print("[+] Arka kapı SSH anahtarı başarıyla eklendi.")
+    except Exception as e:
+        print(f"[-] Hata oluştu: {e}")
+
+# Saldırganın komut kontrol sunucusuna ait SSH açık anahtarı
+attacker_pub_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC... attacker@c2server"
+inject_backdoor_key(attacker_pub_key)
+</code></pre>
+
+<p>Yukarıdaki örnekte görüldüğü gibi, son derece kısa bir Python kodu bile ESXi sistemindeki kritik yapılandırma dosyalarına erişerek kalıcı bir erişim kapısı aralayabilir. Saldırganlar genellikle bu betikleri karmaşıklaştırarak (obfuscation) antivirüs ve güvenlik tarayıcılarından gizlerler.</p>
+
+<h2>VMware ESXi Sunucularınızı Nasıl Korumalısınız?</h2>
+<p>ESXi sunucularınızı bu tarz Python tabanlı zararlılardan ve uzaktan erişim tehditlerinden korumak için sıkı bir güvenlik politikası uygulamanız şarttır. Güvenlik önlemlerini sadece güncelleme yapmakla sınırlı tutmamalısınız.</p>
+
+<h3>Güvenlik Sıkılaştırma (Hardening) Adımları</h3>
+<ol>
+    <li><strong>SSH Erişimini Kapatın:</strong> ESXi üzerinde SSH servisini sürekli açık tutmayın. Yalnızca bakım zamanlarında açın ve işiniz bittiğinde derhal kapatın.</li>
+    <li><strong>Erişim Kontrol Listeleri (ACL) Kullanın:</strong> Yönetim arayüzüne (ESXi Management Network) ve SSH portuna sadece belirli güvenli IP adreslerinin erişebilmesini sağlayın.</li>
+    <li><strong>Çok Faktörlü Kimlik Doğrulama (MFA):</strong> Tüm yönetim hesaplarında MFA kullanımını zorunlu kılın.</li>
+    <li><strong>Güncellemeleri İhmal Etmeyin:</strong> VMware tarafından yayınlanan güvenlik yamalarını (patch) vakit kaybetmeden sistemlerinize uygulayın.</li>
+    <li><strong>Dosya Bütünlüğü İzleme (FIM):</strong> Kritik sistem dosyalarının değişip değişmediğini denetleyen FIM çözümleri kullanın.</li>
+</ol>
+
+<h2>Siber Güvenlik Uzmanlarına Tavsiyeler ve İzleme</h2>
+<p>Sistem yöneticileri ve SOC analistleri, ESXi ortamlarında şüpheli Python süreçlerini tespit etmek için komut satırı araçlarından faydalanabilir. Örneğin, ESXi kabuğunda çalışan arka plan süreçlerini denetlemek için <code>esxcli system process list</code> komutu kullanılabilir.</p>
+
+<p>Ayrıca, merkezi bir SIEM yazılımına günlük (log) aktarımı yapmak, izinsiz girme girişimlerini ve silinen log dosyalarını anında fark etmenizi sağlar. Güvenliği reaktif değil, proaktif bir yaklaşımla ele almak olası felaketlerin önüne geçecektir.</p>
+
+<h2>Sonuç</h2>
+<p>Python ile geliştirilen bu yeni zararlı yazılım, siber korsanların kritik altyapılara sızmak için ne kadar esnek yollar bulabileceğini bir kez daha gösterdi. Sanallaştırma katmanınızı korumak, tüm veri merkezinizin güvenliğini sağlamanın ilk adımıdır. Doğru yapılandırma, düzenli izleme ve zamanında yapılan güvenlik güncellemeleri ile bu tür tehditlere karşı güçlü bir savunma hattı oluşturabilirsiniz.</p>
+
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3>Popüler Yazılar</h3>
+          <ul class="popular-list">
+            <li><a href="yapay-zeka-giris.html">Yapay Zekaya Giriş</a></li>
+            <li><a href="python-ogrenme.html">Python ile AI Öğrenme</a></li>
+            <li><a href="chatgpt-rehber.html">ChatGPT vs Claude vs Gemini</a></li>
+          </ul>
+        </div>
+        <div class="ad-slot ad-slot-300x600"><span>Reklam Alanı — 300×600</span></div>
+      </aside>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

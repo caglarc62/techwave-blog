@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechWave ile iletişime geçin. Sorularınız, önerileriniz veya iş birliği talepleriniz için bize yazın.">
+  <title>İletişim — TechWave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Tech<span>Wave</span></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="kategori.html">Kategoriler</a>
+        <a href="iletisim.html" class="active">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="category-header">
+    <div class="container">
+      <h1>İletişim</h1>
+      <p>Sorularınız, önerileriniz veya iş birliği talepleriniz için bize yazın.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="contact-form">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Adınız</label>
+          <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-posta Adresiniz</label>
+          <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Konu</label>
+          <input type="text" id="subject" name="subject" placeholder="Mesajınızın konusu" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mesajınız</label>
+          <textarea id="message" name="message" placeholder="Mesajınızı yazın..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Gönder</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ meta_description }}">
+  <meta name="keywords" content="{{ tags | join(', ') }}">
+  <meta name="author" content="{{ author }}">
+  <meta name="robots" content="index, follow">
+  <title>{{ title }} — {{ site_name }}</title>
+
+  <meta property="og:title" content="{{ title }} — {{ site_name }}">
+  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="{{ image_url }}">
+
+  <link rel="canonical" href="{{ site_url }}/articles/{{ slug }}.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "author": {"@type": "Person", "name": "{{ author }}"},
+    "datePublished": "{{ date_iso }}",
+    "description": "{{ meta_description }}",
+    "publisher": {"@type": "Organization", "name": "{{ site_name }}"},
+    "image": "{{ image_url }}"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Tech<span>Wave</span></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Görsel -->
+  <div class="article-hero">
+    <img src="{{ image_url }}" alt="{{ title }}" class="article-hero-img" loading="eager">
+    <div class="article-hero-overlay"></div>
+    <div class="container article-hero-content">
+      <span class="card-tag">{{ category }}</span>
+      <h1>{{ title }}</h1>
+      <div class="article-meta">
+        <span>📅 {{ date }}</span>
+        <span class="read-time">⏱️ {{ read_time }}</span>
+        <span>✍️ {{ author }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ad-slot ad-slot-728"><span>Reklam Alanı — 728×90</span></div>
+  </div>
+
+  <article>
+    <div class="container content-layout">
+      <div class="article-content">
+
+        <div class="ad-slot ad-slot-300"><span>Reklam Alanı — 300×250</span></div>
+
+        {{ content }}
+
+        <!-- Görsel Telif -->
+        <div class="image-credit">
+          {{ image_credit }}
+        </div>
+
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3>Popüler Yazılar</h3>
+          <ul class="popular-list">
+            <li><a href="yapay-zeka-giris.html">Yapay Zekaya Giriş</a></li>
+            <li><a href="python-ogrenme.html">Python ile AI Öğrenme</a></li>
+            <li><a href="chatgpt-rehber.html">ChatGPT vs Claude vs Gemini</a></li>
+          </ul>
+        </div>
+        <div class="ad-slot ad-slot-300x600"><span>Reklam Alanı — 300×600</span></div>
+      </aside>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 {{ site_name }}. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

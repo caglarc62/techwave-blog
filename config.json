@@ -1,0 +1,54 @@
+{
+  "claude_model": "gemini-3.6-flash",
+  "max_tokens": 4096,
+  "article_min_words": 800,
+  "article_max_words": 1200,
+  "site_name": "TechWave",
+  "site_url": "https://techwave-blog.netlify.app",
+  "github_url": "https://github.com/caglarc62/techwave-blog.git",
+  "author": "TechWave",
+  "categories": [
+    "Yapay Zeka",
+    "Yazılım",
+    "Python",
+    "AI Araçları",
+    "Siber Güvenlik",
+    "Mobil",
+    "Oyun",
+    "Bulut Bilişim",
+    "Veri Bilimi",
+    "Blockchain"
+  ],
+  "emoji_map": {
+    "Yapay Zeka": "🤖",
+    "Yazılım": "💻",
+    "Python": "🐍",
+    "AI Araçları": "💬",
+    "Siber Güvenlik": "🔐",
+    "Mobil": "📱",
+    "Oyun": "🎮",
+    "Bulut Bilişim": "☁️",
+    "Veri Bilimi": "📊",
+    "Blockchain": "🔗"
+  },
+  "gradient_map": {
+    "Yapay Zeka": "linear-gradient(135deg, #667eea, #764ba2)",
+    "Yazılım": "linear-gradient(135deg, #f093fb, #f5576c)",
+    "Python": "linear-gradient(135deg, #4facfe, #00f2fe)",
+    "AI Araçları": "linear-gradient(135deg, #43e97b, #38f9d7)",
+    "Siber Güvenlik": "linear-gradient(135deg, #fa709a, #fee140)",
+    "Mobil": "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+    "Oyun": "linear-gradient(135deg, #ffecd2, #fcb69f)",
+    "Bulut Bilişim": "linear-gradient(135deg, #89f7fe, #66a6ff)",
+    "Veri Bilimi": "linear-gradient(135deg, #fddb92, #d1fdff)",
+    "Blockchain": "linear-gradient(135deg, #c471f5, #fa71cd)"
+  },
+  "trend_sources": [
+    "https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR",
+    "https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR",
+    "https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR"
+  ],
+  "log_file": "bot_log.json",
+  "articles_dir": "articles",
+  "max_articles_per_day": 1
+}

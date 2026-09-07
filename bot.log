@@ -1,0 +1,632 @@
+2026-09-07 12:30:47,672 [INFO] ============================================================
+2026-09-07 12:30:47,673 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:30)
+2026-09-07 12:30:47,674 [INFO] ============================================================
+2026-09-07 12:30:47,674 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:30:47,676 [INFO] Rastgele konu seçildi: Veri Bilimi - Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 12:30:47,677 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 12:30:47,677 [INFO]    Seçilen konu: Veri Bilimi — Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 12:30:47,678 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:30:47,680 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 12:30:47,682 [INFO]    Başlık: Veri Bilimine Giriş: Temel Kavramlar
+2026-09-07 12:30:47,682 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 12:30:47,683 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 12:30:47,687 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\veri-bilimine-giris:-temel-kavramlar.html
+2026-09-07 12:30:47,687 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 12:31:53,330 [INFO] ============================================================
+2026-09-07 12:31:53,331 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:31)
+2026-09-07 12:31:53,331 [INFO] ============================================================
+2026-09-07 12:31:53,337 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:31:53,337 [INFO] Rastgele konu seçildi: AI Araçları - İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 12:31:53,337 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 12:31:53,338 [INFO]    Seçilen konu: AI Araçları — İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 12:31:53,338 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:31:53,338 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 12:31:53,339 [INFO]    Başlık: İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 12:31:53,339 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 12:31:53,339 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 12:31:53,341 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\i-hayatnda-yapay-zeka-kullanm-alanlar.html
+2026-09-07 12:31:53,342 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 12:31:53,344 [INFO] index.html güncellendi: İş Hayatında Yapay Zeka Kullanım Alanları makale eklendi.
+2026-09-07 12:31:53,345 [INFO]    Ana sayfa güncellendi.
+2026-09-07 12:31:53,347 [INFO] ============================================================
+2026-09-07 12:31:53,348 [INFO] BAŞARILI! Makale yayımlandı: İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 12:31:53,348 [INFO]   Dosya: articles/i-hayatnda-yapay-zeka-kullanm-alanlar.html
+2026-09-07 12:31:53,348 [INFO]   Kategori: AI Araçları
+2026-09-07 12:31:53,349 [INFO] ============================================================
+2026-09-07 12:35:03,310 [INFO] ============================================================
+2026-09-07 12:35:03,338 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:35)
+2026-09-07 12:35:03,353 [INFO] ============================================================
+2026-09-07 12:35:03,416 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:35:03,534 [INFO] Rastgele konu seçildi: Siber Güvenlik - Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 12:35:03,921 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 12:35:03,971 [INFO]    Seçilen konu: Siber Güvenlik — Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 12:35:04,185 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:35:04,220 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 12:35:04,236 [INFO]    Başlık: Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 12:35:04,255 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 12:35:04,299 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 12:35:04,333 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\kiisel-verilerinizi-nasl-korursunuz.html
+2026-09-07 12:35:04,392 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 12:35:04,458 [INFO] index.html güncellendi: Kişisel Verilerinizi Nasıl Korursunuz makale eklendi.
+2026-09-07 12:35:04,491 [INFO]    Ana sayfa güncellendi.
+2026-09-07 12:35:04,502 [INFO] ============================================================
+2026-09-07 12:35:04,520 [INFO] BAŞARILI! Makale yayımlandı: Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 12:35:04,532 [INFO]   Dosya: articles/kiisel-verilerinizi-nasl-korursunuz.html
+2026-09-07 12:35:04,540 [INFO]   Kategori: Siber Güvenlik
+2026-09-07 12:35:04,568 [INFO] ============================================================
+2026-09-07 12:47:30,389 [INFO] ============================================================
+2026-09-07 12:47:30,390 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:47)
+2026-09-07 12:47:30,390 [INFO] ============================================================
+2026-09-07 12:47:30,391 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:47:31,349 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 12:47:32,000 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 12:47:32,571 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 12:47:33,702 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 12:47:34,698 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 12:47:35,790 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 12:47:35,804 [INFO]    Seçilen konu: Veri Bilimi — Kamuda yapay zeka dönemi Tüm personele zorunlu eğitim verilecek - İstanbul Ticaret
+2026-09-07 12:47:35,805 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:47:36,220 [INFO] Claude API'ye istek gönderiliyor... Model: claude-sonnet-4-20250514
+2026-09-07 12:47:36,904 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-09-07 12:47:36,905 [ERROR] Claude API hatası: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeosGybGFFZ4roVBehtUA'}
+2026-09-07 12:47:36,906 [ERROR] Makale üretilemedi!
+2026-09-07 12:52:42,222 [INFO] ============================================================
+2026-09-07 12:52:42,222 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:52)
+2026-09-07 12:52:42,223 [INFO] ============================================================
+2026-09-07 12:52:42,223 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:52:43,070 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 12:52:43,906 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 12:52:44,629 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 12:52:45,555 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 12:52:47,368 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 12:52:48,311 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 12:52:48,332 [INFO]    Seçilen konu: Blockchain — International NFT Day September 20 2026 - National Today
+2026-09-07 12:52:48,338 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:52:48,343 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 12:52:48,733 [ERROR] Gemini API hatası: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-09-07 12:52:48,733 [ERROR] Makale üretilemedi!
+2026-09-07 12:54:21,230 [INFO] ============================================================
+2026-09-07 12:54:21,231 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:54)
+2026-09-07 12:54:21,231 [INFO] ============================================================
+2026-09-07 12:54:21,231 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:54:21,445 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 12:54:21,651 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 12:54:21,834 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 12:54:22,789 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 12:54:23,676 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 12:54:24,667 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 12:54:24,678 [INFO]    Seçilen konu: Mobil — Appsoft Technologies Inc Q2 2026 Net loss 16937 EPS 0 10-Q Summary
+2026-09-07 12:54:24,679 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:54:24,679 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 12:54:25,149 [ERROR] Gemini API hatası: 404 This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.
+2026-09-07 12:54:25,150 [ERROR] Makale üretilemedi!
+2026-09-07 12:55:16,912 [INFO] ============================================================
+2026-09-07 12:55:16,913 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:55)
+2026-09-07 12:55:16,913 [INFO] ============================================================
+2026-09-07 12:55:16,914 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:55:17,554 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 12:55:18,355 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 12:55:19,199 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 12:55:20,069 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 12:55:20,920 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 12:55:21,862 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 12:55:21,878 [INFO]    Seçilen konu: Yapay Zeka — Herkes için Yapay Zeka Google ve TC Sanayi ve Teknoloji Bakanlığı Türkiyede
+2026-09-07 12:55:21,879 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:55:21,883 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 12:56:31,737 [INFO] Gemini yanıtı alındı. Uzunluk: 7256 karakter
+2026-09-07 12:56:31,743 [ERROR] JSON parse hatası: Invalid control character at: line 14 column 4426 (char 5146)
+2026-09-07 12:56:31,746 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 12:56:31,749 [ERROR] Makale üretilemedi!
+2026-09-07 12:59:03,483 [INFO] ============================================================
+2026-09-07 12:59:03,483 [INFO] İçerik botu başlatılıyor... (2026-09-07 12:59)
+2026-09-07 12:59:03,484 [INFO] ============================================================
+2026-09-07 12:59:03,485 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 12:59:04,252 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 12:59:05,106 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 12:59:05,669 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 12:59:06,591 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 12:59:07,502 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 12:59:08,576 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 12:59:08,591 [INFO]    Seçilen konu: Python — Yeni Python Zararlısı Uzaktan Erişimler İçin VMware ESXi Backdoorları Kullanıyor - CozumPark
+2026-09-07 12:59:08,592 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 12:59:08,593 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:00:23,734 [INFO] Gemini yanıtı alındı. Uzunluk: 7160 karakter
+2026-09-07 13:00:23,740 [INFO]    Başlık: Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi
+2026-09-07 13:00:23,743 [INFO]    Okuma süresi: 3 dk okuma
+2026-09-07 13:00:23,746 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:00:23,755 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\yeni-python-zararlisi-vmware-esxi-backdoor-tehlikesi.html
+2026-09-07 13:00:23,759 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:00:23,770 [INFO] index.html güncellendi: Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi makale eklendi.
+2026-09-07 13:00:23,771 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:00:23,776 [INFO] ============================================================
+2026-09-07 13:00:23,778 [INFO] BAŞARILI! Makale yayımlandı: Yeni Python Zararlısı VMware ESXi Sunucularını Hedef Alıyor: Uzaktan Erişim Tehlikesi
+2026-09-07 13:00:23,779 [INFO]   Dosya: articles/yeni-python-zararlisi-vmware-esxi-backdoor-tehlikesi.html
+2026-09-07 13:00:23,782 [INFO]   Kategori: Python
+2026-09-07 13:00:23,783 [INFO] ============================================================
+2026-09-07 13:10:21,181 [INFO] ============================================================
+2026-09-07 13:10:21,181 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:10)
+2026-09-07 13:10:21,182 [INFO] ============================================================
+2026-09-07 13:10:21,182 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:10:21,182 [INFO] Rastgele konu seçildi: Oyun - Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:10:21,182 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:10:21,183 [INFO]    Seçilen konu: Oyun — Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:10:21,183 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:10:21,183 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:10:21,184 [INFO]    Başlık: Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:10:21,184 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:10:21,184 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:10:21,190 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\oyun-endstrisinde-yapay-zeka-kullanm.html
+2026-09-07 13:10:21,190 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:10:21,193 [INFO] index.html güncellendi: Oyun Endüstrisinde Yapay Zeka Kullanımı makale en üste eklendi.
+2026-09-07 13:10:21,193 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:10:21,196 [INFO] ============================================================
+2026-09-07 13:10:21,196 [INFO] BAŞARILI! Makale yayımlandı: Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:10:21,196 [INFO]   Dosya: articles/oyun-endstrisinde-yapay-zeka-kullanm.html
+2026-09-07 13:10:21,196 [INFO]   Kategori: Oyun
+2026-09-07 13:10:21,197 [INFO] ============================================================
+2026-09-07 13:11:41,026 [INFO] ============================================================
+2026-09-07 13:11:41,027 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:11)
+2026-09-07 13:11:41,028 [INFO] ============================================================
+2026-09-07 13:11:41,028 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:11:41,029 [INFO] Rastgele konu seçildi: AI Araçları - İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 13:11:41,029 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:11:41,029 [INFO]    Seçilen konu: AI Araçları — İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 13:11:41,030 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:11:41,030 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:11:41,031 [INFO]    Başlık: İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 13:11:41,031 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:11:41,031 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:11:41,045 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\i-hayatnda-yapay-zeka-kullanm-alanlar.html
+2026-09-07 13:11:41,045 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:11:41,051 [INFO] index.html güncellendi: İş Hayatında Yapay Zeka Kullanım Alanları makale en üste eklendi.
+2026-09-07 13:11:41,051 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:11:41,063 [INFO] ============================================================
+2026-09-07 13:11:41,065 [INFO] BAŞARILI! Makale yayımlandı: İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 13:11:41,065 [INFO]   Dosya: articles/i-hayatnda-yapay-zeka-kullanm-alanlar.html
+2026-09-07 13:11:41,066 [INFO]   Kategori: AI Araçları
+2026-09-07 13:11:41,066 [INFO] ============================================================
+2026-09-07 13:12:15,281 [INFO] ============================================================
+2026-09-07 13:12:15,285 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:12)
+2026-09-07 13:12:15,286 [INFO] ============================================================
+2026-09-07 13:12:15,286 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:12:15,286 [INFO] Rastgele konu seçildi: Mobil - Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 13:12:15,286 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:12:15,287 [INFO]    Seçilen konu: Mobil — Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 13:12:15,287 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:12:15,287 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:12:15,287 [INFO]    Başlık: Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 13:12:15,288 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:12:15,288 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:12:15,293 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\mobil-uygulama-gelitirme-trendleri-2026.html
+2026-09-07 13:12:15,293 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:12:15,301 [INFO] index.html güncellendi: Mobil Uygulama Geliştirme Trendleri 2026 makale en üste eklendi.
+2026-09-07 13:12:15,301 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:12:15,304 [INFO] ============================================================
+2026-09-07 13:12:15,304 [INFO] BAŞARILI! Makale yayımlandı: Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 13:12:15,304 [INFO]   Dosya: articles/mobil-uygulama-gelitirme-trendleri-2026.html
+2026-09-07 13:12:15,305 [INFO]   Kategori: Mobil
+2026-09-07 13:12:15,305 [INFO] ============================================================
+2026-09-07 13:12:39,449 [INFO] ============================================================
+2026-09-07 13:12:39,450 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:12)
+2026-09-07 13:12:39,451 [INFO] ============================================================
+2026-09-07 13:12:39,451 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:12:39,452 [INFO] Rastgele konu seçildi: Python - Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:12:39,452 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:12:39,454 [INFO]    Seçilen konu: Python — Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:12:39,454 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:12:39,455 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:12:39,455 [INFO]    Başlık: Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:12:39,455 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:12:39,456 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:12:39,457 [INFO] DEBUG: article image_url = 'YOK'
+2026-09-07 13:12:39,468 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-ile-veri-grselletirme-rehberi.html
+2026-09-07 13:12:39,469 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:12:39,471 [INFO] index.html güncellendi: Python ile Veri Görselleştirme Rehberi makale en üste eklendi.
+2026-09-07 13:12:39,472 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:12:39,477 [INFO] ============================================================
+2026-09-07 13:12:39,477 [INFO] BAŞARILI! Makale yayımlandı: Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:12:39,478 [INFO]   Dosya: articles/python-ile-veri-grselletirme-rehberi.html
+2026-09-07 13:12:39,478 [INFO]   Kategori: Python
+2026-09-07 13:12:39,478 [INFO] ============================================================
+2026-09-07 13:12:56,067 [INFO] ============================================================
+2026-09-07 13:12:56,068 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:12)
+2026-09-07 13:12:56,069 [INFO] ============================================================
+2026-09-07 13:12:56,069 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:12:56,070 [INFO] Rastgele konu seçildi: Yazılım - 2026'da Öğrenilmesi Gereken Programlama Dilleri
+2026-09-07 13:12:56,070 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:12:56,076 [INFO]    Seçilen konu: Yazılım — 2026'da Öğrenilmesi Gereken Programlama Dilleri
+2026-09-07 13:12:56,077 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:12:56,077 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:12:56,078 [INFO]    Başlık: 2026'da Öğrenilmesi Gereken Programlama Dilleri
+2026-09-07 13:12:56,078 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:12:56,079 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:12:56,080 [INFO] DEBUG: article image_url = 'YOK'
+2026-09-07 13:12:56,095 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\2026da-renilmesi-gereken-programlama-dilleri.html
+2026-09-07 13:12:56,095 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:12:56,104 [INFO] index.html güncellendi: 2026'da Öğrenilmesi Gereken Programlama Dilleri makale en üste eklendi.
+2026-09-07 13:12:56,107 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:12:56,111 [INFO] ============================================================
+2026-09-07 13:12:56,111 [INFO] BAŞARILI! Makale yayımlandı: 2026'da Öğrenilmesi Gereken Programlama Dilleri
+2026-09-07 13:12:56,112 [INFO]   Dosya: articles/2026da-renilmesi-gereken-programlama-dilleri.html
+2026-09-07 13:12:56,113 [INFO]   Kategori: Yazılım
+2026-09-07 13:12:56,113 [INFO] ============================================================
+2026-09-07 13:13:36,111 [INFO] ============================================================
+2026-09-07 13:13:36,112 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:13)
+2026-09-07 13:13:36,119 [INFO] ============================================================
+2026-09-07 13:13:36,119 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:13:36,119 [INFO] Rastgele konu seçildi: Siber Güvenlik - Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 13:13:36,120 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:13:36,120 [INFO]    Seçilen konu: Siber Güvenlik — Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 13:13:36,120 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:13:36,122 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:13:36,122 [INFO]    Başlık: Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 13:13:36,122 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:13:36,123 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:13:36,123 [INFO] DEBUG: article image_url = 'YOK'
+2026-09-07 13:13:36,126 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\kiisel-verilerinizi-nasl-korursunuz.html
+2026-09-07 13:13:36,127 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:13:36,141 [INFO] index.html güncellendi: Kişisel Verilerinizi Nasıl Korursunuz makale en üste eklendi.
+2026-09-07 13:13:36,142 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:13:36,144 [INFO] ============================================================
+2026-09-07 13:13:36,145 [INFO] BAŞARILI! Makale yayımlandı: Kişisel Verilerinizi Nasıl Korursunuz
+2026-09-07 13:13:36,145 [INFO]   Dosya: articles/kiisel-verilerinizi-nasl-korursunuz.html
+2026-09-07 13:13:36,145 [INFO]   Kategori: Siber Güvenlik
+2026-09-07 13:13:36,145 [INFO] ============================================================
+2026-09-07 13:14:23,034 [INFO] ============================================================
+2026-09-07 13:14:23,034 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:14)
+2026-09-07 13:14:23,035 [INFO] ============================================================
+2026-09-07 13:14:23,035 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:14:23,036 [INFO] Rastgele konu seçildi: Oyun - Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:14:23,036 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:14:23,039 [INFO]    Seçilen konu: Oyun — Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:14:23,040 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:14:23,042 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:14:23,042 [INFO]    Başlık: Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:14:23,042 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:14:23,043 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:14:23,043 [INFO] DEBUG: article image_url = 'YOK'
+2026-09-07 13:14:23,046 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\oyun-endstrisinde-yapay-zeka-kullanm.html
+2026-09-07 13:14:23,046 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:14:23,049 [INFO] index.html güncellendi: Oyun Endüstrisinde Yapay Zeka Kullanımı makale en üste eklendi.
+2026-09-07 13:14:23,049 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:14:23,052 [INFO] ============================================================
+2026-09-07 13:14:23,052 [INFO] BAŞARILI! Makale yayımlandı: Oyun Endüstrisinde Yapay Zeka Kullanımı
+2026-09-07 13:14:23,052 [INFO]   Dosya: articles/oyun-endstrisinde-yapay-zeka-kullanm.html
+2026-09-07 13:14:23,052 [INFO]   Kategori: Oyun
+2026-09-07 13:14:23,052 [INFO] ============================================================
+2026-09-07 13:15:09,404 [INFO] ============================================================
+2026-09-07 13:15:09,405 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:15)
+2026-09-07 13:15:09,405 [INFO] ============================================================
+2026-09-07 13:15:09,405 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:15:09,405 [INFO] Rastgele konu seçildi: Python - Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:15:09,406 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:15:09,406 [INFO]    Seçilen konu: Python — Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:15:09,406 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:15:09,406 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:15:09,406 [INFO]    Başlık: Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:15:09,406 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:15:09,406 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:15:09,407 [INFO] DEBUG: article image_url = 'YOK'
+2026-09-07 13:15:09,409 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-ile-veri-grselletirme-rehberi.html
+2026-09-07 13:15:09,409 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:15:09,416 [INFO] index.html güncellendi: Python ile Veri Görselleştirme Rehberi makale en üste eklendi.
+2026-09-07 13:15:09,416 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:15:09,419 [INFO] ============================================================
+2026-09-07 13:15:09,419 [INFO] BAŞARILI! Makale yayımlandı: Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:15:09,420 [INFO]   Dosya: articles/python-ile-veri-grselletirme-rehberi.html
+2026-09-07 13:15:09,420 [INFO]   Kategori: Python
+2026-09-07 13:15:09,420 [INFO] ============================================================
+2026-09-07 13:16:53,199 [INFO] ============================================================
+2026-09-07 13:16:53,200 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:16)
+2026-09-07 13:16:53,200 [INFO] ============================================================
+2026-09-07 13:16:53,201 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:16:53,201 [INFO] Rastgele konu seçildi: Python - Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:16:53,201 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 13:16:53,202 [INFO]    Seçilen konu: Python — Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:16:53,202 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:16:53,202 [INFO] DEBUG: images modülü kullanılıyor, kategori=Python, başlık=Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:16:53,203 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 13:16:53,203 [INFO] Fallback görsel kullanılıyor: Python
+2026-09-07 13:16:53,203 [INFO] DEBUG: image_info = {'url': 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200&h=630&fit=crop', 'thumb': 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200&h=630&fit=crop', 'author': 'Unsplash', 'author_url': 'https://unsplash.com', 'credit': 'Fotoğraf: Unsplash', 'source': 'fallback'}
+2026-09-07 13:16:53,204 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 13:16:53,204 [INFO]    Başlık: Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:16:53,204 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 13:16:53,205 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:16:53,205 [INFO] DEBUG: article image_url = 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200&h=630&fit=crop'
+2026-09-07 13:16:53,207 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-ile-veri-grselletirme-rehberi.html
+2026-09-07 13:16:53,208 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:16:53,210 [INFO] index.html güncellendi: Python ile Veri Görselleştirme Rehberi makale en üste eklendi.
+2026-09-07 13:16:53,211 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:16:53,213 [INFO] ============================================================
+2026-09-07 13:16:53,214 [INFO] BAŞARILI! Makale yayımlandı: Python ile Veri Görselleştirme Rehberi
+2026-09-07 13:16:53,214 [INFO]   Dosya: articles/python-ile-veri-grselletirme-rehberi.html
+2026-09-07 13:16:53,214 [INFO]   Kategori: Python
+2026-09-07 13:16:53,214 [INFO] ============================================================
+2026-09-07 13:21:10,929 [INFO] ============================================================
+2026-09-07 13:21:10,930 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:21)
+2026-09-07 13:21:10,930 [INFO] ============================================================
+2026-09-07 13:21:10,931 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:21:12,072 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:21:12,895 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:21:13,506 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:21:14,417 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:21:15,299 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:21:16,222 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:21:16,240 [INFO]    Seçilen konu: Python — Yeni Python Zararlısı Uzaktan Erişimler İçin VMware ESXi Backdoorları Kullanıyor - CozumPark
+2026-09-07 13:21:16,240 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:21:16,241 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:21:45,306 [INFO] Gemini yanıtı alındı. Uzunluk: 8879 karakter
+2026-09-07 13:21:45,312 [ERROR] JSON parse hatası: Invalid control character at: line 14 column 3507 (char 4215)
+2026-09-07 13:21:45,317 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:21:45,322 [ERROR] Makale üretilemedi!
+2026-09-07 13:24:28,120 [INFO] ============================================================
+2026-09-07 13:24:28,120 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:24)
+2026-09-07 13:24:28,121 [INFO] ============================================================
+2026-09-07 13:24:28,121 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:24:28,856 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:24:29,705 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:24:30,302 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:24:31,140 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:24:32,146 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:24:32,985 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:24:32,994 [INFO]    Seçilen konu: Mobil — Yapay zeka uygulamaları akıllı üretimde dönüşümü tetikliyor - Vietnamvn
+2026-09-07 13:24:32,994 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:24:32,995 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:25:00,688 [INFO] Gemini yanıtı alındı. Uzunluk: 8176 karakter
+2026-09-07 13:25:00,697 [ERROR] JSON parse hatası (2. deneme): Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-09-07 13:25:00,698 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:25:00,698 [ERROR] Makale üretilemedi!
+2026-09-07 13:25:29,032 [INFO] ============================================================
+2026-09-07 13:25:29,032 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:25)
+2026-09-07 13:25:29,033 [INFO] ============================================================
+2026-09-07 13:25:29,033 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:25:29,283 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:25:29,513 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:25:29,732 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:25:30,627 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:25:31,522 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:25:32,361 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:25:32,374 [INFO]    Seçilen konu: Oyun — Xiaomi releases new 4K gaming monitor with special 320 Hz mode -
+2026-09-07 13:25:32,374 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:25:32,374 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:25:56,904 [INFO] Gemini yanıtı alındı. Uzunluk: 6820 karakter
+2026-09-07 13:25:56,906 [ERROR] JSON parse hatası: Expecting property name enclosed in double quotes (pozisyon: 1)
+2026-09-07 13:25:56,907 [ERROR] Sorunlu bölge: ...{\n    "title": "Xiaomi'den Ezber Bozan Gaming Moni...
+2026-09-07 13:25:56,907 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:25:56,907 [ERROR] Makale üretilemedi!
+2026-09-07 13:26:42,082 [INFO] ============================================================
+2026-09-07 13:26:42,082 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:26)
+2026-09-07 13:26:42,083 [INFO] ============================================================
+2026-09-07 13:26:42,083 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:26:42,750 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:26:43,519 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:26:44,094 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:26:45,102 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:26:45,991 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:26:46,858 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:26:46,878 [INFO]    Seçilen konu: Veri Bilimi — 5 trilyon veriyi tek seferde işledi ChatGPTden farklı çalışan yeni yapay zeka
+2026-09-07 13:26:46,879 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:26:46,879 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:27:16,469 [INFO] Gemini yanıtı alındı. Uzunluk: 6987 karakter
+2026-09-07 13:27:16,472 [ERROR] JSON parse hatası: Invalid control character at (pozisyon: 5202)
+2026-09-07 13:27:16,473 [ERROR] Sorunlu bölge: ...zetim edilmiştir:</p><pre><code>import numpy as np
+
+# Geleneksel Transformer Attention Mantığı - O(N...
+2026-09-07 13:27:16,473 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:27:16,473 [ERROR] Makale üretilemedi!
+2026-09-07 13:28:04,070 [INFO] ============================================================
+2026-09-07 13:28:04,076 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:28)
+2026-09-07 13:28:04,077 [INFO] ============================================================
+2026-09-07 13:28:04,077 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:28:04,337 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:28:04,588 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:28:04,831 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:28:05,750 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:28:06,694 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:28:07,717 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:28:07,738 [INFO]    Seçilen konu: Oyun — PyGame Zero ile Oyun Programlıyorum - TÜBİTAK Bilim Genç
+2026-09-07 13:28:07,739 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:28:07,740 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:28:30,907 [INFO] Gemini yanıtı alındı. Uzunluk: 7324 karakter
+2026-09-07 13:28:30,914 [ERROR] JSON parse hatası: Expecting property name enclosed in double quotes (pozisyon: 1)
+2026-09-07 13:28:30,915 [ERROR] Sorunlu bölge: ...{\n    "title": "PyGame Zero ile Oyun Programlıyoru...
+2026-09-07 13:28:30,917 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:28:30,917 [ERROR] Makale üretilemedi!
+2026-09-07 13:29:30,369 [INFO] ============================================================
+2026-09-07 13:29:30,370 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:29)
+2026-09-07 13:29:30,370 [INFO] ============================================================
+2026-09-07 13:29:30,371 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:29:31,120 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:29:31,929 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:29:32,450 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:29:33,718 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:29:34,572 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:29:35,499 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:29:35,516 [INFO]    Seçilen konu: Yazılım — Yazılım Python RenPy Oyun Çeviri Aracı - Voorhees - Technopat
+2026-09-07 13:29:35,517 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:29:35,517 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:30:19,933 [INFO] Gemini yanıtı alındı. Uzunluk: 7349 karakter
+2026-09-07 13:30:19,937 [ERROR] JSON ilk 30 hex: {\\n    "title": "Python ile Re
+2026-09-07 13:30:19,938 [ERROR] JSON uzunluk: 7351
+2026-09-07 13:30:19,938 [ERROR] JSON parse hatası: Expecting property name enclosed in double quotes (pozisyon: 1)
+2026-09-07 13:30:19,938 [ERROR] Sorunlu bölge: ...{\n    "title": "Python ile Ren'Py Oyun Çevirisi Re...
+2026-09-07 13:30:19,939 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:30:19,939 [ERROR] Makale üretilemedi!
+2026-09-07 13:31:44,020 [INFO] ============================================================
+2026-09-07 13:31:44,020 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:31)
+2026-09-07 13:31:44,021 [INFO] ============================================================
+2026-09-07 13:31:44,021 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:31:44,797 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:31:45,473 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:31:46,113 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:31:47,085 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:31:47,958 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:31:48,783 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:31:48,801 [INFO]    Seçilen konu: Blockchain — How can you redefine resilience for the next frontier of vulnerabilities -
+2026-09-07 13:31:48,801 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:31:48,801 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:32:10,168 [INFO] Gemini yanıtı alındı. Uzunluk: 6971 karakter
+2026-09-07 13:32:10,177 [INFO] Görsel aranıyor...
+2026-09-07 13:32:10,178 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 13:32:10,178 [INFO] Fallback görsel kullanılıyor: Blockchain
+2026-09-07 13:32:10,179 [INFO] Görsel eklendi: fallback
+2026-09-07 13:32:10,179 [INFO]    Başlık: Blokzincirde Dayanıklılığı Yeniden Tanımlamak: Yeni Nesil Tehditler ve Güvenlik Stratejileri
+2026-09-07 13:32:10,180 [INFO]    Okuma süresi: 3 dk okuma
+2026-09-07 13:32:10,180 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:32:10,184 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\blokzincirde-dayanikliligi-yeniden-tanimlamak-yeni-nesil-tehditler.html
+2026-09-07 13:32:10,185 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:32:10,194 [INFO] index.html güncellendi: Blokzincirde Dayanıklılığı Yeniden Tanımlamak: Yeni Nesil Tehditler ve Güvenlik Stratejileri makale en üste eklendi.
+2026-09-07 13:32:10,194 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:32:10,199 [INFO] ============================================================
+2026-09-07 13:32:10,199 [INFO] BAŞARILI! Makale yayımlandı: Blokzincirde Dayanıklılığı Yeniden Tanımlamak: Yeni Nesil Tehditler ve Güvenlik Stratejileri
+2026-09-07 13:32:10,200 [INFO]   Dosya: articles/blokzincirde-dayanikliligi-yeniden-tanimlamak-yeni-nesil-tehditler.html
+2026-09-07 13:32:10,200 [INFO]   Kategori: Blockchain
+2026-09-07 13:32:10,200 [INFO] ============================================================
+2026-09-07 13:34:14,888 [INFO] ============================================================
+2026-09-07 13:34:14,888 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:34)
+2026-09-07 13:34:14,889 [INFO] ============================================================
+2026-09-07 13:34:14,890 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:34:15,662 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:34:16,403 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:34:17,033 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:34:18,054 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:34:18,906 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:34:19,844 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:34:19,868 [INFO]    Seçilen konu: Oyun — Yeni nesil oyunlarda yapay zekâ teknolojileri ne sağlıyor - Türkiye Gazetesi
+2026-09-07 13:34:19,869 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:34:19,870 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:34:52,744 [INFO] Gemini yanıtı alındı. Uzunluk: 7916 karakter
+2026-09-07 13:34:52,752 [ERROR] JSON parse hatası: Expecting ',' delimiter (pozisyon: 5467)
+2026-09-07 13:34:52,753 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:34:52,753 [ERROR] Makale üretilemedi!
+2026-09-07 13:38:10,061 [INFO] ============================================================
+2026-09-07 13:38:10,062 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:38)
+2026-09-07 13:38:10,062 [INFO] ============================================================
+2026-09-07 13:38:10,062 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:38:10,793 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:38:11,664 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:38:12,324 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:38:13,080 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:38:13,893 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:38:14,806 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:38:14,821 [INFO]    Seçilen konu: Yapay Zeka — Kadınların yapay zeka ve teknoloji alanındaki yenilikçi projeleri vitrine çıktı - Anadolu
+2026-09-07 13:38:14,821 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:38:14,822 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:38:45,218 [INFO] Gemini yanıtı alındı. Uzunluk: 7531 karakter
+2026-09-07 13:38:45,222 [INFO] Görsel aranıyor...
+2026-09-07 13:38:45,222 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 13:38:45,222 [INFO] Fallback görsel kullanılıyor: Yapay Zeka
+2026-09-07 13:38:45,223 [INFO] Görsel eklendi: fallback
+2026-09-07 13:38:45,223 [INFO]    Başlık: Kadınların Yapay Zeka ve Teknoloji Alanındaki Yenilikçi Projeleri Anadolu'dan Yükseliyor
+2026-09-07 13:38:45,224 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-07 13:38:45,224 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:38:45,233 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\kadinlarin-yapay-zeka-ve-teknoloji-alanindaki-yenilikci-projeleri.html
+2026-09-07 13:38:45,233 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:38:45,236 [INFO] index.html güncellendi: Kadınların Yapay Zeka ve Teknoloji Alanındaki Yenilikçi Projeleri Anadolu'dan Yükseliyor makale en üste eklendi.
+2026-09-07 13:38:45,237 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:38:45,241 [INFO] ============================================================
+2026-09-07 13:38:45,241 [INFO] BAŞARILI! Makale yayımlandı: Kadınların Yapay Zeka ve Teknoloji Alanındaki Yenilikçi Projeleri Anadolu'dan Yükseliyor
+2026-09-07 13:38:45,241 [INFO]   Dosya: articles/kadinlarin-yapay-zeka-ve-teknoloji-alanindaki-yenilikci-projeleri.html
+2026-09-07 13:38:45,242 [INFO]   Kategori: Yapay Zeka
+2026-09-07 13:38:45,248 [INFO] ============================================================
+2026-09-07 13:42:16,843 [INFO] ============================================================
+2026-09-07 13:42:16,844 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:42)
+2026-09-07 13:42:16,845 [INFO] ============================================================
+2026-09-07 13:42:16,846 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:42:17,567 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:42:18,230 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:42:18,786 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:42:19,710 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:42:20,546 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:42:21,294 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:42:21,306 [INFO]    Seçilen konu: Yapay Zeka — Garanti Portföy Yapay Zeka Teknolojileri Şirketleri Fonu İçin SPK Onayı Aldı -
+2026-09-07 13:42:21,306 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:42:21,308 [INFO] Gemini API'ye istek gönderiliyor...
+2026-09-07 13:42:49,626 [INFO] Gemini yanıtı alındı. Uzunluk: 9262 karakter
+2026-09-07 13:42:49,652 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-07 13:42:49,653 [ERROR] Gemini yanıtı JSON olarak ayrıştırılamadı.
+2026-09-07 13:42:49,654 [ERROR] Makale üretilemedi!
+2026-09-07 13:51:10,363 [INFO] ============================================================
+2026-09-07 13:51:10,364 [INFO] İçerik botu başlatılıyor... (2026-09-07 13:51)
+2026-09-07 13:51:10,365 [INFO] ============================================================
+2026-09-07 13:51:10,365 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 13:51:11,266 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 13:51:11,902 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 13:51:12,408 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 13:51:13,385 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 13:51:14,281 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 13:51:15,228 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 13:51:15,240 [INFO]    Seçilen konu: Veri Bilimi — Yapay zeka seferberliği 5 milyon kişiye eğitim verilecek - TRT Haber
+2026-09-07 13:51:15,240 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 13:51:15,240 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-07 13:51:37,260 [INFO] Gemini yanıtı alındı. Uzunluk: 7146 karakter
+2026-09-07 13:51:37,268 [INFO] Görsel aranıyor...
+2026-09-07 13:51:37,268 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 13:51:37,268 [INFO] Fallback görsel kullanılıyor: Veri Bilimi
+2026-09-07 13:51:37,269 [INFO] Görsel eklendi: fallback
+2026-09-07 13:51:37,270 [INFO]    Başlık: Türkiye'de Yapay Zeka Seferberliği: 5 Milyon Kişiye Dev Eğitim Hamlesi
+2026-09-07 13:51:37,270 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-07 13:51:37,270 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 13:51:37,281 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\turkiyede-yapay-zeka-seferberligi-5-milyon-kisiye-egitim.html
+2026-09-07 13:51:37,281 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 13:51:37,284 [INFO] index.html güncellendi: Türkiye'de Yapay Zeka Seferberliği: 5 Milyon Kişiye Dev Eğitim Hamlesi makale en üste eklendi.
+2026-09-07 13:51:37,284 [INFO]    Ana sayfa güncellendi.
+2026-09-07 13:51:37,289 [INFO] ============================================================
+2026-09-07 13:51:37,290 [INFO] BAŞARILI! Makale yayımlandı: Türkiye'de Yapay Zeka Seferberliği: 5 Milyon Kişiye Dev Eğitim Hamlesi
+2026-09-07 13:51:37,290 [INFO]   Dosya: articles/turkiyede-yapay-zeka-seferberligi-5-milyon-kisiye-egitim.html
+2026-09-07 13:51:37,291 [INFO]   Kategori: Veri Bilimi
+2026-09-07 13:51:37,291 [INFO] ============================================================
+2026-09-07 19:25:58,572 [INFO] ============================================================
+2026-09-07 19:25:58,573 [INFO] İçerik botu başlatılıyor... (2026-09-07 19:25)
+2026-09-07 19:25:58,573 [INFO] ============================================================
+2026-09-07 19:25:58,574 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 19:25:59,761 [INFO] RSS'den 79 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-07 19:26:00,483 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-07 19:26:01,095 [INFO] RSS'den 47 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-07 19:26:02,023 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-07 19:26:03,045 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-07 19:26:04,024 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-07 19:26:04,048 [INFO]    Seçilen konu: Veri Bilimi — Nvidia yerel çip üreticileriyle rekabet edebilmek amacıyla Çinin yapay zeka modellerine destek
+2026-09-07 19:26:04,049 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 19:26:04,050 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-07 19:27:02,054 [INFO] Gemini yanıtı alındı. Uzunluk: 7750 karakter
+2026-09-07 19:27:02,068 [INFO] Görsel aranıyor...
+2026-09-07 19:27:02,069 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 19:27:02,070 [INFO] Fallback görsel kullanılıyor: Veri Bilimi
+2026-09-07 19:27:02,072 [INFO] Görsel eklendi: fallback
+2026-09-07 19:27:02,077 [INFO]    Başlık: Nvidia’nın Çin Stratejisi: Yerel Çip Üreticileriyle Rekabet İçin Yapay Zeka Hamlesi
+2026-09-07 19:27:02,079 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-07 19:27:02,080 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 19:27:02,087 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\nvidia-cin-yapay-zeka-cip-rekabeti-stratejisi.html
+2026-09-07 19:27:02,089 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 19:27:02,092 [INFO] index.html güncellendi: Nvidia’nın Çin Stratejisi: Yerel Çip Üreticileriyle Rekabet İçin Yapay Zeka Hamlesi makale en üste eklendi.
+2026-09-07 19:27:02,093 [INFO]    Ana sayfa güncellendi.
+2026-09-07 19:27:02,097 [INFO] ============================================================
+2026-09-07 19:27:02,097 [INFO] BAŞARILI! Makale yayımlandı: Nvidia’nın Çin Stratejisi: Yerel Çip Üreticileriyle Rekabet İçin Yapay Zeka Hamlesi
+2026-09-07 19:27:02,099 [INFO]   Dosya: articles/nvidia-cin-yapay-zeka-cip-rekabeti-stratejisi.html
+2026-09-07 19:27:02,100 [INFO]   Kategori: Veri Bilimi
+2026-09-07 19:27:02,101 [INFO] ============================================================
+2026-09-07 19:44:16,431 [INFO] ============================================================
+2026-09-07 19:44:16,431 [INFO] İçerik botu başlatılıyor... (2026-09-07 19:44)
+2026-09-07 19:44:16,432 [INFO] ============================================================
+2026-09-07 19:44:16,432 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 19:44:16,433 [INFO] Rastgele konu seçildi: Mobil - Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 19:44:16,433 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 19:44:16,433 [INFO]    Seçilen konu: Mobil — Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 19:44:16,434 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 19:44:16,435 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 19:44:16,435 [INFO] Fallback görsel kullanılıyor: Mobil
+2026-09-07 19:44:16,435 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 19:44:16,436 [INFO]    Başlık: Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 19:44:16,436 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 19:44:16,436 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 19:44:16,438 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\mobil-uygulama-gelitirme-trendleri-2026.html
+2026-09-07 19:44:16,439 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 19:44:16,441 [INFO] index.html güncellendi: Mobil Uygulama Geliştirme Trendleri 2026 makale en üste eklendi.
+2026-09-07 19:44:16,441 [INFO]    Ana sayfa güncellendi.
+2026-09-07 19:44:16,442 [WARNING] github_url config'de yok, deploy atlanıyor.
+2026-09-07 19:44:16,450 [INFO] ============================================================
+2026-09-07 19:44:16,450 [INFO] BAŞARILI! Makale yayımlandı: Mobil Uygulama Geliştirme Trendleri 2026
+2026-09-07 19:44:16,451 [INFO]   Dosya: articles/mobil-uygulama-gelitirme-trendleri-2026.html
+2026-09-07 19:44:16,451 [INFO]   Kategori: Mobil
+2026-09-07 19:44:16,451 [INFO] ============================================================
