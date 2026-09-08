@@ -13,6 +13,8 @@ import images
 
 log = logging.getLogger("content_bot.generator")
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 def configure_client():
     """Gemini API istemcisini yapılandırır."""
@@ -201,6 +203,9 @@ def parse_article_response(raw_text):
             pass
 
     log.error("JSON parse hatası — tüm denemeler başarısız.")
+    # Debug: sorunlu bölgeyi göster
+    log.error("JSON ilk 200: %s", cleaned[:200])
+    log.error("JSON son 200: %s", cleaned[-200:])
     return None
 
 

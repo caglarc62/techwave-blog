@@ -1255,3 +1255,88 @@ Please retry in 54.695231987s. [links {
 2026-09-07 21:45:48,673 [INFO]   Dosya: articles/i-hayatnda-yapay-zeka-kullanm-alanlar.html
 2026-09-07 21:45:48,674 [INFO]   Kategori: AI Araçları
 2026-09-07 21:45:48,674 [INFO] ============================================================
+2026-09-08 12:08:45,980 [INFO] ============================================================
+2026-09-08 12:08:45,981 [INFO] İçerik botu başlatılıyor... (2026-09-08 12:08)
+2026-09-08 12:08:45,981 [INFO] ============================================================
+2026-09-08 12:08:45,981 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-08 12:08:45,983 [INFO] Daha önce 18 makale yayınlanmış.
+2026-09-08 12:08:46,749 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-08 12:08:47,680 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-08 12:08:48,358 [INFO] RSS'den 49 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-08 12:08:49,417 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-08 12:08:50,418 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-08 12:08:51,545 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-08 12:08:51,578 [INFO]    Seçilen konu: Python — Python Kodlama Yarışması Kahta Fen Lisesinde Gerçekleştirildi - MEB
+2026-09-08 12:08:51,579 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-08 12:08:51,580 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-08 12:09:20,579 [INFO] Gemini yanıtı alındı. Uzunluk: 7570 karakter
+2026-09-08 12:09:20,898 [INFO] Görsel aranıyor...
+2026-09-08 12:09:21,206 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-08 12:09:21,454 [INFO] Fallback görsel kullanılıyor: Python
+2026-09-08 12:09:21,624 [INFO] Görsel eklendi: fallback
+2026-09-08 12:09:21,738 [INFO]    Başlık: Python Kodlama Yarışması Kahta Fen Lisesinde Gerçekleştirildi: Genç Yazılımcılar Geleceği Kodluyor
+2026-09-08 12:09:21,999 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-08 12:09:22,198 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-08 12:09:22,251 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-kodlama-yarismasi-kahta-fen-lisesinde-gerceklestirildi.html
+2026-09-08 12:09:22,307 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-08 12:09:22,353 [INFO] index.html güncellendi: Python Kodlama Yarışması Kahta Fen Lisesinde Gerçekleştirildi: Genç Yazılımcılar Geleceği Kodluyor makale en üste eklendi.
+2026-09-08 12:09:22,408 [INFO]    Ana sayfa güncellendi.
+2026-09-08 19:32:34,049 [INFO] ============================================================
+2026-09-08 19:32:34,049 [INFO] İçerik botu başlatılıyor... (2026-09-08 19:32)
+2026-09-08 19:32:34,050 [INFO] ============================================================
+2026-09-08 19:32:34,050 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-08 19:32:34,052 [INFO] Daha önce 19 makale yayınlanmış.
+2026-09-08 19:32:35,042 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-08 19:32:38,158 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-08 19:32:38,848 [INFO] RSS'den 50 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-08 19:32:39,743 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-08 19:32:40,673 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-08 19:32:41,686 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-08 19:32:41,721 [INFO]    Seçilen konu: Veri Bilimi — Teknoloji devleri yapay zekâ veri merkezlerinde su kullanımını azaltabileceklerini iddia ediyor -
+2026-09-08 19:32:41,722 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-08 19:32:41,722 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-08 19:33:35,086 [INFO] Gemini yanıtı alındı. Uzunluk: 7849 karakter
+2026-09-08 19:33:35,100 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 19:33:35,101 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-08 19:33:35,101 [INFO] Tekrar deneniyor...
+2026-09-08 19:33:35,101 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-08 19:34:29,543 [INFO] Gemini yanıtı alındı. Uzunluk: 8682 karakter
+2026-09-08 19:34:29,557 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 19:34:29,558 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-08 19:34:29,559 [INFO] Tekrar deneniyor...
+2026-09-08 19:34:29,559 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-08 19:35:16,924 [INFO] Gemini yanıtı alındı. Uzunluk: 7105 karakter
+2026-09-08 19:35:16,933 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 19:35:16,934 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-08 19:35:16,935 [ERROR] Gemini API hatası (deneme 3): name 'SCRIPT_DIR' is not defined
+2026-09-08 19:35:16,936 [ERROR] Makale üretilemedi!
+2026-09-08 23:51:23,632 [INFO] ============================================================
+2026-09-08 23:51:23,633 [INFO] İçerik botu başlatılıyor... (2026-09-08 23:51)
+2026-09-08 23:51:23,633 [INFO] ============================================================
+2026-09-08 23:51:23,634 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-08 23:51:23,635 [INFO] Daha önce 19 makale yayınlanmış.
+2026-09-08 23:51:24,510 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-08 23:51:25,337 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-08 23:51:26,005 [INFO] RSS'den 51 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-08 23:51:26,133 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-08 23:51:26,134 [INFO] Web'den 0 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-08 23:51:27,098 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-08 23:51:28,035 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-08 23:51:28,057 [INFO]    Seçilen konu: Yazılım — Yazılım Haberleri - Son Dakika Yazılım Hakkında Güncel - Bigpara
+2026-09-08 23:51:28,058 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-08 23:51:28,059 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-08 23:51:58,918 [INFO] Gemini yanıtı alındı. Uzunluk: 7687 karakter
+2026-09-08 23:51:58,932 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 23:51:58,932 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-08 23:51:58,933 [INFO] Tekrar deneniyor...
+2026-09-08 23:51:58,934 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-08 23:52:22,329 [INFO] Gemini yanıtı alındı. Uzunluk: 7433 karakter
+2026-09-08 23:52:22,387 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 23:52:22,434 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-08 23:52:22,458 [INFO] Tekrar deneniyor...
+2026-09-08 23:52:22,459 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-08 23:52:50,353 [INFO] Gemini yanıtı alındı. Uzunluk: 6680 karakter
+2026-09-08 23:52:50,366 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 23:52:50,366 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-08 23:52:50,367 [ERROR] Gemini API hatası (deneme 3): name 'SCRIPT_DIR' is not defined
+2026-09-08 23:52:50,367 [ERROR] Makale üretilemedi!
