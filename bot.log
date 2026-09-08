@@ -1231,3 +1231,27 @@ Please retry in 54.695231987s. [links {
 }
 ]
 2026-09-07 21:45:05,335 [ERROR] Makale üretilemedi!
+2026-09-07 21:45:44,792 [INFO] ============================================================
+2026-09-07 21:45:44,793 [INFO] İçerik botu başlatılıyor... (2026-09-07 21:45)
+2026-09-07 21:45:44,794 [INFO] ============================================================
+2026-09-07 21:45:44,794 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-07 21:45:44,794 [INFO] Rastgele konu seçildi: AI Araçları - İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 21:45:44,794 [INFO] Test modu: Rastgele konu seçildi.
+2026-09-07 21:45:44,795 [INFO]    Seçilen konu: AI Araçları — İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 21:45:44,795 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-07 21:45:44,796 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-07 21:45:44,796 [INFO] Fallback görsel kullanılıyor: AI Araçları
+2026-09-07 21:45:44,797 [INFO]    Test makalesi oluşturuldu.
+2026-09-07 21:45:44,797 [INFO]    Başlık: İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 21:45:44,797 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-07 21:45:44,798 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-07 21:45:44,801 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\i-hayatnda-yapay-zeka-kullanm-alanlar.html
+2026-09-07 21:45:44,803 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-07 21:45:44,807 [INFO] index.html güncellendi: İş Hayatında Yapay Zeka Kullanım Alanları makale en üste eklendi.
+2026-09-07 21:45:44,808 [INFO]    Ana sayfa güncellendi.
+2026-09-07 21:45:48,669 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-07 21:45:48,673 [INFO] ============================================================
+2026-09-07 21:45:48,673 [INFO] BAŞARILI! Makale yayımlandı: İş Hayatında Yapay Zeka Kullanım Alanları
+2026-09-07 21:45:48,673 [INFO]   Dosya: articles/i-hayatnda-yapay-zeka-kullanm-alanlar.html
+2026-09-07 21:45:48,674 [INFO]   Kategori: AI Araçları
+2026-09-07 21:45:48,674 [INFO] ============================================================
