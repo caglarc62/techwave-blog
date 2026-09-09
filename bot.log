@@ -1340,3 +1340,46 @@ Please retry in 54.695231987s. [links {
 2026-09-08 23:52:50,366 [ERROR] Deneme 3: JSON parse başarısız.
 2026-09-08 23:52:50,367 [ERROR] Gemini API hatası (deneme 3): name 'SCRIPT_DIR' is not defined
 2026-09-08 23:52:50,367 [ERROR] Makale üretilemedi!
+2026-09-08 23:56:14,903 [INFO] ============================================================
+2026-09-08 23:56:14,904 [INFO] İçerik botu başlatılıyor... (2026-09-08 23:56)
+2026-09-08 23:56:14,905 [INFO] ============================================================
+2026-09-08 23:56:14,905 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-08 23:56:14,906 [INFO] Daha önce 19 makale yayınlanmış.
+2026-09-08 23:56:15,807 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-08 23:56:16,598 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-08 23:56:17,293 [INFO] RSS'den 51 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-08 23:56:18,216 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-08 23:56:19,191 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-08 23:56:20,048 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-08 23:56:20,063 [INFO]    Seçilen konu: Yapay Zeka — HaFPES 2026 Yapay Zekadan İnsan Odaklı Eğitim İnovasyonuna - Vietnamvn
+2026-09-08 23:56:20,063 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-08 23:56:20,063 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-08 23:56:55,976 [INFO] Gemini yanıtı alındı. Uzunluk: 7023 karakter
+2026-09-08 23:56:55,981 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-08 23:56:55,982 [ERROR] JSON ilk 200: {
+    "title": "HaFPES 2026: Yapay Zekadan İnsan Odaklı Eğitim İnovasyonuna",
+    "slug": "hafpes-2026-yapay-zekadan-insan-odakli-egitim-inovasyonuna",
+    "excerpt": "HaFPES 2026 vizyonuyla yapay zek
+2026-09-08 23:56:55,982 [ERROR] JSON son 200: n insan odaklı yaklaşımlar, geleceğin nesillerini çok daha donanımlı, yaratıcı ve empatik bireyler olarak yetiştirmemize olanak tanıyacaktır.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-08 23:56:55,982 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-08 23:56:55,982 [INFO] Tekrar deneniyor...
+2026-09-08 23:56:55,983 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-08 23:57:18,457 [INFO] Gemini yanıtı alındı. Uzunluk: 6924 karakter
+2026-09-08 23:57:18,460 [INFO] Görsel aranıyor...
+2026-09-08 23:57:18,461 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-08 23:57:18,461 [INFO] Fallback görsel kullanılıyor: Yapay Zeka
+2026-09-08 23:57:18,462 [INFO] Görsel eklendi: fallback
+2026-09-08 23:57:18,466 [INFO]    Başlık: HaFPES 2026: Yapay Zekadan İnsan Odaklı Eğitim İnovasyonuna
+2026-09-08 23:57:18,466 [INFO]    Okuma süresi: 3 dk okuma
+2026-09-08 23:57:18,467 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-08 23:57:18,473 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\hafpes-2026-yapay-zekadan-insan-odakli-egitim-inovasyonuna.html
+2026-09-08 23:57:18,473 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-08 23:57:18,478 [INFO] index.html güncellendi: HaFPES 2026: Yapay Zekadan İnsan Odaklı Eğitim İnovasyonuna makale en üste eklendi.
+2026-09-08 23:57:18,479 [INFO]    Ana sayfa güncellendi.
+2026-09-08 23:57:23,027 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-08 23:57:23,032 [INFO] ============================================================
+2026-09-08 23:57:23,033 [INFO] BAŞARILI! Makale yayımlandı: HaFPES 2026: Yapay Zekadan İnsan Odaklı Eğitim İnovasyonuna
+2026-09-08 23:57:23,033 [INFO]   Dosya: articles/hafpes-2026-yapay-zekadan-insan-odakli-egitim-inovasyonuna.html
+2026-09-08 23:57:23,033 [INFO]   Kategori: Yapay Zeka
+2026-09-08 23:57:23,033 [INFO] ============================================================
