@@ -1383,3 +1383,60 @@ Please retry in 54.695231987s. [links {
 2026-09-08 23:57:23,033 [INFO]   Dosya: articles/hafpes-2026-yapay-zekadan-insan-odakli-egitim-inovasyonuna.html
 2026-09-08 23:57:23,033 [INFO]   Kategori: Yapay Zeka
 2026-09-08 23:57:23,033 [INFO] ============================================================
+2026-09-09 10:49:46,246 [INFO] ============================================================
+2026-09-09 10:49:46,246 [INFO] İçerik botu başlatılıyor... (2026-09-09 10:49)
+2026-09-09 10:49:46,247 [INFO] ============================================================
+2026-09-09 10:49:46,247 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-09 10:49:46,249 [INFO] Daha önce 20 makale yayınlanmış.
+2026-09-09 10:49:47,147 [INFO] RSS'den 75 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-09 10:49:47,846 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-09 10:49:48,385 [INFO] RSS'den 52 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-09 10:49:49,534 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-09 10:49:50,583 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-09 10:49:51,480 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-09 10:49:51,491 [INFO]    Seçilen konu: Veri Bilimi — Türkçe Şarkıların 50 Yıllık Değişimi Veri Madenciliğiyle İncelendi - Kastamonu Gündem Gazetesi
+2026-09-09 10:49:51,492 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-09 10:49:51,493 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-09 10:50:23,527 [INFO] Gemini yanıtı alındı. Uzunluk: 7219 karakter
+2026-09-09 10:50:23,531 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-09 10:50:23,531 [ERROR] JSON ilk 200: {
+    "title": "Türkçe Şarkıların 50 Yıllık Değişimi: Veri Madenciliği ile Müzikte Zaman Yolculuğu",
+    "slug": "turkce-sarkilarin-50-yillik-degisimi-veri-madenciligi",
+    "excerpt": "Türkçe müziğin
+2026-09-09 10:50:23,532 [ERROR] JSON son 200: eri okumadaki gücünü bir kez daha kanıtlıyor. Türkçe şarkıların 50 yıllık serüveni, toplumun duygusal ve kültürel haritasını önümüze seriyor.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-09 10:50:23,532 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-09 10:50:23,533 [INFO] Tekrar deneniyor...
+2026-09-09 10:50:23,533 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-09 10:51:58,395 [INFO] Gemini yanıtı alındı. Uzunluk: 8082 karakter
+2026-09-09 10:51:58,403 [INFO] Görsel aranıyor...
+2026-09-09 10:51:58,404 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-09 10:51:58,406 [INFO] Fallback görsel kullanılıyor: Veri Bilimi
+2026-09-09 10:51:58,407 [INFO] Görsel eklendi: fallback
+2026-09-09 10:51:58,409 [INFO]    Başlık: Türkçe Şarkıların 50 Yıllık Değişimi: Veri Madenciliği ile Müzikal Bir İnceleme
+2026-09-09 10:51:58,410 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-09 10:51:58,411 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-09 10:51:58,421 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\turkce-sarkilarin-50-yillik-degisimi-veri-madenciligi.html
+2026-09-09 10:51:58,422 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-09 10:51:58,429 [INFO] index.html güncellendi: Türkçe Şarkıların 50 Yıllık Değişimi: Veri Madenciliği ile Müzikal Bir İnceleme makale en üste eklendi.
+2026-09-09 10:51:58,430 [INFO]    Ana sayfa güncellendi.
+2026-09-09 10:52:04,412 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-09 10:52:04,415 [INFO] ============================================================
+2026-09-09 10:52:04,416 [INFO] BAŞARILI! Makale yayımlandı: Türkçe Şarkıların 50 Yıllık Değişimi: Veri Madenciliği ile Müzikal Bir İnceleme
+2026-09-09 10:52:04,416 [INFO]   Dosya: articles/turkce-sarkilarin-50-yillik-degisimi-veri-madenciligi.html
+2026-09-09 10:52:04,417 [INFO]   Kategori: Veri Bilimi
+2026-09-09 10:52:04,417 [INFO] ============================================================
+2026-09-10 00:13:52,559 [INFO] ============================================================
+2026-09-10 00:13:52,560 [INFO] İçerik botu başlatılıyor... (2026-09-10 00:13)
+2026-09-10 00:13:52,560 [INFO] ============================================================
+2026-09-10 00:13:52,561 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-10 00:13:52,562 [INFO] Daha önce 21 makale yayınlanmış.
+2026-09-10 00:14:08,302 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-10 00:14:09,029 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-10 00:14:09,722 [INFO] RSS'den 53 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-10 00:14:10,876 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-10 00:14:11,888 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-10 00:14:12,837 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-10 00:14:12,867 [INFO]    Seçilen konu: Yapay Zeka — Nissan cuts model lineup by 20 as it unveils new AI tech
+2026-09-10 00:14:12,870 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-10 00:14:12,878 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
