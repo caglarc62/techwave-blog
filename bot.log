@@ -1440,3 +1440,21 @@ Please retry in 54.695231987s. [links {
 2026-09-10 00:14:12,867 [INFO]    Seçilen konu: Yapay Zeka — Nissan cuts model lineup by 20 as it unveils new AI tech
 2026-09-10 00:14:12,870 [INFO] 2. Adım: Claude API ile makale üretiliyor...
 2026-09-10 00:14:12,878 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-10 00:14:36,151 [INFO] Gemini yanıtı alındı. Uzunluk: 7209 karakter
+2026-09-10 00:14:36,156 [INFO] Görsel aranıyor...
+2026-09-10 00:14:36,157 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-10 00:14:36,158 [INFO] Fallback görsel kullanılıyor: Yapay Zeka
+2026-09-10 00:14:36,158 [INFO] Görsel eklendi: fallback
+2026-09-10 00:14:36,159 [INFO]    Başlık: Nissan Model Yelpazesini 20 Adet Azaltıyor: Otomotiv Devinden Yapay Zeka Hamlesi
+2026-09-10 00:14:36,159 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-10 00:14:36,160 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-10 00:14:36,164 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\nissan-model-sayisini-azaltiyor-yapay-zeka-teknolojileri.html
+2026-09-10 00:14:36,165 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-10 00:14:36,169 [INFO] index.html güncellendi: Nissan Model Yelpazesini 20 Adet Azaltıyor: Otomotiv Devinden Yapay Zeka Hamlesi makale en üste eklendi.
+2026-09-10 00:14:36,170 [INFO]    Ana sayfa güncellendi.
+2026-09-10 00:14:41,749 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-10 00:14:41,756 [INFO] ============================================================
+2026-09-10 00:14:41,757 [INFO] BAŞARILI! Makale yayımlandı: Nissan Model Yelpazesini 20 Adet Azaltıyor: Otomotiv Devinden Yapay Zeka Hamlesi
+2026-09-10 00:14:41,757 [INFO]   Dosya: articles/nissan-model-sayisini-azaltiyor-yapay-zeka-teknolojileri.html
+2026-09-10 00:14:41,758 [INFO]   Kategori: Yapay Zeka
+2026-09-10 00:14:41,758 [INFO] ============================================================
