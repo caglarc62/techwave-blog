@@ -210,29 +210,44 @@ def parse_article_response(raw_text):
 
 
 def _clean_control_chars(json_str):
-    """String içindeki kontrol karakterlerini escape eder."""
+    """String içindeki kontrol karakterlerini escape eder — daha güçlü versiyon."""
     cleaned = []
     in_string = False
     escape_next = False
-    for ch in json_str:
+    
+    for i, ch in enumerate(json_str):
         if escape_next:
             cleaned.append(ch)
             escape_next = False
             continue
+        
         if ch == '\\' and in_string:
             cleaned.append(ch)
             escape_next = True
             continue
+        
         if ch == '"':
             in_string = not in_string
             cleaned.append(ch)
             continue
-        if in_string and ord(ch) < 0x20:
-            escaped = {'\n': '\\n', '\r': '\\r', '\t': '\\t'}.get(ch, '')
-            if escaped:
-                cleaned.append(escaped)
-            continue
+        
+        if in_string:
+            # String içindeyiz — tüm kontrol karakterlerini escape et
+            if ch == '\n':
+                cleaned.append('\\n')
+                continue
+            elif ch == '\r':
+                cleaned.append('\\r')
+                continue
+            elif ch == '\t':
+                cleaned.append('\\t')
+                continue
+            elif ord(ch) < 0x20:
+                # Diğer kontrol karakterlerini atla
+                continue
+        
         cleaned.append(ch)
+    
     return ''.join(cleaned)
 
 

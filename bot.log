@@ -1490,3 +1490,94 @@ Please retry in 54.695231987s. [links {
 2026-09-11 11:52:10,627 [INFO]   Dosya: articles/sifirdan-ileri-seviyeye-python-programlama-kursu-2499-tl.html
 2026-09-11 11:52:10,628 [INFO]   Kategori: Python
 2026-09-11 11:52:10,628 [INFO] ============================================================
+2026-09-12 11:27:58,946 [INFO] ============================================================
+2026-09-12 11:27:58,947 [INFO] İçerik botu başlatılıyor... (2026-09-12 11:27)
+2026-09-12 11:27:58,948 [INFO] ============================================================
+2026-09-12 11:27:58,948 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-12 11:27:58,950 [INFO] Daha önce 23 makale yayınlanmış.
+2026-09-12 11:27:59,779 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-12 11:28:00,449 [INFO] RSS'den 102 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-12 11:28:00,964 [INFO] RSS'den 52 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-12 11:28:02,062 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-12 11:28:03,009 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-12 11:28:03,899 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-12 11:28:03,915 [INFO]    Seçilen konu: Blockchain — How can you redefine resilience for the next frontier of vulnerabilities -
+2026-09-12 11:28:03,915 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-12 11:28:03,916 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-12 11:29:00,205 [INFO] Gemini yanıtı alındı. Uzunluk: 9129 karakter
+2026-09-12 11:29:00,220 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-12 11:29:00,221 [ERROR] JSON ilk 200: {
+    "title": "Geleceğin Tehditlerine Karşı Blockchain Güvenliği: Dayanıklılığı Yeniden Tanımlamak",
+    "slug": "gelecegin-tehditlerine-karsi-blockchain-guvenligi-dayanikliligi-yeniden-tanimlamak",
+
+2026-09-12 11:29:00,222 [ERROR] JSON son 200:  ortak bir paydada inşa etmek demektir. Bir sonraki siber güvenlik sınırına hazır olmak, bu yenilikçi vizyonu bugünden benimsemekten geçiyor.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-12 11:29:00,223 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-12 11:29:00,223 [INFO] Tekrar deneniyor...
+2026-09-12 11:29:00,224 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-12 11:30:03,009 [INFO] Gemini yanıtı alındı. Uzunluk: 8485 karakter
+2026-09-12 11:30:03,015 [INFO] Görsel aranıyor...
+2026-09-12 11:30:03,017 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-12 11:30:03,017 [INFO] Fallback görsel kullanılıyor: Blockchain
+2026-09-12 11:30:03,017 [INFO] Görsel eklendi: fallback
+2026-09-12 11:30:03,018 [INFO]    Başlık: Blokzincirde Dayanıklılığı Yeniden Tanımlamak: Geleceğin Siber Tehditlerine Karşı Savunma Mimarisi
+2026-09-12 11:30:03,019 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-12 11:30:03,019 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-12 11:30:03,024 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\blokzincirde-dayanikliligi-yeniden-tanimlamak-siber-tehditler.html
+2026-09-12 11:30:03,024 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-12 11:30:03,028 [INFO] index.html güncellendi: Blokzincirde Dayanıklılığı Yeniden Tanımlamak: Geleceğin Siber Tehditlerine Karşı Savunma Mimarisi makale en üste eklendi.
+2026-09-12 11:30:03,029 [INFO]    Ana sayfa güncellendi.
+2026-09-12 11:30:07,612 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-12 11:30:07,616 [INFO] ============================================================
+2026-09-12 11:30:07,617 [INFO] BAŞARILI! Makale yayımlandı: Blokzincirde Dayanıklılığı Yeniden Tanımlamak: Geleceğin Siber Tehditlerine Karşı Savunma Mimarisi
+2026-09-12 11:30:07,617 [INFO]   Dosya: articles/blokzincirde-dayanikliligi-yeniden-tanimlamak-siber-tehditler.html
+2026-09-12 11:30:07,617 [INFO]   Kategori: Blockchain
+2026-09-12 11:30:07,618 [INFO] ============================================================
+2026-09-12 22:01:56,829 [INFO] ============================================================
+2026-09-12 22:01:56,830 [INFO] İçerik botu başlatılıyor... (2026-09-12 22:01)
+2026-09-12 22:01:56,830 [INFO] ============================================================
+2026-09-12 22:01:56,831 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-12 22:01:56,832 [INFO] Daha önce 24 makale yayınlanmış.
+2026-09-12 22:01:58,004 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-12 22:01:58,912 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-12 22:02:04,011 [INFO] RSS'den 53 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-12 22:02:04,231 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-12 22:02:04,232 [INFO] Web'den 0 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-12 22:02:05,275 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-12 22:02:06,188 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-12 22:02:06,201 [INFO]    Seçilen konu: Yapay Zeka — Google yapay zeka için kesenin ağzını açtı - CNN Türk
+2026-09-12 22:02:06,202 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-12 22:02:06,202 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-12 22:02:28,453 [INFO] Gemini yanıtı alındı. Uzunluk: 6877 karakter
+2026-09-12 22:02:28,465 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-12 22:02:28,466 [ERROR] JSON ilk 200: {
+    "title": "Google Yapay Zeka İçin Kesenin Ağzını Açtı: Milyar Dolarlık Dev Yatırımın Detayları",
+    "slug": "google-yapay-zeka-icin-kesenin-agzini-acti-dev-yatirimlar",
+    "excerpt": "Google, y
+2026-09-12 22:02:28,467 [ERROR] JSON son 200: maya devam edeceğiz. Teknoloji dünyasındaki bu hızlı gelişmeleri yakından takip etmek, dönüşümün gerisinde kalmamak adına büyük önem taşıyor.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-12 22:02:28,468 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-12 22:02:28,469 [INFO] Tekrar deneniyor...
+2026-09-12 22:02:28,470 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-12 22:02:52,124 [INFO] Gemini yanıtı alındı. Uzunluk: 7316 karakter
+2026-09-12 22:02:52,141 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-12 22:02:52,142 [ERROR] JSON ilk 200: {
+    "title": "Google Yapay Zeka İçin Kesenin Ağzını Açtı: Teknoloji Devinin Milyar Dolarlık YZ Stratejisi",
+    "slug": "google-yapay-zeka-icin-kesenin-agzini-acti",
+    "excerpt": "Google, yapay ze
+2026-09-12 22:02:52,142 [ERROR] JSON son 200: yle karşılaşacağız. Google gibi teknoloji devlerinin bu yatırımları, dijital geleceğimizin sınırlarını yeniden çizmeye devam edecek.</p><p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>"
+}
+2026-09-12 22:02:52,143 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-12 22:02:52,144 [INFO] Tekrar deneniyor...
+2026-09-12 22:02:52,144 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-12 22:03:09,762 [INFO] Gemini yanıtı alındı. Uzunluk: 5951 karakter
+2026-09-12 22:03:09,853 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-12 22:03:09,912 [ERROR] JSON ilk 200: {
+    "title": "Google Yapay Zeka İçin Kesenin Ağzını Açtı: Milyar Dolarlık Yatırımın Perde Arkası",
+    "slug": "google-yapay-zeka-icin-kesenin-agzini-acti-milyar-dolarlik-yatirim",
+    "excerpt": "G
+2026-09-12 22:03:09,982 [ERROR] JSON son 200: erle karşılaşacağımızın açık bir kanıtı. Teknoloji dünyasını yakından takip edenler için bu dönem, büyük fırsatları da beraberinde getiriyor.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-12 22:03:10,052 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-12 22:03:10,120 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
+2026-09-12 22:03:10,153 [ERROR] Makale üretilemedi!
