@@ -1458,3 +1458,35 @@ Please retry in 54.695231987s. [links {
 2026-09-10 00:14:41,757 [INFO]   Dosya: articles/nissan-model-sayisini-azaltiyor-yapay-zeka-teknolojileri.html
 2026-09-10 00:14:41,758 [INFO]   Kategori: Yapay Zeka
 2026-09-10 00:14:41,758 [INFO] ============================================================
+2026-09-11 11:50:51,184 [INFO] ============================================================
+2026-09-11 11:50:51,185 [INFO] İçerik botu başlatılıyor... (2026-09-11 11:50)
+2026-09-11 11:50:51,185 [INFO] ============================================================
+2026-09-11 11:50:51,186 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-11 11:50:51,188 [INFO] Daha önce 22 makale yayınlanmış.
+2026-09-11 11:50:52,002 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-11 11:50:52,721 [INFO] RSS'den 102 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-11 11:50:53,431 [INFO] RSS'den 53 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-11 11:50:54,538 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-11 11:50:55,516 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-11 11:50:56,449 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-11 11:50:56,465 [INFO]    Seçilen konu: Python — Sıfırdan ileri seviyeye Python programlama dili kursu sadece 2499 TL - DonanımHaber
+2026-09-11 11:50:56,465 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-11 11:50:56,466 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-11 11:52:05,547 [INFO] Gemini yanıtı alındı. Uzunluk: 7522 karakter
+2026-09-11 11:52:05,552 [INFO] Görsel aranıyor...
+2026-09-11 11:52:05,553 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-11 11:52:05,553 [INFO] Fallback görsel kullanılıyor: Python
+2026-09-11 11:52:05,553 [INFO] Görsel eklendi: fallback
+2026-09-11 11:52:05,554 [INFO]    Başlık: Sıfırdan İleri Seviyeye Python Programlama: 2499 TL'lik Dev Kurs Fırsatı ve Yol Haritası
+2026-09-11 11:52:05,554 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-11 11:52:05,555 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-11 11:52:05,560 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\sifirdan-ileri-seviyeye-python-programlama-kursu-2499-tl.html
+2026-09-11 11:52:05,561 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-11 11:52:05,564 [INFO] index.html güncellendi: Sıfırdan İleri Seviyeye Python Programlama: 2499 TL'lik Dev Kurs Fırsatı ve Yol Haritası makale en üste eklendi.
+2026-09-11 11:52:05,565 [INFO]    Ana sayfa güncellendi.
+2026-09-11 11:52:10,621 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-11 11:52:10,626 [INFO] ============================================================
+2026-09-11 11:52:10,627 [INFO] BAŞARILI! Makale yayımlandı: Sıfırdan İleri Seviyeye Python Programlama: 2499 TL'lik Dev Kurs Fırsatı ve Yol Haritası
+2026-09-11 11:52:10,627 [INFO]   Dosya: articles/sifirdan-ileri-seviyeye-python-programlama-kursu-2499-tl.html
+2026-09-11 11:52:10,628 [INFO]   Kategori: Python
+2026-09-11 11:52:10,628 [INFO] ============================================================
