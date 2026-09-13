@@ -210,45 +210,49 @@ def parse_article_response(raw_text):
 
 
 def _clean_control_chars(json_str):
-    """String içindeki kontrol karakterlerini escape eder — daha güçlü versiyon."""
-    cleaned = []
-    in_string = False
-    escape_next = False
+    """String içindeki kontrol karakterlerini escape eder — en güçlü versiyon."""
+    # Adım 1: Tüm stringleri bul ve sadece onların içini temizle
+    result = []
+    i = 0
+    n = len(json_str)
     
-    for i, ch in enumerate(json_str):
-        if escape_next:
-            cleaned.append(ch)
-            escape_next = False
-            continue
-        
-        if ch == '\\' and in_string:
-            cleaned.append(ch)
-            escape_next = True
-            continue
+    while i < n:
+        ch = json_str[i]
         
         if ch == '"':
-            in_string = not in_string
-            cleaned.append(ch)
-            continue
-        
-        if in_string:
-            # String içindeyiz — tüm kontrol karakterlerini escape et
-            if ch == '\n':
-                cleaned.append('\\n')
-                continue
-            elif ch == '\r':
-                cleaned.append('\\r')
-                continue
-            elif ch == '\t':
-                cleaned.append('\\t')
-                continue
-            elif ord(ch) < 0x20:
-                # Diğer kontrol karakterlerini atla
-                continue
-        
-        cleaned.append(ch)
+            # String başladı — sonuna kadar git
+            result.append(ch)
+            i += 1
+            while i < n:
+                ch2 = json_str[i]
+                if ch2 == '\\' and i + 1 < n:
+                    # Escape sequence — olduğu gibi koru
+                    result.append(ch2)
+                    result.append(json_str[i+1])
+                    i += 2
+                elif ch2 == '"':
+                    # String bitti
+                    result.append(ch2)
+                    i += 1
+                    break
+                elif ord(ch2) < 0x20:
+                    # Kontrol karakteri — escape et
+                    if ch2 == '\n':
+                        result.append('\\n')
+                    elif ch2 == '\r':
+                        result.append('\\r')
+                    elif ch2 == '\t':
+                        result.append('\\t')
+                    # Diğerlerini atla
+                    i += 1
+                else:
+                    result.append(ch2)
+                    i += 1
+        else:
+            result.append(ch)
+            i += 1
     
-    return ''.join(cleaned)
+    return ''.join(result)
 
 
 def _extract_balanced_json(text):
