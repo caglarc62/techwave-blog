@@ -1755,3 +1755,92 @@ Please retry in 54.695231987s. [links {
 2026-09-14 11:32:28,349 [INFO]   Dosya: articles/sifirdan-ileri-seviyeye-python-programlama-dili-kursu-donanimhaber.html
 2026-09-14 11:32:28,350 [INFO]   Kategori: Python
 2026-09-14 11:32:28,350 [INFO] ============================================================
+2026-09-14 11:48:15,154 [INFO] ============================================================
+2026-09-14 11:48:15,155 [INFO] İçerik botu başlatılıyor... (2026-09-14 11:48)
+2026-09-14 11:48:15,156 [INFO] ============================================================
+2026-09-14 11:48:15,156 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-14 11:48:15,158 [INFO] Daha önce 25 makale yayınlanmış.
+2026-09-14 11:48:16,172 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-14 11:48:16,864 [INFO] RSS'den 92 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-14 11:48:17,446 [INFO] RSS'den 51 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-14 11:48:18,565 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-14 11:48:19,472 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-14 11:48:20,308 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-14 11:48:20,322 [INFO]    Seçilen konu: Oyun — Yazılım Python RenPy Oyun Çeviri Aracı - Voorhees - Technopat
+2026-09-14 11:48:20,322 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-14 11:48:20,323 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-14 11:48:43,280 [INFO] Gemini yanıtı alındı. Uzunluk: 7294 karakter
+2026-09-14 11:48:43,293 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-14 11:48:43,293 [ERROR] JSON ilk 200: {
+    "title": "RenPy Oyun Çeviri Aracı Voorhees ile Görsel Romanları Türkçe'ye Çevirin",
+    "slug": "renpy-oyun-ceviri-araci-voorhees-rehberi",
+    "excerpt": "Python tabanlı Voorhees aracı ile RenP
+2026-09-14 11:48:43,294 [ERROR] JSON son 200: rsel romanı Türkçe'ye kazandırmak veya kendi çeviri projenizi başlatmak istiyorsanız, Voorhees gibi pratik araçlarla ilk adımı atabilirsiniz.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-14 11:48:43,294 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-14 11:48:43,294 [INFO] Tekrar deneniyor...
+2026-09-14 11:48:43,295 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-14 11:49:08,972 [INFO] Gemini yanıtı alındı. Uzunluk: 8011 karakter
+2026-09-14 11:49:08,980 [INFO] Görsel aranıyor...
+2026-09-14 11:49:08,981 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-14 11:49:08,982 [INFO] Fallback görsel kullanılıyor: Oyun
+2026-09-14 11:49:08,983 [INFO] Görsel eklendi: fallback
+2026-09-14 11:49:08,985 [INFO]    Başlık: Python ile Ren'Py Oyunları Nasıl Çevrilir? Voorhees Oyun Çeviri Aracı Rehberi
+2026-09-14 11:49:08,986 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-14 11:49:08,986 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-14 11:49:08,992 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-renpy-oyun-ceviri-araci-voorhees.html
+2026-09-14 11:49:08,993 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-14 11:49:08,998 [INFO] index.html güncellendi: Python ile Ren'Py Oyunları Nasıl Çevrilir? Voorhees Oyun Çeviri Aracı Rehberi makale en üste eklendi.
+2026-09-14 11:49:08,999 [INFO]    Ana sayfa güncellendi.
+2026-09-14 11:49:13,200 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-14 11:49:13,205 [INFO] ============================================================
+2026-09-14 11:49:13,206 [INFO] BAŞARILI! Makale yayımlandı: Python ile Ren'Py Oyunları Nasıl Çevrilir? Voorhees Oyun Çeviri Aracı Rehberi
+2026-09-14 11:49:13,206 [INFO]   Dosya: articles/python-renpy-oyun-ceviri-araci-voorhees.html
+2026-09-14 11:49:13,207 [INFO]   Kategori: Oyun
+2026-09-14 11:49:13,207 [INFO] ============================================================
+2026-09-14 18:15:10,343 [INFO] ============================================================
+2026-09-14 18:15:10,344 [INFO] İçerik botu başlatılıyor... (2026-09-14 18:15)
+2026-09-14 18:15:10,345 [INFO] ============================================================
+2026-09-14 18:15:10,345 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-14 18:15:10,346 [INFO] Daha önce 26 makale yayınlanmış.
+2026-09-14 18:15:11,263 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-14 18:15:11,934 [INFO] RSS'den 92 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-14 18:15:12,658 [INFO] RSS'den 51 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-14 18:15:13,955 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-14 18:15:14,905 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-14 18:15:15,862 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-14 18:15:15,873 [INFO]    Seçilen konu: Veri Bilimi — Teknoloji devleri Yapay zekâ veri merkezlerinin artan su iştahı dizginlenebilir mi -
+2026-09-14 18:15:15,874 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-14 18:15:15,874 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-14 18:15:39,196 [INFO] Gemini yanıtı alındı. Uzunluk: 7534 karakter
+2026-09-14 18:15:39,215 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-14 18:15:39,216 [ERROR] JSON ilk 200: {
+    "title": "Teknoloji Devlerinin Sınavı: Yapay Zekâ Veri Merkezlerinin Su Tüketimi Nasıl Dizginlenir?",
+    "slug": "yapay-zeka-veri-merkezlerinin-su-tuketimi-nasil-dizginlenir",
+    "excerpt": "Y
+2026-09-14 18:15:39,219 [ERROR] JSON son 200: ânın zekâsına değil, onun ekolojik ayak izine de yatırım yapması, gezegenimizin geleceği açısından hayati önem taşımaktadır.</p><p><strong>Bu makale TechWave tarafından hazırlanmıştır.</strong></p>"
+}
+2026-09-14 18:15:39,221 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-14 18:15:39,221 [INFO] Tekrar deneniyor...
+2026-09-14 18:15:39,222 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-14 18:16:12,436 [INFO] Gemini yanıtı alındı. Uzunluk: 8855 karakter
+2026-09-14 18:16:12,469 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-14 18:16:12,470 [ERROR] JSON ilk 200: {
+    "title": "Yapay Zekânın Gizli Maliyeti: Veri Merkezlerinin Su İştahı Nasıl Dizginlenebilir?",
+    "slug": "yapay-zekanin-gizli-maliyeti-veri-merkezlerinin-su-istahi-nasil-dizginlenebilir",
+    "
+2026-09-14 18:16:12,476 [ERROR] JSON son 200: f bu değerin 0'a yakın olmasıdır. Aşağıda, veri merkezi sensör verilerini analiz ederek WUE değerini hesaplayan ve kritik seviyelerde uyarı üreten basit bir Python örneğini inceleyebilirsiniz:</p>\n\n
+2026-09-14 18:16:12,480 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-14 18:16:12,527 [INFO] Tekrar deneniyor...
+2026-09-14 18:16:12,528 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-14 18:16:37,081 [INFO] Gemini yanıtı alındı. Uzunluk: 7699 karakter
+2026-09-14 18:16:37,143 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-14 18:16:37,159 [ERROR] JSON ilk 200: {
+    "title": "Yapay Zekâ Veri Merkezlerinin Artan Su İştahı Dizginlenebilir mi?",
+    "slug": "yapay-zeka-veri-merkezlerinin-artan-su-istahi-dizginlenebilir-mi",
+    "excerpt": "Yapay zekâ modelleri
+2026-09-14 18:16:37,172 [ERROR] JSON son 200: esi şarttır.</p><p>Yapay zekânın geleceği, sadece ne kadar zeki olduğuyla değil, aynı zamanda ne kadar sürdürülebilir olduğuyla ölçülecektir.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-14 18:16:37,184 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-14 18:16:37,209 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
+2026-09-14 18:16:37,213 [ERROR] Makale üretilemedi!
