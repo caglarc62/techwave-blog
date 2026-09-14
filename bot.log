@@ -1694,3 +1694,35 @@ Please retry in 54.695231987s. [links {
 2026-09-13 13:10:09,258 [INFO]    Seçilen konu: Veri Bilimi — Teknoloji devleri Yapay zekâ veri merkezlerinin artan su iştahı dizginlenebilir mi -
 2026-09-13 13:10:09,259 [INFO] 2. Adım: Claude API ile makale üretiliyor...
 2026-09-13 13:10:09,259 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-13 13:10:38,620 [INFO] Gemini yanıtı alındı. Uzunluk: 7536 karakter
+2026-09-13 13:10:38,629 [INFO] Görsel aranıyor...
+2026-09-13 13:10:38,630 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-13 13:10:38,630 [INFO] Fallback görsel kullanılıyor: Veri Bilimi
+2026-09-13 13:10:38,631 [INFO] Görsel eklendi: fallback
+2026-09-13 13:10:38,631 [INFO]    Başlık: Yapay Zekânın Gizli Maliyeti: Veri Merkezlerinin Artan Su İştahı Dizginlenebilir mi?
+2026-09-13 13:10:38,632 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-13 13:10:38,632 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-13 13:10:38,636 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\yapay-zekanin-gizli-maliyeti-veri-merkezlerinin-artan-su-istahi-dizginlenebilir-mi.html
+2026-09-13 13:10:38,637 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-13 13:10:38,643 [INFO] index.html güncellendi: Yapay Zekânın Gizli Maliyeti: Veri Merkezlerinin Artan Su İştahı Dizginlenebilir mi? makale en üste eklendi.
+2026-09-13 13:10:38,645 [INFO]    Ana sayfa güncellendi.
+2026-09-13 13:10:46,802 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-13 13:10:46,809 [INFO] ============================================================
+2026-09-13 13:10:46,809 [INFO] BAŞARILI! Makale yayımlandı: Yapay Zekânın Gizli Maliyeti: Veri Merkezlerinin Artan Su İştahı Dizginlenebilir mi?
+2026-09-13 13:10:46,810 [INFO]   Dosya: articles/yapay-zekanin-gizli-maliyeti-veri-merkezlerinin-artan-su-istahi-dizginlenebilir-mi.html
+2026-09-13 13:10:46,810 [INFO]   Kategori: Veri Bilimi
+2026-09-13 13:10:46,810 [INFO] ============================================================
+2026-09-14 11:31:24,766 [INFO] ============================================================
+2026-09-14 11:31:24,767 [INFO] İçerik botu başlatılıyor... (2026-09-14 11:31)
+2026-09-14 11:31:24,767 [INFO] ============================================================
+2026-09-14 11:31:24,768 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-14 11:31:24,771 [INFO] Daha önce 26 makale yayınlanmış.
+2026-09-14 11:31:25,620 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-14 11:31:26,377 [INFO] RSS'den 92 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-14 11:31:27,074 [INFO] RSS'den 51 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-14 11:31:28,202 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-14 11:31:29,032 [INFO] Web'den 0 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-14 11:31:29,975 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-14 11:31:29,989 [INFO]    Seçilen konu: Python — Sıfırdan ileri seviyeye Python programlama dili kursu sadece 2499 TL - DonanımHaber
+2026-09-14 11:31:29,990 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-14 11:31:29,990 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
