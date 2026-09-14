@@ -1726,3 +1726,32 @@ Please retry in 54.695231987s. [links {
 2026-09-14 11:31:29,989 [INFO]    Seçilen konu: Python — Sıfırdan ileri seviyeye Python programlama dili kursu sadece 2499 TL - DonanımHaber
 2026-09-14 11:31:29,990 [INFO] 2. Adım: Claude API ile makale üretiliyor...
 2026-09-14 11:31:29,990 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-14 11:31:53,689 [INFO] Gemini yanıtı alındı. Uzunluk: 7832 karakter
+2026-09-14 11:31:53,697 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-14 11:31:53,697 [ERROR] JSON ilk 200: {
+    "title": "Sıfırdan İleri Seviyeye Python Programlama Rehberi: 2499 TL’lik Eğitimin Detaylı İncelemesi",
+    "slug": "sifirdan-ileri-seviyeye-python-programlama-rehberi",
+    "excerpt": "Python ö
+2026-09-14 11:31:53,698 [ERROR] JSON son 200: r sıçrama tahtası olabilir. Unutmayın, yazılımdaki başarınız kullandığınız araçlardan ziyade göstereceğiniz azim ve merak duygusuna bağlıdır.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-14 11:31:53,698 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-14 11:31:53,699 [INFO] Tekrar deneniyor...
+2026-09-14 11:31:53,699 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-14 11:32:21,814 [INFO] Gemini yanıtı alındı. Uzunluk: 7511 karakter
+2026-09-14 11:32:21,816 [INFO] Görsel aranıyor...
+2026-09-14 11:32:21,817 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-14 11:32:21,817 [INFO] Fallback görsel kullanılıyor: Python
+2026-09-14 11:32:21,818 [INFO] Görsel eklendi: fallback
+2026-09-14 11:32:21,819 [INFO]    Başlık: Sıfırdan İleri Seviyeye Python Programlama Dili Rehberi: DonanımHaber'de 2.499 TL'lik Dev Eğitim Fırsatı
+2026-09-14 11:32:21,819 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-14 11:32:21,820 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-14 11:32:21,826 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\sifirdan-ileri-seviyeye-python-programlama-dili-kursu-donanimhaber.html
+2026-09-14 11:32:21,827 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-14 11:32:21,831 [INFO] index.html güncellendi: Sıfırdan İleri Seviyeye Python Programlama Dili Rehberi: DonanımHaber'de 2.499 TL'lik Dev Eğitim Fırsatı makale en üste eklendi.
+2026-09-14 11:32:21,832 [INFO]    Ana sayfa güncellendi.
+2026-09-14 11:32:28,344 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-14 11:32:28,348 [INFO] ============================================================
+2026-09-14 11:32:28,349 [INFO] BAŞARILI! Makale yayımlandı: Sıfırdan İleri Seviyeye Python Programlama Dili Rehberi: DonanımHaber'de 2.499 TL'lik Dev Eğitim Fırsatı
+2026-09-14 11:32:28,349 [INFO]   Dosya: articles/sifirdan-ileri-seviyeye-python-programlama-dili-kursu-donanimhaber.html
+2026-09-14 11:32:28,350 [INFO]   Kategori: Python
+2026-09-14 11:32:28,350 [INFO] ============================================================
