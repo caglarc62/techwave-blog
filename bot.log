@@ -1844,3 +1844,35 @@ Please retry in 54.695231987s. [links {
 2026-09-14 18:16:37,184 [ERROR] Deneme 3: JSON parse başarısız.
 2026-09-14 18:16:37,209 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
 2026-09-14 18:16:37,213 [ERROR] Makale üretilemedi!
+2026-09-14 18:48:03,164 [INFO] ============================================================
+2026-09-14 18:48:03,164 [INFO] İçerik botu başlatılıyor... (2026-09-14 18:48)
+2026-09-14 18:48:03,165 [INFO] ============================================================
+2026-09-14 18:48:03,165 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-14 18:48:03,167 [INFO] Daha önce 26 makale yayınlanmış.
+2026-09-14 18:48:04,262 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-14 18:48:05,109 [INFO] RSS'den 92 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-14 18:48:05,614 [INFO] RSS'den 51 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-14 18:48:06,732 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-14 18:48:07,725 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-14 18:48:08,666 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-14 18:48:08,694 [INFO]    Seçilen konu: Mobil — Turkcell CEO Ali Taha Koç Appointed Chair of the GSMA Technology Group
+2026-09-14 18:48:08,695 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-14 18:48:08,695 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-14 18:48:32,690 [INFO] Gemini yanıtı alındı. Uzunluk: 7890 karakter
+2026-09-14 18:48:32,706 [INFO] Görsel aranıyor...
+2026-09-14 18:48:32,707 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-14 18:48:32,707 [INFO] Fallback görsel kullanılıyor: Mobil
+2026-09-14 18:48:32,707 [INFO] Görsel eklendi: fallback
+2026-09-14 18:48:32,708 [INFO]    Başlık: Turkcell CEO'su Dr. Ali Taha Koç GSMA Teknoloji Grubu Başkanı Oldu: Küresel Mobil Teknolojilerde Yeni Dönem
+2026-09-14 18:48:32,708 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-14 18:48:32,708 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-14 18:48:32,713 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\turkcell-ceo-ali-taha-koc-gsma-teknoloji-grubu-baskani-oldu.html
+2026-09-14 18:48:32,713 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-14 18:48:32,720 [INFO] index.html güncellendi: Turkcell CEO'su Dr. Ali Taha Koç GSMA Teknoloji Grubu Başkanı Oldu: Küresel Mobil Teknolojilerde Yeni Dönem makale en üste eklendi.
+2026-09-14 18:48:32,721 [INFO]    Ana sayfa güncellendi.
+2026-09-14 18:48:42,893 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-14 18:48:42,901 [INFO] ============================================================
+2026-09-14 18:48:42,901 [INFO] BAŞARILI! Makale yayımlandı: Turkcell CEO'su Dr. Ali Taha Koç GSMA Teknoloji Grubu Başkanı Oldu: Küresel Mobil Teknolojilerde Yeni Dönem
+2026-09-14 18:48:42,902 [INFO]   Dosya: articles/turkcell-ceo-ali-taha-koc-gsma-teknoloji-grubu-baskani-oldu.html
+2026-09-14 18:48:42,902 [INFO]   Kategori: Mobil
+2026-09-14 18:48:42,903 [INFO] ============================================================
