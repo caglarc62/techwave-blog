@@ -1876,3 +1876,35 @@ Please retry in 54.695231987s. [links {
 2026-09-14 18:48:42,902 [INFO]   Dosya: articles/turkcell-ceo-ali-taha-koc-gsma-teknoloji-grubu-baskani-oldu.html
 2026-09-14 18:48:42,902 [INFO]   Kategori: Mobil
 2026-09-14 18:48:42,903 [INFO] ============================================================
+2026-09-15 13:15:54,785 [INFO] ============================================================
+2026-09-15 13:15:54,787 [INFO] İçerik botu başlatılıyor... (2026-09-15 13:15)
+2026-09-15 13:15:54,788 [INFO] ============================================================
+2026-09-15 13:15:54,788 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-15 13:15:54,790 [INFO] Daha önce 27 makale yayınlanmış.
+2026-09-15 13:15:55,627 [INFO] RSS'den 75 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-15 13:15:56,394 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-15 13:15:56,984 [INFO] RSS'den 52 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-15 13:15:58,178 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-15 13:15:59,126 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-15 13:16:00,110 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-15 13:16:00,134 [INFO]    Seçilen konu: Oyun — Xiaomi releases new 4K gaming monitor with special 320 Hz mode -
+2026-09-15 13:16:00,135 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-15 13:16:00,135 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-15 13:16:27,352 [INFO] Gemini yanıtı alındı. Uzunluk: 7521 karakter
+2026-09-15 13:16:27,357 [INFO] Görsel aranıyor...
+2026-09-15 13:16:27,358 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-15 13:16:27,358 [INFO] Fallback görsel kullanılıyor: Oyun
+2026-09-15 13:16:27,358 [INFO] Görsel eklendi: fallback
+2026-09-15 13:16:27,359 [INFO]    Başlık: Xiaomi'den Ezber Bozan Oyuncu Monitörü: 4K Çözünürlük ve 320 Hz Özel Mod
+2026-09-15 13:16:27,359 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-15 13:16:27,360 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-15 13:16:27,367 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\xiaomi-yeni-4k-320hz-oyuncu-monitoru.html
+2026-09-15 13:16:27,368 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-15 13:16:27,372 [INFO] index.html güncellendi: Xiaomi'den Ezber Bozan Oyuncu Monitörü: 4K Çözünürlük ve 320 Hz Özel Mod makale en üste eklendi.
+2026-09-15 13:16:27,373 [INFO]    Ana sayfa güncellendi.
+2026-09-15 13:16:33,548 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-15 13:16:33,554 [INFO] ============================================================
+2026-09-15 13:16:33,554 [INFO] BAŞARILI! Makale yayımlandı: Xiaomi'den Ezber Bozan Oyuncu Monitörü: 4K Çözünürlük ve 320 Hz Özel Mod
+2026-09-15 13:16:33,554 [INFO]   Dosya: articles/xiaomi-yeni-4k-320hz-oyuncu-monitoru.html
+2026-09-15 13:16:33,554 [INFO]   Kategori: Oyun
+2026-09-15 13:16:33,555 [INFO] ============================================================
