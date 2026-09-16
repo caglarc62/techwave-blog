@@ -196,16 +196,16 @@ def parse_article_response(raw_text):
     # Adım 2: Tüm kontrol karakterlerini temizle
     cleaned = _clean_control_chars(json_str)
     
-    # Deneme 1: Temizlenmiş JSON
+    # Deneme 1: Temizlenmiş JSON (strict=False ile)
     try:
-        return json.loads(cleaned)
+        return json.loads(cleaned, strict=False)
     except json.JSONDecodeError:
         pass
 
     # Deneme 2: Trailing comma düzelt
     fixed = re.sub(r',\s*([}\]])', r'\1', cleaned)
     try:
-        return json.loads(fixed)
+        return json.loads(fixed, strict=False)
     except json.JSONDecodeError:
         pass
 
@@ -218,7 +218,7 @@ def parse_article_response(raw_text):
     last_brace = cleaned.rfind('}')
     if last_brace > 0:
         try:
-            return json.loads(cleaned[:last_brace + 1])
+            return json.loads(cleaned[:last_brace + 1], strict=False)
         except json.JSONDecodeError:
             pass
 
@@ -229,8 +229,7 @@ def parse_article_response(raw_text):
 
 
 def _clean_control_chars(json_str):
-    """String içindeki kontrol karakterlerini escape eder — en güçlü versiyon."""
-    # Adım 1: Tüm stringleri bul ve sadece onların içini temizle
+    """String içindeki kontrol karakterlerini ve escape edilmemiş tırnak işaretlerini düzeltir."""
     result = []
     i = 0
     n = len(json_str)
@@ -250,10 +249,20 @@ def _clean_control_chars(json_str):
                     result.append(json_str[i+1])
                     i += 2
                 elif ch2 == '"':
-                    # String bitti
-                    result.append(ch2)
-                    i += 1
-                    break
+                    # String bitti — ama önce kontrol et: bu gerçekten string sonu mu?
+                    # Eğer bir sonraki karakter , veya } veya ] veya : ise, string sonudur
+                    next_i = i + 1
+                    while next_i < n and json_str[next_i] in ' \t\n\r':
+                        next_i += 1
+                    if next_i < n and json_str[next_i] in ',}]:':
+                        # String sonu
+                        result.append(ch2)
+                        i += 1
+                        break
+                    else:
+                        # String içinde escape edilmemiş tırnak — escape et
+                        result.append('\\"')
+                        i += 1
                 elif ord(ch2) < 0x20:
                     # Kontrol karakteri — escape et
                     if ch2 == '\n':

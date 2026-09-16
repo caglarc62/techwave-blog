@@ -2043,3 +2043,112 @@ Please retry in 54.695231987s. [links {
 2026-09-16 17:41:50,149 [INFO] 4. Adım: Ana sayfa güncelleniyor...
 2026-09-16 17:41:50,152 [INFO] index.html güncellendi: İnşaat Endüstrisi için En İyi 10 AI Aracı Eylül 2026 makale en üste eklendi.
 2026-09-16 17:41:50,153 [INFO]    Ana sayfa güncellendi.
+2026-09-16 17:41:55,512 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-16 17:41:55,517 [INFO] ============================================================
+2026-09-16 17:41:55,517 [INFO] BAŞARILI! Makale yayımlandı: İnşaat Endüstrisi için En İyi 10 AI Aracı Eylül 2026
+2026-09-16 17:41:55,517 [INFO]   Dosya: articles/insaat-endustrisi-icin-en-iyi-10-ai-araci-eylul-2026.html
+2026-09-16 17:41:55,517 [INFO]   Kategori: Yapay Zeka
+2026-09-16 17:41:55,518 [INFO] ============================================================
+2026-09-16 17:44:58,924 [INFO] ============================================================
+2026-09-16 17:44:58,924 [INFO] İçerik botu başlatılıyor... (2026-09-16 17:44)
+2026-09-16 17:44:58,925 [INFO] ============================================================
+2026-09-16 17:44:58,925 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-16 17:44:58,926 [INFO] Daha önce 2 makale yayınlanmış.
+2026-09-16 17:44:59,696 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-16 17:45:00,528 [INFO] RSS'den 99 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-16 17:45:01,118 [INFO] RSS'den 53 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-16 17:45:02,293 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-16 17:45:03,262 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-16 17:45:04,417 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-16 17:45:04,435 [INFO]    Seçilen konu: Veri Bilimi — Türkçe Şarkıların 50 Yıllık Değişimi Veri Madenciliğiyle İncelendi - Kastamonu Gündem Gazetesi
+2026-09-16 17:45:04,436 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-16 17:45:04,437 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-16 17:45:37,009 [INFO] Gemini yanıtı alındı. Uzunluk: 10889 karakter
+2026-09-16 17:45:37,021 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:45:37,021 [ERROR] JSON ilk 200: {
+    "title": "Türkçe Şarkıların 50 Yıllık Değişimi: Veri Madenciliği ve Doğal Dil İşleme İle Müziğin Evrimi",
+    "slug": "turkce-sarkilarin-50-yillik-degisimi-veri-madenciligi",
+    "excerpt": "Tür
+2026-09-16 17:45:37,021 [ERROR] JSON son 200: decek; veri bilimi ise bu değişimin ayak izlerini sayısal verilerle kaydetmeyi ve geleceğin trendlerini öngörmeyi sürdürecektir.</p>\n\n<p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>"
+}
+2026-09-16 17:45:37,021 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-16 17:45:37,022 [INFO] Tekrar deneniyor...
+2026-09-16 17:45:37,022 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-16 17:46:11,658 [INFO] Gemini yanıtı alındı. Uzunluk: 11282 karakter
+2026-09-16 17:46:11,665 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:46:11,665 [ERROR] JSON ilk 200: {
+    "title": "Türkçe Şarkıların 50 Yıllık Değişimi Veri Madenciliğiyle İncelendi: Sanatın ve Dilin Dijital Ayak İzi",
+    "slug": "turkce-sarkilarin-50-yillik-degisimi-veri-madenciligi",
+    "excerp
+2026-09-16 17:46:11,665 [ERROR] JSON son 200: arı TechWave'de.",
+    "tags": [
+        "Veri Madenciliği",
+        "Doğal Dil İşleme",
+        "NLP",
+        "Python",
+        "Müzik Analizi",
+        "Spotify API",
+        "Data Science"
+    ]
+}
+2026-09-16 17:46:11,665 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-16 17:46:11,666 [INFO] Tekrar deneniyor...
+2026-09-16 17:46:11,666 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-16 17:46:42,791 [INFO] Gemini yanıtı alındı. Uzunluk: 9445 karakter
+2026-09-16 17:46:42,806 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:46:42,807 [ERROR] JSON ilk 200: {
+    "title": "Türkçe Şarkıların 50 Yıllık Değişimi Veri Madenciliğiyle İncelendi",
+    "slug": "turkce-sarkilarin-50-yillik-degisimi-veri-madenciligi",
+    "excerpt": "Türkçe müziğin 50 yıllık serüv
+2026-09-16 17:46:42,807 [ERROR] JSON son 200: eğiz. Sanatın dijitalleşen dünyadaki bu yolculuğu, geleceğin müzik trendlerini belirlemede veri bilimcilere eşsiz bir oyun alanı sunuyor.</p>\n\n<p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-16 17:46:42,807 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-16 17:46:42,809 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
+2026-09-16 17:46:42,809 [ERROR] Makale üretilemedi!
+2026-09-16 17:47:17,091 [INFO] ============================================================
+2026-09-16 17:47:17,092 [INFO] İçerik botu başlatılıyor... (2026-09-16 17:47)
+2026-09-16 17:47:17,098 [INFO] ============================================================
+2026-09-16 17:47:17,098 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-16 17:47:17,100 [INFO] Daha önce 2 makale yayınlanmış.
+2026-09-16 17:47:18,285 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-16 17:47:19,104 [INFO] RSS'den 99 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-16 17:47:19,683 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-16 17:47:20,774 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-16 17:47:21,699 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-16 17:47:22,719 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-16 17:47:22,739 [INFO]    Seçilen konu: Yazılım — Yazılım Haberleri Son Dakika Güncel Yazılım Hakkında Haberler
+2026-09-16 17:47:22,739 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-16 17:47:22,740 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-16 17:48:01,632 [INFO] Gemini yanıtı alındı. Uzunluk: 9823 karakter
+2026-09-16 17:48:01,642 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:48:01,642 [ERROR] JSON ilk 200: {
+    "title": "2024 ve Ötesinde Yazılım Dünyası: Son Dakika Gelişmeler, Yapay Zeka Devrimi ve Geleceğin Trendleri",
+    "slug": "2024-yazilim-dunyasinda-son-dakika-gelismeler-ve-trendler",
+    "excer
+2026-09-16 17:48:01,643 [ERROR] JSON son 200: ber güvenlik trendleri TechWave detaylı rehberinde.",
+    "tags": ["yazilim haberleri", "yapay zeka", "yazilim gelistirme", "techwave", "yazilim trendleri", "python", "typescript", "siber güvenlik"]
+}
+2026-09-16 17:48:01,643 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-16 17:48:01,643 [INFO] Tekrar deneniyor...
+2026-09-16 17:48:01,643 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-16 17:48:31,422 [INFO] Gemini yanıtı alındı. Uzunluk: 10724 karakter
+2026-09-16 17:48:31,435 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:48:31,435 [ERROR] JSON ilk 200: {
+    "title": "2024-2025 Güncel Yazılım Haberleri: Yapay Zeka Devrimi, Yeni Teknolojiler ve Son Dakika Gelişmeleri",
+    "slug": "2024-2025-guncel-yazilim-haberleri-yapay-zeka-ve-teknolojik-gelismele
+2026-09-16 17:48:31,435 [ERROR] JSON son 200: asındaki en güncel gelişmeleri, derinlemesine incelemeleri ve rehberleri kaçırmamak için TechWave'i takip etmeye devam edin.</p><p><strong>Bu makale TechWave tarafından hazırlanmıştır.</strong></p>"
+}
+2026-09-16 17:48:31,436 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-16 17:48:31,436 [INFO] Tekrar deneniyor...
+2026-09-16 17:48:31,436 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-16 17:49:05,747 [INFO] Gemini yanıtı alındı. Uzunluk: 8311 karakter
+2026-09-16 17:49:05,752 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:49:05,753 [ERROR] JSON ilk 200: {
+    "title": "Yazılım Dünyasında Son Dakika Gelişmeleri: 2024 ve Ötesinde Öne Çıkan Trendler, Yapay Zeka ve Gelecek Öngörüleri",
+    "slug": "yazilim-dunyasinda-son-dakika-gelismeleri-2024-trendleri
+2026-09-16 17:49:05,755 [ERROR] JSON son 200: ri, yazılım dilleri ve siber güvenlik gelişmelerini TechWave'in detaylı rehberiyle keşfedin.",
+    "tags": ["yazılım haberleri", "yapay zeka", "python", "devsecops", "yazılım trendleri", "techwave"]
+}
+2026-09-16 17:49:05,756 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-16 17:49:05,760 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
+2026-09-16 17:49:05,760 [ERROR] Makale üretilemedi!

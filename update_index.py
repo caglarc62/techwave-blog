@@ -10,6 +10,83 @@ from datetime import datetime
 log = logging.getLogger("content_bot.index updater")
 
 
+def rebuild_index(index_path, articles_dir):
+    """Mevcut tüm makalelerden index.html'i baştan oluşturur."""
+    import glob
+    
+    articles = []
+    for filepath in glob.glob(os.path.join(articles_dir, "*.html")):
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Title
+        title_match = re.search(r'<title>(.*?)—', content)
+        title = title_match.group(1).strip() if title_match else "Yeni Makale"
+        
+        # Excerpt
+        excerpt_match = re.search(r'<meta name="description" content="(.*?)"', content)
+        excerpt = excerpt_match.group(1) if excerpt_match else ""
+        
+        # Category
+        cat_match = re.search(r'<span class="card-tag">(.*?)</span>', content)
+        category = cat_match.group(1) if cat_match else "Teknoloji"
+        
+        # Image
+        img_match = re.search(r'<meta property="og:image" content="(.*?)"', content)
+        image_url = img_match.group(1) if img_match else ""
+        
+        # Date
+        date_match = re.search(r'📅\s*(.*?)<', content)
+        date = date_match.group(1).strip() if date_match else ""
+        
+        # Read time
+        time_match = re.search(r'⏱️\s*(.*?)<', content)
+        read_time = time_match.group(1).strip() if time_match else "5 dk okuma"
+        
+        # Slug from filename
+        slug = os.path.splitext(os.path.basename(filepath))[0]
+        
+        articles.append({
+            "title": title,
+            "slug": slug,
+            "excerpt": excerpt,
+            "category": category,
+            "image_url": image_url,
+            "date": date,
+            "read_time": read_time,
+        })
+    
+    # Tarihe göre sırala (en yeniler üstte)
+    articles.sort(key=lambda x: x.get("date", ""), reverse=True)
+    
+    # Index.html oku
+    with open(index_path, 'r', encoding='utf-8') as f:
+        index_content = f.read()
+    
+    # Kartları oluştur
+    cards_html = ""
+    for art in articles:
+        cards_html += create_card_html(art) + "\n\n"
+    
+    # card-grid içini değiştir
+    grid_start = index_content.find('<div class="card-grid">')
+    # Section tag'ini ara
+    section_end = index_content.find('</section>', grid_start)
+    # Alternatif: </div> ile biten section'ı bul
+    if section_end < 0:
+        section_end = index_content.find('</div>', grid_start + 100)
+    
+    if grid_start >= 0 and section_end >= 0:
+        new_content = index_content[:grid_start] + '<div class="card-grid">\n' + cards_html + '    </section>' + index_content[section_end:]
+        with open(index_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        log.info("Index yeniden oluşturuldu: %d makale eklendi.", len(articles))
+    else:
+        log.error("card-grid bulunamadı!")
+    
+    return len(articles)
+
+
 def create_card_html(article):
     """Yeni makale kartı HTML'i oluşturur (görselli)."""
     emoji = article.get("emoji", "📝")
