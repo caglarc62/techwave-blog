@@ -166,7 +166,7 @@ def generate_article(topic_info, config):
 
 def parse_article_response(raw_text):
     """Gemini yanıtından JSON'u çıkarır — çoklu deneme stratejisi."""
-    # JSON bloğunu bul
+    # Adım 0: Markdown code block'larını temizle (```json ... ```)
     json_match = re.search(r'```json\s*(.*?)\s*```', raw_text, re.DOTALL)
     if json_match:
         json_str = json_match.group(1)
@@ -178,8 +178,25 @@ def parse_article_response(raw_text):
             if start >= 0 and end > start:
                 json_str = json_str[start:end]
 
-    # Deneme 1: Ham JSON (sadece control char fix)
+    # Adım 1: content alanındaki code block'ları HTML'e çevir
+    # ```...``` bloklarını <pre><code>...</code></pre> yap
+    def fix_code_blocks(m):
+        code = m.group(1)
+        # Code block içindeki escape'leri düzelt
+        code = code.replace('\\n', '\n')
+        code = code.replace('\\t', '\t')
+        code = code.replace('\\"', '"')
+        code = code.replace('\\\\', '\\')
+        # HTML entity yap
+        code = code.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        return '<pre><code>' + code + '</code></pre>'
+    
+    json_str = re.sub(r'```(?:\w*)\n(.*?)```', fix_code_blocks, json_str, flags=re.DOTALL)
+
+    # Adım 2: Tüm kontrol karakterlerini temizle
     cleaned = _clean_control_chars(json_str)
+    
+    # Deneme 1: Temizlenmiş JSON
     try:
         return json.loads(cleaned)
     except json.JSONDecodeError:
@@ -206,7 +223,6 @@ def parse_article_response(raw_text):
             pass
 
     log.error("JSON parse hatası — tüm denemeler başarısız.")
-    # Debug: sorunlu bölgeyi göster
     log.error("JSON ilk 200: %s", cleaned[:200])
     log.error("JSON son 200: %s", cleaned[-200:])
     return None
