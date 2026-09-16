@@ -2216,3 +2216,175 @@ Please retry in 54.695231987s. [links {
 2026-09-16 17:52:02,614 [INFO]   Dosya: articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html
 2026-09-16 17:52:02,614 [INFO]   Kategori: Blockchain
 2026-09-16 17:52:02,614 [INFO] ============================================================
+2026-09-16 17:52:17,197 [INFO] ============================================================
+2026-09-16 17:52:17,198 [INFO] İçerik botu başlatılıyor... (2026-09-16 17:52)
+2026-09-16 17:52:17,198 [INFO] ============================================================
+2026-09-16 17:52:17,198 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-16 17:52:17,202 [INFO] Daha önce 4 makale yayınlanmış.
+2026-09-16 17:52:17,726 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-16 17:52:18,090 [INFO] RSS'den 99 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-16 17:52:18,348 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-16 17:52:19,426 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-16 17:52:20,452 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-16 17:52:21,355 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-16 17:52:21,370 [INFO]    Seçilen konu: Oyun — Avrupa Birliği 15 yaş altı çocuklara oyunları da kısıtlamaya hazırlanıyor - Milliyet
+2026-09-16 17:52:21,371 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-16 17:52:21,371 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-16 17:52:56,930 [INFO] Gemini yanıtı alındı. Uzunluk: 11941 karakter
+2026-09-16 17:52:56,937 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:52:56,938 [ERROR] JSON ilk 200: {
+    "title": "Avrupa Birliği'nden Çocuklara Dijital Fren: 15 Yaş Altı Oyun Kısıtlamaları Yolda",
+    "slug": "ab-15-yas-alti-oyun-kisitlamalari-dijital-gelecek",
+    "excerpt": "Avrupa Birliği, 15 y
+2026-09-16 17:52:56,939 [ERROR] JSON son 200: aktır. Bir oyun platformunun yeni standartlara uygun bir yaş kontrol yetkilendirme mimarisini yazılımsal olarak nasıl kurgulayabileceğine dair basitleştirilmiş bir Python kod örneğini inceleyelim:</p>
+2026-09-16 17:52:56,939 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-16 17:52:56,940 [INFO] Tekrar deneniyor...
+2026-09-16 17:52:56,940 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-16 17:53:25,611 [INFO] Gemini yanıtı alındı. Uzunluk: 9596 karakter
+2026-09-16 17:53:25,618 [INFO] Görsel aranıyor...
+2026-09-16 17:53:25,618 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-16 17:53:25,620 [INFO] Fallback görsel kullanılıyor: Oyun
+2026-09-16 17:53:25,621 [INFO] Görsel eklendi: fallback
+2026-09-16 17:53:25,622 [INFO]    Başlık: Avrupa Birliği 15 Yaş Altı Çocuklara Oyun Kısıtlaması Getirmeye Hazırlanıyor: Dijital Sektörde Kartlar Yeniden Dağıtılıyor
+2026-09-16 17:53:25,623 [INFO]    Okuma süresi: 5 dk okuma
+2026-09-16 17:53:25,623 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-16 17:53:25,628 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html
+2026-09-16 17:53:25,628 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-16 17:53:25,632 [INFO] index.html güncellendi: Avrupa Birliği 15 Yaş Altı Çocuklara Oyun Kısıtlaması Getirmeye Hazırlanıyor: Dijital Sektörde Kartlar Yeniden Dağıtılıyor makale en üste eklendi.
+2026-09-16 17:53:25,633 [INFO]    Ana sayfa güncellendi.
+2026-09-16 17:53:29,665 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-16 17:53:29,671 [INFO] ============================================================
+2026-09-16 17:53:29,672 [INFO] BAŞARILI! Makale yayımlandı: Avrupa Birliği 15 Yaş Altı Çocuklara Oyun Kısıtlaması Getirmeye Hazırlanıyor: Dijital Sektörde Kartlar Yeniden Dağıtılıyor
+2026-09-16 17:53:29,672 [INFO]   Dosya: articles/ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html
+2026-09-16 17:53:29,672 [INFO]   Kategori: Oyun
+2026-09-16 17:53:29,673 [INFO] ============================================================
+2026-09-16 17:53:40,831 [INFO] ============================================================
+2026-09-16 17:53:40,831 [INFO] İçerik botu başlatılıyor... (2026-09-16 17:53)
+2026-09-16 17:53:40,831 [INFO] ============================================================
+2026-09-16 17:53:40,832 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-16 17:53:40,837 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-16 17:53:41,693 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-16 17:53:42,381 [INFO] RSS'den 99 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-16 17:53:42,964 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-16 17:53:43,983 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-16 17:53:44,894 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-16 17:53:45,757 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-16 17:53:45,772 [INFO]    Seçilen konu: Mobil — Public Artificial Intelligence Ecosystem2026 Call is Open for Applications - Türkiye Bilimsel
+2026-09-16 17:53:45,772 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-16 17:53:45,773 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-16 17:54:12,341 [INFO] Gemini yanıtı alındı. Uzunluk: 9137 karakter
+2026-09-16 17:54:12,353 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:54:12,353 [ERROR] JSON ilk 200: {
+    "title": "Kamusal Yapay Zeka Ekosistemi 2026 Çağrısı Başvuruya Açıldı: Türkiye’nin Geleceğini Şekillendiren Teknoloji Hamlesi",
+    "slug": "kamusal-yapay-zeka-ekosistemi-2026-cagrisi-basvuruya-
+2026-09-16 17:54:12,353 [ERROR] JSON son 200: ci, araştırmacı veya yazılımcıysanız, projenizi şimdiden hazırlamaya başlamalı, kamu yararını ve teknik yenilikçiliği odağınıza almalısınız.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"\n}
+2026-09-16 17:54:12,354 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-16 17:54:12,354 [INFO] Tekrar deneniyor...
+2026-09-16 17:54:12,354 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-16 17:54:45,688 [INFO] Gemini yanıtı alındı. Uzunluk: 11693 karakter
+2026-09-16 17:54:45,702 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:54:45,702 [ERROR] JSON ilk 200: {
+    "title": "Kamusal Yapay Zeka Ekosistemi 2026 Çağrısı Başvuruya Açıldı: Türkiye’nin Yapay Zeka Geleceği ve Mobil Entegrasyon Rehberi",
+    "slug": "kamusal-yapay-zeka-ekosistemi-2026-cagrisi-basv
+2026-09-16 17:54:45,702 [ERROR] JSON son 200: takip etmek ve projenizi en doğru şekilde kurgulamak için TÜBİTAK'ın resmi duyuru kanallarını düzenli olarak kontrol etmenizi tavsiye ederiz.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"
+}
+2026-09-16 17:54:45,702 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-16 17:54:45,703 [INFO] Tekrar deneniyor...
+2026-09-16 17:54:45,705 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-16 17:55:18,625 [INFO] Gemini yanıtı alındı. Uzunluk: 11077 karakter
+2026-09-16 17:55:18,637 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-16 17:55:18,637 [ERROR] JSON ilk 200: {
+    "title": "Kamu Yapay Zeka Ekosistemi 2026 Çağrısı Başvurulara Açıldı: Detaylı Başvuru Rehberi ve Mobil Entegrasyon Fırsatları",
+    "slug": "kamu-yapay-zeka-ekosistemi-2026-cagrisi-basvuru-rehbe
+2026-09-16 17:55:18,637 [ERROR] JSON son 200: yan tüm kurum ve şirketlerin çağrı kılavuzunu dikkatle incelemeleri ve güçlü bir teknoloji ortağıyla yola çıkmaları büyük önem taşımaktadır.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"\n}
+2026-09-16 17:55:18,637 [ERROR] Deneme 3: JSON parse başarısız.
+2026-09-16 17:55:18,639 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
+2026-09-16 17:55:18,640 [ERROR] Makale üretilemedi!
+2026-09-16 17:56:06,949 [INFO] ============================================================
+2026-09-16 17:56:06,949 [INFO] İçerik botu başlatılıyor... (2026-09-16 17:56)
+2026-09-16 17:56:06,950 [INFO] ============================================================
+2026-09-16 17:56:06,950 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-16 17:56:06,951 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-16 17:56:07,612 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-16 17:56:08,273 [INFO] RSS'den 99 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-16 17:56:08,774 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-16 17:56:09,818 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-16 17:56:10,716 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-16 17:56:11,714 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-16 17:56:11,732 [INFO]    Seçilen konu: AI Araçları — Microsofttan çocuklar için kritik yapay zeka kararı Copilota yaş sınırı geliyor -
+2026-09-16 17:56:11,732 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-16 17:56:11,733 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-16 17:56:12,229 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 48.101841173s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2026-09-16 17:56:12,231 [INFO] Tekrar deneniyor...
+2026-09-16 17:56:12,231 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-16 17:56:12,407 [ERROR] Gemini API hatası (deneme 2): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 47.916185337s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2026-09-16 17:56:12,408 [INFO] Tekrar deneniyor...
+2026-09-16 17:56:12,409 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-16 17:56:12,624 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 47.700421628s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2026-09-16 17:56:12,625 [ERROR] Makale üretilemedi!

@@ -196,6 +196,13 @@ def parse_article_response(raw_text):
     # Adım 2: Tüm kontrol karakterlerini temizle
     cleaned = _clean_control_chars(json_str)
     
+    # Adım 3: Sondaki sorunlu karakterleri temizle
+    # "}\n```" gibi durumları düzelt
+    cleaned = re.sub(r'"\s*\}\s*$', '"}', cleaned)
+    cleaned = re.sub(r'"\s*\]\s*$', '"]', cleaned)
+    # Sondaki ```` bloklarını temizle
+    cleaned = re.sub(r'```\s*$', '', cleaned)
+    
     # Deneme 1: Temizlenmiş JSON (strict=False ile)
     try:
         return json.loads(cleaned, strict=False)
