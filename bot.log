@@ -2152,3 +2152,35 @@ Please retry in 54.695231987s. [links {
 2026-09-16 17:49:05,756 [ERROR] Deneme 3: JSON parse başarısız.
 2026-09-16 17:49:05,760 [ERROR] Ham yanıt kaydedildi: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\last_failed_response.txt
 2026-09-16 17:49:05,760 [ERROR] Makale üretilemedi!
+2026-09-16 17:50:26,743 [INFO] ============================================================
+2026-09-16 17:50:26,745 [INFO] İçerik botu başlatılıyor... (2026-09-16 17:50)
+2026-09-16 17:50:26,745 [INFO] ============================================================
+2026-09-16 17:50:26,746 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-16 17:50:26,749 [INFO] Daha önce 2 makale yayınlanmış.
+2026-09-16 17:50:27,930 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-16 17:50:28,665 [INFO] RSS'den 99 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-16 17:50:29,229 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-16 17:50:30,383 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-16 17:50:31,388 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-16 17:50:32,432 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-16 17:50:32,457 [INFO]    Seçilen konu: Python — Python Nedir Bilmeniz Gereken Her Şey - Tamindir
+2026-09-16 17:50:32,458 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-16 17:50:32,458 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-16 17:51:01,406 [INFO] Gemini yanıtı alındı. Uzunluk: 11667 karakter
+2026-09-16 17:51:01,426 [INFO] Görsel aranıyor...
+2026-09-16 17:51:01,426 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-16 17:51:01,427 [INFO] Fallback görsel kullanılıyor: Python
+2026-09-16 17:51:01,427 [INFO] Görsel eklendi: fallback
+2026-09-16 17:51:01,429 [INFO]    Başlık: Python Nedir? Sıfırdan İleri Seviyeye Bilmeniz Gereken Her Şey
+2026-09-16 17:51:01,429 [INFO]    Okuma süresi: 6 dk okuma
+2026-09-16 17:51:01,429 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-16 17:51:01,440 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-nedir-bilmeniz-gereken-her-sey.html
+2026-09-16 17:51:01,440 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-16 17:51:01,444 [INFO] index.html güncellendi: Python Nedir? Sıfırdan İleri Seviyeye Bilmeniz Gereken Her Şey makale en üste eklendi.
+2026-09-16 17:51:01,444 [INFO]    Ana sayfa güncellendi.
+2026-09-16 17:51:09,512 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-16 17:51:09,522 [INFO] ============================================================
+2026-09-16 17:51:09,522 [INFO] BAŞARILI! Makale yayımlandı: Python Nedir? Sıfırdan İleri Seviyeye Bilmeniz Gereken Her Şey
+2026-09-16 17:51:09,522 [INFO]   Dosya: articles/python-nedir-bilmeniz-gereken-her-sey.html
+2026-09-16 17:51:09,522 [INFO]   Kategori: Python
+2026-09-16 17:51:09,523 [INFO] ============================================================
