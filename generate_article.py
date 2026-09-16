@@ -60,20 +60,23 @@ def build_user_prompt(topic_info, config):
     """Kullanıcı promptunu oluşturur."""
     category = topic_info["category"]
     title = topic_info["title"]
-    min_words = config.get("article_min_words", 800)
-    max_words = config.get("article_max_words", 1200)
+    min_words = config.get("article_min_words", 1500)
+    max_words = config.get("article_max_words", 2500)
 
-    return f"""Şu konuda TechWave için bir makale yaz:
+    return f"""Şu konuda TechWave için detaylı bir makale yaz:
 
 Kategori: {category}
 Konu: {title}
 
 Gereksinimler:
-- {min_words}-{max_words} kelime arası
+- En az {min_words} kelime olsun, kapsamlı ve detaylı yaz
 - SEO uyumlu (meta description, etiketler dahil)
-- Pratik örnekler ve güncel bilgiler içer
-- H2 ve H3 alt başlıklar kullan
+- Pratik örnekler, istatistikler ve güncel bilgiler içer
+- H2 ve H3 alt başlıklar kullan (en az 3-4 alt başlık)
 - Kod örneği varsa ekle
+- Giriş gelişme sonuç bölümleri olsun
+- Benzer konulardaki farklı bakış açılarını da ekle
+- OKUYUCUYA DEĞER KAT: Sadece bilgi verme, ipuçları, tavsiyeler ve somut örnekler ekle
 - Türkçe, akıcı ve bilgilendirici dil
 - Makale sonunda "Bu makale TechWave tarafından hazırlanmıştır." ekle
 

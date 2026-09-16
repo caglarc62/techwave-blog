@@ -1908,3 +1908,35 @@ Please retry in 54.695231987s. [links {
 2026-09-15 13:16:33,554 [INFO]   Dosya: articles/xiaomi-yeni-4k-320hz-oyuncu-monitoru.html
 2026-09-15 13:16:33,554 [INFO]   Kategori: Oyun
 2026-09-15 13:16:33,555 [INFO] ============================================================
+2026-09-15 18:58:31,734 [INFO] ============================================================
+2026-09-15 18:58:31,735 [INFO] İçerik botu başlatılıyor... (2026-09-15 18:58)
+2026-09-15 18:58:31,735 [INFO] ============================================================
+2026-09-15 18:58:31,735 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-15 18:58:31,737 [INFO] Daha önce 28 makale yayınlanmış.
+2026-09-15 18:58:32,754 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-15 18:58:33,403 [INFO] RSS'den 101 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-15 18:58:34,002 [INFO] RSS'den 52 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-15 18:58:35,293 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-15 18:58:36,189 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-15 18:58:37,072 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-15 18:58:37,093 [INFO]    Seçilen konu: Python — ABDdeki üniversitelerde en çok öğretilen programlama dili Python - Webrazzi
+2026-09-15 18:58:37,093 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-15 18:58:37,093 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-15 18:59:02,870 [INFO] Gemini yanıtı alındı. Uzunluk: 7002 karakter
+2026-09-15 18:59:02,878 [INFO] Görsel aranıyor...
+2026-09-15 18:59:02,878 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-15 18:59:02,879 [INFO] Fallback görsel kullanılıyor: Python
+2026-09-15 18:59:02,880 [INFO] Görsel eklendi: fallback
+2026-09-15 18:59:02,880 [INFO]    Başlık: ABD Üniversitelerinin Favorisi: Python Neden 1 Numaralı Öğretim Dili Oldu?
+2026-09-15 18:59:02,881 [INFO]    Okuma süresi: 3 dk okuma
+2026-09-15 18:59:02,881 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-15 18:59:02,885 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\abd-universitelerinde-en-cok-ogretilen-dil-python.html
+2026-09-15 18:59:02,885 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-15 18:59:02,889 [INFO] index.html güncellendi: ABD Üniversitelerinin Favorisi: Python Neden 1 Numaralı Öğretim Dili Oldu? makale en üste eklendi.
+2026-09-15 18:59:02,891 [INFO]    Ana sayfa güncellendi.
+2026-09-15 18:59:07,947 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-15 18:59:07,952 [INFO] ============================================================
+2026-09-15 18:59:07,952 [INFO] BAŞARILI! Makale yayımlandı: ABD Üniversitelerinin Favorisi: Python Neden 1 Numaralı Öğretim Dili Oldu?
+2026-09-15 18:59:07,952 [INFO]   Dosya: articles/abd-universitelerinde-en-cok-ogretilen-dil-python.html
+2026-09-15 18:59:07,953 [INFO]   Kategori: Python
+2026-09-15 18:59:07,953 [INFO] ============================================================

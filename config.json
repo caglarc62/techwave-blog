@@ -1,8 +1,8 @@
 {
   "claude_model": "gemini-3.6-flash",
   "max_tokens": 4096,
-  "article_min_words": 800,
-  "article_max_words": 1200,
+  "article_min_words": 1500,
+  "article_max_words": 2500,
   "site_name": "TechWave",
   "site_url": "https://techwave-blog.netlify.app",
   "github_url": "https://github.com/caglarc62/techwave-blog.git",
