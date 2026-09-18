@@ -2388,3 +2388,610 @@ Please retry in 47.700421628s. [links {
 }
 ]
 2026-09-16 17:56:12,625 [ERROR] Makale üretilemedi!
+2026-09-17 18:14:22,250 [INFO] ============================================================
+2026-09-17 18:14:22,251 [INFO] İçerik botu başlatılıyor... (2026-09-17 18:14)
+2026-09-17 18:14:22,252 [INFO] ============================================================
+2026-09-17 18:14:22,252 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 18:14:22,254 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 18:14:23,298 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 18:14:24,023 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 18:14:24,696 [INFO] RSS'den 53 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 18:14:24,890 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 18:14:24,890 [INFO] Web'den 0 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 18:14:25,010 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 18:14:25,011 [INFO] Web'den 0 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 18:14:26,086 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 18:14:26,106 [INFO]    Seçilen konu: Mobil — Yandex Türkiyeden internet için geliştirilen yapay zeka süper uygulaması Yandex AI -
+2026-09-17 18:14:26,107 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 18:14:26,107 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 18:16:20,262 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash
+Please retry in 40.530770023s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 40
+}
+]
+2026-09-17 18:16:20,263 [INFO] Tekrar deneniyor...
+2026-09-17 18:16:20,263 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 18:16:20,496 [ERROR] Gemini API hatası (deneme 2): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash
+Please retry in 40.294121814s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 40
+}
+]
+2026-09-17 18:16:20,497 [INFO] Tekrar deneniyor...
+2026-09-17 18:16:20,498 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 18:16:20,693 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash
+Please retry in 40.094340904s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 40
+}
+]
+2026-09-17 18:16:20,694 [ERROR] Makale üretilemedi!
+2026-09-17 18:17:18,919 [INFO] ============================================================
+2026-09-17 18:17:18,920 [INFO] İçerik botu başlatılıyor... (2026-09-17 18:17)
+2026-09-17 18:17:18,920 [INFO] ============================================================
+2026-09-17 18:17:18,921 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 18:17:18,922 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 18:17:19,889 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 18:17:20,586 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 18:17:21,121 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 18:17:22,231 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 18:17:23,181 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 18:17:24,053 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 18:17:24,074 [INFO]    Seçilen konu: Siber Güvenlik — Microsoft AI CEOsu Süleyman yapay zekada daha sıkı güvenlik önlemleri gerektiğini belirtti
+2026-09-17 18:17:24,075 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 18:17:24,075 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 18:18:15,793 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash
+Please retry in 44.986751433s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2026-09-17 18:18:15,794 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:19:20,797 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 18:19:48,417 [INFO] Gemini yanıtı alındı. Uzunluk: 9662 karakter
+2026-09-17 18:19:48,433 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-17 18:19:48,433 [ERROR] JSON ilk 200: {
+    "title": "Microsoft AI CEO'su Mustafa Süleyman Uyardı: Yapay Zekada Neden Daha Sıkı Güvenlik Önlemleri Şart?",
+    "slug": "microsoft-ai-ceo-mustafa-suleyman-yapay-zeka-guvenlik-önlemleri",
+    
+2026-09-17 18:19:48,433 [ERROR] JSON son 200: e olarak, yapay zeka ve siber güvenlik dünyasındaki bu dönüşümü yakından takip etmeye ve sizlere en güncel bilgileri aktarmaya devam edeceğiz.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>"}
+2026-09-17 18:19:48,434 [ERROR] Deneme 2: JSON parse başarısız.
+2026-09-17 18:19:48,434 [INFO] Tekrar deneniyor...
+2026-09-17 18:19:48,434 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 18:19:55,819 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 4.960850983s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2026-09-17 18:19:55,820 [ERROR] Makale üretilemedi!
+2026-09-17 18:21:11,957 [INFO] ============================================================
+2026-09-17 18:21:11,958 [INFO] İçerik botu başlatılıyor... (2026-09-17 18:21)
+2026-09-17 18:21:11,958 [INFO] ============================================================
+2026-09-17 18:21:11,958 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 18:21:11,960 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 18:21:12,775 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 18:21:13,520 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 18:21:14,078 [INFO] RSS'den 53 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 18:21:15,280 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 18:21:15,981 [INFO] Web'den 0 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 18:21:17,001 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 18:21:17,020 [INFO]    Seçilen konu: Mobil — 3 milyar VNDye kadar fon imkanıyla yapay zeka uygulama projeleri için teklif
+2026-09-17 18:21:17,020 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 18:21:17,020 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 18:21:39,256 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 21.523985498s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 21
+}
+]
+2026-09-17 18:21:39,257 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:22:44,257 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 18:22:44,574 [ERROR] Gemini API hatası (deneme 2): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 16.205302623s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 16
+}
+]
+2026-09-17 18:22:44,575 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:23:49,576 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 18:23:49,856 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 10.923813109s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2026-09-17 18:23:49,857 [ERROR] Makale üretilemedi!
+2026-09-17 18:25:02,168 [INFO] ============================================================
+2026-09-17 18:25:02,169 [INFO] İçerik botu başlatılıyor... (2026-09-17 18:25)
+2026-09-17 18:25:02,169 [INFO] ============================================================
+2026-09-17 18:25:02,169 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 18:25:02,170 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 18:25:02,897 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 18:25:03,559 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 18:25:04,178 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 18:25:05,477 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 18:25:06,490 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 18:25:07,578 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 18:25:07,595 [INFO]    Seçilen konu: Python — MI6 Şefinden Yazılım Uyarısı Yeni nesil casuslar Python bilecek kod yazacak -
+2026-09-17 18:25:07,595 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 18:25:07,595 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 18:25:08,133 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 52.645220213s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2026-09-17 18:25:08,134 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:26:13,134 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 18:26:13,519 [ERROR] Gemini API hatası (deneme 2): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 47.258702975s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2026-09-17 18:26:13,520 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:27:21,604 [INFO] ============================================================
+2026-09-17 18:27:21,605 [INFO] İçerik botu başlatılıyor... (2026-09-17 18:27)
+2026-09-17 18:27:21,605 [INFO] ============================================================
+2026-09-17 18:27:21,605 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 18:27:21,607 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 18:27:22,178 [INFO] RSS'den 76 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 18:27:22,845 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 18:27:23,400 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 18:27:24,569 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 18:27:25,545 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 18:27:26,447 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 18:27:26,467 [INFO]    Seçilen konu: Yazılım — Python Nedir Ve Neler Yapılabilir Python Programlama Dili Kodları Ve Örnekleri -
+2026-09-17 18:27:26,467 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 18:27:26,467 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 18:27:27,066 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 33.709402894s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2026-09-17 18:27:27,068 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:28:32,069 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 18:28:32,393 [ERROR] Gemini API hatası (deneme 2): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 28.379877042s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 28
+}
+]
+2026-09-17 18:28:32,393 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:29:37,394 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 18:29:37,711 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 23.060960663s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2026-09-17 18:29:37,713 [ERROR] Makale üretilemedi!
+2026-09-17 18:46:21,544 [INFO] ============================================================
+2026-09-17 18:46:21,545 [INFO] İçerik botu başlatılıyor... (2026-09-17 18:46)
+2026-09-17 18:46:21,545 [INFO] ============================================================
+2026-09-17 18:46:21,545 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 18:46:21,547 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 18:46:22,405 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 18:46:23,042 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 18:46:23,568 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 18:46:23,783 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 18:46:23,783 [INFO] Web'den 0 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 18:46:24,780 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 18:46:24,900 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 18:46:24,901 [INFO] Web'den 0 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 18:46:24,915 [INFO]    Seçilen konu: Siber Güvenlik — Microsoft AI CEOsu Süleyman yapay zekada daha sıkı güvenlik önlemleri gerektiğini belirtti
+2026-09-17 18:46:24,915 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 18:46:24,915 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 18:46:25,585 [ERROR] Gemini API hatası (deneme 1): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 35.173594988s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2026-09-17 18:46:25,586 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:47:30,587 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 18:47:30,914 [ERROR] Gemini API hatası (deneme 2): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 29.844523786s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 29
+}
+]
+2026-09-17 18:47:30,916 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 18:48:35,916 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 18:48:36,201 [ERROR] Gemini API hatası (deneme 3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash
+Please retry in 24.56219538s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.6-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 24
+}
+]
+2026-09-17 18:48:36,202 [ERROR] Makale üretilemedi!
+2026-09-17 19:20:30,773 [INFO] ============================================================
+2026-09-17 19:20:30,774 [INFO] İçerik botu başlatılıyor... (2026-09-17 19:20)
+2026-09-17 19:20:30,774 [INFO] ============================================================
+2026-09-17 19:20:30,774 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 19:20:30,775 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 19:20:32,024 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 19:20:32,759 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 19:20:33,371 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 19:20:33,612 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 19:20:33,614 [INFO] Web'den 0 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 19:20:33,739 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 19:20:33,740 [INFO] Web'den 0 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 19:20:34,779 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 19:20:34,799 [INFO]    Seçilen konu: Yazılım — Yazılım kategorisine ait içerikler - Webrazzi
+2026-09-17 19:20:34,799 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 19:20:34,800 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 19:20:35,404 [ERROR] Gemini API hatası (deneme 1): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-17 19:20:35,404 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 19:21:40,405 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 19:21:40,594 [ERROR] Gemini API hatası (deneme 2): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-17 19:21:40,594 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 19:22:45,595 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 19:22:45,834 [ERROR] Gemini API hatası (deneme 3): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-17 19:22:45,835 [ERROR] Makale üretilemedi!
+2026-09-17 20:10:39,657 [INFO] ============================================================
+2026-09-17 20:10:39,658 [INFO] İçerik botu başlatılıyor... (2026-09-17 20:10)
+2026-09-17 20:10:39,658 [INFO] ============================================================
+2026-09-17 20:10:39,659 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-17 20:10:39,661 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-17 20:10:40,412 [INFO] RSS'den 77 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-17 20:10:41,210 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-17 20:10:41,827 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-17 20:10:42,041 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 20:10:42,042 [INFO] Web'den 0 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-17 20:10:42,169 [WARNING] Web arama hatası: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+2026-09-17 20:10:42,170 [INFO] Web'den 0 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-17 20:10:43,170 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-17 20:10:43,192 [INFO]    Seçilen konu: Yapay Zeka — Robotik ve yapay zeka eğitim programı Yüksek Teknoloji İnsan Kaynakları Geliştirme Projesinin
+2026-09-17 20:10:43,192 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-17 20:10:43,192 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-17 20:10:43,673 [ERROR] Gemini API hatası (deneme 1): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-17 20:10:43,674 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 20:11:48,674 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-17 20:11:48,893 [ERROR] Gemini API hatası (deneme 2): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-17 20:11:48,894 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-17 20:12:53,895 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-17 20:12:54,173 [ERROR] Gemini API hatası (deneme 3): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-17 20:12:54,174 [ERROR] Makale üretilemedi!
+2026-09-18 12:05:07,002 [INFO] ============================================================
+2026-09-18 12:05:07,002 [INFO] İçerik botu başlatılıyor... (2026-09-18 12:05)
+2026-09-18 12:05:07,003 [INFO] ============================================================
+2026-09-18 12:05:07,003 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-18 12:05:07,004 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-18 12:05:08,123 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-18 12:05:08,986 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-18 12:05:09,568 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-18 12:05:10,759 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-18 12:05:11,683 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-18 12:05:12,541 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-18 12:05:12,568 [INFO]    Seçilen konu: Veri Bilimi — Yapay zeka çevrimiçi alışveriş yarışında önde gidiyor - Vietnamvn
+2026-09-18 12:05:12,568 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-18 12:05:12,568 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-18 12:05:13,041 [ERROR] Gemini API hatası (deneme 1): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-18 12:05:13,041 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-18 12:06:18,043 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-18 12:06:18,247 [ERROR] Gemini API hatası (deneme 2): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-18 12:06:18,248 [INFO] Kota aşıldı, 65 saniye bekleniyor...
+2026-09-18 12:07:23,249 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-18 12:07:23,469 [ERROR] Gemini API hatası (deneme 3): 429 Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. 
+2026-09-18 12:07:23,470 [ERROR] Makale üretilemedi!
+2026-09-18 12:32:55,813 [INFO] ============================================================
+2026-09-18 12:32:55,814 [INFO] İçerik botu başlatılıyor... (2026-09-18 12:32)
+2026-09-18 12:32:55,815 [INFO] ============================================================
+2026-09-18 12:32:55,815 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-18 12:32:55,817 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-18 12:32:56,810 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-18 12:32:57,595 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-18 12:32:58,158 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-18 12:32:59,210 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-18 12:33:00,082 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-18 12:33:01,076 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-18 12:33:01,092 [INFO]    Seçilen konu: Mobil — 2026 yılında yapay zeka uygulama projelerini desteklemek için 3 milyar VND tahsis
+2026-09-18 12:33:01,092 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-18 12:33:01,093 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-18 12:33:05,564 [ERROR] Gemini API hatası (deneme 1): 403 Your project has been denied access. Please contact support.
+2026-09-18 12:33:05,565 [INFO] Tekrar deneniyor...
+2026-09-18 12:33:05,565 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-18 12:33:05,755 [ERROR] Gemini API hatası (deneme 2): 403 Your project has been denied access. Please contact support.
+2026-09-18 12:33:05,755 [INFO] Tekrar deneniyor...
+2026-09-18 12:33:05,756 [INFO] Gemini API'ye istek gönderiliyor... (deneme 3/3)
+2026-09-18 12:33:05,932 [ERROR] Gemini API hatası (deneme 3): 403 Your project has been denied access. Please contact support.
+2026-09-18 12:33:05,932 [ERROR] Makale üretilemedi!
+2026-09-18 12:33:33,907 [INFO] ============================================================
+2026-09-18 12:33:33,908 [INFO] İçerik botu başlatılıyor... (2026-09-18 12:33)
+2026-09-18 12:33:33,908 [INFO] ============================================================
+2026-09-18 12:33:33,909 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-18 12:33:33,910 [INFO] Daha önce 5 makale yayınlanmış.
+2026-09-18 12:33:34,485 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-18 12:33:34,935 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-18 12:33:35,248 [INFO] RSS'den 54 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-18 12:33:36,236 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-18 12:33:37,137 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-18 12:33:38,027 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-18 12:33:38,050 [INFO]    Seçilen konu: Siber Güvenlik — Yapay zekâ kontrolden çıkıyor mu Teknoloji devleri güvenlik konusunda ayrıştı - Dünya
+2026-09-18 12:33:38,050 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-18 12:33:38,050 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-18 12:34:07,767 [INFO] Gemini yanıtı alındı. Uzunluk: 11198 karakter
+2026-09-18 12:34:07,780 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-18 12:34:07,780 [ERROR] JSON ilk 200: {
+    "title": "Yapay Zekâ Kontrolden mi Çıkıyor? Teknoloji Devlerinin Güvenlik Ayrışması ve Siber Güvenliğin Geleceği",
+    "slug": "yapay-zeka-kontrolden-mi-cikiyor-teknoloji-devlerinin-guvenlik-ayr
+2026-09-18 12:34:07,781 [ERROR] JSON son 200: şecektir. Güvenliği bir engel değil, bir önkoşul olarak gören geliştiriciler ve kurumlar bu yeni dijital çağın kazananları olacaktır.</p><p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>"}
+2026-09-18 12:34:07,781 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-18 12:34:07,781 [INFO] Tekrar deneniyor...
+2026-09-18 12:34:07,781 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)

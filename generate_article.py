@@ -123,7 +123,14 @@ def generate_article(topic_info, config):
         except Exception as e:
             log.error("Gemini API hatası (deneme %d): %s", attempt, e)
             if attempt < max_retries:
-                log.info("Tekrar deneniyor...")
+                # 429 hatası ise bekle
+                if "429" in str(e) or "quota" in str(e).lower():
+                    wait_time = 65
+                    log.info("Kota aşıldı, %d saniye bekleniyor...", wait_time)
+                    import time
+                    time.sleep(wait_time)
+                else:
+                    log.info("Tekrar deneniyor...")
                 continue
             return None
 
@@ -177,6 +184,12 @@ def parse_article_response(raw_text):
             end = json_str.rfind('}') + 1
             if start >= 0 and end > start:
                 json_str = json_str[start:end]
+
+    # Adım 0.5: HTML code block'larındaki " karakterlerini escape et
+    # <pre><code class="language-python"> → class=\\"language-python\\"
+    def escape_html_quotes(m):
+        return m.group(0).replace('"', '\\"')
+    json_str = re.sub(r'<pre><code[^>]*>', escape_html_quotes, json_str)
 
     # Adım 1: content alanındaki code block'ları HTML'e çevir
     # ```...``` bloklarını <pre><code>...</code></pre> yap
