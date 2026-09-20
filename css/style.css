@@ -1,5 +1,5 @@
 /* =================================================================
-   TechWave — Modern Premium Tema
+   TechWave — 2026 Premium Modern Tema
    ================================================================= */
 
 /* ---------- Reset & Temel ---------- */
@@ -10,7 +10,7 @@
   --bg-secondary: #f8fafc;
   --bg-tertiary: #f1f5f9;
   --text: #0f172a;
-  --text-secondary: #64748b;
+  --text-secondary: #475569;
   --text-light: #94a3b8;
   --primary: #6366f1;
   --primary-hover: #4f46e5;
@@ -19,12 +19,12 @@
   --accent-light: #fef3c7;
   --success: #10b981;
   --border: #e2e8f0;
-  --card-shadow: 0 1px 3px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.06);
-  --card-shadow-hover: 0 10px 25px rgba(0,0,0,.08), 0 4px 10px rgba(0,0,0,.04);
+  --card-shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.03);
+  --card-shadow-hover: 0 20px 40px rgba(0,0,0,.08), 0 8px 16px rgba(0,0,0,.04);
   --radius: 12px;
   --radius-lg: 16px;
   --radius-xl: 20px;
-  --max-width: 1280px;
+  --max-width: 1200px;
   --sidebar-width: 320px;
   --ad-bg: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
   --ad-border: #c7d2fe;
@@ -32,6 +32,7 @@
   --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease;
 }
 
 [data-theme="dark"] {
@@ -45,8 +46,8 @@
   --primary-hover: #a5b4fc;
   --primary-light: #1e1b4b;
   --border: #334155;
-  --card-shadow: 0 1px 3px rgba(0,0,0,.2);
-  --card-shadow-hover: 0 10px 25px rgba(0,0,0,.3);
+  --card-shadow: 0 1px 3px rgba(0,0,0,.3), 0 4px 12px rgba(0,0,0,.2);
+  --card-shadow-hover: 0 20px 40px rgba(0,0,0,.4), 0 8px 16px rgba(0,0,0,.2);
   --ad-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
   --ad-border: #4338ca;
 }
@@ -58,6 +59,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
+  font-size: 17px;
   transition: var(--transition);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -78,24 +80,25 @@ img { max-width: 100%; height: auto; border-radius: var(--radius); }
 
 /* ---------- Header ---------- */
 .site-header {
-  background: rgba(255,255,255,.85);
+  background: rgba(255,255,255,.9);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
+  transition: var(--transition);
 }
 
 [data-theme="dark"] .site-header {
-  background: rgba(15,23,42,.85);
+  background: rgba(15,23,42,.9);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 .logo {
@@ -115,12 +118,12 @@ img { max-width: 100%; height: auto; border-radius: var(--radius); }
   background-clip: text;
 }
 
-nav { display: flex; align-items: center; gap: 32px; }
+nav { display: flex; align-items: center; gap: 28px; }
 
 nav a {
   color: var(--text-secondary);
   font-weight: 500;
-  font-size: .95rem;
+  font-size: .92rem;
   transition: var(--transition);
   position: relative;
 }
@@ -144,13 +147,13 @@ nav a:hover, nav a.active { color: var(--primary); }
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: var(--transition);
 }
 
@@ -174,28 +177,39 @@ nav a:hover, nav a.active { color: var(--primary); }
 .hero {
   background: var(--gradient-primary);
   color: #fff;
-  padding: 80px 0 70px;
+  padding: 70px 0 60px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 60%);
+  animation: pulse 8s ease-in-out infinite;
+}
+
 .hero h1 { 
-  font-size: 2.8rem; 
+  font-size: 2.6rem; 
   font-weight: 800; 
-  margin-bottom: 16px; 
+  margin-bottom: 14px; 
   letter-spacing: -1px;
   position: relative;
-  text-shadow: 0 2px 10px rgba(0,0,0,.1);
+  line-height: 1.2;
 }
 
 .hero p { 
-  font-size: 1.2rem; 
+  font-size: 1.1rem; 
   opacity: .9; 
-  max-width: 650px; 
+  max-width: 600px; 
   margin: 0 auto; 
   position: relative;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 /* ---------- Badge ---------- */
@@ -205,28 +219,102 @@ nav a:hover, nav a.active { color: var(--primary); }
   gap: 6px;
   background: rgba(255,255,255,.15);
   backdrop-filter: blur(10px);
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 30px;
   font-size: .85rem;
   font-weight: 500;
   margin-bottom: 20px;
   border: 1px solid rgba(255,255,255,.2);
   position: relative;
+  animation: borderGlow 3s ease infinite;
 }
 
 /* ---------- İçerik Düzeni ---------- */
 .content-layout {
   display: grid;
   grid-template-columns: 1fr var(--sidebar-width);
-  gap: 40px;
-  padding: 40px 0;
+  gap: 48px;
+  padding: 48px 0;
+}
+
+/* ---------- Öne Çıkan Makale ---------- */
+.featured-post {
+  grid-column: 1 / -1;
+  margin-bottom: 12px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.featured-card .card-img {
+  height: 100%;
+  min-height: 320px;
+}
+
+.featured-card .card-img img {
+  height: 100%;
+  min-height: 320px;
+}
+
+.featured-card .card-body {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-card .card-tag {
+  align-self: flex-start;
+  font-size: .8rem;
+  padding: 6px 16px;
+}
+
+.featured-card .card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 12px 0;
+  line-height: 1.3;
+}
+
+.featured-card .card-excerpt {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-light);
+  color: #b45309;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* ---------- Kartlar ---------- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
 }
 
 .card {
@@ -237,6 +325,7 @@ nav a:hover, nav a.active { color: var(--primary); }
   box-shadow: var(--card-shadow);
   transition: var(--transition);
   position: relative;
+  border-left: 4px solid transparent;
 }
 
 .card::before {
@@ -251,6 +340,18 @@ nav a:hover, nav a.active { color: var(--primary); }
   transition: var(--transition);
 }
 
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transition: 0.6s;
+  pointer-events: none;
+}
+
 .card:hover {
   transform: translateY(-6px);
   box-shadow: var(--card-shadow-hover);
@@ -258,11 +359,12 @@ nav a:hover, nav a.active { color: var(--primary); }
 }
 
 .card:hover::before { opacity: 1; }
+.card:hover::after { left: 100%; }
 
 .card-img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  overflow: hidden;
   background: var(--bg-secondary);
 }
 
@@ -271,7 +373,37 @@ nav a:hover, nav a.active { color: var(--primary); }
   height: 200px;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), filter 0.5s ease;
 }
+
+.card:hover .card-img img {
+  transform: scale(1.06);
+  filter: brightness(1.05) saturate(1.1);
+}
+
+/* ---------- Kategori Renkleri ---------- */
+.card[data-category="Yapay Zeka"] { border-left-color: #6366f1; }
+.card[data-category="Python"] { border-left-color: #3b82f6; }
+.card[data-category="Mobil"] { border-left-color: #8b5cf6; }
+.card[data-category="Oyun"] { border-left-color: #ec4899; }
+.card[data-category="Blockchain"] { border-left-color: #f59e0b; }
+.card[data-category="Siber Güvenlik"] { border-left-color: #ef4444; }
+.card[data-category="Veri Bilimi"] { border-left-color: #10b981; }
+.card[data-category="Finans"] { border-left-color: #06b6d4; }
+.card[data-category="Yazılım"] { border-left-color: #f97316; }
+.card[data-category="AI Araçları"] { border-left-color: #14b8a6; }
+.card[data-category="Bulut Bilişim"] { border-left-color: #8b5cf6; }
+
+.card:hover[data-category="Yapay Zeka"] { box-shadow: 0 20px 40px rgba(99,102,241,0.12); }
+.card:hover[data-category="Python"] { box-shadow: 0 20px 40px rgba(59,130,246,0.12); }
+.card:hover[data-category="Mobil"] { box-shadow: 0 20px 40px rgba(139,92,246,0.12); }
+.card:hover[data-category="Oyun"] { box-shadow: 0 20px 40px rgba(236,72,153,0.12); }
+.card:hover[data-category="Blockchain"] { box-shadow: 0 20px 40px rgba(245,158,11,0.12); }
+.card:hover[data-category="Siber Güvenlik"] { box-shadow: 0 20px 40px rgba(239,68,68,0.12); }
+.card:hover[data-category="Veri Bilimi"] { box-shadow: 0 20px 40px rgba(16,185,129,0.12); }
+.card:hover[data-category="Finans"] { box-shadow: 0 20px 40px rgba(6,182,212,0.12); }
+.card:hover[data-category="Yazılım"] { box-shadow: 0 20px 40px rgba(249,115,22,0.12); }
+.card:hover[data-category="AI Araçları"] { box-shadow: 0 20px 40px rgba(20,184,166,0.12); }
 
 /* ---------- Makale Hero Görsel ---------- */
 .article-hero {
@@ -338,7 +470,7 @@ nav a:hover, nav a.active { color: var(--primary); }
   border: 1px solid var(--border);
 }
 
-.card-body { padding: 24px; }
+.card-body { padding: 22px; }
 
 .card-tag {
   display: inline-flex;
@@ -346,19 +478,31 @@ nav a:hover, nav a.active { color: var(--primary); }
   gap: 6px;
   background: var(--primary-light);
   color: var(--primary);
-  font-size: .75rem;
+  font-size: .72rem;
   font-weight: 600;
   padding: 5px 14px;
   border-radius: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
+/* Kategori tag renkleri */
+.card-tag[data-category="Yapay Zeka"] { background: #eef2ff; color: #6366f1; }
+.card-tag[data-category="Python"] { background: #eff6ff; color: #3b82f6; }
+.card-tag[data-category="Mobil"] { background: #f5f3ff; color: #8b5cf6; }
+.card-tag[data-category="Oyun"] { background: #fdf2f8; color: #ec4899; }
+.card-tag[data-category="Blockchain"] { background: #fffbeb; color: #d97706; }
+.card-tag[data-category="Siber Güvenlik"] { background: #fef2f2; color: #ef4444; }
+.card-tag[data-category="Veri Bilimi"] { background: #ecfdf5; color: #10b981; }
+.card-tag[data-category="Finans"] { background: #ecfeff; color: #0891b2; }
+.card-tag[data-category="Yazılım"] { background: #fff7ed; color: #ea580c; }
+.card-tag[data-category="AI Araçları"] { background: #f0fdfa; color: #0d9488; }
+
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   line-height: 1.4;
   letter-spacing: -0.3px;
 }
@@ -368,16 +512,16 @@ nav a:hover, nav a.active { color: var(--primary); }
 
 .card-excerpt {
   color: var(--text-secondary);
-  font-size: .92rem;
-  line-height: 1.7;
-  margin-bottom: 18px;
+  font-size: .88rem;
+  line-height: 1.65;
+  margin-bottom: 16px;
 }
 
 .card-meta {
   display: flex;
   align-items: center;
-  gap: 16px;
-  font-size: .82rem;
+  gap: 14px;
+  font-size: .78rem;
   color: var(--text-light);
 }
 
@@ -415,42 +559,42 @@ nav a:hover, nav a.active { color: var(--primary); }
 }
 
 .article-content {
-  max-width: 780px;
+  max-width: 720px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
 
 .article-content h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin: 40px 0 18px;
+  margin: 36px 0 16px;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--border);
   letter-spacing: -0.3px;
 }
 
 .article-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin: 30px 0 14px;
+  margin: 28px 0 12px;
   color: var(--primary);
 }
 
 .article-content p {
-  margin-bottom: 20px;
-  font-size: 1.08rem;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
   color: var(--text);
   line-height: 1.8;
 }
 
 .article-content ul, .article-content ol {
-  margin: 18px 0;
+  margin: 16px 0;
   padding-left: 28px;
 }
 
 .article-content li {
   margin-bottom: 10px;
-  font-size: 1.04rem;
+  font-size: 1.02rem;
   line-height: 1.7;
 }
 
@@ -458,18 +602,18 @@ nav a:hover, nav a.active { color: var(--primary); }
   border-left: 4px solid var(--primary);
   background: var(--primary-light);
   padding: 20px 24px;
-  margin: 28px 0;
+  margin: 24px 0;
   border-radius: 0 var(--radius) var(--radius) 0;
   font-style: italic;
   color: var(--text-secondary);
-  font-size: 1.02rem;
+  font-size: 1rem;
 }
 
 .article-content code {
   background: var(--bg-tertiary);
   padding: 3px 8px;
   border-radius: 6px;
-  font-size: .92rem;
+  font-size: .9rem;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   border: 1px solid var(--border);
 }
@@ -489,29 +633,112 @@ nav a:hover, nav a.active { color: var(--primary); }
   padding: 0;
   color: inherit;
   border: none;
-  font-size: .9rem;
+  font-size: .88rem;
+}
+
+/* ---------- İlgili Makaleler ---------- */
+.related-posts {
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 2px solid var(--border);
+}
+
+.related-posts h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ---------- Bülten ---------- */
+.newsletter-cta {
+  background: var(--gradient-primary);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.newsletter-cta h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.newsletter-cta p {
+  opacity: .9;
+  margin-bottom: 20px;
+  font-size: .95rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 14px 18px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: .95rem;
+  font-family: inherit;
+}
+
+.newsletter-form button {
+  padding: 14px 24px;
+  background: #fff;
+  color: var(--primary);
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: .95rem;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
 }
 
 /* ---------- Sidebar ---------- */
-.sidebar { display: flex; flex-direction: column; gap: 28px; }
+.sidebar { display: flex; flex-direction: column; gap: 24px; }
 
 .sidebar-widget {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 22px;
   transition: var(--transition);
+  border-top: 3px solid transparent;
+  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(135deg, #6366f1, #a855f7);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .sidebar-widget:hover {
   box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
 }
 
 .sidebar-widget h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
   border-bottom: 2px solid var(--primary);
   display: flex;
   align-items: center;
@@ -521,42 +748,60 @@ nav a:hover, nav a.active { color: var(--primary); }
 .popular-list { list-style: none; }
 
 .popular-list li {
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+  position: relative;
+  padding-left: 16px;
+}
+
+.popular-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  opacity: 0;
+  transform: translateX(-8px);
   transition: var(--transition);
 }
 
-.popular-list li:hover { padding-left: 8px; }
+.popular-list li:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.popular-list li:hover { padding-left: 24px; }
 .popular-list li:last-child { border-bottom: none; }
 
 .popular-list a {
   color: var(--text);
   font-weight: 500;
-  font-size: .92rem;
+  font-size: .88rem;
   display: block;
   transition: var(--transition);
 }
 
 .popular-list a:hover { color: var(--primary); }
 
-.tag-cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .tag {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   padding: 6px 16px;
   border-radius: 24px;
-  font-size: .85rem;
+  font-size: .82rem;
   color: var(--text-secondary);
   transition: var(--transition);
   font-weight: 500;
 }
 
 .tag:hover {
-  background: var(--primary);
+  background: var(--gradient-primary);
   color: #fff;
-  border-color: var(--primary);
+  border-color: transparent;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.3);
 }
 
 /* ---------- Kategori Sayfası ---------- */
@@ -575,13 +820,13 @@ nav a:hover, nav a.active { color: var(--primary); }
   padding: 50px 0;
 }
 
-.form-group { margin-bottom: 24px; }
+.form-group { margin-bottom: 22px; }
 
 .form-group label {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  font-size: .95rem;
+  font-size: .92rem;
   color: var(--text);
 }
 
@@ -625,7 +870,7 @@ nav a:hover, nav a.active { color: var(--primary); }
 
 .btn:hover { 
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99,102,241,.4);
+  box-shadow: 0 8px 25px rgba(99,102,241,.4);
   color: #fff;
 }
 
@@ -644,11 +889,11 @@ nav a:hover, nav a.active { color: var(--primary); }
   margin-bottom: 40px;
 }
 
-.footer-about p { color: var(--text-secondary); font-size: .92rem; margin-top: 14px; line-height: 1.7; }
+.footer-about p { color: var(--text-secondary); font-size: .9rem; margin-top: 14px; line-height: 1.7; }
 
 .footer-links { list-style: none; }
 .footer-links li { margin-bottom: 10px; }
-.footer-links a { color: var(--text-secondary); font-size: .92rem; transition: var(--transition); }
+.footer-links a { color: var(--text-secondary); font-size: .9rem; transition: var(--transition); }
 .footer-links a:hover { color: var(--primary); padding-left: 4px; }
 
 .footer-bottom {
@@ -656,7 +901,7 @@ nav a:hover, nav a.active { color: var(--primary); }
   padding-top: 24px;
   border-top: 1px solid var(--border);
   color: var(--text-light);
-  font-size: .85rem;
+  font-size: .82rem;
 }
 
 /* ---------- Ad Slot ---------- */
@@ -667,10 +912,10 @@ nav a:hover, nav a.active { color: var(--primary); }
   align-items: center;
   justify-content: center;
   color: var(--text-light);
-  font-size: .8rem;
+  font-size: .78rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 28px 0;
+  margin: 24px 0;
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -686,15 +931,14 @@ nav a:hover, nav a.active { color: var(--primary); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  33% { transform: translateY(-10px) rotate(1deg); }
-  66% { transform: translateY(5px) rotate(-1deg); }
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+@keyframes borderGlow {
+  0%, 100% { border-color: rgba(255,255,255,.3); box-shadow: 0 0 5px rgba(255,255,255,.1); }
+  50% { border-color: rgba(255,255,255,.6); box-shadow: 0 0 15px rgba(255,255,255,.15); }
 }
 
 @keyframes gradientShift {
@@ -703,14 +947,9 @@ nav a:hover, nav a.active { color: var(--primary); }
   100% { background-position: 0% 50%; }
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.5; }
-  50% { transform: scale(1.1); opacity: 0.8; }
-}
-
-@keyframes borderGlow {
-  0%, 100% { border-color: var(--primary); box-shadow: 0 0 5px rgba(99,102,241,0.3); }
-  50% { border-color: #a855f7; box-shadow: 0 0 20px rgba(168,85,247,0.3); }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .card { animation: fadeInUp 0.5s ease forwards; }
@@ -720,204 +959,20 @@ nav a:hover, nav a.active { color: var(--primary); }
 .card:nth-child(5) { animation-delay: 0.35s; }
 .card:nth-child(6) { animation-delay: 0.4s; }
 
-/* ---------- Canlı Kart Stilleri ---------- */
-.card {
-  border-left: 4px solid transparent;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.08);
-  border-color: transparent;
-}
-
-/* Kategoriye göre renkli sol kenar */
-.card[data-category="Yapay Zeka"] { border-left-color: #6366f1; }
-.card[data-category="Python"] { border-left-color: #3b82f6; }
-.card[data-category="Mobil"] { border-left-color: #8b5cf6; }
-.card[data-category="Oyun"] { border-left-color: #ec4899; }
-.card[data-category="Blockchain"] { border-left-color: #f59e0b; }
-.card[data-category="Siber Güvenlik"] { border-left-color: #ef4444; }
-.card[data-category="Veri Bilimi"] { border-left-color: #10b981; }
-.card[data-category="Finans"] { border-left-color: #06b6d4; }
-.card[data-category="Yazılım"] { border-left-color: #f97316; }
-.card[data-category="AI Araçları"] { border-left-color: #14b8a6; }
-.card[data-category="Bulut Bilişim"] { border-left-color: #8b5cf6; }
-
-.card:hover[data-category="Yapay Zeka"] { border-left-color: #6366f1; box-shadow: 0 20px 40px rgba(99,102,241,0.15); }
-.card:hover[data-category="Python"] { border-left-color: #3b82f6; box-shadow: 0 20px 40px rgba(59,130,246,0.15); }
-.card:hover[data-category="Mobil"] { border-left-color: #8b5cf6; box-shadow: 0 20px 40px rgba(139,92,246,0.15); }
-.card:hover[data-category="Oyun"] { border-left-color: #ec4899; box-shadow: 0 20px 40px rgba(236,72,153,0.15); }
-.card:hover[data-category="Blockchain"] { border-left-color: #f59e0b; box-shadow: 0 20px 40px rgba(245,158,11,0.15); }
-.card:hover[data-category="Siber Güvenlik"] { border-left-color: #ef4444; box-shadow: 0 20px 40px rgba(239,68,68,0.15); }
-.card:hover[data-category="Veri Bilimi"] { border-left-color: #10b981; box-shadow: 0 20px 40px rgba(16,185,129,0.15); }
-.card:hover[data-category="Finans"] { border-left-color: #06b6d4; box-shadow: 0 20px 40px rgba(6,182,212,0.15); }
-.card:hover[data-category="Yazılım"] { border-left-color: #f97316; box-shadow: 0 20px 40px rgba(249,115,22,0.15); }
-.card:hover[data-category="AI Araçları"] { border-left-color: #14b8a6; box-shadow: 0 20px 40px rgba(20,184,166,0.15); }
-.card:hover[data-category="Bulut Bilişim"] { border-left-color: #8b5cf6; box-shadow: 0 20px 40px rgba(139,92,246,0.15); }
-
-/* Kart görseli hover efekti */
-.card-img {
-  overflow: hidden;
-  position: relative;
-}
-
-.card-img img {
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), filter 0.5s ease;
-}
-
-.card:hover .card-img img {
-  transform: scale(1.08);
-  filter: brightness(1.1) saturate(1.2);
-}
-
-/* Kart tag renkleri */
-.card-tag[data-category="Yapay Zeka"] { background: #eef2ff; color: #6366f1; }
-.card-tag[data-category="Python"] { background: #eff6ff; color: #3b82f6; }
-.card-tag[data-category="Mobil"] { background: #f5f3ff; color: #8b5cf6; }
-.card-tag[data-category="Oyun"] { background: #fdf2f8; color: #ec4899; }
-.card-tag[data-category="Blockchain"] { background: #fffbeb; color: #f59e0b; }
-.card-tag[data-category="Siber Güvenlik"] { background: #fef2f2; color: #ef4444; }
-.card-tag[data-category="Veri Bilimi"] { background: #ecfdf5; color: #10b981; }
-.card-tag[data-category="Finans"] { background: #ecfeff; color: #06b6d4; }
-.card-tag[data-category="Yazılım"] { background: #fff7ed; color: #f97316; }
-.card-tag[data-category="AI Araçları"] { background: #f0fdfa; color: #14b8a6; }
-
-/* ---------- Hero Canlı Animasyonlar ---------- */
-.hero {
-  background: linear-gradient(-45deg, #6366f1, #8b5cf6, #a855f7, #667eea);
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,.12) 0%, transparent 60%);
-  animation: pulse 6s ease-in-out infinite;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 20%;
-  right: -10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
-  border-radius: 50%;
-  animation: float 10s ease-in-out infinite;
-}
-
-/* ---------- Kart Üzerinde Parlayan Efekt ---------- */
-.card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-  transition: 0.5s;
-  pointer-events: none;
-}
-
-.card:hover::after {
-  left: 100%;
-}
-
-/* ---------- Badge Canlı Renk ---------- */
-.badge {
-  background: linear-gradient(135deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.05) 100%);
-  animation: borderGlow 3s ease infinite;
-  border: 1px solid rgba(255,255,255,.3);
-}
-
-/* ---------- Logo Canlı Gradient ---------- */
-.logo span {
-  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899, #f59e0b);
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 4s ease infinite;
-}
-
-/* ---------- Sidebar Widget Canlı ---------- */
-.sidebar-widget {
-  border-top: 3px solid transparent;
-  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(135deg, #6366f1, #a855f7);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  transition: all 0.3s ease;
-}
-
-.sidebar-widget:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(99,102,241,0.1);
-}
-
-/* ---------- Tag Canlı ---------- */
-.tag {
-  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
-  border: 1px solid var(--border);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tag:hover {
-  background: var(--gradient-primary);
-  color: #fff;
-  border-color: transparent;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(99,102,241,0.3);
-}
-
-/* ---------- Popüler Liste Hover ---------- */
-.popular-list li {
-  position: relative;
-  padding-left: 16px;
-  transition: all 0.3s ease;
-}
-
-.popular-list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--primary);
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s ease;
-}
-
-.popular-list li:hover::before {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.popular-list li:hover {
-  padding-left: 24px;
-  color: var(--primary);
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .content-layout {
     grid-template-columns: 1fr;
   }
   .sidebar { order: -1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .featured-card { grid-template-columns: 1fr; }
+  .related-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 60px 0 50px; }
+  .hero { padding: 50px 0 45px; }
   .hero h1 { font-size: 1.8rem; }
-  .hero p { font-size: 1rem; }
+  .hero p { font-size: .95rem; }
   .article-header h1 { font-size: 1.6rem; }
   .article-hero { height: 300px; }
   .article-hero-content { padding: 24px; }
@@ -941,12 +996,18 @@ nav a:hover, nav a.active { color: var(--primary); }
   .sidebar { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
   .ad-slot-728 { width: 100%; height: auto; min-height: 90px; }
+  .featured-card .card-body { padding: 24px; }
+  .featured-card .card-title { font-size: 1.3rem; }
+  .related-grid { grid-template-columns: 1fr; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-cta { padding: 30px 20px; }
 }
 
 @media (max-width: 480px) {
   .container { padding: 0 16px; }
   .hero h1 { font-size: 1.5rem; }
   .card-body { padding: 18px; }
+  body { font-size: 16px; }
 }
 
 /* ---------- Utility ---------- */
