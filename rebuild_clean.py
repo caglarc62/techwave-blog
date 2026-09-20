@@ -5,51 +5,164 @@ import glob
 articles_dir = os.path.join(os.path.dirname(__file__), "articles")
 index_path = os.path.join(os.path.dirname(__file__), "index.html")
 
+MANUAL = {
+    "yapay-zeka-ile-nasil-para-kazanilir": {
+        "title": "2026'da Yapay Zeka ile Nasıl Para Kazanılır? 8 Kanıtlanmış Yol",
+        "category": "Yapay Zeka",
+        "date": "20 Eylül 2026",
+        "read_time": "7 dk okuma",
+        "excerpt": "Yapay zeka araçlarını kullanarak gelir elde etmenin 8 yolu ve pratik ipuçları.",
+        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200",
+    },
+    "siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz": {
+        "title": "Siber Güvenlik 101: Kişisel Verilerinizi Nasıl Korursunuz?",
+        "category": "Siber Güvenlik",
+        "date": "20 Eylül 2026",
+        "read_time": "7 dk okuma",
+        "excerpt": "2026 yılında kişisel verilerinizi koruma rehberi.",
+        "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
+    },
+    "chatgpt-vs-clude-vs-gemini-karsilastirma": {
+        "title": "ChatGPT vs Claude vs Gemini: 2026'da Hangi AI Aracı Daha İyi?",
+        "category": "AI Araçları",
+        "date": "20 Eylül 2026",
+        "read_time": "8 dk okuma",
+        "excerpt": "ChatGPT, Claude ve Gemini karşılaştırması 2026.",
+        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200",
+    },
+    "2026-telefon-alirken-5-kritik-hata": {
+        "title": "2026'da Akıllı Telefon Alırken Yapılan 5 Kritik Hata",
+        "category": "Mobil",
+        "date": "19 Eylül 2026",
+        "read_time": "6 dk okuma",
+        "excerpt": "Doğru telefon seçimi için bilmeniz gereken 5 hata.",
+        "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200",
+    },
+    "2026-piyasa-dinamikleri-algoritmik-ticaret-kripto": {
+        "title": "2026 Piyasa Dinamikleri: Algoritmik Ticaret ve Kripto",
+        "category": "Finans",
+        "date": "20 Eylül 2026",
+        "read_time": "6 dk okuma",
+        "excerpt": "Küresel faiz politikaları, BIST 100, Bitcoin ETF.",
+        "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200",
+    },
+    "2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri": {
+        "title": "2026 İşletim Sistemi ve Kodlama Teknoloji Trendleri",
+        "category": "Yazılım",
+        "date": "20 Eylül 2026",
+        "read_time": "5 dk okuma",
+        "excerpt": "Yerleşik yapay zeka, on-device AI, cross-platform diller.",
+        "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
+    },
+    "google-gemini-yapay-zeka-guvenlik-testi-sirketlere-sizdi": {
+        "title": "Google Gemini Güvenlik Testinde Şirket Sınırlarını Aştı",
+        "category": "Siber Güvenlik",
+        "date": "19 Eylül 2026",
+        "read_time": "5 dk okuma",
+        "excerpt": "Google Gemini güvenlik testinde şirketlerin savunma hatlarını aştı.",
+        "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
+    },
+    "abd-universitelerinde-en-cok-ogretilen-dil-python": {
+        "title": "ABD Üniversitelerinin Favori Programlama Dili: Python",
+        "category": "Python",
+        "date": "18 Eylül 2026",
+        "read_time": "6 dk okuma",
+        "excerpt": "ABD üniversitelerinde Python neden zirvede?",
+        "image_url": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200",
+    },
+    "python-nedir-bilmeniz-gereken-her-sey": {
+        "title": "Python Nedir? Sıfırdan İleri Seviyeye Bilmeniz Gereken Her Şey",
+        "category": "Python",
+        "date": "16 Eylül 2026",
+        "read_time": "6 dk okuma",
+        "excerpt": "Python nedir, ne işe yarar ve nasıl öğrenilir?",
+        "image_url": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200",
+    },
+    "insaat-endustrisi-icin-en-iyi-10-ai-araci-eylul-2026": {
+        "title": "İnşaat Endüstrisi için En İyi 10 AI Aracı Eylül 2026",
+        "category": "Yapay Zeka",
+        "date": "16 Eylül 2026",
+        "read_time": "5 dk okuma",
+        "excerpt": "İnşaat sektörünü dönüştüren en iyi 10 yapay zeka aracı.",
+        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200",
+    },
+    "blockchain-yazilimi-en-iyi-11-programlama-dili": {
+        "title": "Blockchain Yazılımında En İyi 11 Programlama Dili",
+        "category": "Blockchain",
+        "date": "16 Eylül 2026",
+        "read_time": "6 dk okuma",
+        "excerpt": "Web3 için en iyi 11 programlama dili rehberi.",
+        "image_url": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200",
+    },
+    "ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme": {
+        "title": "AB 15 Yaş Altı Çocuklara Oyun Kısıtlaması Getiriyor",
+        "category": "Oyun",
+        "date": "16 Eylül 2026",
+        "read_time": "5 dk okuma",
+        "excerpt": "AB'nin 15 yaş altı oyun kısıtlaması kararı ve detayları.",
+        "image_url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200",
+    },
+    "apple-yapay-zeka-destekli-saglik-uygulamasi": {
+        "title": "Apple Yapay Zeka Destekli Yeni Sağlık Uygulamasını Duyurdu",
+        "category": "Mobil",
+        "date": "12 Eylül 2026",
+        "read_time": "4 dk okuma",
+        "excerpt": "Apple'ın yapay zeka destekli yeni sağlık uygulaması.",
+        "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200",
+    },
+}
+
 # Makaleleri tara
 articles = []
 seen = set()
 for filepath in sorted(glob.glob(os.path.join(articles_dir, "*.html")), reverse=True):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
     slug = os.path.splitext(os.path.basename(filepath))[0]
     if slug in seen:
         continue
     seen.add(slug)
-    
-    # Title
-    m = re.search(r'<title>(.*?)—', content)
-    title = m.group(1).strip() if m else "Yeni Makale"
-    
-    # Excerpt
-    m = re.search(r'<meta name="description" content="(.*?)"', content)
-    excerpt = m.group(1) if m else ""
-    
-    # Category
-    m = re.search(r'<span class="card-tag"[^>]*>(.*?)</span>', content)
-    category = m.group(1) if m else "Teknoloji"
-    
-    # Image
-    m = re.search(r'<meta property="og:image" content="(.*?)"', content)
-    image_url = m.group(1) if m else ""
-    
-    # Date
-    m = re.search(r'📅\s*(.*?)<', content)
-    date = m.group(1).strip() if m else ""
-    
-    # Read time
-    m = re.search(r'⏱️\s*(.*?)<', content)
-    read_time = m.group(1).strip() if m else "5 dk okuma"
-    
-    articles.append({
-        "title": title,
-        "slug": slug,
-        "excerpt": excerpt,
-        "category": category,
-        "image_url": image_url,
-        "date": date,
-        "read_time": read_time,
-    })
+
+    if slug in MANUAL:
+        m = MANUAL[slug]
+        articles.append({
+            "title": m["title"],
+            "slug": slug,
+            "excerpt": m["excerpt"],
+            "category": m["category"],
+            "image_url": m["image_url"],
+            "date": m["date"],
+            "read_time": m["read_time"],
+        })
+    else:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        m = re.search(r'<title>(.*?)—', content)
+        title = m.group(1).strip() if m else "Yeni Makale"
+
+        m = re.search(r'<meta name="description" content="(.*?)"', content)
+        excerpt = m.group(1) if m else ""
+
+        m = re.search(r'<span class="card-tag"[^>]*>(.*?)</span>', content)
+        category = m.group(1) if m else "Teknoloji"
+
+        m = re.search(r'<meta property="og:image" content="(.*?)"', content)
+        image_url = m.group(1) if m else ""
+
+        m = re.search(r'📅\s*(.*?)<', content)
+        date = m.group(1).strip() if m else ""
+
+        m = re.search(r'⏱️\s*(.*?)<', content)
+        read_time = m.group(1).strip() if m else "5 dk okuma"
+
+        articles.append({
+            "title": title,
+            "slug": slug,
+            "excerpt": excerpt,
+            "category": category,
+            "image_url": image_url,
+            "date": date,
+            "read_time": read_time,
+        })
 
 # Tarihe göre sırala
 def parse_date(d):
