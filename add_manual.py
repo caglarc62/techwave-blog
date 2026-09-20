@@ -3,15 +3,15 @@ sys.path.insert(0, '.')
 from update_index import create_card_html
 
 article = {
-    "title": "2026'da Akıllı Telefon Alırken Yapılan 5 Kritik Hata ve Doğru Tercih Rehberi",
-    "slug": "2026-telefon-alirken-5-kritik-hata",
-    "excerpt": "Teknoloji dünyası her geçen gün daha hızlı gelişiyor. Doğru cihazı seçmek, sadece en pahalı modeli satın almaktan geçmiyor.",
-    "category": "Mobil",
-    "emoji": "📱",
+    "title": "2026'da İşletim Sistemi ve Kodlama Dünyasını Şekillendiren Teknoloji Trendleri",
+    "slug": "2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri",
+    "excerpt": "Teknoloji dünyasında yeniliklerin hızı kesilmiyor. Yerleşik yapay zeka, on-device AI, cross-platform diller ve daha fazlası.",
+    "category": "Yazılım",
+    "emoji": "💻",
     "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
-    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600",
-    "date": "19 Eylül 2026",
-    "read_time": "6 dk okuma"
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+    "date": "20 Eylül 2026",
+    "read_time": "5 dk okuma"
 }
 
 card = create_card_html(article)
