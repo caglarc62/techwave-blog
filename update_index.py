@@ -112,10 +112,10 @@ def create_card_html(article):
         img_html = f'<div style="display:flex; align-items:center; justify-content:center; color:#fff; font-size:2rem; height:100%; background:{gradient};">{emoji}</div>'
 
     return f'''        <!-- YENİ MAKALE — Otomatik eklendi -->
-        <article class="card">
+        <article class="card" data-category="{category}">
           <div class="card-img">{img_html}</div>
           <div class="card-body">
-            <span class="card-tag">{category}</span>
+            <span class="card-tag" data-category="{category}">{category}</span>
             <h2 class="card-title">
               <a href="articles/{slug}.html">{title}</a>
             </h2>

@@ -180,22 +180,6 @@ nav a:hover, nav a.active { color: var(--primary); }
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,.1) 0%, transparent 60%);
-  animation: pulse 8s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.5; }
-  50% { transform: scale(1.1); opacity: 0.8; }
-}
-
 .hero h1 { 
   font-size: 2.8rem; 
   font-weight: 800; 
@@ -702,10 +686,225 @@ nav a:hover, nav a.active { color: var(--primary); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(1deg); }
+  66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+@keyframes borderGlow {
+  0%, 100% { border-color: var(--primary); box-shadow: 0 0 5px rgba(99,102,241,0.3); }
+  50% { border-color: #a855f7; box-shadow: 0 0 20px rgba(168,85,247,0.3); }
+}
+
 .card { animation: fadeInUp 0.5s ease forwards; }
 .card:nth-child(2) { animation-delay: 0.1s; }
 .card:nth-child(3) { animation-delay: 0.2s; }
 .card:nth-child(4) { animation-delay: 0.3s; }
+.card:nth-child(5) { animation-delay: 0.35s; }
+.card:nth-child(6) { animation-delay: 0.4s; }
+
+/* ---------- Canlı Kart Stilleri ---------- */
+.card {
+  border-left: 4px solid transparent;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.08);
+  border-color: transparent;
+}
+
+/* Kategoriye göre renkli sol kenar */
+.card[data-category="Yapay Zeka"] { border-left-color: #6366f1; }
+.card[data-category="Python"] { border-left-color: #3b82f6; }
+.card[data-category="Mobil"] { border-left-color: #8b5cf6; }
+.card[data-category="Oyun"] { border-left-color: #ec4899; }
+.card[data-category="Blockchain"] { border-left-color: #f59e0b; }
+.card[data-category="Siber Güvenlik"] { border-left-color: #ef4444; }
+.card[data-category="Veri Bilimi"] { border-left-color: #10b981; }
+.card[data-category="Finans"] { border-left-color: #06b6d4; }
+.card[data-category="Yazılım"] { border-left-color: #f97316; }
+.card[data-category="AI Araçları"] { border-left-color: #14b8a6; }
+.card[data-category="Bulut Bilişim"] { border-left-color: #8b5cf6; }
+
+.card:hover[data-category="Yapay Zeka"] { border-left-color: #6366f1; box-shadow: 0 20px 40px rgba(99,102,241,0.15); }
+.card:hover[data-category="Python"] { border-left-color: #3b82f6; box-shadow: 0 20px 40px rgba(59,130,246,0.15); }
+.card:hover[data-category="Mobil"] { border-left-color: #8b5cf6; box-shadow: 0 20px 40px rgba(139,92,246,0.15); }
+.card:hover[data-category="Oyun"] { border-left-color: #ec4899; box-shadow: 0 20px 40px rgba(236,72,153,0.15); }
+.card:hover[data-category="Blockchain"] { border-left-color: #f59e0b; box-shadow: 0 20px 40px rgba(245,158,11,0.15); }
+.card:hover[data-category="Siber Güvenlik"] { border-left-color: #ef4444; box-shadow: 0 20px 40px rgba(239,68,68,0.15); }
+.card:hover[data-category="Veri Bilimi"] { border-left-color: #10b981; box-shadow: 0 20px 40px rgba(16,185,129,0.15); }
+.card:hover[data-category="Finans"] { border-left-color: #06b6d4; box-shadow: 0 20px 40px rgba(6,182,212,0.15); }
+.card:hover[data-category="Yazılım"] { border-left-color: #f97316; box-shadow: 0 20px 40px rgba(249,115,22,0.15); }
+.card:hover[data-category="AI Araçları"] { border-left-color: #14b8a6; box-shadow: 0 20px 40px rgba(20,184,166,0.15); }
+.card:hover[data-category="Bulut Bilişim"] { border-left-color: #8b5cf6; box-shadow: 0 20px 40px rgba(139,92,246,0.15); }
+
+/* Kart görseli hover efekti */
+.card-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), filter 0.5s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.08);
+  filter: brightness(1.1) saturate(1.2);
+}
+
+/* Kart tag renkleri */
+.card-tag[data-category="Yapay Zeka"] { background: #eef2ff; color: #6366f1; }
+.card-tag[data-category="Python"] { background: #eff6ff; color: #3b82f6; }
+.card-tag[data-category="Mobil"] { background: #f5f3ff; color: #8b5cf6; }
+.card-tag[data-category="Oyun"] { background: #fdf2f8; color: #ec4899; }
+.card-tag[data-category="Blockchain"] { background: #fffbeb; color: #f59e0b; }
+.card-tag[data-category="Siber Güvenlik"] { background: #fef2f2; color: #ef4444; }
+.card-tag[data-category="Veri Bilimi"] { background: #ecfdf5; color: #10b981; }
+.card-tag[data-category="Finans"] { background: #ecfeff; color: #06b6d4; }
+.card-tag[data-category="Yazılım"] { background: #fff7ed; color: #f97316; }
+.card-tag[data-category="AI Araçları"] { background: #f0fdfa; color: #14b8a6; }
+
+/* ---------- Hero Canlı Animasyonlar ---------- */
+.hero {
+  background: linear-gradient(-45deg, #6366f1, #8b5cf6, #a855f7, #667eea);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,.12) 0%, transparent 60%);
+  animation: pulse 6s ease-in-out infinite;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 10s ease-in-out infinite;
+}
+
+/* ---------- Kart Üzerinde Parlayan Efekt ---------- */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card:hover::after {
+  left: 100%;
+}
+
+/* ---------- Badge Canlı Renk ---------- */
+.badge {
+  background: linear-gradient(135deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.05) 100%);
+  animation: borderGlow 3s ease infinite;
+  border: 1px solid rgba(255,255,255,.3);
+}
+
+/* ---------- Logo Canlı Gradient ---------- */
+.logo span {
+  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899, #f59e0b);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* ---------- Sidebar Widget Canlı ---------- */
+.sidebar-widget {
+  border-top: 3px solid transparent;
+  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(135deg, #6366f1, #a855f7);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: all 0.3s ease;
+}
+
+.sidebar-widget:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(99,102,241,0.1);
+}
+
+/* ---------- Tag Canlı ---------- */
+.tag {
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 1px solid var(--border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tag:hover {
+  background: var(--gradient-primary);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(99,102,241,0.3);
+}
+
+/* ---------- Popüler Liste Hover ---------- */
+.popular-list li {
+  position: relative;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+
+.popular-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.popular-list li:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.popular-list li:hover {
+  padding-left: 24px;
+  color: var(--primary);
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
