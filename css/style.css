@@ -102,20 +102,28 @@ img { max-width: 100%; height: auto; border-radius: var(--radius); }
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--text);
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text);
   letter-spacing: -0.5px;
 }
 
-.logo span { 
+.logo-text span { 
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.logo svg, .logo img {
+  height: 36px;
+  width: auto;
 }
 
 nav { display: flex; align-items: center; gap: 28px; }

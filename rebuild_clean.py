@@ -157,7 +157,7 @@ html = f'''<!DOCTYPE html>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Tech<span>Wave</span></a>
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="TechWave"></a>
       <button class="mobile-menu-btn" aria-label="Menü">☰</button>
       <nav>
         <a href="index.html" class="active">Ana Sayfa</a>
@@ -235,7 +235,7 @@ html = f'''<!DOCTYPE html>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
-          <a href="index.html" class="logo">Tech<span>Wave</span></a>
+          <a href="index.html" class="logo"><img src="images/logo.svg" alt="TechWave"></a>
           <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
         </div>
         <div>
