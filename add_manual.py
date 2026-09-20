@@ -3,15 +3,15 @@ sys.path.insert(0, '.')
 from update_index import create_card_html
 
 article = {
-    "title": "2026'da İşletim Sistemi ve Kodlama Dünyasını Şekillendiren Teknoloji Trendleri",
-    "slug": "2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri",
-    "excerpt": "Teknoloji dünyasında yeniliklerin hızı kesilmiyor. Yerleşik yapay zeka, on-device AI, cross-platform diller ve daha fazlası.",
-    "category": "Yazılım",
-    "emoji": "💻",
-    "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
-    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+    "title": "2026 Piyasa Dinamikleri: Algoritmik Ticaret, Küresel Makro Veriler ve Kripto Piyasalarının Yönü",
+    "slug": "2026-piyasa-dinamikleri-algoritmik-ticaret-kripto",
+    "excerpt": "Küresel faiz politikaları, BIST 100, Bitcoin ETF akışları ve algoritmik ticaret stratejileri: 2026 finans dünyasının tamamı.",
+    "category": "Finans",
+    "emoji": "📈",
+    "gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
+    "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600",
     "date": "20 Eylül 2026",
-    "read_time": "5 dk okuma"
+    "read_time": "6 dk okuma"
 }
 
 card = create_card_html(article)
