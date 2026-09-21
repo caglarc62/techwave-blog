@@ -3141,3 +3141,49 @@ Please retry in 52.166713165s. [links {
 2026-09-19 20:56:23,706 [INFO]   Dosya: articles/google-gemini-yapay-zeka-guvenlik-testi-sirketlere-sizdi.html
 2026-09-19 20:56:23,706 [INFO]   Kategori: Siber Güvenlik
 2026-09-19 20:56:23,706 [INFO] ============================================================
+2026-09-21 10:39:35,662 [INFO] ============================================================
+2026-09-21 10:39:35,664 [INFO] İçerik botu başlatılıyor... (2026-09-21 10:39)
+2026-09-21 10:39:35,664 [INFO] ============================================================
+2026-09-21 10:39:35,665 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-21 10:39:35,666 [INFO] Daha önce 13 makale yayınlanmış.
+2026-09-21 10:39:37,423 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-21 10:39:38,085 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-21 10:39:38,679 [INFO] RSS'den 55 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-21 10:39:39,949 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-21 10:39:40,937 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-21 10:39:41,995 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-21 10:39:42,012 [INFO]    Seçilen konu: Yazılım — Çocuklar ve gençlere kodlama öğreten platform Kodris - Webrazzi
+2026-09-21 10:39:42,012 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-21 10:39:42,013 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-21 10:40:56,490 [INFO] Gemini yanıtı alındı. Uzunluk: 10975 karakter
+2026-09-21 10:40:56,496 [INFO] Görsel aranıyor...
+2026-09-21 10:40:56,497 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-21 10:40:56,497 [INFO] Fallback görsel kullanılıyor: Yazılım
+2026-09-21 10:40:56,497 [INFO] Görsel eklendi: fallback
+2026-09-21 10:40:56,498 [INFO]    Başlık: Geleceğin Becerisi Kodlama: Çocuklar ve Gençler İçin Kodris Platformu İncelemesi
+2026-09-21 10:40:56,498 [INFO]    Okuma süresi: 6 dk okuma
+2026-09-21 10:40:56,499 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-21 10:40:56,503 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\cocuklar-ve-gencler-icin-kodris-platformu-incelemesi.html
+2026-09-21 10:40:56,505 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-21 10:40:56,509 [INFO] index.html güncellendi: Geleceğin Becerisi Kodlama: Çocuklar ve Gençler İçin Kodris Platformu İncelemesi makale en üste eklendi.
+2026-09-21 10:40:56,510 [INFO]    Ana sayfa güncellendi.
+2026-09-21 10:41:01,644 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-21 10:41:01,651 [INFO] ============================================================
+2026-09-21 10:41:01,652 [INFO] BAŞARILI! Makale yayımlandı: Geleceğin Becerisi Kodlama: Çocuklar ve Gençler İçin Kodris Platformu İncelemesi
+2026-09-21 10:41:01,652 [INFO]   Dosya: articles/cocuklar-ve-gencler-icin-kodris-platformu-incelemesi.html
+2026-09-21 10:41:01,655 [INFO]   Kategori: Yazılım
+2026-09-21 10:41:01,656 [INFO] ============================================================
+2026-09-21 10:49:45,794 [INFO] ============================================================
+2026-09-21 10:49:45,795 [INFO] İçerik botu başlatılıyor... (2026-09-21 10:49)
+2026-09-21 10:49:45,795 [INFO] ============================================================
+2026-09-21 10:49:45,795 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-21 10:49:45,800 [INFO] Daha önce 14 makale yayınlanmış.
+2026-09-21 10:49:48,155 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-21 10:49:48,971 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-21 10:49:49,697 [INFO] RSS'den 55 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-21 10:49:50,847 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-21 10:49:51,871 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-21 10:49:52,884 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-21 10:49:52,939 [INFO]    Seçilen konu: Mobil — Kuzey Koreli bilgisayar korsanları Maclere büyük bir şekilde saldırmaya başlıyor - Letem
+2026-09-21 10:49:52,939 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-21 10:49:52,946 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)

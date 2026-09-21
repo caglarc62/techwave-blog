@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ren'Py tabanlı oyunları Türkçe'ye çevirmek için Voorhees aracı ve Python scriptleri kullanım rehberi. Tüm detaylar, kodlar ve ipuçları TechWave'de!">
+  <meta name="keywords" content="python, renpy, oyun-ceviri, voorhees, technopat, yazilim, oyun-yerellestirme">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi — TechWave</title>
+
+  <meta property="og:title" content="Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi — TechWave">
+  <meta property="og:description" content="Ren'Py tabanlı oyunları Türkçe'ye çevirmek için Voorhees aracı ve Python scriptleri kullanım rehberi. Tüm detaylar, kodlar ve ipuçları TechWave'de!">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=630&fit=crop">
+
+  <link rel="canonical" href="https://techwave-blog.netlify.app/articles/python-renpy-oyun-ceviri-araci-voorhees-rehberi.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi",
+    "author": {"@type": "Person", "name": "TechWave"},
+    "datePublished": "2026-09-21",
+    "description": "Ren'Py tabanlı oyunları Türkçe'ye çevirmek için Voorhees aracı ve Python scriptleri kullanım rehberi. Tüm detaylar, kodlar ve ipuçları TechWave'de!",
+    "publisher": {"@type": "Organization", "name": "TechWave"},
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=630&fit=crop"
+  }
+  </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Tech<span>Wave</span></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Görsel -->
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=630&fit=crop" alt="Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi" class="article-hero-img" loading="eager">
+    <div class="article-hero-overlay"></div>
+    <div class="container article-hero-content">
+      <span class="card-tag">Yazılım</span>
+      <h1>Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi</h1>
+      <div class="article-meta">
+        <span>📅 21 Eylül 2026</span>
+        <span class="read-time">⏱️ 4 dk okuma</span>
+        <span>✍️ TechWave</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ad-slot ad-slot-728"><span>Reklam Alanı — 728×90</span></div>
+  </div>
+
+  <article>
+    <div class="container content-layout">
+      <div class="article-content">
+
+        <div class="ad-slot ad-slot-300"><span>Reklam Alanı — 300×250</span></div>
+
+        <h2>Giriş: Görsel Roman Dünyası ve Türkçe Yerelleştirme İhtiyacı</h2><p>Son yıllarda bağımsız oyun geliştiriciliğinin yükselişiyle birlikte görsel roman (Visual Novel) türü muazzam bir popülerlik kazandı. Bu türün arkasındaki en büyük güçlerden biri hiç şüphesiz açık kaynak kodlu ve Python tabanlı olan <strong>Ren'Py oyun motorudur</strong>. Ancak bu harika oyunların büyük bir kısmı ne yazık ki resmi Türkçe dil desteği olmadan piyasaya sürülüyor.</p><p>İşte bu noktada oyun severlerin ve bağımsız çevirmenlerin imdadına oyun yerelleştirme araçları yetişiyor. Technopat ve benzeri teknoloji forumlarında adından sıkça söz ettiren <strong>Voorhees</strong> gibi geliştiricilerin hazırladığı Python tabanlı otomatik ve yarı-otomatik çeviri araçları, binlerce satırlık diyalogları Türkçe'ye aktarmayı son derece kolaylaştırıyor.</p><p>Bu kapsamlı rehberde, Ren'Py oyun yapısını, Python ile metin ayıklama mantığını, Voorhees aracı ve benzer yöntemlerle oyunların nasıl Türkçe'ye çevrileceğini tüm teknik detaylarıyla inceleyeceğiz.</p><h2>Ren'Py Oyun Motoru Nedir ve Nasıl Çalışır?</h2><p>Ren'Py, Python programlama dili üzerine inşa edilmiş, görsel romanlar ve yaşam simülasyonları oluşturmak için kullanılan ücretsiz ve açık kaynaklı bir motor. Oyunların tüm mantığı, diyalogları ve arayüz ögeleri <code>.rpy</code> uzantılı betik dosyalarında saklanır. Oyun derlendiğinde bu dosyalar <code>.rpyc</code> (compiled script) formatına dönüştürülür.</p><p>Bir Ren'Py oyununu çevirmenin temel mantığı, oyun içindeki metin bloklarını tespit etmek, bu metinleri orijinal dilden hedef dile çevirmek ve oyunun dil sistemine (TL - Translation yapısı) entegre etmektir.</p><blockquote>Ren'Py, kendi içerisinde gelişmiş bir yerelleştirme (TL) altyapısına sahiptir. Oyun geliştiricisi yerelleştirme modunu aktif ettiğinde, oyun otomatik olarak 'tl/language' klasörleri oluşturur.</blockquote><h3>Ren'Py Çeviri Dosyalarının Temel Yapısı</h3><p>Ren'Py üzerindeki bir çeviri dosyası genellikle şu formatta görünür:</p><pre><code># game/script.rpy:42
+translate turkish start_1a2b3c4d:
+
+    # e "Hello, welcome to our game!"
+    e "Merhaba, oyunumuza hoş geldiniz!"
+</code></pre><p>Burada orijinal metin yorum satırı olarak saklanırken, altındaki satıra çevrilmiş metin yazılır. Manuel olarak yüz binlerce satırı bu şekilde düzenlemek aylar alabilir. İşte Python scriptleri ve Voorhees çeviri araçları tam da bu noktada devreye girer.</p><h2>Voorhees Oyun Çeviri Aracı ve Python Araçlarının Mantığı</h2><p>Technopat forumlarında Voorhees takma adlı geliştirici ve topluluk üyeleri tarafından paylaşılan araçlar, temelde Python'ın güçlü metin işleme ve web scraping/API yeteneklerini kullanır. Bu araçların arkasındaki temel çalışma prensibi şu aşamalardan oluşur:</p><ul><li><strong>Dosya Ayrıştırma (Parsing):</strong> <code>.rpy</code> veya ayıklanmış <code>.rpyc</code> dosyalarındaki diyalog metinlerini tespit etme.</li><li><strong>Kod ve Etiket Koruma:</strong> Ren'Py'a özel renk etiketleri (örn: <code>{color=#fff}</code>), değişkenler (örn: <code>[player_name]</code>) ve kaçış karakterlerini gizleme.</li><li><strong>API / Otomatik Çeviri Entegrasyonu:</strong> Google Translate, DeepL, Yandex veya OpenAI API'leri üzerinden metinleri toplu halde çevirme.</li><li><strong>Yeniden Yapılandırma:</strong> Çevrilen metinleri orijinal Ren'Py formatına sadık kalarak dosyaya geri yazma.</li></ul><h2>Adım Adım Ren'Py Oyun Çeviri Süreci</h2><h3>1. Aşama: Oyun Dosyalarını Hazırlama ve Decompile İşlemi</h3><p>Birçok Ren'Py oyunu piyasaya sürülürken <code>.rpyc</code> dosyaları kapalı olarak gelir. Çeviriye başlamadan önce bu dosyaları okunabilir <code>.rpy</code> formatına dönüştürmemiz gerekir.</p><ol><li>En güncel <strong>Unrpyc</strong> (Ren'Py Decompiler) aracını indirin.</li><li>İndirdiğiniz <code>.py</code> veya <code>.pyc</code> dosyasını oyunun <code>game/</code> klasörü içine atın.</li><li>Oyunu bir kez çalıştırın. Unrpyc arka planda çalışarak tüm <code>.rpyc</code> dosyalarının yanına <code>.rpy</code> karşılıklarını oluşturacaktır.</li></ol><h3>2. Aşama: Python ile Metin Çıkarma ve Çeviri Scripti Çalıştırma</h3><p>Temel bir Python çeviri betiğinin mantığını anlamak için aşağıdaki örnek Python kodunu inceleyebilirsiniz. Bu kod, basit bir `.rpy` dosyasındaki diyalogları ayıklamak ve çeviri API'sine göndermek için bir temel oluşturur.</p><pre><code>import re
+import requests
+
+def clean_renpy_tags(text):
+    # Ren'Py değişkenlerini ve etiketlerini korumak için regex
+    tags = re.findall(r'(\[.*?\]|\{.*?\})', text)
+    for i, tag in enumerate(tags):
+        text = text.replace(tag, f"__TAG_{i}__")
+    return text, tags
+
+def restore_renpy_tags(translated_text, tags):
+    for i, tag in enumerate(tags):
+        translated_text = translated_text.replace(f"__TAG_{i}__", tag)
+    return translated_text
+
+# Örnek kullanım gösterimi
+original_line = 'e "Hello [player_name], welcome to {b}TechWave{/b}!"'
+cleaned, extracted_tags = clean_renpy_tags(original_line)
+print(f"Temizlenmiş Metin: {cleaned}")
+# Bu noktada 'cleaned' metni Google Translate / DeepL API'ye gönderilir.
+</code></pre><p>Voorhees gibi gelişmiş araçlar bu mantığı çok daha kompleks algoritmalar, hata toleransları ve kullanıcı dostu arayüzler (GUI) ile sunarlar.</p><h3>3. Aşama: Türkçe Karakter ve Font Sorununu Çözme</h3><p>Ren'Py oyunları varsayılan olarak Türkçe karakterleri (ğ, ş, ı, i, ç, ö, ü) desteklemeyen İngilizce fontlar kullanabilir. Çeviriyi yaptıktan sonra oyunda kare (□) veya soru işareti (?) karakterleri görüyorsanız font değişimi yapmalısınız.</p><p>Çözüm için oyunun <code>game/tl/turkish/</code> veya <code>game/gui.rpy</code> dosyasına gidin ve Türkçe destekli bir `.ttf` veya `.otf` font dosyasını tanımlayın:</p><pre><code>init python:
+    gui.text_font = "fonts/Roboto-Regular.ttf"
+    gui.name_text_font = "fonts/Roboto-Bold.ttf"
+    gui.interface_text_font = "fonts/Roboto-Regular.ttf"
+</code></pre><h2>Otomatik Çeviri vs. Manuel Çeviri: Bakış Açıları</h2><p>Oyun yerelleştirme dünyasında otomatik çeviri araçlarının kullanımı konusunda farklı görüşler bulunmaktadır:</p><h3>Otomatik Çeviri Araçlarının Avantajları</h3><ul><li><strong>Hız:</strong> 500.000 kelimelik devasa bir visual novel saatler içinde çevrilebilir.</li><li><strong>Erişilebilirlik:</strong> Hiç İngilizce bilmeyen oyuncular bile hikayenin ana hatlarını anlayabilir.</li><li><strong>Maliyet:</strong> Bütçesiz topluluk projeleri için mükemmel bir başlangıç noktasıdır.</li></ul><h3>Manuel ve Hibrit Çevirinin Önemi</h3><p>Ancak makine çevirisi, devrik cümleler, kelime oyunları (pun) ve bağlama dayalı esprilerde yetersiz kalabilir. En ideal yaklaşım, <strong>Voorhees aracı ile taslak çeviriyi oluşturup (Makine Çevirisi), ardından insan gözüyle düzenleme (Post-Editing) yapmaktır.</strong></p><h2>Yerelleştirmede Karşılaşılan En Sık Hatalar ve İpuçları</h2><p>Ren'Py çevirisi yaparken dikkat etmeniz gereken bazı kritik ipuçları:</p><ul><li><strong>Sözdizimi Hatalarını Önleyin:</strong> Çift tırnak (<code>"</code>) işaretlerinin içine yazılan çevirilerde kaçış karakteri (<code>\"</code>) kullanmayı unutmayın. Aksi takdirde oyun çökecektir.</li><li><strong>Format Etiketlerini Bozmayın:</strong> <code>{w}</code> (bekleme), <code>{p}</code> (sayfa sonu) gibi Ren meşhur komutlarını aynen koruyun.</li><li><strong>Yedek Alın:</strong> İşleme başlamadan önce orijinal <code>game/</code> klasörünün mutlaka bir yedeğini saklayın.</li></ul><h2>Sonuç</h2><p>Python'ın esnek yapısı ve Ren'Py motorunun modülerliği sayesinde, Türkçe oyun çeviri topluluğu her geçen gün daha da büyüyor. Technopat gibi platformlarda paylaşılan Voorhees ve benzeri çeviri araçları, oyun severlerin dil engelini aşmasında hayati bir rol oynuyor. Doğru araçlar, biraz Python bilgisi ve dikkatli bir kontrol süreci ile siz de sevdiğiniz oyunları Türkçe'ye kazandırabilirsiniz.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+        <!-- Görsel Telif -->
+        <div class="image-credit">
+          Fotoğraf: Unsplash
+        </div>
+
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3>Popüler Yazılar</h3>
+          <ul class="popular-list">
+            <li><a href="yapay-zeka-giris.html">Yapay Zekaya Giriş</a></li>
+            <li><a href="python-ogrenme.html">Python ile AI Öğrenme</a></li>
+            <li><a href="chatgpt-rehber.html">ChatGPT vs Claude vs Gemini</a></li>
+          </ul>
+        </div>
+        <div class="ad-slot ad-slot-300x600"><span>Reklam Alanı — 300×600</span></div>
+      </aside>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
