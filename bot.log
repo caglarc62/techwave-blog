@@ -3187,3 +3187,45 @@ Please retry in 52.166713165s. [links {
 2026-09-21 10:49:52,939 [INFO]    Seçilen konu: Mobil — Kuzey Koreli bilgisayar korsanları Maclere büyük bir şekilde saldırmaya başlıyor - Letem
 2026-09-21 10:49:52,939 [INFO] 2. Adım: Claude API ile makale üretiliyor...
 2026-09-21 10:49:52,946 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-21 10:51:46,291 [INFO] ============================================================
+2026-09-21 10:51:46,292 [INFO] İçerik botu başlatılıyor... (2026-09-21 10:51)
+2026-09-21 10:51:46,293 [INFO] ============================================================
+2026-09-21 10:51:46,293 [INFO] 1. Adım: Trendler taranıyor...
+2026-09-21 10:51:46,296 [INFO] Daha önce 14 makale yayınlanmış.
+2026-09-21 10:51:46,665 [INFO] RSS'den 78 başlık çekildi: https://news.google.com/rss/search?q=technology+AI+2026&hl=tr&gl=TR
+2026-09-21 10:51:46,923 [INFO] RSS'den 100 başlık çekildi: https://news.google.com/rss/search?q=yapay+zeka+teknoloji&hl=tr&gl=TR
+2026-09-21 10:51:47,248 [INFO] RSS'den 55 başlık çekildi: https://news.google.com/rss/search?q=python+yazılım&hl=tr&gl=TR
+2026-09-21 10:51:48,376 [INFO] Web'den 8 sonuç çekildi: yapay zeka son gelişmeler 2026
+2026-09-21 10:51:49,299 [INFO] Web'den 8 sonuç çekildi: yeni teknoloji trendleri 2026
+2026-09-21 10:51:50,203 [INFO] Web'den 8 sonuç çekildi: yazılım dünyası güncel haberler
+2026-09-21 10:51:50,223 [INFO]    Seçilen konu: Yazılım — Yazılım Python RenPy Oyun Çeviri Aracı - Voorhees - Technopat
+2026-09-21 10:51:50,223 [INFO] 2. Adım: Claude API ile makale üretiliyor...
+2026-09-21 10:51:50,224 [INFO] Gemini API'ye istek gönderiliyor... (deneme 1/3)
+2026-09-21 10:52:27,087 [INFO] Gemini yanıtı alındı. Uzunluk: 11062 karakter
+2026-09-21 10:52:27,114 [ERROR] JSON parse hatası — tüm denemeler başarısız.
+2026-09-21 10:52:27,115 [ERROR] JSON ilk 200: {
+    "title": "Python ve Ren'Py ile Oyun Çevirisi: Voorhees Aracı ve Otomatik Lokalizasyon Rehberi",
+    "slug": "python-renpy-oyun-ceviri-araci-voorhees-rehberi",
+    "excerpt": "Ren'Py oyunlarını T
+2026-09-21 10:52:27,115 [ERROR] JSON son 200: ızını insan kontrolünün niteliğiyle birleştirdiğinizde, ortaya oyuncuları tatmin edecek kalitede Türkçe yamalar çıkarabilirsiniz.</p><hr><p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>"}
+2026-09-21 10:52:27,116 [ERROR] Deneme 1: JSON parse başarısız.
+2026-09-21 10:52:27,116 [INFO] Tekrar deneniyor...
+2026-09-21 10:52:27,116 [INFO] Gemini API'ye istek gönderiliyor... (deneme 2/3)
+2026-09-21 10:54:20,243 [INFO] Gemini yanıtı alındı. Uzunluk: 8569 karakter
+2026-09-21 10:54:20,248 [INFO] Görsel aranıyor...
+2026-09-21 10:54:20,249 [INFO] Unsplash API key yok, fallback görseller kullanılıyor.
+2026-09-21 10:54:20,249 [INFO] Fallback görsel kullanılıyor: Yazılım
+2026-09-21 10:54:20,249 [INFO] Görsel eklendi: fallback
+2026-09-21 10:54:20,250 [INFO]    Başlık: Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi
+2026-09-21 10:54:20,251 [INFO]    Okuma süresi: 4 dk okuma
+2026-09-21 10:54:20,251 [INFO] 3. Adım: HTML dosyası oluşturuluyor...
+2026-09-21 10:54:20,255 [INFO]    Dosya: C:\Users\cagla\OneDrive\Masaüstü\teknoblog\articles\python-renpy-oyun-ceviri-araci-voorhees-rehberi.html
+2026-09-21 10:54:20,255 [INFO] 4. Adım: Ana sayfa güncelleniyor...
+2026-09-21 10:54:20,258 [INFO] index.html güncellendi: Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi makale en üste eklendi.
+2026-09-21 10:54:20,259 [INFO]    Ana sayfa güncellendi.
+2026-09-21 10:54:25,288 [INFO] GitHub'a push edildi — Netlify otomatik deploy başlatacak.
+2026-09-21 10:54:25,293 [INFO] ============================================================
+2026-09-21 10:54:25,293 [INFO] BAŞARILI! Makale yayımlandı: Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi
+2026-09-21 10:54:25,293 [INFO]   Dosya: articles/python-renpy-oyun-ceviri-araci-voorhees-rehberi.html
+2026-09-21 10:54:25,294 [INFO]   Kategori: Yazılım
+2026-09-21 10:54:25,294 [INFO] ============================================================
