@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techwaveblog.site/sitemap.xml
