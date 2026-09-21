@@ -120,4 +120,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://techwaveblog.site/articles/yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techwaveblog.site/articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
