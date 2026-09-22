@@ -417,19 +417,17 @@ nav a:hover, nav a.active { color: var(--primary); }
 .article-hero {
   position: relative;
   width: 100%;
-  height: auto;
-  max-height: 400px;
+  height: 380px;
   overflow: hidden;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   border-radius: var(--radius-lg);
   background: var(--bg-secondary);
 }
 
 .article-hero img {
   width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
   border-radius: var(--radius-lg);
 }
@@ -987,8 +985,8 @@ nav a:hover, nav a.active { color: var(--primary); }
   .hero h1 { font-size: 1.8rem; }
   .hero p { font-size: .95rem; }
   .article-header h1 { font-size: 1.6rem; }
-  .article-hero { max-height: 250px; }
-  .article-hero img { max-height: 250px; }
+  .article-hero { height: 250px; margin-bottom: 20px; }
+  .article-hero img { height: 100%; }
   .article-hero-content { padding: 24px; }
   .article-hero-content h1 { font-size: 1.5rem; }
   nav { display: none; }
