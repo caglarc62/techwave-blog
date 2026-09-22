@@ -417,9 +417,9 @@ nav a:hover, nav a.active { color: var(--primary); }
 .article-hero {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 350px;
   overflow: hidden;
-  margin-bottom: -50px;
+  margin-bottom: 0;
 }
 
 .article-hero-img {
@@ -540,7 +540,7 @@ nav a:hover, nav a.active { color: var(--primary); }
 }
 
 /* ---------- Makale Sayfası ---------- */
-.article-header { padding: 40px 0 20px; }
+.article-header { padding: 24px 0 20px; }
 
 .article-header h1 {
   font-size: 2.2rem;
