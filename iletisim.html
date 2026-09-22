@@ -89,7 +89,9 @@ body {
 
   <div class="container">
     <div class="contact-form">
-      <form id="contactForm">
+      <form id="contactForm" action="https://formspree.io/f/xaenozjp" method="POST">
+        <input type="hidden" name="_next" value="https://techwaveblog.site/iletisim.html?basarili=1">
+        <input type="hidden" name="_subject" value="TechWave - Yeni Mesaj">
         <div class="form-group">
           <label for="name">Adınız</label>
           <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
@@ -107,6 +109,9 @@ body {
           <textarea id="message" name="message" placeholder="Mesajınızı yazın..." required></textarea>
         </div>
         <button type="submit" class="btn">Gönder</button>
+        <div id="formSuccess" style="display:none; margin-top:16px; padding:14px 18px; background:#ecfdf5; color:#059669; border-radius:12px; font-weight:500;">
+          ✅ Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.
+        </div>
       </form>
     </div>
   </div>
@@ -120,5 +125,11 @@ body {
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    if (window.location.search.indexOf('basarili=1') !== -1) {
+      var s = document.getElementById('formSuccess');
+      if (s) s.style.display = 'block';
+    }
+  </script>
 </body>
 </html>
