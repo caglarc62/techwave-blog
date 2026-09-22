@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; } }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Python ile web sitesi yapma rehberi 2026: Flask ve Django karşılaştırması, Flask uygulaması, şablonlar, formlar, SQLite, deploy ve SEO ipuçları.">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>Python ile Web Sitesi Yapma Rehberi 2026 — TechWave</title>
+  <meta property="og:title" content="Python ile Web Sitesi Yapma Rehberi 2026 — TechWave">
+  <meta property="og:description" content="Python ile web sitesi yapma rehberi 2026: Flask ve Django karşılaştırması, Flask uygulaması, şablonlar, formlar, SQLite, deploy ve SEO ipuçları.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200">
+  <link rel="canonical" href="https://techwaveblog.site/articles/python-ile-web-sitesi-yapma-rehberi-2026.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Python ile Web Sitesi Yapma Rehberi 2026",
+    "author": {"@type": "Person", "name": "TechWave"},
+    "datePublished": "2026-09-22",
+    "description": "Python ile web sitesi yapma rehberi 2026: Flask ve Django karşılaştırması, Flask uygulaması, şablonlar, formlar, SQLite, deploy ve SEO ipuçları.",
+    "publisher": {"@type": "Organization", "name": "TechWave", "url": "https://techwaveblog.site"},
+    "mainEntityOfPage": "https://techwaveblog.site/articles/python-ile-web-sitesi-yapma-rehberi-2026.html",
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200"
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<meta name="google-translate-customization" content="YOUR-ID">
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'en,ar,de,es,fr,ru,ja,ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.goog-te-gadget {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+}
+.goog-te-gadget-simple {
+  border: 1px solid #e0e7ff !important;
+  border-radius: 8px !important;
+  background: white !important;
+  padding: 4px 8px !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #1e293b !important;
+  font-family: 'Inter', sans-serif !important;
+}
+body {
+  position: relative;
+}
+#google_translate_element {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+</style>
+<!-- /Google Translate -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+  <article class="article-page">
+    <div class="container">
+      <div class="article-header">
+        <span class="card-tag" data-category="Python">Python</span>
+        <h1 class="article-title">Python ile Web Sitesi Yapma Rehberi 2026</h1>
+        <div class="article-meta">
+          <span>📅 22 Eylül 2026</span>
+          <span>⏱️ 8 dk okuma</span>
+        </div>
+      </div>
+      <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200" alt="Python ile Web Sitesi Yapma Rehberi 2026" loading="eager">
+      </div>
+      <div class="article-content">
+
+        <h2>Neden Python ile Web Geliştirme?</h2>
+        <p>Python, okunabilir sözdizimi ve zengin kütüphane ekosistemi sayesinde web geliştirme dünyasında uzun süredir en popüler dillerden biri. Bir web sitesi veya web uygulaması geliştirirken Python kullanmanın en büyük avantajı, aynı dili veri bilimi, otomasyon, yapay zeka ve web tarafında kullanabilmenizdir. Tek bir dilde uzmanlaşarak backend'den veri analizine kadar geniş bir yelpazede üretim yapabilirsiniz.</p>
+        <p>2026 itibarıyla Python'ın web ekosistemi olgunlaştı: Flask, Django ve FastAPI gibi çerçeveler (framework) farklı ölçekler için net çözümler sunuyor. Ayrıca paket yöneticisi pip, sanal ortam (virtual environment) ve dağıtım araçları (Docker, Gunicorn) sayesinde proje kurulumundan canlıya alma süreci standartlaştı. Bu rehberde Flask'ı adım adım kullanarak basit bir web sitesi kuracağız; ardından Django ile karşılaştırma, veritabanı entegrasyonu, form yönetimi, dağıtım seçenekleri ve SEO ipuçlarını ele alacağız.</p>
+        <p>Python'un web tarafındaki tek dezavantajı, saf CPU-bound işlemlerde bazı dillere göre daha yavaş olmasıdır. Ancak modern hosting çözümleri, önbellekleme (Redis, Varnish) ve asenkron destek (ASGI) sayesinde bu fark çoğu proje için hissedilmez düzeydedir. Küçük ve orta ölçekli siteler, bloglar, SaaS prototipleri ve API'ler için Python mükemmel bir seçimdir.</p>
+
+        <h2>Flask mı, Django mu?</h2>
+        <p><strong>Flask</strong>, mikro framework olarak adlandırılır; size yalnızca bir web sunucusu, yönlendirme (routing), şablon motoru ve geliştirme sunucusu verir. Geri kalan her şeyi (veritabanı ORM, form kütüphanesi, admin paneli) isteğe bağlı paketlerle eklersiniz. Küçük projeler, API'ler, prototipler ve öğrenme amaçlı çalışmalar için idealdir; minimal soyutlamalar sayesinde HTTP'in temelini öğrenmenizi sağlar.</p>
+        <p><strong>Django</strong>, "batteries-included" felsefesiyle gelir: ORM, admin arayüzü, form sistemi, kimlik doğrulama, önbellekleme ve güvenlik katmanları hazır olarak sunulur. Büyük içerik siteleri, e-ticaret, çok kullanıcılı paneller ve kurumsal uygulamalar için hızlı bir başlangıç sağlar. Django'nun konvansiyonları (app yapısı, settings dosyası) büyük ekiplerde tutarlılığı korur.</p>
+        <p>Karar verirken üç soruyu kendinize sorun: (1) Proje ne kadar büyük ve özellikli olacak? (2) Kaç kişi üzerinde çalışacak? (3) Ne kadar hızla canlıya almak istiyorsunuz? Küçük ve orta ölçekli, öğrenme amaçlı veya hızlı prototip gereken projelerde Flask; admin paneli, kullanıcı yönetimi ve modüler yapı gerekteren büyük uygulamalarda Django tercih edilir. Bu rehberdeki örnek, Flask ile sıfırdan bir site kurmayı gösterir.</p>
+
+        <h2>Python Ortamını Hazırlama</h2>
+        <p>Öncelikle bilgisayarınıza Python 3.11+ sürümünü kurun (python.org üzerinden). Windows'ta kurulum sırasında "Add to PATH" seçeneğini işaretlemeyi unutmayın. Kurulumu terminale <code>python --version</code> yazarak doğrulayın. Ardından projeniz için özel bir sanal ortam oluşturun; bu, projenizin bağımlılıklarını sistem genelinden izole eder ve sürüm çakışmalarını önler.</p>
+        <pre><code>mkdir web-sitesi
+cd web-sitesi
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+pip install flask
+</code></pre>
+        <p>Sanal ortam etkinleştikten sonra terminal satırınızın başında <code>(venv)</code> ibaresini görürsünüz. Bağımlılıklarınızı <code>requirements.txt</code> dosyasına kaydetmeyi alışkanlık haline getirin (<code>pip freeze &gt; requirements.txt</code>); böylece projeyi başka bir makinede kolayca yeniden kurabilirsiniz. VS Code veya PyCharm kullanıyorsanız, editörün sanal ortamı otomatik algılamasına izin verin; otomatik tamamlama ve hata uyarıları doğru çalışsın. Geliştirme sırasında kod düzeninizi modüler tutmak için proje yapınızı en başından <code>app.py</code>, <code>templates/</code> ve <code>static/</code> klasörleriyle ayırın.</p>
+
+        <h2>Adım Adım Basit Bir Flask Uygulaması</h2>
+        <p>Proje kök dizininde <code>app.py</code> adında bir dosya oluşturun ve şu temel iskeleti yazın. Flask, bir Python fonksiyonunu HTTP rotasına eşleyerek çalışır; <code>@app.route</code> dekoratörü, hangi URL'in hangi fonksiyonu çağırdığını tanımlar.</p>
+        <pre><code>from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def anasayfa():
+    return render_template("index.html", baslik="TechWave'e Hoş Geldiniz")
+
+@app.route("/hakkimizda")
+def hakkimizda():
+    return render_template("hakkimizda.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+</code></pre>
+        <p>Terminalde <code>python app.py</code> çalıştırın; sunucu <code>http://127.0.0.1:5000</code> adresinde ayağa kalkar. <code>debug=True</code> modu, kod değiştiğinde sunucuyu otomatik yeniden yükler ve hataları tarayıcıda gösterir — geliştirme sırasında büyük kolaylık sağlar, ancak üretimde mutlaka <code>False</code> olmalıdır. Dinamik rotalar da ekleyebilirsiniz: <code>@app.route("/yazi/&lt;int:yazi_id&gt;")</code> gibi ifadelerle URL parametrelerini fonksiyon argümanı olarak alabilirsiniz. İleride API uç noktaları eklemek isterseniz, Flask'ın JSON döndüren rotalarla da mükemmel çalıştığını unutmayın.</p>
+
+        <h2>Şablonlar (Templates) ile Sayfa Oluşturma</h2>
+        <p>Flask, varsayılan olarak Jinja2 şablon motorunu kullanır. HTML dosyalarınızı <code>templates/</code> klasörüne koyun ve <code>render_template</code> ile çağırın. Şablonlar, statik HTML'in ötesine geçerek döngüler, koşullar ve değişken yerleştirmeleriyle dinamik sayfa üretmenizi sağlar.</p>
+        <pre><code>&lt;!-- templates/index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;{{ baslik }}&lt;/title&gt;
+  &lt;link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;{{ baslik }}&lt;/h1&gt;
+  &lt;ul&gt;
+  {% for yazi in yazilar %}
+    &lt;li&gt;&lt;a href="/yazi/{{ yazi.id }}"&gt;{{ yazi.baslik }}&lt;/a&gt;&lt;/li&gt;
+  {% endfor %}
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <p>Statik dosyalar (CSS, JS, görseller) <code>static/</code> klasöründe bulunur ve <code>url_for('static', filename='...')</code> ile çağrılır. Tekrarlanan arayüz parçalarını (header, footer) <code>{% extends "base.html" %}</code> ve <code>{% block %}</code> ile şablon miras alımıyla yönetebilirsiniz; böylece her sayfada aynı HTML'i kopyalamak zorunda kalmazsınız. Jinja2'de HTML çıktısı otomatik kaçırılır (autoescape), bu da temel XSS saldırılarına karşı doğal bir koruma sağlar.</p>
+
+        <h2>Formlar ve Kullanıcı Etkileşimi</h2>
+        <p>İletişim formu, bülten kayıt gibi etkileşimler için Flask-WTF eklentisini kullanabilirsiniz. Flask-WTF, form doğrulama, CSRF koruması ve güvenli veri gönderimi sağlar. Formunuzu Python sınıfı olarak tanımlar, şablonda render eder, POST isteğini işlersiniz.</p>
+        <pre><code>from flask_wtf import FlaskForm
+from wtforms import StringField, TextAreaField, SubmitField
+from wtforms.validators import DataRequired, Email
+
+class IletisimForm(FlaskForm):
+    ad = StringField("Adınız", validators=[DataRequired()])
+    eposta = StringField("E-posta", validators=[DataRequired(), Email()])
+    mesaj = TextAreaField("Mesajınız", validators=[DataRequired()])
+    gonder = SubmitField("Gönder")
+</code></pre>
+        <p>Rotada formu doğrulayıp veriyi işleyin; hata varsa formu hata mesajlarıyla tekrar gösterin. Flask, <code>CSRFProtect</code> ile tüm formlara otomatik CSRF token'ı ekler; bu, sitenize sahte POST istekleri gönderilmesini engeller. Güvenlik açısından ayrıca girdi temizleme (input sanitization) ve parametreli sorgular kullanmaya özen gösterin. Form gönderimlerinde <code>POST-Redirect-GET</code> deseni uygulayarak sayfa yenilendiğinde aynı verinin tekrar gönderilmesini (double submit) önleyebilirsiniz.</p>
+
+        <h2>SQLite ile Veritabanı Entegrasyonu</h2>
+        <p>Küçük projeler için SQLite mükemmel bir başlangıçtır: kurulum gerektirmez, tek dosya olarak çalışır ve Flask'ın <code>sqlite3</code> modülüyle doğrudan entegre olur. Flask-SQLAlchemy eklentisini kullanarak ORM avantajıyla da çalışabilirsiniz. Basit bir bağlantıyı şöyle kurarsınız:</p>
+        <pre><code>import sqlite3
+
+def db_get():
+    conn = sqlite3.connect("site.db")
+    conn.row_factory = sqlite3.Row
+    return conn
+
+@app.route("/yazi/&lt;int:id&gt;")
+def yazi(id):
+    conn = db_get()
+    yazi = conn.execute("SELECT * FROM yazilar WHERE id = ?", (id,)).fetchone()
+    conn.close()
+    return render_template("yazi.html", yazi=yazi)
+</code></pre>
+        <p>Parametreli sorgu kullanmak (<code>?</code> yer tutucusu), SQL enjeksiyon saldırılarına karşı temel korumadır; asla kullanıcı girdisini doğrudan sorgu dizesine eklemeyin. Tablolarınızı oluşturmak için başlangıçta bir <code>schema.sql</code> dosyası çalıştırabilir veya Flask-Migrate gibi araçlarla şema güncellemelerini yönetebilirsiniz. Veri büyüdüğünde PostgreSQL'e geçiş yapmak kolaydır; SQLAlchemy'nin bağlantı dizesini (connection string) değiştirmeniz çoğu zaman yeterlidir. Yedekleme için düzenli olarak <code>site.db</code> dosyasını kopyalayın; SQLite dosyası taşınabilir olduğundan yedek almak son derece basittir.</p>
+
+        <h2>Deployment: Sitenizi Canlıya Alma</h2>
+        <p>Flask uygulamanızı geliştirmede kullanılan yerleşik sunucuyla (dev server) canlıya almayın; üretim için Gunicorn veya uWSGI gibi WSGI sunucuları kullanın. Kodunuzu GitHub'a push ettiğinizde birçok platform otomatik deploy eder. Yaygın seçenekler:</p>
+        <p><strong>Heroku:</strong> <code>requirements.txt</code> ve <code>Procfile</code> (içinde <code>web: gunicorn app:app</code>) ekleyip <code>git push heroku main</code> demeniz yeterlidir. Ücretsiz planı sınırlı olsa da kurulumu en kolay platformlardan biridir. <strong>Railway:</strong> modern arayüzü, otomatik algılama ve ücretsiz deneme kredileriyle hızlı bir başlangıç sunar; ortam değişkenlerini panelden yönetirsiniz. <strong>PythonAnywhere:</strong> Python'a özel olarak tasarlanmış, tabanlı (always-on) uygulamalar ve basit WSGI yapılandırmasıyla yeni başlayanlar için mükemmeldir.</p>
+        <p>Deployment öncesi <code>debug=False</code> yaptığınızdan, <code>SECRET_KEY</code>'i ortam değişkeni olarak sakladığınızdan ve hata sayfalarını özelleştirdiğinizden emin olun. Ayrıca <code>.env</code> dosyasını <code>.gitignore</code> içine ekleyerek gizli anahtarlarınızın repoya girmesini önleyin. Docker ile deploy ediyorsanız, çok aşamalı (multi-stage) Docker build kullanarak görüntü boyutunu küçültebilirsiniz. CDN (Cloudflare vb.) eklemek, statik dosya yüklenme hızını dünya genelinde artırır ve ilk ziyaretçi deneyimini iyileştirir.</p>
+
+        <h2>Python Siteleri için SEO İpuçları</h2>
+        <p>Python ile site kurmak SEO'dan feragat anlamına gelmez; aksine şablonlar üzerinde tam kontrol sağlar. Her sayfa için benzersiz <code>&lt;title&gt;</code> ve <code>meta description</code> üretin; Jinja2 şablonlarında bu alanları dinamik olarak doldurabilirsiniz. Semantic HTML5 etiketleri (<code>&lt;article&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>) kullanın ve H1 başlığını sayfada bir tane ile sınırlayın.</p>
+        <p>Temiz URL'ler (örneğin <code>/yazi/flask-rehberi</code>) hem kullanıcılar hem de arama motorları için daha iyidir; Flask rotalarıyla bunu kolayca başarabilirsiniz. <code>sitemap.xml</code> ve <code>robots.txt</code> dosyalarını dinamik üretin; yeni yazılar eklendikçe otomatik güncellensin. Schema.org yapılandırılmış verisi (Article, BreadcrumbList, Organization) ekleyerek arama sonuçlarında zengin snippet (zengin sonuç) elde etme şansınızı artırın.</p>
+        <p>Performans, SEO'nun temel direklerinden biridir: sayfa yüklenme süresini kısaltmak için statik dosyaları CDN üzerinden sunun, görselleri sıkıştırın ve gerekirse Flask-Caching ile veritabanı sorgularını önbelleğe alın. Mobil uyumlu (responsive) tasarım için viewport meta etiketini unutmayın. Son olarak, Google Search Console'a sitenizi ekleyin; indeksleme sorunlarını ve arama performansını düzenli olarak takip edin. Sunucu tarafı render (SSR) yapan Flask siteleri, doğru yapılandırıldığında arama motorları tarafından sorunsuz indekslenir.</p>
+
+        <h2>Temel Güvenlik ve En İyi Uygulamalar</h2>
+        <p>Web uygulamalarında güvenlik, ilk günden itibaren gözetilmesi gereken bir konudur. Flask kullanırken <code>SECRET_KEY</code> değerini asla koda gömmeyin; ortam değişkenleri veya <code>.env</code> dosyası üzerinden yönetin ve bu dosyayı sürüm kontrolüne (Git) eklemeyin. Cookie'ler için <code>HttpOnly</code> ve <code>Secure</code> bayraklarını etkinleştirin; böylece JavaScript'in erişemeyeceği, yalnızca HTTPS üzerinden iletilen oturum bilgileri elde edilir.</p>
+        <p>Girdi doğrulama ve çıktı kaçırma (escaping) işlemlerini her katmanda uygulayın. Jinja2 otomatik kaçırma sağlasa da, HTML dışında JSON veya e-posta çıktısı üretirken ek tedbirler gerekir. Kullanıcı şifrelerini düz metin olarak saklamayın; <code>werkzeug.security</code> içindeki <code>generate_password_hash</code> ve <code>check_password_hash</code> fonksiyonlarını kullanın. Yükseltmeleri düzenli takip edin: <code>pip list --outdated</code> ile bağımlılıklarınızı gözden geçirin ve bilinen zafiyetleri olan paketleri güncelleyin. HTTPS zorunlu kılın, gereksiz hata ayıklama bilgilerini üretim ortamında kapatın ve düzenli yedekleme yapın; bu basit alışkanlıklar, küçük bir Flask sitesini bile güvenli ve sürdürülebilir kılar.</p>
+
+        <h2>Sonuç</h2>
+        <p>Python ile web sitesi yapmak, doğru çerçeve ve temel mimari bilgisiyle son derece hızlı ve keyiflidir. Flask minimal yapısıyla HTTP'in temelini öğrenmenizi sağlarken, Django hazır bileşenleriyle büyük uygulamalarda zaman kazandırır. Sanal ortam kurulumundan şablonlara, formlardan SQLite entegrasyonuna ve canlıya almaya kadar tüm süreç, standart araçlarla şeffaftır.</p>
+        <p>Bu rehberdeki adımları uygulayarak ilk sitenizi bugün yayına alabilir, ardından deploy platformlarından birini seçip gerçek kullanıcılarla buluşturabilirsiniz. SEO ipuçlarını erken aşamada uygulamak, içeriğinizin arama sonuçlarında öne çıkmasını sağlar. Python'un web ekosistemi her ölçekten proje için yeterli olgunluktadır; bir sonraki yazımızda Django ile çok kullanıcılı bir uygulama kurmayı ele alacağız. TechWave olarak öğrenme yolculuğunuzda yanınızda olmaya devam ediyoruz!</p>
+        <p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>
+
+      </div>
+      <div class="article-tags">
+        <span class="card-tag" data-category="Python">Python</span>
+      </div>
+    </div>
+  </article>
+  <div class="container">
+    <div class="newsletter-cta">
+      <h3>📬 TechWave Bültenine Katılın</h3>
+      <p>Her hafta yapay zeka, yazılım ve teknoloji dünyasından en güncel gelişmeler doğrudan e-posta kutuna gelsin.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Teşekkürler! Bültenimize başarıyla katıldınız.');">
+        <input type="email" placeholder="E-posta adresiniz" required>
+        <button type="submit">Katıl</button>
+      </form>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+          <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../kategori.html">Kategoriler</a></li>
+            <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+          <ul class="footer-links">
+            <li><a href="../kategori.html">Yapay Zeka</a></li>
+            <li><a href="../kategori.html">Yazılım</a></li>
+            <li><a href="../kategori.html">Python</a></li>
+            <li><a href="../kategori.html">AI Araçları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
