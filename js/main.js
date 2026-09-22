@@ -92,20 +92,6 @@
   window.addEventListener('scroll', onScroll, { passive: true });
 
   /* ---------- İletişim Formu ---------- */
-  var contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = contactForm.querySelector('.btn');
-      btn.textContent = 'Gönderildi!';
-      btn.style.background = '#10b981';
-      setTimeout(function () {
-        btn.textContent = 'Gönder';
-        btn.style.background = '';
-        contactForm.reset();
-      }, 2500);
-    });
-  }
 
   /* ---------- Başlat ---------- */
   insertAdSlots();
