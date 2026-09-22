@@ -987,7 +987,8 @@ nav a:hover, nav a.active { color: var(--primary); }
   .hero h1 { font-size: 1.8rem; }
   .hero p { font-size: .95rem; }
   .article-header h1 { font-size: 1.6rem; }
-  .article-hero { height: 300px; }
+  .article-hero { max-height: 250px; }
+  .article-hero img { max-height: 250px; }
   .article-hero-content { padding: 24px; }
   .article-hero-content h1 { font-size: 1.5rem; }
   nav { display: none; }
