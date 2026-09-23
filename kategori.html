@@ -62,6 +62,64 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+
+/* ---------- Kategori filtre butonlari (pill/chip) ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border, #e2e8f0);
+  background: var(--bg, #fff);
+  color: var(--text-secondary, #475569);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+.filter-btn span {
+  font-weight: 500;
+  font-size: .8rem;
+  opacity: .75;
+  background: var(--bg-tertiary, #f1f5f9);
+  padding: 1px 8px;
+  border-radius: 999px;
+}
+.filter-btn:hover {
+  border-color: var(--primary, #6366f1);
+  color: var(--primary, #6366f1);
+}
+.filter-btn.active {
+  background: var(--primary, #6366f1);
+  border-color: var(--primary, #6366f1);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99,102,241,.25);
+}
+.filter-btn.active span {
+  background: rgba(255,255,255,.22);
+  color: #fff;
+  opacity: 1;
+}
+.tag-cloud .tag.active {
+  background: var(--primary, #6366f1);
+  border-color: var(--primary, #6366f1);
+  color: #fff;
+}
+.filter-empty {
+  text-align: center;
+  color: var(--text-light, #94a3b8);
+  padding: 48px 0;
+  font-weight: 500;
+}
 </style>
 <!-- /Google Translate -->
 </head>
@@ -89,134 +147,38 @@ body {
 
   <div class="container content-layout">
     <main>
-      <div class="card-grid">
-
-        <article class="card category-card">
-          <a href="articles/yapay-zeka-ile-nasil-para-kazanilir.html" class="category-card-img-link" aria-label="Yapay Zeka kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #667eea, #764ba2); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">🤖</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/yapay-zeka-ile-nasil-para-kazanilir.html">Yapay Zeka</a></h2>
-            <p class="card-excerpt">Yapay zeka rehberleri, uygulamalar ve güncel gelişmeler.</p>
-            <div class="card-meta"><span>📚 3 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/python-ile-web-sitesi-yapma-rehberi-2026.html" class="category-card-img-link" aria-label="Python kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #f093fb, #f5576c); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">🐍</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/python-ile-web-sitesi-yapma-rehberi-2026.html">Python</a></h2>
-            <p class="card-excerpt">Python eğitimleri, web geliştirme ve pratik rehberler.</p>
-            <div class="card-meta"><span>📚 3 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html" class="category-card-img-link" aria-label="AI Araçları kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">💬</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html">AI Araçları</a></h2>
-            <p class="card-excerpt">ChatGPT, Claude, Gemini ve diğer yapay zeka araçları.</p>
-            <div class="card-meta"><span>📚 3 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html" class="category-card-img-link" aria-label="Siber Güvenlik kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #0ba360, #3cba92); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">🔐</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html">Siber Güvenlik</a></h2>
-            <p class="card-excerpt">Kişisel verilerinizi koruma ve siber tehditlerden haberdar olun.</p>
-            <div class="card-meta"><span>📚 2 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html" class="category-card-img-link" aria-label="Mobil kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #ff9a9e, #fecfef); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">📱</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html">Mobil</a></h2>
-            <p class="card-excerpt">Mobil uygulama geliştirme, telefon önerileri ve uygulama ipuçları.</p>
-            <div class="card-meta"><span>📚 4 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html" class="category-card-img-link" aria-label="Yazılım kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">💻</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html">Yazılım</a></h2>
-            <p class="card-excerpt">Yazılım geliştirme, programlama dilleri ve teknoloji trendleri.</p>
-            <div class="card-meta"><span>📚 4 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/2026-piyasa-dinamikleri-algoritmik-ticaret-kripto.html" class="category-card-img-link" aria-label="Finans kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #f6d365, #fda085); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">💹</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/2026-piyasa-dinamikleri-algoritmik-ticaret-kripto.html">Finans</a></h2>
-            <p class="card-excerpt">Algoritmik ticaret, kripto ve piyasa dinamikleri.</p>
-            <div class="card-meta"><span>📚 1 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html" class="category-card-img-link" aria-label="Blockchain kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #84fab0, #8fd3f4); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">⛓️</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html">Blockchain</a></h2>
-            <p class="card-excerpt">Blockchain geliştirme ve Web3 programlama dilleri.</p>
-            <div class="card-meta"><span>📚 1 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html" class="category-card-img-link" aria-label="Oyun kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #fccb90, #d57eeb); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">🎮</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html">Oyun</a></h2>
-            <p class="card-excerpt">Oyun dünyasından haberler ve güncel düzenlemeler.</p>
-            <div class="card-meta"><span>📚 1 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
-
-        <article class="card category-card">
-          <a href="articles/2026da-en-iyi-10-notebook-onerisi.html" class="category-card-img-link" aria-label="Donanım kategorisi">
-            <div class="card-img" style="background: linear-gradient(135deg, #e0c3fc, #8ec5fc); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">🖥️</div>
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="articles/2026da-en-iyi-10-notebook-onerisi.html">Donanım</a></h2>
-            <p class="card-excerpt">Laptop önerileri, incelemeler ve donanım rehberleri.</p>
-            <div class="card-meta"><span>📚 1 yazı</span><span>→ İlk yazıyı oku</span></div>
-          </div>
-        </article>
+      <div class="filter-bar" id="filterBar" role="tablist" aria-label="Kategori filtresi">
+          <button class="filter-btn active" data-filter="all" type="button">Tümü <span>23</span></button>
+          <button class="filter-btn" data-filter="Yapay Zeka" type="button">Yapay Zeka <span>3</span></button>
+          <button class="filter-btn" data-filter="Python" type="button">Python <span>3</span></button>
+          <button class="filter-btn" data-filter="AI Araçları" type="button">AI Araçları <span>3</span></button>
+          <button class="filter-btn" data-filter="Siber Güvenlik" type="button">Siber Güvenlik <span>2</span></button>
+          <button class="filter-btn" data-filter="Mobil" type="button">Mobil <span>4</span></button>
+          <button class="filter-btn" data-filter="Yazılım" type="button">Yazılım <span>4</span></button>
+          <button class="filter-btn" data-filter="Finans" type="button">Finans <span>1</span></button>
+          <button class="filter-btn" data-filter="Blockchain" type="button">Blockchain <span>1</span></button>
+          <button class="filter-btn" data-filter="Oyun" type="button">Oyun <span>1</span></button>
+          <button class="filter-btn" data-filter="Donanım" type="button">Donanım <span>1</span></button>
       </div>
+
+      <div class="card-grid" id="articleGrid"></div>
+      <p class="filter-empty" id="filterEmpty" hidden>Bu kategoride henüz yazı bulunamadı.</p>
     </main>
 
     <aside class="sidebar">
       <div class="sidebar-widget">
         <h3>Tüm Kategoriler</h3>
         <div class="tag-cloud">
-          <a href="articles/yapay-zeka-ile-nasil-para-kazanilir.html" class="tag">Yapay Zeka (3)</a>
-          <a href="articles/python-ile-web-sitesi-yapma-rehberi-2026.html" class="tag">Python (3)</a>
-          <a href="articles/yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html" class="tag">AI Araçları (3)</a>
-          <a href="articles/siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html" class="tag">Siber Güvenlik (2)</a>
-          <a href="articles/2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html" class="tag">Mobil (4)</a>
-          <a href="articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html" class="tag">Yazılım (4)</a>
-          <a href="articles/2026-piyasa-dinamikleri-algoritmik-ticaret-kripto.html" class="tag">Finans (1)</a>
-          <a href="articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html" class="tag">Blockchain (1)</a>
-          <a href="articles/ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html" class="tag">Oyun (1)</a>
-          <a href="articles/2026da-en-iyi-10-notebook-onerisi.html" class="tag">Donanım (1)</a>
+          <a href="?kategori=yapay-zeka" class="tag" data-filter="Yapay Zeka">Yapay Zeka (3)</a>
+          <a href="?kategori=python" class="tag" data-filter="Python">Python (3)</a>
+          <a href="?kategori=ai-araclari" class="tag" data-filter="AI Araçları">AI Araçları (3)</a>
+          <a href="?kategori=siber-guvenlik" class="tag" data-filter="Siber Güvenlik">Siber Güvenlik (2)</a>
+          <a href="?kategori=mobil" class="tag" data-filter="Mobil">Mobil (4)</a>
+          <a href="?kategori=yazilim" class="tag" data-filter="Yazılım">Yazılım (4)</a>
+          <a href="?kategori=finans" class="tag" data-filter="Finans">Finans (1)</a>
+          <a href="?kategori=blockchain" class="tag" data-filter="Blockchain">Blockchain (1)</a>
+          <a href="?kategori=oyun" class="tag" data-filter="Oyun">Oyun (1)</a>
+          <a href="?kategori=donanim" class="tag" data-filter="Donanım">Donanım (1)</a>
         </div>
       </div>
       <div class="ad-slot ad-slot-300x600">
@@ -234,5 +196,338 @@ body {
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+
+  /* ---------- Kategori filtreleme ---------- */
+  (function () {
+    'use strict';
+
+    var articles = [
+  {
+    "title": "2026'da Yapay Zeka ile Nasıl Para Kazanılır? 8 Kanıtlanmış Yol",
+    "url": "articles/yapay-zeka-ile-nasil-para-kazanilir.html",
+    "category": "Yapay Zeka",
+    "date": "20 Eylül 2026",
+    "time": "7 dk okuma",
+    "excerpt": "Yapay zeka araçlarını kullanarak gelir elde etmenin 8 yolu ve pratik ipuçları.",
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200"
+  },
+  {
+    "title": "Yapay Zeka ile Kod Yazma: Cursor, GitHub Copilot ve Windsurf Karşılaştırması",
+    "url": "articles/yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html",
+    "category": "AI Araçları",
+    "date": "23 Eylül 2026",
+    "time": "8 dk okuma",
+    "excerpt": "Cursor, GitHub Copilot ve Windsurf karşılaştırması 2026: özellikler, fiyatlandırma, doğruluk, hangisi size uygun, AI kod yazma araçlarını verimli kullanma ipuçları ve gelecek.",
+    "image": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "title": "2026'da En İyi 10 Mobil Uygulama Geliştirme Framework'ü",
+    "url": "articles/2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html",
+    "category": "Mobil",
+    "date": "23 Eylül 2026",
+    "time": "7 dk okuma",
+    "excerpt": "2026'da en iyi mobil uygulama geliştirme framework'leri: Flutter, React Native, Kotlin Multiplatform, SwiftUI, .NET MAUI ve Ionic karşılaştırması, seçim rehberi ve gelecek trendleri.",
+    "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "title": "Python ile Web Sitesi Yapma Rehberi 2026",
+    "url": "articles/python-ile-web-sitesi-yapma-rehberi-2026.html",
+    "category": "Python",
+    "date": "22 Eylül 2026",
+    "time": "8 dk okuma",
+    "excerpt": "Python ile web sitesi yapma rehberi 2026: Flask vs Django, adım adım Flask uygulaması, şablonlar, formlar, SQLite ve deploy...",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200"
+  },
+  {
+    "title": "2026'da En İyi 10 Notebook Önerisi",
+    "url": "articles/2026da-en-iyi-10-notebook-onerisi.html",
+    "category": "Donanım",
+    "date": "22 Eylül 2026",
+    "time": "7 dk okuma",
+    "excerpt": "2026'nın en iyi 10 notebook önerisi: bütçe dostu, orta segment, premium, gaming ve öğrenci laptopları...",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200"
+  },
+  {
+    "title": "2026'da En İyi 10 Ücretsiz Yapay Zeka Aracı",
+    "url": "articles/2026da-en-iyi-10-ucretsiz-yapay-zeka-araci.html",
+    "category": "AI Araçları",
+    "date": "21 Eylül 2026",
+    "time": "7 dk okuma",
+    "excerpt": "2026'da ücretsiz kullanabileceğiniz en iyi 10 yapay zeka aracı: ChatGPT, Gemini, Claude, Canva AI, Notion AI...",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+  },
+  {
+    "title": "WhatsApp'ta Bilinmeyen 10 Gizli Özellik",
+    "url": "articles/whatsappta-bilinmeyen-10-gizli-ozellik.html",
+    "category": "Mobil",
+    "date": "21 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "WhatsApp'ta bilinmeyen 10 gizli özellik: kaybolan mesajlar, sohbet kilidi, HD foto, ekran paylaşımı ve yedekleme...",
+    "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200"
+  },
+  {
+    "title": "Yapay Zeka Nedir? 2026'da Bilmeniz Gereken Her Şey",
+    "url": "articles/yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html",
+    "category": "Yapay Zeka",
+    "date": "21 Eylül 2026",
+    "time": "7 dk okuma",
+    "excerpt": "Yapay zeka nedir, nasıl çalışır ve 2026 yılında hayatımızı nasıl değiştiriyor? Yapay zeka türleri, uygulamaları, Türkiye...",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200"
+  },
+  {
+    "title": "WordPress mi HTML mi? 2026'da Blog Kurmak İçin En İyi Seçim",
+    "url": "articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html",
+    "category": "Yazılım",
+    "date": "21 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "WordPress mi HTML mi? 2026'da blog kurmak için hangi platform daha iyi? Performans, SEO, güvenlik ve maliyet karşılaştır...",
+    "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200"
+  },
+  {
+    "title": "Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi",
+    "url": "articles/python-renpy-oyun-ceviri-araci-voorhees-rehberi.html",
+    "category": "Yazılım",
+    "date": "21 Eylül 2026",
+    "time": "4 dk okuma",
+    "excerpt": "Ren'Py görsel roman oyunlarını Python ve Voorhees araçlarıyla Türkçe'ye çevirme rehberi. Adım adım yerelleştirme tüyoları TechWave'de!",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200"
+  },
+  {
+    "title": "Geleceğin Becerisi Kodlama: Çocuklar ve Gençler İçin Kodris Platformu İncelemesi",
+    "url": "articles/cocuklar-ve-gencler-icin-kodris-platformu-incelemesi.html",
+    "category": "Yazılım",
+    "date": "21 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "Çocuklara ve gençlere kodlama öğreten yerli EdTech platformu Kodris'i detaylıca inceledik. Özellikleri, Python geçişi ve ebeveyn ipuçları bu makalede.",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200"
+  },
+  {
+    "title": "Siber Güvenlik 101: Kişisel Verilerinizi Nasıl Korursunuz?",
+    "url": "articles/siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html",
+    "category": "Siber Güvenlik",
+    "date": "20 Eylül 2026",
+    "time": "7 dk okuma",
+    "excerpt": "2026 yılında kişisel verilerinizi koruma rehberi.",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200"
+  },
+  {
+    "title": "ChatGPT vs Claude vs Gemini: 2026'da Hangi AI Aracı Daha İyi?",
+    "url": "articles/chatgpt-vs-clude-vs-gemini-karsilastirma.html",
+    "category": "AI Araçları",
+    "date": "20 Eylül 2026",
+    "time": "8 dk okuma",
+    "excerpt": "ChatGPT, Claude ve Gemini karşılaştırması 2026.",
+    "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "title": "2026 Piyasa Dinamikleri: Algoritmik Ticaret ve Kripto",
+    "url": "articles/2026-piyasa-dinamikleri-algoritmik-ticaret-kripto.html",
+    "category": "Finans",
+    "date": "20 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "Küresel faiz politikaları, BIST 100, Bitcoin ETF.",
+    "image": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "title": "2026 İşletim Sistemi ve Kodlama Teknoloji Trendleri",
+    "url": "articles/2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri.html",
+    "category": "Yazılım",
+    "date": "20 Eylül 2026",
+    "time": "5 dk okuma",
+    "excerpt": "Yerleşik yapay zeka, on-device AI, cross-platform diller.",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200"
+  },
+  {
+    "title": "Google Gemini Güvenlik Testinde Şirket Sınırlarını Aştı",
+    "url": "articles/google-gemini-yapay-zeka-guvenlik-testi-sirketlere-sizdi.html",
+    "category": "Siber Güvenlik",
+    "date": "19 Eylül 2026",
+    "time": "5 dk okuma",
+    "excerpt": "Google Gemini güvenlik testinde şirketlerin savunma hatlarını aştı.",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200"
+  },
+  {
+    "title": "2026'da Akıllı Telefon Alırken Yapılan 5 Kritik Hata",
+    "url": "articles/2026-telefon-alirken-5-kritik-hata.html",
+    "category": "Mobil",
+    "date": "19 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "Doğru telefon seçimi için bilmeniz gereken 5 hata.",
+    "image": "https://images.unsplash.com/photo-1592890288564-76628a30a657?w=1200"
+  },
+  {
+    "title": "ABD Üniversitelerinin Favori Programlama Dili: Python",
+    "url": "articles/abd-universitelerinde-en-cok-ogretilen-dil-python.html",
+    "category": "Python",
+    "date": "18 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "ABD üniversitelerinde Python neden zirvede?",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200"
+  },
+  {
+    "title": "Python Nedir? Sıfırdan İleri Seviyeye Bilmeniz Gereken Her Şey",
+    "url": "articles/python-nedir-bilmeniz-gereken-her-sey.html",
+    "category": "Python",
+    "date": "16 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "Python nedir, ne işe yarar ve nasıl öğrenilir?",
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200"
+  },
+  {
+    "title": "İnşaat Endüstrisi için En İyi 10 AI Aracı Eylül 2026",
+    "url": "articles/insaat-endustrisi-icin-en-iyi-10-ai-araci-eylul-2026.html",
+    "category": "Yapay Zeka",
+    "date": "16 Eylül 2026",
+    "time": "5 dk okuma",
+    "excerpt": "İnşaat sektörünü dönüştüren en iyi 10 yapay zeka aracı.",
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200"
+  },
+  {
+    "title": "Blockchain Yazılımında En İyi 11 Programlama Dili",
+    "url": "articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html",
+    "category": "Blockchain",
+    "date": "16 Eylül 2026",
+    "time": "6 dk okuma",
+    "excerpt": "Web3 için en iyi 11 programlama dili rehberi.",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200"
+  },
+  {
+    "title": "AB 15 Yaş Altı Çocuklara Oyun Kısıtlaması Getiriyor",
+    "url": "articles/ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html",
+    "category": "Oyun",
+    "date": "16 Eylül 2026",
+    "time": "5 dk okuma",
+    "excerpt": "AB'nin 15 yaş altı oyun kısıtlaması kararı ve detayları.",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200"
+  },
+  {
+    "title": "Apple Yapay Zeka Destekli Yeni Sağlık Uygulamasını Duyurdu",
+    "url": "articles/apple-yapay-zeka-destekli-saglik-uygulamasi.html",
+    "category": "Mobil",
+    "date": "12 Eylül 2026",
+    "time": "4 dk okuma",
+    "excerpt": "Apple'ın yapay zeka destekli yeni sağlık uygulaması.",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
+  }
+];
+    var slugToName = {
+  "yapay-zeka": "Yapay Zeka",
+  "python": "Python",
+  "ai-araclari": "AI Araçları",
+  "siber-guvenlik": "Siber Güvenlik",
+  "mobil": "Mobil",
+  "yazilim": "Yazılım",
+  "finans": "Finans",
+  "blockchain": "Blockchain",
+  "oyun": "Oyun",
+  "donanim": "Donanım"
+};
+    var nameToSlug = {
+  "Yapay Zeka": "yapay-zeka",
+  "Python": "python",
+  "AI Araçları": "ai-araclari",
+  "Siber Güvenlik": "siber-guvenlik",
+  "Mobil": "mobil",
+  "Yazılım": "yazilim",
+  "Finans": "finans",
+  "Blockchain": "blockchain",
+  "Oyun": "oyun",
+  "Donanım": "donanim"
+};
+
+    var grid = document.getElementById('articleGrid');
+    var empty = document.getElementById('filterEmpty');
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
+    var tags = Array.prototype.slice.call(document.querySelectorAll('.tag-cloud .tag[data-filter]'));
+    if (!grid) return;
+
+    function esc(str) {
+      return String(str).replace(/[&<>"']/g, function (m) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m];
+      });
+    }
+
+    /* Makale kartlarini olustur */
+    articles.forEach(function (a) {
+      var card = document.createElement('article');
+      card.className = 'card';
+      card.setAttribute('data-category', a.category);
+      card.innerHTML =
+        '<div class="card-img"><img src="' + esc(a.image) + '" alt="' + esc(a.title) + '" loading="lazy"></div>' +
+        '<div class="card-body">' +
+        '<span class="card-tag" data-category="' + esc(a.category) + '">' + esc(a.category) + '</span>' +
+        '<h2 class="card-title"><a href="' + esc(a.url) + '">' + esc(a.title) + '</a></h2>' +
+        '<p class="card-excerpt">' + esc(a.excerpt) + '</p>' +
+        '<div class="card-meta"><span>\ud83d\udcc5 ' + esc(a.date) + '</span><span>\u23f1\ufe0f ' + esc(a.time) + '</span></div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+
+    /* Kategori adina gore (all = tumu) filtrele */
+    function filterArticles(category, updateUrl) {
+      var active = category || 'all';
+      var visible = 0;
+
+      cards.forEach(function (card) {
+        var match = active === 'all' || card.getAttribute('data-category') === active;
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+
+      buttons.forEach(function (btn) {
+        btn.classList.toggle('active', (btn.getAttribute('data-filter') || 'all') === active);
+      });
+
+      tags.forEach(function (tag) {
+        tag.classList.toggle('active', (tag.getAttribute('data-filter') || '') === active);
+      });
+
+      if (empty) empty.hidden = visible > 0;
+
+      if (updateUrl !== false) {
+        var slug = active === 'all' ? '' : (nameToSlug[active] || '');
+        try {
+          history.replaceState(null, '', slug ? '?kategori=' + encodeURIComponent(slug) : location.pathname.replace(/\/.+$/, '') + '/kategori.html');
+        } catch (e) { /* yoksay */ }
+      }
+    }
+
+    /* URL parametresi: kategori.html?kategori=yapay-zeka */
+    function categoryFromUrl() {
+      var raw = '';
+      try {
+        raw = new URLSearchParams(location.search).get('kategori') || '';
+      } catch (e) { raw = ''; }
+      if (!raw) return 'all';
+      raw = decodeURIComponent(raw).toLowerCase();
+      if (slugToName[raw]) return slugToName[raw];
+      var key = Object.keys(slugToName).filter(function (s) { return slugToName[s].toLowerCase() === raw; })[0];
+      if (key) return slugToName[key];
+      var nameKey = Object.keys(nameToSlug).filter(function (n) { return n.toLowerCase() === raw; })[0];
+      if (nameKey) return nameKey;
+      return 'all';
+    }
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterArticles(btn.getAttribute('data-filter') || 'all');
+      });
+    });
+
+    tags.forEach(function (tag) {
+      tag.addEventListener('click', function (e) {
+        e.preventDefault();
+        filterArticles(tag.getAttribute('data-filter') || 'all');
+        if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    filterArticles(categoryFromUrl(), false);
+  })();
+
+  </script>
 </body>
 </html>
