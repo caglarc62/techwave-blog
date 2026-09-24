@@ -1,0 +1,350 @@
+# -*- coding: utf-8 -*-
+import os
+
+BASE = r"C:\Users\cagla\OneDrive\Masaüstü\teknoblog"
+
+SLUG = "2026da-laptop-mu-tablet-mi-dogru-secim-rehberi"
+TITLE = "2026'da Laptop Mu Tablet Mi? Doğru Seçim Rehberi"
+CATEGORY = "Donanım"
+IMAGE = "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+DATE_ISO = "2026-09-24"
+DATE_TR = "24 Eylül 2026"
+READ_TIME = "7 dk okuma"
+CANONICAL = f"https://techwaveblog.site/articles/{SLUG}.html"
+
+META_DESC = (
+    "2026'da laptop mu tablet mi? Performans, taşınabilirlik, pil, ekran, kullanım alanları, "
+    "iPad Pro, Android tabletler, 2-in-1 cihazlar ve fiyat karşılaştırmasıyla doğru seçim rehberi."
+)
+
+CONTENT = """
+        <h2>2026'da Laptop mu Tablet mi Tartışması Neden Hâlâ Güncel?</h2>
+        <p>2026 yılına geldiğimizde laptop ve tablet arasındaki rekabet hiçbir dönemde olmadığı kadar kızışmış durumda. Apple'ın M serisi çipleri, Qualcomm'un Snapdragon X Elite ailesi ve MediaTek'in Dimensity işlemcileri sayesinde tabletler masaüstü seviyesine yaklaşırken, laptop tarafında da 20 saatlik pil ömürleri ve fanlı soğutmasız tasarımlar standart hâle geldi. Pek çok kullanıcı hâlâ "yeni bir cihaz alsam laptop mu tablet mi?" sorusuyla karşı karşıya. Bu makalede performans, taşınabilirlik, pil, ekran, kullanım senaryoları ve fiyat başlıklarında iki dünyayı karşılaştırıyor; doğru kararı vermeniz için net kriterler sunuyoruz.</p>
+        <p>Kısaca cevap vermek gerekirse: laptop hâlâ çoklu görev ve klasik üretim işlerinde bir adım önde; tablet ise tablet kalemi, dokunmatik uygulamalar ve ultra taşınabilirlikte öne çıkıyor. Ancak 2026'da işler bu kadar siyah-beyaz değil. Gelin detaylara inelim.</p>
+
+        <h2>Performans Karşılaştırması: İşlemci, RAM ve Çoklu Görev</h2>
+        <p><strong>İşlemci tarafında</strong> 2026'da her iki kamp da güçlü. Üst segment iPad Pro ve premium Android tabletler 12 çekirdekli mobil çiplerle geliyor ve tek çekirdek performansında birçok ultrabook'u yakalıyor. Ancak <strong>sürekli yük altında</strong> fark ortaya çıkıyor: laptoplar aktif soğutma (fan) sayesinde daha uzun süre tam performansla çalışabiliyor. Tabletler ise ince gövdeleri nedeniyle termal sınırlara daha hızlı ulaşıyor; uzun video işleme, derleme veya 3D render görevlerinde performans düşüşü (thermal throttling) yaşanabiliyor.</p>
+        <p><strong>RAM tarafında</strong> laptoplar avantajlı. Orta segment bir 2026 laptopu 16 GB RAM ile gelirken, tabletlerde 8-12 GB yaygın; üst segmentte 16 GB'a çıksa da bellek yönetimi işletim sistemi kaynaklı olarak daha kısıtlı. Çoklu görevde 20 sekme + ofis paketi + video konferans senaryosunda laptopun esnekliği fark yaratıyor. Tablet tarafında bölünmüş ekran ve Stage Manager benzeri özellikler gelişse de dosya yönetimi ve klasik pencereli çalışma hâlâ laptop kadar rahat değil.</p>
+
+        <h2>Taşınabilirlik: Kimi, Kim, Ne Kadar Taşır?</h2>
+        <p>Taşınabilirlikta tablet net kazanıyor. 11 inçlik bir tablet 400-500 gram ağırlığıyla tek elle taşınabilirken, 14 inç bir laptop 1,4-1,7 kg ağırlığında ve çanta şart. Metroda, kafede, uçakta kitap okur gibi cihaz kullanmak isteyenler için tablet çok daha pratik.</p>
+        <p>Ancak taşınabilirlik sadece ağırlık değil; <strong>çalışma esnekliğidir</strong>. Laptopun sabit bir klavyesi ve trackpad'i olduğu için tren yolculuğunda bile verimli çalışabilirsiniz. Tablet tezgâhsız, dengesiz zeminlerde (örneğin dizinizde) yazı yazarken zorlanır. Kısacası: tablet daha hafif, laptop daha "yerinde çalışılabilir".</p>
+
+        <h2>Pil Ömrü: Gün Boyu Kullanım Kimde?</h2>
+        <p>2026'da iki taraf da çok iyi. Tabletler genelde video oynatma testlerinde 10-14 saat, gerçek kullanımda 8-10 saat sunuyor. Laptop tarafında ise 2026 modelleri gerçek kullanımda 12-20 saat pil ömrüne ulaşabiliyor; özellikle Apple Silicon ve Snapdragon X tabanlı modellerde bu rakamlar olağanüstü.</p>
+        <p>Pil konusunda belirleyici olan cihaz sınıfı: fanısız ultrabooklar tabletlerle aynı ligde; gaming laptoplar ise 4-6 saatte sınırlı. Günlük ortalama kullanım için ikisi de tam gün yeterli; ancak prizden kopmak istemeyen yoğurun kullanıcılar için 20 saatlik bir ultrabook, tablete göre daha uzun esneklik veriyor.</p>
+
+        <h2>Ekran Boyutu ve Kalitesi</h2>
+        <p>Tabletler 2026'da ekran kalitesinde lider. OLED ve mini-LED paneller, 120 Hz ProMotion/adaptive refresh ve yüksek PPI değerleriyle okuma, çizim ve medya tüketiminde üstün deneyim sunuyor. 11-13 inç ekranlar video izlemek ve kitap okumak için ideal.</p>
+        <p>Laptoplar ise 13-16 inç ekranlarıyla daha geniş bir çalışma alanı sunuyor. Yan yana iki pencere, tablo düzenleme, kod editörü + önizleme gibi senaryolarda 13 inçin altına düşmek verimliliği düşürüyor. Ekran kalitesi 2026'da laptoplarda da çok iyi; ancak <strong>yaşam boyu ekran deneyimi</strong> (yatay tutma, koltukta kullanım) tabletin daha esnek ekranıyla daha rahat.</p>
+
+        <h2>Kullanım Senaryolarına Göre Seçim</h2>
+        <h3>Öğrenciler</h3>
+        <p>Not alma, PDF okuma, sunum hazırlama ve ödev yazma için tablet + klavye kombinasyonu çoğu öğrenciye yeterli. Ancak yazılım mühendisliği, istatistik, mimarlık gibi ağır uygulama gerektiren bölümlerde laptop şart. Uzaktan eğitim ve sınav senaryolarında laptop daha sorunsuz.</p>
+
+        <h3>Profesyoneller ve Ofis Kullanıcıları</h3>
+        <p>Excel makroları, çoklu monitör, kurumsal VPN, CRM ve ERP uygulamaları hâlâ laptop tarafında daha sorunsuz çalışıyor. Tam teşekküllü bir iş bilgisayarı arıyorsanız laptop ilk tercih. Tableti ikinci cihaz olarak taşımak mantıklı.</p>
+
+        <h3>Sanatçılar ve Yaratıcılar</h3>
+        <p>Çizim, illüstrasyon, dijital not alma ve fotoğraf düzenleme için tablet + aktif kalem en iyi çözüm. Procreate, GoodNotes, Photoshop iPad gibi uygulamalar tablette çok doğal çalışıyor. Video kurgu, 3D modelleme veya renk düzenleme yapanlar için geniş ekran ve güçlü soğutmalı laptop gerekli.</p>
+
+        <h3>Sıradan Kullanıcılar</h3>
+        <p>Sosyal medya, dizi-film izleme, hafif ofis işleri ve görüntülü görüşme ağırlıklı kullanıyorsanız tablet yeterli, üstelik daha ucuz ve taşınabilir. Oyun, kod yazma veya ağır çoklu görev yapıyorsanız laptop daha doğru.</p>
+
+        <h2>iPad Pro vs Laptop</h2>
+        <p>2026 iPad Pro, M serisi çipiyle birçok ultrabook'un performansını yakalıyor; Liquid Retina XDR ekranı ve Apple Pencil desteğiyle yaratıcı işlerde rakipsiz. Ancak iPadOS'un dosya yönetimi, uygulama sınırları ve dış ekran desteği hâlâ laptop deneyiminin gerisinde. Ofis işleri, yazılım geliştirme ve profesyonel içerik üretimi için gerçek bir laptop ihtiyacı ancak Mac Studio gibi sabit bir kurulumla tamamlanabilir. iPad Pro, "laptop yerine geçer mi?" sorusuna: <strong>yaratıcı ve tüketici işlerde evet; klasik üretkenlik işlerinde hayır</strong> diyebiliriz.</p>
+
+        <h2>Android Tabletler vs Laptop</h2>
+        <p>Samsung Galaxy Tab S serisi, Xiaomi Pad ve OnePlus Pad gibi Android tabletler 2026'da güçlü donanım ve Samsung DeX benzeri masaüstü modlarıyla laptop alternatifi olmaya çalışıyor. Uygulama ekosistemi iPadOS'a göre daha esnek, dosya transferi daha serbest. Yine de pencereli çoklu görev, profesyonel yazılım desteği ve klavye aksesuarlarının kalitesi açısından laptoplar önde. Android tableti ikinci ekran, medya cihazı veya hafif üretim için almak mantıklı.</p>
+
+        <h2>2-in-1 Cihazlar: İkisinin Ortası</h2>
+        <p>Çıkarılabilir klavyeli tabletler ve katlanabilir 2-in-1 dizüstüler (Microsoft Surface, Lenovo Yoga Book, HP Pavilion x360 gibi) 2026'da en esnek çözüm. Tablet gibi kullanıp gerektiğinde klavyeye geçiş yapabiliyorsunuz. Ancak bu esnekliğin bedeli var: çoğu 2-in-1, aynı fiyat aralığında saf bir laptopa göre daha zayıf işlemci/soğutma veya daha pahalı aksesuarlar sunabiliyor. 2-in-1'i seçmeden önce gerçekten dokunmatik + klavye kombinasyonuna ihtiyacınız olup olmadığını dürüstçe değerlendirin.</p>
+
+        <h2>Fiyat Karşılaştırması</h2>
+        <p>Fiyatlar ortalama piyasa aralıklarıdır:</p>
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; margin: 16px 0;">
+          <thead>
+            <tr style="background:#eef2ff;">
+              <th>Sınıf</th>
+              <th>Laptop</th>
+              <th>Tablet (+ aksesuar)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Giriş</td>
+              <td>15.000 - 25.000 TL</td>
+              <td>10.000 - 18.000 TL</td>
+            </tr>
+            <tr>
+              <td>Orta segment</td>
+              <td>25.000 - 45.000 TL</td>
+              <td>18.000 - 35.000 TL</td>
+            </tr>
+            <tr>
+              <td>Üst segment</td>
+              <td>45.000 - 90.000+ TL</td>
+              <td>35.000 - 70.000+ TL</td>
+            </tr>
+            <tr>
+              <td>Klavye/kalem aksesuarı</td>
+              <td>Dahil</td>
+              <td>+3.000 - 10.000 TL</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Aksesuarlar eklendiğinde fiyat farkı daralıyor. Aynı bütçede tablet + klavye almak mı yoksa tam donanımlı laptop almak mı daha mantıklı? Cevap kullanım senaryonuza bağlı.</p>
+
+        <h2>Ne Zaman Laptop Almalısınız?</h2>
+        <ul>
+          <li>Ofis paketleri, kod yazma, grafik/video işleme gibi klasik üretkenlik işleri yapıyorsanız</li>
+          <li>Çok uygulama, çok pencere ve dış ekran/laptop konektörü kullanacaksanız</li>
+          <li>Tek cihazla hem iş hem eğlence hem oyun planlıyorsanız</li>
+          <li>Klavye ve trackpad'i cihazın kalıcı parçası olarak istiyorsanız</li>
+          <li>Kurumsal yazılımlar, muhasebe, mühendislik uygulamaları gerekiyorsa</li>
+        </ul>
+
+        <h2>Ne Zaman Tablet Almalısınız?</h2>
+        <ul>
+          <li>Ağırlık ve boyut sizin için en öncelikli kriterse</li>
+          <li>Not alma, çizim, PDF okuma ve e-kitap ağırlıklı kullanacaksanız</li>
+          <li>Tableti ikinci cihaz (koltukta, yolda, yatakta) olarak alacaksanız</li>
+          <li>Medya tüketimi ve görüntülü konuşma öncelikliyse</li>
+          <li>Bütçeniz sınırlı ve temel üretkenlik işleri için yeterliyse</li>
+        </ul>
+
+        <h2>Hangi Aksesuarlar Gerekli?</h2>
+        <p><strong>Laptop tarafında</strong>: harici fare (opsiyonel), laptop standı (ergonomi için), kulaklık ve yedek güç adaptörü öne çıkıyor. Ekran genişletmek isteyenler harici monitör ve dock ekleyebilir.</p>
+        <p><strong>Tablet tarafında</strong>: manyetik klavye kılıf (yazı yazmak için şart), aktif kalem (çizim/not için), tablet standı ve cihazı taşımak için koruyucu kılıf. Aksesuar bütçenizi baştan planlayın; klavye + kalem toplam maliyeti ciddi ek yük getirebilir.</p>
+
+        <h2>Sonuç: Size Önerimiz</h2>
+        <p>2026'da doğru seçim şu üç soruya bağlı: <strong>(1) Ana işiniz nedir?</strong> Klasik üretim/ofis/iş yazılımı → laptop. Çizim, not, medya, taşınabilir tüketim → tablet. <strong>(2) Tek cihaz mı, ikinci cihaz mı?</strong> Tek cihazsa laptop; ikinci cihazsa tablet. <strong>(3) Bütçe ve ağırlık önceliğiniz nedir?</strong> Bütçe ve hafiflik öncelikliyse tablet + klavye, esneklik ve güç öncelikliyse laptop.</p>
+        <p>Net önerimiz: <strong>Öğrenci, ofis çalışanı veya geliştiriciyseniz laptop; yaratıcı, okuyucu veya hafif kullanıcıysanız tablet</strong> alın. İkisine de ihtiyacınız varsa, 2-in-1 yerine ayrı bir ultrabook + ekonomik tablet kombinasyonu genelde daha tatmin edici sonuç verir. TechWave ile kalın, bilinçli seçim yapın!</p>
+        <p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></em></p>
+"""
+
+ARTICLE_HTML = f"""<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){{
+        m[i]=m[i]||function(){{(m[i].a=m[i].a||[]).push(arguments)}};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {{if (document.scripts[j].src === r) {{ return; }} }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    }})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {{ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true}});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{META_DESC}">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>{TITLE} — TechWave</title>
+  <meta property="og:title" content="{TITLE} — TechWave">
+  <meta property="og:description" content="{META_DESC}">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="{IMAGE}">
+  <link rel="canonical" href="{CANONICAL}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{TITLE}",
+    "author": {{"@type": "Person", "name": "TechWave"}},
+    "datePublished": "{DATE_ISO}",
+    "description": "{META_DESC}",
+    "publisher": {{"@type": "Organization", "name": "TechWave", "url": "https://techwaveblog.site"}},
+    "mainEntityOfPage": "{CANONICAL}",
+    "image": "{IMAGE}"
+  }}
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<meta name="google-translate-customization" content="YOUR-ID">
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {{
+  new google.translate.TranslateElement({{pageLanguage: 'tr', includedLanguages: 'en,ar,de,es,fr,ru,ja,ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}}, 'google_translate_element');
+}}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.goog-te-gadget {{
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+}}
+.goog-te-gadget-simple {{
+  border: 1px solid #e0e7ff !important;
+  border-radius: 8px !important;
+  background: white !important;
+  padding: 4px 8px !important;
+}}
+.goog-te-gadget-simple .goog-te-menu-value {{
+  color: #1e293b !important;
+  font-family: 'Inter', sans-serif !important;
+}}
+body {{
+  position: relative;
+}}
+#google_translate_element {{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}}
+</style>
+<!-- /Google Translate -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+  <article class="article-page">
+    <div class="container">
+      <div class="article-header">
+        <span class="card-tag" data-category="{CATEGORY}">{CATEGORY}</span>
+        <h1 class="article-title">{TITLE}</h1>
+        <div class="article-meta">
+          <span>📅 {DATE_TR}</span>
+          <span>⏱️ {READ_TIME}</span>
+        </div>
+      </div>
+      <div class="article-hero">
+        <img src="{IMAGE}" alt="{TITLE}" loading="eager">
+      </div>
+      <div class="article-content">
+{CONTENT}
+      </div>
+      <div class="article-tags">
+        <span class="card-tag" data-category="{CATEGORY}">{CATEGORY}</span>
+      </div>
+    </div>
+  </article>
+  <div class="container">
+    <div class="newsletter-cta">
+      <h3>📬 TechWave Bültenine Katılın</h3>
+      <p>Her hafta yapay zeka, yazılım ve teknoloji dünyasından en güncel gelişmeler doğrudan e-posta kutuna gelsin.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Teşekkürler! Bültenimize başarıyla katıldınız.');">
+        <input type="email" placeholder="E-posta adresiniz" required>
+        <button type="submit">Katıl</button>
+      </form>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+          <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../kategori.html">Kategoriler</a></li>
+            <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+          <ul class="footer-links">
+            <li><a href="../kategori.html">Yapay Zeka</a></li>
+            <li><a href="../kategori.html">Yazılım</a></li>
+            <li><a href="../kategori.html">Python</a></li>
+            <li><a href="../kategori.html">AI Araçları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+"""
+
+# 1) Makale dosyası
+art_path = os.path.join(BASE, "articles", f"{SLUG}.html")
+with open(art_path, "w", encoding="utf-8") as f:
+    f.write(ARTICLE_HTML)
+print(f"Yazildi: {art_path}")
+
+# 2) index.html — kart ekle
+index_path = os.path.join(BASE, "index.html")
+with open(index_path, "r", encoding="utf-8") as f:
+    idx = f.read()
+
+grid_marker = '<div class="card-grid">'
+card = f'''
+        <!-- YENİ MAKALE — Otomatik eklendi -->
+        <article class="card" data-category="{CATEGORY}">
+          <div class="card-img"><img src="{IMAGE}" alt="{TITLE}" loading="lazy"></div>
+          <div class="card-body">
+            <span class="card-tag" data-category="{CATEGORY}">{CATEGORY}</span>
+            <h2 class="card-title">
+              <a href="articles/{SLUG}.html">{TITLE}</a>
+            </h2>
+            <p class="card-excerpt">2026'da laptop mu tablet mi? Performans, taşınabilirlik, pil, ekran, kullanım senaryoları, iPad Pro, Android tabletler, 2-in-1 cihazlar ve fiyat karşılaştırmasıyla doğru seçim rehberi.</p>
+            <div class="card-meta">
+              <span>📅 {DATE_TR}</span>
+              <span>⏱️ {READ_TIME}</span>
+            </div>
+          </div>
+        </article>
+'''
+if grid_marker in idx:
+    idx = idx.replace(grid_marker, grid_marker + "\n" + card + "\n", 1)
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write(idx)
+    print("index.html guncellendi.")
+else:
+    print("HATA: card-grid bulunamadi!")
+
+# 3) sitemap.xml — yeni URL ekle
+sm_path = os.path.join(BASE, "sitemap.xml")
+with open(sm_path, "r", encoding="utf-8") as f:
+    sm = f.read()
+
+new_url = f'''  <url>
+    <loc>{CANONICAL}</loc>
+    <lastmod>{DATE_ISO}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>'''
+
+if "</urlset>" in sm and CANONICAL not in sm:
+    sm = sm.replace("</urlset>", new_url, 1)
+    with open(sm_path, "w", encoding="utf-8") as f:
+        f.write(sm)
+    print("sitemap.xml guncellendi.")
+else:
+    print("HATA: sitemap guncellenemedi veya URL zaten var.")
