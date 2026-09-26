@@ -1,0 +1,332 @@
+# -*- coding: utf-8 -*-
+"""Yeni makale olusturur: 2026'da Evden Para Kazanma."""
+
+import os
+import io
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+ARTICLES = os.path.join(BASE, "articles")
+
+SLUG = "2026da-evden-para-kazanma-internetten-gercekten-kazandiran-12-yol"
+TITLE = "2026'da Evden Para Kazanma: İnternetten Gerçekten Kazandıran 12 Yol"
+CATEGORY = "Finans"
+DATE = "25 Eylül 2026"
+DATE_ISO = "2026-09-25"
+READ_TIME = "7 dk okuma"
+IMAGE = "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1200"
+CANONICAL = f"https://techwaveblog.site/articles/{SLUG}.html"
+EXCERPT = (
+    "2026'da evden para kazanmanın 12 gerçekçi yolu: freelance yazarlık, sanal asistanlık, "
+    "online özel ders, e-ticaret, dropshipping, içerik üreticiliği, podcast, print-on-demand, "
+    "ortaklık pazarlama, sosyal medya yönetimi, grafik tasarım ve uygulama test etme. "
+    "Türk Lirası bazlı gelir tahminleri, gereken araçlar, başlangıç adımları ve kaçınılması "
+    "gereken dolandırıcılıklar."
+)
+
+CONTENT = """
+<h2>2026'da Evden Para Kazanmak Neden Artık Bir Lüks Değil?</h2>
+<p>2026 yılına geldiğimizde "evden çalışmak" bir dönem sadece yazılımcıların ve ajansların ayrıcalığıydı; bugün ise milyonlarca insanın günlük hayatının doğal bir parçası. Yapay zeka araçlarının yaygınlaşması, uzaktan iş ilanlarının artması, e-ticaret altyapılarının Türkiye'de olgunlaşması ve dijital ödeme sistemlerinin kolaylaşması, evden para kazanmayı her zamankinden daha ulaşılabilir hale getirdi. Ancak aynı bu kolaylık, "bir gecede zengin olma" vaatleriyle dolu bir ekosistemi de beraberinde getirdi. Bu makalede sihirli bir formül değil; 2026'da gerçekten gelir üretebilen, başlangıç maliyeti düşük ve Türkiye koşullarına uygun 12 yöntemi ele alacağız. Her yöntem için tahmini aylık gelir aralığını Türk Lirası olarak, gereken araçları ve ilk adımları da paylaşacağız.</p>
+<p>Öncelikle dürüst bir çerçeve çizelim: evden para kazanmak kolay değil, ama mümkün. Hiçbir yöntem ilk hafta size maaş kadar kazandırmaz. Ortak noktaları şudur: düzenli emek, doğru beceri seçimi ve sabır. Aşağıdaki 12 yöntem, tam zamanlı bir işin yerini hemen doldurmayabilir; ancak yan gelir olarak başlayıp zamanla ana gelir haline gelebilecek gerçekçi yollar arasından seçildi. Gelin, önce en düşük bariyerli yöntemlerle başlayalım.</p>
+
+<h2>1. Serbest Yazarlık ve Çeviri İşleri</h2>
+<p>İçerik pazarlama 2026'da da büyümesini sürdürüyor ve markalar sürekli blog yazısı, ürün açıklaması, SEO metni ve sosyal medya metnine ihtiyaç duyuyor. Türkçe yazabilen ve belirli bir konuya hâkim olan herkes bu pazarda yer bulabilir. Çeviri tarafında ise İngilizce-Türkçe yönü en yoğun talep gören dil çifti. Ortalama gelir: deneyimsiz yazarlar için kelime başı 0,3-0,8 TL, deneyimli SEO yazarları için 1,5-4 TL arasında; tam zamanlı çalışan bir serbest yazar ayda 25.000-60.000 TL bandında kazanabilir. Çevirmenlerde sayfa başı 80-250 TL yaygındır.</p>
+<p><strong>Gereken araçlar:</strong> Google Docs, Grammarly veya yazım denetimi aracı, bir Notion/Google Sheets portföyü, freelans platformları (Bionluk, Fiverr, Upwork, Armut). <strong>Başlangıç adımları:</strong> 3-5 örnek metin hazırlayın, tek bir niche seçin (örneğin finans veya sağlık), platformlarda düşük fiyatla ilk 3 işi alın ve referans toplayın. İlk işleri bilerek ucuza almak sizi rakiplerinizden bir adım öne çıkarır; kalıcı fiyatınızı ikinci aydan itibaren yükseltin.</p>
+
+<h2>2. Sanal Asistanlık (Virtual Assistant)</h2>
+<p>Sanal asistanlar, işletme sahiplerinin e-posta trafiğini, takvimini, sunumlarını, müşteri takibini ve raporlamasını uzaktan yönetir. Yapay zeka asistanlarının yaygınlaşması bu işi bitirmedi; aksine araçları kullanan deneyimli asistanların verimliliğini artırdı. Türkiye'de bu hizmet genellikle saatlik 150-400 TL veya aylık paket 8.000-25.000 TL üzerinden satılıyor. Yabancı müşteriye çalışıyorsanız saatlik 15-35 dolar bandı mümkün.</p>
+<p><strong>Gereken araçlar:</strong> Canva, Google Workspace, Notion, Trello, temel düzey İngilizce ve düzenli iletişim becerisi. <strong>Başlangıç adımları:</strong> Hangi görevleri üstleneceğinizi netleştirin (muhasebe girişi mi, sosyal medya mı, müşteri hizmetleri mi), LinkedIn'de profilinizi yenileyin ve ilk müşteriyi çevrenizden veya Bionluk/Armut üzerinden bulun. Tek bir müşteriyle bile aylık düzenli gelir yakalamak mümkün; asıl hedef 3-4 aktif müşteriye ulaşmaktır.</p>
+
+<h2>3. Online Özel Ders ve Eğitim Satışı</h2>
+<p>Yüz yüze özel dersin dijitalleşmesi 2026'da doruk noktasına ulaştı. Yabancı dil, matematik, kodlama, sınav hazırlığı (YKS, LGS, ALES) ve hatta enstrüman dersleri tamamen çevrimiçi verilebiliyor. Kurs platformları (Udemy, Educatalk, kendi kurduğunuz üyelik sitesi) paket satışına olanak tanıyor. Ortalama gelir: birebir ders için saatlik 400-1.200 TL, 20 kişilik bir online grubu 4 haftada yönetmek 8.000-20.000 TL, Udemy'de iyi bir kurs ayda 5.000-30.000 TL pasif gelir üretebilir.</p>
+<p><strong>Gereken araçlar:</strong> Zoom veya Google Meet, iyi bir mikrofon, ekran paylaşımı, ders notu şablonları. <strong>Başlangıç adımları:</strong> Uzmanlığınız olan tek bir konuyu seçin, 1 saatlik ücretsiz deneme dersi sunun, veli/öğrenci ağınızda ve sosyal medyada tanıtın. Udemy'de kurs açacaksanız ilk fiyatı kampanyalı tutup 10-15 satışta sosyal kanıt toplayın. Düzenlilik burada da belirleyici: haftada en az 10 saat ders programı oluşturun.</p>
+
+<h2>4. E-Ticaret: Trendyol, Hepsiburada ve Kendi Mağazanız</h2>
+<p>Türkiye'de e-ticaret hacmi her yıl büyüyor ve 2026'da pazaryerleri hâlâ en hızlı giriş kapısı. Trendyol, Hepsiburada, N11 ve Shopify/ideasoft ile kurulan kendi mağazaları üzerinden ürün satabilirsiniz. Başlangıç için stoklu model daha güvenli; tedarikçiyle anlaşıp düşük adetle başlayın. Aylık cirodan çok net kârı hedefleyin: %20-35 net marjlı bir kategoride ayda 50.000 TL ciro yapan küçük bir mağaza, 10.000-17.000 TL net kâr bırakabilir.</p>
+<p><strong>Gereken araçlar:</strong> E-fatura entegratörü, kargo anlaşması, ürün fotoğrafı çekimi (akıllı telefon yeterli), Trendyol/Seller paneli, stok takip tablosu. <strong>Başlangıç adımları:</strong> Kategori seçerken üç filtreden geçirin: kargo iadesi düşük mü, marj yüksek mi, rekabet aşırı mı? İlk 3 ürünü elinizde küçük bir stokla test edin, reklamsız satış yapabildiğinizi görünce Performance Ads'e geçin. İade oranını %10'un altında tutmak, bu işte karlılığın sırrıdır.</p>
+
+<h2>5. Dropshipping: Stoksuz Satış Modeli</h2>
+<p>Dropshipping'de ürün sizin elinizde bulunmaz; sipariş geldiğinde tedarikçi doğrudan müşteriye gönderir. 2026'da bu model hâlâ çalışıyor ancak kâr marjları daraldı ve müşteri beklentisi teslimat hızına bindi. Avantajı düşük başlangıç maliyeti (2.000-5.000 TL reklam bütçesiyle test edilebilir), dezavantajı tedarikçi kalitesi üzerinde kontrolünüzün olması. İyi kurulmuş bir dropshipping operasyonu ayda 5.000-40.000 TL net kâr üretebilir; başarısız kampanyalarda aynı hızda para da kaybedebilirsiniz.</p>
+<p><strong>Gereken araçlar:</strong> Shopify veya Ideasoft, AliExpress/yerel toptan entegrasyonu, Meta Ads ve TikTok Ads bilgisi, ürün analiz araçları. <strong>Başlangıç adımları:</strong> Tek ürüne odaklanın, günde 200-500 TL bütçeyle 5 farklı kreatif test edin, iade oranını ve kargo süresini ilk günden ölçün. Kargo süresi 10 günü aşan ürünlerde müşteri memnuniyeti çöker; yerel tedarikçi bulmak her zaman yabancı tedarikçiden avantajlıdır.</p>
+
+<h2>6. İçerik Üreticiliği: YouTube ve TikTok</h2>
+<p>Video, 2026'da da en yüksek reklam geliri üreten format. YouTube Partner Programı, TikTok Creator Rewards ve marka iş birlikleri üç ana kazanç kapısı. Türkiye'de 100.000 aboneli bir YouTube kanalı ortalama 15.000-60.000 TL aylık reklam geliri üretebilir (konuya göre büyük fark var: finans ve teknoloji kanalları daha yüksek RPM görür). TikTok'ta ise hızla büyüyen nişlerde 1 milyon görüntülenme, 500-3.000 TL arasında getirebilir; asıl para sponsorluklarda.</p>
+<p><strong>Gereken araçlar:</strong> Akıllı telefon (yeterli), CapCut veya DaVinci Resolve, mikrofon, thumbnail tasarımı için Canva. <strong>Başlangıç adımları:</strong> Nişinizi daraltın (örneğin "evde ekonomi" veya "2026 teknoloji incelemeleri"), ilk 30 videoda tutarlı yayın takvimi kurun, izlenme süresini maksimize edecek ilk 15 saniyeye yatırım yapın. İlk 6 ayda gelir neredeyse yoktur; bu normal. Kanal, 12. aydan itibaren bileşik büyümeye girer.</p>
+
+<h2>7. Podcast Yapımı</h2>
+<p>Podcast, Türkçe içerikte hâlâ az rekabetin olduğu bir alan. Dinleyici sayısı Türkiye'de hızla artarken, reklamveren sayısı henüz doygun değil; yani erken girenler avantajlı. Kazanç kaynakları: platform gelir paylaşımı, sponsorluk (bölüm başına 3.000-30.000 TL), dinleyici bağışı ve podcast'i YouTube'a taşıyarak ikinci gelir akışı. Düzenli yayın yapan bir Türkçe podcast, 12 ay sonunda aylık 5.000-25.000 TL gelir hedefleyebilir.</p>
+<p><strong>Gereken araçlar:</strong> USB mikrofon (1.500-3.000 TL), Audacity veya Adobe Podcast, bölünme/planlama tablosu, Spotify for Podcasters ve Apple Podcasts kaydı. <strong>Başlangıç adımları:</strong> Formatı belirleyin (söyleşi mi, anlatım mı), ilk 5 bölümü önceden kaydedip yayınlayın, her bölümde tek bir net konuya odaklanın. Podcast'in büyümesi YouTube'a göre daha yavaştır; sabır, bu yöntemin ortak özelliği.</p>
+
+<h2>8. Print-on-Demand: Tasarımını Sat, Stoku Unut</h2>
+<p>Print-on-demand (POD) modelinde tişört, kupa, telefon kılıfı, poster gibi ürünlere tasarımınız basılır ve satış olduğunda tedarikçi üretip gönderir. Trendyol ve Hepsiburada üzerinde POD entegrasyonları, Etsy ve Redbubble ise uluslararası pazarı açar. Kritik nokta tasarım sayısı ve niş seçimidir: 200 özgün tasarımı olan bir mağaza, ayda 3.000-15.000 TL pasif gelir üretebilir; ilk 20 tasarımla 500 TL bile zor kazanırsınız.</p>
+<p><strong>Gereken araçlar:</strong> Canva Pro veya Adobe Illustrator, POD paneli (T-Print, Merchize, Printful), tasarım trendi araştırması. <strong>Başlangıç adımları:</strong> Tek bir niş seçin (mesela kediler, nostaljik Türk dizileri, yazılım esprileri), haftada 10-15 tasarım üretin, anahtar kelime optimizasyonunu ürün başlıklarında mutlaka yapın. Hak ihlali içeren (film, dizi, marka) tasarımlardan uzak durun; mağazanız kalıcı olarak kapatılabilir.</p>
+
+<h2>9. Ortak Pazarlama (Affiliate Marketing)</h2>
+<p>Bir ürünü başkasının tanıtıp satıştan komisyon almak, blog ve içerik üreticiliğinin en eski kazanç modeli. Amazon Associates, Trendyol Ortaklık, Hepsiburada Affiliate, hosting/yazılım firmalarının ortaklık programları 2026'da da aktif. Komisyon oranları ürüne göre %1-25 arasında değişir. Trafiği olan bir blog veya YouTube kanalı, ayda 5.000-50.000 TL arası pasif gelir üretebilir; burada anahtar, satın alma niyeti yüksek içerikler üretmektir.</p>
+<p><strong>Gereken araçlar:</strong> Bir blog (WordPress veya HTML), SEO bilgisi, Google Search Console, link kısaltma ve takip araçları. <strong>Başlangıç adımları:</strong> "En iyi X" tarzı karşılaştırma içerikleri yazın, kendi deneyiminizi ekleyin, tek bir bağlılık programına değil 2-3 programa birden kaydolun. Uygulama testi, ürün incelemesi ve fiyat karşılaştırması, dönüşüm oranı en yüksek üç içerik türüdür. Bağlantıları her zaman şeffaf biçimde "ortaklık bağlantısı" olarak etiketleyin.</p>
+
+<h2>10. Sosyal Medya Yönetimi</h2>
+<p>Küçük ve orta ölçekli işletmelerin çoğu Instagram, TikTok ve LinkedIn hesaplarını yönetecek ekip kuramıyor. Bu boşluğu freelance sosyal medya yöneticileri dolduruyor. İş: içerik takvimi hazırlamak, görsel üretmek, paylaşmak, yorumları yanıtlamak ve aylık raporlamak. Müşteri başına aylık 7.000-20.000 TL arasında ücret alınır; 4 aktif müşteriyle 30.000-60.000 TL aylık gelir hedeflenebilir. Ajans yerine bireysel çalışmanın avantajı, daha kişisel iletişim ve düşük maliyet.</p>
+<p><strong>Gereken araçlar:</strong> Canva, Meta Business Suite, Later veya Buffer, temel reklam bilgisi, aylık performans raporu şablonu. <strong>Başlangıç adımları:</strong> Kendi hesabınızı vitrine çevirin, yerel bir işletmeye ilk ayı indirimli veya ücretsiz vererek vaka çalışması oluşturun, ardından referansla 2-3 müşteriye daha ulaşın. Sonuç gösterebildiğiniz her müşteri, bir sonrakinin kapısını açar.</p>
+
+<h2>11. Grafik Tasarım</h2>
+<p>Logo, sosyal medya görseli, ambalaj, sunum ve arayüz tasarımı, uzaktan yapılabilen klasik ama sürekli talep gören bir iş. Yapay zeka görsel araçları (Midjourney, DALL-E, Firefly) işi bitirmedi; aksine markalar, bu araçları ustalıkla kullanan tasarımcılara daha çok ihtiyaç duyuyor. Başlangıç seviyesinde tek proje 1.500-8.000 TL, deneyimli bir serbest tasarımcı ayda 20.000-70.000 TL kazanabilir. Logo tasarımı gibi paket işlerde 5.000-25.000 TL bandı yaygındır.</p>
+<p><strong>Gereken araçlar:</strong> Adobe Illustrator/Photoshop veya Figma, Canva, portföy sitesi (Behance, Dribbble). <strong>Başlangıç adımları:</strong> 10 parçalık bir portföy hazırlayın, 3 farklı stil deneyin, Bionluk/Fiverr'da ilk işleri alın ve her projeyi portföye ekleyin. Müşteriye 3 seçenek sunmak yerine 1 güçlü öneri + 2 varyasyon sunmak, revizyon sayısını düşürür ve memnuniyeti artırır.</p>
+
+<h2>12. Uygulama ve Web Sitesi Test Etme</h2>
+<p>Şirketler, yeni çıkan uygulama ve web sitelerinin gerçek kullanıcı deneyimini ölçmek için ücretli testere başvurur. UserTesting, TestIO, Trymata gibi platformlarda 15-30 dakikalık bir oturum 100-400 TL arasında öder. Bu yöntem, tam zamanlı bir kariyer değil; ancak ek gelir için en düşük bariyerli seçeneklerden biri. Ayda 15-20 test yapan biri 2.000-8.000 TL ek gelir elde edebilir. Türkçe konuşan testeree olan talep, özellikle yerel bankacılık ve e-ticaret uygulamalarında yüksek.</p>
+<p><strong>Gereken araçlar:</strong> Bilgisayar veya akıllı telefon, sesli yorum yapma yeteneği, iyi bir internet bağlantısı, mikrofon. <strong>Başlangıç adımları:</strong> Platformlara profil oluşturun, örnek testleri eksiksiz tamamlayın, ekranda ne yaptığınızı sesli anlatın (asıl puan buradan geliyor). Yanıt süreniz kısa tutuldukça daha fazla test daveti alırsınız. Bu yöntemi, diğer 11 yönteme ek gelir kaynağı olarak eklemek en sağlıklısıdır.</p>
+
+<h2>Dolandırıcılıklardan Kaçınma: Kırmızı Bayraklar</h2>
+<p>Evden para kazanma arayışındaki en büyük risk, dolandırıcılıklardır. Aşağıdaki işaretlerin herhangi birini görürseniz uzaklaşın: <strong>önce para isteyen işler</strong> ("kayıt ücreti", "eğitim paketi", "aktiflik bedeli") — meşru işler sizden para istemez; <strong>kazancı garanti eden vaatler</strong> ("ayda 50.000 TL kesin kazanç") — garanti edilen tek şey emektir; <strong>şeffaf olmayan MLM/ Network Marketing yapıları</strong> — altınıza insan dizmek gerçek bir gelir modeli değildir; <strong>ön ödeme dolandırıcılığı</strong> ("kargo için 2.000 TL gönderin") — işveren asla sizden ödeme talep etmez; <strong>bilinmeyen kripto sinyal grupları ve "yatırım" botları.</strong> Ayrıca ödeme almadan önce hesabı paylaşmanızı isteyen, hesap bilgilerinizi kopyalamak isteyen veya sizi resmî platform dışına çekip özel mesajla anlaşmaya zorlayan kişilere dikkat edin. İşvereni her zaman resmî sözleşme ve fatura üzerinden çalıştırın, ödeme platformunuzu önceden netleştirin ve asla tanımadığınız birine kimlik belgenizi göndermeyin.</p>
+
+<h2>Beklentiler vs Gerçeklik: Dürüst Bir Değerlendirme</h2>
+<p>İnternetteki "kolay para" anlatısının aksine, evden kazanmanın gerçekçi çerçevesi şudur: ilk 3 ay büyük olasılıkla asgari düzeyde kazanç getirir, çünkü beceri, portföy ve güven inşa ediyorsunuz. 6. aydan itibaren düzenli gelir görünür hale gelir; 12. ayda bazı yöntemler (içerik üretimi, e-ticaret, ortak pazarlama) ana gelir seviyesine ulaşabilir. Reklamların vaat ettiği "3 günde 10.000 TL" tabloları istisnadır, kural değil. Başarı oranını belirleyen üç değişken vardır: doğru yöntem seçimi (becerilerinizle uyum), tekrar edilebilir günlük disiplin ve vazgeçmeyen süreklilik. Ayrıca vergisel yükümlülüklerinizi unutmayın: Türkiye'de elde ettiğiniz dijital gelir için fatura kesmeniz, e-arşiv fatura düzenlemeniz ve gerekirse şahıs şirketi kurmanız gerekir. Yan gelir olarak başlayan birçok kişi, 12. ayda vergi ve düzen konusunda hazırlıksız yakalanıyor.</p>
+
+<h2>Sonuç: Doğru Yöntem, Sabırlı Uygulama</h2>
+<p>2026'da evden para kazanmanın tek bir doğru yolu yok; sizin becerilerinize, zamanınıza ve risk toleransınıza uyan doğru kombinasyon var. Düşük bariyerle hemen başlamak isteyenler için sanal asistanlık, uygulama testi ve serbest yazarlık; el becerisi ve yaratıcılığı olanlar için grafik tasarım ve print-on-demand; uzun vadeli pasif gelir hayali kuranlar için içerik üretimi, podcast ve ortak pazarlama öne çıkıyor. E-ticaret ve dropshipping, az sermayeyle hızlı sonuç isteyenler için cazip ama en yüksek riskli iki yöntem.</p>
+<p>Pratik bir başlangıç planı şu şekilde olabilir: bu hafta 12 yöntemden <strong>ikisini</strong> seçin, önümüzdeki 30 gün boyunca haftada en az 5 saat uygulayın ve sonuçları ölçün. 30 gün sonunda bir yöntem gerçek bir gelir sinyali vermiyorsa diğerine geçin. Unutmayın: internetten para kazanmak bir "buluş" değil, bir "inşa" sürecidir. Doğru aracı, doğru zamanda, doğru şekilde kullanmaya devam ettikçe sonuç gelir.</p>
+<p>TechWave ile kalın, finans ve teknolojiyi birlikte takip etmeye devam edelim!</p>
+<p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>
+""".strip()
+
+HEAD_TMPL = """<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; } }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ excerpt }}">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>{{ title }} — TechWave</title>
+  <meta property="og:title" content="{{ title }} — TechWave">
+  <meta property="og:description" content="{{ excerpt }}">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="{{ image }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "author": {"@type": "Person", "name": "TechWave"},
+    "datePublished": "{{ date_iso }}",
+    "description": "{{ excerpt }}",
+    "publisher": {"@type": "Organization", "name": "TechWave", "url": "https://techwaveblog.site"},
+    "mainEntityOfPage": "{{ canonical }}",
+    "image": "{{ image }}"
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<meta name="google-translate-customization" content="YOUR-ID">
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'en,ar,de,es,fr,ru,ja,ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.goog-te-gadget {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+}
+.goog-te-gadget-simple {
+  border: 1px solid #e0e7ff !important;
+  border-radius: 8px !important;
+  background: white !important;
+  padding: 4px 8px !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #1e293b !important;
+  font-family: 'Inter', sans-serif !important;
+}
+body {
+  position: relative;
+}
+#google_translate_element {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+</style>
+<!-- /Google Translate -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+  <article class="article-page">
+    <div class="container">
+      <div class="article-header">
+        <span class="card-tag" data-category="{{ category }}">{{ category }}</span>
+        <h1 class="article-title">{{ title }}</h1>
+        <div class="article-meta">
+          <span>📅 {{ date }}</span>
+          <span>⏱️ {{ read_time }}</span>
+        </div>
+      </div>
+      <div class="article-hero">
+        <img src="{{ image }}" alt="{{ title }}" loading="eager">
+      </div>
+      <div class="article-content">
+{{ content }}
+      </div>
+      <div class="article-tags">
+        <span class="card-tag" data-category="{{ category }}">{{ category }}</span>
+      </div>
+    </div>
+  </article>
+  <div class="container">
+    <div class="newsletter-cta">
+      <h3>📬 TechWave Bültenine Katılın</h3>
+      <p>Her hafta yapay zeka, yazılım ve teknoloji dünyasından en güncel gelişmeler doğrudan e-posta kutuna gelsin.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Teşekkürler! Bültenimize başarıyla katıldınız.');">
+        <input type="email" placeholder="E-posta adresiniz" required>
+        <button type="submit">Katıl</button>
+      </form>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+          <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../kategori.html">Kategoriler</a></li>
+            <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+          <ul class="footer-links">
+            <li><a href="../kategori.html">Yapay Zeka</a></li>
+            <li><a href="../kategori.html">Yazılım</a></li>
+            <li><a href="../kategori.html">Python</a></li>
+            <li><a href="../kategori.html">AI Araçları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+"""
+
+html = HEAD_TMPL
+for _k, _v in {
+    "{{ excerpt }}": EXCERPT,
+    "{{ title }}": TITLE,
+    "{{ image }}": IMAGE,
+    "{{ canonical }}": CANONICAL,
+    "{{ date_iso }}": DATE_ISO,
+    "{{ category }}": CATEGORY,
+    "{{ date }}": DATE,
+    "{{ read_time }}": READ_TIME,
+    "{{ content }}": CONTENT,
+}.items():
+    html = html.replace(_k, _v)
+
+article_path = os.path.join(ARTICLES, SLUG + ".html")
+with io.open(article_path, "w", encoding="utf-8") as f:
+    f.write(html)
+print("OK article:", article_path)
+
+# ---- index.html kart ekle ----
+index_path = os.path.join(BASE, "index.html")
+with io.open(index_path, "r", encoding="utf-8") as f:
+    content = f.read()
+
+card = f'''
+        <!-- YENİ MAKALE — Otomatik eklendi -->
+        <article class="card" data-category="{CATEGORY}">
+          <div class="card-img"><img src="{IMAGE}" alt="{TITLE}" loading="lazy"></div>
+          <div class="card-body">
+            <span class="card-tag" data-category="{CATEGORY}">{CATEGORY}</span>
+            <h2 class="card-title">
+              <a href="articles/{SLUG}.html">{TITLE}</a>
+            </h2>
+            <p class="card-excerpt">{EXCERPT}</p>
+            <div class="card-meta">
+              <span>📅 {DATE}</span>
+              <span>⏱️ {READ_TIME}</span>
+            </div>
+          </div>
+        </article>
+'''
+
+marker = '<div class="card-grid">'
+if f'articles/{SLUG}.html' in content:
+    print("SKIP index: kart zaten mevcut")
+elif marker in content:
+    content = content.replace(marker, marker + "\n" + card, 1)
+    with io.open(index_path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print("OK index: kart eklendi")
+else:
+    print("ERROR: card-grid bulunamadi")
+
+# ---- sitemap.xml ----
+sitemap_path = os.path.join(BASE, "sitemap.xml")
+with io.open(sitemap_path, "r", encoding="utf-8") as f:
+    sm = f.read()
+
+url = f"""  <url>
+    <loc>{CANONICAL}</loc>
+    <lastmod>{DATE_ISO}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>"""
+
+if CANONICAL in sm:
+    print("SKIP sitemap: URL zaten mevcut")
+else:
+    sm = sm.replace("</urlset>", url)
+    with io.open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write(sm)
+    print("OK sitemap: URL eklendi")
