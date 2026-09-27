@@ -289,12 +289,6 @@ html = f'''<!DOCTYPE html>
     </div>
   </section>
 
-  <div class="container">
-    <div class="ad-slot ad-slot-728">
-      <span>Reklam Alanı — 728×90</span>
-    </div>
-  </div>
-
   <div class="container content-layout">
     <main>
 {featured_html}
@@ -312,10 +306,6 @@ html = f'''<!DOCTYPE html>
         <ul class="popular-list">
 {popular_html}
         </ul>
-      </div>
-
-      <div class="ad-slot ad-slot-300x600">
-        <span>Reklam Alanı — 300×600</span>
       </div>
 
       <div class="sidebar-widget">

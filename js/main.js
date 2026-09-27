@@ -44,27 +44,12 @@
     }
   });
 
-  /* ---------- Reklam Slotları (AdSense Yerleşimi) ---------- */
+  /* ---------- Reklam Slotlari (AdSense Yerlesimi) ----------
+     AdSense onayi oncesi KAPALI: bos "Reklam Alani" kutulari politika
+     incelemesinde "reklam icin yapilmis site" izlenimi verir. Onay sonrasi
+     gercek AdSense kodlari buraya eklenecek. */
   function insertAdSlots() {
-    var content = document.querySelector('.article-content');
-    if (!content) return;
-
-    var paragraphs = content.querySelectorAll('p');
-    if (paragraphs.length < 4) return;
-
-    // 3. paragraf sonrası orta reklam
-    var midAd = document.createElement('div');
-    midAd.className = 'ad-slot ad-slot-336';
-    midAd.setAttribute('data-ad-slot', 'ORTA_REKLAM_ID');
-    midAd.innerHTML = '<span>Reklam Alanı — 336×280</span>';
-    paragraphs[3].parentNode.insertBefore(midAd, paragraphs[3].nextSibling);
-
-    // İçerik sonu reklam
-    var endAd = document.createElement('div');
-    endAd.className = 'ad-slot ad-slot-728';
-    endAd.setAttribute('data-ad-slot', 'SON_REKLAM_ID');
-    endAd.innerHTML = '<span>Reklam Alanı — 728×90</span>';
-    content.appendChild(endAd);
+    return;
   }
 
   /* ---------- Okuma Süresi ---------- */
