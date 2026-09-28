@@ -198,6 +198,54 @@
 
   initSearch();
 
+  /* ---------- Paylaş Butonları ---------- */
+  function initShare() {
+    var content = document.querySelector('.article-content');
+    if (!content) return;
+
+    var url = encodeURIComponent(location.href);
+    var title = encodeURIComponent(document.title);
+    var bar = document.createElement('div');
+    bar.className = 'share-bar';
+    bar.innerHTML =
+      '<span class="share-label">Bu makaleyi paylaş:</span>' +
+      '<a class="share-btn share-x" href="https://twitter.com/intent/tweet?url=' + url + '&text=' + title + '" target="_blank" rel="noopener">𝕏 Twitter</a>' +
+      '<a class="share-btn share-wa" href="https://wa.me/?text=' + title + '%20' + url + '" target="_blank" rel="noopener">WhatsApp</a>' +
+      '<a class="share-btn share-tg" href="https://t.me/share/url?url=' + url + '&text=' + title + '" target="_blank" rel="noopener">Telegram</a>' +
+      '<a class="share-btn share-fb" href="https://www.facebook.com/sharer/sharer.php?u=' + url + '" target="_blank" rel="noopener">Facebook</a>' +
+      '<button class="share-btn share-copy" type="button">🔗 Bağlantıyı kopyala</button>';
+
+    var authorBox = content.querySelector('.author-box');
+    if (authorBox) {
+      content.insertBefore(bar, authorBox);
+    } else {
+      content.appendChild(bar);
+    }
+
+    var copyBtn = bar.querySelector('.share-copy');
+    copyBtn.addEventListener('click', function () {
+      var done = function () {
+        copyBtn.textContent = '✅ Kopyalandı!';
+        setTimeout(function () {
+          copyBtn.innerHTML = '🔗 Bağlantıyı kopyala';
+        }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(location.href).then(done);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = location.href;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done();
+      }
+    });
+  }
+
+  initShare();
+
   /* ---------- Başlat ---------- */
   insertAdSlots();
   calcReadTime();
