@@ -43,7 +43,7 @@
     "@type": "Article",
     "headline": "Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi",
     "author": {"@type": "Person", "name": "TechWave"},
-    "datePublished": "2026-09-21",
+    "datePublished": "2026-09-28",
     "description": "Ren'Py tabanlı oyunları Türkçe'ye çevirmek için Voorhees aracı ve Python scriptleri kullanım rehberi. Tüm detaylar, kodlar ve ipuçları TechWave'de!",
     "publisher": {"@type": "Organization", "name": "TechWave"},
     "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200"
@@ -128,8 +128,8 @@ body {
       <span class="card-tag">Yazılım</span>
       <h1>Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi</h1>
       <div class="article-meta">
-        <span>📅 21 Eylül 2026</span>
-        <span class="read-time">⏱️ 4 dk okuma</span>
+        <span>📅 28 Eylül 2026</span>
+        <span class="read-time">⏱️ 8 dk okuma</span>
         <span>✍️ Çağlar Çelik</span>
       </div>
     </div>
@@ -139,44 +139,214 @@ body {
 
   <article>
     <div class="container content-layout">
-      <div class="article-content">
+      <div class="article-content">        <h2>Giriş: Görsel Roman Dünyası ve Türkçe Yerelleştirme İhtiyacı</h2>
+        <p>Son yıllarda bağımsız oyun geliştiriciliğinin yükselişiyle birlikte görsel roman (Visual Novel) türü muazzam bir popülerlik kazandı. Romantizm, gerilim, korku ve macera türlerinde binlerce bağımsız oyun yayınlanıyor ve bunların büyük bölümü tek bir ortak noktada buluşuyor: yalnızca İngilizce. Türün arkasındaki en büyük güçlerden biri ise hiç şüphesiz açık kaynak kodlu ve Python tabanlı olan <strong>Ren'Py oyun motorudur</strong>. Python'a yeni başladıysanız <a href="python-nedir-bilmeniz-gereken-her-sey.html">Python Nedir? rehberimiz</a> işinizi kolaylaştıracaktır.</p>
+        <p>İşte bu noktada oyun severlerin ve bağımsız çevirmenlerin imdadına oyun yerelleştirme araçları yetişiyor. Technopat ve benzeri teknoloji forumlarında adından sıkça söz ettiren <strong>Voorhees</strong> gibi geliştiricilerin hazırladığı Python tabanlı otomatik ve yarı-otomatik çeviri araçları, binlerce satırlık diyalogu Türkçe'ye aktarmayı son derece kolaylaştırıyor. Çeviri sürecinde kullanabileceğiniz yapay zekâ destekli editörleri <a href="yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html">yapay zeka ile kod yazma araçları</a> karşılaştırmasında bulabilirsiniz.</p>
+        <p>Bu kapsamlı rehberde; Ren'Py motorunun çalışma yapısını, kurulumdan teste kadar adım adım çeviri sürecini, Voorhees ve benzeri Python araçlarının mantığını, en sık karşılaşılan hataları ve çözüm yollarını tüm teknik detaylarıyla inceleyeceğiz.</p>
+        <figure style="margin: 24px 0; text-align: center;">
+          <img src="https://images.pexels.com/photos/32961916/pexels-photo-32961916.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Renkli oyun ekranı önünde oyun kolu tutan oyuncu" style="width:100%; border-radius: 12px;" loading="lazy">
+          <figcaption style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Görsel romanlar, hikâye anlatımını oyunlaştıran en erişilebilir türlerden biridir; dil engeli ise en büyük engeldir.</figcaption>
+        </figure>
 
-        
+        <h2>Ren'Py Oyun Motoru Nedir ve Nasıl Çalışır?</h2>
+        <p>Ren'Py, Python programlama dili üzerine inşa edilmiş, görsel roman ve yaşam simülasyonu oluşturmak için kullanılan ücretsiz ve açık kaynaklı bir motordur. Oyunun tüm mantığı, diyalogları ve arayüz ögeleri <code>.rpy</code> uzantılı betik dosyalarında saklanır. Oyun derlendiğinde bu dosyalar <code>.rpyc</code> (compiled script) formatına dönüştürülür; dağıtım sürümlerinde kaynak dosyalar genellikle yalnızca <code>.rpyc</code> olarak bulunur.</p>
+        <p>Bir Ren'Py oyununu çevirmenin temel mantığı şudur: oyun içindeki metin bloklarını tespit etmek, bu metinleri orijinal dilden hedef dile çevirmek ve sonucu oyunun dil sistemine (TL - Translation yapısına) geri yazmak.</p>
+        <pre><code># say "Merhaba dünya" - ekranda konuşma balonu gösterir
+label start:
+    scene bg room
+    show eileen happy
 
-        <h2>Giriş: Görsel Roman Dünyası ve Türkçe Yerelleştirme İhtiyacı</h2><p>Son yıllarda bağımsız oyun geliştiriciliğinin yükselişiyle birlikte görsel roman (Visual Novel) türü muazzam bir popülerlik kazandı. Bu türün arkasındaki en büyük güçlerden biri hiç şüphesiz açık kaynak kodlu ve Python tabanlı olan <strong>Ren'Py oyun motorudur</strong>. Ancak bu harika oyunların büyük bir kısmı ne yazık ki resmi Türkçe dil desteği olmadan piyasaya sürülüyor. Python'a yeni başladıysanız <a href="python-nedir-bilmeniz-gereken-her-sey.html">Python Nedir? rehberimiz</a> işinizi kolaylaştıracaktır.</p><p>İşte bu noktada oyun severlerin ve bağımsız çevirmenlerin imdadına oyun yerelleştirme araçları yetişiyor. Technopat ve benzeri teknoloji forumlarında adından sıkça söz ettiren <strong>Voorhees</strong> gibi geliştiricilerin hazırladığı Python tabanlı otomatik ve yarı-otomatik çeviri araçları, binlerce satırlık diyalogları Türkçe'ye aktarmayı son derece kolaylaştırıyor. Çeviri sürecini hızlandırmak için <a href="yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html">yapay zeka ile kod yazma araçları</a> karşılaştırmasından da faydalanabilirsiniz.</p><p>Bu kapsamlı rehberde, Ren'Py oyun yapısını, Python ile metin ayıklama mantığını, Voorhees aracı ve benzer yöntemlerle oyunların nasıl Türkçe'ye çevrileceğini tüm teknik detaylarıyla inceleyeceğiz.</p><h2>Ren'Py Oyun Motoru Nedir ve Nasıl Çalışır?</h2><p>Ren'Py, Python programlama dili üzerine inşa edilmiş, görsel romanlar ve yaşam simülasyonları oluşturmak için kullanılan ücretsiz ve açık kaynaklı bir motor. Oyunların tüm mantığı, diyalogları ve arayüz ögeleri <code>.rpy</code> uzantılı betik dosyalarında saklanır. Oyun derlendiğinde bu dosyalar <code>.rpyc</code> (compiled script) formatına dönüştürülür.</p><p>Bir Ren'Py oyununu çevirmenin temel mantığı, oyun içindeki metin bloklarını tespit etmek, bu metinleri orijinal dilden hedef dile çevirmek ve oyunun dil sistemine (TL - Translation yapısı) entegre etmektir.</p><blockquote>Ren'Py, kendi içerisinde gelişmiş bir yerelleştirme (TL) altyapısına sahiptir. Oyun geliştiricisi yerelleştirme modunu aktif ettiğinde, oyun otomatik olarak 'tl/language' klasörleri oluşturur.</blockquote><h3>Ren'Py Çeviri Dosyalarının Temel Yapısı</h3><p>Ren'Py üzerindeki bir çeviri dosyası genellikle şu formatta görünür:</p><pre><code># game/script.rpy:42
-translate turkish start_1a2b3c4d:
+    e "Merhaba, TechWave'e hoş geldin!"
+    e "Bu satır oyunun orijinal metnidir."
+
+    "Anlatıcı cümleleri tırnaksız yazılır."
+
+    menu:
+        "Devam et":
+            jump son
+        "Çık":
+            return
+
+label son:
+    return</code></pre>
+        <figure style="margin: 24px 0; text-align: center;">
+          <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dizüstü bilgisayarında kod yazan geliştiricinin elleri" style="width:100%; border-radius: 12px;" loading="lazy">
+          <figcaption style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Ren'Py betikleri düz metindir; bu yüzden metin işleme araçlarıyla otomatik olarak ayrıştırılabilir.</figcaption>
+        </figure>
+
+        <h2>Adım Adım Kurulum: Çeviri Ortamını Hazırlama</h2>
+        <ol>
+          <li><strong>Python ve Ren'Py SDK'yı kurun:</strong> python.org'dan güncel Python'u indirin, ardından Ren'Py resmî sitesinden en güncel SDK paketini açın. Çeviri araçlarının büyük bölümü Python 3.8+ gerektirir.</li>
+          <li><strong>Oyunu yedekleyin:</strong> Oyunun kurulum klasörünü olduğu gibi kopyalayın. Her türlü işlemden önce yedek almak, olası bir hatada sizi saatlerce emekten kurtarır.</li>
+          <li><strong>Unrpyc (decompiler) aracını indirin:</strong> <code>.rpyc</code> dosyalarını okunabilir <code>.rpy</code> biçimine dönüştürmek için topluluk tarafından geliştirilen Unrpyc'i kullanacağız.</li>
+          <li><strong>Çeviri klasörünü oluşturun:</strong> Oyunun <code>game/tl/turkish/</code> klasörü, Ren'Py'in Türkçeye özel çeviri dosyalarının varsayılan yeridir. Klasör yoksa kendiniz oluşturun.</li>
+          <li><strong>Editörünüzü hazırlayın:</strong> VS Code veya Sublime Text ile UTF-8 kodlamalı düzenleme yapın. Kodlama yanlış seçilirse Türkçe karakterler bozulur.</li>
+          <li><strong>Bir test sahnesi açın:</strong> Çeviriye başlamadan önce oyunu bir kez çalıştırıp metinlerin görünür olduğunu doğrulayın.</li>
+        </ol>
+
+        <h2>Ren'Py'in Çeviri (TL) Sistemi</h2>
+        <p>Ren'Py, çevirileri orijinal dosyadan ayrı tutar. <code>game/tl/turkish/</code> altında, kaynak dosyanın yolunu taklit eden bir yapı oluşur ve her diyalog satırı şu kalıpta saklanır:</p>
+        <pre><code>translate turkish start_1a2b3c4d:
 
     # e "Hello, welcome to our game!"
     e "Merhaba, oyunumuza hoş geldiniz!"
-</code></pre><p>Burada orijinal metin yorum satırı olarak saklanırken, altındaki satıra çevrilmiş metin yazılır. Manuel olarak yüz binlerce satırı bu şekilde düzenlemek aylar alabilir. İşte Python scriptleri ve Voorhees çeviri araçları tam da bu noktada devreye girer.</p><h2>Voorhees Oyun Çeviri Aracı ve Python Araçlarının Mantığı</h2><p>Technopat forumlarında Voorhees takma adlı geliştirici ve topluluk üyeleri tarafından paylaşılan araçlar, temelde Python'ın güçlü metin işleme ve web scraping/API yeteneklerini kullanır. Bu araçların arkasındaki temel çalışma prensibi şu aşamalardan oluşur:</p><ul><li><strong>Dosya Ayrıştırma (Parsing):</strong> <code>.rpy</code> veya ayıklanmış <code>.rpyc</code> dosyalarındaki diyalog metinlerini tespit etme.</li><li><strong>Kod ve Etiket Koruma:</strong> Ren'Py'a özel renk etiketleri (örn: <code>{color=#fff}</code>), değişkenler (örn: <code>[player_name]</code>) ve kaçış karakterlerini gizleme.</li><li><strong>API / Otomatik Çeviri Entegrasyonu:</strong> Google Translate, DeepL, Yandex veya OpenAI API'leri üzerinden metinleri toplu halde çevirme.</li><li><strong>Yeniden Yapılandırma:</strong> Çevrilen metinleri orijinal Ren'Py formatına sadık kalarak dosyaya geri yazma.</li></ul><h2>Adım Adım Ren'Py Oyun Çeviri Süreci</h2><h3>1. Aşama: Oyun Dosyalarını Hazırlama ve Decompile İşlemi</h3><p>Birçok Ren'Py oyunu piyasaya sürülürken <code>.rpyc</code> dosyaları kapalı olarak gelir. Çeviriye başlamadan önce bu dosyaları okunabilir <code>.rpy</code> formatına dönüştürmemiz gerekir.</p><ol><li>En güncel <strong>Unrpyc</strong> (Ren'Py Decompiler) aracını indirin.</li><li>İndirdiğiniz <code>.py</code> veya <code>.pyc</code> dosyasını oyunun <code>game/</code> klasörü içine atın.</li><li>Oyunu bir kez çalıştırın. Unrpyc arka planda çalışarak tüm <code>.rpyc</code> dosyalarının yanına <code>.rpy</code> karşılıklarını oluşturacaktır.</li></ol><h3>2. Aşama: Python ile Metin Çıkarma ve Çeviri Scripti Çalıştırma</h3><p>Temel bir Python çeviri betiğinin mantığını anlamak için aşağıdaki örnek Python kodunu inceleyebilirsiniz. Bu kod, basit bir `.rpy` dosyasındaki diyalogları ayıklamak ve çeviri API'sine göndermek için bir temel oluşturur.</p><pre><code>import re
-import requests
+</code></pre>
+        <p>Burada orijinal metin yorum satırı olarak saklanırken, altındaki satıra çevrilmiş metin yazılır. Manuel olarak yüz binlerce satırı bu şekilde düzenlemek aylar alabilir. İşte tam da bu noktada Python scriptleri ve Voorhees çeviri araçları devreye girer.</p>
+
+        <h2>Voorhees Oyun Çeviri Aracı ve Python Araçlarının Mantığı</h2>
+        <p>Technopat forumlarında Voorhees takma adlı geliştirici ve topluluk üyeleri tarafından paylaşılan araçlar, Python'ın güçlü metin işleme ve web/API yeteneklerini kullanır. Bu araçların temel çalışma prensibi şu aşamalardan oluşur:</p>
+        <ul>
+          <li><strong>Dosya ayrıştırma (parsing):</strong> <code>.rpy</code> veya decompile edilmiş dosyalardaki diyalog metinlerini tespit etme.</li>
+          <li><strong>Kod ve etiket koruma:</strong> Ren'Py'a özel format etiketleri (<code>{color=#fff}</code>, <code>{b}</code>), değişkenler (<code>[player_name]</code>) ve kaçış karakterlerinin çeviri motoruna gönderilmeden önce gizlenmesi.</li>
+          <li><strong>API / otomatik çeviri entegrasyonu:</strong> Google Translate, DeepL, Yandex Translate veya OpenAI benzeri servisler üzerinden metinlerin toplu halde çevrilmesi.</li>
+          <li><strong>Yeniden yapılandırma:</strong> Çevrilen metinlerin orijinal Ren'Py formatına sadık kalarak dosyaya geri yazılması.</li>
+          <li><strong>Kontrol raporu:</strong> Çevirilmemiş kalan, boş kalan ya da bozulmuş satırların listelenmesi.</li>
+        </ul>
+
+        <h2>Adım Adım Ren'Py Oyun Çeviri Süreci</h2>
+        <h3>1. Aşama: Dosyaları Hazırlama ve Decompile İşlemi</h3>
+        <p>Birçok Ren'Py oyunu piyasaya sürülürken <code>.rpyc</code> dosyaları kapalı olarak gelir. Çeviriye başlamadan önce bu dosyaları okunabilir <code>.rpy</code> formatına dönüştürmemiz gerekir:</p>
+        <ol>
+          <li>En güncel <strong>Unrpyc</strong> (Ren'Py Decompiler) aracını indirin.</li>
+          <li>İndirdiğiniz dosyayı oyunun <code>game/</code> klasörü içine kopyalayın.</li>
+          <li>Aracı komut satırından çalıştırın: <code>python unrpyc.py game/</code></li>
+          <li>Bittiğinde her <code>.rpyc</code> dosyasının yanına <code>.rpy</code> karşılığı oluşacaktır.</li>
+        </ol>
+        <h3>2. Aşama: Python ile Metin Çıkarma ve Çeviri Scripti</h3>
+        <p>Temel bir çeviri script'i aşağıdaki gibidir. Script önce metni çıkarır, Ren'Py etiketlerini koruyarak temizler, ardından çeviri fonksiyonuna gönderir:</p>
+        <pre><code>import re
+
+RENPY_TAG = re.compile(r'(\[.*?\]|\{.*?\})')
 
 def clean_renpy_tags(text):
-    # Ren'Py değişkenlerini ve etiketlerini korumak için regex
-    tags = re.findall(r'(\[.*?\]|\{.*?\})', text)
+    """Ren'Py degisken ve etiketlerini gizleyip korur."""
+    tags = RENPY_TAG.findall(text)
+    cleaned = text
     for i, tag in enumerate(tags):
-        text = text.replace(tag, f"__TAG_{i}__")
-    return text, tags
+        cleaned = cleaned.replace(tag, f"__TAG_{i}__", 1)
+    return cleaned, tags
 
 def restore_renpy_tags(translated_text, tags):
+    """Cevrilen metne orijinal etiketleri geri ekler."""
     for i, tag in enumerate(tags):
         translated_text = translated_text.replace(f"__TAG_{i}__", tag)
     return translated_text
 
-# Örnek kullanım gösterimi
+def extract_dialogue(line):
+    """e "Merhaba" satirindan metni cikarir."""
+    m = re.match(r'^(\s*(?:e|n|s)\s+)\"(.*)\"\s*$', line)
+    if m:
+        return m.group(1), m.group(2)
+    return None, None
+
+# Ornek kullanim
 original_line = 'e "Hello [player_name], welcome to {b}TechWave{/b}!"'
-cleaned, extracted_tags = clean_renpy_tags(original_line)
-print(f"Temizlenmiş Metin: {cleaned}")
-# Bu noktada 'cleaned' metni Google Translate / DeepL API'ye gönderilir.
-</code></pre><p>Voorhees gibi gelişmiş araçlar bu mantığı çok daha kompleks algoritmalar, hata toleransları ve kullanıcı dostu arayüzler (GUI) ile sunarlar.</p><h3>3. Aşama: Türkçe Karakter ve Font Sorununu Çözme</h3><p>Ren'Py oyunları varsayılan olarak Türkçe karakterleri (ğ, ş, ı, i, ç, ö, ü) desteklemeyen İngilizce fontlar kullanabilir. Çeviriyi yaptıktan sonra oyunda kare (□) veya soru işareti (?) karakterleri görüyorsanız font değişimi yapmalısınız.</p><p>Çözüm için oyunun <code>game/tl/turkish/</code> veya <code>game/gui.rpy</code> dosyasına gidin ve Türkçe destekli bir `.ttf` veya `.otf` font dosyasını tanımlayın:</p><pre><code>init python:
+prefix, text = extract_dialogue(original_line)
+cleaned, tags = clean_renpy_tags(text)
+print("Temizlenmis metin:", cleaned)
+print("Korunan etiketler:", tags)
+
+# Burada 'cleaned' metni ceviri API'sine gonderilir,
+# sonuc restore_renpy_tags() ile eski haline getirilir.
+</code></pre>
+        <p>Voorhees gibi gelişmiş araçlar bu mantığı çok daha kapsamlı algoritmalar, hata toleransları ve kullanıcı dostu arayüzler (GUI) ile sunarlar: sürükle-bırak dosya desteği, ilerleme çubuğu ve yarım kalan çeviri raporu gibi.</p>
+        <figure style="margin: 24px 0; text-align: center;">
+          <img src="https://images.pexels.com/photos/6795596/pexels-photo-6795596.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Harf ve kelime blokları, oyun yerelleştirmesindeki dil çeşitliliğini temsil ediyor" style="width:100%; border-radius: 12px;" loading="lazy">
+          <figcaption style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Yerelleştirme yalnızca kelime çevirisi değil; deyim, espri ve bağlamı hedef kültüre taşıma işidir.</figcaption>
+        </figure>
+        <h3>3. Aşama: Türkçe Karakter ve Font Sorununu Çözme</h3>
+        <p>Ren'Py oyunları varsayılan olarak Türkçe karakterleri (ğ, ş, ı, İ, ç, ö, ü) desteklemeyen İngilizce fontlar kullanabilir. Çeviriden sonra oyunda kare (□) ya da soru işareti (?) görüyorsanız font değişimi yapmalısınız. Bunun için oyunun <code>game/gui.rpy</code> dosyasına gidin ve Türkçe destekli bir <code>.ttf</code> veya <code>.otf</code> fontunu tanımlayın:</p>
+        <pre><code>init python:
     gui.text_font = "fonts/Roboto-Regular.ttf"
     gui.name_text_font = "fonts/Roboto-Bold.ttf"
     gui.interface_text_font = "fonts/Roboto-Regular.ttf"
-</code></pre><h2>Otomatik Çeviri vs. Manuel Çeviri: Bakış Açıları</h2><p>Oyun yerelleştirme dünyasında otomatik çeviri araçlarının kullanımı konusunda farklı görüşler bulunmaktadır:</p><h3>Otomatik Çeviri Araçlarının Avantajları</h3><ul><li><strong>Hız:</strong> 500.000 kelimelik devasa bir visual novel saatler içinde çevrilebilir.</li><li><strong>Erişilebilirlik:</strong> Hiç İngilizce bilmeyen oyuncular bile hikayenin ana hatlarını anlayabilir.</li><li><strong>Maliyet:</strong> Bütçesiz topluluk projeleri için mükemmel bir başlangıç noktasıdır.</li></ul><h3>Manuel ve Hibrit Çevirinin Önemi</h3><p>Ancak makine çevirisi, devrik cümleler, kelime oyunları (pun) ve bağlama dayalı esprilerde yetersiz kalabilir. En ideal yaklaşım, <strong>Voorhees aracı ile taslak çeviriyi oluşturup (Makine Çevirisi), ardından insan gözüyle düzenleme (Post-Editing) yapmaktır.</strong></p><h2>Yerelleştirmede Karşılaşılan En Sık Hatalar ve İpuçları</h2><p>Ren'Py çevirisi yaparken dikkat etmeniz gereken bazı kritik ipuçları:</p><ul><li><strong>Sözdizimi Hatalarını Önleyin:</strong> Çift tırnak (<code>"</code>) işaretlerinin içine yazılan çevirilerde kaçış karakteri (<code>\"</code>) kullanmayı unutmayın. Aksi takdirde oyun çökecektir.</li><li><strong>Format Etiketlerini Bozmayın:</strong> <code>{w}</code> (bekleme), <code>{p}</code> (sayfa sonu) gibi Ren meşhur komutlarını aynen koruyun.</li><li><strong>Yedek Alın:</strong> İşleme başlamadan önce orijinal <code>game/</code> klasörünün mutlaka bir yedeğini saklayın.</li></ul><h2>Sonuç</h2><p>Python'ın esnek yapısı ve Ren'Py motorunun modülerliği sayesinde, Türkçe oyun çeviri topluluğu her geçen gün daha da büyüyor. Technopat gibi platformlarda paylaşılan Voorhees ve benzeri çeviri araçları, oyun severlerin dil engelini aşmasında hayati bir rol oynuyor. Doğru araçlar, biraz Python bilgisi ve dikkatli bir kontrol süreci ile siz de sevdiğiniz oyunları Türkçe'ye kazandırabilirsiniz.</p><p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</code></pre>
+        <h3>4. Aşama: Test ve Doğrulama</h3>
+        <p>Çeviri dosyalarını yazdıktan sonra oyunu Ren'Py Launcher üzerinden <code>fast</code> modda çalıştırın. Sahne sahne ilerleyerek tırnak bozulmalarını, kaymış etiketleri ve eksik satırları kontrol edin. Sorunlu satırları bir metin editörüyle <code>game/tl/turkish/</code> altında aratıp düzeltin.</p>
 
-        <!-- Görsel Telif -->
+        <h2>Yerelleştirmede En Sık Karşılaşılan Hatalar</h2>
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; margin: 16px 0;">
+          <thead>
+            <tr style="background:#eef2ff;">
+              <th>Hata</th>
+              <th>Belirti</th>
+              <th>Çözüm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bozuk tırnak</td>
+              <td>Oyun açılmıyor, sözdizimi hatası</td>
+              <td>Metin içindeki <code>"</code> işaretini <code>\"</code> ile kaçırın</td>
+            </tr>
+            <tr>
+              <td>Etiket kaybı</td>
+              <td>{b}, {w} gibi komutlar ekranda düz metin görünüyor</td>
+              <td>Çeviri sırasında format etiketlerini koruyun</td>
+            </tr>
+            <tr>
+              <td>Karakter bozulması</td>
+              <td>ğ, ş, İ yerine kare veya soru işareti</td>
+              <td>Dosyayı UTF-8 kaydedin, fontu Türkçe destekleyenle değiştirin</td>
+            </tr>
+            <tr>
+              <td>Kaymış değişken</td>
+              <td>[player_name] yerine isim görünmüyor</td>
+              <td>Değişkenleri <code>__TAG_n__</code> ile maskeleyip geri yazın</td>
+            </tr>
+            <tr>
+              <td>Yedeksiz işlem</td>
+              <td>Geri alınamayan bozulmalar</td>
+              <td>İşleme başlamadan önce <code>game/</code> klasörünün tam yedeğini alın</td>
+            </tr>
+          </tbody>
+        </table>
+        <figure style="margin: 24px 0; text-align: center;">
+          <img src="https://images.pexels.com/photos/5208878/pexels-photo-5208878.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Üstten çekilmiş oyun kolları ve VR gözlüğü" style="width:100%; border-radius: 12px;" loading="lazy">
+          <figcaption style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Çeviri bittikten sonra oyunu farklı senaryolarda oynayarak her diyaloğu kontrol etmek gerekir.</figcaption>
+        </figure>
+
+        <h2>Otomatik Çeviri vs. Manuel Çeviri</h2>
+        <h3>Otomatik Çeviri Araçlarının Avantajları</h3>
+        <ul>
+          <li><strong>Hız:</strong> 500.000 kelimelik devasa bir görsel roman saatler içinde çevrilebilir.</li>
+          <li><strong>Erişilebilirlik:</strong> İngilizce bilmeyen oyuncular bile hikâyenin ana hatlarını anlayabilir.</li>
+          <li><strong>Maliyet:</strong> Bütçesiz topluluk projeleri için mükemmel bir başlangıç noktasıdır.</li>
+        </ul>
+        <h3>Manuel ve Hibrit Çevirinin Önemi</h3>
+        <p>Ancak makine çevirisi; devrik cümleler, kelime oyunları (pun), jargon ve bağlama dayalı esprilerde yetersiz kalır. En ideal yaklaşım, <strong>Voorhees aracıyla taslak çeviriyi oluşturup (makine çevirisi) ardından insan gözüyle düzenleme (post-editing) yapmaktır.</strong> Özellikle karakter diyaloglarında kişilik tutarlılığı, otomatik çevirinin tek başına üstesinden gelemediği bir iştir.</p>
+
+        <h2>Yerelleştirmede Pratik İpuçları</h2>
+        <ul>
+          <li><strong>Her zaman yedek alın:</strong> <code>game/</code> klasörünü işlem öncesi sıkıştırıp arşivleyin.</li>
+          <li><strong>Tutarlı sözlük tutun:</strong> Aynı İngilizce kelimenin her yerde aynı çevrilmesini sağlayın; karakter adları ve oyun içi terimler sabit kalsın.</li>
+          <li><strong>Format etiketlerini aynen koruyun:</strong> <code>{w}</code> (bekleme), <code>{p}</code> (sayfa sonu), <code>{cps=20}</code> (yazım hızı) komutları çevrilmez.</li>
+          <li><strong>Kısaltmaları kontrol edin:</strong> Ren'Py'de diyalog kutusu dar olduğu için İngilizce cümleye göre daha uzun Türkçe metinler taşabilir; bu durumda satır sonlarını düzenleyin.</li>
+          <li><strong>Yeniden test edin:</strong> Her toplu güncellemeden sonra oyunu baştan sona bir kez oynayın.</li>
+        </ul>
+
+        <h2>Sıkça Sorulan Sorular (SSS)</h2>
+        <h3>Voorhees aracını nereden bulabilirim?</h3>
+        <p>Araç, Technopat ve benzeri Türk teknoloji forumlarında geliştiriciler tarafından paylaşılmaktadır. Araç güncellemelerini takip etmek için forum başlıklarını ve Python paket depolarını kontrol edin. Aracın çalışmaması durumunda bu yazıdaki açık kaynak Python script'leri tek başına da yeterlidir.</p>
+        <h3>Çeviri yapmak için Python bilmek zorunda mıyım?</h3>
+        <p>Arayüzlü araçlarla temel düzeyde evet, Python bilmeden ilerleyebilirsiniz. Ancak hata ayıklama, özel etiket işleme ve toplu düzeltme gibi işlerde en azından değişken, döngü ve regex kavramlarını bilmek sizi çok hızlı kılar. Temelleri <a href="python-nedir-bilmeniz-gereken-her-sey.html">Python rehberimizden</a> öğrenebilirsiniz.</p>
+        <h3>Çeviri yapmanın hukuki durumu nedir?</h3>
+        <p>Ticari olmayan, kişisel/derleme amaçlı çeviriler genellikle topluluk tarafından kabul görür; ancak çeviriyi yayımlarken oyunun lisansına ve yayıncısının politikasına saygı gösterin. Çevirinizi yayınlarken kaynak oyuna ve ekibe atıfta bulunun, dosyaları ücretsiz erişime açın ve emeği geçenleri belirtin.</p>
+        <h3>Oyun açılmıyor, ne yapmalıyım?</h3>
+        <p>Önce <code>game/logs/script.py.txt</code> dosyasındaki hatayı okuyun. Çoğu sorun; yarım kalan bir satır, kaçırılmamış tırnak ya da UTF-8 yerine ANSI kaydedilmiş bir dosyadan kaynaklanır. Hata devam ederse yedeğinize dönüp adımları tek tek tekrarlayın.</p>
+        <h3>Çeviriyi yapay zekâ ile tamamen bitirebilir miyim?</h3>
+        <p>Kısa cevap: hayır, tek başına yeterli değil. Yapay zekâ hızlı ve ucuz taslak üretir; ancak kelime oyunları, karakter ses tonu ve kültürel referanslarda insan denetimi şarttır. En verimli model, yapay zekânın taslağı yazması + sizin edebi düzenleme yapmanızdır.</p>
+
+        <h2>Çeviri Sonrası: Paketleme ve Dağıtım</h2>
+        <p>Çeviri tamamlandıktan sonra iş bitmiş sayılmaz. Ren'Py Launcher üzerinden <strong>Build Distributions</strong> menüsünü açın, hedef platformları (Windows, macOS, Android, web) seçin ve paketi yeniden derleyin. Paketleme öncesinde şu kontrol listesini uygulayın: tüm <code>.rpy</code> dosyaları UTF-8 kodlamalı mı, Türkçe font pakete dahil mi, <code>game/tl/turkish/</code> klasöründeki dosyalar kaynak dosyalarla aynı adlara sahip mi, menü ve arayüz metinleri de çevrildi mi? Arayüz çevirileri genellikle <code>game/tl/turkish/gui.rpy</code> içinde bulunur ve çoğu acemi çevirmen bu dosyayı atlar.</p>
+        <p>Dağıtımda dikkat edilmesi gereken bir diğer nokta, derlenmiş <code>.rpyc</code> dosyalarının eksiksiz olmasıdır. Bir dosya eksik kalırsa oyun belirli bir sahnede çöker ve oyuncu hatayı çevirinin parçası sanır. Son olarak Türkçe yamayı yayınarken sürüm notu ekleyin: hangi sürümü hangi tarihte çevirdiğinizi yazmak topluluk güvenini artırır ve ileride bir güncelleme geldiğinde neyin değiştiğini takip etmeyi kolaylaştırır.</p>
+        <p>Hız ve tutarlılık isteyenler için bir ipucu daha: çeviri belleğine (translation memory) sahip basit bir Python sözlüğü tutun. <code>{"start": "başlangıç", "menu": "menü"}</code> gibi tekrar eden terimleri tek yerden yönettiğinizde, oyun içi terimler hiçbir yerde şaşırtıcı biçimde değişmez. Bu küçük alışkanlık, uzun soluklu projelerde en çok işe yarayan yöntemlerden biridir.</p>
+        <h2>Sonuç</h2>
+        <p>Python'ın esnek yapısı ve Ren'Py motorunun modülerliği sayesinde Türkçe oyun çeviri topluluğu her geçen gün daha da büyüyor. Technopat gibi platformlarda paylaşılan Voorhees ve benzeri çeviri araçları, oyun severlerin dil engelini aşmasında hayati bir rol oynuyor. Doğru araçlar, biraz Python bilgisi, sağlam bir yedek ve dikkatli bir kontrol süreci ile siz de sevdiğiniz oyunları Türkçe'ye kazandırabilirsiniz.</p>
+        <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+<!-- Görsel Telif -->
         <div class="image-credit">
-          Fotoğraf: Unsplash
+          Fotoğraflar: Unsplash, Pexels
         </div>
 
       </div>
