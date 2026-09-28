@@ -777,44 +777,6 @@ nav a:hover, nav a.active { color: var(--primary); }
   gap: 8px;
 }
 
-.popular-list { list-style: none; }
-
-.popular-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border);
-  transition: var(--transition);
-  position: relative;
-  padding-left: 16px;
-}
-
-.popular-list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--primary);
-  opacity: 0;
-  transform: translateX(-8px);
-  transition: var(--transition);
-}
-
-.popular-list li:hover::before {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.popular-list li:hover { padding-left: 24px; }
-.popular-list li:last-child { border-bottom: none; }
-
-.popular-list a {
-  color: var(--text);
-  font-weight: 500;
-  font-size: .88rem;
-  display: block;
-  transition: var(--transition);
-}
-
-.popular-list a:hover { color: var(--primary); }
-
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .tag {
@@ -1149,6 +1111,41 @@ nav a:hover, nav a.active { color: var(--primary); }
   margin-bottom: 18px;
   color: var(--text);
 }
+
+/* ---------- Populer Makaleler ---------- */
+.popular-list { list-style: none; }
+
+.popular-list li { margin-bottom: 12px; }
+
+.popular-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.popular-list a:hover { color: var(--primary); transform: translateX(3px); }
+
+.popular-num {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background: var(--gradient-primary);
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+.popular-t { font-size: .9rem; font-weight: 500; line-height: 1.4; }
+
+.popular-v { font-size: .74rem; color: var(--text-light); font-weight: 600; }
 
 /* ---------- Animasyonlar ---------- */
 @keyframes fadeInUp {

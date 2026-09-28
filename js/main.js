@@ -277,6 +277,27 @@
 
   initComments();
 
+  /* ---------- Populer Makaleler (Metrica) ---------- */
+  function initPopular() {
+    var list = document.querySelector('.popular-list');
+    if (!list) return;
+
+    fetch(PATH + 'popular.json')
+      .then(function (r) { return r.json(); })
+      .then(function (items) {
+        if (!items || !items.length) return;
+        list.innerHTML = items.map(function (it, i) {
+          return '<li><a href="' + PATH + 'articles/' + it.s + '.html">' +
+            '<span class="popular-num">' + (i + 1) + '</span>' +
+            '<span class="popular-body"><span class="popular-t">' + it.t + '</span>' +
+            '<span class="popular-v">' + it.v + ' okuma</span></span></a></li>';
+        }).join('');
+      })
+      .catch(function () {});
+  }
+
+  initPopular();
+
   /* ---------- Başlat ---------- */
   insertAdSlots();
   calcReadTime();

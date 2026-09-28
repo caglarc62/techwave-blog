@@ -66,6 +66,21 @@ def fetch_top_articles(token, days=30):
     return results
 
 
+def write_popular(top, limit=5):
+    titles = {}
+    idx_path = os.path.join(BASE, 'search-index.json')
+    if os.path.exists(idx_path):
+        for it in json.load(open(idx_path, encoding='utf-8')):
+            titles[it['s']] = it['t']
+    items = [{'s': s, 'v': v, 't': titles[s]} for s, v in top if s in titles][:limit]
+    if not items:
+        return
+    out = os.path.join(BASE, 'popular.json')
+    with open(out, 'w', encoding='utf-8') as f:
+        json.dump(items, f, ensure_ascii=False, separators=(',', ':'))
+    print('popular.json guncellendi (%d makale)' % len(items))
+
+
 def parse_featured(content):
     m = re.search(r'      <div class="featured-post">.*?\n      </div>\n', content, re.DOTALL)
     if not m:
@@ -187,15 +202,13 @@ def main():
     for slug, views in top[:5]:
         print('  %s -> %d gosterim' % (slug, views))
 
+    write_popular(top)
+
     content = open(INDEX, encoding='utf-8').read()
     old_feat = parse_old_featured(content)
 
-    winner = None
-    for slug, views in top:
-        if slug != old_feat['slug']:
-            winner = slug
-            break
-    if not winner:
+    winner = top[0][0]
+    if winner == old_feat['slug']:
         print('Zaten en cok okunan makale one cikan. Degisiklik yok.')
         return
 
