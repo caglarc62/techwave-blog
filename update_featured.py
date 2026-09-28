@@ -27,8 +27,8 @@ def fetch_top_articles(token, days=30):
     params = {
         'ids': COUNTER_ID,
         'metrics': 'ym:s:pageviews',
-        'dimensions': 'ym:s:URLPath',
-        'filters': "ym:s:URLPath~'/articles/'",
+        'dimensions': 'ym:s:startURL',
+        'filters': "ym:s:startURL=~'/articles/'",
         'date1': date1,
         'date2': date2,
         'limit': '500',
@@ -50,10 +50,13 @@ def fetch_top_articles(token, days=30):
     for row in data.get('data', []):
         dims = row.get('dimensions', [])
         mets = row.get('metrics', [])
-        path = dims[0].get('values', [''])[0] if dims else ''
+        path = dims[0].get('name', '') if dims else ''
         views = 0
         try:
-            views = int(float(mets[0].get('values', [0])[0]))
+            m0 = mets[0]
+            if isinstance(m0, dict):
+                m0 = m0.get('values', [0])[0]
+            views = int(float(m0))
         except (ValueError, IndexError, TypeError):
             pass
         m = re.search(r'/articles/([^/?#]+?)(?:\.html)?(?:[?#]|$)', path)
@@ -71,22 +74,23 @@ def parse_featured(content):
 
 
 def parse_card(content, slug):
-    pat = re.compile(
-        r'        <article class="card" data-category="([^"]*)">.*?href="articles/' +
-        re.escape(slug) + r'\.html".*?</article>\n',
-        re.DOTALL,
-    )
-    m = pat.search(content)
-    if not m:
+    href = 'href="articles/%s.html"' % slug
+    block = None
+    for m in re.finditer(r'        <article class="card"[^>]*>.*?</article>\n', content, re.DOTALL):
+        if href in m.group(0):
+            block = m.group(0)
+            break
+    if not block:
         return None, None
-    block = m.group(0)
-    cat = m.group(1)
 
     def grab(pattern, default=''):
         g = re.search(pattern, block, re.DOTALL)
         return g.group(1).strip() if g else default
 
+    cat = grab(r'data-category="([^"]*)"')
     info = {
+        'slug': slug,
+        'cat': cat,
         'category': cat,
         'img': grab(r'<img src="([^"]+)"'),
         'alt': grab(r'<img src="[^"]+" alt="([^"]*)"'),
@@ -95,6 +99,8 @@ def parse_card(content, slug):
         'date': grab(r'📅\s*([^<]+)</span>'),
         'read': grab(r'⏱️\s*([^<]+)</span>'),
     }
+    if not info['title'] or not info['img']:
+        return None, None
     return block, info
 
 
@@ -199,11 +205,12 @@ def main():
         sys.exit(1)
 
     # Yeni one cikani kur
-    content = parse_featured(content).sub(make_featured(info), content, count=1)
+    fm = parse_featured(content)
+    content = content[:fm.start()] + make_featured(info) + content[fm.end():]
     # Kazanan karti grid'den cikar
     content = content.replace(card_block, '', 1)
     # Eski one cikani normal karta cevirip kazananin oldugu yere koy
-    old_card = make_card({**old_feat, 'category': old_feat['category']})
+    old_card = make_card({**old_feat, 'cat': old_feat['category'], 'category': old_feat['category']})
     grid_start = content.index('<div class="card-grid">')
     insert_at = content.index('\n', grid_start) + 1
     content = content[:insert_at] + '\n' + old_card + content[insert_at:]
