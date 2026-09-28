@@ -246,6 +246,37 @@
 
   initShare();
 
+  /* ---------- Yorumlar (giscus) ---------- */
+  function initComments() {
+    var content = document.querySelector('.article-content');
+    if (!content) return;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'comments-box';
+    wrap.innerHTML = '<h3 class="comments-title">💬 Yorumlar</h3><div class="giscus"></div>';
+    content.appendChild(wrap);
+
+    var s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.setAttribute('data-repo', 'caglarc62/techwave-blog');
+    s.setAttribute('data-repo-id', 'R_kgDOURcC4g');
+    s.setAttribute('data-category', 'General');
+    s.setAttribute('data-category-id', 'DIC_kwDOURcC4s4DGlkL');
+    s.setAttribute('data-mapping', 'pathname');
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', 'bottom');
+    s.setAttribute('data-theme', 'preferred_color_scheme');
+    s.setAttribute('data-lang', 'tr');
+    s.setAttribute('data-loading', 'lazy');
+    s.crossOrigin = 'anonymous';
+    s.async = true;
+    wrap.appendChild(s);
+  }
+
+  initComments();
+
   /* ---------- Başlat ---------- */
   insertAdSlots();
   calcReadTime();
