@@ -78,6 +78,126 @@
 
   /* ---------- İletişim Formu ---------- */
 
+  /* ---------- Arama ---------- */
+  var inArticles = location.pathname.indexOf('/articles/') !== -1;
+  var PATH = inArticles ? '../' : '';
+  var indexData = null;
+  var indexLoading = false;
+
+  function normalize(s) {
+    return (s || '').toLowerCase()
+      .replace(/ı/g, 'i').replace(/İ/g, 'i').replace(/ş/g, 's')
+      .replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o')
+      .replace(/ç/g, 'c').replace(/â/g, 'a').replace(/î/g, 'i')
+      .replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  function loadIndex() {
+    if (indexData || indexLoading) return Promise.resolve(indexData);
+    indexLoading = true;
+    return fetch(PATH + 'search-index.json')
+      .then(function (r) { return r.json(); })
+      .then(function (d) { indexData = d; indexLoading = false; return d; })
+      .catch(function () { indexLoading = false; return null; });
+  }
+
+  function runSearch(q) {
+    var nq = normalize(q);
+    if (!nq || !indexData) return [];
+    var words = nq.split(' ');
+    var results = [];
+    indexData.forEach(function (it) {
+      var t = normalize(it.t), h = normalize(it.h), e = normalize(it.e),
+          x = normalize(it.x), c = normalize(it.c);
+      var score = 0, all = true;
+      words.forEach(function (w) {
+        var hit = false;
+        if (t.indexOf(w) !== -1) { score += t.indexOf(w) === 0 ? 12 : 8; hit = true; }
+        if (c.indexOf(w) !== -1) { score += 5; hit = true; }
+        if (h.indexOf(w) !== -1) { score += 4; hit = true; }
+        if (e.indexOf(w) !== -1) { score += 3; hit = true; }
+        if (x.indexOf(w) !== -1) { score += 1; hit = true; }
+        if (!hit) all = false;
+      });
+      if (all && score > 0) results.push({ it: it, score: score });
+    });
+    results.sort(function (a, b) { return b.score - a.score; });
+    return results.slice(0, 10).map(function (r) { return r.it; });
+  }
+
+  function initSearch() {
+    var header = document.querySelector('.header-inner');
+    if (!header) return;
+
+    var btn = document.createElement('button');
+    btn.className = 'search-open-btn';
+    btn.setAttribute('aria-label', 'Ara');
+    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><span class="search-btn-text">Ara</span>';
+    var menuBtn = header.querySelector('.mobile-menu-btn');
+    header.insertBefore(btn, menuBtn || null);
+
+    var box = document.createElement('div');
+    box.className = 'search-overlay';
+    box.innerHTML =
+      '<div class="search-panel">' +
+      '  <div class="search-input-wrap">' +
+      '    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>' +
+      '    <input type="search" class="search-input" placeholder="Makalelerde ara... (Ctrl + K)" autocomplete="off">' +
+      '    <button class="search-close" aria-label="Kapat">✕</button>' +
+      '  </div>' +
+      '  <div class="search-results"></div>' +
+      '</div>';
+    document.body.appendChild(box);
+
+    var input = box.querySelector('.search-input');
+    var resultsEl = box.querySelector('.search-results');
+
+    function open() {
+      box.classList.add('active');
+      input.focus();
+      loadIndex();
+    }
+    function close() {
+      box.classList.remove('active');
+      input.value = '';
+      resultsEl.innerHTML = '';
+    }
+
+    btn.addEventListener('click', open);
+    box.querySelector('.search-close').addEventListener('click', close);
+    box.addEventListener('click', function (e) { if (e.target === box) close(); });
+
+    input.addEventListener('input', function () {
+      var q = input.value.trim();
+      if (!q) { resultsEl.innerHTML = ''; return; }
+      loadIndex().then(function () {
+        var res = runSearch(q);
+        if (!res.length) {
+          resultsEl.innerHTML = '<div class="search-empty">Sonuç bulunamadı</div>';
+          return;
+        }
+        resultsEl.innerHTML = res.map(function (it) {
+          return '<a class="search-item" href="' + PATH + 'articles/' + it.s + '.html">' +
+            '<span class="search-item-cat">' + it.c + '</span>' +
+            '<span class="search-item-title">' + it.t + '</span>' +
+            (it.e ? '<span class="search-item-ex">' + it.e + '</span>' : '') +
+            '</a>';
+        }).join('');
+      });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        open();
+      } else if (e.key === 'Escape') {
+        close();
+      }
+    });
+  }
+
+  initSearch();
+
   /* ---------- Başlat ---------- */
   insertAdSlots();
   calcReadTime();

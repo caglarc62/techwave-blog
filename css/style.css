@@ -957,6 +957,142 @@ nav a:hover, nav a.active { color: var(--primary); }
 .ad-slot-336 { width: 336px; height: 280px; margin-left: auto; margin-right: auto; }
 .ad-slot-300x600 { width: 300px; height: 600px; }
 
+/* ---------- Arama ---------- */
+.search-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  color: var(--text-secondary);
+  font-size: .88rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: auto;
+  margin-right: 22px;
+}
+
+.search-open-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7,20,28,.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10vh 20px 20px;
+  z-index: 2000;
+}
+
+.search-overlay.active { display: flex; }
+
+.search-panel {
+  width: 100%;
+  max-width: 640px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 30px 60px rgba(0,0,0,.25);
+  overflow: hidden;
+  animation: fadeInUp .2s ease;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-light);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.05rem;
+  font-family: inherit;
+  color: var(--text);
+  min-width: 0;
+}
+
+.search-input::placeholder { color: var(--text-light); }
+
+.search-close {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.search-close:hover { border-color: var(--primary); color: var(--primary); }
+
+.search-results {
+  max-height: 55vh;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.search-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+}
+
+.search-item:hover { background: var(--primary-light); }
+
+.search-item-cat {
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.search-item-title {
+  font-weight: 600;
+  color: var(--text);
+  font-size: .98rem;
+  line-height: 1.4;
+}
+
+.search-item-ex {
+  font-size: .82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.search-empty {
+  padding: 28px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: .92rem;
+}
+
 /* ---------- Animasyonlar ---------- */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -1002,7 +1138,9 @@ nav a:hover, nav a.active { color: var(--primary); }
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 50px 0 45px; }
+  .hero { padding: 50px 0 80px; }
+  .search-btn-text { display: none; }
+  .search-open-btn { padding: 9px 12px; margin-right: 14px; }
   .hero h1 { font-size: 1.8rem; }
   .hero p { font-size: .95rem; }
   .article-header h1 { font-size: 1.6rem; }
