@@ -24,20 +24,128 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 MARK_FILE = os.path.join(BASE, "tweeted.json")
 SITE = "https://techwaveblog.site"
 
-HASHTAGS = {
-    "Yapay Zeka": ["#yapayzeka", "#AI", "#teknoloji"],
-    "AI Araçları": ["#AI", "#yapayzeka", "#araçlar"],
-    "Yazılım": ["#yazılım", "#kodlama", "#teknoloji"],
-    "Python": ["#python", "#kodlama", "#yazılım"],
-    "Siber Güvenlik": ["#sibergüvenlik", "#güvenlik", "#teknoloji"],
-    "Mobil": ["#mobil", "#teknoloji", "#akıllıtelefon"],
-    "Donanım": ["#donanım", "#teknoloji", "#tech"],
-    "Oyun": ["#oyun", "#gaming", "#teknoloji"],
-    "Finans": ["#finans", "#ekonomi", "#teknoloji"],
-    "Blockchain": ["#blockchain", "#kripto", "#teknoloji"],
-}
+# Başlık/özet içindeki kelimelere göre eşleşen hashtag'ler.
+# Sıra önemlidir: en spesifik olan önce.
+KEYWORD_TAGS = [
+    ("chatgpt", "#ChatGPT"),
+    ("claude", "#ClaudeAI"),
+    ("gemini", "#GeminiAI"),
+    ("copilot", "#GitHubCopilot"),
+    ("cursor", "#Cursor"),
+    ("midjourney", "#Midjourney"),
+    ("stable diffusion", "#StableDiffusion"),
+    ("dall", "#DALL-E"),
+    ("sora", "#SoraAI"),
+    ("deepseek", "#DeepSeek"),
+    ("yapay zeka", "#YapayZeka"),
+    ("yapay zekâ", "#YapayZeka"),
+    ("ai ajan", "#AIAjanlari"),
+    ("ajan", "#AIAjanlari"),
+    ("yapay zeka", "#AI"),
+    ("python", "#Python"),
+    ("javascript", "#JavaScript"),
+    ("kodlama", "#Kodlama"),
+    ("yazılım", "#Yazılım"),
+    ("geliştirme", "#Yazılım"),
+    ("iphone", "#iPhone"),
+    ("apple", "#Apple"),
+    ("samsung", "#Samsung"),
+    ("galaxy", "#Galaxy"),
+    ("android", "#Android"),
+    ("whatsapp", "#WhatsApp"),
+    ("meta", "#Meta"),
+    ("quest", "#VR"),
+    ("vision pro", "#AppleVisionPro"),
+    ("vr", "#VR"),
+    ("notebook", "#Notebook"),
+    ("laptop", "#Laptop"),
+    ("tablet", "#Tablet"),
+    ("ipad", "#iPad"),
+    ("akıllı saat", "#SmartWatch"),
+    ("kulaklık", "#Kulaklık"),
+    ("robot süpürge", "#RobotSupurge"),
+    ("oyun konsolu", "#OyunKonsolu"),
+    ("playstation", "#PlayStation"),
+    ("xbox", "#Xbox"),
+    ("nintendo", "#Nintendo"),
+    ("oyun", "#Oyun"),
+    ("vpn", "#VPN"),
+    ("siber", "#SiberGüvenlik"),
+    ("güvenlik", "#Güvenlik"),
+    ("antivirüs", "#Antivirus"),
+    ("kripto", "#Kripto"),
+    ("blockchain", "#Blockchain"),
+    ("bitcoin", "#Bitcoin"),
+    ("finans", "#Finans"),
+    ("para kazan", "#ParaKazanma"),
+    ("kazanma", "#Gelir"),
+    ("seo", "#SEO"),
+    ("google", "#Google"),
+    ("wordpress", "#WordPress"),
+    ("html", "#HTML"),
+    ("web sitesi", "#WebGeliştirme"),
+    ("mobil", "#MobilGeliştirme"),
+    ("flutter", "#Flutter"),
+    ("react", "#React"),
+    ("trend", "#TeknolojiTrendleri"),
+    ("teknoloji", "#Teknoloji"),
+    ("internet", "#İnternet"),
+    ("robot", "#Robotik"),
+    ("sağlık", "#Sağlık"),
+    ("spor", "#Spor"),
+    ("blockchain", "#Web3"),
+    ("enerji", "#YeşilTeknoloji"),
+    ("kuantum", "#KuantumBilgisayar"),
+    ("uzay", "#UzayTeknolojisi"),
+]
 
-GENERIC = ["#teknoloji", "#tech", "#2026"]
+# Kitleyi genişleten popüler genel hashtag havuzu (gündemle ilgili, çok aranan)
+TRENDING_POOL = [
+    "#AI", "#Teknoloji", "#2026", "#tech", "#YapayZeka",
+    "#Yazılım", "#DijitalDünya", "#İnovasyon", "#Startup",
+    "#GelecekTeknolojileri", "#DijitalDönüşüm",
+]
+
+GENERIC = ["#Teknoloji", "#2026", "#AI"]
+
+
+def pick_hashtags(text, category):
+    """Başlık+özet metninden konuya uygun hashtag seçer."""
+    low = text.lower()
+    matched = []
+    seen = set()
+    for kw, tag in KEYWORD_TAGS:
+        if kw in low and tag.lower() not in seen:
+            matched.append(tag)
+            seen.add(tag.lower())
+        if len(matched) >= 4:
+            break
+
+    # Havuzdan kitle genişleten 1-2 popüler tag ekle
+    import random
+    extra = [t for t in TRENDING_POOL if t.lower() not in seen]
+    random.seed(sum(ord(ch) for ch in text))  # aynı makalede tutarlı seçim
+    picked = matched[:3]
+    for t in random.sample(extra, min(2, len(extra))):
+        picked.append(t)
+
+    if not picked:
+        picked = HASHTAGS_BY_CATEGORY.get(category, GENERIC)
+    return picked[:5]
+
+
+HASHTAGS_BY_CATEGORY = {
+    "Yapay Zeka": ["#YapayZeka", "#AI", "#Teknoloji"],
+    "AI Araçları": ["#AI", "#YapayZeka", "#Araçlar"],
+    "Yazılım": ["#Yazılım", "#Kodlama", "#Teknoloji"],
+    "Python": ["#Python", "#Kodlama", "#Yazılım"],
+    "Siber Güvenlik": ["#SiberGüvenlik", "#Güvenlik", "#Teknoloji"],
+    "Mobil": ["#Mobil", "#Teknoloji", "#AkıllıTelefon"],
+    "Donanım": ["#Donanım", "#Teknoloji", "#Tech"],
+    "Oyun": ["#Oyun", "#Gaming", "#Teknoloji"],
+    "Finans": ["#Finans", "#Ekonomi", "#Teknoloji"],
+    "Blockchain": ["#Blockchain", "#Kripto", "#Teknoloji"],
+}
 
 
 def load_marks():
@@ -72,12 +180,15 @@ def parse_article(path):
         m = re.search(r'<img src="([^"]+)"', c)
         hero = m.group(1) if m else ""
 
-    return {"slug": slug, "title": title, "category": category, "hero": hero}
+    m = re.search(r'<meta name="description" content="([^"]+)"', c)
+    desc = html.unescape(m.group(1)) if m else ""
+
+    return {"slug": slug, "title": title, "category": category, "hero": hero, "desc": desc}
 
 
 def build_tweet(article):
     url = SITE + "/articles/" + article["slug"] + ".html"
-    tags = HASHTAGS.get(article["category"], GENERIC)
+    tags = pick_hashtags(article["title"] + " " + article.get("desc", ""), article["category"])
     tags_str = " ".join(tags)
 
     # X: link 23 karakter sayılır, toplam limit 280
