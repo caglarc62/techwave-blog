@@ -246,6 +246,26 @@
 
   initShare();
 
+  /* ---------- X Takip Butonu ---------- */
+  function initFollowX() {
+    var content = document.querySelector('.article-content');
+    if (!content) return;
+    var authorBox = content.querySelector('.author-box');
+    if (!authorBox) return;
+
+    var btn = document.createElement('div');
+    btn.className = 'follow-x';
+    btn.innerHTML =
+      '<a href="https://x.com/blogTechWave" target="_blank" rel="noopener">' +
+      '<span class="follow-x-logo">&#120143;</span>' +
+      '<span class="follow-x-text"><strong>TechWave\'i X\'te takip et</strong>' +
+      '<small>Günlük teknoloji ve yapay zeka içerikleri için @blogTechWave</small></span>' +
+      '<span class="follow-x-cta">Takip et</span></a>';
+    authorBox.parentNode.insertBefore(btn, authorBox.nextSibling);
+  }
+
+  initFollowX();
+
   /* ---------- Yorumlar (giscus) ---------- */
   function initComments() {
     var content = document.querySelector('.article-content');

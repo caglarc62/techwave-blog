@@ -1248,3 +1248,23 @@ nav a:hover, nav a.active { color: var(--primary); }
 .author-avatar { flex: 0 0 56px; width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #0d9488, #0891b2); color: #fff; font-weight: 800; font-size: 20px; display: flex; align-items: center; justify-content: center; }
 .author-name { font-weight: 700; font-size: 17px; margin-bottom: 6px; color: var(--text); }
 .author-bio { margin: 0; color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+
+/* ---------- X Takip Butonu ---------- */
+.follow-x { margin: 24px 0 0; }
+.follow-x a {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 18px; border-radius: 14px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border: 1px solid #334155; color: #fff; text-decoration: none;
+  transition: var(--transition);
+}
+.follow-x a:hover { transform: translateY(-2px); border-color: #0891b2; box-shadow: 0 8px 24px rgba(8,145,178,.25); }
+.follow-x-logo { font-size: 30px; line-height: 1; color: #fff; }
+.follow-x-text { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.follow-x-text strong { font-size: 15.5px; }
+.follow-x-text small { color: #94a3b8; font-size: 13px; }
+.follow-x-cta {
+  background: #0891b2; color: #fff; font-weight: 700; font-size: 14px;
+  padding: 9px 18px; border-radius: 999px; white-space: nowrap;
+}
+.follow-x a:hover .follow-x-cta { background: #06b6d4; }
