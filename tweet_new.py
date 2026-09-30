@@ -109,8 +109,66 @@ TRENDING_POOL = [
 GENERIC = ["#Teknoloji", "#2026", "#AI"]
 
 
+def fetch_trends(limit=40):
+    """trends24.in/tr sayfasından güncel Türkiye gündemini çeker.
+    Sadece '#' ile başlayan gerçek hashtag'leri döndürür.
+    Ağ hatasında boş liste döner (fallback havuzu kullanılır)."""
+    try:
+        import urllib.request
+
+        req = urllib.request.Request(
+            "https://trends24.in/turkey/",
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"},
+        )
+        c = urllib.request.urlopen(req, timeout=15).read().decode("utf-8", "ignore")
+    except Exception:
+        return []
+
+    # İlk gerçek <ol class=trend-card__list> (CSS'teki tanım değil)
+    i = c.find("<ol class=trend-card__list>")
+    if i < 0:
+        i = c.find('<ol class="trend-card__list">')
+    if i < 0:
+        return []
+    seg = c[i:]
+    j = seg.find("trend-card__list", 100)
+    if j > 0:
+        seg = seg[:j]
+
+    names = re.findall(r'class=trend-name><a[^>]*>(.*?)</a>', seg)
+    trends = []
+    for n in names:
+        n = html.unescape(n).strip()
+        if n.startswith("#") and len(n) > 2:
+            trends.append(n)
+        if len(trends) >= limit:
+            break
+    return trends
+
+
+def get_trending_tags(text, count=2):
+    """Gündemden `count` adet hashtag seçer (konuyla uyumlu olmak zorunda değil).
+    Yoksa statik havuzdan döner."""
+    trends = fetch_trends()
+    if not trends:
+        import random
+
+        random.seed(sum(ord(ch) for ch in text))
+        return random.sample(TRENDING_POOL, min(count, len(TRENDING_POOL)))
+
+    import random
+
+    # Makale metniyle kesişenler varsa önce onlar (bonus), sonra rastgele gündem
+    low = text.lower()
+    matched = [t for t in trends if t.lstrip("#").lower() in low]
+    rest = [t for t in trends if t not in matched]
+    random.seed(sum(ord(ch) for ch in text))
+    picked = matched[:1] + random.sample(rest, min(count - len(matched[:1]), len(rest)))
+    return picked[:count]
+
+
 def pick_hashtags(text, category):
-    """Başlık+özet metninden konuya uygun hashtag seçer."""
+    """Başlık+özet metninden konuya uygun hashtag seçer + gündemden 1-2 tag ekler."""
     low = text.lower()
     matched = []
     seen = set()
@@ -121,13 +179,12 @@ def pick_hashtags(text, category):
         if len(matched) >= 4:
             break
 
-    # Havuzdan kitle genişleten 1-2 popüler tag ekle
-    import random
-    extra = [t for t in TRENDING_POOL if t.lower() not in seen]
-    random.seed(sum(ord(ch) for ch in text))  # aynı makalede tutarlı seçim
     picked = matched[:3]
-    for t in random.sample(extra, min(2, len(extra))):
-        picked.append(t)
+
+    # Gündemden (X Türkiye trendleri) 1-2 hashtag — konuyla uyumlu olmak zorunda değil
+    for t in get_trending_tags(text, count=2):
+        if t.lower() not in {p.lower() for p in picked}:
+            picked.append(t)
 
     if not picked:
         picked = HASHTAGS_BY_CATEGORY.get(category, GENERIC)
