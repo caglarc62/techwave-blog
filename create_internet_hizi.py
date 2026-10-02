@@ -1,0 +1,575 @@
+# -*- coding: utf-8 -*-
+import io, os, re, html as htmlmod
+
+ART = 'articles/2026da-internet-hizi-artirma-rehberi-15-pratik-cozum.html'
+SLUG = '2026da-internet-hizi-artirma-rehberi-15-pratik-cozum'
+TITLE = "2026'da İnternet Hızını Artırma Rehberi: Evde ve Mobilde 15 Pratik Çözüm"
+DESC = ("2026'da internet hızını artırmanın 15 pratik yolu: DNS değiştirme (1.1.1.1), modem konumu, "
+        "2.4/5 GHz kanal seçimi, kablo vs Wi-Fi, QoS, firmware, IPv6, mesh, fiber paket kontrolü, "
+        "VPN hız kaybı, mobil APN ayarları ve hız testi yorumlama; Wi-Fi 6 vs 6E vs 7 satın alma tablosu, "
+        "Turkcell, Türk Telekom ve Vodafone fiber paket ipuçları ve SSS.")
+HERO = '4218546'
+DATE = '2 Ekim 2026'
+DATE_ISO = '2026-10-02'
+READ = '9 dk okuma'
+CAT = 'Donanım'
+
+def pexels(i, w=1200):
+    return 'https://images.pexels.com/photos/%s/pexels-photo-%s.jpeg?auto=compress&cs=tinysrgb&w=%s' % (i, i, w)
+
+def fig(pid, alt, cap):
+    return (
+        '<figure style="margin: 24px 0; text-align: center;">\n'
+        '  <img src="%s" alt="%s" style="width:100%%; border-radius: 12px;" loading="lazy">\n'
+        '  <figcaption style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">%s</figcaption>\n'
+        '</figure>\n' % (pexels(pid), alt, cap)
+    )
+
+BODY = u"""<h2>2026'da İnternet Neden Hissettirdiğinden Daha Yavaş?</h2>
+<p>Birkaç yıl önce "internet yavaş" demek, bir sayfanın bir saniye geç açılmasıydı. 2026'da ise aynı
+cümle neredeyse tüm dijital hayatı kapsıyor: mutfaktaki akıllı cihaz güncelleme indirirken görüntülü
+toplantıda ses kesiliyor, televizyondaki 4K yayın takılırken telefonda bulut yedeklemesi kilitleniyor,
+çocuğun odasındaki oyun konsolu lag yaparken sizin tarayıcınız videoyu önbelleğe almayı bırakıyor.
+Sorunun büyük bölümü sağlayıcınızın vaat ettiği hız değil; <strong>hızın evin içinde nasıl dağıtıldığı</strong>
+ve aynı anda kaç cihazın onu paylaştığı.</p>
+<p>Bunun üç somut nedeni var. Birincisi <strong>akış kalitesi</strong>: 4K ve 8K yayın, bulut oyun
+streaming'i ve HDR canlı yayınlar tek başına 25-50 Mbps'e kadar tekil bağlantı istiyor. İkincisi
+<strong>uzaktan çalışma</strong>: toplantı, ekran paylaşımı ve büyük dosya aktarımı hem indirme hem
+yükleme yönünü aynı anda zorluyor; hız paketlerinin simetrik olmaması burada belirleyici. Üçüncüsü
+<strong>IoT cihaz sayısı</strong>: ortalama bir evde 20-40 cihaz internete bağlı ve bunların bir kısmı
+arka planda sürekli veri konuşuyor. Akıllı ev tarafını büyüttüyseniz
+<a href="2026nin-en-iyi-10-akilli-ev-sistemi-guvenlik-konfor-tasarruf.html">akıllı ev sistemleri
+rehberimizdeki</a> cihazların bağlantı alışkanlıklarına da bakmanız faydalı.</p>
+<p>İyi haber şu: çoğu zaman ilk çözüm paketi büyütmek değil. Aşağıdaki <strong>15 pratik çözümün</strong>
+büyük bölümü ücretsiz, çoğu on dakikadan kısa sürede uygulanabiliyor ve bir kısmı faturanızı bile
+düşürebiliyor.</p>
+""" + fig('18071864',
+          'Salonda router, televizyon ve dekoratif objelerin bulunduğu modern ev teknoloji kurulumu',
+          "Modern evde tek bir router tüm cihazların trafiğini sırtlanıyor: konumu, kanalı ve yazılımı paketiniz kadar belirleyici.") + u"""
+<h2>Hız Testi Nasıl Yapılır? Ookla Speedtest vs Fast.com</h2>
+<p>Çözüm uygulamadan önce sorunu ölçmek gerekir. Hız testi, çoğu kullanıcının atladığı ama en kritik
+adım: ölçüm yapmadan yaptığınız her ayar "belki işe yaradı" düzeyinde kalır. İki yaygın araç var ve
+ikisi de aynı şeyi ölçmüyor.</p>
+<ul>
+  <li><strong>Ookla Speedtest (speedtest.net / uygulama):</strong> indirme, yükleme ve <strong>gecikme
+  (ping)</strong> değerini ayrı ayrı verir. Sunucu seçebildiğiniz için operatörün kendi hız testi
+  sunucusundan bağımsız bir ölçüm almanızı sağlar. Paylaşım, video konferans ve oyun için gecikme
+  bilgisi şart olduğundan bu araç daha bilgilendiricidir.</li>
+  <li><strong>Fast.com (Netflix):</strong> tek bir sayı gösterir: indirme hızı. Arayüz hızlıdır, reklam
+  yoktur ve video akışını gerçekten ne kadar rahat sürdürebileceğinizi yansıtır. Eksisi yükleme ve
+  ping vermez; bulut yedekleme veya görüntülü toplantı sorunlarını teşhis etmek için yetersizdir.</li>
+  <li><strong>Operatörün kendi testi:</strong> genellikle en yüksek sonucu verir çünkü sunucusu
+  sağlayıcının omurgasına çok yakındır. Paketinizin "asgari" değil "tepe" hızını gösterir; bu yüzden
+  tek başına yeterli değildir.</li>
+</ul>
+<p><strong>Doğru ölçüm için:</strong> testi hem kablo üzerinden hem Wi-Fi üzerinden ayrı ayrı yapın,
+günün farklı saatlerinde (özellikle 20:00-23:00 yoğun saatte) tekrarlayın ve test sırasında arka planda
+indirme/yedekleme olmadığını doğrulayın. Üç ölçümün ortalaması, tek seferlik en yüksek değerden çok
+daha dürüst bir tablo çizer.</p>
+""" + fig('14690386',
+          'Akıllı telefon ekranında internet hız testi sonucu gösteren kullanıcı, arka planda laptop',
+          'Hız testini hem kablo hem Wi-Fi üzerinden, günün farklı saatlerinde tekrarlayın: tek ölçüm tek başına yanıltır.') + u"""
+<h2>Evde ve Kablosuz Ağda 11 Pratik Çözüm</h2>
+<p>Aşağıdaki çözümler sırayla uygulanabilir; her biri ayrı ayrı bile fark yaratır, birlikte uygulandığında
+ise genellikle paket büyütmeden önce sorunun büyük kısmını çözer.</p>
+
+<h3>1. DNS Sunucusunu Değiştirin: 1.1.1.1 ve 8.8.8.8</h3>
+<p>DNS, "sitelerin telefon rehberi"dir; yanlış veya yavaş bir DNS, sayfanın açılma hissini doğrudan
+kısıtlar. Varsayılan olarak sağlayıcınızın DNS'ini kullanıyorsunuzdur; bu sunucular yoğun saatte
+yavaşlayabilir. <strong>Cloudflare 1.1.1.1</strong> ve <strong>Google 8.8.8.8 / 8.8.4.4</strong>
+ücretsizdir ve genellikle daha hızlı yanıt verir. Windows'ta Ayarlar &gt; Ağ ve internet &gt; Wi-Fi &gt;
+özellikler &gt; DNS sunucusunu elle düzenle; Android'de özel DNS (dns.one.one.one.one); iPhone'da
+VPN yapılandırması olarak 1.1.1.1 profili. Değişiklik çoğu cihazda saniyeler içinde etkili olur,
+toplantıdaki ilk gecikmeyi bile azaltır.</p>
+""" + fig('17489155',
+          'Bilgisayar ağı bağlantı şeması ve ağ cihazlarını gösteren teknik görsel',
+          'DNS, trafiğin gideceği adresi belirler: yavaş bir rehber, en hızlı paketi bile anlamsız kılabilir.') + u"""
+<h3>2. Modem ve Router Konumunu Değiştirin</h3>
+<p>Wi-Fi dalgası betonarmede, çelik kapıda, dolap arkasında ve mikrodalga fırının yanında ciddi
+kayıp yaşar. Router'ı <strong>evin ortasına, zemin seviyesinin biraz üstüne, açık alana</strong>
+taşıyın; antenleri dik tutun. Modemi televizyonun arkasına, kombi yanına, metal dolaba veya yerdeki
+kablo demetinin içine koymak yaygın bir hatadır. Yalnızca router'ı 1-2 metre kaydırıp hız testini
+yeniden ölçmek, çoğu zaman en ucuz çözümdür.</p>
+""" + fig('32698507',
+          'Ahşap masa üzerinde antenli Wi-Fi 6 yönlendirici ve ağ kablosu',
+          'Router\'ı evin merkezî ve açık bir noktasına konumlandırmak, paket büyütmeden önce yapılacak en etkili ücretsiz ayar.') + u"""
+<h3>3. 2.4 GHz ve 5 GHz Kanalını Doğru Kullanın</h3>
+<p>İki bant tamamen farklı iş görür. <strong>2.4 GHz</strong> daha uzağa gider ama daha yavaş ve daha
+kalabalıktır (komşu daireler, Bluetooth, mikrodalga gürültüsü). <strong>5 GHz</strong> çok daha hızlıdır
+ama duvarlardan daha çabuk zayıflar. Kural basit: <strong>router'a yakın ve aynı katta</strong> olan
+cihazlar (bilgisayar, Smart TV, oyun konsolu) 5 GHz'e; <strong>uzak veya arka planda</strong> olan
+cihazlar (termometre, hoparlör, kamera) 2.4 GHz'e bağlanmalı. Çoğu modern modemde "tek SSID (band
+steering)" özelliği vardır; sorun yaşıyorsanız bu özelliği kapatıp iki ağı ayrı isimlerle açın
+örneğin EvA-5G ve EvA-24.</p>
+
+<h3>4. Kablo mu, Wi-Fi mı? Ağır Cihazları Mutlaka Kabloya Alın</h3>
+<p>En kararlı bağlantı hâlâ kablolu. <strong>Smart TV, masaüstü bilgisayar, oyun konsolu ve NAS</strong>
+gibi sürekli ve yüksek trafik isteyen cihazları ethernet kablosuna bağlamak; hem Wi-Fi'nin kapasitesini
+boşaltır hem de gecikmeyi düşürür. Evde tesisat yoksa mevcut elektrik hattını kullanan <strong>Powerline
+adapter</strong> veya koaksiyel TV hattını kullanan <strong>MoCA</strong> setleri pratik bir ara çözüm
+sunar. Kablo bir seçenek değilse bile en azından 5 GHz bandına ve anten yönüne dikkat edin.</p>
+""" + fig('2881224',
+          'Ağ anahtarına takılı çok sayıda ethernet kablosunun yakın çekimi',
+          '4K yayın ve dosya aktarımı için Wi-Fi hâlâ kablonun yerini tutmuyor: ağır cihazları ethernet\'e almak en hızlı kazanım.') + u"""
+<h3>5. Arka Plan Uygulamaları ve Cihaz Yükünü Azaltın</h3>
+<p>Yavaşlık çoğu zaman ağda değil, uç noktadadır. Windows'ta Ayarlar &gt; Ağ ve internet &gt; Veri
+kullanımı, hangi uygulamanın ne kadar indirdiğini gösterir. Bulut fotoğraf yedeklemesi, oyun
+güncellemesi, Windows Update ve çift yönlü OneDrive/Google Drive senkronizasyonu aynı anda çalışıyorsa
+hız testinin sonucu sahte çıkar. Test öncesi bu işlemleri durdurun, sonrasında ise
+<strong>otomatik güncellemeleri geceye</strong> erteleyin. Telefonda ise arka plandaki video ve
+uygulama indirmelerini kapatmak, görüntülü toplantı gecikmesini gözle görülür biçimde düşürür.</p>
+
+<h3>6. QoS (Hız Önceliği) Ayarını Yapılandırın</h3>
+<p>QoS, hangi cihazın önce bant genişliği alacağını belirler. Router arayüzünde (genellikle
+192.168.1.1) bulunan bu ayar sayesinde görüntülü toplantı veya oyun cihazını öne alabilir, arka planda
+indirme yapan cihaza sınır koyabilirsiniz. 2026'da çoğu yeni modelde "düşük gecikme önceliği" ve
+"cihaz bazlı bant genişliği" seçenekleri var. Ayarı açıp toplam hızı değil, <strong>cihazların
+öncelik sırasını</strong> düzenlediğinizi unutmayın: QoS yeni Mbps üretmez, mevcut Mbps'i adil dağıtır.</p>
+
+<h3>7. Firmware Güncellemesini Atlamayın</h3>
+<p>Yönlendiricinin yazılımı, performansı doğrudan etkiler: kanal seçimi algoritması, cihaz bağlantı
+stabilitesi, güvenlik yamaları ve bant genişliği yönetimi firmware ile gelir. Arayüzde "Sistem /
+Firmware / Yazılım güncelleme" bölümünü kontrol edin; yeni başlayan cihazlarda
+<strong>otomatik güncelleme</strong> seçeneğini açık bırakın. Güncelleme sırasında modemi kapatmayın
+ve elektrik kesintisine karşı mümkünse UPS/akü koruması kullanın. Güvenlik tarafını da unutmayın:
+<a href="2026da-en-iyi-10-ucretsiz-antivirus-programi.html">ücretsiz antivirüs listemizdeki</a>
+çözümlerle uç noktayı korumak, ağ tarafındaki ayarların anlamını artırır.</p>
+""" + fig('37717004',
+          'Işıklı ethernet portları ve takılı kabloların yakın çekimi',
+          'Güncel firmware, doğru kanal ve önceliklendirme: hızın üçte biri cihazın yazılımından geliyor.') + u"""
+<h3>8. IPv6'ya Geçin (Destekleniyorsa)</h3>
+<p>Birçok operatör 2026'da IPv6'yı varsayılan hâline getirdi; ancak ev modemlerinde hâlâ kapalı
+kalabiliyor. IPv6, NAT aşımı sayesinde daha az port çevirme yapar, bulut hizmetlerine ve oyun
+sunucularına doğrudan bağlanmayı kolaylaştırır. Modem arayüzünde IPv6'yı açıp
+<a href="https://test-ipv6.com" target="_blank" rel="noopener">test-ipv6.com</a> ile doğrulayabilirsiniz.
+IPv6'yı kapatmak hızı düşürmez, ama açıkken bazı yönlendirme/VPN senaryolarında karmaşayı azaltır.
+Kararsızlık görürseniz her iki yığında da (dual-stack) kalıp yalnızca DNS tarafında değişiklik
+yapmanız daha güvenlidir.</p>
+
+<h3>9. Modem Yeniden Başlatma Rutini Oluşturun</h3>
+<p>Haftada bir kez, örneğin sabah kahvesinde modemi fişten çekip 30 saniye bekleyip takmak; birikmiş
+NAT tablolarını, IP çakışmalarını ve ısınmış kablosuz modülü sıfırlar. <strong>Arka planda otomatik
+yeniden başlatma</strong> özelliği olan modellerde bunu gece 04:00'e kurmak en pratik yoldur. Sık
+kesinti yaşıyorsanız yeniden başlatma sıklığını artırmak yerine önce ısınma ve toz kontrolü yapın:
+modemlerin havalandma delikleri tıkalıysa performans düşer.</p>
+
+<h3>10. Wi-Fi Analyzer ile Kanal Analizi Yapın</h3>
+<p>Komşularınızla aynı kanalda olmak, tıpkı aynı caddeye çıkmak gibidir. Android'de Wi-Fi Analyzer,
+Windows'ta inSSIDer veya NirSoft WifiInfoView ile çevrenizdeki ağların kanal haritasını çıkarın;
+<strong>2.4 GHz'de 1, 6 ve 11</strong> kanalları birbirine girmez, kalabalık olanı değil en boş olanı
+seçin. <strong>5 GHz'de</strong> kanal kalabalığı genellikle sorun değildir, bandın kendisi yeterince
+boştur. Analizi yoğun saatte (20:00-23:00) tekrarlayın; boşluk saatlere göre değişir.</p>
+""" + fig('35899919',
+          'Bina cephesindeki sarı WiFi hotspot işaretinin yakın çekimi',
+          'Komşu ağlarıyla aynı kanalda buluşmak, Wi-Fi\'da en sık göz ardı edilen performans kaybıdır.') + u"""
+<h3>11. Mesh Sistem veya Repeater ile Ölü Bölgeyi Kapatın</h3>
+<p>3+ odalı bir evde tek router çoğu zaman yetersiz kalır. <strong>Repeater (menzil genişletici)</strong>
+ucuzdur ama yarı bant genişliğiyle çalışır; <strong>mesh sistem</strong> ise tüm ünitelerin aynı ağı
+tek SSID ile dağıtmasını sağlar ve cihazlar üniteler arasında kesintisiz geçer. Mesh kurarken ana
+üniteyi modeme en yakın, uydu ünitelerini ise aralarındaki duvar sayısını az tutacak şekilde
+yerleştirin. Mesh'e bütçe ayırmadan önce tekrar ölçün: router'ı taşıyarak sorun çözülüyorsa ekstra
+cihaz gerekmiyor olabilir.</p>
+""" + fig('13963756',
+          'Bağlantılı kablolarla modern ağ ekipmanlarının bulunduğu altyapı',
+          'Ölü bölge sorunu donanım sorunudur: mesh, tek router\'ın kapsayamadığı bölgeleri aynı ağa bağlar.') + u"""
+<h2>Tarife, VPN ve Mobil Tarafında 4 Pratik Çözüm</h2>
+
+<h3>12. Fiber Paketinizi Kontrol Edin: Vaat mi, Asgari mi?</h3>
+<p>Sözleşmenizdeki hız, bir "tepe" değerdir; operatörlerin çoğunda asgari hız taahhüdü daha düşük bir
+rakamdır. Paketinizin gerçekten ne sunduğunu üç adımda doğrulayın: <strong>(1)</strong> kampanya ve
+abonelik sayfasında indirme/yükleme değerlerini not alın; <strong>(2)</strong> kablo üzerinden
+yapacağınız hız testiyle karşılaştırın; <strong>(3)</strong> arıza kaydı açmadan önce yoğun saat ve
+sakin saat ölçümünü yan yana koyun. Modeminizin WAN portunun (ADSL/VDSL/fiber ONT) paket hızını
+desteklediğini de kontrol edin: 1000 Mbps'lik pakette yalnızca 100 Mbps'e sınırlı eski bir router,
+faturanızı boşa çıkarır.</p>
+
+<h3>13. VPN Hız Kaybını Yönetin</h3>
+<p>VPN, şifreleme ve sunucu yolculuğu nedeniyle hızda kayıp yaratır; genellikle %10-40 arasında,
+uzak sunucularda daha fazla. Video izlerken ve dosya indirirken <strong>VPN'i kapatıp</strong>, yalnızca
+halka açık ağdayken ve hassas işlem yaparken açmak en mantıklı denge. Sunucuyu ülkenize en yakın
+seçmek, gecikmeyi ciddi biçimde düşürür; WireGuard tabanlı modern protokoller, eski OpenVPN'e göre
+belirgin biçimde daha hızlıdır. Ücretsiz tarafı merak ediyorsanız
+<a href="2026da-en-iyi-8-ucretsiz-vpn-hizmeti.html">2026'nın en iyi 8 ücretsiz VPN hizmeti</a>
+listemizde hız ve gecikme notlarını bulabilirsiniz.</p>
+
+<h3>14. Mobil Veri Ayarları ve APN: Hızı Cihazınız Kısıyor mu?</h3>
+<p>Mobilde yavaşlık bazen şebeke, bazen telefondan kaynaklanır. Operatörünüzün resmi APN ayarlarını
+kullanın (özel veya "hızlandırıcı" APN'ler bazen geri teper) ve telefonun mobil ağ menüsünden
+<strong>5G/4.5G tercihini</strong> kontrol edin. iOS'ta Düşük Veri Modu, Android'de veri tasarrufu
+özelliği arka plandaki uygulamaları sınırlandırır; ancak video kalitesini de düşürebilir. Sinyal
+zayıfsa pencere kenarına çıkmak ya da Wi-Fi aramayı (VoWi-Fi) kapatıp şebekeyi doğrudan kullanmak
+gecikmeyi düşürebilir. Aynı bölgede birden fazla operatörün kapsama haritasını karşılaştırmak da
+abonelik değiştirmeden önce işe yarar.</p>
+
+<h3>15. Hız Testi Sonucunu Doğru Yorumlayın</h3>
+<p>Test sonucundaki üç sayı birbirinden farklı hikâye anlatır. <strong>İndirme</strong> video ve sayfa
+açmak için, <strong>yükleme</strong> bulut yedekleme ve görüntülü toplantı için, <strong>ping</strong>
+ise oyun ve gerçek zamanlı bağlantı için belirleyicidir. 100 Mbps indirme + 10 Mbps yükleme + 40 ms
+ping kombinasyonu, evdeki "yavaşlık" hissini 250 Mbps indirme + 20 ms ping kombinasyonundan çok daha
+kötü açıklar. Ölçümü cihazdan bağımsız kılmak için önce kablo ile, sonra Wi-Fi ile, en sonda telefon
+mobil verisiyle test edin; hangi katmanda kayıp varsa çözümü o katmanda arayın.</p>
+
+<h2>Router / Modem Satın Alma Rehberi: Wi-Fi 6, 6E ve 7 Karşılaştırması</h2>
+<p>Yeni bir cihaz alırken etiketteki "Wi-Fi 7" yazısı tek başına yeterli değildir; cihazınızın da bu
+standardı desteklemesi gerekir. Aşağıdaki tablo üç standardı pratik farklarıyla özetliyor.</p>
+<table>
+  <tr><th>Özellik</th><th>Wi-Fi 6 (802.11ax)</th><th>Wi-Fi 6E</th><th>Wi-Fi 7 (802.11be)</th></tr>
+  <tr><td>Bantlar</td><td>2.4 GHz + 5 GHz</td><td>2.4 GHz + 5 GHz + 6 GHz</td><td>2.4 GHz + 5 GHz + 6 GHz</td></tr>
+  <tr><td>Teorik en yüksek hız</td><td>≈ 9.6 Gbps</td><td>≈ 9.6 Gbps (6 GHz eklenir)</td><td>≈ 46 Gbps</td></tr>
+  <tr><td>Gerçek ev faydası</td><td>Yoğun cihazda kararlılık</td><td>Temiz, kalabalıksız 6 GHz kanalları</td><td>Çoklu bağlantı, daha düşük gecikme</td></tr>
+  <tr><td>Gecikme (latency)</td><td>İyi</td><td>İyi</td><td>Çok iyi (oyun/VR için belirgin fark)</td></tr>
+  <tr><td>Cihaz uyumu</td><td>Çok yaygın</td><td>Orta (2022+ üst modeller)</td><td>Sınırlı (2024+ amiral gemileri)</td></tr>
+  <tr><td>Kim için</td><td>Çoğu ev için yeterli</td><td>Kalabalık apartman, temiz kanal isteyenler</td><td>Bulut oyun, VR, çok yüksek hızlı paket</td></tr>
+  <tr><td>Fiyat bandı</td><td>En uygun</td><td>Orta</td><td>En yüksek</td></tr>
+</table>
+<p>Kararken üç noktaya bakın: <strong>WAN portunun</strong> paket hızını desteklemesi (1 Gbps portla
+1000 Mbps paket çalışmaz), <strong>işlemci belleğinin</strong> aynı anda kaç cihazı taşıyacağı ve
+<strong>mobil uygulama üzerinden yönetim</strong> imkânı. Evde 4-5 kişi ve 20+ cihaz varsa Wi-Fi 6
+hâlâ en mantıklı yatırımdır; 6 GHz'in kalabalıktan uzak kanallarından faydalanacak bir kullanıcıysanız
+6E, oyun/VR ağırlıklıysanız ve cihaz parkınız yeni ise Wi-Fi 7 düşünülebilir. Notebook tarafında
+bağlantı standardının yanı sıra donanımın da önemli olduğunu
+<a href="2026da-en-iyi-10-notebook-onerisi.html">2026 notebook öneri listemizde</a> ayrıntılı
+değerlendirdik.</p>
+""" + fig('442150',
+          'Sunucu kabini önünde ağ kablolarını düzenleyen bir ağ uzmanı',
+          'Doğru donanım, doğru port ve doğru kablo: hız paketle değil, uçtan uca zincirin en zayıf halkasıyla sınırlıdır.') + u"""
+<h2>Turkcell, Türk Telekom ve Vodafone: Fiber Paket Kontrol İpuçları</h2>
+<p>Paket seçerken tarafsız ve genel geçerli üç kural işinizi kolaylaştırır:</p>
+<ul>
+  <li><strong>İndirme ve yükleme değerlerini ayrı okuyun.</strong> Simetrik fiber (örneğin 100/100)
+  ile asimetrik VDSL paket (100/10) aynı fiyat etiketinde bile farklı deneyim verir; evden çalışanlar
+  için yükleme hızı en az indirme kadar önemlidir.</li>
+  <li><strong>Kapsama ve taahhüt süresini karşılaştırın.</strong> Adresinizde hangi teknolojinin
+  (fiber, VDSL, kablo) olduğu binadan binaya değişir; kampanya sayfasındaki hız, adresinize gerçekten
+  ulaşan hız olmayabilir. Taahhüt süresi, bedelsiz modem ve kurulum gibi kalemleri tek tek not alın.</li>
+  <li><strong>Kampanya bitişini ve taahhütsüz fiyati hesaplayın.</strong> İlk yıl indirimli paketin
+  ikinci yıl rakamını önceden öğrenin; 12 ay sonra fatura aniden ikiye katlanıyorsa "ucuz paket"
+  toplam maliyet olarak pahalıya gelir.</li>
+  <li><strong>Gerçek ölçümü kablo üzerinden yapın.</strong> Operatör uygulaması iyi bir başlangıç
+  noktasıdır; ancak karar için modeme ethernet ile bağlanıp Ookla testi yapın ve yoğun saatte tekrarlayın.
+  Arıza kaydı açarken bu iki ölçümü yan yana sunmak, süreci hızlandırır.</li>
+</ul>
+
+<h2>Sıkça Sorulan Sorular (SSS)</h2>
+<h3>Hız testinde 100 Mbps çıkıyor ama internet yine yavaş, neden?</h3>
+<p>Çünkü hız tek başına yeterli değil. Gecikme (ping) yüksekse, yükleme hızı düşükse, Wi-Fi kanalı
+kalabalıksa ya da arka planda yedekleme/işlem yapıyorsa hissettiğiniz hız düşer. Testi kablo ile
+tekrarlayın, ping değerine bakın ve ağdaki diğer cihazların veri kullanımını kontrol edin.</p>
+<h3>Hangi DNS daha hızlı: 1.1.1.1 mi 8.8.8.8 mi?</h3>
+<p>İkisi de sağlayıcının varsayılan DNS'inden genellikle daha hızlıdır ve aradaki fark çoğu kullanıcıda
+ölçülür düzeyde değildir. Bölgenize göre değişebileceği için ikisini de deneyip yanıt süresi (ms)
+düşük olanı bırakmak en pratik yöntemdir. Güvenlik tarafında her ikisi de şifreli (DoH/DoT) seçenek
+sunar.</p>
+<h3>Wi-Fi 7'ye geçmek hızımı gerçekten ikiye katlar mı?</h3>
+<p>Hayır, tek başına katiyen. Sonucunuz üç şeyle sınırlıdır: sağlayıcı paketiniz, modem/router'ın WAN
+portu ve kullandığınız cihazın Wi-Fi standardı. Wi-Fi 7, kalabalık ağda gecikmeyi ve çoklu bağlantıyı
+iyileştirir; ancak 100 Mbps'lik pakette 1 Gbps'lik cihaz, aynı 100 Mbps'i alır. Önce paket-port-cihaz
+üçgenini eşleştirin.</p>
+<h3>Mesh mi, güçlü tek router mı?</h3>
+<p>Tek katlı, orta boy bir evde doğru konumlandırılmış güçlü bir router çoğu zaman mesh'ten daha
+ekonomik ve hızlıdır. 3+ kat, kalın duvar veya ölü bölge varsa mesh, tekrarlanan sinyal kaybını
+ortadan kaldırdığı için tercih edilmelidir. Karar vermeden önce farklı noktalarda hız testi yapıp
+haritayı çıkarın.</p>
+
+<h2>Sonuç: Önce Ölç, Sonra Ayarla, En Son Paketi Büyüt</h2>
+<p>İnternet hızı çoğu zaman bir "daha pahalı paket" sorunu değil; <strong>ölçüm, konum, kanal ve
+öncelik</strong> sorunudur. 15 çözümün tamamı ücretsiz olmasa da büyük bölümü on dakikalık iştir:
+DNS'i değiştirin, router'ı taşıyın, kalabalık kanaldan çıkın, ağır cihazları kabloya bağlayın,
+firmware'i güncelleyin ve QoS ile öncelikleri düzenleyin. Bu adımların ardından ölçtüğünüz değer
+hâlâ paketinizin altındaysa, o zaman operatörle ve tarifeyle konuşmanın vakti gelmiştir. Unutmayın:
+en hızlı bağlantı, ölçtüğünüz ve anladığınız bağlantıdır.</p>
+<p><em>Bu makale TechWave tarafından hazırlanmıştır.</em></p>
+"""
+
+FIG = fig  # noqa
+
+HEAD = u"""<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; } }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="__DESC__">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>__TITLE__ &mdash; TechWave</title>
+  <meta property="og:title" content="__TITLE__ &mdash; TechWave">
+  <meta property="og:description" content="__DESC__">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="__HERO__">
+  <link rel="canonical" href="https://techwaveblog.site/articles/__SLUG__.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "__TITLE__",
+    "author": {"@type": "Person", "name": "TechWave Ekibi"},
+    "datePublished": "__DATEISO__",
+    "description": "__DESC__",
+    "publisher": {"@type": "Organization", "name": "TechWave", "url": "https://techwaveblog.site"},
+    "mainEntityOfPage": "https://techwaveblog.site/articles/__SLUG__.html",
+    "image": "__HERO__"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "TechWave Ekibi",
+    "jobTitle": "Teknoloji ve Yapay Zeka Yazarı",
+    "url": "https://techwaveblog.site",
+    "sameAs": [],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "TechWave"
+    }
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<meta name="google-translate-customization" content="YOUR-ID">
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'en,ar,de,es,fr,ru,ja,ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.goog-te-gadget {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+}
+.goog-te-gadget-simple {
+  border: 1px solid #e0e7ff !important;
+  border-radius: 8px !important;
+  background: white !important;
+  padding: 4px 8px !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #1e293b !important;
+  font-family: 'Inter', sans-serif !important;
+}
+body {
+  position: relative;
+}
+#google_translate_element {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+</style>
+<!-- /Google Translate -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+  <article class="article-page">
+    <div class="container">
+      <div class="article-header">
+        <span class="card-tag" data-category="__CAT__">__CAT__</span>
+        <h1 class="article-title">__TITLE__</h1>
+        <div class="article-meta">
+          <span>📅 __DATE__</span>
+          <span>⏱️ __READ__</span>
+          <span>✍️ Çağlar Çelik</span>
+        </div>
+      </div>
+      <div class="article-hero">
+        <img src="__HERO__" alt="__TITLE__" loading="eager">
+      </div>
+      <div class="article-content">
+__BODY__
+      </div>
+      <div class="article-tags">
+        <span class="card-tag" data-category="__CAT__">__CAT__</span>
+      </div>
+    </div>
+    <div class="container">
+    <div class="author-box">
+      <div class="author-avatar">ÇÇ</div>
+      <div class="author-info">
+        <div class="author-name">Çağlar Çelik</div>
+        <p class="author-bio">TechWave'in kurucusu ve editörü. Yapay zeka araçları, yazılım ve siber güvenlik konularını yakından takip ediyor; rehberleri kendi deneyim ve araştırmalarıyla hazırlıyor. <a href="../hakkimizda.html">Hakkında daha fazla bilgi</a></p>
+      </div>
+    </div>
+  </div>
+
+</article>
+  <div class="container">
+    <div class="newsletter-cta">
+      <h3>📬 TechWave Bültenine Katılın</h3>
+      <p>Her hafta yapay zeka, yazılım ve teknoloji dünyasından en güncel gelişmeler doğrudan e-posta kutuna gelsin.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Teşekkürler! Bültenimize başarıyla katıldınız.');">
+        <input type="email" placeholder="E-posta adresiniz" required>
+        <button type="submit">Katıl</button>
+      </form>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+          <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;"> 𝕏 X'te takip et: @blogTechWave</a>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../kategori.html">Kategoriler</a></li>
+            <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+          <ul class="footer-links">
+            <li><a href="../kategori.html">Yapay Zeka</a></li>
+            <li><a href="../kategori.html">Yazılım</a></li>
+            <li><a href="../kategori.html">Python</a></li>
+            <li><a href="../kategori.html">AI Araçları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+"""
+
+
+def esc(s):
+    return s.replace('&', '&amp;').replace('"', '&quot;')
+
+
+def build_article():
+    hero_url = pexels(HERO)
+    page = HEAD
+    page = page.replace('__DESC__', esc(DESC))
+    page = page.replace('__TITLE__', TITLE)
+    page = page.replace('__HERO__', hero_url)
+    page = page.replace('__SLUG__', SLUG)
+    page = page.replace('__DATEISO__', DATE_ISO)
+    page = page.replace('__CAT__', CAT)
+    page = page.replace('__DATE__', DATE)
+    page = page.replace('__READ__', READ)
+    page = page.replace('__BODY__', BODY)
+    with io.open(ART, 'w', encoding='utf-8') as f:
+        f.write(page)
+    return page
+
+
+def update_index():
+    with io.open('index.html', 'r', encoding='utf-8') as f:
+        t = f.read()
+    marker = '<div class="card-grid">'
+    i = t.find(marker)
+    if i < 0:
+        raise SystemExit('card-grid not found')
+    if SLUG in t:
+        print('index: card already present, skipping')
+        return
+    card = (
+        marker + '\n'
+        '        <!-- YENİ MAKALE — Otomatik eklendi -->\n'
+        '        <article class="card" data-category="%s">\n'
+        '          <div class="card-img"><img src="%s" alt="%s" loading="lazy"></div>\n'
+        '          <div class="card-body">\n'
+        '            <span class="card-tag" data-category="%s">%s</span>\n'
+        '            <h2 class="card-title">\n'
+        '              <a href="articles/%s.html">%s</a>\n'
+        '            </h2>\n'
+        '            <p class="card-excerpt">%s</p>\n'
+        '            <div class="card-meta">\n'
+        '              <span>📅 %s</span>\n'
+        '              <span>⏱️ %s</span>\n'
+        '            </div>\n'
+        '          </div>\n'
+        '        </article>\n' % (
+            CAT, pexels(HERO), esc(TITLE), CAT, CAT, SLUG, TITLE,
+            EXCERPT, DATE, READ)
+    )
+    t = t[:i] + card + t[i + len(marker):]
+    with io.open('index.html', 'w', encoding='utf-8') as f:
+        f.write(t)
+
+
+def update_sitemap():
+    with io.open('sitemap.xml', 'r', encoding='utf-8') as f:
+        t = f.read()
+    if SLUG in t:
+        print('sitemap: url already present, skipping')
+        return
+    entry = (
+        '  <url>\n'
+        '    <loc>https://techwaveblog.site/articles/%s.html</loc>\n'
+        '    <lastmod>%s</lastmod>\n'
+        '    <changefreq>weekly</changefreq>\n'
+        '    <priority>0.8</priority>\n'
+        '  </url>\n' % (SLUG, DATE_ISO)
+    )
+    idx = t.rfind('</urlset>')
+    t = t[:idx] + entry + t[idx:]
+    with io.open('sitemap.xml', 'w', encoding='utf-8') as f:
+        f.write(t)
+
+
+def word_count():
+    txt = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', BODY, flags=re.DOTALL)
+    txt = re.sub(r'<[^>]+>', ' ', txt)
+    txt = htmlmod.unescape(txt)
+    words = [w for w in re.split(r'\s+', txt) if w]
+    return len(words)
+
+
+EXCERPT = ("2026'da internet hızını artıran 15 pratik çözüm: DNS (1.1.1.1), modem konumu, 2.4/5 GHz "
+           "kanal seçimi, kablo vs Wi-Fi, QoS, firmware, IPv6, mesh, fiber paket kontrolü, VPN hız "
+           "kaybı, mobil APN ayarları, hız testi yorumlama; Wi-Fi 6/6E/7 satın alma tablosu, "
+           "operatör fiber ipuçları ve SSS.")
+
+if __name__ == '__main__':
+    build_article()
+    update_index()
+    update_sitemap()
+    print('OK words=%d images=%d' % (word_count(), BODY.count('images.pexels.com')))
