@@ -1,0 +1,259 @@
+# -*- coding: utf-8 -*-
+"""2026 bluetooth hoparlör makalesi - UTF-8 ile üretim."""
+import io, os, re, sys
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+SLUG = "2026nin-en-iyi-10-bluetooth-hoparloru-ses-kalitesi"
+TITLE = "2026'nın En İyi 10 Bluetooth Hoparlörü: Her Bütçeye Ses Kalitesi"
+DESC = ("2026'nın en iyi 10 Bluetooth hoparlörü: JBL, Sony, Bose, Marshall, Anker Soundcore, "
+        "Xiaomi, Tribit, Edifier, UE ve Denon; LDAC/LC3 kodek rehberi, IP67 su geçirmezlik, "
+        "pil ve güç karşılaştırma tablosu, kullanım amacına ve bütçeye göre seçim tabloları, SSS.")
+HERO = "13465232"
+BASE = "https://images.pexels.com/photos/{0}/pexels-photo-{0}.jpeg?auto=compress&cs=tinysrgb&w=1200"
+
+
+def fig(pid, alt, cap):
+    return ('<figure style="margin: 24px 0; text-align: center;">\n'
+            '  <img src="' + BASE.format(pid) + '" alt="' + alt + '" style="width:100%; border-radius: 12px;" loading="lazy">\n'
+            '  <figcaption style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">' + cap + '</figcaption>\n'
+            '</figure>\n')
+
+
+CONTENT = u"""
+<h2>2026'da Taşınabilir Ses: Kodekler, IP Sınıfları ve Parti Modu</h2>
+<p>Taşınabilir hoparlör pazarı 2026'da tek bir yerde değil, aynı anda üç yerde değişti. Birincisi <strong>aktarıcının (kodek) kendisi</strong>: Bluetooth 5.3-5.4 üzerinden <strong>LDAC</strong> artık 1.000 TL bandındaki modellere kadar indi, LE Audio'nun <strong>LC3</strong> kodeki ise aynı bit hızında belirgin biçimde daha dolu bir ses ve çok daha düşük gecikme sağlıyor. İkincisi <strong>dayanıklılık sınıfı</strong>: IP67, yani bir metre derinlikte 30 dakika su altında kalabilme ölçütü, 2026'da orta segmentin standart hâline geldi; plaj, havuz başı ve kamp kullanımı için "su sıçramasına dayanıklı" ibaresi artık yeterli bir argüman değil. Üçüncüsü ise <strong>yazılım tarafı</strong>: cihaz başına eşleştirme (multipoint), iki hoparlörü bir araya getiren gerçek stereo çiftleme (TWS / party mode) ve uygulama içi <strong>AI ses iyileştirme</strong> — ortam gürültüsüne, ses seviyesine ve çalan türüne anlık olarak uyum sağlayan EQ profilleri bu yıl standartlaştı.</p>
+<p>Bu üç gelişme, "en iyi hoparlör" sorusunu tek bir modelle cevaplanamaz hâle getirdi. Kamp için 400 gram ve IP67 şartken, salon partisi için 250 W'ye yakın güç ve bas derinliği belirleyici; mutfak tezgâhında ise sessiz çalışma, tek elle kullanım ve sesli asistan entegrasyonu öne çıkıyor. Bu rehber on modeli <strong>on ayrı ihtiyaç</strong> olarak ele alıyor; ardından güç, frekans tepkisi, kodek ve IP değerlerini tek tabloda toplayan satın alma rehberi, kullanım amacına göre seçim tablosu, bütçe aralıkları ve sık sorulan sorular geliyor.</p>
+""" + fig("14017572", "Ahşap masa üzerinde akıllı telefonun yanında duran taşınabilir Bluetooth hoparlör",
+         "2026'da doğru hoparlör kararı, teknik kağıttan çok kullanım senaryonuzla başlıyor: telefonla eşleşip her yere sizinle gelen mi, yoksa sabit bir köşede kalan mı?") + u"""
+<h2>1. JBL Charge 6 / Flip 7 / Xtreme 4 - Her Bütçeye JBL Merdiveni</h2>
+<p>JBL'in üçlüsü, listeyi bir sıralama değil bir <strong>merdiven</strong> olarak kuran model ailesi. En alt basamakta <strong>Flip 7</strong> var: avuç içine sığan silindirik gövde, 30 W civarı çıkış ve yaklaşık 14 saatlik pil ile günlük taşımanın en dengeli cevabı. Orta basamak <strong>Charge 6</strong>, üstündeki USB-C portuyla telefona geri şarj verebilen bir power bank işlevini ses kalitesiyle birleştiriyor; 40-45 W çıkış, 24 saate ulaşan pil ve IP67 ile "bir kere al, yıllarca kullan" segmentini temsil ediyor. Üst basamak <strong>Xtreme 4</strong> ise yaklaşık 70 W güç, iki pasif radyatör ve omuz askısıyla plajdan bahçeye kadar geniş alanları dolduruyor.</p>
+<p>Yazılım tarafında JBL One uygulaması her üç modelde de çevrimiçi EQ, <strong>Auracast</strong> ile aynı anda birden fazla uyumlu cihaza tek kaynaktan yayın ve zincirleme eşleştirme imkânı sunuyor. Kodek tarafında LDAC yok; onun yerine <strong>SBC/AAC + geliştirilmiş JBL algoritması</strong> tercih edilmiş. Android'de yüksek çözünürlüklü dinleme önceliği olanlar için bu eksik; ancak parti, açık alan ve dayanıklılık öncelikli kullanıcılar için bu üçlü 2026'nın en güvenli yatırımı.</p>
+<ul>
+  <li><strong>Güç:</strong> Flip 7 ~30 W / Charge 6 ~45 W / Xtreme 4 ~70 W</li>
+  <li><strong>Pil:</strong> 14 saat / 24 saat / 24 saat (USB-C hızlı şarj)</li>
+  <li><strong>IP sınıfı:</strong> IP67 (üçü de toza ve suya dayanıklı)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, Auracast yayını</li>
+  <li><strong>Fiyat:</strong> Flip 7 ~6.500-8.000 TL, Charge 6 ~11.000-13.000 TL, Xtreme 4 ~16.000-19.000 TL</li>
+</ul>
+""" + fig("4917455", "Yüzey üzerinde duran siyah JBL taşınabilir hoparlörün yakın çekim fotoğrafı",
+         "JBL'in Flip-Charge-Xtreme merdiveni, aynı ses karakterini üç farklı boyutta sunuyor: aynı ev, farklı oda.") + u"""
+<h2>2. Sony SRS-XB100 / ULT Field 3 - Bas ve LDAC Dengesi</h2>
+<p>Sony, taşınabilir tarafında iki uçla konuşuyor. Küçük olan <strong>SRS-XB100</strong>: yaklaşık 200 gram, tek sürücü, kayış halkası ve 16 saatlik pil ile çantada unutulmayacak kadar hafif bir başlangıç modeli. Büyük olan ise <strong>ULT Field 3</strong> (eski EXTRA BASS / WONDER serisinin ruhunu devam ettiren seri): 30 W'e yakın çıkış, 24 saat pil, <strong>IP67</strong> ve tek tuşla açılan <strong>ULT bas modu</strong>, düşük frekansları anında şişirerek açık havada kaybolmayan bir dolgu sağlıyor.</p>
+<p>Sony'nin asıl farkı kodek tarafında: <strong>LDAC</strong> desteği, yüksek çözünürlüklü kaynaktan faydalanan nadir taşınabilir modellerden biri yapıyor: Tidal, Qobuz ve benzeri servislerden gelen sinyal, kablosuz yolda bozulmadan hoparlöre ulaşıyor. <strong>Party Connect</strong> ile 100'e yakın uyumlu Sony hoparlörü tek akışta bağlamak mümkün; <strong>Stereo Pair</strong> ise iki cihazı sağ-sol olarak ayırıp salonu gerçek bir çift hoparlöre dönüştürüyor. Mikrofon kalitesi görüşme için yeterli, ANC ise bu sınıfta beklenmemeli.</p>
+<ul>
+  <li><strong>Güç:</strong> XB100 ~20 W / ULT Field 3 ~30 W (ULT modu ile bas artışı)</li>
+  <li><strong>Pil:</strong> 16 saat / 24 saat, USB-C</li>
+  <li><strong>IP sınıfı:</strong> IP67 (her ikisi de toz ve su geçirmez)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, <strong>LDAC</strong>, Party Connect / Stereo Pair</li>
+  <li><strong>Fiyat:</strong> XB100 ~2.500-3.000 TL, ULT Field 3 ~9.000-11.000 TL</li>
+</ul>
+<h2>3. Bose SoundLink Flex (2. Nesil) / SoundLink Max - Derinlik Önceliği</h2>
+<p>Bose, ölçülebilir watt yerine <strong>sesin yapısına</strong> yatırım yapan bir marka. <strong>SoundLink Flex</strong> ikinci nesil, kompakt gövdede PositionIQ ile cihazın yatay mı dikey mi durduğuna bakıp sahneyi otomatik düzenliyor; 12 saat pil ve <strong>IP67</strong> ile duş başında, teknedeki ve mutfakta da güvenle kullanılabiliyor. Üst segment <strong>SoundLink Max</strong> ise daha büyük sürücüler ve pasif radyatörlerle düşük orta frekansta rakiplerden daha dolgun bir gövde sunuyor; 20 saati geçen pili ve yumuşak kauçuk kaplamasıyla uzun oturumlarda en konforlu modellerden biri.</p>
+<p>Bose'un tercih ettiği kodekler <strong>SBC ve AAC</strong>; Android'de LDAC arayanlar için bir eksik, ancak iOS kullanıcıları için AAC zaten en doğal yol. <strong>SoundLink Amplify / Stereo pairing</strong> ile iki cihaz eşleştiğinde gerçek sol-sağ ayrımı oluşuyor. Sürüklenmeye ve çizilmeye dirençli dış yüzey, Bose'un bu seriyi özellikle <strong>seyahat ve tekne/kampl</strong> için konumlandırdığını gösteriyor.</p>
+<ul>
+  <li><strong>Güç:</strong> SoundLink Flex ~35 W sınıfı / SoundLink Max ~60 W sınıfı</li>
+  <li><strong>Pil:</strong> 12 saat / 20+ saat, USB-C</li>
+  <li><strong>IP sınıfı:</strong> IP67 (her ikisi de suya ve toza dayanıklı)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, Stereo Pairing, Bose SimpleSync</li>
+  <li><strong>Fiyat:</strong> SoundLink Flex ~9.000-11.000 TL, SoundLink Max ~18.000-22.000 TL</li>
+</ul>
+""" + fig("31748137", "Saplı siyah taşınabilir hoparlörün modern iç mekân çekimi",
+         "Sap ve yumuşak kaplama, hoparlörü elde taşınır hâle getiren detaylar: 2026'da ağırlık kadar tutuş hissi de satıyor.") + u"""
+<h2>4. Marshall Emberton III / Middleton / Kilburn - Sahne Karakteri</h2>
+<p>Marshall, listeyi <strong>tasarım ve sahne</strong> tarafında ayıran marka. <strong>Emberton III</strong>, avuç içine sığan dikdörtgen gövdesinde üç sürücü ve iki pasif radyatör taşıyor; yaklaşık 12 saat pil, <strong>IP67</strong> ve <strong>Stack Mode</strong> ile 30 hoparlöre kadar zincir kurma imkânı sunuyor. Orta boy <strong>Middleton</strong> iki yönlü sürücü dizilimiyle daha geniş bir odayı dolduruyor, 20 saati aşan piliyle tüm gün açık kalmaya uygun. Plaj ve kamp için <strong>Kilburn III</strong> ise askı kayışı ve derin basıyla Marshall'ın "portable" (taşınabilir) kanadını temsil ediyor.</p>
+<p>Ses karakteri rakiplerden açıkça farklı: <strong>yüksek ve üst-orta frekanslarda keskinlik</strong>, vokal ve gitar için ayrı bir okunabilirlik, bas ise miktar yerine tanım üzerinden veriliyor. Indie, rock, caz ve podcast dinleyicileri için doğru tercih; sub-bass ağırlıklı elektronik müzikte ULT veya Boom serisi daha fazla derinlik verebilir. Kaplama gerçek deri dokusu, kontroller ise altın rengi düğmelerle markanın amfisi dilini taşıyor.</p>
+<ul>
+  <li><strong>Güç:</strong> Emberton III ~20 W / Middleton ~40-60 W sınıfı / Kilburn III ~60 W</li>
+  <li><strong>Pil:</strong> 12 saat / 20+ saat / 12+ saat, USB-C</li>
+  <li><strong>IP sınıfı:</strong> IP67 (Emberton III ve Middleton), IP65 (Kilburn III)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, Stack Mode, uygulama içi 3 bant EQ</li>
+  <li><strong>Fiyat:</strong> Emberton III ~12.000-14.000 TL, Middleton ~18.000-21.000 TL, Kilburn III ~14.000-16.000 TL</li>
+</ul>
+""" + fig("27682103", "Ahşap rafta duran siyah Marshall Bluetooth hoparlörü",
+         "Marshall, hoparlörü bir mobilya parçasına dönüştürüyor: sehpanın üstünde dururken de bir dekor öğesi.") + u"""
+<h2>5. Anker Soundcore Motion X600 / Boom 2 - Fiyat/Performansın Merkezi</h2>
+<p>Soundcore, 2026'da fiyat/performans tablosunu <strong>LDAC</strong> ile yeniden yazan marka. <strong>Motion X600</strong>, Hi-Res Wireless sertifikalı sürücü düzeneği, 80 W'e ulaşan çıkışı ve <strong>IPX7</strong> ile yaklaşık 10.000 TL bandında, üst segmentin büyük bölümünden daha yüksek çözünürlüklü bir aktarım sunuyor. Üstündeki ışık çemberi ortamla senkronize oluyor; ancak asıl fark, açık alanda ses basıncını bozmadan yüksek ses seviyesinde dağılmayan tutarlılığı.</p>
+<p>Bütçe tarafında <strong>Boom 2</strong>, 80 W güç, 24 saat pil ve <strong>IPX7</strong> ile parti/ocakbaşı senaryosunun en güçlü adayı; <strong>Motion 300</strong> ise 30 W, IPX7 ve LDAC ile 3.000 TL altının en dengeli taşınabilir seçeneği. Anker'in Soundcore uygulaması 9 bant EQ, BassUp, oyun modu (düşük gecikme) ve çoklu cihaz bağlantısı gibi detayları ücretsiz sunuyor — abonelik duvarı yok.</p>
+<ul>
+  <li><strong>Güç:</strong> Motion 300 ~30 W / Boom 2 ~80 W / Motion X600 ~80 W</li>
+  <li><strong>Pil:</strong> 13 saat / 24 saat / 12 saat, USB-C</li>
+  <li><strong>IP sınıfı:</strong> IPX7 (su altında kalabiliyor), Motion X600 IPX7</li>
+  <li><strong>Kodek:</strong> SBC, AAC, <strong>LDAC</strong> (Motion 300 ve X600), BassUp</li>
+  <li><strong>Fiyat:</strong> Motion 300 ~3.000-3.500 TL, Boom 2 ~6.000-7.500 TL, Motion X600 ~9.000-11.000 TL</li>
+</ul>
+<h2>6. Xiaomi Bluetooth Hoparlörler - Küçük Gövdede Büyük Değer</h2>
+<p>Xiaomi, taşınabilir ses tarafında iki ayrı segmente giriyor. Cebi genişletmeyen <strong>Mi Portable Bluetooth Speaker (Mini)</strong> sınıfı, 1.500 TL altında <strong>IP67</strong>, TWS stereo eşleştirme ve 10 saati aşan pil ile öğrencinin ve ofis masasının başlangıç modeli. Üst tarafta ise <strong>Xiaomi Sound Move</strong> ve <strong>Sound Party</strong> ailesi geliyor: daha büyük sürücüler, daha geniş bas, Chromecast/AirPlay ve <strong>LDAC</strong> desteği sayesinde ev içi kullanım ile dış mekân arasında gidip gelen bir "hibrit" konumlandırma.</p>
+<p>Xiaomi'nin avantajı ekosistem: aynı ağdaki <strong>Xiaomi Smart Speaker</strong> modelleriyle çoklu oda (multi-room) kurulabiliyor, Google Home ve Mi Home uygulamalarından tek ekrandan yönetilebiliyor. Kontrol tarafında fiziksel tuşlar yeterli, ancak mikrofon performansı sesli asistan komutlarında sınırlı; müzik dinleme odaklı kullanım için sorun değil.</p>
+<ul>
+  <li><strong>Güç:</strong> Mi Portable Mini ~5-10 W / Sound Move ~30-40 W / Sound Party ~40 W</li>
+  <li><strong>Pil:</strong> 10 saat / 9 saat / 12 saat, USB-C</li>
+  <li><strong>IP sınıfı:</strong> IP67 (Mini), IP66 (Sound Move), IPX5 (Sound Party)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, <strong>LDAC</strong> (üst modeller), TWS, Chromecast / AirPlay 2</li>
+  <li><strong>Fiyat:</strong> Mi Portable ~1.200-1.500 TL, Sound Move ~4.000-5.000 TL, Sound Party ~4.500 TL</li>
+</ul>
+""" + fig("19652337", "Ahşap masada duran kablosuz akıllı hoparlör",
+         "Evde sabit duran bir hoparlör artık müziğin yanı sıra ışık, alarm ve ev otomasyonu köprüsü.") + u"""
+<h2>7. Tribit StormBox / Edifier MP100 - 1.500-4.000 TL Aralığının Gerçek Rakipleri</h2>
+<p>Listede bütçe tarafını iki marka taşıyor. <strong>Tribit</strong>, özellikle <strong>XSound Plus 2</strong> ile 24 W güç, 24 saat pil, IPX7 ve bu fiyat bandında nadir görülen <strong>LDAC</strong> desteğini aynı pakette veriyor; <strong>StormBox 2</strong> ise 40 W'e yakın çıkışı ve 360 derece yayılımıyla açık alan için tasarlanmış. Şirketin Android uygulaması EQ ve firmware güncellemesini sorunsuz yönetiyor, ancak Türkçe arayüz yok.</p>
+<p><strong>Edifier</strong> tarafında <strong>MP100 / MP100 Pro</strong> kompakt gövdede IPX7 ve TWS çiftleme sunarken, masaüstü köşesi için <strong>Edifier D8</strong> sabit kullanımda daha geniş bir sürücü dizilimi getiriyor. Edifier'ın farkı kalibre edilmiş, <strong>faz uyumlu</strong> bir dengesi olması: bas şişirmeden, vokali öne almayan dengeli bir imza arayan podcast ve akustik dinleyicileri için Tribit'in daha "parti" karakterinden farklı bir profil çiziyor.</p>
+<ul>
+  <li><strong>Güç:</strong> Edifier MP100 ~10-20 W / Tribit XSound Plus 2 ~24 W / Tribit StormBox 2 ~40 W</li>
+  <li><strong>Pil:</strong> 6-10 saat / 24 saat / 24 saat, USB-C</li>
+  <li><strong>IP sınıfı:</strong> IPX7 (her iki markada da su geçirmez)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, <strong>LDAC</strong> (XSound Plus 2), TWS stereo</li>
+  <li><strong>Fiyat:</strong> Edifier MP100 ~1.800-2.200 TL, Tribit XSound Plus 2 ~2.500-3.000 TL, StormBox 2 ~3.500-4.000 TL</li>
+</ul>
+""" + fig("4306972", "Gece boyunca DJ ve kalabalıkla yaşanan hareketli parti atmosferi",
+         "Parti modunda tek hoparlör yetmez: 360 derece yayılım ve zincirleme eşleştirme, sesin odayı gerçekten doldurmasını sağlıyor.") + u"""
+<h2>8. Ultimate Ears Boom 4 (Logitech) - 360 Derece Taşıma</h2>
+<p>Logitech bünyesindeki <strong>Ultimate Ears (UE)</strong>, 360 derece yayılım fikrini ilk popülerleştiren marka ve <strong>Boom 4</strong> ile bu kimliği sürdürüyor. Silindirik gövdedeki yukarı bakan sürücüler sayesinde ses, hoparlörün yönünden bağımsız olarak eşit dağılıyor; yani grubun ortasına bırakıldığında herkes aynı deneyimi alıyor. <strong>IP67</strong> su geçirmezlik, 16 saati bulan pil ve arka yüzündeki <strong>kayış halkası</strong> ile çantaya asılarak taşınabiliyor.</p>
+<p><strong>PartyUp</strong> özelliği, tek bir telefondan 10'a kadar UE hoparlörü eşleştirip aynı müziği yayınlamanıza izin veriyor; <strong>Megaboom 4</strong> ise daha büyük sürücüler ve daha derin basla salon ve bahçe partisi için üst seçenek. Mikrofonlu, uzaktan kumandalı kontrol ve uygulama içi 4 bant EQ mevcut. Kodek tarafında SBC/AAC ile kalınıyor — LDAC beklentisi olanlar için Sony veya Soundcore tarafına bakmak gerekiyor.</p>
+<ul>
+  <li><strong>Güç:</strong> Boom 4 ~35-40 W sınıfı / Megaboom 4 ~60 W sınıfı</li>
+  <li><strong>Pil:</strong> 16 saat (Boom 4) / 20 saat (Megaboom 4), USB-C</li>
+  <li><strong>IP sınıfı:</strong> IP67, 1 metreye kadar dalışa dayanım</li>
+  <li><strong>Kodek:</strong> SBC, AAC, PartyUp (10 cihaz), uygulama EQ</li>
+  <li><strong>Fiyat:</strong> Boom 4 ~7.000-8.500 TL, Megaboom 4 ~11.000-13.000 TL</li>
+</ul>
+<h2>9. Denon Home 150 / Home 250 - Orta-Premium Ev Hoparlörü</h2>
+<p>Listedeki tek <strong>şebekeden beslenen</strong> (ve bu yüzden IP sınıfı bulunmayan) temsilci Denon. <strong>Home 150</strong> iki kanallı, kompakt bir masa/raf hoparlörü; <strong>Home 250</strong> ise daha büyük woofer ve ayrı tweeter'larıyla salonun ana ses kaynağı olabiliyor. İkisi de <strong>HEOS</strong> platformu üzerinden çoklu oda kurulumuna, <strong>Chromecast, AirPlay 2 ve Bluetooth</strong>'a bağlanıyor; üst modellerde HDMI eARC ile TV'ye doğrudan bağlanma imkânı var.</p>
+<p>Orta-premium sınıfın farkı sürücü ve amfi kalitesinde: Denon, odanın yansımasını yöneten daha geniş bir dinleme penceresi ve <strong>LDAC</strong> dahil zengin kodek listesi sunuyor. Dahili sesli asistan desteği sınırlı; ancak müzik odası, ev-ofis ve yatak odası için "hoparlör + ağ çalar" hibritini arayanların 2026'daki en tutarlı seçeneği. Taşınabilirlik beklemeyin: bu model evin kalıcı bir parçası olarak konumlanıyor.</p>
+<ul>
+  <li><strong>Güç:</strong> Home 150 ~50 W sınıfı / Home 250 ~90 W sınıfı (iki kanal)</li>
+  <li><strong>Pil:</strong> Şebeke gücü (100-240 V), taşınabilir değil</li>
+  <li><strong>IP sınıfı:</strong> İç mekân kullanımı için tasarlandı (IP koruması yok)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, <strong>LDAC</strong>, HEOS multi-room, AirPlay 2, Chromecast, HDMI eARC (Home 250)</li>
+  <li><strong>Fiyat:</strong> Home 150 ~11.000-13.000 TL, Home 250 ~17.000-20.000 TL</li>
+</ul>
+""" + fig("14577415", "Dağ manzarası önünde kırmızı taşınabilir hoparlör tutan kişi",
+         "Dış mekânda 500 gram ve IP67, 70 watt'lık bir hoparlörden daha değerli olabiliyor: öncelik kiminle taşıdığınız.") + u"""
+<h2>10. Google Nest Audio / Amazon Echo - Akıllı Hoparlörlerin İki Devi</h2>
+<p>Listeyi, taşıma derdi olmadan her an elinizin altında olan modeller kapatıyor. <strong>Google Nest Audio</strong>, iki kanallı dengeli sesi, <strong>Chromecast</strong> ile telefondan doğrudan aktarımı ve Google Asistan ile ev otomasyonu köprüsünü tek gövdede topluyor; iki cihazı <strong>stereo çift</strong> olarak eşleştirdiğinizde sağ-sol ayrımıyla gerçek bir müzik sistemi gibi davranıyor. <strong>Amazon Echo (5. nesil)</strong> ise daha geniş ses alanı, Zigbee hub entegrasyonu ve Alexa'nın Türkçe destekli akıllı ev kontrolüyle öne çıkıyor; <strong>Echo Studio</strong> üst segmentte nesnel ses (spatial audio) ve derin basla ev sinemasına da hizmet veriyor.</p>
+<p>Bu iki modelin Bluetooth tarafı temel: telefonunuzla anında eşleşip hoparlör olarak kullanılabiliyor, ancak <strong>LDAC yok</strong>. Asıl güçleri <strong>çoklu oda (multi-room)</strong>, alarm, timer, liste ve ışık kontrolü gibi günlük alışkanlıklar. Dışarıda kullanacaksanız IP koruması olmadıkları için uygun değiller; ancak mutfak, yatak odası ve ofis için 2026'nın en iyi geri dönüş oranını hâlâ onlar veriyor.</p>
+<ul>
+  <li><strong>Güç:</strong> Nest Audio ~2 x 18 W sınıfı / Echo ~2 x 16 W sınıfı / Echo Studio ~5 sürücülü, Dolby Atmos</li>
+  <li><strong>Pil:</strong> Şebeke gücü (taşınamaz), USB-C destekli modeller sınırlı</li>
+  <li><strong>IP sınıfı:</strong> İç mekân (IP koruması yok)</li>
+  <li><strong>Kodek:</strong> SBC, AAC, Chromecast / AirPlay (Nest), Alexa multi-room music, Bluetooth eşleştirme</li>
+  <li><strong>Fiyat:</strong> Echo ~3.500-4.000 TL, Nest Audio ~4.500-5.500 TL, Echo Studio ~7.500-9.000 TL</li>
+</ul>
+""" + fig("32280695", "Doğal ağaç kabuğu üzerinde duran taşınabilir Bluetooth hoparlör",
+         "IP67, toz ve suyun geçtiği tek sınır değil: darbe ve düşme testleri de dış mekân için belirleyici.") + u"""
+<h2>Satın Alma Rehberi: Güç, Frekans, Kodek ve IP</h2>
+<p>On modeli değerlendirirken dört teknik kavram belirleyici. <strong>Güç (W)</strong>: odanın büyüklüğüyle doğru orantılıdır; 10-20 m²'lik bir oda için 20-40 W yeterliyken, açık alan ve bahçe için 60 W ve üzeri gerekir. Ancak watt tek başına anlam ifade etmez — <strong>verimlilik</strong>, sürücü kalitesi ve amfi sınıfı aynı güçte çok farklı ses basıncı üretir.</p>
+<p><strong>Frekans tepkisi (Hz):</strong> "20 Hz - 20 kHz" yazan her cihaz aynı derinliği vermez. Alt uçta 60 Hz'e kadar inebilen bir hoparlör vuruşları hissettirir; 100 Hz'de kalan bir model ise orta seviyede bile "ince" duyulur. <strong>Kodek</strong> tarafında ise sıralama net: <strong>SBC</strong> evrensel ve yeterli, <strong>AAC</strong> iOS'ta en doğal yol, <strong>LDAC</strong> ise 990 kbps'e kadar çıkarak (kablosuz) kaynak dosyanın nüanslarını koruyan tek yaygın seçenek. <strong>LC3 / LE Audio</strong> 2026'da yeni cihazlara yavaşça giriyor: aynı bit hızında daha dolu ses ve belirgin biçimde daha düşük gecikme vaat ediyor.</p>
+<p><strong>IP sınıfı</strong>: IPX7 su altında kalabilmeyi, IP67 toza karşı tam koruma artı su altını, IP68 ise derinleşmiş su altını ifade eder. Kum ve toz için ilk rakam (6), su için ikinci rakam (7/8) belirleyicidir. Havuz kenarında <strong>IP67 minimum</strong>, sadece terlemeye karşı koruma isteyen iç mekân için IPX4 yeterlidir.</p>
+<table>
+  <tr><th>Model</th><th>Güç</th><th>Pil</th><th>IP</th><th>Kodek</th><th>Yaklaşık fiyat</th></tr>
+  <tr><td>JBL Flip 7</td><td>~30 W</td><td>14 saat</td><td>IP67</td><td>SBC / AAC</td><td>6.500 - 8.000 TL</td></tr>
+  <tr><td>JBL Charge 6</td><td>~45 W</td><td>24 saat</td><td>IP67</td><td>SBC / AAC</td><td>11.000 - 13.000 TL</td></tr>
+  <tr><td>JBL Xtreme 4</td><td>~70 W</td><td>24 saat</td><td>IP67</td><td>SBC / AAC</td><td>16.000 - 19.000 TL</td></tr>
+  <tr><td>Sony SRS-XB100</td><td>~20 W</td><td>16 saat</td><td>IP67</td><td>SBC / AAC</td><td>2.500 - 3.000 TL</td></tr>
+  <tr><td>Sony ULT Field 3</td><td>~30 W</td><td>24 saat</td><td>IP67</td><td>SBC / AAC / <strong>LDAC</strong></td><td>9.000 - 11.000 TL</td></tr>
+  <tr><td>Bose SoundLink Flex 2</td><td>~35 W</td><td>12 saat</td><td>IP67</td><td>SBC / AAC</td><td>9.000 - 11.000 TL</td></tr>
+  <tr><td>Bose SoundLink Max</td><td>~60 W</td><td>20+ saat</td><td>IP67</td><td>SBC / AAC</td><td>18.000 - 22.000 TL</td></tr>
+  <tr><td>Marshall Emberton III</td><td>~20 W</td><td>12 saat</td><td>IP67</td><td>SBC / AAC</td><td>12.000 - 14.000 TL</td></tr>
+  <tr><td>Marshall Middleton</td><td>~40-60 W</td><td>20+ saat</td><td>IP67</td><td>SBC / AAC</td><td>18.000 - 21.000 TL</td></tr>
+  <tr><td>Soundcore Motion 300</td><td>~30 W</td><td>13 saat</td><td>IPX7</td><td>SBC / AAC / <strong>LDAC</strong></td><td>3.000 - 3.500 TL</td></tr>
+  <tr><td>Soundcore Boom 2</td><td>~80 W</td><td>24 saat</td><td>IPX7</td><td>SBC / AAC</td><td>6.000 - 7.500 TL</td></tr>
+  <tr><td>Soundcore Motion X600</td><td>~80 W</td><td>12 saat</td><td>IPX7</td><td>SBC / AAC / <strong>LDAC</strong></td><td>9.000 - 11.000 TL</td></tr>
+  <tr><td>Xiaomi Sound Move</td><td>~30-40 W</td><td>9 saat</td><td>IP66</td><td>SBC / AAC / <strong>LDAC</strong></td><td>4.000 - 5.000 TL</td></tr>
+  <tr><td>Tribit XSound Plus 2</td><td>~24 W</td><td>24 saat</td><td>IPX7</td><td>SBC / AAC / <strong>LDAC</strong></td><td>2.500 - 3.000 TL</td></tr>
+  <tr><td>Tribit StormBox 2</td><td>~40 W</td><td>24 saat</td><td>IPX7</td><td>SBC / AAC</td><td>3.500 - 4.000 TL</td></tr>
+  <tr><td>UE Boom 4 (Logitech)</td><td>~35-40 W</td><td>16 saat</td><td>IP67</td><td>SBC / AAC</td><td>7.000 - 8.500 TL</td></tr>
+  <tr><td>Denon Home 150 / 250</td><td>~50-90 W</td><td>Şebeke</td><td>İç mekân</td><td>SBC / AAC / <strong>LDAC</strong></td><td>11.000 - 20.000 TL</td></tr>
+  <tr><td>Google Nest Audio / Echo</td><td>~2 x 16-18 W</td><td>Şebeke</td><td>İç mekân</td><td>SBC / AAC</td><td>3.500 - 5.500 TL</td></tr>
+</table>
+<h2>Kullanım Amacına Göre Seçim Tablosu</h2>
+<p>Doğru modeli bulmanın en hızlı yolu, önce kendinizi aşağıdaki tablonun bir satırında tanımlamak. Fiyat ve marka, senaryonuz belirlendikten sonra ikinci sırada gelir:</p>
+<table>
+  <tr><th>Kullanım amacı</th><th>Öncelik</th><th>Gereken değerler</th><th>Bu listedeki model</th><th>Bütçe</th></tr>
+  <tr><td><strong>Masa / ev (sabit)</strong></td><td>Dengeli ses, sessizlik, ekosistem</td><td>2 x 16-50 W, Wi-Fi/Bluetooth, çoklu oda</td><td>Google Nest Audio, Amazon Echo, Denon Home 150</td><td>3.500 - 13.000 TL</td></tr>
+  <tr><td><strong>Outdoor / kamp</strong></td><td>Ağırlık, pil, darbe ve su</td><td>≤500 g, IP67, 14+ saat, kayış</td><td>JBL Flip 7, UE Boom 4, Sony SRS-XB100</td><td>2.500 - 8.500 TL</td></tr>
+  <tr><td><strong>Plaj / havuz</strong></td><td>Kum ve su geçirmezlik</td><td>IP67-IPX7, kolon kaplaması, 20+ saat</td><td>JBL Charge 6, Bose SoundLink Flex, Tribit StormBox 2</td><td>3.500 - 13.000 TL</td></tr>
+  <tr><td><strong>Parti / salon</strong></td><td>Bas, hacim, zincirleme</td><td>60 W+, 360° yayılım, stereo pair / party mode</td><td>JBL Xtreme 4, Soundcore Boom 2, Marshall Middleton, UE Megaboom 4</td><td>6.000 - 21.000 TL</td></tr>
+  <tr><td><strong>Seyahat / valiz</strong></td><td>Hacim, hızlı şarj, dayanıklılık</td><td>≤400 g, USB-C, IP67, power bank fonksiyonu</td><td>Sony SRS-XB100, Soundcore Motion 300, JBL Charge 6</td><td>1.200 - 11.000 TL</td></tr>
+  <tr><td><strong>Ofis / podcast / vokal</strong></td><td>Okunabilirlik, dengeli imza</td><td>Orta segment güç, uygulama EQ, mikrofon</td><td>Edifier MP100/D8, Marshall Emberton III, Denon Home 150</td><td>1.800 - 14.000 TL</td></tr>
+</table>
+""" + fig("29617989", "Mor ve mavi ışık geçişli modern Bluetooth hoparlörün yakın çekimi",
+         "Işık gösterisi artık orta segmente indi: parti modunda aydınlatma, sesin ritmini görselleştirmenin en ucuz yolu.") + u"""
+<h2>Bütçeye Göre Hoparlör Seçimi</h2>
+<table>
+  <tr><th>Bütçe aralığı</th><th>Ne beklemeli</th><th>Öneri</th></tr>
+  <tr><td><strong>1.500 TL altı</strong></td><td>IPX7-IP67, 8-12 saat pil, SBC/AAC. LDAC ve güçlü bas bu bantta yok; beklentiyi "günlük müzik ve oda sesi" olarak kurun.</td><td>Xiaomi Mi Portable Bluetooth Speaker, Edifier MP100, giriş seviyesi Tribit</td></tr>
+  <tr><td><strong>1.500 - 4.000 TL</strong></td><td>LDAC'li modeller burada başlıyor: 24-40 W, 20+ saat pil, IPX7. Fiyat/performansın en rekabetli noktası.</td><td>Tribit XSound Plus 2, Soundcore Motion 300, Sony SRS-XB100, Tribit StormBox 2</td></tr>
+  <tr><td><strong>4.000 - 10.000 TL</strong></td><td>Parti modu, Auracast, gerçek stereo çiftleme ve daha derin bas. Marka garantisi ve servis ağı da öne çıkıyor.</td><td>JBL Flip 7 / Charge 6, UE Boom 4, Soundcore Boom 2, Xiaomi Sound Move, Sony ULT Field 3, Bose SoundLink Flex</td></tr>
+  <tr><td><strong>10.000 TL ve üzeri</strong></td><td>Premium malzeme, 60 W+ güç, 20+ saat pil, LDAC/HEOS ve ev ekosistemi entegrasyonu. Burada ses karakteri (Marshall vs Bose vs Denon) belirleyici.</td><td>JBL Xtreme 4, Marshall Emberton III / Middleton, Bose SoundLink Max, Soundcore Motion X600, Denon Home 150 / 250</td></tr>
+</table>
+<h2>Bluetooth Hoparlör mü, Kablosuz Kulaklık mı?</h2>
+<p>İki kategori aynı Bluetooth'u kullanıyor ama tamamen farklı bir işi yapıyor. <strong>Kulaklık</strong>, kişisel alan için: ANC ile dış dünyayı kapatır, sesi size özeldir, gece ve ortak mekânda zorunludur ama kulağı yorar. <strong>Hoparlör</strong> ise ortak deneyim için: sesi paylaşır, kulak yorgunluğu yaratmaz, alan doldurur; ancak sessizlik gerektiren ortamlarda çalışmaz. Pratik öneri: evde tek bir cihaz alacaksanız önce <strong>kulaklık</strong>, ikinciyi alacaksanız <strong>hoparlör</strong> — çünkü kulaklık, hoparlörün veremediği bir şeyi (izolasyon) sağlar; hoparlör ise kulaklığın veremediği bir şeyi (paylaşım ve alan). İkisini birlikte düşünüyorsanız, koyacağımız <a href="2026nin-en-iyi-10-kablosuz-kulakligi-ses-kalitesi-fiyat.html">2026'nın en iyi 10 kablosuz kulaklığı</a> listesi ile bu sayfayı yan yana okumanız en doğru sonucu verir. Ev sineması tarafına geçiyorsanız da <a href="2026nin-en-iyi-10-televizyonu-oled-mini-led-qled.html">2026'nın en iyi 10 televizyonu</a> rehberi, hoparlörü TV'nin sesinin yerine mi yoksa yanına mı koyacağınızı netleştirir.</p>
+<p>Bir not daha: evde kablosuz sesin tam performansı için ağınızın yeterliliği önemli. Çoklu oda ve yüksek çözünürlüklü akışta takılma yaşıyorsanız, cihazı suçlamadan önce altyapıyı kontrol edin — <a href="2026da-internet-hizi-artirma-rehberi-15-pratik-cozum.html">2026'da internet hızını artırma rehberimizdeki 15 pratik çözüm</a> bu noktada devreye giriyor.</p>
+<h2>Sıkça Sorulan Sorular (SSS)</h2>
+<h3>Bluetooth hoparlör alırken watt (güç) ne kadar önemli?</h3>
+Önemli ama tek başına yeterli değil. 10-20 m²'lik bir oda için 20-40 W, salon ve açık alan için 60 W üzeri doğru aralıktır. Aynı watt değerinde sürücü boyutu, amfi verimliliği ve pasif radyatör sayısı fark yaratır; bu yüzden ürün sayfasındaki "RMS" değerine bakın, pik (PMPO) değerine değil. Odanız küçükse 80 W'lık bir cihazı yarım seviyede kullanmak, yüksek ses kalitesi anlamına gelmez — küçük oda için dengeli 30-40 W daha iyi sonuç verir.
+<h3>LDAC gerçekten fark ediyor mu, yoksa pazarlama mı?</h3>
+Fark ediyor, ancak koşullara bağlı. LDAC, 990 kbps'e kadar çıkarak SBC'nin (≈328 kbps) belirgin biçimde üzerinde veri taşıyor; yüksek kaliteli kaynak, iyi bir amfi ve dinleme sesi yüksekse ayrıntı ve sahne genişliğinde fark duyulur. Buna karşın kalabalık bir ortamda veya düşük ses seviyesinde fark neredeyse yok. Ayrıca <strong>LDAC her iki cihazın da desteklemesini</strong> gerektirir: hoparlör LDAC destekliyorsa ama telefon desteklemiyorsa, sistem otomatik olarak AAC/SBC'ye düşer.
+<h3>IP67 su geçirmezlik, hoparlörü su altında kullanabileceğim anlamına mı geliyor?</h3>
+IP67, cihazın toza karşı tam korumalı olduğunu ve <strong>1 metre derinlikte 30 dakika</strong> boyunca su altında kalabildiğini ifade eder. Yüzme, duş ve yağmur için uygundur; ancak sıcak su, tuzlu su ve basınçlı su (duş başlığı, dalga) için geçerli değildir ve üretici garantisinin su hasarını kapsayıp kapsamadığını ayrıca okumak gerekir. Havuz kenarı için IP67, plajda kum için de yine IP67 idealdir; IPX5 gibi daha düşük sınıflar sadece sıçramaya dayanır.
+<h3>İki hoparlörü stereo olarak bağlamak gerçekten fark yaratır mı?</h3>
+Evet, özellikle geniş alanlarda. Tek hoparlör tüm sesi tek noktadan yaydığı için ortadaki dinleyici ayrıntıyı alırken kenardakiler bas basına denk gelen bir karışım duyar. Sağ-sol olarak ayrılmış iki cihaz ise <strong>gerçek bir sahne</strong> kurar; müzik ve film sesinde yön bilgisi (hangi enstrümanın solda, hanginin sağda olduğu) netleşir. Çoğu markada bu özellik uygulama içi "Stereo Pair / Stereo Pairing" ile açılır; iki cihazın aynı marka ve modele ait olması genellikle şarttır.
+<h2>Sonuç: İhtiyacın Karşılığı On Model</h2>
+<p>Listeyi tek bir "en iyi" sıralaması olarak değil, on ayrı senaryonun karşılığı olarak okumak gerekiyor. <strong>JBL Charge 6</strong> dengeli günlük kullanım, <strong>JBL Xtreme 4</strong> ve <strong>Soundcore Boom 2</strong> açık alan ve parti; <strong>Sony ULT Field 3</strong> LDAC + bas isteyen Android kullanıcısının ilk tercihi; <strong>Bose SoundLink Flex</strong> sade ve derinlik öncelikli ses arayanlara; <strong>Marshall Emberton III</strong> tasarımı ve vokal netliğini önceliğe alanlara; <strong>Tribit</strong> ve <strong>Edifier</strong> 1.500-4.000 TL bandında akıllıca taviz verenlere; <strong>UE Boom 4</strong> 360 derece taşınabilirliğe; <strong>Denon Home</strong> ev-in-içi premiuma; <strong>Nest Audio ve Echo</strong> ise her an elinizin altında, akıllı evle bütünleşik bir ses kaynağına yöneliyor.</p>
+<p>Kararı, önce kullanım amacına göre tablodaki satırınızı bulup, ardından bütçe aralığınızı seçerek verin. Sıralamayı belirleyen şey etiket fiyatı değil, <strong>ihtiyacınızın hangi satırda durduğu</strong>. Kampanya dönemlerinde fiyatlar hızlı değiştiği için satın almadan önce üretici ve satıcı sayfalarını kontrol etmeyi unutmayın.</p>
+<p><em>Bu makale TechWave tarafından hazırlanmıştır. Fiyatlar ve stok durumu yayın tarihi itibarıyla tahminidir; satın almadan önce resmî mağaza sayfalarını kontrol edin.</em></p>
+"""
+
+
+def main():
+    ref_path = "articles/2026nin-en-iyi-10-monitoru-oyun-ofis-yaratici-isler.html"
+    ref = open(ref_path, encoding="utf-8").read()
+
+    old_slug = "2026nin-en-iyi-10-monitoru-oyun-ofis-yaratici-isler"
+    old_title = "2026'nın En İyi 10 Monitörü: Oyun, Ofis ve Yaratıcı İşler İçin"
+    old_desc = ref.split('<meta name="description" content="')[1].split('"')[0]
+    old_hero_url = "https://images.pexels.com/photos/37698747/pexels-photo-37698747.jpeg?auto=compress&cs=tinysrgb&w=1200"
+
+    out = ref
+
+    # canonical + JSON-LD mainEntityOfPage
+    out = out.replace(old_slug, SLUG)
+    # hero / og:image / JSON-LD image
+    out = out.replace(old_hero_url, BASE.format(HERO))
+    # meta description
+    out = re.sub(r'(<meta name="description" content=")[^"]*(">)',
+                 lambda m: m.group(1) + DESC + m.group(2), out, count=1)
+    # title
+    out = re.sub(r"<title>.*?</title>",
+                 "<title>" + TITLE + " &mdash; TechWave</title>", out, count=1, flags=re.S)
+    # og:title
+    out = re.sub(r'(<meta property="og:title" content=")[^"]*(">)',
+                 lambda m: m.group(1) + TITLE + " &mdash; TechWave" + m.group(2), out, count=1)
+    # og:description
+    out = re.sub(r'(<meta property="og:description" content=")[^"]*(">)',
+                 lambda m: m.group(1) + DESC + m.group(2), out, count=1)
+    # JSON-LD headline
+    out = re.sub(r'("headline":\s*")[^"]*(")',
+                 lambda m: m.group(1) + TITLE + m.group(2), out, count=1)
+    # JSON-LD description
+    out = re.sub(r'("description":\s*")[^"]*(")',
+                 lambda m: m.group(1) + DESC + m.group(2), out, count=1)
+    # og:image / hero alt / h1
+    out = out.replace('<h1 class="article-title">' + old_title + '</h1>',
+                      '<h1 class="article-title">' + TITLE + '</h1>')
+    out = out.replace('alt="' + old_title + '"', 'alt="' + TITLE + '"')
+
+    # içerik bölgesini değiştir
+    marker = '<div class="article-content">'
+    start = out.index(marker) + len(marker)
+    end = out.index('      </div>\n      <div class="article-tags">')
+    out = out[:start] + "\n\n" + CONTENT.strip() + "\n\n" + out[end:]
+
+    with io.open("articles/%s.html" % SLUG, "w", encoding="utf-8", newline="") as f:
+        f.write(out)
+    print("makale yazildi:", "articles/%s.html" % SLUG)
+
+
+if __name__ == "__main__":
+    main()
