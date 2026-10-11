@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; } }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],a.async=1,a.src=r,a.parentNode.insertBefore(a,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TypeScript nedir, JavaScript farkı, tip sistemi, interface, generics, enum, union/intersection tipleri, tsconfig, gerçek dünya kullanımı, öğrenme yolu ve ne zaman TypeScript kullanmalı olduğunuzu anlatan derin rehber.">
+  <meta name="author" content="TechWave">
+  <meta name="robots" content="index, follow">
+  <title>TypeScript Nedir? JavaScript'in Güçlendirilmiş Hâli, Tip Sistemi ve 2026 Öğrenme Rehberi &mdash; TechWave</title>
+  <meta property="og:title" content="TypeScript Nedir? JavaScript'in Güçlendirilmiş Hâli, Tip Sistemi ve 2026 Öğrenme Rehberi &mdash; TechWave">
+  <meta property="og:description" content="TypeScript nedir, JavaScript farkı, tip sistemi, interface, generics, enum, union/intersection tipleri, tsconfig, gerçek dünya kullanımı, öğrenme yolu ve ne zaman TypeScript kullanmalı olduğunuzu anlatan derin rehber.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="https://images.pexels.com/photos/10816120/pexels-photo-10816120.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <link rel="canonical" href="https://techwaveblog.site/articles/typescript-nedir-2026-js-super-seti-ogrenme-rehberi.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "TypeScript Nedir? JavaScript'in Güçlendirilmiş Hâli, Tip Sistemi ve 2026 Öğrenme Rehberi",
+    "author": {"@type": "Person", "name": "TechWave Ekibi"},
+    "datePublished": "2026-10-11",
+    "description": "TypeScript nedir, JavaScript farkı, tip sistemi, interface, generics, enum, union/intersection tipleri, tsconfig, gerçek dünya kullanımı, öğrenme yolu ve ne zaman TypeScript kullanmalı olduğunuzu anlatan derin rehber.",
+    "publisher": {"@type": "Organization", "name": "TechWave", "url": "https://techwaveblog.site"},
+    "mainEntityOfPage": "https://techwaveblog.site/articles/typescript-nedir-2026-js-super-seti-ogrenme-rehberi.html",
+    "image": "https://images.pexels.com/photos/10816120/pexels-photo-10816120.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "TechWave Ekibi",
+    "jobTitle": "Teknoloji ve Yapay Zeka Yazarı",
+    "url": "https://techwaveblog.site",
+    "sameAs": [],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "TechWave"
+    }
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', includedLanguages: 'en,ar,de,es,fr,ru,ja,ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.goog-te-gadget {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+}
+.goog-te-gadget-simple {
+  border: 1px solid #e0e7ff !important;
+  border-radius: 8px !important;
+  background: white !important;
+  padding: 4px 8px !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #1e293b !important;
+  font-family: 'Inter', sans-serif !important;
+}
+body {
+  position: relative;
+}
+#google_translate_element {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+</style>
+<!-- /Google Translate -->
+</head>
+<body>
+    <div id="google_translate_element"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌓</button>
+      </nav>
+    </div>
+  </header>
+  <article class="article-page">
+    <div class="container">
+      <div class="article-header">
+        <span class="card-tag" data-category="Yazılım">Yazılım</span>
+        <h1 class="article-title">TypeScript Nedir? JavaScript'in Güçlendirilmiş Hâli, Tip Sistemi ve 2026 Öğrenme Rehberi</h1>
+        <div class="article-meta">
+          <span>📅 11 Ekim 2026</span>
+          <span>⏱ 15 dk okuma</span>
+          <span>👤 Çağlar ÇELİK</span>
+        </div>
+      </div>
+      <div class="article-hero">
+        <img src="https://images.pexels.com/photos/10816120/pexels-photo-10816120.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="TypeScript Nedir? JavaScript'in Güçlendirilmiş Hâli, Tip Sistemi ve 2026 Öğrenme Rehberi" loading="eager">
+      </div>
+      <div class="article-content">
+<h2>TypeScript Nedir?</h2>
+<p><strong>TypeScript</strong>, Microsoft tarafından geliştirilen ve 2012'de yayımlanan, JavaScript'in üst kümesi (superset) olan bir programlama dilidir. Temel fikir basit: JavaScript'e <strong>statik tip sistemi</strong> ekleyerek, hataları çalışma zamanından önce — derleme sırasında — yakalamak. Anders Hejlsberg (C# ve Delphi'nin mimarı) liderliğinde geliştirilen dil, bugün Google (Angular), Microsoft (VS Code), Airbnb, Slack, Asana ve Stripe gibi şirketlerin kod tabanlarında yer alıyor.</p>
+<p>Üst kümesi olması demek: <strong>her geçerli JavaScript kodu geçerli TypeScript kodudur</strong>. Mevcut JS projenize kademeli olarak TypeScript ekleyebilirsiniz; her şeyi bir anda yazmanıza gerek yok. TypeScript kodu, <code>tsc</code> (TypeScript Compiler) ile derlenerek çalıştırılabilir JavaScript'e dönüştürülür — tarayıcılar ve Node.js yalnızca JS anlar.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/11816120/pexels-photo-11816120.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kod editöründe yazılım geliştirme — TypeScript derleme süreci" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>TypeScript ile JavaScript Arasındaki Farklar</h2>
+<p>İki dilin farkı "sözdizimi" değil, <strong>tip güvenliği</strong> ve <strong>geliştirici deneyimi</strong> derinliğidir:</p>
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+  <thead>
+    <tr style="background: #1e293b; color: #fff;">
+      <th style="padding: 10px; text-align: left;">Özellik</th>
+      <th style="padding: 10px; text-align: left;">JavaScript</th>
+      <th style="padding: 10px; text-align: left;">TypeScript</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Tip sistemi</td><td style="padding: 10px;">Dinamik (çalışma zamanı)</td><td style="padding: 10px;"><strong>Statik</strong> (derleme zamanı)</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Hata yakalama</td><td style="padding: 10px;">Çalışırken (runtime)</td><td style="padding: 10px;">Derlenirken (compile-time)</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">IDE desteği</td><td style="padding: 10px;">Sınırlı</td><td style="padding: 10px;">Güçlü (otomatik tamamlama, refactoring)</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Büyük projeler</td><td style="padding: 10px;">Zorlanır</td><td style="padding: 10px;">Ölçeklenebilir</td></tr>
+    <tr><td style="padding: 10px;">Öğrenme eğrisi</td><td style="padding: 10px;">Düşük</td><td style="padding: 10px;">Orta (JS bilgisi gerekir)</td></tr>
+  </tbody>
+</table>
+<p><strong>Pratik fark:</strong> JavaScript'te <code>user.name</code> yazdığınızda <code>user</code> tanımlı değilse hata çalışırken çıkar. TypeScript'te aynı hata <strong>derleme sırasında</strong> kırmızı çizgiyle gösterilir — kullanıcıya ulaşmadan önce. Bu, büyük ekiplerde ve uzun ömürlü projelerde devrim niteliğindedir.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/14553704/pexels-photo-14553704.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bilgisayarda kod yazma — TypeScript tip sistemi hataları derleme sırasında yakalar" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Tip Sistemi: Temel Tipler ve İleri Seviye</h2>
+<p>TypeScript'in kalbi <strong>tip sistemi</strong>dir. Temel tipler JavaScript'teki primitif tiplere karşılık gelir ama çok daha güçlüdür:</p>
+<ul>
+  <li><strong>Primitif tipler:</strong> <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code>, <code>symbol</code>, <code>bigint</code></li>
+  <li><strong>Diziler:</strong> <code>number[]</code> veya <code>Array&lt;number&gt;</code> — iki yazım da geçerli</li>
+  <li><strong>Tuple:</strong> <code>[string, number]</code> — sabit uzunluklu, sabit tipli dizi</li>
+  <li><strong>Enum:</strong> <code>enum Direction { Up, Down }</code> — isimli sabit kümeleri</li>
+  <li><strong>Union:</strong> <code>string | number</code> — değişken iki tip olabilir</li>
+  <li><strong>Intersection:</strong> <code>TypeA &amp; TypeB</code> — iki tipin birleşimi</li>
+  <li><strong>Literal tipler:</strong> <code>"hello" | "world"</code> — yalnızca belirli değerler</li>
+  <li><strong>unknown ve any:</strong> <code>any</code> tip kontrolünü devre dışı bırakır; <code>unknown</code> güvenli alternatiftir — kullanmadan önce tip daraltma gerekir</li>
+</ul>
+<p><strong>Interface ve Type:</strong> Nesne yapılarını tanımlamanın iki yolu vardır. <code>interface</code> genellikle nesne şekilleri için, <code>type</code> daha karmaşık birleşimler için tercih edilir:</p>
+<pre style="background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto;"><code>interface User {
+  id: number;
+  name: string;
+  email?: string;        // opsiyonel alan
+  readonly createdAt: Date; // salt okunur
+}
+
+type Status = "active" | "inactive" | "pending";
+type ID = string | number;</code></pre>
+<p><strong>Generics:</strong> Tipleri parametreleştirerek yeniden kullanılabilir bileşenler yazmayı sağlar. Bir fonksiyonun hangi tiple çalıştığını bilir ama her tip için ayrı fonksiyon yazmak zorunda kalmazsınız:</p>
+<pre style="background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto;"><code>function first&lt;T&gt;(arr: T[]): T | undefined {
+  return arr[0];
+}
+
+const n = first([1, 2, 3]);       // T = number
+const s = first(["a", "b"]);      // T = string</code></pre>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/3862599/pexels-photo-3862599.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yazılım geliştirme — TypeScript tip sistemi ve generics ile güçlü kod yazılır" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>TypeScript Gerçek Dünyada: Kim Ne İçin Kullanıyor?</h2>
+<p>TypeScript artık "isteğe bağlı" bir araç değil, <strong>endüstri standardı</strong> hâline geldi. 2026 itibarıyla:</p>
+<ul>
+  <li><strong>Angular:</strong> Google'ın framework'ü tamamen TypeScript ile yazıldı ve TS kullanımını zorunlu kılıyor.</li>
+  <li><strong>React:</strong> React 19 ile birlikte TypeScript desteği varsayılan hâle geldi; yeni projelerin büyük çoğunluğu TS ile başlıyor.</li>
+  <li><strong>Vue:</strong> Vue 3 tamamen TypeScript ile yeniden yazıldı; Composition API ile TS desteği birinci sınıf.</li>
+  <li><strong>Node.js:</strong> NestJS gibi backend framework'leri TypeScript ile çalışır; API geliştirmede tip güvenliği kritik.</li>
+  <li><strong>VS Code:</strong> Microsoft'un editörünün kendisi TypeScript ile yazıldı — "dogfooding" örneği.</li>
+  <li><strong>Stripe, Slack, Airbnb:</strong> Büyük ölçekli ürünler TypeScript ile geliştiriliyor; tip güvenliği refactoring güvenliği sağlıyor.</li>
+</ul>
+<p><strong>DefinitelyTyped:</strong> npm paketlerinin TypeScript tanımlarını barındıran topluluk projesi. <code>npm install --save-dev @types/react</code> gibi komutlarla popüler JS kütüphanelerini TS projelerinde güvenle kullanabilirsiniz.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/12899167/pexels-photo-12899167.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yazılım geliştirme — TypeScript endüstri standardı hâline geldi" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>TypeScript Öğrenme Yolu: 2026 Rehberi</h2>
+<p>TypeScript öğrenmek için ön koşul <strong>JavaScript temelleri</strong>dir. JS bilmiyorsanız önce <a href="python-nedir-bilmeniz-gereken-her-sey.html">programlama temellerini</a> öğrenin. İşte adım adım yol:</p>
+<ol>
+  <li><strong>Adım 1 — JS Temelleri (2-4 hafta):</strong> Değişkenler, fonksiyonlar, diziler, nesneler, async/await, modüller. TypeScript'i anlamak için JS'i iyi bilmek şart.</li>
+  <li><strong>Adım 2 — Temel Tipler (1 hafta):</strong> <code>string</code>, <code>number</code>, <code>boolean</code>, diziler, tuple'lar. <code>tsc</code> kurulumu ve <code>tsconfig.json</code> yapılandırması.</li>
+  <li><strong>Adım 3 — Interface ve Type (1-2 hafta):</strong> Nesne tipleri, opsiyonel alanlar, union/intersection. Gerçek projelerde en çok kullanılan özellikler.</li>
+  <li><strong>Adım 4 — Generics ve İleri Tipler (2-3 hafta):</strong> Generics, type guards, mapped types, conditional types. İşe yarayan ama acele edilmemeli.</li>
+  <li><strong>Adım 5 — Framework Entegrasyonu (2-4 hafta):</strong> React + TypeScript, Vue + TypeScript veya NestJS ile backend. Gerçek proje deneyimi.</li>
+  <li><strong>Adım 6 — İleri Seviye (sürekli):</strong> Utility types (<code>Partial</code>, <code>Pick</code>, <code>Omit</code>), declaration files, monorepo yapılandırması.</li>
+</ol>
+<p><strong>Önerilen kaynaklar:</strong> TypeScript'in resmî el kitabı (typescriptlang.org), Total TypeScript (Matt Pocock), ve gerçek projeler. En iyi öğrenme yöntemi: mevcut bir JS projesini TypeScript'e taşımak.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/34804001/pexels-photo-34804001.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Programcı — TypeScript öğrenmek için JavaScript temelleri şart" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>TypeScript mi, JavaScript mi? Ne Zaman Hangisi?</h2>
+<p>Bu sorunun tek doğru cevabı yok — <strong>bağlama göre</strong> değişir:</p>
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+  <thead>
+    <tr style="background: #1e293b; color: #fff;">
+      <th style="padding: 10px; text-align: left;">Senaryo</th>
+      <th style="padding: 10px; text-align: left;">Önerilen</th>
+      <th style="padding: 10px; text-align: left;">Neden</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Küçük script, hızlı prototip</td><td style="padding: 10px;">JavaScript</td><td style="padding: 10px;">Derleme yok, anında çalışır</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Büyük ekip, uzun vadeli proje</td><td style="padding: 10px;"><strong>TypeScript</strong></td><td style="padding: 10px;">Tip güvenliği, refactoring güvenliği</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Açık kaynak kütüphane</td><td style="padding: 10px;"><strong>TypeScript</strong></td><td style="padding: 10px;">Tipler dokümantasyon görevi görür</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Öğrenme aşaması</td><td style="padding: 10px;">JavaScript</td><td style="padding: 10px;">Önce temelleri öğren, sonra TS</td></tr>
+    <tr><td style="padding: 10px;">Startup MVP'si</td><td style="padding: 10px;">TypeScript</td><td style="padding: 10px;">Hızlı iterasyon + tip güvenliği</td></tr>
+  </tbody>
+</table>
+<p><strong>Altın kural:</strong> Ekip 5+ kişiyse ve proje 6 aydan uzun sürecekse TypeScript. Tek başına hızlı bir script yazıyorsanız JavaScript yeterli. Çoğu profesyonel web geliştirme projesi için TypeScript artık varsayılan seçim.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/14553707/pexels-photo-14553707.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Web geliştirme — TypeScript büyük projelerde varsayılan seçim" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sıkça Sorulan Sorular</h2>
+<h3>TypeScript öğrenmek için ne kadar zaman gerekir?</h3>
+<p>JavaScript bilen birisi için temel TypeScript 2-3 hafta, seviyede kullanmak 1-2 ay sürer. Ama JS temelleri olmadan önce TypeScript'e geçmek kafa karıştırıcı olır — önce JS'yi öğrenin.</p>
+<h3>TypeScript JavaScript'i mi yok edecek?</h3>
+<p>Hayır. TypeScript, JavaScript'in üst kümesidir ve derlenerek JavaScript'e dönüştürülür. Tarayıcılar ve Node.js yalnızca JS çalıştırır. TypeScript bir "rakip" değil, bir "güçlendirici"dir.</p>
+<h3>Hangi IDE kullanmalıyım?</h3>
+<p>Visual Studio Code (VS Code) en popüler seçim — Microsoft tarafından geliştirilen ve TypeScript ile mükemmel entegre olan ücretsiz editör. WebStorm da güçlü bir alternatif ama ücretli.</p>
+<h3>TypeScript performansı etkiler mi?</h3>
+<p>Hayır. TypeScript derlenerek JavaScript'e dönüştürülür; çalışma zamanı performansı aynıdır. Tip kontrolleri yalnızca derleme sırasında yapılır ve çıktı JS'e dahil edilmez.</p>
+<h3>Mevcut JS projesine TypeScript ekleyebilir miyim?</h3>
+<p>Evet. <code>tsconfig.json</code> ile <code>allowJs: true</code> ayarı yaparak mevcut JS dosyalarını TS projesine dahil edebilirsiniz. Dosyaları <code>.js</code>'den <code>.ts</code>'ye dönüştürerek kademeli geçiş yapabilirsiniz.</p>
+<h3>TypeScript ile hangi framework'ler kullanılır?</h3>
+<p>React, Vue, Angular, Next.js, Nuxt, NestJS, Express — hepsi TypeScript ile çalışır. 2026'da yeni framework'lerin çoğu TypeScript desteğini varsayılan olarak sunar.</p>
+<h3>TypeScript öğrenmek için hangi kaynaklar önerilir?</h3>
+<p>Resmî el kitabı (typescriptlang.org), Total TypeScript (Matt Pocock), ve gerçek projeler. En iyi yöntem: mevcut bir JS projesini TypeScript'e taşımak ve hata mesajlarını okumayı öğrenmek.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/7325498/pexels-photo-7325498.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Renkli kod ekranı — TypeScript tip sistemi hataları derleme sırasında yakalar" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sonuç: TypeScript, Modern Web'in Dilidir</h2>
+<p>TypeScript, JavaScript'in eksiklerini kapatmak için doğdu ve bugün modern web geliştirmenin <strong>de facto standardı</strong> hâline geldi. Statik tip sistemi, güçlü IDE desteği ve endüstri düzeyinde benimsenmesiyle büyük projeler için neredeyse zorunlu.</p>
+<p>Öğrenme yolculuğu: <strong>JavaScript temelleri → temel tipler → interface/type → generics → framework entegrasyonu</strong>. Acele etmeyin; her seviye bir öncekinin üzerine inşa edilir. Mevcut JS projeniz varsa kademeli geçisin; yeni bir proje başlatıyorsanız doğrudan TypeScript ile başlayın.</p>
+<p>Programlama yolculuğunuzda diğer konulara da göz atabilirsiniz: <a href="python-nedir-bilmeniz-gereken-her-sey.html">Python nedir?</a> rehberimiz, <a href="yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html">yapay zeka kod yazma araçları</a> karşılaştırmamız ve <a href="chatgpt-vs-clude-vs-gemini-karsilastirma.html">ChatGPT vs Claude vs Gemini</a> incelememiz sizi bekliyor.</p>
+<p><em>Bu makale TechWave tarafından hazırlanmıştır. TypeScript 5.x sürümü itibarıyla yazılmıştır; dil aktif geliştirilmeye devam etmektedir, en güncel bilgiler için resmî dokümantasyonu kontrol edin.</em></p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kod yazan geliştirici — TypeScript modern web geliştirmenin standardı" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+
+      </div>
+      <div class="article-tags">
+        <span class="card-tag" data-category="Yazılım">Yazılım</span>
+      </div>
+    </div>
+    <div class="container">
+    <div class="author-box">
+      <div class="author-avatar">👤</div>
+      <div class="author-info">
+        <div class="author-name">Çağlar ÇELİK</div>
+        <p class="author-bio">TechWave'in kurucusu ve editörü. Yapay zeka araçları, yazılım ve siber güvenlik konularını yakından takip ediyor; rehberleri kendi deneyim ve araştırmalarıyla hazırlıyor. <a href="../hakkimizda.html">Hakkında daha fazla bilgi</a></p>
+      </div>
+    </div>
+  </div>
+
+</article>
+  <div class="container">
+    <div class="newsletter-cta">
+      <h3>📬 TechWave Bültenine Katılın</h3>
+      <p>Her hafta yapay zeka, yazılım ve teknoloji dünyasından en güncel gelişmeler doğrudan e-posta kutuna gelsin.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Teşekkürler! Bültenimize başarıyla katıldınız.');">
+        <input type="email" placeholder="E-posta adresiniz" required>
+        <button type="submit">Katıl</button>
+      </form>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+          <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;"> 🐦 X'te takip et: @blogTechWave</a>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../kategori.html">Kategoriler</a></li>
+            <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+          
+            <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+            <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+          <ul class="footer-links">
+            <li><a href="../kategori.html">Yapay Zeka</a></li>
+            <li><a href="../kategori.html">Yazılım</a></li>
+            <li><a href="../kategori.html">Python</a></li>
+            <li><a href="../kategori.html">AI Araçları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
