@@ -139,7 +139,7 @@ def run_once(config, test_mode=False):
     else:
         log.warning("   Ana sayfa güncellenemedi (makale yine de kaydedildi).")
 
-    # 5. GitHub'a push et (Netlify otomatik deploy eder)
+    # 5. Dosyaları GitHub'a gönder; GitHub Pages yayınlar
     deploy_to_github(config)
 
     # 6. Log kaydet
@@ -155,7 +155,7 @@ def run_once(config, test_mode=False):
 
 
 def deploy_to_github(config):
-    """Değişiklikleri GitHub'a push eder — Netlify otomatik deploy eder."""
+    """Değişiklikleri GitHub deposuna gönderir."""
     import subprocess
 
     github_url = config.get("github_url", "")
@@ -199,7 +199,7 @@ def deploy_to_github(config):
 
         # Push
         subprocess.run([git_cmd, "push"], cwd=site_dir, check=True, capture_output=True)
-        log.info("GitHub'a push edildi — Netlify otomatik deploy başlatacak.")
+        log.info("GitHub'a push edildi — GitHub Pages yayını güncellenecek.")
         return True
 
     except subprocess.CalledProcessError as e:

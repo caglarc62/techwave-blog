@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techwaveblog.site/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://techwaveblog.site/kategori.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -489,6 +489,12 @@
   <url>
     <loc>https://techwaveblog.site/articles/2026nin-en-iyi-10-bluetooth-hoparloru-ses-kalitesi.html</loc>
     <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techwaveblog.site/articles/openai-modelleri-google-cloud-model-garden-geliyor.html</loc>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
