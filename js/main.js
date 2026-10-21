@@ -196,6 +196,23 @@
     });
   }
 
+  /* ---------- Ana sayfa öne çıkan yazı vitrini ---------- */
+  function initFeaturedHero() {
+    var root=document.querySelector('.hero-showcase'); if(!root)return;
+    var slides=Array.prototype.slice.call(root.querySelectorAll('[data-feature-slide]'));
+    var picks=Array.prototype.slice.call(root.querySelectorAll('[data-feature-pick]'));
+    var previous=root.querySelector('[data-feature-prev]'),next=root.querySelector('[data-feature-next]'),pauseButton=root.querySelector('.hero-pause');
+    var reduced=window.matchMedia('(prefers-reduced-motion: reduce)'),active=0,paused=reduced.matches,timer=null;
+    function show(i){active=(i+slides.length)%slides.length;slides.forEach(function(s,n){var on=n===active;s.classList.toggle('is-active',on);s.setAttribute('aria-hidden',on?'false':'true')});picks.forEach(function(b,n){var on=n===active;b.classList.toggle('is-active',on);b.setAttribute('aria-current',on?'true':'false')})}
+    function stop(){if(timer)window.clearInterval(timer);timer=null}
+    function start(){stop();if(paused||reduced.matches||document.hidden||slides.length<2)return;timer=window.setInterval(function(){show(active+1)},7000)}
+    picks.forEach(function(b){b.addEventListener('click',function(){show(Number(b.getAttribute('data-feature-pick')));start()})});
+    if(previous)previous.addEventListener('click',function(){show(active-1);start()});if(next)next.addEventListener('click',function(){show(active+1);start()});
+    if(pauseButton)pauseButton.addEventListener('click',function(){paused=!paused;pauseButton.setAttribute('aria-label',paused?'Otomatik geçişi başlat':'Otomatik geçişi durdur');pauseButton.title=paused?'Otomatik geçişi başlat':'Otomatik geçişi durdur';pauseButton.querySelector('span').textContent=paused?'▶':'Ⅱ';start()});
+    root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',start);root.addEventListener('focusin',stop);root.addEventListener('focusout',function(e){if(!root.contains(e.relatedTarget))start()});document.addEventListener('visibilitychange',start);
+    if(reduced.addEventListener)reduced.addEventListener('change',function(){paused=reduced.matches;start()});show(0);start();
+  }
+  initFeaturedHero();
   initSearch();
 
   /* ---------- Paylaş Butonları ---------- */
