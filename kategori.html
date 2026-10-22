@@ -1,472 +1,107 @@
 <!DOCTYPE html>
 <html lang="tr" data-theme="light">
 <head>
-    <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
-
-    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TechWave kategorileri — Yapay zeka, yazılım, Python, AI araçları ve daha fazlası.">
-  <title>Kategoriler — TechWave</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechWave teknoloji, yapay zekâ, yazılım, donanım ve güvenlik yazılarını kategorilere göre keşfedin; arayın ve ilginizi çeken rehbere ulaşın.">
+  <meta name="robots" content="index, follow"><meta name="author" content="TechWave">
+  <title>Kategoriler ve Teknoloji Rehberleri — TechWave</title>
+  <link rel="canonical" href="https://techwaveblog.site/kategori.html">
+  <meta property="og:title" content="Kategoriler ve Teknoloji Rehberleri — TechWave">
+  <meta property="og:description" content="TechWave’de 2026’nın teknoloji, yapay zekâ, yazılım, donanım ve güvenlik yazılarını keşfedin.">
+  <meta property="og:type" content="website"><meta property="og:locale" content="tr_TR">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261021">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="css/style.css?v=20261022-catalog">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"TechWave Kategoriler","description":"Teknoloji, yapay zekâ, yazılım ve donanım yazıları.","url":"https://techwaveblog.site/kategori.html","inLanguage":"tr"}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="category-page">
+  <header class="site-header"><div class="container header-inner">
+    <a href="index.html" class="logo"><img src="images/logo.svg" alt="TechWave"></a>
+    <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+    <nav><a href="index.html">Ana Sayfa</a><a href="kategori.html" class="active" aria-current="page">Kategoriler</a><a href="iletisim.html">İletişim</a><a href="hakkimizda.html">Hakkımızda</a><button class="theme-toggle" aria-label="Tema Değiştir">🌙</button></nav>
+  </div></header>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.svg" alt="TechWave"></a>
-      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
-      <nav>
-        <a href="index.html">Ana Sayfa</a>
-        <a href="kategori.html" class="active">Kategoriler</a>
-        <a href="iletisim.html">İletişim</a>
-        <a href="hakkimizda.html">Hakkımızda</a>
-        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
-      </nav>
-    </div>
-  </header>
-
-  <section class="category-header">
-    <div class="container">
-      <h1>Kategoriler</h1>
-      <p>İlgilendiğiniz konuya göre yazıları keşfedin.</p>
-    </div>
-  </section>
-
-  <div class="container content-layout">
-    <main>
-      <div class="filter-bar" id="filterBar" role="tablist" aria-label="Kategori filtresi">
-          <button class="filter-btn active" data-filter="all" type="button">✨ Tümü <span>24</span></button>
-          <button class="filter-btn" data-filter="Yapay Zeka" type="button">🤖 Yapay Zeka <span>4</span></button>
-          <button class="filter-btn" data-filter="Python" type="button">🐍 Python <span>3</span></button>
-          <button class="filter-btn" data-filter="AI Araçları" type="button">🧠 AI Araçları <span>3</span></button>
-          <button class="filter-btn" data-filter="Siber Güvenlik" type="button">🔒 Siber Güvenlik <span>2</span></button>
-          <button class="filter-btn" data-filter="Mobil" type="button">📱 Mobil <span>4</span></button>
-          <button class="filter-btn" data-filter="Yazılım" type="button">💻 Yazılım <span>4</span></button>
-          <button class="filter-btn" data-filter="Finans" type="button">💰 Finans <span>1</span></button>
-          <button class="filter-btn" data-filter="Blockchain" type="button">⛓️ Blockchain <span>1</span></button>
-          <button class="filter-btn" data-filter="Oyun" type="button">🎮 Oyun <span>1</span></button>
-          <button class="filter-btn" data-filter="Donanım" type="button">🖥️ Donanım <span>1</span></button>
+  <main>
+    <section class="catalog-hero"><div class="container catalog-hero-inner">
+      <div class="catalog-hero-copy"><span class="catalog-kicker"><span></span> TECHWAVE KÜTÜPHANESİ</span>
+        <h1>Merak ettiğin konuyu <em>keşfet.</em></h1>
+        <p>Yapay zekâdan donanıma, yazılımdan dijital güvenliğe: sana uygun yazıları bul.</p>
       </div>
+      <div class="catalog-hero-orbit" aria-hidden="true"><span class="orbit-core">TW</span><span class="orbit-node node-one">AI</span><span class="orbit-node node-two">{ }</span><span class="orbit-node node-three">⌘</span></div>
+      <div class="catalog-stat"><strong id="totalCount">—</strong><span>rehber ve makale</span><i></i><strong id="categoryCount">—</strong><span>konu başlığı</span></div>
+    </div></section>
 
-      <div class="card-grid" id="articleGrid"></div>
-      <p class="filter-empty" id="filterEmpty" hidden>Bu kategoride henüz yazı bulunamadı.</p>
-    </main>
-
-    <aside class="sidebar">
-      <div class="sidebar-widget">
-        <h3>Tüm Kategoriler</h3>
-        <div class="tag-cloud">
-          <a href="?kategori=yapay-zeka" class="tag" data-filter="Yapay Zeka">🤖 Yapay Zeka (4)</a>
-          <a href="?kategori=python" class="tag" data-filter="Python">🐍 Python (3)</a>
-          <a href="?kategori=ai-araclari" class="tag" data-filter="AI Araçları">🧠 AI Araçları (3)</a>
-          <a href="?kategori=siber-guvenlik" class="tag" data-filter="Siber Güvenlik">🔒 Siber Güvenlik (2)</a>
-          <a href="?kategori=mobil" class="tag" data-filter="Mobil">📱 Mobil (4)</a>
-          <a href="?kategori=yazilim" class="tag" data-filter="Yazılım">💻 Yazılım (4)</a>
-          <a href="?kategori=finans" class="tag" data-filter="Finans">💰 Finans (1)</a>
-          <a href="?kategori=blockchain" class="tag" data-filter="Blockchain">⛓️ Blockchain (1)</a>
-          <a href="?kategori=oyun" class="tag" data-filter="Oyun">🎮 Oyun (1)</a>
-          <a href="?kategori=donanim" class="tag" data-filter="Donanım">🖥️ Donanım (1)</a>
-        </div>
+    <section class="container catalog-main" aria-labelledby="catalog-title">
+      <div class="catalog-intro"><div><span class="catalog-eyebrow">OKUMAYA BAŞLA</span><h2 id="catalog-title">Konu seç, yeni bir şey keşfet</h2></div><p id="resultSummary" aria-live="polite">Yazılar yükleniyor…</p></div>
+      <div class="catalog-controls">
+        <div class="category-filters" id="categoryFilters" role="group" aria-label="Yazıları kategoriye göre filtrele"></div>
+        <label class="catalog-search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><span class="sr-only">Yazılarda ara</span><input id="articleSearch" type="search" placeholder="Yazılarda ara…" autocomplete="off"><kbd>⌕</kbd></label>
       </div>
+      <div class="catalog-grid" id="articleGrid" aria-live="polite"></div>
+      <div class="catalog-empty" id="catalogEmpty" hidden><span>⌕</span><h3>Bu aramayla eşleşen yazı yok</h3><p>Başka bir kelime deneyebilir veya tüm yazılara dönebilirsin.</p><button type="button" id="clearFilters">Filtreleri temizle</button></div>
+      <noscript><p class="catalog-fallback">Yazı listesi için tarayıcınızda JavaScript’i etkinleştirin. <a href="index.html">Ana sayfadan</a> yazılara ulaşabilirsiniz.</p></noscript>
+    </section>
+  </main>
 
-    </aside>
-  </div>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <a href="index.html" class="logo"><img src="images/logo.svg" alt="TechWave"></a>
-          <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
-          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">𝕏 X'te takip et: @blogTechWave</a>
-        </div>
-        <div>
-          <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
-          <ul class="footer-links">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="kategori.html">Kategoriler</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-            <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
-            <li><a href="kullanim-sartlari.html">Kullanım Şartları</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
-          <ul class="footer-links">
-            <li><a href="kategori.html">Yapay Zeka</a></li>
-            <li><a href="kategori.html">Yazılım</a></li>
-            <li><a href="kategori.html">Python</a></li>
-            <li><a href="kategori.html">AI Araçları</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
-      </div>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container"><div class="footer-grid">
+    <div class="footer-about"><a href="index.html" class="logo"><img src="images/logo.svg" alt="TechWave"></a><p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p><a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:600;color:#0891b2;">𝕏 X'te takip et: @blogTechWave</a></div>
+    <div><h3>Sayfalar</h3><ul class="footer-links"><li><a href="index.html">Ana Sayfa</a></li><li><a href="kategori.html">Kategoriler</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="iletisim.html">İletişim</a></li><li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li><li><a href="kullanim-sartlari.html">Kullanım Şartları</a></li></ul></div>
+    <div><h3>TechWave</h3><p class="catalog-footer-note">Teknoloji meraklıları için kaynaklı haberler, açıklayıcı rehberler ve yeni fikirler.</p><a class="catalog-footer-link" href="index.html">Son yazılara göz at <span aria-hidden="true">↗</span></a></div>
+  </div><div class="footer-bottom"><p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p></div></div></footer>
 
   <script src="js/main.js"></script>
   <script>
-
-  /* ---------- Kategori filtreleme ---------- */
   (function () {
     'use strict';
-
-    var articles = [
-  {
-    "title": "OpenAI Modelleri Google Cloud’a Geliyor: Model Garden’da Neler Değişiyor?",
-    "url": "articles/openai-modelleri-google-cloud-model-garden-geliyor.html",
-    "category": "Yapay Zeka",
-    "date": "21 Ekim 2026",
-    "time": "8 dk okuma",
-    "excerpt": "OpenAI modelleri ve Codex iş akışları Google Cloud Model Garden’a geliyor. Özel önizleme, erişim, fiyat ve veri kontrollerini kaynaklarıyla açıklıyoruz.",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200"
-  },
-  {
-    "title": "2026'da Yapay Zeka ile Nasıl Para Kazanılır? 8 Kanıtlanmış Yol",
-    "url": "articles/yapay-zeka-ile-nasil-para-kazanilir.html",
-    "category": "Yapay Zeka",
-    "date": "20 Eylül 2026",
-    "time": "7 dk okuma",
-    "excerpt": "Yapay zeka araçlarını kullanarak gelir elde etmenin 8 yolu ve pratik ipuçları.",
-    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200"
-  },
-  {
-    "title": "Yapay Zeka ile Kod Yazma: Cursor, GitHub Copilot ve Windsurf Karşılaştırması",
-    "url": "articles/yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html",
-    "category": "AI Araçları",
-    "date": "23 Eylül 2026",
-    "time": "8 dk okuma",
-    "excerpt": "Cursor, GitHub Copilot ve Windsurf karşılaştırması 2026: özellikler, fiyatlandırma, doğruluk, hangisi size uygun, AI kod yazma araçlarını verimli kullanma ipuçları ve gelecek.",
-    "image": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1200"
-  },
-  {
-    "title": "2026'da En İyi 10 Mobil Uygulama Geliştirme Framework'ü",
-    "url": "articles/2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html",
-    "category": "Mobil",
-    "date": "23 Eylül 2026",
-    "time": "7 dk okuma",
-    "excerpt": "2026'da en iyi mobil uygulama geliştirme framework'leri: Flutter, React Native, Kotlin Multiplatform, SwiftUI, .NET MAUI ve Ionic karşılaştırması, seçim rehberi ve gelecek trendleri.",
-    "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1200"
-  },
-  {
-    "title": "Python ile Web Sitesi Yapma Rehberi 2026",
-    "url": "articles/python-ile-web-sitesi-yapma-rehberi-2026.html",
-    "category": "Python",
-    "date": "22 Eylül 2026",
-    "time": "8 dk okuma",
-    "excerpt": "Python ile web sitesi yapma rehberi 2026: Flask vs Django, adım adım Flask uygulaması, şablonlar, formlar, SQLite ve deploy...",
-    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200"
-  },
-  {
-    "title": "2026'da En İyi 10 Notebook Önerisi",
-    "url": "articles/2026da-en-iyi-10-notebook-onerisi.html",
-    "category": "Donanım",
-    "date": "22 Eylül 2026",
-    "time": "7 dk okuma",
-    "excerpt": "2026'nın en iyi 10 notebook önerisi: bütçe dostu, orta segment, premium, gaming ve öğrenci laptopları...",
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200"
-  },
-  {
-    "title": "2026'da En İyi 10 Ücretsiz Yapay Zeka Aracı",
-    "url": "articles/2026da-en-iyi-10-ucretsiz-yapay-zeka-araci.html",
-    "category": "AI Araçları",
-    "date": "21 Eylül 2026",
-    "time": "7 dk okuma",
-    "excerpt": "2026'da ücretsiz kullanabileceğiniz en iyi 10 yapay zeka aracı: ChatGPT, Gemini, Claude, Canva AI, Notion AI...",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
-  },
-  {
-    "title": "WhatsApp'ta Bilinmeyen 10 Gizli Özellik",
-    "url": "articles/whatsappta-bilinmeyen-10-gizli-ozellik.html",
-    "category": "Mobil",
-    "date": "21 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "WhatsApp'ta bilinmeyen 10 gizli özellik: kaybolan mesajlar, sohbet kilidi, HD foto, ekran paylaşımı ve yedekleme...",
-    "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200"
-  },
-  {
-    "title": "Yapay Zeka Nedir? 2026'da Bilmeniz Gereken Her Şey",
-    "url": "articles/yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html",
-    "category": "Yapay Zeka",
-    "date": "21 Eylül 2026",
-    "time": "7 dk okuma",
-    "excerpt": "Yapay zeka nedir, nasıl çalışır ve 2026 yılında hayatımızı nasıl değiştiriyor? Yapay zeka türleri, uygulamaları, Türkiye...",
-    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200"
-  },
-  {
-    "title": "WordPress mi HTML mi? 2026'da Blog Kurmak İçin En İyi Seçim",
-    "url": "articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html",
-    "category": "Yazılım",
-    "date": "21 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "WordPress mi HTML mi? 2026'da blog kurmak için hangi platform daha iyi? Performans, SEO, güvenlik ve maliyet karşılaştır...",
-    "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200"
-  },
-  {
-    "title": "Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi",
-    "url": "articles/python-renpy-oyun-ceviri-araci-voorhees-rehberi.html",
-    "category": "Yazılım",
-    "date": "21 Eylül 2026",
-    "time": "4 dk okuma",
-    "excerpt": "Ren'Py görsel roman oyunlarını Python ve Voorhees araçlarıyla Türkçe'ye çevirme rehberi. Adım adım yerelleştirme tüyoları TechWave'de!",
-    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200"
-  },
-  {
-    "title": "Geleceğin Becerisi Kodlama: Çocuklar ve Gençler İçin Kodris Platformu İncelemesi",
-    "url": "articles/cocuklar-ve-gencler-icin-kodris-platformu-incelemesi.html",
-    "category": "Yazılım",
-    "date": "21 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "Çocuklara ve gençlere kodlama öğreten yerli EdTech platformu Kodris'i detaylıca inceledik. Özellikleri, Python geçişi ve ebeveyn ipuçları bu makalede.",
-    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200"
-  },
-  {
-    "title": "Siber Güvenlik 101: Kişisel Verilerinizi Nasıl Korursunuz?",
-    "url": "articles/siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html",
-    "category": "Siber Güvenlik",
-    "date": "20 Eylül 2026",
-    "time": "7 dk okuma",
-    "excerpt": "2026 yılında kişisel verilerinizi koruma rehberi.",
-    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200"
-  },
-  {
-    "title": "ChatGPT vs Claude vs Gemini: 2026'da Hangi AI Aracı Daha İyi?",
-    "url": "articles/chatgpt-vs-clude-vs-gemini-karsilastirma.html",
-    "category": "AI Araçları",
-    "date": "20 Eylül 2026",
-    "time": "8 dk okuma",
-    "excerpt": "ChatGPT, Claude ve Gemini karşılaştırması 2026.",
-    "image": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200"
-  },
-  {
-    "title": "2026 Piyasa Dinamikleri: Algoritmik Ticaret ve Kripto Piyasaları",
-    "url": "articles/2026-piyasa-dinamikleri-algoritmik-ticaret-kripto.html",
-    "category": "Finans",
-    "date": "20 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "Faiz ve piyasa verilerini tarihli birincil kaynaklardan kontrol etmek için pratik bir rehber; yatırım tavsiyesi değildir.",
-    "image": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200"
-  },
-  {
-    "title": "2026 Yazılım Trendleri: Projeniz İçin Nasıl Değerlendirirsiniz?",
-    "url": "articles/2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri.html",
-    "category": "Yazılım",
-    "date": "20 Eylül 2026",
-    "time": "5 dk okuma",
-    "excerpt": "Yazılım trendlerini proje ihtiyacı, bakım maliyeti ve doğrulanabilir kaynaklarla değerlendirme rehberi.",
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200"
-  },
-  {
-    "title": "Google Gemini Güvenlik Değerlendirmesi: Test Kapsamı ve Bulgular",
-    "url": "articles/google-gemini-yapay-zeka-guvenlik-testi-sirketlere-sizdi.html",
-    "category": "Siber Güvenlik",
-    "date": "19 Eylül 2026",
-    "time": "5 dk okuma",
-    "excerpt": "Mayıs 2026’daki testte Gemini’nin üç gerçek şirket sistemine eriştiği doğrulandı. Olayın bilinen ayrıntıları ve ajanlar için teknik güvenlik önlemleri.",
-    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200"
-  },
-  {
-    "title": "2026'da Akıllı Telefon Alırken Yapılan 5 Kritik Hata",
-    "url": "articles/2026-telefon-alirken-5-kritik-hata.html",
-    "category": "Mobil",
-    "date": "19 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "2026'da akıllı telefon alırken yapılan 5 kritik hata ve doğru tercih rehberi. Megapiksel tuzağı, yapay zeka özellikleri, pil kapasitesi ve daha fazlası.",
-    "image": "https://images.unsplash.com/photo-1592890288564-76628a30a657?w=1200"
-  },
-  {
-    "title": "ABD Üniversitelerinde Programlama Öğretiminde Python'un Yeri",
-    "url": "articles/abd-universitelerinde-en-cok-ogretilen-dil-python.html",
-    "category": "Python",
-    "date": "18 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "Python giriş derslerinde sık kullanılan bir seçenektir; ancak tüm ABD üniversiteleri için tek bir güncel sıralama veya yüzde iddiası yoktur.",
-    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200"
-  },
-  {
-    "title": "Python Nedir? Sıfırdan İleri Seviyeye Bilmeniz Gereken Her Şey",
-    "url": "articles/python-nedir-bilmeniz-gereken-her-sey.html",
-    "category": "Python",
-    "date": "16 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "Python nedir, ne işe yarar ve nasıl öğrenilir?",
-    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1200"
-  },
-  {
-    "title": "İnşaat Endüstrisi için En İyi 10 AI Aracı Eylül 2026",
-    "url": "articles/insaat-endustrisi-icin-en-iyi-10-ai-araci-eylul-2026.html",
-    "category": "Yapay Zeka",
-    "date": "16 Eylül 2026",
-    "time": "5 dk okuma",
-    "excerpt": "İnşaat sektörünü dönüştüren en iyi 10 yapay zeka aracı.",
-    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200"
-  },
-  {
-    "title": "Blockchain Yazılımında En İyi 11 Programlama Dili",
-    "url": "articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html",
-    "category": "Blockchain",
-    "date": "16 Eylül 2026",
-    "time": "6 dk okuma",
-    "excerpt": "Web3 için en iyi 11 programlama dili rehberi.",
-    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200"
-  },
-  {
-    "title": "AB KIDS Act Teklifi: 15 Yaş Sınırı Oyunlara mı, Sosyal Medyaya mı?",
-    "url": "articles/ab-15-yas-alti-oyun-kisitlamasi-dijital-duzenleme.html",
-    "category": "Oyun",
-    "date": "16 Eylül 2026",
-    "time": "5 dk okuma",
-    "excerpt": "AB KIDS Act teklifindeki 15 yaş sınırının belirli sosyal medya hesaplarıyla ilgili olduğunu ve çevrimiçi oyunlardaki ayrı tüketici koruma çalışmalarını kaynaklarıyla açıklıyoruz.",
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200"
-  },
-  {
-    "title": "Apple Sağlık Uygulamasına Eklenen İçgörü Özellikleri: Kapsam ve Sınırlar",
-    "url": "articles/apple-yapay-zeka-destekli-saglik-uygulamasi.html",
-    "category": "Mobil",
-    "date": "12 Eylül 2026",
-    "time": "4 dk okuma",
-    "excerpt": "Apple, iOS 27 ile Sağlık uygulamasına kişiselleştirilmiş içgörüler ekliyor. Duyurulan özellikleri, cihaz uygunluğunu ve sınırlarını resmi kaynağa göre inceliyoruz.",
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
-  }
-];
-    var slugToName = {
-  "yapay-zeka": "Yapay Zeka",
-  "python": "Python",
-  "ai-araclari": "AI Araçları",
-  "siber-guvenlik": "Siber Güvenlik",
-  "mobil": "Mobil",
-  "yazilim": "Yazılım",
-  "finans": "Finans",
-  "blockchain": "Blockchain",
-  "oyun": "Oyun",
-  "donanim": "Donanım"
-};
-    var nameToSlug = {
-  "Yapay Zeka": "yapay-zeka",
-  "Python": "python",
-  "AI Araçları": "ai-araclari",
-  "Siber Güvenlik": "siber-guvenlik",
-  "Mobil": "mobil",
-  "Yazılım": "yazilim",
-  "Finans": "finans",
-  "Blockchain": "blockchain",
-  "Oyun": "oyun",
-  "Donanım": "donanim"
-};
-
     var grid = document.getElementById('articleGrid');
-    var empty = document.getElementById('filterEmpty');
-    var buttons = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
-    var tags = Array.prototype.slice.call(document.querySelectorAll('.tag-cloud .tag[data-filter]'));
-    if (!grid) return;
-
-    function esc(str) {
-      return String(str).replace(/[&<>"']/g, function (m) {
-        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m];
-      });
+    var filters = document.getElementById('categoryFilters');
+    var search = document.getElementById('articleSearch');
+    var summary = document.getElementById('resultSummary');
+    var empty = document.getElementById('catalogEmpty');
+    var currentCategory = 'Tümü';
+    var allArticles = [];
+    var icons = {'Donanım':'▣','Yapay Zeka':'✳','Yazılım':'⌘','AI Araçları':'✦','Mobil':'◉','Siber Güvenlik':'⬡','Oyun':'△','Python':'⌁','Finans':'↗','Genel':'✧','Blockchain':'◇'};
+    var colors = {'Donanım':'hardware','Yapay Zeka':'ai','Yazılım':'software','AI Araçları':'tools','Mobil':'mobile','Siber Güvenlik':'security','Oyun':'games','Python':'python','Finans':'finance','Genel':'general','Blockchain':'chain'};
+    var months = {'ocak':0,'şubat':1,'mart':2,'nisan':3,'mayıs':4,'haziran':5,'temmuz':6,'ağustos':7,'eylül':8,'ekim':9,'kasım':10,'aralık':11};
+    function esc(s) { return String(s || '').replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+    function normalized(s) { return String(s || '').toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i'); }
+    function dateValue(s) { var m=String(s||'').match(/(\d{1,2})\s+([^\s]+)\s+(\d{4})/); return m && months[m[2].toLocaleLowerCase('tr-TR')] !== undefined ? new Date(+m[3],months[m[2].toLocaleLowerCase('tr-TR')],+m[1]).getTime() : 0; }
+    function slug(s) { return normalized(s).replace(/ı/g,'i').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+    function imageUrl(raw) { if (!raw) return ''; if (/^https?:\/\//i.test(raw)) return raw; return raw.replace(/^\.\.\//,'').replace(/^\//,''); }
+    function updateUrl(category) { var u=new URL(location.href); if(category==='Tümü') u.searchParams.delete('kategori'); else u.searchParams.set('kategori',slug(category)); history.replaceState(null,'',u.pathname+u.search+u.hash); }
+    function makeFilters() {
+      var counts = {}; allArticles.forEach(function(a){ counts[a.c]=(counts[a.c]||0)+1; });
+      var cats = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a] || a.localeCompare(b,'tr'); });
+      document.getElementById('totalCount').textContent = allArticles.length;
+      document.getElementById('categoryCount').textContent = cats.length;
+      var buttons = [['Tümü',allArticles.length]].concat(cats.map(function(c){ return [c,counts[c]]; }));
+      filters.innerHTML = buttons.map(function(item){ var active=item[0]===currentCategory; return '<button class="category-filter'+(active?' is-active':'')+'" type="button" data-category="'+esc(item[0])+'" aria-pressed="'+(active?'true':'false')+'"><span class="filter-icon">'+(icons[item[0]]||'✧')+'</span><span>'+esc(item[0])+'</span><b>'+item[1]+'</b></button>'; }).join('');
+      filters.querySelectorAll('.category-filter').forEach(function(btn){ btn.addEventListener('click',function(){ currentCategory=btn.getAttribute('data-category'); updateUrl(currentCategory); render(); makeFilters(); }); });
     }
-
-    /* Makale kartlarini olustur */
-    articles.forEach(function (a) {
-      var card = document.createElement('article');
-      card.className = 'card';
-      card.setAttribute('data-category', a.category);
-      card.innerHTML =
-        '<div class="card-img"><img src="' + esc(a.image) + '" alt="' + esc(a.title) + '" loading="lazy"></div>' +
-        '<div class="card-body">' +
-        '<span class="card-tag" data-category="' + esc(a.category) + '">' + esc(a.category) + '</span>' +
-        '<h2 class="card-title"><a href="' + esc(a.url) + '">' + esc(a.title) + '</a></h2>' +
-        '<p class="card-excerpt">' + esc(a.excerpt) + '</p>' +
-        '<div class="card-meta"><span>\ud83d\udcc5 ' + esc(a.date) + '</span><span>\u23f1\ufe0f ' + esc(a.time) + '</span></div>' +
-        '</div>';
-      grid.appendChild(card);
-    });
-
-    var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
-
-    /* Kategori adina gore (all = tumu) filtrele */
-    function filterArticles(category, updateUrl) {
-      var active = category || 'all';
-      var visible = 0;
-
-      cards.forEach(function (card) {
-        var match = active === 'all' || card.getAttribute('data-category') === active;
-        card.style.display = match ? '' : 'none';
-        if (match) visible++;
-      });
-
-      buttons.forEach(function (btn) {
-        btn.classList.toggle('active', (btn.getAttribute('data-filter') || 'all') === active);
-      });
-
-      tags.forEach(function (tag) {
-        tag.classList.toggle('active', (tag.getAttribute('data-filter') || '') === active);
-      });
-
-      if (empty) empty.hidden = visible > 0;
-
-      if (updateUrl !== false) {
-        var slug = active === 'all' ? '' : (nameToSlug[active] || '');
-        try {
-          history.replaceState(null, '', slug ? '?kategori=' + encodeURIComponent(slug) : location.pathname.replace(/\/.+$/, '') + '/kategori.html');
-        } catch (e) { /* yoksay */ }
-      }
+    function card(a, index) {
+      var category=a.c||'Genel', art='category-art art-'+(colors[category]||'general'), image=imageUrl(a.i||'');
+      var artContent=image ? '<img src="'+esc(image)+'" alt="" loading="lazy" onerror="this.remove();this.parentNode.classList.add(\'is-fallback\')">' : '';
+      artContent += '<span class="category-art-icon" aria-hidden="true">'+(icons[category]||'✧')+'</span><span class="category-art-label">'+esc(category)+'</span><span class="category-art-index">'+String(index+1).padStart(2,'0')+'</span>';
+      return '<article class="catalog-card" style="--card-order:'+index+'" data-category="'+esc(category)+'"><a class="category-art-link" href="articles/'+encodeURIComponent(a.s)+'.html" aria-label="'+esc(a.t)+' yazısını oku"><div class="'+art+'">'+artContent+'</div></a><div class="catalog-card-body"><div class="catalog-card-meta"><span class="catalog-pill">'+esc(category)+'</span><time>'+esc(a.d||'TechWave')+'</time></div><h3><a href="articles/'+encodeURIComponent(a.s)+'.html">'+esc(a.t)+'</a></h3><p>'+esc(a.e||'Bu konudaki yazımızı keşfedin.')+'</p><a class="catalog-read" href="articles/'+encodeURIComponent(a.s)+'.html">Yazıyı oku <span aria-hidden="true">↗</span></a></div></article>';
     }
-
-    /* URL parametresi: kategori.html?kategori=yapay-zeka */
-    function categoryFromUrl() {
-      var raw = '';
-      try {
-        raw = new URLSearchParams(location.search).get('kategori') || '';
-      } catch (e) { raw = ''; }
-      if (!raw) return 'all';
-      raw = decodeURIComponent(raw).toLowerCase();
-      if (slugToName[raw]) return slugToName[raw];
-      var key = Object.keys(slugToName).filter(function (s) { return slugToName[s].toLowerCase() === raw; })[0];
-      if (key) return slugToName[key];
-      var nameKey = Object.keys(nameToSlug).filter(function (n) { return n.toLowerCase() === raw; })[0];
-      if (nameKey) return nameKey;
-      return 'all';
+    function render() {
+      var q=normalized(search.value), list=allArticles.filter(function(a){ var categoryOk=currentCategory==='Tümü'||a.c===currentCategory; var textOk=!q||normalized([a.t,a.e,a.c,a.h].join(' ')).indexOf(q)!==-1; return categoryOk&&textOk; });
+      grid.innerHTML=list.map(card).join('');
+      summary.textContent=currentCategory==='Tümü'&&!q ? allArticles.length+' yazı, tüm konular' : list.length+' yazı gösteriliyor'+(currentCategory!=='Tümü'?' · '+currentCategory:'');
+      empty.hidden=list.length>0;
+      grid.hidden=list.length===0;
     }
-
-    buttons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        filterArticles(btn.getAttribute('data-filter') || 'all');
-      });
-    });
-
-    tags.forEach(function (tag) {
-      tag.addEventListener('click', function (e) {
-        e.preventDefault();
-        filterArticles(tag.getAttribute('data-filter') || 'all');
-        if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-
-    filterArticles(categoryFromUrl(), false);
+    search.addEventListener('input',render);
+    document.getElementById('clearFilters').addEventListener('click',function(){ currentCategory='Tümü'; search.value=''; updateUrl(currentCategory); makeFilters(); render(); search.focus(); });
+    var requested=new URLSearchParams(location.search).get('kategori');
+    fetch('search-index.json').then(function(r){ if(!r.ok) throw new Error('index'); return r.json(); }).then(function(items){
+      allArticles=items.filter(function(a){ return a&&a.s&&a.t; }).sort(function(a,b){ return dateValue(b.d)-dateValue(a.d)||a.t.localeCompare(b.t,'tr'); });
+      var match=allArticles.find(function(a){ return slug(a.c)===requested; }); if(match) currentCategory=match.c;
+      makeFilters(); render();
+    }).catch(function(){ summary.textContent='Yazı listesi şu anda yüklenemedi.'; empty.hidden=false; empty.innerHTML='<span>!</span><h3>Listeyi açamadık</h3><p>Bağlantını kontrol edip sayfayı yenileyebilirsin.</p><button type="button" onclick="location.reload()">Tekrar dene</button>'; });
   })();
-
   </script>
 </body>
 </html>

@@ -30,6 +30,7 @@ for fname in sorted(os.listdir(ART_DIR)):
     if not excerpt:
         excerpt = grab(c, r'<p class="card-excerpt">(.*?)</p>')
     excerpt = htmlmod.unescape(excerpt)
+    image = grab(c, r'<meta\s+property="og:image"\s+content="([^"]+)"', '')
     date = grab(c, r'📅\s*([^<]+)</span>', '')
 
     # headings (h2/h3) for search boost
@@ -46,6 +47,7 @@ for fname in sorted(os.listdir(ART_DIR)):
         'c': category,
         'e': excerpt[:200],
         'd': date,
+        'i': image,
         'h': ' | '.join(headings[:8]),
         'x': body,
     })
