@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Yeni iPad mini Türkiye fiyatı ve satış tarihleri</title><desc id="desc">Wi-Fi modeli 48.999 TL, Wi-Fi ve Cellular 59.499 TL başlangıç fiyatına sahip; ön sipariş 28 Ekim, satış 6 Kasım'da.</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102447"/><stop offset="1" stop-color="#23456b"/></linearGradient></defs><rect width="1200" height="400" rx="28" fill="url(#g)"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="600" y="57" fill="#6ce3d8" font-size="19" font-weight="800" letter-spacing="3">TÜRKİYE'DE SATIŞ TAKVİMİ</text>
+    <rect x="50" y="91" width="340" height="180" rx="22" fill="#fff" opacity=".97"/><text x="220" y="138" fill="#5c6b82" font-size="18" font-weight="700">iPAD MINI · WI-FI</text><text x="220" y="201" fill="#172846" font-size="38" font-weight="800">48.999 TL</text><text x="220" y="241" fill="#65748b" font-size="16">Başlangıç fiyatı</text>
+    <rect x="430" y="91" width="340" height="180" rx="22" fill="#fff" opacity=".97"/><text x="600" y="138" fill="#5c6b82" font-size="18" font-weight="700">WI-FI + CELLULAR</text><text x="600" y="201" fill="#172846" font-size="38" font-weight="800">59.499 TL</text><text x="600" y="241" fill="#65748b" font-size="16">Başlangıç fiyatı</text>
+    <rect x="810" y="91" width="340" height="180" rx="22" fill="#123e4c" stroke="#52dfd4" stroke-width="2"/><text x="980" y="137" fill="#a7d8df" font-size="18" font-weight="700">ÖN SİPARİŞ</text><text x="980" y="190" fill="#65e3d8" font-size="34" font-weight="800">28 EKİM</text><path d="M910 216h140" stroke="#70b9c1" stroke-width="2"/><text x="980" y="247" fill="#e0f1f3" font-size="17">Satış: 6 Kasım</text>
+    <text x="600" y="330" fill="#c4d4e8" font-size="17">Apple Türkiye'nin 26 Ekim 2026 tarihli duyurusundaki başlangıç fiyatlarıdır; yapılandırma ve satıcı fiyatı değişebilir.</text>
+  </g>
+</svg>
