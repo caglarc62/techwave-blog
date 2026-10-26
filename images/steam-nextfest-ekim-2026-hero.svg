@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Steam Next Fest Ekim 2026 son gün rehberi</title>
+  <desc id="desc">Oyun kumandası, demo kartları ve Türkiye saatiyle 20.00 kapanışını gösteren TechWave çizimi.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081b35"/><stop offset="1" stop-color="#142957"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#48e0d1"/><stop offset="1" stop-color="#8a69ff"/></linearGradient>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.6"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#030916" flood-opacity=".42"/></filter>
+  </defs>
+  <rect width="1200" height="600" rx="34" fill="url(#bg)"/>
+  <circle cx="1010" cy="72" r="220" fill="#6b5cff" opacity=".12"/><circle cx="1140" cy="530" r="260" fill="#29d9c7" opacity=".08"/>
+  <path d="M0 452C182 385 280 505 430 474s220-141 370-91 250 71 400-4v221H0Z" fill="#09152c" opacity=".68"/>
+  <g font-family="Inter,Arial,sans-serif" fill="#fff">
+    <text x="76" y="106" fill="#5de2d3" font-size="21" font-weight="800" letter-spacing="4">TECHWAVE · OYUN REHBERİ</text>
+    <text x="72" y="205" font-size="64" font-weight="800">STEAM NEXT</text>
+    <text x="72" y="276" font-size="64" font-weight="800">FEST BİTİYOR</text>
+    <text x="78" y="333" fill="#c4d3ee" font-size="25" font-weight="500">Son demoları seç, süreyi iyi kullan.</text>
+    <rect x="76" y="382" width="280" height="70" rx="18" fill="#15385a" stroke="#42ddcf" stroke-width="2"/>
+    <text x="100" y="410" fill="#9db5d5" font-size="14" font-weight="700" letter-spacing="2">TÜRKİYE SAATİYLE</text>
+    <text x="99" y="441" fill="#62e1d5" font-size="27" font-weight="800">26 EKİM · 20.00</text>
+  </g>
+  <g filter="url(#shadow)" transform="translate(690 120)">
+    <rect x="30" y="20" width="340" height="220" rx="26" fill="#f4f7ff"/>
+    <rect x="55" y="47" width="132" height="86" rx="16" fill="#1c4f67"/><path d="M55 111l42-38 28 23 20-18 42 42H55Z" fill="#48d9c7"/><circle cx="154" cy="72" r="10" fill="#ffcf78"/>
+    <rect x="209" y="54" width="126" height="14" rx="7" fill="#293b58"/><rect x="209" y="81" width="100" height="9" rx="4.5" fill="#9aa8bc"/><rect x="209" y="100" width="114" height="9" rx="4.5" fill="#c4ccda"/>
+    <rect x="55" y="157" width="280" height="48" rx="13" fill="#e8edfa"/><text x="74" y="188" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" fill="#24304b">DEMOYU DENE · İSTEK LİSTESİNE EKLE</text>
+    <g transform="translate(120 207)">
+      <path d="M34 25c-15 0-29 10-34 25l-14 42c-5 16 13 28 26 17l34-28h90l34 28c13 11 31-1 26-17l-14-42c-5-15-19-25-34-25Z" fill="url(#glow)" stroke="#d5fff9" stroke-width="3"/>
+      <path d="M32 51v32M16 67h32" stroke="#10264a" stroke-width="9" stroke-linecap="round"/><circle cx="145" cy="60" r="7" fill="#10264a"/><circle cx="168" cy="76" r="7" fill="#10264a"/>
+      <text x="65" y="127" font-family="Inter,Arial,sans-serif" fill="#cfe2ff" font-size="15" font-weight="700" letter-spacing="2">OYUNU ÖNCE ÜCRETSİZ DENE</text>
+    </g>
+  </g>
+  <g fill="#42ddcf" opacity=".85"><circle cx="629" cy="149" r="7"/><circle cx="1088" cy="345" r="5"/><circle cx="641" cy="395" r="4"/><path d="M1055 110l8 18 18 8-18 8-8 18-8-18-18-8 18-8z"/></g>
+</svg>
