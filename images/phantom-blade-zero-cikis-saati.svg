@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">Phantom Blade Zero Türkiye çıkış saati</title><desc id="desc">Oyunun 29 Ekim'de saat 10.00 Pekin saatinde başlayacağını ve Türkiye'de 05.00'e denk geldiğini gösterir.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101426"/><stop offset="1" stop-color="#321922"/></linearGradient><linearGradient id="red"><stop stop-color="#ff6b53"/><stop offset="1" stop-color="#ffbd79"/></linearGradient><radialGradient id="glow"><stop stop-color="#d94a39" stop-opacity=".52"/><stop offset="1" stop-color="#d94a39" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="480" rx="30" fill="url(#bg)"/><circle cx="940" cy="210" r="330" fill="url(#glow)"/><path d="M65 80h1070M65 399h1070" stroke="#ffffff" stroke-opacity=".12"/><text x="78" y="130" fill="#f4c18b" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">PHANTOM BLADE ZERO · KÜRESEL ÇIKIŞ</text>
+<text x="78" y="240" fill="#fff" font-family="Arial,sans-serif" font-size="58" font-weight="800">29 Ekim · 05.00</text><text x="80" y="291" fill="#c5c6d1" font-family="Arial,sans-serif" font-size="25">Türkiye saatiyle (UTC+3)</text>
+<path d="M612 233h90" stroke="url(#red)" stroke-width="5"/><path d="m688 218 17 15-17 15" fill="none" stroke="#ff9870" stroke-width="5"/>
+<text x="746" y="225" fill="#fff" font-family="Arial,sans-serif" font-size="35" font-weight="700">29 Ekim · 10.00</text><text x="748" y="270" fill="#c5c6d1" font-family="Arial,sans-serif" font-size="24">Pekin saati (UTC+8)</text><text x="80" y="365" fill="#9b9eac" font-family="Arial,sans-serif" font-size="18">Küresel eşzamanlı çıkış saatinin Türkiye saatine dönüşümü</text>
+<path d="M1075 108l-20 109 43 10-67 134 17-117-42-9z" fill="url(#red)" opacity=".8"/>
+</svg>
