@@ -74,7 +74,7 @@
         <a href="../kategori.html">Kategoriler</a>
         <a href="../iletisim.html">İletişim</a>
         <a href="../hakkimizda.html">Hakkımızda</a>
-        <button class="theme-toggle" aria-label="Tema Değiştir">🌓</button>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
       </nav>
     </div>
   </header>
@@ -94,16 +94,130 @@
         <img src="https://images.pexels.com/photos/9072379/pexels-photo-9072379.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Meta Muse Spark Open: 816 Milyar Parametrelik Model İki Mac Studio'da Çalışıyor" loading="eager">
       </div>
       <div class="article-content">
-<h2>Muse Spark Open nedir?</h2>
-<p>Meta, 15 Ekim 2026'da Muse Spark Open'ın ağırlıklarını yayımladı. Şirket modeli 816 milyar toplam parametreli, token başına yaklaşık 42 milyar parametre etkinleşen seyrek Mixture-of-Experts (MoE) modeli olarak tanımlıyor. Meta; metin, görüntü, video ve ses girdisi ile 1 milyon token bağlam penceresi açıkladı. Ağırlıklar Hugging Face ve çeşitli bulut model kataloglarında sunuluyor; “açık ağırlık” kodun ve verinin tümünün açık kaynak olduğu anlamına gelmez.</p>
-<h2>İki Mac Studio'da çalışması ne ifade ediyor?</h2>
-<p>Meta, MLX kullanarak NVFP4 sürümünün iki M5 Ultra Mac Studio'da birlikte çalıştırılabildiğini ve bu düzenin toplam 1 TB birleşik belleği model ağırlıklarını tutmak için kullandığını gösterdi. Bu, en iyi koşullarda kurulan çoklu cihaz demosudur; sıradan bir masaüstünde veya tek bir Mac'te çalıştığı anlamına gelmez. Modelin tam BF16 ağırlıklarını indirmek, disk/bellek ihtiyacını karşılamak ve uygun bağlantı ile yazılım sürümlerini kurmak gerekir. Donanım maliyeti, güç tüketimi ve kurulum karmaşıklığı çoğu ev kullanıcısı için önemli engellerdir.</p>
-<p>Meta'nın yayımladığı geliştirici belgeleri SGLang, vLLM, TensorRT-LLM, Transformers, MLX ve llama.cpp gibi çalışma ortamlarını ve farklı donanımlara yönelik nicemlenmiş sürümleri listeliyor. Hangi ağırlık biçiminin hangi hız ve bellek ihtiyacını verdiği, seçilen nicemlemeye ve donanıma bağlıdır. Daha az etkin parametre, modelin tüm belleğe sığacağı veya her istemde hızlı yanıt vereceği garantisi değildir.</p>
-<h2>Benchmark ve güvenlik beyanları</h2>
-<p>Meta'nın açıklamasında model kıyaslamaları ve güvenlik değerlendirmeleri yer alıyor; bunlar üreticinin testleridir. Meta, modelin Muse Model License altında yayımlandığını ve bu lisansın ticari kullanım için sınırlı şartlar içerdiğini belirtiyor. Ağırlıkları bir projede kullanmadan önce lisansın kullanım, yeniden dağıtım ve yüksek gelirli model-as-a-service koşullarını bizzat okuyun.</p>
-<h2>Kimler denemeli?</h2>
-<ul><li>Çoklu modlu model araştırması yapan geliştirici ekipler, model kartı ve değerlendirme raporunu inceleyerek kontrollü deneme yapabilir.</li><li>Ev kullanıcısı önce bulut API maliyeti ile gerekli GPU/birleşik bellek ve elektrik maliyetini karşılaştırsın.</li><li>Şirketler hassas veri göndermeden önce yerel çalışma, günlükleme, lisans ve güvenlik koşullarını test ortamında doğrulasın.</li><li>Uygulama geliştiricileri iddia edilen benchmark yerine kendi gerçek görevlerinde doğruluk, gecikme ve kaynak kullanımını ölçsün.</li></ul>
-<p>Birincil kaynaklar: <a href="https://research.meta.ai/blog/muse-spark-open" target="_blank" rel="noopener noreferrer">Meta AI Research duyurusu</a>, <a href="https://dev.meta.ai/resources/blog/build-with-muse-spark-open" target="_blank" rel="noopener noreferrer">Meta geliştirici kılavuzu</a> ve <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B" target="_blank" rel="noopener noreferrer">Meta'nın model kartı</a>. İki Mac Studio demosu da Meta tarafından açıklanmıştır; bağımsız performans testi değildir.</p>
+<h2>Meta ve Apple Aynı Masaya Oturdu</h2>
+<p><strong>15 Ekim 2026</strong>: Meta'nın Süper Zeka Laboratuvarı (Superintelligence Lab), bugüne kadar yayımladığı en güçlü açık ağırlıklı modeli <strong>Muse Spark Open</strong>'ı duyurdu — ve lansmanı alışılmadık bir ortakla yaptı: <strong>Apple</strong>. İki şirket, modelin Apple'ın <strong>MLX</strong> çerçevesi üzerinde optimize edilmesi için birlikte çalıştı; sonuç, bir sınıfında ilk: <strong>uçtan uca frontier sınıfı bir modelin, veri merkezi GPU'ları yerine iki masaüstü Apple bilgisayarda yerel olarak çalıştırılabilmesi.</strong></p>
+<p>Meta bunu "ABD'nin şimdiye kadarki en güçlü açık ağırlıklı modeli" olarak tanımlıyor. Aynı hafta NVIDIA da açık ağırlıklı <strong>Nemotron 3.5 Super VL</strong>'i yayımladı; Microsoft ise 2,8 trilyon parametrelik <strong>MAI-Base-2</strong>'yi kapalı tarafta tanıttı. Yani açık ağırlık savaşı tam da masa üstünde, tüketicinin erişebileceği donanıma iniyor. Makalemizde Spark Open'ın özelliklerini, lisansını, dürüst benchmark tablosunu ve sizin için ne anlama geldiğini açıyoruz.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/29871288/pexels-photo-29871288.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bilgisayar teknolojisi — Meta Muse Spark Open masaüstüne indi" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Muse Spark Open Teknik Olarak Ne Sunuyor?</h2>
+<p>Model, Meta'nın açık ağırlık hamlesinin en iddialı adımı: karma (MoE) mimariyle <strong>816 milyar toplam parametre</strong>, ancak istek başına yalnızca <strong>42 milyar parametre aktive</strong> oluyor. Bu, çıkarım maliyetini ve gerekli donanımı ciddi biçimde düşüren temel numara. Öne çıkan başlıklar:</p>
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+  <thead>
+    <tr style="background: #1e293b; color: #fff;">
+      <th style="padding: 10px; text-align: left;">Özellik</th>
+      <th style="padding: 10px; text-align: left;">Muse Spark Open</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Toplam parametre</td><td style="padding: 10px;">816 milyar (MoE)</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Aktif parametre</td><td style="padding: 10px;">42 milyar / istek</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Bağlam penceresi</td><td style="padding: 10px;">1 milyon token</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Yetenekler</td><td style="padding: 10px;">Yerel çoklu-modal: metin, görüntü, video, ses</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Odak</td><td style="padding: 10px;">Kodlama ve uzun soluklu ajan (agent) iş yükleri</td></tr>
+    <tr><td style="padding: 10px;">Çıkarım altyapısı</td><td style="padding: 10px;">MLX (Mac), SGLang, vLLM, TensorRT-LLM (GPU)</td></tr>
+  </tbody>
+</table>
+<p>Nvidia ve AMD GPU'lar için <strong>Helion</strong> çekirdeklerinin 1,03x - 3,95x hız sunması da, Mac dışındaki çıkarım tarafını hızlandıran bir detay.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/28824342/pexels-photo-28824342.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bilgisayar donanım montajı — Muse Spark Open teknik özellikleri" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>İki Mac Studio Neden Bu Kadar Önemli?</h2>
+<p>Devrim sayılabilecek kısım burada: Meta ve Apple'ın işbirliğiyle model, <strong>iki adet M5 Ultra Mac Studio</strong>'da tamamı yerel olarak çalışacak şekilde optimize edildi. Her Mac Studio birimi <strong>512 GB'a kadar birleşik bellek</strong> taşıyabiliyor; iki birim birlikte yaklaşık <strong>1 TB</strong> birleşik bellek havuzu oluşturuyor — yani 816 milyar parametrenin çıkarımı, bir tür "masaüstü süper bilgisayar" ile mümkün hâle geliyor.</p>
+<p>Bu, üç anlamda büyük haber:</p>
+<ul>
+  <li><strong>Veri gizliliği:</strong> Veri cihazdan hiç çıkmıyor; hastane, hukuk bürosu, banka ve AR-Ge ekipleri buluta bağımlı olmadan frontier sınıfı model deneyebiliyor.</li>
+  <li><strong>Sıfır token maliyeti:</strong> Bulut API'lerinde milyonlarca token için ödeyen kullanıcılar için çıkarım "ücretsiz" hâle geliyor (donanım maliyeti hariç).</li>
+  <li><strong>Erişilebilirlik eşiği:</strong> Daha önce "süper bilgisayar kirala" diye konuşulan sınıf, ofiste iki kutu ile mümkün oluyor.</li>
+</ul>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/17489151/pexels-photo-17489151.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Veri merkezi kule sunucuları — bulut yerine masaüstü alternatifi" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Nereden İndirilir, Nasıl Çalıştırılır?</h2>
+<p>Meta, dağıtımı geniş tuttu. Ağırlıklar (weights) şurada:</p>
+<ul>
+  <li><strong>Hugging Face</strong> — doğrudan indirme;</li>
+  <li><strong>Amazon SageMaker, Google Cloud Model Garden, Microsoft Foundry</strong> — bulut platformları;</li>
+  <li><strong>API sağlayıcıları:</strong> Baseten, Fireworks, Groq, Modal, Nebius, OpenRouter ve Together AI üzerinden anında erişim.</li>
+</ul>
+<p>Yerel çalıştırma tarafında MLX (Mac), SGLang, vLLM ve TensorRT-LLM desteği var. Pratikte: 42 milyar aktif parametre, tek güçlü bir GPU sunucusunda bile akıcı çıkarım anlamına geliyor; tam 816B deneyimi ise 512 GB+ birleşik bellek sınıfı donanım (Mac Studio, yüksek bellekli RTX Spark sınıfı cihazlar veya sunucu GPU'ları) istiyor. Dizüstü tarafını <a href="nvidia-rtx-spark-dizustuler-16-ekim-fiyatlar-turkiye.html">RTX Spark rehberimizde</a> incelemiştik — bellek mimarisi tartışmasının tam ortasına oturan bir model bu.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/257886/pexels-photo-257886.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bilgisayar anakartı bağlantı noktaları — modelin indirilebileceği platformlar" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Lisans: "Açık" Ama Her Şey Serbest Değil</h2>
+<p>Kritik nokta: model, tam anlamıyla serbest bir açık kaynak lisansıyla değil, <strong>Muse Model License</strong> ile yayımlanıyor. Bu lisans birçok geliştirici için ücretsiz kullanım sağlıyor, ancak <strong>ticari kullanımda sınırlar içeriyor</strong>. Yani:</p>
+<ul>
+  <li>Kişisel araştırma, deneme ve birçok geliştirici senaryosu sorunsuz;</li>
+  <li>Kurumsal veya gelir getiren ürünlerde lisans metnini dikkatle okumak şart — özellikle "kullanım tavanları" ve ticari kapsam maddeleri;</li>
+  <li>Karşılaştırma için: NVIDIA'nın Nemotron 3.5 ailesi <strong>OpenMDW</strong> lisansı altında yayımlandı; Apache 2.0 sınıfı tam serbestlik isteyenler için lisans farkı belirleyici olabilir.</li>
+</ul>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/2588757/pexels-photo-2588757.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Anakart ve bellek detayı — açık ağırlık lisansı ve kullanım koşulları" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Dürüst Test: "ABD'nin En İyisi" Ama Zirvede Mi?</h2>
+<p>Meta'nın iddiası "ABD'nin en güçlü açık ağırlıklı modeli" — peki uluslararası tabloda nerede? Model kartındaki <strong>Artificial Analysis Intelligence Index</strong> değeri <strong>39</strong>. Karşılaştırma: Çin merkezli <strong>MiMo-V2.6-Pro 46</strong> ile zirvede; ayrıca <strong>Kimi K3</strong> ve <strong>GLM 5.3</strong>, terminal kodlama, yazılım mühendisliği ve GDPVal-AA değerlendirmelerinde Muse Spark Open'ın önünde seyrediyor.</p>
+<p>Bu tabloyu dürüstçe okumak gerek: <strong>Açık ağırlık yarışı artık "ABD vs Çin" değil, tek tek model karşılaştırması hâline geldi.</strong> Spark Open'ın gücü parametre sayısında ve masaüstü çalıştırılabilirliğinde; saf zeka endeksinde Çinli açık ağırlık modelleri hâlâ agresif. Yani "en büyük" ile "en zeki" kavramlarını ayırmak gerekiyor.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/4705603/pexels-photo-4705603.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bilgisayar onarımı ve test — modelin benchmark sonuçları" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Açık Ağırlık Savaşı: Bu Haftanın Tablosu</h2>
+<p>15-16 Ekim'de üç büyük hamle üst üste geldi:</p>
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+  <thead>
+    <tr style="background: #1e293b; color: #fff;">
+      <th style="padding: 10px; text-align: left;">Model</th>
+      <th style="padding: 10px; text-align: left;">Parametre</th>
+      <th style="padding: 10px; text-align: left;">Erişim</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Meta Muse Spark Open</td><td style="padding: 10px;">816B / 42B aktif</td><td style="padding: 10px;">Açık ağırlık (Muse lisansı) + API</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">NVIDIA Nemotron 3.5 Super VL</td><td style="padding: 10px;">120B / 12B aktif</td><td style="padding: 10px;">Açık (OpenMDW) + kenar modelleri</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Microsoft MAI-Base-2</td><td style="padding: 10px;">2,8T / 80B aktif</td><td style="padding: 10px;"><strong>Kapalı</strong> — Foundry ortakları</td></tr>
+    <tr><td style="padding: 10px;">Google Gemini 4 Argon</td><td style="padding: 10px;">Açıklanmadı</td><td style="padding: 10px;">Kapalı API + abonelik</td></tr>
+  </tbody>
+</table>
+<p>Nemotron 3.5 Super VL tarafında NVIDIA, tek GPU'da açık modellere kıyasla <strong>5 kata kadar</strong> akış hızı (throughput) ve 4 GB'a kadar küçülen <strong>Bolt E4B</strong> kenar varyantı gibi pratik avantajlar sunuyor — "sürekli çalışan ajanlar" hedefleniyor. Microsoft'un MAI-Base-2'si ise 2,8 trilyon parametreye rağmen <strong>açık değil</strong>: yalnızca Foundry üzerinden güvenilir ortaklara. Kapanan frontier tarafındaki rekabet için <a href="gemini-4-argon-yayinda-google-ai-yaris-geri-dondu.html">Argon analizimiz</a> güncel çerçeve.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/3665442/pexels-photo-3665442.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bilgisayar işlemcisi — açık ağırlık modellerin parametre savaşı" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Kimler İçin Anlamlı? Mac Studio mu, Bulut mu, RTX Spark mı?</h2>
+<p>Karar üç sütunda netleşiyor:</p>
+<ul>
+  <li><strong>Veri gizliliği + uzun vadeli kullanım:</strong> Yerel kurulum (Mac Studio çifti veya yüksek bellekli sunucu) en düşük toplam sahip olma maliyetini vadediyor; Spark Open bu senaryonun en güçlü adayı.</li>
+  <li><strong>Mobilite:</strong> Çantada taşınabilir yerel AI isteyenler için <a href="nvidia-rtx-spark-dizustuler-16-ekim-fiyatlar-turkiye.html">RTX Spark dizüstüler</a> hâlâ farklı bir sınıf; Spark Open'ın tam boyutu taşınabilir sınıfın ötesinde, ama 42B aktif mimari gelecek nesil dizüsteller için umut verici.</li>
+  <li><strong>Hız ve güncel model:</strong> API ile en yeni kapalı modeller (Argon, Claude, GPT) her zaman daha taze ve daha zeki; kurulum derdi sıfır. Kıyaslama için <a href="chatgpt-vs-clude-vs-gemini-karsilastirma.html">model karşılaştırma yazımız</a>.</li>
+</ul>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/14713024/pexels-photo-14713024.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Elektronik cihazlar — masaüstü AI kurulum seçenekleri" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sıkça Sorulan Sorular</h2>
+<h3>Muse Spark Open ücretsiz mi?</h3>
+<p>Ağırlıklar ücretsiz indirilebiliyor ve birçok geliştirici kullanım türü ücretsiz; ancak <strong>Muse Model License</strong> ticari kullanımda sınırlar içeriyor. Ürününüz gelir getiriyorsa lisans metnini mutlaka okuyun.</p>
+<h3>Evdeki bilgisayarımla çalışır mı?</h3>
+<p>Tek bir ev bilgisayarıyla 816B tam model zor; ancak <strong>42B aktif</strong> mimari sayesinde yüksek bellekli tek bir GPU sistemi veya iki M5 Ultra Mac Studio gibi üst segment donanım tam modeli kaldırabiliyor. Bulut API'leri en düşük giriş yolu.</p>
+<h3>Çinli açık modellerden gerçekten iyi mi?</h3>
+<p>"ABD'nin en iyisi" iddiası geçerli; ancak Artificial Analysis Intelligence Index'te 39 ile MiMo-V2.6-Pro'nun (46) gerisinde, Kimi K3 ve GLM 5.3 ile yarışıyor. Görev bazlı güçlü yönleri (kod, ajan, masaüstü) var; tek endekse bakarak karar vermeyin.</p>
+<h3>Nemotron 3.5'ten farkı ne?</h3>
+<p>Spark Open 816B ile "en büyük açık ABD modeli" olma iddiasında; Nemotron 3.5 Super VL 120B/12B ile verimlilik ve kenar (edge) senaryolarına odaklı, OpenMDW lisansıyla geliyor. İkisi farklı pazar boşluğunu dolduruyor.</p>
+<h3>GPT veya Claude kullanmayı bırakmalı mıyım?</h3>
+<p>Gerek yok. Açık ağırlık modeller gizlilik, maliyet ve kontrol avantajı sunar; kapalı frontier modeller güncellik ve zirve performansta önde. İkisini birlikte kullanan hibrit akış en pratik yol.</p>
+<h3>API nereden denenebilir?</h3>
+<p>OpenRouter, Together AI, Fireworks, Groq, Modal, Baseten ve Nebius üzerinden erişim açıldı; Hugging Face ağırlıkları da indirilebilir durumda.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/28380001/pexels-photo-28380001.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dizüstü onarım ve donanım — Muse Spark Open sık sorulan sorular" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sonuç: Frontier Artık Masa Üstünde</h2>
+<p>Muse Spark Open, iki sütunda tarih yazıyor: <strong>ölçek</strong> (816B ile ABD'nin en büyük açık ağırlıklı modeli) ve <strong>erişim</strong> (Apple ile işbirliği sayesinde iki masaüstü kutuda tam yerel çalıştırma). Benchmark'larda Çinli açık ağırlık rakiplerin gerisinde olması hayal kırıklığı değil — <strong>yarışın gerçekten çok başlı</strong> olduğunu gösteriyor.</p>
+<p>Pratik sonucu şöyle toplayabiliriz: buluttan bağımsız, gizliliğe duyarlı, yüksek token hacimli işler için 2026 sonbaharında bundan daha güçlü bir masaüstü adayı yok. Lisansını okuyun, benchmark'ı görev bazında okuyun, donanımınızı iyi seçin — gerisi kurulum meselesi.</p>
+<p><em>Bu makale TechWave tarafından hazırlanmıştır. Model ve lisans bilgileri 16 Ekim 2026 tarihli resmi duyurulara dayanır.</em></p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/6636474/pexels-photo-6636474.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bellek ve işlemciler — frontier AI masaüstüne indi" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/34867545/pexels-photo-34867545.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Modern bilgisayar bileşenleri — masaüstü yapay zeka devrimi" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+
       </div>
       <div class="article-tags">
         <span class="card-tag" data-category="Yapay Zeka">Yapay Zeka</span>
@@ -127,7 +241,7 @@
         <div class="footer-about">
           <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
           <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
-          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;"> 🐦 X'te takip et: @blogTechWave</a>
+          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
         </div>
         <div>
           <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
@@ -136,7 +250,6 @@
             <li><a href="../kategori.html">Kategoriler</a></li>
             <li><a href="../hakkimizda.html">Hakkımızda</a></li>
             <li><a href="../iletisim.html">İletişim</a></li>
-
             <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
             <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
           </ul>

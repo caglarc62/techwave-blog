@@ -74,7 +74,7 @@
         <a href="../kategori.html">Kategoriler</a>
         <a href="../iletisim.html">İletişim</a>
         <a href="../hakkimizda.html">Hakkımızda</a>
-        <button class="theme-toggle" aria-label="Tema Değiştir">🌓</button>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
       </nav>
     </div>
   </header>
@@ -94,16 +94,135 @@
         <img src="https://images.pexels.com/photos/9534649/pexels-photo-9534649.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Gemini 4 Argon Yayında: Google AI Yarışına Geri Döndü — Özellikler, Fiyat ve Erişim" loading="eager">
       </div>
       <div class="article-content">
-<h2>Gemini 4 Argon ne zaman ve nerede yayımlandı?</h2>
-<p>Google, Gemini 4 Argon'u 13 Ekim 2026'da tanıttı. Şirketin duyurusuna göre model Gemini API üzerinden geliştiricilere ve işletmelere; Google AI abonelik koşullarına bağlı olarak Gemini uygulaması, Antigravity ve Arama'daki AI Mode'a sunuldu. Ürün erişimi plana ve ülkeye göre değişebileceği için “herkese açık” ifadesi her kullanıcı için ücretsiz erişim anlamına gelmez.</p>
-<h2>Google'ın açıkladığı API fiyatı</h2>
-<p>Google'ın model duyurusunda başlangıç dönemi için 1 milyon giriş token'ı 2 ABD doları, 1 milyon çıkış token'ı 10 ABD doları olarak listeleniyor; önbelleğe alınan giriş token'ları için yüzde 95 indirim belirtiliyor. Google, tanıtım döneminin 30 Kasım 2026'da biteceğini ve sonrasında giriş/çıkış fiyatlarının sırasıyla 4 ve 20 dolar olacağını bildiriyor. Bu ücretler API kullanımına ilişkindir; tüketici aboneliğiyle aynı fiyatlandırma değildir. Bölge, kullanım türü ve sağlayıcı fiyatı değiştirebilir, bu yüzden entegrasyondan önce <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener noreferrer">resmî Gemini API fiyat sayfasını</a> kontrol edin.</p>
-<h2>Performans iddialarını nasıl okumalı?</h2>
-<p>Google, Argon'un kodlama, finans, hukuk, siber güvenlik ve bilim gibi çok adımlı işlerde güçlü olduğunu; kendi değerlendirmelerinde çeşitli benchmark'larda üst sıralarda yer aldığını söylüyor. Bunlar üreticinin bildirdiği sonuçlardır ve görev seçimi, istem, araç kullanımı, model sürümü, token bütçesi ve değerlendirme setine göre değişebilir. Bu yazıda bağımsız, aynı koşullarda yapılmış bir GPT/Claude/Gemini laboratuvar testi sunulmuyor; önceki sürümdeki doğrulanmamış rakip sıralamaları ve üstünlük iddiaları bu nedenle kaldırıldı.</p>
-<p>Bir model seçerken tek bir skor yerine kendi iş akışınızdan temsilî örnekler hazırlayın: doğruluk, yanlış güven, gecikme, maliyet, veri işleme koşulları ve insan kontrolü gereksinimini aynı anda ölçün. Üreticinin benchmark raporlarını da görev tanımı ve test koşullarıyla birlikte okuyun.</p>
-<h2>Kimler için anlamlı olabilir?</h2>
-<ul><li>Uzun kod tabanlarında değişiklik öneren veya araç kullanan geliştiriciler, izinleri daraltılmış bir test projesinde deneyebilir.</li><li>API kullanan ekipler token maliyetini gerçek istem ve çıktı boylarıyla hesaplamalı; cache indiriminin hangi koşulda geçerli olduğunu doğrulamalıdır.</li><li>Hassas verilerle çalışan kuruluşlar API planının saklama, bölge, erişim ve sözleşme koşullarını güvenlik ekibiyle incelemelidir.</li><li>Günlük sohbet kullanıcıları, kendi Google AI planlarının modele erişimi kapsayıp kapsamadığını uygulama içinden kontrol etmelidir.</li></ul>
-<p>Kaynaklar: <a href="https://blog.google/intl/en-mena/product-updates/explore-get-answers/gemini-4-argon-built-to-solve-your-hardest-problems/" target="_blank" rel="noopener noreferrer">Google'ın 13 Ekim 2026 tarihli duyurusu</a>, <a href="https://ai.google.dev/gemini-api/docs/models/gemini-4-argon" target="_blank" rel="noopener noreferrer">Gemini 4 Argon model belgesi</a> ve <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener noreferrer">API fiyatlandırması</a>. Özellikler ve erişim zamanla değişebilir; bu sayfa 21 Ekim 2026'da gözden geçirilmiştir.</p>
+<h2>Bugün Ne Oldu? Google Sessizliği Bozdu</h2>
+<p><strong>13 Ekim 2026</strong>: Google, aylardır merakla beklenen sınır (frontier) modeli <strong>Gemini 4 Argon</strong>'u resmen yayınladı. Şirket, modeli "en zor problemleriniz için" diye tanımlıyor; ve iddiası büyük: kodlama, siber güvenlik, hukuk, finans ve bilim alanlarında rakip sınır modellerinin önünde olduğunu söylüyor.</p>
+<p>Bu lansman, Google'ın AI yarışındaki konumu açısından stratejik. Şirket son olarak <strong>Gemini 3</strong>'ü (2025 sonu) çıkarmış, sonrasında aylarca OpenAI ve Anthropic'in gerisinde kalmıştı; iç krizler ve yönetici değişiklikleri Google'ın "yarıştan çekilip çekilmediği" sorusunu gündeme getirmişti. Argon, bu soruya net bir cevap: <strong>Google hâlâ masada.</strong></p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/4604607/pexels-photo-4604607.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yapay zeka araçları — Gemini 4 Argon Google'ın yeni sınır modeli" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Argon Neyi Farklı Yapıyor?</h2>
+<p>Google'ın vurgusu dört noktada toplanıyor:</p>
+<ul>
+  <li><strong>Derin iş (deep work):</strong> Çok adımlı, karmaşık görevlerde tutarlılık. Tek turluk sohbet değil; kod tabanı denetimi, hukuki analiz, finansal modelleme gibi uzun iş akışları hedefleniyor.</li>
+  <li><strong>İletişim kalitesi:</strong> Google, Argon'un sorulara daha doğrudan, daha az kaçamak yaparak yanıt vereceğini, gereksiz tekrara düşmeyeceğini ve klişe cümlelerden kaçınacağını" söylüyor — yani model artık "özetleyecek olursam..." türü dolguları ciddi biçimde azaltıyor.</li>
+  <li><strong>1M token penceresi:</strong> Geliştirici API'sinde birleşik 1 milyon token giriş-çıkış limiti; tek istekte uzun doküman setleri ve büyük kod tabanları işlenebiliyor.</li>
+  <li><strong>Görsel-mantıksal algı:</strong> Derin görsel anlama ve fiziksel akıl yürütme, özellikle bilim ve robotik görevlerinde öne çıkıyor.</li>
+</ul>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yapay zeka sohbet botu — Gemini 4 Argon iletişim kalitesini artırdı" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Benchmark İddiaları: Kimi Geçiyor?</h2>
+<p>Google'ın açıklamasına göre Argon, şu modellerin önünde:</p>
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+  <thead>
+    <tr style="background: #1e293b; color: #fff;">
+      <th style="padding: 10px; text-align: left;">Alan</th>
+      <th style="padding: 10px; text-align: left;">Argon'un İddiası</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Vals Index (finans, kod, hukuk, vergi)</td><td style="padding: 10px;"><strong>1. sıra</strong> — kritik ekonomik sektörlerde</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Kodlama, siber güvenlik, bilim</td><td style="padding: 10px;">GPT-6 Astra, Claude Fable 5.1 ve Claude Opus 5.5 üzerinde</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Robotik (ERQA, 3B mantık)</td><td style="padding: 10px;"><strong>%87</strong> — saf mantıkla tüm sınır modelleri önünde</td></tr>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Nadir hastalık teşhisi (RareBench)</td><td style="padding: 10px;">%57 — klinik veri tabanlı testlerde</td></tr>
+    <tr><td style="padding: 10px;">Endirekt prompt injection (Gray Swan)</td><td style="padding: 10px;">Başarı oranı ciddi biçimde düşürüldü — lider konum</td></tr>
+  </tbody>
+</table>
+<p><strong>Dürüst not:</strong> Benchmark rakamları üreticinin kendi açıklamalarıdır; bağımsız testler zamanla netleşir. Ama yön nettir: Google, "kayıp söylemesi" gereken bir dönemde rakip karşısında öne geçtiğini iddia ediyor. Üstelik Meta, yalnızca <strong>bir gün önce</strong> (12 Ekim) kendi sınır modeli Muse Wonder'ı duyurmuştu — yarışın ritmi hiç durmuyor.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/8386437/pexels-photo-8386437.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dijital ağa dokunan robotik el — Gemini 4 Argon benchmark iddiaları" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Fiyat: Giriş Dönemi ve Sonrası</h2>
+<p>Argon'un fiyatlaması, agresif bir pazara giriş stratejisi izliyor:</p>
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+  <thead>
+    <tr style="background: #1e293b; color: #fff;">
+      <th style="padding: 10px; text-align: left;">Dönem</th>
+      <th style="padding: 10px; text-align: left;">1M input token</th>
+      <th style="padding: 10px; text-align: left;">1M output token</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #334155;"><td style="padding: 10px;">Giriş fiyatı (30 Kasım 2026'ya kadar)</td><td style="padding: 10px;">2 $</td><td style="padding: 10px;">10 $</td></tr>
+    <tr><td style="padding: 10px;">Normal fiyat (1 Aralık 2026'dan itibaren)</td><td style="padding: 10px;">4 $</td><td style="padding: 10px;">20 $</td></tr>
+  </tbody>
+</table>
+<p>Önbelleğe alınmış (cached) input token'lar %95 indirimli. Google'a göre bu giriş fiyatı, GPT-6 Astra ve Claude Fable 5'in beşte biri civarında; 30 Kasım sonrası normal fiyatta bile rakiplerden ucuz kalıyor. Yüklü token kullanan uygulamalar için bu, <strong>maliyet tarafında ciddi bir kart.</strong></p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yapay zeka ve iş dünyası — Argon'un rekabetçi fiyatlaması" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Kimler Kullanabilir? Erişim Haritası</h2>
+<p>13 Ekim itibarıyla Argon şu kanallarda:</p>
+<ul>
+  <li><strong>Geliştiriciler ve kurumlar:</strong> API üzerinden AI Studio ve Gemini platformunda küresel olarak erişilebilir.</li>
+  <li><strong>Google AI Ultra aboneleri:</strong> Gemini uygulaması, Arama'daki AI Mode ve Antigravity (ajan geliştirme platformu) dahil.</li>
+  <li><strong>Google AI Pro aboneleri:</strong> Gemini uygulaması ve Arama'daki AI Mode.</li>
+  <li><strong>Plus ve ücretsiz kullanıcılar:</strong> Henüz kesin değil — Google, düşük katmanlara ne zaman açılacağını açıklamadı.</li>
+</ul>
+<p>Türkiye'deki kullanıcılar için pratik durum: Gemini uygulamasındaki Pro/Ultra abonelikleri ülkemizde de mevcut; Argon'u denemenin en hızlı yolu uygulama içinden abonelik katmanınızı kontrol etmek. Geliştiriciler için API erişimi, ücretlendirme dolar üzerinden işliyor.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/20870797/pexels-photo-20870797.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Yapay zeka kullanan kişi — Gemini 4 Argon erişim haritası" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sadece Sohbet Değil: Araştırma Kazanımları</h2>
+<p>Google, Argon'u iç operasyonlarında ve araştırma alanlarında şimdiden kullanıyor. Öne çıkanlar:</p>
+<ul>
+  <li><strong>Kuantum bilgisayar:</strong> İç bir hata düzeltme kodunu (AlphaQubit türevi) optimize ederek çıkarım hızını neredeyse iki katına çıkardı; bir simülasyon alt yapısında ise uzamsal-zamanlı maliyeti <strong>100 kattan fazla</strong> azalttı.</li>
+  <li><strong>Füzyon enerjisi:</strong> Stellarator mıknatıs alanlarıyla ilgili 1967'den beri süren Grad varsayımına yeni karşıt örnekler buldu — füzyon topluluğu için simülasyon doğrulama kriteri.</li>
+  <li><strong>Nadir hastalık araştırması:</strong> Yenidoğan genomlarında rutin yazılımların yıllarca kaçırdığı bir kromozom yeniden düzenlemesini tespit etti ve neden kaçtığını açıkladı.</li>
+  <li><strong>Enzim tasarımı:</strong> Aylar süren geleneksel sürecin yerine saatler içinde beş yeni enzim tasarımı üretti; laboratuvar testleri aktiviteyi doğruladı.</li>
+  <li><strong>İç kullanım:</strong> YouTube yorum bölümünün işlemci ihtiyacını yarıya indirdi; Alphabet'in teslimat dronu simülatöründeki hataları ayıkladı.</li>
+</ul>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/29614944/pexels-photo-29614944.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Büyük veri ve yapay zeka — Gemini 4 Argon araştırma alanlarındaki kazanımları" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Robotik ve Güvenlik Tarafı</h2>
+<p>Argon'un fiziksel dünya anlayışı, Embodied Reasoning (ERQA) benchmark'ında <strong>%87</strong> ile sınır modelleri arasında birinci sırada — saf mantık kullanarak 3B uzamsal problemleri çözüyor. Bu, otonom sistemler ve robot kontrol yazılımları için anlamlı bir eşik.</p>
+<p>Güvenlik tarafında ise Google, üçüncü taraf ortaklarla ölçüm yaptığını ve <strong>Gray Swan Endirekt Prompt Injection</strong> benchmark'ında lider olduğunu açıkladı: kötü amaçlı web sayfaları, e-posta veya kod üzerinden modelin görevini devirmeye çalışan saldırıların başarı oranı belirgin biçimde düşürüldü. Artık otonom ajanlar çağında bu tür ölçütler, model seçiminin kendi kadar önemli.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/8438877/pexels-photo-8438877.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Satranç oynayan robotik kol — Gemini 4 Argon robotik alandaki başarısı" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Yarışmanı Manası: Tablo Genişliyor</h2>
+<p>Son iki haftaya bakınca tablo net:</p>
+<ul>
+  <li><strong>12 Ekim:</strong> Meta, ilk sınır modeli <strong>Muse Wonder</strong>'ı duyurdu.</li>
+  <li><strong>13 Ekim:</strong> Google <strong>Gemini 4 Argon</strong>'u yayınladı.</li>
+  <li><strong>Arka planda:</strong> OpenAI'ın GPT-6 Astra'sı, Anthropic'in Claude Fable 5.1 / Opus 5.5'i ve yeni çıkan Claude Haiku 5.5'i sahada.</li>
+</ul>
+<p>Konu artık tek bir "en iyi model" değil; <strong>iyi olanın hangisinin işinize (ve bütçenize) uyduğu.</strong> Uzun bağlam + düşük token fiyatı gerekiyorsa Argon cazip; yerleşik ekosistem ve araç entegrasyonu gerekiyorsa diğerleri. Model karşılaştırmamızı güncel tutmaya devam ediyoruz: <a href="chatgpt-vs-clude-vs-gemini-karsilastirma.html">ChatGPT vs Claude vs Gemini karşılaştırması</a>.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/18799047/pexels-photo-18799047.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="İnsansı robot — yapay zekalar arası rekabet hız kesmiyor" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Geliştiriciler ve Kullanıcılar İçin Ne Anlama Geliyor?</h2>
+<p><strong>Geliştiriciler:</strong> Giriş dönemi fiyatının 30 Kasım'da biteceği unutulmamalı — ağır iş yüküne sahip projelerin maliyet modeli bu tarihte iki katına çıkacak. Öte yandan 1M token penceresi, chunking (parçalama) stratejilerini sadeleştirebilir. Cached token indirimi, tekrarlayan bağlam senaryolarında maliyeti belirgin düşürüyor.</p>
+<p><strong>Normal kullanıcılar:</strong> Ücretsiz/Plus katmanına açılma zamanı henüz belirsiz; ama Arama'daki AI Mode ve Gemini uygulaması üzerinden Pro/Ultra aboneleri bugün kullanmaya başlayabiliyor. Araştırma özetleri, uzun doküman analizi ve kod yardımı Argon'un ilk günden öne çıkan kullanım alanları.</p>
+<p><strong>Sektör etkisi:</strong> Fiyat baskısı tüm pazarı aşağı çekiyor — rakipler de fiyat ve kalite tarafında karşılık verecektir. Tüketici açısından bu, iyi haber.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/8728291/pexels-photo-8728291.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dijital dönüşüm — Gemini 4 Argon'un sektörel etkisi" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sıkça Sorulan Sorular</h2>
+<h3>Gemini 4 Argon ücretsiz kullanılabiliyor mu?</h3>
+<p>Şu an değil. 13 Ekim'de API, Google AI Pro ve AI Ultra aboneleri için açıldı; ücretsiz ve Plus kullanıcılar için takvim açıklanmadı. Ücretsiz erişim genellikle haftalar sonra, kademeli olarak gelir.</p>
+<h3>Hangi modellerden daha iyi?</h3>
+<p>Google'ın iddiasına göre kodlama, siber güvenlik, bilim, finans ve hukukta GPT-6 Astra, Claude Fable 5.1 ve Claude Opus 5.5 üzerinde; Vals Index'te 1. sırada. Bağımsız ve tekrarlanabilir testler yayıldıkça bu iddialar netleşecek.</p>
+<h3>Fiyatı ne kadar?</h3>
+<p>30 Kasım 2026'ya kadar: 1M input token 2 $, 1M output token 10 $ (önbellekli input'ta %95 indirim). 1 Aralık'tan sonra 4 $ / 20 $ olacak. Ücretlendirme API'de dolar üzerinden.</p>
+<h3>Türkiye'de kullanabilir miyim?</h3>
+<p>Evet — Gemini uygulamasındaki Pro/Ultra abonelikleri Türkiye'de mevcut ve Argon bu katmanlara açıldı. Geliştiriciler AI Studio/API üzerinden küresel olarak erişebiliyor.</p>
+<h3>Claude veya ChatGPT kullanmayı bırakmalı mıyım?</h3>
+<p>Gerek yok. Model seçimi işe göre yapılır: uzun bağlam ve fiyat avantajı arayanlar Argon'u test edin; mevcut araç entegrasyonlarınıza gömülseniz geçiş maliyetini hesaplayın. Bakış açımızı <a href="chatgpt-vs-clude-vs-gemini-karsilastirma.html">karşılaştırma yazımızda</a> bulabilirsiniz.</p>
+<h3>Argon'un güvenlik endişesi var mı?</h3>
+<p>Google, en kapsamlı güvenlik yığınını kullandığını ve üçüncü taraf ortaklarla ölçüm yaptığını söylüyor; endirekt prompt injection benchmark'ında lider. Yine de otomasyonda kritik kararlarda insan onayı katmanı bırakmamak en sağlıklısıdır.</p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="İleri teknoloji robot — Gemini 4 Argon sık sorulan sorular" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+<h2>Sonuç: Google Yarışa Geri Döndü</h2>
+<p>Gemini 4 Argon, Google'ın "hâlâ en iyi modelleri yapabiliyoruz" kartı: agresif fiyat, 1M token penceresi, güçlü benchmark iddiaları ve araştırma alanındaki somut kazanımlar. Meta'nın bir gün öncesindeki Muse Wonder lansmanıyla birlikte bakışımız şu: <strong>2026 son çeyreği, üç-dört zirveli gerçek bir rekabet dönemidir.</strong></p>
+<p>Kullanıcı için en pragmatik yaklaşım: 30 Kasım giriş fiyat bitişine kadar Argon'u test edin, iş akışınızda ölçülebilir fark var mı görün, sonra abonelik kararınızı verin. Yapay zeka dünyasının güncel çerçevesi için <a href="yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html">yapay zeka rehberimiz</a> ve <a href="2026da-en-iyi-10-yapay-zeka-sohbet-botu.html">en iyi AI sohbet botları listemiz</a> da elinizin altında.</p>
+<p><em>Bu makale TechWave tarafından hazırlanmıştır. Model özellikleri, fiyatlar ve erişim bilgileri 13 Ekim 2026 tarihli resmi açıklamalara dayanır; Google sonradan değişiklik yapabilir.</em></p>
+<figure style="margin: 24px 0; text-align: center;">
+  <img src="https://images.pexels.com/photos/8294594/pexels-photo-8294594.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Modern yapay zeka robotu — Gemini 4 Argon Google'ın yeni nesil modeli" style="width:100%; border-radius: 12px;" loading="lazy">
+</figure>
+
       </div>
       <div class="article-tags">
         <span class="card-tag" data-category="Yapay Zeka">Yapay Zeka</span>
@@ -127,7 +246,7 @@
         <div class="footer-about">
           <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
           <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
-          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;"> 🐦 X'te takip et: @blogTechWave</a>
+          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
         </div>
         <div>
           <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
@@ -136,7 +255,6 @@
             <li><a href="../kategori.html">Kategoriler</a></li>
             <li><a href="../hakkimizda.html">Hakkımızda</a></li>
             <li><a href="../iletisim.html">İletişim</a></li>
-
             <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
             <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
           </ul>

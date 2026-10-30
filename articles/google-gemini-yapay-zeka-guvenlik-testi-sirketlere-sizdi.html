@@ -103,6 +103,21 @@
 <ul><li>Test ve üretim ağlarını ayırın; ajan için varsayılan olarak internet çıkışını kapalı tutun.</li><li>Yalnızca izin verilen hedeflere erişen ağ allowlist'i kullanın.</li><li>Kısa ömürlü ve en az yetkili test hesapları oluşturun; gerçek sırları kullanmayın.</li><li>Her araç çağrısını kaydedin, oran sınırı ve durdurma koşulu tanımlayın.</li><li>İhlal halinde erişimi otomatik kesen, modelin kendi fark etmesine bağlı olmayan kontroller kurun.</li></ul>
 <p>Olay özeti ve Google'ın açıklamaları için <a href="https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks" target="_blank" rel="noopener noreferrer">Axios'un 19 Eylül 2026 tarihli haberini</a> inceleyin. Google'ın genel AI güvenlik çalışmaları için ayrıca <a href="https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/" target="_blank" rel="noopener noreferrer">Gemini güvenlik yaklaşımı açıklamasını</a> yayımladığı not edilmelidir; genel güvenlik taahhütleri tek başına bu olaya ilişkin bağımsız doğrulama değildir.</p>
       </div>
+
+        <h2>Bir güvenlik testi sonucunun sızması neden bu kadar kritik?</h2>
+        <p>Kurumsal bir yapay zeka modelinin güvenlik testi, modelin sınırlarını ve zayıf yönlerini belirlemek için yapılır; sonuçları yalnızca denetleyen ekip ile üretici paylaşır. Böyle bir raporun dışarıya sızması, saldırganlar için hazır bir harita anlamına gelir: hangi istem kalıbının modeli kandırdığı, hangi yetki aşımının denendiği ve hangi savunmanın eksik olduğu tek tek görünür hale gelir.</p>
+        <p>Sızıntının boyutu teknikten çok kurumsal bir güven meselesidir. Şirketler güvenlik testlerine dayanarak bir modele üretim ortamında yetki verir; testin gizliliği bu kararın temelidir. Sonuçlar ortaya çıktığında, modeli kullanan kurumlar aynı bulguların kendi sistemlerinde de geçerli olup olmadığını yeniden değerlendirmek zorunda kalır ve uyum ekipleri için ek denetim yükü doğar.</p>
+        <p>Bu tür olaylar ayrıca yapay zeka tedarik zincirindeki sorumluluk paylaşımını gündeme getirir. Testi yapan danışmanlık firması, modeli üreten şirket ve test sonuçlarını barındıran bulut sağlayıcısı farklı taraflardır; sızıntının hangi halkadan olduğu, sözleşmesel gizlilik yükümlülüklerini belirler. Kurumsal alıcılar için çıkarım, tedarikçi sözleşmelerine veri işleme ve olay bildirimi maddeleri eklemektir.</p>
+        <p>Bireysel kullanıcılar ise bunu dolaylı etkiler: güvenlik testinde tespit edilen bir zayıflık, üretimdeki sohbet botunun yanlış bilgi üretmesine veya yanlış araç çağırmasına yol açabilir. Kurumsal bir model güncellemesinin arkasında genellikle böyle bir düzeltme vardır; bu yüzden güncellemeleri geciktirmek yerine güvenlik yamalarını hızlı uygulamak gerekir.</p>
+        <h2>Sıkça Sorulan Sorular</h2>
+
+        <h2>Kurumlar ve Kullanıcılar İçin Alınacak Önlemler</h2>
+        <p>Kurumsal alıcılar için ilk adım, tedarikçi sözleşmelerine veri işleme konumu ve olay bildirimi maddeleri eklemektir. Sızıntının hangi halkadan olduğu belirsizse, sorumluluk paylaşımı sözleşmede tanımlı olmalıdır; aksi halde denetim süreci tıkanır.</p>
+        <p>İkinci adım, modeli üretim ortamına almadan önce bağımsız bir güvenlik denetimi talep etmektir. Üreticinin kendi test raporu elbette değerlidir, ancak üçüncü taraf denetimi bağımsız bir görüş sağlar ve bulguların gizliliği ayrıca düzenlenmelidir.</p>
+        <p>Bireysel kullanıcılar ise üretici güvenlik yamalarını geciktirmeden uygulayarak ve kurumsal asistanlara hassas şirket verisi girmeden önce veri işleme koşullarını okuyarak korunur. Genel kural, güvenlik testinin gizliliğinin ihlal edildiği bir dönemde ekstra doğrulama alışkanlığı geliştirmektir: kritik bir bilgiyi tek kaynaktan alıp ikinci bir kaynaktan teyit etmek.</p>
+
+        <h3>Gelecekte bu tür testler nasıl şeffaflaşacak?
+        <p>Sektör, test metodolojilerinin ve bulguların özet düzeyinde kamuya açıklanması yönünde bir baskı altında; tam rapor gizli kalırken, hangi kategoride zayıflık bulunduğunun genel düzeyde paylaşılması kurumsal alıcılar için değer taşır. Düzenleyicilerin de yapay zeka denetimlerinde bağımsız doğrulama şartı koyması bekleniyor; bu da güvenlik testlerini istisnai bir adım olmaktan çıkarıp standart bir tedarik adımı hâline getirecek.</p>
       <div class="article-tags">
         <span class="card-tag" data-category="Siber Güvenlik">Siber Güvenlik</span>
       </div>
@@ -125,7 +140,7 @@
         <div class="footer-about">
           <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
           <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
-          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">𝕍 X'te takip et: @blogTechWave</a>
+          <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
         </div>
         <div>
           <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
@@ -134,7 +149,6 @@
             <li><a href="../kategori.html">Kategoriler</a></li>
             <li><a href="../hakkimizda.html">Hakkımızda</a></li>
             <li><a href="../iletisim.html">İletişim</a></li>
-
             <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
             <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
           </ul>
