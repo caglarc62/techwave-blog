@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#0f172a"/>
+  <rect x="100" y="100" width="1000" height="400" rx="20" fill="#1e293b"/>
+  <text x="600" y="260" text-anchor="middle" font-family="Inter, Arial" font-size="48" fill="#93c5fd">Windows Update</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Inter, Arial" font-size="32" fill="#cbd5e1">KB503 • Kritik Yamalar</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Inter, Arial" font-size="26" fill="#64748b">TechWave</text>
+</svg>
