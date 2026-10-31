@@ -1,7 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
-  <rect width="1200" height="600" fill="#1e293b"/>
-  <circle cx="600" cy="300" r="180" fill="#22d3ee" opacity="0.8"/>
-  <text x="600" y="290" text-anchor="middle" font-family="Inter, Arial" font-size="46" fill="#0f172a">macOS</text>
-  <text x="600" y="350" text-anchor="middle" font-family="Inter, Arial" font-size="30" fill="#0f172a">Güvenlik Güncellemesi</text>
-  <text x="600" y="430" text-anchor="middle" font-family="Inter, Arial" font-size="24" fill="#334155">TechWave</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#101b33"/>
+      <stop offset="1" stop-color="#16233f"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(270)">
+      <stop stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="apple3" x1="760" y1="180" x2="1000" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="glass3" x1="770" y1="190" x2="920" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg3)"/>
+  <rect width="1200" height="600" fill="url(#glow3)"/>
+
+  <!-- sol metin -->
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#a78bfa"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">APPLE</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" fill="#ffffff">Güvenlik Güncellemesi</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#94a3b8">macOS 15.3 · iOS 18.3</text>
+
+  <!-- Apple kalkan/ logosu yerine soyut elma silueti + kalkan -->
+  <g transform="translate(760 170)">
+    <!-- elma silueti -->
+    <path d="M115 60 C90 40 55 45 45 80 C30 120 40 210 70 255 C85 278 105 285 120 270 C135 285 155 278 170 255 C200 210 210 120 195 80 C185 45 150 40 125 60 Z"
+          fill="url(#apple3)" fill-opacity="0.18" stroke="url(#apple3)" stroke-width="4"/>
+    <path d="M125 60 C128 35 145 18 168 20 C166 44 150 58 125 60 Z" fill="#4ade80" fill-opacity="0.85"/>
+    <path d="M115 60 C90 40 55 45 45 80 C30 120 40 210 70 255 C85 278 105 285 120 270" fill="url(#glass3)"/>
+    <!-- kalkan rozeti -->
+    <g transform="translate(120 120)">
+      <path d="M0 -46 L52 -28 V10 C52 44 28 66 0 78 C-28 66 -52 44 -52 10 V-28 Z" fill="#0b1220" stroke="#a78bfa" stroke-width="3"/>
+      <path d="M-22 8 L-6 24 L24 -12" stroke="#4ade80" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- sürüm rozetleri -->
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="600" y="470" width="150" height="46" rx="23" fill="#0b1220" stroke="#a78bfa" stroke-width="2"/>
+    <text x="675" y="500" text-anchor="middle" font-size="22" fill="#c4b5fd">WebKit</text>
+    <rect x="770" y="470" width="180" height="46" rx="23" fill="#0b1220" stroke="#4ade80" stroke-width="2"/>
+    <text x="860" y="500" text-anchor="middle" font-size="22" fill="#4ade80">Safari Motoru</text>
+  </g>
+
+  <g fill="#a78bfa" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="520" cy="470" r="4"/><circle cx="1150" cy="120" r="3"/></g>
 </svg>

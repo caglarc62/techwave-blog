@@ -1,6 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
-  <rect width="1200" height="600" fill="#111827"/>
-  <rect x="200" y="150" width="800" height="300" rx="20" fill="#1f2937"/>
-  <text x="600" y="320" text-anchor="middle" font-family="monospace" font-size="42" fill="#34d399">$ sudo apt update &amp;&amp; sudo apt upgrade</text>
-  <text x="600" y="420" text-anchor="middle" font-family="Inter, Arial" font-size="24" fill="#6b7280">Linux Kernel 6.12.11 • TechWave</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0d1a2e"/>
+      <stop offset="1" stop-color="#10233d"/>
+    </linearGradient>
+    <radialGradient id="glow4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(280)">
+      <stop stop-color="#34d399" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="term4" x1="560" y1="140" x2="1120" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a0f1a"/>
+      <stop offset="1" stop-color="#060b14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg4)"/>
+  <rect width="1200" height="600" fill="url(#glow4)"/>
+
+  <!-- sol metin -->
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#34d399"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#6ee7b7" letter-spacing="3">LINUX</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800" fill="#ffffff">Çekirdek 6.12.11</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#94a3b8">Ubuntu · Debian · RHEL</text>
+
+  <!-- terminal penceresi -->
+  <rect x="560" y="140" width="560" height="320" rx="18" fill="url(#term4)" stroke="#1e293b" stroke-width="2"/>
+  <rect x="560" y="140" width="560" height="50" rx="18" fill="#0f172a"/>
+  <circle cx="592" cy="165" r="7" fill="#ef4444"/>
+  <circle cx="616" cy="165" r="7" fill="#f59e0b"/>
+  <circle cx="640" cy="165" r="7" fill="#22c55e"/>
+  <text x="672" y="173" font-family="monospace" font-size="19" fill="#64748b">bash — techwave</text>
+
+  <g font-family="monospace" font-size="22">
+    <text x="600" y="238" fill="#34d399">$ <tspan fill="#e2e8f0">sudo apt update</tspan></text>
+    <text x="600" y="276" fill="#64748b">Paket listeleri okunuyor… bitti</text>
+    <text x="600" y="314" fill="#34d399">$ <tspan fill="#e2e8f0">sudo apt upgrade -y</tspan></text>
+    <text x="600" y="352" fill="#64748b">15 güvenlik düzeltmesi uygulandı</text>
+    <text x="600" y="390" fill="#34d399">$ <tspan fill="#e2e8f0">uname -r</tspan></text>
+    <text x="600" y="428" fill="#a3e635">6.12.11-generic</text>
+  </g>
+  <rect x="852" y="410" width="12" height="24" fill="#34d399"/>
+
+  <!-- dağıtım rozetleri -->
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="600" y="486" width="130" height="44" rx="22" fill="#0b1220" stroke="#f97316" stroke-width="2"/>
+    <text x="665" y="515" text-anchor="middle" font-size="21" fill="#fdba74">Ubuntu</text>
+    <rect x="744" y="486" width="140" height="44" rx="22" fill="#0b1220" stroke="#a78bfa" stroke-width="2"/>
+    <text x="814" y="515" text-anchor="middle" font-size="21" fill="#c4b5fd">Debian</text>
+    <rect x="898" y="486" width="110" height="44" rx="22" fill="#0b1220" stroke="#ef4444" stroke-width="2"/>
+    <text x="953" y="515" text-anchor="middle" font-size="21" fill="#fca5a5">RHEL</text>
+  </g>
+
+  <g fill="#34d399" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="480" cy="470" r="4"/><circle cx="1160" cy="140" r="3"/></g>
 </svg>
