@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Kasım 2026 Güvenlik Yamaları: Windows, macOS ve Linux'ta Kritik Güncellemeler – TechWave</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Kasım 2026 güvenlik yamaları Windows, macOS ve Linux dağıtımlarında kritik açıkları kapatıyor. Güncelleme takvimi, etkilenen sistemler ve otomasyon rehberi.">
+  <meta property="og:title" content="Kasım 2026 Güvenlik Yamaları: Windows, macOS ve Linux'ta Kritik Güncellemeler">
+  <meta property="og:description" content="Kasım 2026 güvenlik yamaları Windows, macOS ve Linux dağıtımlarında kritik açıkları kapatıyor.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://techwaveblog.site/articles/2026-10-31-kasim-guvenlik-yamalari.html">
+  <meta property="og:image" content="https://techwaveblog.site/images/security-patch-nov-2026.jpg">
+  <link rel="canonical" href="https://techwaveblog.site/articles/2026-10-31-kasim-guvenlik-yamalari.html">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Kasım 2026 Güvenlik Yamaları: Windows, macOS ve Linux'ta Kritik Güncellemeler",
+    "datePublished":"2026-10-31",
+    "author":{"@type":"Person","name":"TechWave"},
+    "image":["https://techwaveblog.site/images/security-patch-nov-2026.jpg"]
+  }
+  </script>
+</head>
+<body>
+<header><h1>Kasım 2026 Güvenlik Yamaları: Windows, macOS ve Linux'ta Kritik Güncellemeler</h1></header>
+<article>
+<p>Kasım 2026 güvenlik yamaları, yılın en kritik bakım dönemlerinden biri olarak öne çıkıyor. Microsoft, Apple ve büyük Linux dağıtımları aynı hafta içinde uzaktan kod çalıştırma, ayrıcalık yükseltme ve mikro mimari tabanlı sızıntılara karşı yamalar yayınladı. Bu rehberde güncellemelerin kapsamını, etkilenen sistemleri ve kurumsal otomasyon adımlarını özetliyoruz.</p>
+<img src="https://techwaveblog.site/images/security-patch-nov-2026-1.jpg" alt="Güvenlik yaması ekranı" width="800">
+<h2>Microsoft Patch Salı: 94 güvenlik bildirimi</h2>
+<p>Microsoft, 10 Kasım 2026 Patch Salı kapsamında 94 güvenlik bildirimi yayınladı. Bunların 8’i sıfır gün, 12’si ise kritik derecede önemli olarak sınıflandırıldı. Özellikle Windows Kernel ve Active Directory Federasyon Hizmetleri’ndeki uzaktan kod çalıştırma açıkları, kurumların öncelikli olarak ele alması gereken başlıklar arasında.</p>
+<p>Windows 11 24H2 ve Windows Server 2025 kullanıcılarda RDP bileşenindeki bir mantık hatası, CVE-2026-... koduyla raporlandı. Saldırgan, kimlik doğrulama istemeden önce ağ üzerinden istismar edebiliyor. Microsoft, yamayı KB503... paketiyle dağıttı.</p>
+<img src="https://techwaveblog.site/images/security-patch-nov-2026-2.jpg" alt="Windows Güncelleme Merkezi" width="800">
+<h2>Apple Security Update: Ventura ve sonrası</h2>
+<p>Apple 8 Kasım’da macOS 15.3, iOS 18.3 ve iPadOS 18.3 güncellemelerini yayınladı. Güncellemeler, WebKit tabanlı tarayıcı motorunda hedefli uzaktan kod çalıştırma ve Safari içerik işleme açıklarını kapatıyor.</p>
+<p>Ek olarak, Apple Silicon M3 ve M4 çiplerde performans izleyicisine yönelik yeni bir mikro mimari sızıntı tekniğine karşı donanım katmanı koruması eklendi. Güncelleme, sistem tercihlerinden otomatik olarak yüklenebiliyor.</p>
+<img src="https://techwaveblog.site/images/security-patch-nov-2026-3.jpg" alt="macOS Güvenlik Güncellemesi" width="800">
+<h2>Linux dağıtımları: Kernel 6.12.11 ve dağıtım yamaları</h2>
+<p>Linux kernel 6.12.11, 9 Kasım’da kararlı kanala çıktı. Bu sürümde netfilter, BPF ve USB alt sistemlerindeki 15’e yakın güvenlik düzeltmesi bulunuyor. Ubuntu 24.10, Debian 13 ve RHEL 10, beklenen yamaları güvenlik depolarında yayınladı.</p>
+<p>Kurumlarda otomatik güncelleme kullanmak için unattended-upgrades, dnf-automatic veya apt-cron tercih edilebilir. Özellikle sunucu ortamlarda yeniden başlatma gerektiren çekirdek güncellemeleri için bakım penceresi planlamak şart.</p>
+<img src="https://techwaveblog.site/images/security-patch-nov-2026-4.jpg" alt="Linux terminal güncelleme" width="800">
+<h2>Kurumsal uygulama rehberi</h2>
+<ul>
+<li>Yamaları test ortamında önce doğrula, ardından kademeli dağıt.</li>
+<li>SCCM, Intune veya Landscape ile dağıtım takibi yap.</li>
+<li>Güvenlik açığı taraması ile yama sonrası doğrulama gerçekleştir.</li>
+<li>WSUS ve apt mirror kullanıyorsan gecikme süresini maksimum 72 saate indir.</li>
+</ul>
+<h2>Sıkça Sorulan Sorular</h2>
+<p><strong>Yamalar hemen yüklenmeli mi?</strong> Kritik dereceli uzaktan kod çalıştırma açıkları için 48 saat içinde dağıtım önerilir.</p>
+<p><strong>Eski sürümler destekleniyor mu?</strong> Windows 10 22H2 için destek 14 Ekim 2025’te sona erdi, bu nedenle Kasım yamaları bu sürümü kapsamaz.</p>
+<p><strong>Linux’ta yeniden başlatma şart mı?</strong> Kernel güncellemesi için evet; uygulama yamaları için genellikle değil.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</article>
+<footer><p>© 2026 TechWave. <a href="https://twitter.com/techwaveblog">X</a></p></footer>
+</body>
+</html>
