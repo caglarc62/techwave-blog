@@ -1,14 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e3a8a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0f1e38"/>
+      <stop offset="1" stop-color="#122a4d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(260)">
+      <stop stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shield" x1="740" y1="150" x2="1030" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="760" y1="160" x2="900" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
+
   <rect width="1200" height="600" fill="url(#bg)"/>
-  <circle cx="900" cy="300" r="160" fill="#2563eb" opacity="0.8"/>
-  <rect x="180" y="180" width="420" height="240" rx="16" fill="#f8fafc" opacity="0.95"/>
-  <text x="220" y="260" font-family="Inter, Arial" font-size="34" fill="#0f172a">Kasım 2026 Güvenlik Yamaları</text>
-  <text x="220" y="320" font-family="Inter, Arial" font-size="26" fill="#334155">Windows · macOS · Linux</text>
-  <text x="220" y="380" font-family="Inter, Arial" font-size="24" fill="#1d4ed8">TechWave</text>
+  <rect width="1200" height="600" fill="url(#glow)"/>
+
+  <!-- ince ağ çizgileri -->
+  <g stroke="#1e3a5f" stroke-width="1.5" opacity="0.7">
+    <path d="M60 120 H420 M60 200 H360 M60 280 H300 M60 360 H380 M60 440 H320"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.85">
+    <circle cx="420" cy="120" r="5"/><circle cx="360" cy="200" r="5"/>
+    <circle cx="300" cy="280" r="5"/><circle cx="380" cy="360" r="5"/>
+    <circle cx="320" cy="440" r="5"/>
+  </g>
+
+  <!-- sol metin bloğu -->
+  <rect x="70" y="196" width="8" height="150" rx="4" fill="#22d3ee"/>
+  <text x="104" y="238" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#7dd3fc" letter-spacing="3">TECHWAVE · GÜVENLİK</text>
+  <text x="104" y="300" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Kasım 2026</text>
+  <text x="104" y="356" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#e2e8f0">Güvenlik Yamaları</text>
+  <text x="104" y="404" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#94a3b8">Windows · macOS · Linux</text>
+
+  <!-- kalkan -->
+  <path d="M880 150 L1050 205 V320 C1050 410 980 470 880 500 C780 470 710 410 710 320 V205 Z"
+        fill="url(#shield)" fill-opacity="0.16" stroke="url(#shield)" stroke-width="4"/>
+  <path d="M880 150 L1050 205 V320 C1050 410 980 470 880 500 C780 470 710 410 710 320 V205 Z"
+        fill="url(#shine)"/>
+  <!-- onay işareti -->
+  <path d="M800 322 L862 384 L968 262" stroke="#4ade80" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- yama dikişleri -->
+  <g stroke="#7dd3fc" stroke-width="3" stroke-dasharray="10 10" opacity="0.7">
+    <path d="M745 250 H1015"/>
+  </g>
+
+  <!-- yüzen rozetler -->
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="600" y="96" width="150" height="46" rx="23" fill="#0b1220" stroke="#38bdf8" stroke-width="2"/>
+    <text x="675" y="126" text-anchor="middle" font-size="22" fill="#7dd3fc">94 Yama</text>
+    <rect x="930" y="470" width="170" height="46" rx="23" fill="#0b1220" stroke="#4ade80" stroke-width="2"/>
+    <text x="1015" y="500" text-anchor="middle" font-size="22" fill="#4ade80">0-Gün Kapatma</text>
+  </g>
+
+  <g fill="#38bdf8" opacity="0.9">
+    <circle cx="1130" cy="130" r="4"/><circle cx="620" cy="500" r="4"/>
+    <circle cx="1160" cy="360" r="3"/><circle cx="540" cy="180" r="3"/>
+  </g>
 </svg>
