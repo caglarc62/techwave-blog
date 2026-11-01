@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#0e1a2b"/>
+      <stop offset="1" stop-color="#123043"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(280)">
+      <stop stop-color="#4ade80" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="listD" x1="560" y1="130" x2="1120" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132033"/>
+      <stop offset="1" stop-color="#0b1524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#4ade80"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#86efac" letter-spacing="3">KONTROL LİSTESİ</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Denetime Hazır</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="500" fill="#94a3b8">6 hızlı adım</text>
+
+  <!-- liste paneli -->
+  <rect x="560" y="130" width="560" height="340" rx="20" fill="url(#listD)" stroke="#1e293b" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="22">
+    <g>
+      <circle cx="606" cy="188" r="13" fill="#22c55e"/><path d="M599 188 l5 5 l10 -10" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="638" y="196" fill="#e2e8f0">Her araç için izinleri en aza indir</text>
+    </g>
+    <g>
+      <circle cx="606" cy="238" r="13" fill="#22c55e"/><path d="M599 238 l5 5 l10 -10" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="638" y="246" fill="#e2e8f0">Kritik işlemleri onaya bağla</text>
+    </g>
+    <g>
+      <circle cx="606" cy="288" r="13" fill="#22c55e"/><path d="M599 288 l5 5 l10 -10" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="638" y="296" fill="#e2e8f0">Girdileri güvenilir olarak işaretle</text>
+    </g>
+    <g>
+      <circle cx="606" cy="338" r="13" fill="#22c55e"/><path d="M599 338 l5 5 l10 -10" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="638" y="346" fill="#e2e8f0">Çıktı ve araç çağrılarını log’la</text>
+    </g>
+    <g>
+      <circle cx="606" cy="388" r="13" fill="#22c55e"/><path d="M599 388 l5 5 l10 -10" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="638" y="396" fill="#e2e8f0">Sunucu ve veriyi izole et</text>
+    </g>
+    <g>
+      <circle cx="606" cy="438" r="13" fill="#22c55e"/><path d="M599 438 l5 5 l10 -10" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="638" y="446" fill="#e2e8f0">Sunucu listesini düzenli gözden geçir</text>
+    </g>
+  </g>
+
+  <g fill="#4ade80" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="490" cy="470" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

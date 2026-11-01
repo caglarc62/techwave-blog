@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#101a35"/>
+      <stop offset="1" stop-color="#151a3d"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(280)">
+      <stop stop-color="#f472b6" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nodeA" x1="760" y1="180" x2="1010" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9a8d4"/>
+      <stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="shineA" x1="770" y1="190" x2="920" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <!-- sol metin -->
+  <rect x="70" y="200" width="8" height="170" rx="4" fill="#f472b6"/>
+  <text x="104" y="242" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#f9a8d4" letter-spacing="3">TECHWAVE · YAPAY ZEKÂ</text>
+  <text x="104" y="304" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Ajanlar &amp; MCP</text>
+  <text x="104" y="356" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">Araç Bağlantılarının Güvenliği</text>
+  <text x="104" y="404" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">1 Kasım 2026 · Rehber</text>
+
+  <!-- merkez ajan düğümü -->
+  <circle cx="880" cy="300" r="70" fill="url(#nodeA)" fill-opacity="0.18" stroke="url(#nodeA)" stroke-width="4"/>
+  <circle cx="880" cy="300" r="70" fill="url(#shineA)"/>
+  <text x="880" y="312" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">AI</text>
+
+  <!-- çevre araç düğümleri -->
+  <g stroke="#f472b6" stroke-width="2.5" opacity="0.8">
+    <path d="M880 300 L740 175 M880 300 L1040 190 M880 300 L720 420 M880 300 L1040 420"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <rect x="668" y="150" width="120" height="46" rx="23" fill="#0b1220" stroke="#38bdf8" stroke-width="2"/>
+    <text x="728" y="180" fill="#7dd3fc">Dosya</text>
+    <rect x="962" y="164" width="130" height="46" rx="23" fill="#0b1220" stroke="#4ade80" stroke-width="2"/>
+    <text x="1027" y="194" fill="#4ade80">Web</text>
+    <rect x="640" y="398" width="130" height="46" rx="23" fill="#0b1220" stroke="#a78bfa" stroke-width="2"/>
+    <text x="705" y="428" fill="#c4b5fd">Veritabanı</text>
+    <rect x="962" y="398" width="140" height="46" rx="23" fill="#0b1220" stroke="#fbbf24" stroke-width="2"/>
+    <text x="1032" y="428" fill="#fcd34d">E-posta</text>
+  </g>
+
+  <g fill="#f472b6" opacity="0.9"><circle cx="150" cy="140" r="4"/><circle cx="520" cy="470" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>
