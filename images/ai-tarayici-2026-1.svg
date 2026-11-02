@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#101b33"/>
+      <stop offset="1" stop-color="#14284a"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 300) rotate(90) scale(280)">
+      <stop stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barA" x1="180" y1="0" x2="1020" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <!-- sol metin -->
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#38bdf8"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#7dd3fc" letter-spacing="3">TECHWAVE · İNCELEME</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">AI Tarayıcılar</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">2026'nın En İyi 10'u</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Comet · Dia · Arc ve daha fazlası</text>
+
+  <!-- tarayıcı penceresi -->
+  <rect x="560" y="150" width="560" height="300" rx="20" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+  <rect x="560" y="150" width="560" height="52" rx="20" fill="#0a1120"/>
+  <circle cx="592" cy="176" r="7" fill="#ef4444"/>
+  <circle cx="616" cy="176" r="7" fill="#f59e0b"/>
+  <circle cx="640" cy="176" r="7" fill="#22c55e"/>
+  <!-- adres çubuğu -->
+  <rect x="672" y="164" width="420" height="26" rx="13" fill="#1e293b"/>
+  <text x="694" y="183" font-family="Inter, Arial, sans-serif" font-size="16" fill="#64748b">techwaveblog.site</text>
+
+  <!-- AI asistan paneli -->
+  <rect x="588" y="228" width="330" height="196" rx="14" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+  <g fill="#7dd3fc"><circle cx="620" cy="266" r="12"/></g>
+  <text x="620" y="272" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#0b1220">✦</text>
+  <text x="648" y="272" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0">Yapay Zekâ Asistanı</text>
+  <rect x="612" y="300" width="280" height="12" rx="6" fill="#1e293b"/>
+  <rect x="612" y="324" width="240" height="12" rx="6" fill="#1e293b"/>
+  <rect x="612" y="348" width="264" height="12" rx="6" fill="#1e293b"/>
+  <rect x="612" y="384" width="140" height="30" rx="15" fill="url(#barA)"/>
+  <text x="682" y="405" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#04222e">Özeti çıkar</text>
+
+  <!-- sekme rozetleri -->
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="944" y="234" width="150" height="42" rx="21" fill="#0b1220" stroke="#38bdf8" stroke-width="2"/>
+    <text x="1019" y="262" text-anchor="middle" font-size="19" fill="#7dd3fc">Sekmeler</text>
+    <rect x="944" y="292" width="150" height="42" rx="21" fill="#0b1220" stroke="#4ade80" stroke-width="2"/>
+    <text x="1019" y="320" text-anchor="middle" font-size="19" fill="#4ade80">Özetleme</text>
+    <rect x="944" y="350" width="150" height="42" rx="21" fill="#0b1220" stroke="#fbbf24" stroke-width="2"/>
+    <text x="1019" y="378" text-anchor="middle" font-size="19" fill="#fcd34d">Gizlilik</text>
+  </g>
+
+  <g fill="#38bdf8" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="480" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>
