@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#121833"/>
+      <stop offset="1" stop-color="#171f42"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 300) rotate(90) scale(300)">
+      <stop stop-color="#a78bfa" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#a78bfa"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">ŞİFRELEME</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">WPA3 Mümkünse</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="500" fill="#94a3b8">WPA2 · WEP · Açık ağ</text>
+
+  <!-- guvenlik seviyeleri -->
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="540" y="132" width="580" height="100" rx="16" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="570" y="174" font-size="26" font-weight="800" fill="#4ade80">WPA3</text>
+      <text x="570" y="208" font-size="21" fill="#94a3b8">Modern · güçlü anahtar değişimi</text>
+      <text x="1092" y="190" text-anchor="end" font-size="22" font-weight="800" fill="#4ade80">✓ Güvenli</text>
+    </g>
+    <g>
+      <rect x="540" y="250" width="580" height="100" rx="16" fill="#132033" stroke="#fbbf24" stroke-width="2"/>
+      <text x="570" y="292" font-size="26" font-weight="800" fill="#fbbf24">WPA2-AES</text>
+      <text x="570" y="326" font-size="21" fill="#94a3b8">Kabul edilebilir · güncelleme şart</text>
+      <text x="1092" y="308" text-anchor="end" font-size="22" font-weight="800" fill="#fcd34d">! Orta</text>
+    </g>
+    <g>
+      <rect x="540" y="368" width="580" height="100" rx="16" fill="#132033" stroke="#ef4444" stroke-width="2"/>
+      <text x="570" y="410" font-size="26" font-weight="800" fill="#ef4444">WEP / WPA-TKIP / Açık</text>
+      <text x="570" y="444" font-size="21" fill="#94a3b8">Dakikalar içinde kırılabilir</text>
+      <text x="1092" y="426" text-anchor="end" font-size="22" font-weight="800" fill="#ef4444">✗ Riskli</text>
+    </g>
+  </g>
+
+  <g fill="#a78bfa" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="500" r="4"/><circle cx="1160" cy="130" r="3"/></g>
+</svg>

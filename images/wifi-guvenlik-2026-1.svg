@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#101b33"/>
+      <stop offset="1" stop-color="#14284a"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 300) rotate(90) scale(300)">
+      <stop stop-color="#38bdf8" stop-opacity="0.33"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shieldA" x1="770" y1="150" x2="1030" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#38bdf8"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#7dd3fc" letter-spacing="3">SİBER GÜVENLİK</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Ev Wi-Fi</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#e2e8f0">Ağınızı Koruma Rehberi</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Şifreleme · Yönetim paneli · Misafir ağı</text>
+
+  <!-- kalkan -->
+  <path d="M880 150 L1040 205 V325 C1040 410 975 470 880 500 C785 470 720 410 720 325 V205 Z"
+        fill="url(#shieldA)" fill-opacity="0.15" stroke="url(#shieldA)" stroke-width="4"/>
+  <path d="M795 400 L850 455 L970 290" stroke="#7dd3fc" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- wifi dalgaları -->
+  <g stroke="#38bdf8" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M820 300 A60 60 0 0 1 940 300"/>
+    <path d="M795 268 A92 92 0 0 1 965 268"/>
+    <path d="M770 236 A124 124 0 0 1 990 236"/>
+  </g>
+  <circle cx="880" cy="330" r="16" fill="#38bdf8"/>
+
+  <g fill="#38bdf8" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="480" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

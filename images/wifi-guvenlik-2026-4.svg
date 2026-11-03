@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#0e1a2b"/>
+      <stop offset="1" stop-color="#123043"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#fbbf24" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#fbbf24"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#fcd34d" letter-spacing="3">AĞ AYIRMA</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Misafir Ağı</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">Neden Ayırmalısınız?</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Ziyaretçi cihazları ana ağdan izole edin</text>
+
+  <!-- iki ag -->
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="550" y="132" width="270" height="200" rx="18" fill="#132033" stroke="#38bdf8" stroke-width="3"/>
+    <text x="685" y="176" text-anchor="middle" font-size="24" font-weight="800" fill="#7dd3fc">ANA AĞ</text>
+    <g font-size="19" fill="#94a3b8">
+      <text x="580" y="216">• Bilgisayarlar</text>
+      <text x="580" y="248">• Depolama / NAS</text>
+      <text x="580" y="280">• Akıllı ev köprüsü</text>
+      <text x="580" y="312">• Yazıcı</text>
+    </g>
+
+    <rect x="850" y="132" width="270" height="200" rx="18" fill="#132033" stroke="#fbbf24" stroke-width="3"/>
+    <text x="985" y="176" text-anchor="middle" font-size="24" font-weight="800" fill="#fcd34d">MİSAFİR AĞI</text>
+    <g font-size="19" fill="#94a3b8">
+      <text x="880" y="216">• Ziyaretçi telefonu</text>
+      <text x="880" y="248">• TV / oyun konsolu</text>
+      <text x="880" y="280">• IoT cihazları</text>
+      <text x="880" y="312">• Güvenli internet</text>
+    </g>
+
+    <!-- ayirici cizgi -->
+    <line x1="840" y1="140" x2="840" y2="324" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8"/>
+    <g>
+      <rect x="550" y="370" width="570" height="100" rx="16" fill="#0b1220" stroke="#4ade80" stroke-width="2"/>
+      <text x="580" y="412" font-size="23" font-weight="800" fill="#4ade80">Sonuç</text>
+      <text x="580" y="446" font-size="21" fill="#94a3b8">Bir cihaz ele geçirilirse ana ağınız erişilemez kalır.</text>
+    </g>
+  </g>
+
+  <g fill="#fbbf24" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="490" cy="470" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>
