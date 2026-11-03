@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light"><head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="Python ile web scraping öğrenin: requests, BeautifulSoup ve Playwright ile çalışan bir veri toplayıcı yazın. robots.txt, hız sınırı ve yasal sınırlar dahil 2026 rehberi.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>Python ile Web Scraping: 2026'da Güncel ve Etik Rehber — TechWave</title>
+<meta property="og:title" content="Python ile Web Scraping: 2026'da Güncel ve Etik Rehber">
+<meta property="og:description" content="requests, BeautifulSoup ve Playwright ile çalışan veri toplayıcı yazın; robots.txt, hız sınırı ve yasal sınırları öğrenin.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/python-scraping-2026-1.svg">
+<link rel="canonical" href="https://techwaveblog.site/articles/python-web-scraping-rehberi-2026.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261103-scrape">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Python ile Web Scraping: 2026'da Güncel ve Etik Rehber","author":{"@type":"Person","name":"Çağlar ÇELİK"},"datePublished":"2026-11-03","dateModified":"2026-11-03","description":"Python ile web scraping: requests, BeautifulSoup ve Playwright ile çalışan veri toplayıcı yazma rehberi; robots.txt, hız sınırı ve yasal sınırlar.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/python-web-scraping-rehberi-2026.html","image":"https://techwaveblog.site/images/python-scraping-2026-1.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Çağlar ÇELİK","jobTitle":"Teknoloji ve Yapay Zeka Yazarı","url":"https://techwaveblog.site","sameAs":[],"worksFor":{"@type":"Organization","name":"TechWave"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<article class="article-page"><div class="container">
+<div class="article-header"><span class="card-tag" data-category="Yazılım">Yazılım</span><h1 class="article-title">Python ile Web Scraping: 2026'da Güncel ve Etik Rehber</h1><div class="article-meta"><span>📅 3 Kasım 2026</span><span>⏱ 12 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/python-scraping-2026-1.svg?v=20261103-hero" alt="Python web scraping kodu ve veri akışını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Veri, yeni ham petrol; ama çoğu zaman tabloya değil, web sayfasına gömülü.</strong> Fiyatları izlemek, ürün karşılaştırmak veya araştırma için tablo toplamak istiyorsanız, Python bu işin en pratik yolu. Bu rehberde sıfırdan çalışan bir veri toplayıcı yazıyoruz — hangi kütüphaneyi ne zaman seçeceğinizi, kodu ve en önemlisi nerede durmanız gerektiğini.</p>
+<p>Web scraping'e dair en büyük yanlış anlama, “her şey serbest” algısıdır. Teknik olarak sayfayı indirmek kolay; asıl mesele <strong>ne indirdiğiniz, ne sıklıkla indirdiğiniz ve bunu kiminle paylaştığınızdır</strong>. Bu rehber hem kodu hem de sınırı öğretiyor.</p>
+
+<img src="../images/python-scraping-2026-1.svg?v=20261103-a" alt="requests ve BeautifulSoup kod örneği" width="800">
+
+<h2>Web scraping nedir, ne değildir?</h2>
+<p>Web scraping, sunucudan gelen HTML yanıtını ayrıştırıp içindeki yapılandırılmış bilgiyi çıkarma işlemidir. Fiyat, başlık, tarih, stok durumu gibi alanları seçer, bir tabloya (CSV/JSON) dönüştürürsünüz. Bunu <strong>API</strong> ile yapmak her zaman daha temizdir; eğer site bir API sunuyorsa önce onu kullanın. Scraping, API'nin olmadığı durumda devreye girer.</p>
+<p>Scraping <strong>değildir</strong>: şifreli içeriğe yetkisiz erişim, sunucuyu saniyede yüzlerce istekle boğmak veya kişisel verileri izinsiz toplamak. Bu üçü hem etik hem çoğu ülkede yasal açıdan sorunludur.</p>
+
+<h2>Hangi kütüphane? İhtiyaca göre seçim</h2>
+<table>
+<tr><th>Araç</th><th>Uygun olduğu durum</th><th>Zorluk</th></tr>
+<tr><td>requests + BeautifulSoup</td><td>Statik HTML sayfaları</td><td>Kolay</td></tr>
+<tr><td>Playwright</td><td>JavaScript ile yüklenen sayfalar</td><td>Orta</td></tr>
+<tr><td>Scrapy</td><td>Binlerce sayfalık büyük taramalar</td><td>İleri</td></tr>
+<tr><td>Selenium</td><td>Eski otomasyon senaryoları</td><td>Orta</td></tr>
+<tr><td>pandas.read_html</td><td>Sayfadaki hazır tablolar</td><td>Kolay</td></tr>
+</table>
+<p>Kural basit: <strong>önce en basit aracı deneyin.</strong> Çoğu sayfa statiktir ve requests + BeautifulSoup yeterlidir. İçerik JavaScript ile sonradan yükleniyorsa Playwright'a geçin. On binlerce sayfa varsa Scrapy'nin asenkron yapısı fark yaratır.</p>
+
+<img src="../images/python-scraping-2026-2.svg?v=20261103-b" alt="requests, Playwright ve Scrapy karşılaştırma kartları" width="800">
+
+<h2>6 adımda çalışan scraper</h2>
+<ol>
+<li><strong>Ortamı hazırlayın:</strong> <code>python -m venv venv</code> çalıştırın, ardından <code>pip install requests beautifulsoup4</code> ile paketleri kurun.</li>
+<li><strong>Hedefi okuyun:</strong> robots.txt ve kullanım şartlarını kontrol edin.</li>
+<li><strong>İstek atın:</strong> User-Agent tanımlayın, timeout verin.</li>
+<li><strong>Ayrıştırın:</strong> BeautifulSoup ile hedef elementleri seçin.</li>
+<li><strong>Yavaşlayın:</strong> her istek arasında gecikme koyun.</li>
+<li><strong>Kaydedin:</strong> CSV veya JSON'a yazın.</li>
+</ol>
+
+<h2>Tam kod örneği</h2>
+<pre><code>import time, csv, requests
+from bs4 import BeautifulSoup
+
+URL = "https://ornek-site.com/urunler"
+HEADERS = {
+    "User-Agent": "TechWaveBot/1.0 (iletisim: ornek@techwaveblog.site)"
+}
+
+resp = requests.get(URL, headers=HEADERS, timeout=10)
+resp.raise_for_status()                 # 4xx/5xx'te hata fırlat
+
+soup = BeautifulSoup(resp.text, "html.parser")
+rows = []
+for item in soup.select(".urun-karti"):
+    baslik = item.select_one(".baslik")
+    fiyat = item.select_one(".fiyat")
+    if baslik and fiyat:
+        rows.append({
+            "baslik": baslik.get_text(strip=True),
+            "fiyat": fiyat.get_text(strip=True),
+        })
+
+    time.sleep(1.5)                     # sunucuyu yormayın
+
+with open("urunler.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=["baslik", "fiyat"])
+    writer.writeheader()
+    writer.writerows(rows)
+
+print(f"{len(rows)} kayıt kaydedildi.")</code></pre>
+
+<p>Bu kodun kritik üç noktası var: <strong>timeout</strong> (askıda kalmayı önler), <strong>raise_for_status</strong> (sessizce hatalı sayfa işlemeyi engeller) ve <strong>time.sleep</strong> (sunucuya saygı). Üçü olmadan yazılan script'ler hem kırılgandır hem de hedef siteye yük bindirir.</p>
+
+<h2>JavaScript ile yüklenen sayfalar: Playwright</h2>
+<p>Modern sitelerin çoğu içeriği istemci tarafında render eder. requests ile indirdiğinizde yalnızca boş bir iskelet alırsınız. Playwright, gerçek bir tarayıcı açar, sayfanın yüklenmesini bekler ve sonra HTML'i verir:</p>
+<pre><code>from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.goto("https://ornek-site.com/veri", wait_until="networkidle")
+    page.wait_for_selector(".sonuc-listesi")
+    icerik = page.content()
+    browser.close()</code></pre>
+<p><code>wait_until="networkidle"</code> ve <code>wait_for_selector</code> olmadan sayfa henüz boşken yakalarsınız — bu, yeni başlayanların en sık yaşadığı “hiçbir şey bulamadım” sorununun bir numaralı sebebidir.</p>
+
+<img src="../images/python-scraping-2026-3.svg?v=20261103-c" alt="robots.txt ve etik kullanım sınırlarını simgeleyen kalkan" width="800">
+
+<h2>Etik ve yasal sınırlar</h2>
+<p>Teknik yetenek, izin anlamına gelmez. Scraping yapmadan önce şu dört başlığı kontrol edin:</p>
+<ul>
+<li><strong>robots.txt:</strong> <code>ornek-site.com/robots.txt</code> adresinde hangi yolların taranmasına izin verildiği yazan bu dosyayı okuyun. <code>Disallow</code> edilen bir bölümde ısrar etmeyin.</li>
+<li><strong>Kullanım şartları:</strong> Site, otomatik erişimi açıkça yasaklıyorsa bunu göz ardı etmeyin. Sözleşme ihkali birçok davada dayanak oluşturur.</li>
+<li><strong>Kişisel veri:</strong> Ad, e-posta, telefon gibi kişisel verileri toplarken KVKK/GDPR kapsamında hukuki sebebiniz olmalı. Kişisel veri toplamak “sadece scraping” diye geçmez.</li>
+<li><strong>Hız ve yük:</strong> Sunucuyu yavaşlatmayın. Genelde saniyede birden fazla istek agresif kabul edilir; 1–2 saniyelik gecikme iyi bir başlangıçtır.</li>
+</ul>
+<p>İyi niyetli bir başlangıç: kendi sitenizin trafiğine bakın, bir insanın sayfalar arasında dolaşma hızını düşünün ve script'inizi o hızın altında tutun.</p>
+
+<h2>Gerçek senaryo: fiyat izleme script'i</h2>
+<p>Teori kadar önemli olan, bunun günlük hayatta nasıl çalıştığıdır. Örneğin bir e-ticaret sitesinde 20 ürünün fiyatını günde bir kez izlemek istiyorsunuz. Pratik kurulum şöyle olur:</p>
+<ul>
+<li><strong>Zamanlama:</strong> script'i saatte bir değil, günde bir çalıştırın. Fiyatlar saniyede değişmiyor; gereksiz istek hem yük hem risk demektir.</li>
+<li><strong>Değişiklik algılama:</strong> her çalıştırmada önceki CSV'yi okuyun, farklılık varsa log'a yazın. Böylece tüm veriyi tekrar indirmek zorunda kalmazsınız.</li>
+<li><strong>Bildirim:</strong> fiyat hedefin altına indiğinde e-posta veya mesaj gönderin; veriyi toplamanın amacı budur.</li>
+<li><strong>Durum kaydı:</strong> son başarılı çalıştırma zamanını ve kayıt sayısını tutun. Bir gün 0 kayıt geldiğinde bunu hemen görün.</li>
+</ul>
+<p>Aynı kalıp ürün karşılaştırma, stok takibi, duyuru izleme ve araştırma verisi toplama için de geçerlidir. Ortak nokta: <strong>az, doğru ve düzenli</strong> veri; bol ve gürültülü veriden daha değerlidir.</p>
+
+<h2>Veriyi temizleme ve doğrulama</h2>
+<p>Ham HTML'den çıkan metin çoğu zaman kirli olur: fazladan boşluklar, kırık karakterler, “₺1.299,00” gibi biçimsiz fiyatlar. Çıktıyı kullanmadan önce üç işlem yapın:</p>
+<ul>
+<li><strong>Beyaz alanı temizleyin:</strong> <code>get_text(strip=True)</code> satır içi boşlukları ve baştaki/sondaki boşlukları kaldırır.</li>
+<li><strong>Tipi dönüştürün:</strong> fiyatı sayıya çevirin (<code>replace(".", "").replace(",", ".")</code>), tarihi ISO biçimine alın. Aksi hâlde sıralama ve karşılaştırma yanlış çalışır.</li>
+<li><strong>Doğrulayın:</strong> kayıt sayısı, boş alan oranı ve tekrar eden kayıtları kontrol edin. Beklenen 100 kayıt yerine 98 geliyorsa, hangi ikisinin eksik olduğunu bilin.</li>
+</ul>
+<p>Bu adım çoğu projede atlanır ve aylar sonra “bu veriye güvenebilir miyim?” sorusuyla karşılaşırsınız. Temiz veri, toplanan veriden daha değerlidir; çünkü kararı doğru kılan şey miktar değil, doğruluktur.</p>
+
+<h2>Yaygın hatalar</h2>
+<ul>
+<li><strong>Kırılgan seçiciler:</strong> <code>div:nth-child(3)</code> gibi sıralamaya dayalı seçiciler, site küçük bir düzen değişikliğinde bozulur. Anlamlı sınıf adları tercih edin.</li>
+<li><strong>Hata yok saymak:</strong> 404 veya 500 yanıtları sessizce geçmek, yanlış veri toplamanıza yol açar.</li>
+<li><strong>Gecikmesiz döngü:</strong> <code>for</code> içinde uyusuz istek atmak, hem sunucuyu hem IP'nizi riske atar.</li>
+<li><strong>Çıktıyı doğrulamamak:</strong> 1000 kayıt beklerken 12 kayıt geliyorsa, seçici yanlış demektir. Her çalıştırmada sayı kontrolü yapın.</li>
+<li><strong>Sonuçları karıştırmamak:</strong> eski CSV'nin üstüne yazmak yerine tarihli dosya kullanın.</li>
+</ul>
+
+<img src="../images/python-scraping-2026-4.svg?v=20261103-d" alt="Altı adımlık scraper kurulum paneli" width="800">
+
+<h2>Sıkça Sorulan Sorular</h2>
+<ul>
+<li><strong>Web scraping yasal mı?</strong> Genel olarak kamuya açık verinin toplanması tartışmalıdır; sitenin kullanım şartları, kişisel veri kapsamı ve ülkenin mevzuatı belirleyicidir. Emin değilseniz hukuki görüş alın.</li>
+<li><strong>Scraping Google'ı yasak mı?</strong> Google, otomatik sorguları kısıtlar. Arama sonuçlarını toplamak için resmî API'leri kullanın.</li>
+<li><strong>Engellenirsem ne yapayım?</strong> 429/403 yanıtı alırsanız hızlanmayın; yavaşlayın, istek sayısını azaltın ve gerekirse erişimi durdurun.</li>
+<li><strong>Veri nereye kaydedilmeli?</strong> Küçük veri için CSV, iç içe yapı için JSON; büyük veri için SQLite veya bir veritabanı.</li>
+<li><strong>Playwright mu, requests mi?</strong> Sayfa kaynak görünümünde (View Source) hedef metni görüyorsanız requests yeterlidir.</li>
+</ul>
+
+<h2>Sonuç</h2>
+<p>Python ile scraping, doğru kurulduğunda son derece güçlü bir araçtır: doğru kütüphaneyi seçin, seçicileri sağlam yazın, hata yönetimini atlamayın ve her zaman hız sınırına uyun. En iyi script, en çok veriyi toplayan değil; <strong>doğru veriyi, sunucuyu yormadan ve sınırlar içinde toplayan</strong> script'tir.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</div></div></article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=18efba2"></script>
+</body></html>

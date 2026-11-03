@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#101b2e"/>
+      <stop offset="1" stop-color="#132a45"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 300) rotate(90) scale(280)">
+      <stop stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="codeA" x1="620" y1="200" x2="1100" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1729"/>
+      <stop offset="1" stop-color="#0a1120"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#fbbf24"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#fcd34d" letter-spacing="3">PYTHON · REHBER</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800" fill="#ffffff">Web Scraping</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">2026'da Güncel Yaklaşım</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">requests · BeautifulSoup · Playwright</text>
+
+  <!-- kod paneli -->
+  <rect x="600" y="150" width="520" height="300" rx="18" fill="url(#codeA)" stroke="#1e3a5f" stroke-width="2"/>
+  <rect x="600" y="150" width="520" height="46" rx="18" fill="#0a1120"/>
+  <circle cx="630" cy="173" r="7" fill="#ef4444"/>
+  <circle cx="654" cy="173" r="7" fill="#f59e0b"/>
+  <circle cx="678" cy="173" r="7" fill="#22c55e"/>
+  <text x="708" y="179" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748b">scraper.py</text>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="20">
+    <text x="628" y="234" fill="#7dd3fc">import <tspan fill="#e2e8f0">requests</tspan></text>
+    <text x="628" y="268" fill="#7dd3fc">from <tspan fill="#e2e8f0">bs4 </tspan><tspan fill="#7dd3fc">import </tspan><tspan fill="#e2e8f0">BeautifulSoup</tspan></text>
+    <text x="628" y="316" fill="#94a3b8">r = requests.get(url, <tspan fill="#fbbf24">timeout</tspan>=10)</text>
+    <text x="628" y="350" fill="#94a3b8">soup = BeautifulSoup(r.text, </text>
+    <text x="648" y="384" fill="#4ade80">"html.parser")</text>
+    <text x="628" y="424" fill="#f472b6">print(soup.title.text)</text>
+  </g>
+
+  <!-- veri akışı okları -->
+  <g stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <path d="M540 250 H580"/>
+    <path d="M540 310 H580"/>
+    <path d="M540 370 H580"/>
+  </g>
+  <g fill="#38bdf8" opacity="0.9">
+    <circle cx="516" cy="250" r="6"/><circle cx="516" cy="310" r="6"/><circle cx="516" cy="370" r="6"/>
+    <circle cx="150" cy="130" r="4"/><circle cx="500" cy="480" r="4"/><circle cx="1160" cy="120" r="3"/>
+  </g>
+</svg>

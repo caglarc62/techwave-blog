@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#111a35"/>
+      <stop offset="1" stop-color="#171f45"/>
+    </linearGradient>
+    <radialGradient id="glowB2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 300) rotate(90) scale(300)">
+      <stop stop-color="#a78bfa" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB2)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#a78bfa"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">ARAÇ SEÇİMİ</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Hangi Kütüphane?</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="500" fill="#94a3b8">İhtiyaca göre 3 seçenek</text>
+
+  <!-- 3 araç kartı -->
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="540" y="130" width="580" height="112" rx="16" fill="#132033" stroke="#38bdf8" stroke-width="2"/>
+      <text x="570" y="174" font-size="26" font-weight="800" fill="#7dd3fc">requests + BeautifulSoup</text>
+      <text x="570" y="208" font-size="21" fill="#94a3b8">Statik HTML sayfalar · hızlı, basit</text>
+      <rect x="980" y="152" width="112" height="36" rx="18" fill="#0b1220" stroke="#38bdf8" stroke-width="2"/>
+      <text x="1036" y="177" text-anchor="middle" font-size="17" font-weight="700" fill="#7dd3fc">Kolay</text>
+    </g>
+    <g>
+      <rect x="540" y="258" width="580" height="112" rx="16" fill="#132033" stroke="#a78bfa" stroke-width="2"/>
+      <text x="570" y="302" font-size="26" font-weight="800" fill="#c4b5fd">Playwright</text>
+      <text x="570" y="336" font-size="21" fill="#94a3b8">JavaScript sayfaları · gerçek tarayıcı</text>
+      <rect x="980" y="280" width="112" height="36" rx="18" fill="#0b1220" stroke="#a78bfa" stroke-width="2"/>
+      <text x="1036" y="305" text-anchor="middle" font-size="17" font-weight="700" fill="#c4b5fd">Orta</text>
+    </g>
+    <g>
+      <rect x="540" y="386" width="580" height="112" rx="16" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="570" y="430" font-size="26" font-weight="800" fill="#4ade80">Scrapy</text>
+      <text x="570" y="464" font-size="21" fill="#94a3b8">Büyük ölçek · binlerce sayfa</text>
+      <rect x="980" y="408" width="112" height="36" rx="18" fill="#0b1220" stroke="#4ade80" stroke-width="2"/>
+      <text x="1036" y="433" text-anchor="middle" font-size="17" font-weight="700" fill="#4ade80">İleri</text>
+    </g>
+  </g>
+
+  <g fill="#a78bfa" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="500" r="4"/><circle cx="1160" cy="130" r="3"/></g>
+</svg>

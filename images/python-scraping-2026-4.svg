@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#0e1a2b"/>
+      <stop offset="1" stop-color="#123043"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#fbbf24" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelD" x1="560" y1="130" x2="1120" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151d33"/>
+      <stop offset="1" stop-color="#0b1524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#fbbf24"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#fcd34d" letter-spacing="3">HIZLI BAŞLANGIÇ</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">6 Adımda</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#e2e8f0">Çalışan Scraper</text>
+
+  <rect x="560" y="130" width="560" height="340" rx="20" fill="url(#panelD)" stroke="#1e293b" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="21">
+    <g>
+      <circle cx="608" cy="170" r="18" fill="#fbbf24"/><text x="608" y="177" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1220">1</text>
+      <text x="644" y="177" fill="#e2e8f0">Ortamı hazırla: venv + pip install</text>
+    </g>
+    <g>
+      <circle cx="608" cy="224" r="18" fill="#fbbf24"/><text x="608" y="231" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1220">2</text>
+      <text x="644" y="231" fill="#e2e8f0">robots.txt ve kullanım şartlarını oku</text>
+    </g>
+    <g>
+      <circle cx="608" cy="278" r="18" fill="#fbbf24"/><text x="608" y="285" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1220">3</text>
+      <text x="644" y="285" fill="#e2e8f0">User-Agent ve timeout tanımla</text>
+    </g>
+    <g>
+      <circle cx="608" cy="332" r="18" fill="#fbbf24"/><text x="608" y="339" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1220">4</text>
+      <text x="644" y="339" fill="#e2e8f0">HTML'i ayrıştır (BeautifulSoup)</text>
+    </g>
+    <g>
+      <circle cx="608" cy="386" r="18" fill="#fbbf24"/><text x="608" y="393" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1220">5</text>
+      <text x="644" y="393" fill="#e2e8f0">Gecikme ekle (rate limit)</text>
+    </g>
+    <g>
+      <circle cx="608" cy="440" r="18" fill="#4ade80"/><text x="608" y="447" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1220">6</text>
+      <text x="644" y="447" fill="#e2e8f0">CSV/JSON'a kaydet</text>
+    </g>
+  </g>
+
+  <g fill="#fbbf24" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="490" cy="470" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>
