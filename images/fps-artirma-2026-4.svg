@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#0e1a2b"/>
+      <stop offset="1" stop-color="#123043"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#fbbf24" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelD" x1="550" y1="130" x2="1120" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151d33"/>
+      <stop offset="1" stop-color="#0b1524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#fbbf24"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#fcd34d" letter-spacing="3">KONTROL LİSTESİ</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Oynamadan Önce</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#e2e8f0">60 Saniyelik Kontrol</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Kesintisiz akış için</text>
+
+  <rect x="550" y="130" width="570" height="340" rx="20" fill="url(#panelD)" stroke="#1e293b" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="21">
+    <g>
+      <circle cx="596" cy="176" r="17" fill="#4ade80"/>
+      <path d="M589 176 l5 5 l9 -10" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="630" y="183" fill="#e2e8f0">Şarjda / prize takılı mısınız?</text>
+    </g>
+    <g>
+      <circle cx="596" cy="232" r="17" fill="#4ade80"/>
+      <path d="M589 232 l5 5 l9 -10" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="630" y="239" fill="#e2e8f0">Güç planı Yüksek Performans</text>
+    </g>
+    <g>
+      <circle cx="596" cy="288" r="17" fill="#4ade80"/>
+      <path d="M589 288 l5 5 l9 -10" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="630" y="295" fill="#e2e8f0">Arka planda tarayıcı kapalı</text>
+    </g>
+    <g>
+      <circle cx="596" cy="344" r="17" fill="#4ade80"/>
+      <path d="M589 344 l5 5 l9 -10" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="630" y="351" fill="#e2e8f0">Sürücü ve oyun güncel</text>
+    </g>
+    <g>
+      <circle cx="596" cy="400" r="17" fill="#4ade80"/>
+      <path d="M589 400 l5 5 l9 -10" stroke="#0b1220" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="630" y="407" fill="#e2e8f0">Isı 80°C altında</text>
+    </g>
+    <g>
+      <circle cx="596" cy="450" r="17" fill="#22d3ee"/>
+      <text x="596" y="457" text-anchor="middle" font-size="17" font-weight="800" fill="#0b1220">▶</text>
+      <text x="630" y="457" fill="#e2e8f0">Oyunu başlat, sonucu ölç</text>
+    </g>
+  </g>
+
+  <g fill="#fbbf24" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="490" cy="470" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#12162f"/>
+      <stop offset="1" stop-color="#1b1f4a"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 300) rotate(90) scale(300)">
+      <stop stop-color="#a855f7" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barA" x1="600" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#a855f7"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">OYUN · REHBER</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">FPS Artırma</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">2026'da 12 Etkili Çözüm</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Ayarlar · Sürücü · Donanım · Isı</text>
+
+  <!-- FPS sayaci -->
+  <rect x="600" y="150" width="480" height="300" rx="20" fill="#0c1226" stroke="#2b2f66" stroke-width="2"/>
+  <text x="840" y="205" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#64748b" letter-spacing="4">KARE HIZI</text>
+  <text x="840" y="316" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="112" font-weight="800" fill="#ffffff">144</text>
+  <text x="840" y="356" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#22d3ee">FPS</text>
+
+  <!-- bar -->
+  <rect x="640" y="392" width="400" height="18" rx="9" fill="#1e293b"/>
+  <rect x="640" y="392" width="340" height="18" rx="9" fill="url(#barA)"/>
+  <text x="640" y="436" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#4ade80">kararlı akış</text>
+  <text x="1040" y="436" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">%85</text>
+
+  <g fill="#a855f7" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="480" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>
