@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#12162f"/>
+      <stop offset="1" stop-color="#1b1f4a"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330 300) rotate(90) scale(300)">
+      <stop stop-color="#a855f7" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#a855f7"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">VERİ SEVİYELERİ</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Ne Gönderiyorsun?</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#e2e8f0">Zorunlu ve isteğe bağlı</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Farkı bilin, kararı siz verin</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="550" y="120" width="570" height="100" rx="16" fill="#132033" stroke="#a855f7" stroke-width="2"/>
+      <text x="582" y="158" font-size="25" font-weight="800" fill="#c4b5fd">Zorunlu tanılama</text>
+      <text x="582" y="190" font-size="20" fill="#94a3b8">Kapatılamaz — temel güvenlik ve</text>
+      <text x="582" y="214" font-size="20" fill="#94a3b8">güncelleme için gerekli veriler</text>
+    </g>
+    <g>
+      <rect x="550" y="234" width="570" height="100" rx="16" fill="#132033" stroke="#38bdf8" stroke-width="2"/>
+      <text x="582" y="272" font-size="25" font-weight="800" fill="#7dd3fc">İsteğe bağlı tanılama</text>
+      <text x="582" y="304" font-size="20" fill="#94a3b8">Kullanım alışkanlığı, uygulama</text>
+      <text x="582" y="328" font-size="20" fill="#94a3b8">etkinliği — kapatılabilir</text>
+    </g>
+    <g>
+      <rect x="550" y="348" width="570" height="100" rx="16" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="582" y="386" font-size="25" font-weight="800" fill="#4ade80">Reklam kimliği</text>
+      <text x="582" y="418" font-size="20" fill="#94a3b8">Uygulamalar arası reklam</text>
+      <text x="582" y="442" font-size="20" fill="#94a3b8">eşleştirmesi — tamamen kapanır</text>
+    </g>
+    <g>
+      <rect x="550" y="462" width="570" height="76" rx="16" fill="#132033" stroke="#fbbf24" stroke-width="2"/>
+      <text x="582" y="500" font-size="25" font-weight="800" fill="#fcd34d">Etkinlik geçmişi</text>
+      <text x="582" y="528" font-size="20" fill="#94a3b8">Açılan dosya ve uygulama kaydı</text>
+    </g>
+  </g>
+
+  <g fill="#a855f7" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="540" r="4"/><circle cx="1160" cy="130" r="3"/></g>
+</svg>
