@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.5" stop-color="#101a30"/>
+      <stop offset="1" stop-color="#14284a"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330 300) rotate(90) scale(300)">
+      <stop stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <rect x="70" y="208" width="8" height="150" rx="4" fill="#38bdf8"/>
+  <text x="104" y="250" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#7dd3fc" letter-spacing="3">YÖNTEMLER</text>
+  <text x="104" y="312" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Tam Yedek mi,</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#e2e8f0">Artımlı mı?</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Hız, alan ve kurtarma süresi dengesi</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="550" y="128" width="570" height="106" rx="16" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="582" y="166" font-size="25" font-weight="800" fill="#67e8f9">Tam yedek (Full)</text>
+      <text x="582" y="196" font-size="20" fill="#94a3b8">Her şeyi baştan kopyalar. En güvenilir,</text>
+      <text x="582" y="222" font-size="20" fill="#94a3b8">ama en yavaş ve en çok alan tutar</text>
+    </g>
+    <g>
+      <rect x="550" y="248" width="570" height="106" rx="16" fill="#132033" stroke="#a855f7" stroke-width="2"/>
+      <text x="582" y="286" font-size="25" font-weight="800" fill="#c4b5fd">Artımlı (Incremental)</text>
+      <text x="582" y="316" font-size="20" fill="#94a3b8">Yalnızca değişen dosyaları yazar.</text>
+      <text x="582" y="342" font-size="20" fill="#94a3b8">Hızlı ve alan dostu — günlük kullanım</text>
+    </g>
+    <g>
+      <rect x="550" y="368" width="570" height="106" rx="16" fill="#132033" stroke="#fbbf24" stroke-width="2"/>
+      <text x="582" y="406" font-size="25" font-weight="800" fill="#fcd34d">Fark (Differential)</text>
+      <text x="582" y="436" font-size="20" fill="#94a3b8">Son tam yedekten beri değişenleri alır.</text>
+      <text x="582" y="462" font-size="20" fill="#94a3b8">Kurtarma zinciri daha kısadır</text>
+    </g>
+    <g>
+      <rect x="550" y="488" width="570" height="56" rx="16" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="582" y="524" font-size="23" font-weight="800" fill="#86efac">Anlık görüntü (Snapshot)</text>
+    </g>
+  </g>
+
+  <g fill="#38bdf8" opacity="0.9"><circle cx="150" cy="130" r="4"/><circle cx="500" cy="540" r="4"/><circle cx="1160" cy="130" r="3"/></g>
+</svg>

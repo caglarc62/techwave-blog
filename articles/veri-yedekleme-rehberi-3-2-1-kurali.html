@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light"><head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="Veri yedekleme rehberi: 3-2-1 kuralı, tam ve artımlı yedek farkı, fidye yazılımı koruması, otomatik yedekleme kurulumu ve kurtarma testi adımları.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>Veri Yedekleme Rehberi: 3-2-1 Kuralı ve Kurtarma Stratejileri — TechWave</title>
+<meta property="og:title" content="Veri Yedekleme Rehberi: 3-2-1 Kuralı ve Kurtarma Stratejileri">
+<meta property="og:description" content="Yedek neden bozulur, 3-2-1 kuralı nedir, tam ile artımlı yedek arasındaki fark ve 30 dakikada kurulan otomatik yedek planı.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/veri-yedekleme-2026-1.svg">
+<link rel="canonical" href="https://techwaveblog.site/articles/veri-yedekleme-rehberi-3-2-1-kurali.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261107-yedek">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Veri Yedekleme Rehberi: 3-2-1 Kuralı ve Kurtarma Stratejileri","author":{"@type":"Person","name":"Çağlar ÇELİK"},"datePublished":"2026-11-07","dateModified":"2026-11-07","description":"3-2-1 yedekleme kuralı, yedekleme yöntemleri, fidye yazılımı koruması ve kurtarma testi rehberi.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/veri-yedekleme-rehberi-3-2-1-kurali.html","image":"https://techwaveblog.site/images/veri-yedekleme-2026-1.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Çağlar ÇELİK","jobTitle":"Teknoloji ve Yapay Zeka Yazarı","url":"https://techwaveblog.site","sameAs":[],"worksFor":{"@type":"Organization","name":"TechWave"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<article class="article-page"><div class="container">
+<div class="article-header"><span class="card-tag" data-category="Siber Güvenlik">Siber Güvenlik</span><h1 class="article-title">Veri Yedekleme Rehberi: 3-2-1 Kuralı ve Kurtarma Stratejileri</h1><div class="article-meta"><span>📅 7 Kasım 2026</span><span>⏱ 11 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/veri-yedekleme-2026-1.svg?v=20261107-hero" alt="3-2-1 yedekleme kuralını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Yedeklemenin tek gerçek ölçütü, veriyi geri yükleyebilmektir.</strong> Disk üzerinde "yedek" yazan bir klasörün varlığı, dosyalarınızın güvende olduğu anlamına gelmez. Fidye yazılımı, disk arızası veya yanlışlıkla bir silme işlemi, çoğu zaman yedeğin de bağlandığı anda onu götürür.</p>
+<p>Bu rehberde 3-2-1 kuralının pratik karşılığını, yedekleme yöntemlerinin farkını ve en çok gözden kaçan adımı — <strong>kurtarma testini</strong> — ele alıyoruz. Sonunda 30 dakikada kurulabilecek bir başlangıç planı bulacaksınız.</p>
+
+<img src="../images/veri-yedekleme-2026-1.svg?v=20261107-a" alt="3-2-1 kuralının üç katmanını gösteren TechWave çizimi" width="800">
+
+<h2>3-2-1 kuralı nedir?</h2>
+<p>Kural, üç basit rakamda toplanıyor ve yıllardır sektörün standardı olmayı sürdürüyor:</p>
+<ul>
+<li><strong>3 kopya:</strong> kritik verinizin toplam üç kopyası olsun — biri asıl, ikisi yedek.</li>
+<li><strong>2 farklı ortam:</strong> bu kopyalar iki farklı türde depolama üzerinde bulunsun (örneğin iç disk + harici disk).</li>
+<li><strong>1 uzak kopya:</strong> en az bir kopya, ana cihazdan uzakta; tercihen çevrimdışı veya bulutta olsun.</li>
+</ul>
+<p>Üçüncü madde çoğu kullanıcıda atlanıyor ve asıl kritik olan odur. <strong>Bağlantılı bir yedek disk, fidye yazılımı karşısında hiçbir şey korumaz</strong> — çünkü saldırı aynı anda her ikisine de ulaşır. Uzak ya da bağlantısı kesilmiş bir kopya, senaryoyu değiştirir.</p>
+
+<h2>Yedek neden bozulur?</h2>
+<p>Yedeklerin neden işe yaramadığını bilmek, doğru planı kurmayı kolaylaştırıyor. En yaygın üç senaryo:</p>
+
+<table>
+<tr><th>Senaryo</th><th>Sonuç</th><th>Çözüm</th></tr>
+<tr><td><strong>Fidye yazılımı</strong></td><td>Bağlı tüm diskler şifrelenir</td><td>Bağlantısı kesilmiş / uzak kopya</td></tr>
+<tr><td><strong>Donanım arızası</strong></td><td>SSD sessizce ölebilir, uyarı vermeyebilir</td><td>Farklı ortamda ikinci kopya</td></tr>
+<tr><td><strong>Yanlışlıkla silme</strong></td><td>Shift+Delete geri getirmez</td><td>Sürümlü / anlık görüntü yedeği</td></tr>
+</table>
+
+<img src="../images/veri-yedekleme-2026-3.svg?v=20261107-c" alt="Fidye yazılımı, donanım arızası ve yanlışlıkla silme senaryolarını gösteren TechWave çizimi" width="800">
+
+<p>Bir noktayı netleştirmekte fayda var: <strong>"Yedek aldım, artık güvendeyim" hissi en tehlikelisidir.</strong> Düzenli olarak geri yükleme testi yapılmayan bir yedek, varlığıyla yokluğu aynı olan bir arşivdir. Test edilmemiş yedek, yedek değildir — sadece yer kaplayan bir kopyadır.</p>
+
+<h2>Yedekleme yöntemleri</h2>
+<p>Araç seçmeden önce yöntemleri bilmek, doğru karar vermenizi sağlıyor:</p>
+<ul>
+<li><strong>Tam yedek (Full):</strong> her şeyi baştan kopyalar. En güvenilir ve en basit yöntem; geri yükleme zinciri yok. Bedeli yavaşlık ve alan tüketimi.</li>
+<li><strong>Artımlı yedek (Incremental):</strong> son yedekten beri değişen dosyaları yazar. Hızlı ve alan dostu; günlük kullanım için ideal. Geri yüklemede ilk tam yedek gerekir.</li>
+<li><strong>Fark yedeği (Differential):</strong> son <em>tam</em> yedekten beri değişen her şeyi alır. Artımlıdan daha hızlı kurtarılır, tam yedekten daha az alan tutar.</li>
+<li><strong>Anlık görüntü (Snapshot):</strong> belirli andaki sistem durumunu dondurur. Hızlı geri dönüş için güçlü, ancak tek başına uzun vadeli yedek yerine geçmez.</li>
+</ul>
+
+<img src="../images/veri-yedekleme-2026-2.svg?v=20261107-b" alt="Tam, artımlı ve fark yedekleme yöntemlerini karşılaştıran TechWave çizimi" width="800">
+
+<p>Pratik bir formül: <strong>haftada bir tam, her gün artımlı.</strong> Bu kombinasyon hem alan hem kurtarma süresi açısından en dengeli sonucu veriyor. Ev kullanımında bu düzeni çoğu yedekleme aracı otomatik olarak yönetiyor.</p>
+
+<h2>Hangi veriler gerçekten yedeklenmeli?</h2>
+<p>Her şeyi yedeklemek hem pahalı hem gereksiz. Önceliklendirme şöyle yapılabilir:</p>
+<ul>
+<li><strong>Yeniden oluşturulamaz:</strong> fotoğraflar, videolar, kişisel belgeler, muhasebe kayıtları. Bunlar birinci öncelik.</li>
+<li><strong>Zor yeniden oluşturulamaz:</strong> proje dosyaları, notlar, e-posta arşivi, konfigürasyon dosyaları.</li>
+<li><strong>Yeniden kurulabilir:</strong> uygulamalar, oyunlar, işletim sistemi. Bunları yedeklemek yerine yeniden indirmek genelde daha mantıklı.</li>
+</ul>
+<p>Bu ayrım, yedekleme maliyetinizi ciddi ölçüde düşürüyor. Depolama alanını sınırlıyorsanız, önce birinci gruba odaklanın.</p>
+
+<h2>Bulut mu, yerel mi?</h2>
+<p>İkisi birden. Tek başına hangisinin yeterli olduğu sorusu, çoğu zaman yanlış bir soru.</p>
+<ul>
+<li><strong>Yerel yedek:</strong> hızlıdır, internet gerekmez, aylık ücreti yoktur. Ancak evde yangın, hırsızlık veya elektrik arızası aynı anda her şeyi götürebilir.</li>
+<li><strong>Bulut yedek:</strong> coğrafi olarak ayrışır, 3-2-1'in "uzak kopya" şartını karşılar. İnternet hızına ve aylık ücrete bağlıdır.</li>
+</ul>
+<p>Veri şifrelemesi konusunda da dikkatli olun: <strong>bulut sağlayıcısının uçtan uca şifrelemesi varsa anahtarı kimin sakladığı önemlidir.</strong> Anahtarı kaybederseniz kendi yedeğinize bile erişemezsiniz. Kurtarma anahtarını ayrı, güvenli bir yerde saklayın.</p>
+
+<h2>30 dakikada başlangıç planı</h2>
+<ol>
+<li><strong>Kritik klasörleri belirleyin:</strong> Belgeler, Masaüstü, Fotoğraflar, proje klasörleri. 10 dakika.</li>
+<li><strong>Harici diske yerel yedek alın:</strong> Windows'ta Dosya Geçmişi veya macOS'ta Time Machine ile otomatikleştirin. 10 dakika.</li>
+<li><strong>Bulut yedeğini başlatın:</strong> ikinci kopya için bir sağlayıcı seçin ve klasörleri ekleyin. 5 dakika.</li>
+<li><strong>Kurtarma testi yapın:</strong> rastgele birkaç dosyayı geri yükleyin ve açın. <strong>5 dakika — tüm planın en önemli adımı.</strong></li>
+</ol>
+
+<img src="../images/veri-yedekleme-2026-4.svg?v=20261107-d" alt="Yedekleme kurulum kontrol listesini gösteren TechWave çizimi" width="800">
+
+<h2>Yedekleme sıklığını belirleme</h2>
+<p>"Ne sıklıkta yedek almalıyım?" sorusunun tek bir cevabı yok; doğru yanıt, <strong>kaç veri kaybetmeye razı olduğunuzla</strong> orantılıdır. Buradaki ölçü birimi dosya değil, zamandır:</p>
+<ul>
+<li><strong>Günlük:</strong> aktif çalıştığınız proje dosyaları, e-posta, notlar. Her gün değişir, her gün yedeklenmeli.</li>
+<li><strong>Haftalık:</strong> fotoğraflar, belge arşivi. Haftada bir tam yedek çoğu ev kullanıcısı için yeterlidir.</li>
+<li><strong>Aylık:</strong> nadiren değişen yasal belgeler, eski projeler.</li>
+<li><strong>Olay bazlı:</strong> büyük bir satın alma, vergi beyannamesi veya proje teslimi sonrası hemen ek yedek alın.</li>
+</ul>
+<p>Bir ipucu: <strong>yedek alma sıklığını, geri yükleme ihtiyacının ne kadar acil olduğuna göre kurun.</strong> Bir iş dosyasını kaybettiğinde aynı gün geri istiyorsanız günlük yedek şart; bir fotoğraf arşivinde haftalık yeterli olabilir. Sıklığı artırmanın maliyeti depolama alanıdır — ve bugünün disk fiyatları bunu ucuzlatıyor.</p>
+
+<h2>Yedekleme sıklığını ve planı gözden geçirin</h2>
+<p>Plan bir kez kurulduktan sonra bırakılmamalı. Altı ayda bir kısa bir gözden geçirme, çoğu sorunu oluşmadan yakalıyor:</p>
+<ul>
+<li><strong>Son yedek ne zaman?</strong> Panelde tarihe bakın; birikmiş bir gecikme varsa nedenini bulun.</li>
+<li><strong>Alan doluyor mu?</strong> Yedek diskler sessizce dolar; dolunca bazı araçlar eski kopyaları silmeye başlar.</li>
+<li><strong>Yeni klasörler eklendi mi?</strong> Yeni bir proje klasörü veya uygulama verisi yedek listesine dahil edilmemiş olabilir.</li>
+<li><strong>Kurtarma hâlâ çalışıyor mu?</strong> Yılda iki kez rastgele bir dosyayı geri yükleyip açmak, planın sağlığını gösterir.</li>
+</ul>
+
+<h2>Sıkça Sorulan Sorular</h2>
+<ul>
+<li><strong>Yedekleme ne sıklıkta yapılmalı?</strong> — Değişen veriye bağlı; ev kullanımı için günlük artımlı, haftalık tam iyi bir başlangıçtır.</li>
+<li><strong>Dış diskimi sürekli takılı tutuyorum, sorun olur mu?</strong> — Fidye yazılımı senaryosunda evet. Mümkünse yedek diskini fişten çekin veya bağlantısını kesin.</li>
+<li><strong>Windows'un kendi yedeği yeterli mi?</strong> — Sistem geri yükleme noktaları kişisel dosyaları kapsamaz. Dosya düzeyinde ayrı bir çözüm gerekir.</li>
+<li><strong>SSD'ye yedek almak güvenli mi?</strong> — Evet, ancak SSD'lerin elektriksiz veri saklama süresi disklerden kısadır. Uzun vadeli arşiv için harici disk veya optik daha uygun olabilir.</li>
+<li><strong>Ücretsiz bulut depolama neden yetersiz?</strong> — Genelde kota sınırlı ve paylaşımlı. Kritik veri için ücretli, sürüm geçmişi sunan bir plan değerlendirin.</li>
+<li><strong>Yedek şifrelemeli mi?</strong> — Hassas veri varsa evet. Ancak şifreleme anahtarını yedeğin yanında saklamayın; ayrı bir güvenli yerde tutun.</li>
+</ul>
+
+<h2>Sonuç</h2>
+<p>Yedekleme bir teknoloji tercihi değil, <strong>düzenli bir alışkanlık</strong>tır. 3-2-1 kuralı karmaşık görünüyor ama uygulaması basit: üç kopya, iki ortam, bir uzak yer. Kurulum bir kez yapılır, sonrasında otomatik çalışır.</p>
+<p>Unutulmaması gereken tek şey şu: <strong>test edilmemiş yedek, yedek değildir.</strong> Bu hafta ayıracağınız 30 dakika, ileride yaşanacak bir veri kaybından çok daha ucuzdur. Kişisel verilerin korunması için ayrıca <a href="siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html">siber güvenlik 101 rehberimize</a> göz atın.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</div></div></article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=18efba2"></script>
+</body></html>
