@@ -7,3 +7,20 @@ last_failed_response.txt
 
 bot.log
 tweeted.json
+
+# --- Yerel araç betikleri (web'de yayınlanmasın) ---
+*.py
+
+# --- Bağımlılık ve yapılandırma (yalnızca yerel) ---
+requirements.txt
+config.json
+
+# --- Günlükler, geçici çıktılar ve raporlar ---
+*.log
+*.log.json
+popular.json
+stats_report.txt
+
+# --- İçerik üretim notları ---
+x-tweet-bankasi.md
+search-console-recrawl.txt
