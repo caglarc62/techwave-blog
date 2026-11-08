@@ -1,0 +1,130 @@
+SEARCH CONSOLE GUNLUK DIZINE EKLEME PAKETI
+Olusturma: 08.11.2026 | Toplam 88 URL | Gunluk kota: max 12 URL
+
+KURAL:
+- Search Console > arama kutusu > URL yapistir > Denetle > "Dizine Eklenmesini Iste"
+- Gunde EN FAZLA 12 URL. Fazlasini ertesi gune birak.
+- Once 1. GUN'u bitir, sonra 2. GUN'e gec. Sira onemli.
+- Sitemap'i ONCE gonder: Site Haritalari > https://techwaveblog.site/sitemap.xml > GONDER
+
+====================================================================
+1. GUN (08.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/articles/2026da-google-arama-nasil-degisiyor-sifir-tiklama-donemi-ve-seo-gelecegi.html
+https://techwaveblog.site/articles/2026da-en-iyi-10-ucretsiz-antivirus-programi.html
+https://techwaveblog.site/articles/2026da-en-iyi-10-yapay-zeka-sohbet-botu.html
+https://techwaveblog.site/articles/2026da-laptop-mu-tablet-mi-dogru-secim-rehberi.html
+https://techwaveblog.site/articles/python-renpy-oyun-ceviri-araci-voorhees-rehberi.html
+https://techwaveblog.site/articles/yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html
+https://techwaveblog.site/articles/python-nedir-bilmeniz-gereken-her-sey.html
+https://techwaveblog.site/articles/2026da-en-iyi-8-ucretsiz-vpn-hizmeti.html
+https://techwaveblog.site/articles/yapay-zeka-ile-gorsel-olusturma-midjourney-dall-e-stable-diffusion.html
+https://techwaveblog.site/articles/yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html
+https://techwaveblog.site/articles/python-ile-web-sitesi-yapma-rehberi-2026.html
+https://techwaveblog.site/articles/apple-yapay-zeka-destekli-saglik-uygulamasi.html
+
+====================================================================
+2. GUN (09.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/
+https://techwaveblog.site/kategori.html
+https://techwaveblog.site/articles/veri-yedekleme-rehberi-3-2-1-kurali.html
+https://techwaveblog.site/articles/windows-11-gizlilik-ayarlari-veri-toplama-kapatma.html
+https://techwaveblog.site/articles/oyunda-fps-artirma-rehberi.html
+https://techwaveblog.site/articles/ev-wifi-guvenlik-rehberi.html
+https://techwaveblog.site/articles/python-web-scraping-rehberi-2026.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-yapay-zeka-tarayicisi.html
+https://techwaveblog.site/articles/yapay-zeka-ajani-mcp-guvenlik-rehberi.html
+https://techwaveblog.site/articles/2026-10-31-kasim-guvenlik-yamalari.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-yapay-zeka-ajani-otomasyon-araclari.html
+https://techwaveblog.site/articles/2026da-internet-hizi-artirma-rehberi-15-pratik-cozum.html
+
+====================================================================
+3. GUN (10.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/iletisim.html
+https://techwaveblog.site/hakkimizda.html
+https://techwaveblog.site/kullanim-sartlari.html
+https://techwaveblog.site/gizlilik-politikasi.html
+https://techwaveblog.site/articles/siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-parola-yoneticisi-hesap-guvenligi.html
+https://techwaveblog.site/articles/passkey-nedir-sifresiz-giris-rehberi.html
+https://techwaveblog.site/articles/chatgpt-kilitli-sohbetler-pin-gizlilik-rehberi.html
+https://techwaveblog.site/articles/php-kritik-aciklar-2026-guncelleme-rehberi.html
+https://techwaveblog.site/articles/cisco-sd-wan-keydrift-saldirisi-cve-2026-20127-rehberi.html
+https://techwaveblog.site/articles/google-gemini-yapay-zeka-guvenlik-testi-sirketlere-sizdi.html
+https://techwaveblog.site/articles/yapay-zeka-guvenlik-krizi-davalar-ab-denetimi-analiz.html
+
+====================================================================
+4. GUN (11.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/articles/2026da-en-iyi-10-notebook-onerisi.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-akilli-telefonu.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-monitoru-oyun-ofis-yaratici-isler.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-mekanik-klavyesi-oyun-yazilim.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-oyun-faresi-agirlik-sensor.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-ssdsi-nvme-sata-tasinabilir.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-kablosuz-kulakligi-ses-kalitesi-fiyat.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-televizyonu-oled-mini-led-qled.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-tableti-ogrenci-calistiran-eglence.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-ekran-karti-oyun-yaraticilik-yapay-zeka.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-powerbank-hizli-sarj-rehberi.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-web-kamerasi-yayin-meeting.html
+
+====================================================================
+5. GUN (12.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/articles/2026nin-en-iyi-10-bluetooth-hoparloru-ses-kalitesi.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-akilli-saati-saglik-spor-baglanti.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-robot-supurgesi-her-butceye-uygun.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-oyun-konsolu-playstation-xbox-switch.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-akilli-ev-sistemi-guvenlik-konfor-tasarruf.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-drone-u-baslangictan-profesyonellere.html
+https://techwaveblog.site/articles/2026-telefon-alirken-5-kritik-hata.html
+https://techwaveblog.site/articles/yazici-alim-rehberi-2026-murekkep-lazer-toner-maliyeti.html
+https://techwaveblog.site/articles/apple-ipad-mini-a20-pro-oled-turkiye-fiyat-tarih.html
+https://techwaveblog.site/articles/iphone-17-vs-samsung-galaxy-s26-2026nin-amiral-gemisi-savasi.html
+https://techwaveblog.site/articles/iphone-18-pro-alinmali-mi-ozellikler-fiyat-karar-rehberi.html
+https://techwaveblog.site/articles/apple-m6-macbook-pro-imac-turkiye-fiyat-on-siparis.html
+
+====================================================================
+6. GUN (13.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/articles/yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html
+https://techwaveblog.site/articles/chatgpt-vs-clude-vs-gemini-karsilastirma.html
+https://techwaveblog.site/articles/gemini-4-argon-yayinda-google-ai-yaris-geri-dondu.html
+https://techwaveblog.site/articles/openai-modelleri-google-cloud-model-garden-geliyor.html
+https://techwaveblog.site/articles/openai-decisions-api-nedir-kullanim-alanlari.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-yapay-zeka-video-olusturucu.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-yapay-zeka-fotograf-duzenleme-araci.html
+https://techwaveblog.site/articles/abd-deepseek-yasagi-federal-karar-analiz.html
+https://techwaveblog.site/articles/yapay-zeka-ajani-imkansiz-iade-deneyi-6-model.html
+https://techwaveblog.site/articles/yapay-zeka-ajani-ordusu-100-site-siber-saldiri.html
+https://techwaveblog.site/articles/typescript-nedir-2026-js-super-seti-ogrenme-rehberi.html
+https://techwaveblog.site/articles/programlama-dili-secimi-2026-hedefe-gore-karar-rehberi.html
+
+====================================================================
+7. GUN (14.11.2026) - 12 URL
+====================================================================
+https://techwaveblog.site/articles/blockchain-yazilimi-en-iyi-11-programlama-dili.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-kod-editoru-baslangictan-profesyonellere.html
+https://techwaveblog.site/articles/no-code-araclari-nedir-2026-kodsuz-uygulama-rehberi.html
+https://techwaveblog.site/articles/wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html
+https://techwaveblog.site/articles/2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html
+https://techwaveblog.site/articles/2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-teknoloji-trendi-gelecegi-sekillendiren-inovasyonlar.html
+https://techwaveblog.site/articles/2026nin-en-iyi-10-oyunu-yilin-vazgecilmezleri.html
+https://techwaveblog.site/articles/gta-6-cikis-tarihi-fiyat-platformlar-pc-surumu.html
+https://techwaveblog.site/articles/call-of-duty-modern-warfare-4-bugun-cikti-platformlar-haritalar-pc-gereksinimleri.html
+https://techwaveblog.site/articles/phantom-blade-zero-cikis-saati-pc-sistem-gereksinimleri-2026.html
+https://techwaveblog.site/articles/ps5-windows-10-uyumluluk-dualsense-remote-play.html
+
+====================================================================
+8. GUN (15.11.2026) - 4 URL
+====================================================================
+https://techwaveblog.site/articles/nvidia-rtx-spark-dizustuler-16-ekim-fiyatlar-turkiye.html
+https://techwaveblog.site/articles/apple-vision-pro-2-vs-meta-quest-4-2026nin-en-iyi-vr-gozlugu-hangisi.html
+https://techwaveblog.site/articles/meta-muse-spark-open-816b-mac-studio-masaustu.html
+https://techwaveblog.site/articles/whatsappta-bilinmeyen-10-gizli-ozellik.html
+
+SON ADIM: Search Console > Sitemap > https://techwaveblog.site/sitemap.xml gonder.
