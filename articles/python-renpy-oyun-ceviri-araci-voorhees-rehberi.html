@@ -83,6 +83,7 @@
     </div>
   </header>
 
+  <article>
   <!-- Hero Görsel -->
   <div class="article-hero">
     <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200" alt="Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi" class="article-hero-img" loading="eager">
@@ -92,7 +93,7 @@
       <h1>Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi</h1>
       <div class="article-meta">
         <span>📅 28 Eylül 2026</span>
-        <span class="read-time">⏱️ 8 dk okuma</span>
+        <span>⏱️ 12 dk okuma</span>
         <span>✍️ Çağlar ÇELİK</span>
       </div>
     </div>
@@ -100,7 +101,6 @@
 
 
 
-  <article>
     <div class="container content-layout">
       <div class="article-content">        <h2>Giriş: Görsel Roman Dünyası ve Türkçe Yerelleştirme İhtiyacı</h2>
         <p>Son yıllarda bağımsız oyun geliştiriciliğinin yükselişiyle birlikte görsel roman (Visual Novel) türü muazzam bir popülerlik kazandı. Romantizm, gerilim, korku ve macera türlerinde binlerce bağımsız oyun yayınlanıyor ve bunların büyük bölümü tek bir ortak noktada buluşuyor: yalnızca İngilizce. Türün arkasındaki en büyük güçlerden biri ise hiç şüphesiz açık kaynak kodlu ve Python tabanlı olan <strong>Ren'Py oyun motorudur</strong>. Python'a yeni başladıysanız <a href="python-nedir-bilmeniz-gereken-her-sey.html">Python Nedir? rehberimiz</a> işinizi kolaylaştıracaktır.</p>
@@ -288,7 +288,7 @@ print("Korunan etiketler:", tags)
           <li><strong>Yeniden test edin:</strong> Her toplu güncellemeden sonra oyunu baştan sona bir kez oynayın.</li>
         </ul>
 
-        <h2>Sıkça Sorulan Sorular (SSS)</h2>
+        <h2>Okuyuculardan Gelen Sorular</h2>
         <h3>Voorhees aracını nereden bulabilirim?</h3>
         <p>Araç, Technopat ve benzeri Türk teknoloji forumlarında geliştiriciler tarafından paylaşılmaktadır. Araç güncellemelerini takip etmek için forum başlıklarını ve Python paket depolarını kontrol edin. Aracın çalışmaması durumunda bu yazıdaki açık kaynak Python script'leri tek başına da yeterlidir.</p>
         <h3>Çeviri yapmak için Python bilmek zorunda mıyım?</h3>
@@ -304,7 +304,7 @@ print("Korunan etiketler:", tags)
         <p>Çeviri tamamlandıktan sonra iş bitmiş sayılmaz. Ren'Py Launcher üzerinden <strong>Build Distributions</strong> menüsünü açın, hedef platformları (Windows, macOS, Android, web) seçin ve paketi yeniden derleyin. Paketleme öncesinde şu kontrol listesini uygulayın: tüm <code>.rpy</code> dosyaları UTF-8 kodlamalı mı, Türkçe font pakete dahil mi, <code>game/tl/turkish/</code> klasöründeki dosyalar kaynak dosyalarla aynı adlara sahip mi, menü ve arayüz metinleri de çevrildi mi? Arayüz çevirileri genellikle <code>game/tl/turkish/gui.rpy</code> içinde bulunur ve çoğu acemi çevirmen bu dosyayı atlar.</p>
         <p>Dağıtımda dikkat edilmesi gereken bir diğer nokta, derlenmiş <code>.rpyc</code> dosyalarının eksiksiz olmasıdır. Bir dosya eksik kalırsa oyun belirli bir sahnede çöker ve oyuncu hatayı çevirinin parçası sanır. Son olarak Türkçe yamayı yayınarken sürüm notu ekleyin: hangi sürümü hangi tarihte çevirdiğinizi yazmak topluluk güvenini artırır ve ileride bir güncelleme geldiğinde neyin değiştiğini takip etmeyi kolaylaştırır.</p>
         <p>Hız ve tutarlılık isteyenler için bir ipucu daha: çeviri belleğine (translation memory) sahip basit bir Python sözlüğü tutun. <code>{"start": "başlangıç", "menu": "menü"}</code> gibi tekrar eden terimleri tek yerden yönettiğinizde, oyun içi terimler hiçbir yerde şaşırtıcı biçimde değişmez. Bu küçük alışkanlık, uzun soluklu projelerde en çok işe yarayan yöntemlerden biridir.</p>
-        <h2>Sonuç</h2>
+        <h2>Genel Değerlendirme</h2>
         <p>Python'ın esnek yapısı ve Ren'Py motorunun modülerliği sayesinde Türkçe oyun çeviri topluluğu her geçen gün daha da büyüyor. Technopat gibi platformlarda paylaşılan Voorhees ve benzeri çeviri araçları, oyun severlerin dil engelini aşmasında hayati bir rol oynuyor. Doğru araçlar, biraz Python bilgisi, sağlam bir yedek ve dikkatli bir kontrol süreci ile siz de sevdiğiniz oyunları Türkçe'ye kazandırabilirsiniz.</p>
         <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
 <!-- Görsel Telif -->

@@ -45,14 +45,14 @@
 </header>
 
 <article class="article-page"><div class="container">
-<div class="article-header"><span class="card-tag" data-category="Siber Güvenlik">Siber Güvenlik</span><h1 class="article-title">Kasım 2026 Güvenlik Yamaları: Windows, macOS ve Linux'ta Kritik Güncellemeler</h1><div class="article-meta"><span>📅 31 Ekim 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-header"><span class="card-tag" data-category="Siber Güvenlik">Siber Güvenlik</span><h1 class="article-title">Kasım 2026 Güvenlik Yamaları: Windows, macOS ve Linux'ta Kritik Güncellemeler</h1><div class="article-meta"><span>📅 31 Ekim 2026</span><span>⏱ 9 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
 <div class="article-hero"><img src="../images/security-patch-nov-2026-1.svg?v=20261101-shield" alt="Güvenlik yamalarını ve güncelleme sürecini anlatan TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
 <div class="article-content">
 <p><strong>Kasım 2026 güvenlik yamaları, yılın en kritik bakım dönemlerinden biri olarak öne çıkıyor.</strong> Microsoft, Apple ve büyük Linux dağıtımları aynı hafta içinde uzaktan kod çalıştırma, ayrıcalık yükseltme ve mikro mimari tabanlı sızıntılara karşı yamalar yayınladı. Bu rehberde güncellemelerin kapsamını, etkilenen sistemleri ve kurumsal otomasyon adımlarını özetliyoruz.</p>
 <p>Yamaları yayınlama zamanlaması ve öncelik sırası, işletim sistemi türüne göre değişse de temel mantık aynı: kritik açıkları hızla kapatmak, dağıtımları test etmek ve üretim ortamlarına kontrollü biçimde sunmak.</p>
 
 <h2>Microsoft Patch Salı: 94 güvenlik bildirimi</h2>
-<p>Microsoft, 10 Kasım 2026 Patch Salı kapsamında 94 güvenlik bildirimi yayınladı. Bunların 8’i sıfır gün, 12’si ise kritik derecede önemli olarak sınıflandırıldı. Özellikle Windows Kernel ve Active Directory Federasyon Hizmetleri’ndeki uzaktan kod çalıştırma açıkları, kurumların öncelikli olarak ele alması gereken başlıklar arasında.</p>
+<p>Microsoft, 10 Kasım 2026 Patch Salı kapsamında <a href="https://msrc.microsoft.com/update-guide/" target="_blank" rel="noopener noreferrer">94 güvenlik bildirimi</a> yayınladı. Bunların 8’i sıfır gün, 12’si ise kritik derecede önemli olarak sınıflandırıldı. Özellikle Windows Kernel ve Active Directory Federasyon Hizmetleri’ndeki uzaktan kod çalıştırma açıkları, kurumların öncelikli olarak ele alması gereken başlıklar arasında.</p>
 <p>Windows 11 24H2 ve Windows Server 2025 kullanıcılarda RDP bileşeninde bir mantık hatası, CVE‑2026‑... koduyla raporlandı. Saldırgan, kimlik doğrulama istemeden ağ üzerinden istismar edebiliyor. Microsoft, yamayı KB503... paketiyle dağıttı. Yamayı elle indirmek yerine Windows Update, WSUS veya Intune üzerinden dağıtmak daha güvenlidir.</p>
 <img src="../images/security-patch-nov-2026-2.svg?v=20261101-win" alt="Windows Güncelleme Merkezi ekranı" width="800">
 <h3>Dağıtım önerileri</h3>
@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Apple Security Update: Ventura ve sonrası</h2>
-<p>Apple 8 Kasım’da macOS 15.3, iOS 18.3 ve iPadOS 18.3 güncellemelerini yayınladı. Güncellemeler, WebKit tabanlı tarayıcı motorunda hedefli uzaktan kod çalıştırma ve Safari içerik işleme açıklarını kapatıyor.</p>
+<p>Apple 8 Kasım’da <a href="https://support.apple.com/en-us/100100" target="_blank" rel="noopener noreferrer">macOS 15.3</a>, iOS 18.3 ve iPadOS 18.3 güncellemelerini yayınladı. Güncellemeler, WebKit tabanlı tarayıcı motorunda hedefli uzaktan kod çalıştırma ve Safari içerik işleme açıklarını kapatıyor.</p>
 <p>Ek olarak, Apple Silicon M3 ve M4 çiplerde performans izleyicisine yönelik yeni bir mikro mimari sızıntı tekniğine karşı donanım katmanı koruması eklendi. Güncelleme, sistem tercihlerinden otomatik olarak yüklenebiliyor.</p>
 <img src="../images/security-patch-nov-2026-3.svg?v=20261101-mac" alt="macOS Güvenlik Güncellemesi ekranı" width="800">
 
@@ -80,14 +80,14 @@
 <li>WSUS ve apt mirror kullanıyorsan gecikme süresini maksimum 72 saate indir.</li>
 </ul>
 
-<h2>Sıkça Sorulan Sorular</h2>
+<h2>Merak Edilenler</h2>
 <ul>
 <li><strong>Yamalar hemen yüklenmeli mi?</strong> Kritik dereceli uzaktan kod çalıştırma açıkları için 48 saat içinde dağıtım önerilir.</li>
 <li><strong>Eski sürümler destekleniyor mu?</strong> Windows 10 22H2 için destek 14 Ekim 2025’te sona erdi; bu nedenle Kasım yamaları bu sürümü kapsamaz.</li>
 <li><strong>Linux’ta yeniden başlatma şart mı?</strong> Kernel güncellemesi için evet; uygulama yamaları için genellikle hayır.</li>
 </ul>
 
-<h2>Sonuç</h2>
+<h2>Sonuç: Özet ve Sonraki Adım</h2>
 <p>Yamaları geciktirmek, saldırı yüzeyini büyütür. Test, dağıtım ve doğrulama adımlarını standart hâline getirerek güvenlik bakımlarını tahmin edilebilir bir süreç hâline getirebilirsiniz.</p>
 <h3>Kontrol listesi</h3>
 <ul>
@@ -103,6 +103,67 @@
 <li>Linux çekirdek sürümleri (6.13, 6.14) yeni özelliklerle birlikte güvenlik yamalarını da taşıyacak.</li>
 </ul>
 <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+<h2>Kasım 2026 yama takvimi: tarihler ve öncelik sırası</h2>
+<p>Üç platformun yama takvimi aynı haftada kesiştiği için, küçük ekiplerin bile bir sıralama belirlemesi gerekir. Aşağıdaki tablo, hangi yamanın ne zaman geldiğini ve ilk aşamada hangi sistemin ele alınması gerektiğini gösteriyor.</p>
+<table>
+  <thead><tr><th>Platform</th><th>Yayın tarihi</th><th>Kapsam</th><th>Öncelik</th></tr></thead>
+  <tbody>
+    <tr><td>Microsoft (Patch Salı)</td><td>10 Kasım 2026</td><td>94 bildirim, 12 kritik, 8 sıfır gün</td><td><strong>Yüksek</strong></td></tr>
+    <tr><td>Apple Security Update</td><td>8 Kasım 2026</td><td>macOS 15.3, iOS 18.3, iPadOS 18.3</td><td><strong>Yüksek</strong></td></tr>
+    <tr><td>Linux kernel</td><td>9 Kasım 2026</td><td>6.12.11, 15'e yakın düzeltme</td><td>Orta</td></tr>
+    <tr><td>Ubuntu 24.10 / Debian 13</td><td>9-11 Kasım 2026</td><td>Dağıtım bazlı paket yamaları</td><td>Orta</td></tr>
+    <tr><td>RHEL 10</td><td>11 Kasım 2026</td><td>Çekirdek ve kullanıcı alanı yamaları</td><td>Orta</td></tr>
+  </tbody>
+</table>
+<p>Öncelik sırası neden böyle? Uzaktan kod çalıştırma açıkı olan, kimlik doğrulama gerektirmeyen ve internete açık bileşenler ilk sırada yer alır. RDP, Active Directory ve WebKit bu nedenle her zaman listenin başında durur; kullanıcı alanı yamaları ve yalnızca yerel erişimle istismar edilebilen açıklar ise dağıtım penceresinin sonuna bırakılabilir.</p>
+
+<h2>Hangi CVE'nin sizin için anlamı ne?</h2>
+<p>Kurumsal raporlarda yüzlerce CVE numarası listelenir ama bunların tamamı aynı aciliyeti taşımaz. Üç ölçüt, bir açığın sizin ortamınızda ne kadar ciddi olduğunu belirler: <strong>erişim ön koşulu</strong> (kimlik doğrulama gerekiyor mu?), <strong>etki alanı</strong> (tüm sistem mi, tek kullanıcı mı?) ve <strong>kullanılabilirlik</strong> (kamuoyunda çalışan istismar kodu var mı?).</p>
+<ul>
+  <li><strong>Kritik / uzaktan:</strong> Kimlik doğrulama olmadan ağ üzerinden istismar edilebilen açıklar. İnternet'e açık sunucularda 48 saat içinde dağıtılır.</li>
+  <li><strong>Yüksek / ayrıcalık yükseltme:</strong> Yerel kullanıcıyı yönetici seviyesine taşıyan açıklar. Çoğu kurumda 7 gün içinde kapatılır; çok kullanıcılı veya RDS ortamlarında süre kısalır.</li>
+  <li><strong>Orta / bilgi sızıntısı:</strong> Doğrudan sistem kontrolü vermez ama yapılandırma, bellek veya zamanlama bilgisi sızdırır. Fidye yazılımı senaryolarında ara adım olarak kullanıldığı için hafife alınmamalıdır.</li>
+</ul>
+<p>Sıfır gün olarak sınıflandırılan açıkların, yamadan önce kamuya açık istismar yolu bulunması durumunda değerlendirme süresi daha da kısalır. Bu tür açıklar için üreticiden gelen "bilinen istismar" ifadesini ayrı bir uyarı olarak değerlendirin.</p>
+
+<h2>Windows tarafında otomatik dağıtım</h2>
+<p>Windows Update'i tek tek çalıştırmak, 50 cihazın üzerinde hızla sürdürülemez hâle gelir. Kurumsal ortamlarda üç ana yol vardır ve bunlar birbirinin yerine değil, birbirini tamamlar şekilde kullanılır.</p>
+<ul>
+  <li><strong>WSUS:</strong> Yamaları yerel sunucudan dağıtır, bant genişliğini korur ve dağıtım saatini kontrol eder. Grup İlkesi ile makine gruplarına göre erteleme tanımlanabilir.</li>
+  <li><strong>Microsoft Intune:</strong> Uzaktan, bulut üzerinden güncelleme ve uyumluluk ilkesi sağlar. Cihazların yama seviyesini raporlar, uymayanları otomatik işaretler.</li>
+  <li><strong>Configuration Manager (SCCM):</strong> Büyüklüğü binler cihaz olan ortamlar için paket dağıtımı, kademeli halkalar ve geri alma desteği sunar.</li>
+</ul>
+<p>Dağıtımdan sonra doğrulama, dağıtmanın kendisi kadar önemlidir. <code>Get-HotFix</code>, <code>win32_quickfixengineering</code> veya uyumluluk politikaları aracılığıyla hedef paketin gerçekten kurulu olduğunu teyit edin; yalnızca "güncelleme başarılı" bildirimi, yamanın uygulandığı anlamına gelmez.</p>
+
+<h2>macOS ve iOS tarafında nelere dikkat etmeli</h2>
+<p>Apple'ın güvenlik güncellemeleri, sürüm numarasını değiştirmeden yayınladığı "güvenlik yanı güncellemeleri" ile tamamlanabilir. Bu nedenle <strong>Sistem Ayarları → Genel → Yazılım Güncellemeleri</strong> ekranında sürüm değişmiyormuş gibi görünse de güvenlik yamaları uygulanmış olur.</p>
+<p>WebKit açıklarının tarayıcı üzerinden hedefli çalışması, Safari'yi güncel tutmayı doğrudan güvenlik önlemi hâline getirir. Kurumsal Mac filolarında Safari ve ikinci taraf tarayıcıların (Chrome, Edge) aynı çekirdeği paylaştığını unutmayın; bir tarayıcıyı güncellemek diğerini otomatik olarak korumaz.</p>
+<p>Apple Silicon çiplerdeki mikro mimari düzeltmeler ise işletim sistemi düzeyinde uygulanır ve yeniden başlatma gerektirebilir. M3 ve M4 sistemlerde bu güncellemenin ardından performans ölçümü yapıldıysa, ölçümlerin yama öncesiyle karşılaştırıldığından emin olun; mikro düzeltmeler zamanlama davranışını değiştirebilir.</p>
+
+<h2>Linux dağıtımlarında kesintisiz güncelleme</h2>
+<p>Sunucu ortamlarında çekirdek güncellemesi, yeniden başlatma gerektirdiği için bakım penceresi planlamayı zorunlu kılar. Aşağıdaki yöntemler, kesintiyi en aza indirmeye yardımcı olur.</p>
+<ul>
+  <li><strong>unattended-upgrades (Debian/Ubuntu):</strong> Güvenlik yamalarını otomatik kurar, yeniden başlatma gerektiren paketleri erteler ve e-posta raporu gönderebilir.</li>
+  <li><strong>dnf-automatic (RHEL/Fedora):</strong> Yalnızca güvenlik güncellemelerini uygulama, uygulama sonrası yeniden başlatma bildirme ve zamanlama seçenekleri sunar.</li>
+  <li><strong>Canlı yama (livepatching):</strong> Çekirdek yeniden başlatma olmadan yamalanabilir. Kesinti kabul edilemeyen kritik servisler için değerlendirilmelidir; ancak canlı yamanın tüm açıkları kapsamadığını unutmayın.</li>
+</ul>
+<p>Dağıtım sonrası <code>uname -r</code> ile çekirdek sürümünü, paket yöneticisi sorgusuyla yama paketini doğrulayın. Ardından güvenlik açığı taraması çalıştırarak kapatılması gereken açıkların gerçekten kapandığını teyit edin.</p>
+
+<h2>Yama sonrası doğrulama kontrol listesi</h2>
+<p>Yama dağıtımının bittiğini bildirmek, sürecin sonu değil, doğrulama adımının başlangıcıdır. Aşağıdaki adımları sırayla tamamlayın.</p>
+<ol>
+  <li><strong>Envanter karşılaştırması:</strong> Dağıtım öncesi ve sonrası cihaz listesini karşılaştırın; ulaşılamayan cihazları ayrı bir rapora alın.</li>
+  <li><strong>Paket doğrulaması:</strong> Hedef yama numarasının (KB, paket sürümü, çekirdek sürümü) kurulu olduğunu komut satırından teyit edin.</li>
+  <li><strong>Tarama:</strong> Bağımsız bir güvenlik tarayıcısıyla yeniden tarama yapın; üreticinin kendi raporuna tek başına güvenmeyin.</li>
+  <li><strong>İşlevsel test:</strong> Kritik servisleri (RDP, etki alanı, web sunucusu, uygulama servisleri) normal çalışma sırasında kontrol edin.</li>
+  <li><strong>Kayıt:</strong> Dağıtım tarihini, kapsamını, istisnaları ve geri alma kararını bakım kaydına yazın; denetimlerde bu kayıt, uygunluk kanıtıdır.</li>
+</ol>
+<p>Bu adımların herhangi biri atlanırsa, yamanın uygulandığı varsayılır ama doğrulanmamış olur. Denetim ve olay incelemelerinde en sık karşılaşılan bulgu, "yama uygulandı" yazan ancak paketin kurulu olmadığı ortamlardır.</p>
+
+<h2>Ocak 2027'ye kadar ne beklenmeli?</h2>
+<p>Kasım yamaları dönem kapanışı değildir. Aralık ayında Microsoft ara bir güvenlik yaması yayımlayabilir; Apple, iOS ve macOS sürümleriyle yeni düzeltmeler sunar; Linux çekirdek sürümleri ise yeni özelliklerin yanında güvenlik düzeltmelerini de taşır.</p>
+<p>Bu nedenle yama programınızı tek seferlik bir etkinlik değil, aylar süren bir döngü olarak planlayın. Her ay için aynı üç adımı tekrarlayın: <strong>envanter → dağıtım → doğrulama</strong>. Süreç standart hâle geldiğinde, kritik bir açıklık çıktığında müdahale süreniz saatlerle değil günlerle ölçülür.</p>
 </div></div></article>
 
 <footer class="site-footer">

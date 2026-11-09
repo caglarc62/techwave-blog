@@ -84,7 +84,7 @@
         <h1 class="article-title">TypeScript Nedir? JavaScript'in Güçlendirilmiş Hâli, Tip Sistemi ve 2026 Öğrenme Rehberi</h1>
         <div class="article-meta">
           <span>📅 11 Ekim 2026</span>
-          <span>⏱ 15 dk okuma</span>
+          <span>⏱ 10 dk okuma</span>
           <span>👤 Çağlar ÇELİK</span>
         </div>
       </div>
@@ -202,7 +202,7 @@ const s = first(["a", "b"]);      // T = string</code></pre>
 <figure style="margin: 24px 0; text-align: center;">
   <img src="https://images.pexels.com/photos/14553707/pexels-photo-14553707.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Web geliştirme — TypeScript büyük projelerde varsayılan seçim" style="width:100%; border-radius: 12px;" loading="lazy">
 </figure>
-<h2>Sıkça Sorulan Sorular</h2>
+<h2>Sık Sorulanlar</h2>
 <h3>TypeScript öğrenmek için ne kadar zaman gerekir?</h3>
 <p>JavaScript bilen birisi için temel TypeScript 2-3 hafta, seviyede kullanmak 1-2 ay sürer. Ama JS temelleri olmadan önce TypeScript'e geçmek kafa karıştırıcı olır — önce JS'yi öğrenin.</p>
 <h3>TypeScript JavaScript'i mi yok edecek?</h3>
@@ -229,7 +229,40 @@ const s = first(["a", "b"]);      // T = string</code></pre>
   <img src="https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kod yazan geliştirici — TypeScript modern web geliştirmenin standardı" style="width:100%; border-radius: 12px;" loading="lazy">
 </figure>
 
-      </div>
+      
+<h2>Ne zaman TypeScript'e geçmeli?</h2>
+<p>TypeScript, her projede otomatik olarak doğru seçenek değildir. Doğru anı belirleyen üç işaretle birlikte, geçişi geciktirmenin maliyeti de değerlendirilmelidir.</p>
+<table>
+  <thead><tr><th>İşaret</th><th>Neden önemli</th><th>Etki</th></tr></thead>
+  <tbody>
+    <tr><td>Ekip büyümeye başladı</td><td>Farklı kişiler aynı kodu okuyor</td><td>Tip hatası erken yakalanır</td></tr>
+    <tr><td>Kod tabanı genişliyor</td><td>Değişikliklerin yan etkisi artıyor</td><td>Refactoring güvenli hâle gelir</td></tr>
+    <tr><td>API sözleşmeleri çoğaldı</td><td>Sunucu ile istemci arasındaki uyum</td><td>Uyumsuzluk derlemede görülür</td></tr>
+    <tr><td>Hata oranı yükseliyor</td><td>Çalışma zamanı hataları artıyor</td><td>Hatalar kullanıcıya ulaşmadan çözülür</td></tr>
+  </tbody>
+</table>
+<p>Bu işaretlerden hiçbiri yoksa — küçük, tek kişilik ve kısa ömürlü bir araç — saf JavaScript daha hızlı bir başlangıç sağlar. Kural basittir: karmaşıklık arttığında tip sisteminin maliyeti karşılamaya başlar.</p>
+
+<h2>Kademeli geçiş stratejisi</h2>
+<p>Üst kümesi olma özelliği, geçişi dosya dosya yapmayı mümkün kılar. Sıralama, riski en aza indirecek şekilde kurulmalıdır.</p>
+<ol>
+  <li><strong>Kontrolü açın:</strong> <code>strict</code> ayarını baştan etkinleştirin; sonradan kapatmak, tüm avantajı geri alır.</li>
+  <li><strong>Kenar noktadan başlayın:</strong> Giriş noktası ve ortak yardımcı dosyaları dönüştürün; bağımlılık grafiğinin yapısı buna izin verir.</li>
+  <li><strong>Bağımlılıkları sarın:</strong> Dış kütüphaneler için tip tanımları (veya @types paketleri) ekleyin; tip bilinmeyen her çağrı <code>any</code> sızıntısı yaratır.</li>
+  <li><strong>Her adımda derleyin:</strong> Küçük ve düzenli adımlar, büyük bir geçişten daha az hata üretir.</li>
+  <li><strong>Kalıntıları izleyin:</strong> <code>any</code> ve <code>@ts-ignore</code> sayılarını raporlayın; artıyorsa geçiş duruyor demektir.</li>
+</ol>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+  <li><strong>Her şeyi <code>any</code> ile geçiştirmek:</strong> Derleyici susar ama tip güvenliği yok olur. <code>any</code>, geçici bir araçtır; standart değil.</li>
+  <li><strong>Tip ile davranışı karıştırmak:</strong> TypeScript çalışma zamanında kontrol yapmaz; gelen veriyi yine de doğrulamalısınız. API yanıtı, kullanıcı girdisi ve dosya içeriği doğrulanmalıdır.</li>
+  <li><strong>Kalıp tipleri abartmak:</strong> Basit nesneler için aşırı generik yapılar, okunabilirliği düşürür ve hatayı gizler.</li>
+  <li><strong>Derleme adımını atlamak:</strong> Çıktı JS'i doğrudan çalıştırmak yerine, derlemeyi süreçe ekleyin; aksi halde hatalar yayına taşınır.</li>
+  <li><strong>Ekip eğitimsiz geçiş:</strong> Araç bilinmiyorsa tip sistemi engel gibi algılanır; kısa bir ekip içi rehber, direnci ciddi biçimde azaltır.</li>
+</ul>
+<p>Sonuç olarak TypeScript, kodunuzu doğru yapmaz; yanlış olanı erken gösterir. Doğru sonuç, doğru tasarım ve denetimle gelir — tip sistemi ise bunu daha ucuza ve daha erken ortaya koyar.</p>
+</div>
       <div class="article-tags">
         <span class="card-tag" data-category="Yazılım">Yazılım</span>
       </div>

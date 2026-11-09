@@ -45,7 +45,7 @@
     </div>
   </header>
 <article class="article-page"><div class="container">
-<div class="article-header"><span class="card-tag" data-category="Yapay Zeka">Yapay Zeka</span><h1 class="article-title">OpenAI Decisions API Nedir? Hız, Kullanım Alanları ve Sınırlar</h1><div class="article-meta"><span>📅 23 Ekim 2026</span><span>⏱ 7 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-header"><span class="card-tag" data-category="Yapay Zeka">Yapay Zeka</span><h1 class="article-title">OpenAI Decisions API Nedir? Hız, Kullanım Alanları ve Sınırlar</h1><div class="article-meta"><span>📅 23 Ekim 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
 <div class="article-hero"><img src="../images/decisions-api-hero.svg" alt="OpenAI Decisions API'nin bir girdiyi sınıflandırma, seçenek belirleme ve puanlama adımlarını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"></div>
 <div class="article-content">
 <p><strong>OpenAI, Decisions API'yi 22 Ekim 2026'da genel kullanıma açtı.</strong> Servis, uygulamaların bir metin, görsel veya yapılandırılmış veri hakkında sınırlı ve önceden tanımlanmış bir karar almasına yardımcı oluyor: örneğin bir talebi hangi ekibe yönlendirmek, içeriği kategorilere ayırmak ya da bir başvuruyu belirli ölçütlere göre puanlamak. API şu anda yalnızca <code>gpt-6-luna</code> modelini destekliyor.</p>
@@ -74,6 +74,38 @@
 <p>Özetle API, uygulama geliştiricilerine her küçük karar için uzun metin üretmek yerine doğrudan işlenebilir yanıtlar alma yolu sunuyor. Faydası, ancak dar kapsam, iyi tanımlı seçenekler, gerçek örneklerle değerlendirme ve riskli sonuçlarda insan kontrolüyle ortaya çıkar.</p>
 <h2>Kaynaklar</h2><ul><li><a href="https://openai.com/index/decisions-api/" target="_blank" rel="noopener noreferrer">OpenAI: Build more responsive apps with the Decisions API (22 Ekim 2026)</a></li><li><a href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener noreferrer">OpenAI API belgeleri: Decisions rehberi</a></li><li><a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener noreferrer">OpenAI API değişiklik günlüğü</a></li><li><a href="https://developers.openai.com/api/reference/resources/decisions/methods/create" target="_blank" rel="noopener noreferrer">OpenAI API referansı: karar oluşturma uç noktası</a></li></ul>
 <p><em>Son kontrol: 23 Ekim 2026. API özellikleri, erişilebilirlik ve fiyatlandırma değişebilir; uygulama kararı öncesi resmi belgeleri yeniden kontrol edin.</em></p>
+
+<h2>Doğruluk eşiğini kim belirliyor?</h2>
+<p>Decisions API, olasılık değeri veya puan döndürür; ancak hangi eşiğin kabul edileceğini uygulamanız belirler. Bu eşik, işin riskiyle doğrudan ilişkilidir ve merkezi bir karar olarak tanımlanmalıdır.</p>
+<table>
+  <thead><tr><th>Senaryo</th><th>Önerilen yaklaşım</th><th>Gerekçe</th></tr></thead>
+  <tbody>
+    <tr><td>Düşük riskli yönlendirme</td><td>Otomatik uygula, örneklem denetle</td><td>Hata geri alınabilir</td></tr>
+    <tr><td>Orta riskli puanlama</td><td>Eşik üstü otomatik, altı insan incelemesi</td><td>Hız ve denge</td></tr>
+    <tr><td>Yüksek riskli karar (finans, hukuk, sağlık)</td><td>Her zaman insan onayı</td><td>Hata geri alınamaz olabilir</td></tr>
+    <tr><td>Kullanıcıya görünen sonuç</td><td>Onay akışı ekle</td><td>Yanlış sonuç güveni zedeler</td></tr>
+  </tbody>
+</table>
+<p>Eşik değerini ilk günden sabitlemek yerine, bir toplama penceresi boyunca örneklem incelemesi yapın: modelin döndürdüğü sonuçları rastgele seçip insan değerlendirmesiyle karşılaştırın. Bu karşılaştırma, eşeğin gerçek doğruluğunu ve nerede hata yaptığını gösterir.</p>
+
+<h2>Maliyet ve gecikme tarafını ölçmek</h2>
+<p>OpenAI'ın "10 kata kadar hızlı" ifadesi, kendi karşılaştırmasına dayanır. Sizin uygulamanızda gerçek kazanç üç faktöre bağlıdır:</p>
+<ul>
+  <li><strong>Girdi boyutu:</strong> Kısa kararlarla uzun belgeleri aynı kefeye koymayın; uzun girdilerde gecikme yeniden belirginleşir.</li>
+  <li><strong>İstek deseni:</strong> Toplu (batch) işlerde gecikme katlanabilir; gerçek zamanlı kullanıcı akışında ise tekil yanıt süresi belirleyicidir.</li>
+  <li><strong>Yan zincir maliyeti:</strong> Karar sonrası yürütülen işlemler (veritabanı, e-posta, kuyruk) toplam sürenin çoğunu oluşturabilir; API yalnızca bir parçadır.</li>
+</ul>
+<p>Bu üç değeri ölçmeden "daha hızlı ve daha ucuz" sonucuna varılmaz. Pilot aşamasında temel metrikler şunlar olsun: yanıt süresi, sonuç başına maliyet, insan onayına düşen oran ve örneklem doğruluğu.</p>
+
+<h2>Yanlış kararın önüne geçen tasarım</h2>
+<ol>
+  <li><strong>İnsan onayı:</strong> Gerçek işlem (e-posta gönderme, iade, kayıt değişikliği) yalnızca onaydan sonra çalışsın.</li>
+  <li><strong>Geri alma:</strong> Yanlış sınıflandırma fark edildiğinde işlemi tek tıkla geri alabilme yolu olsun.</li>
+  <li><strong>Kayıt:</strong> Her kararın girdisi, çıktısı, güven skoru ve zamanı loglansın; inceleme ve denetim için kanıt kalsın.</li>
+  <li><strong>Sınır:</strong> Modelin erişebileceği veri ve izin verilen aksiyonlar en az yetkiyle tanımlansın.</li>
+  <li><strong>Yeniden değerlendirme:</strong> Belirli aralıklarla örneklem doğrulaması tekrarlanmalı; eşikler zamanla kayabilir.</li>
+</ol>
+<p>Bu beş kontrol, otomasyonun güvenilir kalmasını sağlar. Otomasyon büyürken denetim zayıflarsa, ilk hata maliyeti kazancın tamamını silebilir. Doğru tasarım, hız ile denetimi aynı anda korur.</p>
 </div></div></article>
 <footer class="site-footer">
     <div class="container">

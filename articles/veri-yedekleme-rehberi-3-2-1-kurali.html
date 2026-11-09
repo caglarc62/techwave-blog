@@ -45,7 +45,7 @@
 </header>
 
 <article class="article-page"><div class="container">
-<div class="article-header"><span class="card-tag" data-category="Siber Güvenlik">Siber Güvenlik</span><h1 class="article-title">Veri Yedekleme Rehberi: 3-2-1 Kuralı ve Kurtarma Stratejileri</h1><div class="article-meta"><span>📅 7 Kasım 2026</span><span>⏱ 11 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-header"><span class="card-tag" data-category="Siber Güvenlik">Siber Güvenlik</span><h1 class="article-title">Veri Yedekleme Rehberi: 3-2-1 Kuralı ve Kurtarma Stratejileri</h1><div class="article-meta"><span>📅 7 Kasım 2026</span><span>⏱ 9 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
 <div class="article-hero"><img src="../images/veri-yedekleme-2026-1.svg?v=20261107-hero" alt="3-2-1 yedekleme kuralını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
 <div class="article-content">
 <p><strong>Yedeklemenin tek gerçek ölçütü, veriyi geri yükleyebilmektir.</strong> Disk üzerinde "yedek" yazan bir klasörün varlığı, dosyalarınızın güvende olduğu anlamına gelmez. Fidye yazılımı, disk arızası veya yanlışlıkla bir silme işlemi, çoğu zaman yedeğin de bağlandığı anda onu götürür.</p>
@@ -67,8 +67,8 @@
 
 <table>
 <tr><th>Senaryo</th><th>Sonuç</th><th>Çözüm</th></tr>
-<tr><td><strong>Fidye yazılımı</strong></td><td>Bağlı tüm diskler şifrelenir</td><td>Bağlantısı kesilmiş / uzak kopya</td></tr>
-<tr><td><strong>Donanım arızası</strong></td><td>SSD sessizce ölebilir, uyarı vermeyebilir</td><td>Farklı ortamda ikinci kopya</td></tr>
+<tr><td><strong><a href="https://www.cisa.gov/stopransomware" target="_blank" rel="noopener noreferrer">Fidye yazılımı</a></strong></td><td>Bağlı tüm diskler şifrelenir</td><td>Bağlantısı kesilmiş / uzak kopya</td></tr>
+<tr><td><strong>Donanım arızası</strong></td><td><a href="https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data" target="_blank" rel="noopener noreferrer">SSD</a> sessizce ölebilir, uyarı vermeyebilir</td><td>Farklı ortamda ikinci kopya</td></tr>
 <tr><td><strong>Yanlışlıkla silme</strong></td><td>Shift+Delete geri getirmez</td><td>Sürümlü / anlık görüntü yedeği</td></tr>
 </table>
 
@@ -135,7 +135,7 @@
 <li><strong>Kurtarma hâlâ çalışıyor mu?</strong> Yılda iki kez rastgele bir dosyayı geri yükleyip açmak, planın sağlığını gösterir.</li>
 </ul>
 
-<h2>Sıkça Sorulan Sorular</h2>
+<h2>En Çok Merak Edilenler</h2>
 <ul>
 <li><strong>Yedekleme ne sıklıkta yapılmalı?</strong> — Değişen veriye bağlı; ev kullanımı için günlük artımlı, haftalık tam iyi bir başlangıçtır.</li>
 <li><strong>Dış diskimi sürekli takılı tutuyorum, sorun olur mu?</strong> — Fidye yazılımı senaryosunda evet. Mümkünse yedek diskini fişten çekin veya bağlantısını kesin.</li>
@@ -145,10 +145,43 @@
 <li><strong>Yedek şifrelemeli mi?</strong> — Hassas veri varsa evet. Ancak şifreleme anahtarını yedeğin yanında saklamayın; ayrı bir güvenli yerde tutun.</li>
 </ul>
 
-<h2>Sonuç</h2>
+<h2>Sonuç: Özet ve Sonraki Adım</h2>
 <p>Yedekleme bir teknoloji tercihi değil, <strong>düzenli bir alışkanlık</strong>tır. 3-2-1 kuralı karmaşık görünüyor ama uygulaması basit: üç kopya, iki ortam, bir uzak yer. Kurulum bir kez yapılır, sonrasında otomatik çalışır.</p>
 <p>Unutulmaması gereken tek şey şu: <strong>test edilmemiş yedek, yedek değildir.</strong> Bu hafta ayıracağınız 30 dakika, ileride yaşanacak bir veri kaybından çok daha ucuzdur. Kişisel verilerin korunması için ayrıca <a href="siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html">siber güvenlik 101 rehberimize</a> göz atın.</p>
 <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+<h2>Kurtarma testi nasıl yapılır?</h2>
+<p>Test, bir yedeğin gerçekten işe yaradığını kanıtlayan tek adımdır. Yılda bir kez, en fazla otuz dakika süren basit bir rutin olarak düşünülmelidir.</p>
+<ol>
+  <li><strong>Küçük bir örnek seçin:</strong> Test için tüm arşivi değil, son bir yılın önemli klasörlerinden bir tanesini seçin.</li>
+  <li><strong>Başka bir cihaza geri yükleyin:</strong> Yedeğin bulunduğu diskin üzerine değil, farklı bir diske veya klasöre açın.</li>
+  <li><strong>Açıklığını doğrulayın:</strong> Birkaç dosyayı gerçekten açın; görüntülenen dosya adları yetmez, içerik de çalışmalıdır.</li>
+  <li><strong>Süreyi not edin:</strong> Geri yükleme ne kadar sürdü? Felaket anında bu süre, toleransınızın sınırını belirler.</li>
+  <li><strong>Sonucu kaydedin:</strong> Test tarihi ve sonucu basit bir not dosyasında dursun; bir sonraki testte karşılaştırma yapabilirsiniz.</li>
+</ol>
+<p>Test sırasında karşılaşılan sorunlar — bozuk arşiv, eksik dosya, yanlış şifre — barış zamanında çözülmelidir. Kurtarma anında keşfedilen bir sorun, yedeğin varlığıyla yokluğu arasındaki farkı siler.</p>
+
+<h2>Yedekleme planını 30 dakikada kurmak</h2>
+<p>Başlangıç için karmaşık bir altyapı gerekmez. Aşağıdaki plan, çoğu bireysel kullanıcı için yeterli bir ilk katman oluşturur.</p>
+<table>
+  <thead><tr><th>Adım</th><th>Yapılacak</th><th>Süre</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Kritik klasörleri belirleyin (belgeler, fotoğraflar, projeler)</td><td>10 dk</td></tr>
+    <tr><td>2</td><td>Harici diske otomatik zamanlanmış bir yedek kurun</td><td>10 dk</td></tr>
+    <tr><td>3</td><td>Uzak kopya için bulut yedekleme hesabını bağlayın</td><td>5 dk</td></tr>
+    <tr><td>4</td><td>İlk kurtarma testini yapın</td><td>5 dk</td></tr>
+  </tbody>
+</table>
+<p>Bu dört adım tamamlandığında 3-2-1 kuralının üç maddesi de karşılanmış olur. Sonraki aşamalar — sürümlü yedek, şifreleme, ayrı sunucu — ihtiyaç büyüdükçe eklenir; ilk günden tümünü kurmaya çalışmak, çoğu zaman planın yarım kalmasına yol açar.</p>
+
+<h2>Gözden kaçan kalem: kişisel veri</h2>
+<p>Yedekleme tartışmalarında genellikle teknik ayrıntılar öne çıkar; oysa geri yüklenmesi en zor kategori kişisel belgelerdir. Tarayıcı yer imleri, uygulama ayarları, şifre yöneticisi yedeği ve hesap kurtarma kodları çoğu planda unutulur.</p>
+<ul>
+  <li><strong>Şifre yöneticisinin yedeğini</strong> ayrı bir yerde tutun; yöneticinin kendisi de çökerse tüm kapılar kapanır.</li>
+  <li><strong>Kurtarma kodlarını</strong> hem dijital hem fiziksel olarak saklayın; ikisi de aynı yerde olmamalı.</li>
+  <li><strong>Hesap dışa aktarımlarını</strong> (e-posta, fotoğraf servisleri) yılda bir kez indirin; servis kapanabilir veya hesabınız askıya alınabilir.</li>
+</ul>
+<p>Bu kalemler, geri yüklenebilir veri kadar önemlidir; çünkü bir cihaz kaybında asıl sorun dosyalar değil, erişimdir. Erişim geri alınamazsa, dosyalar da kullanılamaz hâle gelir.</p>
 </div></div></article>
 
 <footer class="site-footer">

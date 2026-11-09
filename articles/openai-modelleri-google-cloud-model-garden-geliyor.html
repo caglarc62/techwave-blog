@@ -71,7 +71,7 @@
         <h1 class="article-title">OpenAI Modelleri Google Cloud’a Geliyor: Model Garden’da Neler Değişiyor?</h1>
         <div class="article-meta">
           <span>📅 21 Ekim 2026</span>
-          <span>⏱ 8 dk okuma</span>
+          <span>⏱ 9 dk okuma</span>
           <span>👤 Çağlar ÇELİK</span>
         </div>
       </div>
@@ -140,14 +140,46 @@
         <h2>Sonuç: yeni kanal, henüz tamamlanmış ürün değil</h2>
         <p>21 Ekim duyurusu, OpenAI modelleri ve Codex iş akışları için Google Cloud’da yeni bir kurumsal erişim yolu açıyor. İlk modeller seçili müşterilere özel önizlemede; Marketplace satın alımı ve mevcut harcama taahhütlerinin kullanımı dikkat çeken operasyonel yenilikler. Ancak genel açılış tarihi, eksiksiz fiyatlandırma ve bazı veri kontrollerinin kullanılabilirliği henüz net değil. Kurumlar bugünkü duyuruyu satın alma kararı olarak değil, kontrollü bir pilot için başlangıç noktası olarak ele almalı.</p>
         <p><em>Bu yazı 21 Ekim 2026 tarihli duyurulara dayanır. Ürün erişimi ve koşulları değişebilir; değerlendirmelerimiz duyurulardaki bilgilerle sınırlıdır.</em></p>
-        <h2>Kaynaklar</h2>
+        <h2>Hangi Kaynaklardan Yararlandık</h2>
         <ul>
           <li><a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" rel="noopener noreferrer">OpenAI: OpenAI models are coming to Google Cloud</a> (21 Ekim 2026)</li>
           <li><a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers" target="_blank" rel="noopener noreferrer">Google Cloud: Google Cloud expands model choice and flexibility, bringing OpenAI models to customers</a> (21 Ekim 2026)</li>
         </ul>
         <p>Görsel: Bulut altyapısını temsil eden Unsplash fotoğrafı; etkinlik ekran görüntüsü değildir.</p>
         <p><em>TechWave’de yapay zekâ ve otomasyon haberlerini inceliyoruz. <a href="yapay-zeka-ajani-imkansiz-iade-deneyi-6-model.html">Yapay zekâ ajanlarının sınırları üzerine önceki yazımızı</a> da okuyabilirsiniz.</em></p>
-      </div>
+      
+<h2>Kurumlar için değerlendirme sırası</h2>
+<p>Model Garden üzerinden erişim, mevcut bir Google Cloud kullanıcısı için yeni bir satın alma kanalı açar; ancak teknik değerlendirme adımları değişmez. Sıralama, aşağıdaki gibi yapılmalıdır.</p>
+<ol>
+  <li><strong>Erişim kapsamını netleştirin:</strong> Hangi modeller özel önizlemede, hangileri genel erişime açık? Önizleme başvurusunun onaylandığı varsayılmamalıdır.</li>
+  <li><strong>Fiyatlandırma sorusu:</strong> Model başına birim fiyat, giriş/çıkış token farkı ve minimum kullanım koşulları yazılı olarak alın.</li>
+  <li><strong>Bölge ve veri yerleşimi:</strong> Hangi bölgelerde kullanılabilir, veri işleme nerede yapılıyor? Mevzuat gereklilikleri bu yanıta bağlıdır.</li>
+  <li><strong>Referans mimari:</strong> Mevcut uygulamanızın model çağrılarını nasıl taşıyacağı, hata yönetimi ve yeniden deneme stratejisiyle birlikte planlanmalıdır.</li>
+  <li><strong>Pilot ölçümü:</strong> Küçük ve gerçek bir iş yükünde gecikme, maliyet ve kalite ölçülmeden geçiş yapılmamalıdır.</li>
+</ol>
+
+<h2>Tek sağlayıcı bağımlılığı riski</h2>
+<p>Modeli aynı bulut kataloğunda satın almak, operasyonu sadeleştirir; buna karşın mimari bağımlılığı artırır. Değerlendirilmesi gereken üç risk vardır.</p>
+<ul>
+  <li><strong>Fiyat değişikliği:</strong> Tek kanaldan satın alımda alternatif pazarlık gücü daralır; kullanım arttıkça geçiş maliyeti yükselir.</li>
+  <li><strong>Hizmet kesintisi:</strong> Bulut ile model sağlayıcısı aynı zincirdeyse, birindeki sorun tüm iş akışını durdurur.</li>
+  <li><strong>Sürüm değişikliği:</strong> Model sürümleri emekliye ayrılabilir; uygulamanın hangi sürüme bağlandığını ve güncelleme politikasını bilmeniz gerekir.</li>
+</ul>
+<p>Bu riskleri azaltmanın pratik yolu, model çağrılarını soyut bir katmanda toplamaktır. Uygulamanız doğrudan tek bir API'ye bağlıysa, sağlayıcı değiştirmek kod değişikliği gerektirir; soyut katman varsa yalnızca yapılandırma değişir.</p>
+
+<h2>Hangi iş yükü için mantıklı?</h2>
+<p>Duyuru, her iş yükü için otomatik bir geçiş önermez. Aşağıdaki eşleştirme, ilk değerlendirmede yardımcı olur.</p>
+<table>
+  <thead><tr><th>İş yükü</th><th>Model Garden uygunluğu</th><th>Gerekçe</th></tr></thead>
+  <tbody>
+    <tr><td>Mevcut Google Cloud müşterisi, kurumsal fatura</td><td>Yüksek</td><td>Satın alma ve taahhüt kullanımı sadeleşir</td></tr>
+    <tr><td>Veri yerleşimi şartı olan proje</td><td>Öncelikle bölge kontrolü</td><td>Erişim, bölge izniyle sınırlı olabilir</td></tr>
+    <tr><td>Düşük hacimli, hobi düzeyi kullanım</td><td>Düşük</td><td>Kurumsal süreç ek yük getirir</td></tr>
+    <tr><td>Çok sağlayıcılı esnek mimari isteyen ekip</td><td>Orta</td><td>Soyut katman varsa değerlendirilebilir</td></tr>
+  </tbody>
+</table>
+<p>Sonuç olarak duyuru, seçenekleri genişletiyor; ama seçim kriterleri değişmiyor: maliyet, gecikme, veri yerleşimi ve geçiş kolaylığı. Bu dört ölçüt, özel önizleme heyecanının önüne konulduğunda doğru karar verilir.</p>
+</div>
       <div class="article-tags"><span class="card-tag" data-category="Yapay Zeka">Yapay Zeka</span></div>
       <div class="container">
         <div class="author-box">

@@ -48,7 +48,7 @@
 <div class="article-header"><span class="card-tag" data-category="Yapay Zeka">Yapay Zeka</span><h1 class="article-title">Yapay Zekâ Ajanları ve MCP: Araç Bağlantılarının Güvenliği</h1><div class="article-meta"><span>📅 1 Kasım 2026</span><span>⏱ 10 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
 <div class="article-hero"><img src="../images/mcp-guvenlik-2026-1.svg?v=20261101-hero" alt="Yapay zekâ ajanının dosya, web, veritabanı ve e-posta araçlarına bağlandığını anlatan TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
 <div class="article-content">
-<p><strong>Yapay zekâ ajanları artık sadece metin üretmiyor; dosya okuyor, veritabanına yazıyor, e-posta gönderiyor ve web’de geziniyor.</strong> Model Context Protocol (MCP) bu araçları tek bir standard üzerinden modele bağlamayı kolaylaştırıyor. Aynı kolaylık, kötü niyetli bir girdinin tek bir komutla gerçek bir zarara dönüşmesi demek. Bu rehberde ajanların güvenlik sınırlarını ve güvenli kurulum adımlarını ele alıyoruz.</p>
+<p><strong>Yapay zekâ ajanları artık sadece metin üretmiyor; dosya okuyor, veritabanına yazıyor, e-posta gönderiyor ve web’de geziniyor.</strong> <a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer">Model Context Protocol (MCP)</a> bu araçları tek bir standard üzerinden modele bağlamayı kolaylaştırıyor. Aynı kolaylık, kötü niyetli bir girdinin tek bir komutla gerçek bir zarara dönüşmesi demek. Bu rehberde ajanların güvenlik sınırlarını ve güvenli kurulum adımlarını ele alıyoruz.</p>
 <p>“Ajan bağladık, çalışıyor” ile “ajan güvenli” aynı şey değil. Özellikle yetkiler, girdi kaynakları ve kayıt (log) tutma konusunda sessiz varsayımlar, üretim ortamlarında ciddi sorunlara yol açar.</p>
 
 <img src="../images/mcp-guvenlik-2026-1.svg?v=20261101-a" alt="AI ajanının birden fazla araca bağlanma diyagramı" width="800">
@@ -126,7 +126,7 @@
 <li><strong>İzole olmayan ortam:</strong> ajanın üretim verisine ve kimlik bilgilerine doğrudan erişimi.</li>
 </ul>
 
-<h2>Sıkça Sorulan Sorular</h2>
+<h2>Sorularla Konuyu Netleştirelim</h2>
 <ul>
 <li><strong>MCP kullanmak güvenli değil mi?</strong> Protokolün kendisi nötr; risk, araçların yetkileri ve girdi işleme biçiminde. Doğru yapılandırıldığında güvenli kullanılabilir.</li>
 <li><strong>Model mi suçlu, sunucu mu?</strong> İkisi de pay sahibi. Model girdiyi yanlış yorumlayabilir; sunucu fazla yetki verirse sonuç ağır olur.</li>
@@ -136,9 +136,44 @@
 <li><strong>Ajanı denemeye nereden başlanmalı?</strong> Yazma yetkisi olmayan, salt okuyucu araçlarla; gerçek veri ve geri dönüşü olmayan işlemlerden uzak bir ortamda.</li>
 </ul>
 
-<h2>Sonuç</h2>
+<h2>Sonuç Değerlendirmesi</h2>
 <p>Ajanlar hız ve kolaylık getiriyor; ama bağlantı sayısı arttıkça sorumluluk da artıyor. En az yetki, onay akışı, izolasyon ve kayıt — bu dörtlü olmadan üretime çıkmak, bilinmeyen bir komuta yetki vermek demek.</p>
 <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+<h2>Güvenli kurulum kontrol listesi</h2>
+<p>MCP sunucusu bağlamadan önce geçirilmesi gereken kontroller, çoğu üretim sorununu kaynağında önler. Liste kısa tutulmuştur; amacı ilk kurulumda standart hâline getirmektir.</p>
+<table>
+  <thead><tr><th>Kontrol</th><th>Ne sağlanır</th><th>Sık atlanan</th></tr></thead>
+  <tbody>
+    <tr><td>Kimlik doğrulama</td><td>Yalnızca yetkili istemci bağlanabilir</td><td>Yerel port = açık kapı sanılır</td></tr>
+    <tr><td>Yetki kapsamı</td><td>Araçlar en az yetkiyle çalışır</td><td>Varsayılan tüm izinler açık</td></tr>
+    <tr><td>Ağ sınırlaması</td><td>Erişim yalnızca gerekli kaynaklarla</td><td>Geniş firewall kuralı</td></tr>
+    <tr><td>Kayıt (log)</td><td>Her çağrı ve sonucu izlenebilir</td><td>Log kapalı, olayda kanıt yok</td></tr>
+    <tr><td>Onay akışı</td><td>Hassas işlem öncesi insan onayı</td><td>Otomatik onay, sessiz izin</td></tr>
+    <tr><td>Sır yönetimi</td><td>Anahtarlar kodda değil, kasada</td><td>Ortam değişkeninde düz metin</td></tr>
+  </tbody>
+</table>
+<p>Bu altı kontrol, bir sonraki maddede detaylandırılan girdi güvenliğiyle birlikte düşünülmelidir; yalnızca biri uygulandığında güvenlik katmanı eksik kalır.</p>
+
+<h2>Prompt injection: girdi kaynaklı saldırı</h2>
+<p>Ajan güvenliğinin en karakteristik farkı, girdinin kendisinin bir saldırı aracı olabilmesidir. Model, okuduğu metni talimat olarak algılayabilir; bu da harici içerik ile dahili talimatı ayırt etmeyi zorlaştırır.</p>
+<ul>
+  <li><strong>Güvenilmeyen kaynak:</strong> Web sayfası, e-posta ve kullanıcı yüklemesi doğrudan talimat olarak işlenmemeli; veri olarak etiketlenmelidir.</li>
+  <li><strong>Şüpheli komut kalıpları:</strong> "önceki talimatları görmezden gel", "dosyayı şu adrese gönder" gibi yönlendirmeler, otomatik olarak reddedilmelidir.</li>
+  <li><strong>İçerik–talimat ayrımı:</strong> Sistem talimatları sabit kalmalı, girdi ise değişken olmalı; ikisinin karışması yetki sızıntısına yol açar.</li>
+  <li><strong>Çıkış denetimi:</strong> Modelin ürettiği yanıt, gerçek bir eyleme dönüşmeden önce kurallara göre doğrulanmalıdır.</li>
+</ul>
+<p>Kapsamlı bir kontrol listesi için <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener noreferrer">OWASP LLM Top 10</a> projesine de bakabilirsiniz. Bu savunma, tek seferlik bir ayar değil; sürekli bir denetim katmanıdır. Girdi kaynağı genişledikçe — yeni entegrasyon, yeni araç — kontrol listesi yeniden gözden geçirilmelidir.</p>
+
+<h2>Olay anında ilk adımlar</h2>
+<ol>
+  <li><strong>Bağlantıyı kesin:</strong> Şüpheli ajan veya sunucuyu devre dışı bırakın; kanıt toplamaya çalışırken erişim devam etmesin.</li>
+  <li><strong>Kapsamı çıkarın:</strong> Hangi araçların çağrıldığı, hangi verilere erişildiği ve zaman aralığını kayıtlardan belirleyin.</li>
+  <li><strong>Sırları döndürün:</strong> Etkilenen anahtarları iptal edin ve yenileyin; erişim kalıcılığı, olaydan sonra da sürer.</li>
+  <li><strong>İzole edin:</strong> Etkilenen sistemleri diğerlerinden ayırın, normal çalışma yalnızca doğrulama sonrası devam etsin.</li>
+  <li><strong>Öğrenin:</strong> Olay sonrası kısa bir değerlendirme yapın; hangi kontrol eksikti, tekrarı nasıl önlenir?</li>
+</ol>
+<p>Bu beş adım, çoğu ajan olayında izlenen standart yoldur. En kritik olanı ilkidir: müdahale geciktikçe hem kanıt hem kontrol kaybedilir.</p>
 </div></div></article>
 
 <footer class="site-footer">

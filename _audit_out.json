@@ -1,0 +1,822 @@
+[
+ {
+  "f": "2026-10-31-kasim-guvenlik-yamalari.html",
+  "w": 508,
+  "img": 7,
+  "h2": 6,
+  "sss": true,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 3
+ },
+ {
+  "f": "2026-telefon-alirken-5-kritik-hata.html",
+  "w": 665,
+  "img": 4,
+  "h2": 9,
+  "sss": true,
+  "sonuc": false,
+  "tablo": false,
+  "ext": 5
+ },
+ {
+  "f": "blockchain-yazilimi-en-iyi-11-programlama-dili.html",
+  "w": 677,
+  "img": 4,
+  "h2": 16,
+  "sss": true,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "siber-guvenlik-101-kisisel-verilerinizi-nasil-korursunuz.html",
+  "w": 681,
+  "img": 4,
+  "h2": 10,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "apple-yapay-zeka-destekli-saglik-uygulamasi.html",
+  "w": 699,
+  "img": 4,
+  "h2": 6,
+  "sss": true,
+  "sonuc": false,
+  "tablo": false,
+  "ext": 5
+ },
+ {
+  "f": "2026nin-en-iyi-10-oyunu-yilin-vazgecilmezleri.html",
+  "w": 700,
+  "img": 4,
+  "h2": 6,
+  "sss": true,
+  "sonuc": false,
+  "tablo": true,
+  "ext": 7
+ },
+ {
+  "f": "google-gemini-yapay-zeka-guvenlik-testi-sirketlere-sizdi.html",
+  "w": 708,
+  "img": 4,
+  "h2": 6,
+  "sss": true,
+  "sonuc": false,
+  "tablo": false,
+  "ext": 6
+ },
+ {
+  "f": "chatgpt-vs-clude-vs-gemini-karsilastirma.html",
+  "w": 732,
+  "img": 4,
+  "h2": 9,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "2026da-en-iyi-8-ucretsiz-vpn-hizmeti.html",
+  "w": 780,
+  "img": 4,
+  "h2": 9,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 9
+ },
+ {
+  "f": "2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri.html",
+  "w": 798,
+  "img": 4,
+  "h2": 9,
+  "sss": true,
+  "sonuc": false,
+  "tablo": false,
+  "ext": 6
+ },
+ {
+  "f": "cisco-sd-wan-keydrift-saldirisi-cve-2026-20127-rehberi.html",
+  "w": 828,
+  "img": 6,
+  "h2": 7,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 5
+ },
+ {
+  "f": "apple-m6-macbook-pro-imac-turkiye-fiyat-on-siparis.html",
+  "w": 841,
+  "img": 6,
+  "h2": 7,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 7
+ },
+ {
+  "f": "2026da-en-iyi-10-ucretsiz-yapay-zeka-araci.html",
+  "w": 874,
+  "img": 4,
+  "h2": 10,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 10
+ },
+ {
+  "f": "call-of-duty-modern-warfare-4-bugun-cikti-platformlar-haritalar-pc-gereksinimleri.html",
+  "w": 898,
+  "img": 8,
+  "h2": 8,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 9
+ },
+ {
+  "f": "apple-ipad-mini-a20-pro-oled-turkiye-fiyat-tarih.html",
+  "w": 900,
+  "img": 6,
+  "h2": 7,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 7
+ },
+ {
+  "f": "phantom-blade-zero-cikis-saati-pc-sistem-gereksinimleri-2026.html",
+  "w": 900,
+  "img": 7,
+  "h2": 8,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 8
+ },
+ {
+  "f": "2026nin-en-iyi-10-yapay-zeka-tarayicisi.html",
+  "w": 921,
+  "img": 8,
+  "h2": 16,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 3
+ },
+ {
+  "f": "windows-11-gizlilik-ayarlari-veri-toplama-kapatma.html",
+  "w": 923,
+  "img": 8,
+  "h2": 9,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 3
+ },
+ {
+  "f": "oyunda-fps-artirma-rehberi.html",
+  "w": 927,
+  "img": 8,
+  "h2": 9,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 3
+ },
+ {
+  "f": "chatgpt-kilitli-sohbetler-pin-gizlilik-rehberi.html",
+  "w": 933,
+  "img": 6,
+  "h2": 8,
+  "sss": false,
+  "sonuc": false,
+  "tablo": true,
+  "ext": 7
+ },
+ {
+  "f": "php-kritik-aciklar-2026-guncelleme-rehberi.html",
+  "w": 939,
+  "img": 8,
+  "h2": 8,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 8
+ },
+ {
+  "f": "ev-wifi-guvenlik-rehberi.html",
+  "w": 941,
+  "img": 8,
+  "h2": 13,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 3
+ },
+ {
+  "f": "openai-decisions-api-nedir-kullanim-alanlari.html",
+  "w": 955,
+  "img": 6,
+  "h2": 7,
+  "sss": false,
+  "sonuc": false,
+  "tablo": true,
+  "ext": 8
+ },
+ {
+  "f": "openai-modelleri-google-cloud-model-garden-geliyor.html",
+  "w": 997,
+  "img": 6,
+  "h2": 9,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 6
+ },
+ {
+  "f": "passkey-nedir-sifresiz-giris-rehberi.html",
+  "w": 997,
+  "img": 5,
+  "h2": 11,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 6
+ },
+ {
+  "f": "wordpress-mi-html-mi-2026da-blog-kurmak-icin-en-iyi-secim.html",
+  "w": 1005,
+  "img": 4,
+  "h2": 10,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "veri-yedekleme-rehberi-3-2-1-kurali.html",
+  "w": 1008,
+  "img": 8,
+  "h2": 10,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 3
+ },
+ {
+  "f": "python-web-scraping-rehberi-2026.html",
+  "w": 1056,
+  "img": 8,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 3
+ },
+ {
+  "f": "yapay-zeka-ajani-imkansiz-iade-deneyi-6-model.html",
+  "w": 1157,
+  "img": 15,
+  "h2": 10,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "yapay-zeka-ajani-mcp-guvenlik-rehberi.html",
+  "w": 1161,
+  "img": 8,
+  "h2": 13,
+  "sss": true,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 3
+ },
+ {
+  "f": "typescript-nedir-2026-js-super-seti-ogrenme-rehberi.html",
+  "w": 1163,
+  "img": 12,
+  "h2": 8,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "yapay-zeka-ajani-ordusu-100-site-siber-saldiri.html",
+  "w": 1241,
+  "img": 15,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 6
+ },
+ {
+  "f": "meta-muse-spark-open-816b-mac-studio-masaustu.html",
+  "w": 1246,
+  "img": 15,
+  "h2": 10,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "gemini-4-argon-yayinda-google-ai-yaris-geri-dondu.html",
+  "w": 1259,
+  "img": 15,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "abd-deepseek-yasagi-federal-karar-analiz.html",
+  "w": 1274,
+  "img": 15,
+  "h2": 12,
+  "sss": true,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 6
+ },
+ {
+  "f": "yapay-zeka-guvenlik-krizi-davalar-ab-denetimi-analiz.html",
+  "w": 1292,
+  "img": 15,
+  "h2": 9,
+  "sss": true,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "2026da-laptop-mu-tablet-mi-dogru-secim-rehberi.html",
+  "w": 1301,
+  "img": 4,
+  "h2": 14,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "nvidia-rtx-spark-dizustuler-16-ekim-fiyatlar-turkiye.html",
+  "w": 1350,
+  "img": 15,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "yazici-alim-rehberi-2026-murekkep-lazer-toner-maliyeti.html",
+  "w": 1368,
+  "img": 15,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "iphone-18-pro-alinmali-mi-ozellikler-fiyat-karar-rehberi.html",
+  "w": 1390,
+  "img": 15,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "programlama-dili-secimi-2026-hedefe-gore-karar-rehberi.html",
+  "w": 1445,
+  "img": 16,
+  "h2": 12,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-teknoloji-trendi-gelecegi-sekillendiren-inovasyonlar.html",
+  "w": 1513,
+  "img": 14,
+  "h2": 13,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "no-code-araclari-nedir-2026-kodsuz-uygulama-rehberi.html",
+  "w": 1585,
+  "img": 14,
+  "h2": 12,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "python-ile-web-sitesi-yapma-rehberi-2026.html",
+  "w": 1600,
+  "img": 4,
+  "h2": 11,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html",
+  "w": 1639,
+  "img": 4,
+  "h2": 9,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "apple-vision-pro-2-vs-meta-quest-4-2026nin-en-iyi-vr-gozlugu-hangisi.html",
+  "w": 1656,
+  "img": 4,
+  "h2": 13,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "yapay-zeka-nedir-2026da-bilmeniz-gereken-her-sey.html",
+  "w": 1666,
+  "img": 9,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "gta-6-cikis-tarihi-fiyat-platformlar-pc-surumu.html",
+  "w": 1669,
+  "img": 15,
+  "h2": 11,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "python-renpy-oyun-ceviri-araci-voorhees-rehberi.html",
+  "w": 1721,
+  "img": 8,
+  "h2": 12,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 5
+ },
+ {
+  "f": "2026da-en-iyi-10-mobil-uygulama-gelistirme-frameworku.html",
+  "w": 1731,
+  "img": 4,
+  "h2": 12,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "yapay-zeka-ile-gorsel-olusturma-midjourney-dall-e-stable-diffusion.html",
+  "w": 1731,
+  "img": 4,
+  "h2": 12,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026da-en-iyi-10-ucretsiz-antivirus-programi.html",
+  "w": 1758,
+  "img": 4,
+  "h2": 8,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "python-nedir-bilmeniz-gereken-her-sey.html",
+  "w": 1794,
+  "img": 9,
+  "h2": 13,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026da-en-iyi-10-yapay-zeka-sohbet-botu.html",
+  "w": 1813,
+  "img": 4,
+  "h2": 17,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026da-google-arama-nasil-degisiyor-sifir-tiklama-donemi-ve-seo-gelecegi.html",
+  "w": 1878,
+  "img": 4,
+  "h2": 11,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "2026da-en-iyi-10-notebook-onerisi.html",
+  "w": 1936,
+  "img": 4,
+  "h2": 11,
+  "sss": false,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "whatsappta-bilinmeyen-10-gizli-ozellik.html",
+  "w": 1944,
+  "img": 4,
+  "h2": 12,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-powerbank-hizli-sarj-rehberi.html",
+  "w": 2117,
+  "img": 18,
+  "h2": 16,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-yapay-zeka-video-olusturucu.html",
+  "w": 2136,
+  "img": 13,
+  "h2": 14,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-yapay-zeka-ajani-otomasyon-araclari.html",
+  "w": 2222,
+  "img": 13,
+  "h2": 15,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "iphone-17-vs-samsung-galaxy-s26-2026nin-amiral-gemisi-savasi.html",
+  "w": 2272,
+  "img": 4,
+  "h2": 13,
+  "sss": false,
+  "sonuc": true,
+  "tablo": false,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-robot-supurgesi-her-butceye-uygun.html",
+  "w": 2331,
+  "img": 13,
+  "h2": 14,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-web-kamerasi-yayin-meeting.html",
+  "w": 2358,
+  "img": 18,
+  "h2": 16,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "ps5-windows-10-uyumluluk-dualsense-remote-play.html",
+  "w": 2360,
+  "img": 14,
+  "h2": 13,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026da-internet-hizi-artirma-rehberi-15-pratik-cozum.html",
+  "w": 2407,
+  "img": 13,
+  "h2": 8,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 5
+ },
+ {
+  "f": "2026nin-en-iyi-10-drone-u-baslangictan-profesyonellere.html",
+  "w": 2414,
+  "img": 13,
+  "h2": 18,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-parola-yoneticisi-hesap-guvenligi.html",
+  "w": 2612,
+  "img": 12,
+  "h2": 16,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-kod-editoru-baslangictan-profesyonellere.html",
+  "w": 2676,
+  "img": 12,
+  "h2": 15,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-akilli-saati-saglik-spor-baglanti.html",
+  "w": 2695,
+  "img": 13,
+  "h2": 15,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-akilli-ev-sistemi-guvenlik-konfor-tasarruf.html",
+  "w": 2700,
+  "img": 13,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-oyun-konsolu-playstation-xbox-switch.html",
+  "w": 2718,
+  "img": 12,
+  "h2": 15,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-ekran-karti-oyun-yaraticilik-yapay-zeka.html",
+  "w": 2776,
+  "img": 12,
+  "h2": 18,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-yapay-zeka-fotograf-duzenleme-araci.html",
+  "w": 2849,
+  "img": 13,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-kablosuz-kulakligi-ses-kalitesi-fiyat.html",
+  "w": 2926,
+  "img": 13,
+  "h2": 15,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-televizyonu-oled-mini-led-qled.html",
+  "w": 2992,
+  "img": 13,
+  "h2": 18,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-monitoru-oyun-ofis-yaratici-isler.html",
+  "w": 3004,
+  "img": 13,
+  "h2": 16,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-oyun-faresi-agirlik-sensor.html",
+  "w": 3006,
+  "img": 13,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-tableti-ogrenci-calistiran-eglence.html",
+  "w": 3031,
+  "img": 12,
+  "h2": 15,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-mekanik-klavyesi-oyun-yazilim.html",
+  "w": 3083,
+  "img": 13,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-ssdsi-nvme-sata-tasinabilir.html",
+  "w": 3198,
+  "img": 13,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-akilli-telefonu.html",
+  "w": 3303,
+  "img": 15,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ },
+ {
+  "f": "2026nin-en-iyi-10-bluetooth-hoparloru-ses-kalitesi.html",
+  "w": 3848,
+  "img": 13,
+  "h2": 17,
+  "sss": true,
+  "sonuc": true,
+  "tablo": true,
+  "ext": 4
+ }
+]

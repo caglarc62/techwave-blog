@@ -45,10 +45,10 @@
 </header>
 
 <article class="article-page"><div class="container">
-<div class="article-header"><span class="card-tag" data-category="Yazılım">Yazılım</span><h1 class="article-title">Python ile Web Scraping: 2026'da Güncel ve Etik Rehber</h1><div class="article-meta"><span>📅 3 Kasım 2026</span><span>⏱ 12 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-header"><span class="card-tag" data-category="Yazılım">Yazılım</span><h1 class="article-title">Python ile Web Scraping: 2026'da Güncel ve Etik Rehber</h1><div class="article-meta"><span>📅 3 Kasım 2026</span><span>⏱ 9 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
 <div class="article-hero"><img src="../images/python-scraping-2026-1.svg?v=20261103-hero" alt="Python web scraping kodu ve veri akışını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
 <div class="article-content">
-<p><strong>Veri, yeni ham petrol; ama çoğu zaman tabloya değil, web sayfasına gömülü.</strong> Fiyatları izlemek, ürün karşılaştırmak veya araştırma için tablo toplamak istiyorsanız, Python bu işin en pratik yolu. Bu rehberde sıfırdan çalışan bir veri toplayıcı yazıyoruz — hangi kütüphaneyi ne zaman seçeceğinizi, kodu ve en önemlisi nerede durmanız gerektiğini.</p>
+<p><strong>Veri, yeni ham petrol; ama çoğu zaman tabloya değil, web sayfasına gömülü.</strong> Fiyatları izlemek, ürün karşılaştırmak veya araştırma için tablo toplamak istiyorsanız, <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> bu işin en pratik yolu. Bu rehberde sıfırdan çalışan bir veri toplayıcı yazıyoruz — hangi kütüphaneyi ne zaman seçeceğinizi, kodu ve en önemlisi nerede durmanız gerektiğini.</p>
 <p>Web scraping'e dair en büyük yanlış anlama, “her şey serbest” algısıdır. Teknik olarak sayfayı indirmek kolay; asıl mesele <strong>ne indirdiğiniz, ne sıklıkla indirdiğiniz ve bunu kiminle paylaştığınızdır</strong>. Bu rehber hem kodu hem de sınırı öğretiyor.</p>
 
 <img src="../images/python-scraping-2026-1.svg?v=20261103-a" alt="requests ve BeautifulSoup kod örneği" width="800">
@@ -60,9 +60,9 @@
 <h2>Hangi kütüphane? İhtiyaca göre seçim</h2>
 <table>
 <tr><th>Araç</th><th>Uygun olduğu durum</th><th>Zorluk</th></tr>
-<tr><td>requests + BeautifulSoup</td><td>Statik HTML sayfaları</td><td>Kolay</td></tr>
+<tr><td><a href="https://docs.python-requests.org/en/latest/" target="_blank" rel="noopener noreferrer">requests</a> + BeautifulSoup</td><td>Statik HTML sayfaları</td><td>Kolay</td></tr>
 <tr><td>Playwright</td><td>JavaScript ile yüklenen sayfalar</td><td>Orta</td></tr>
-<tr><td>Scrapy</td><td>Binlerce sayfalık büyük taramalar</td><td>İleri</td></tr>
+<tr><td><a href="https://www.scrapy.org/" target="_blank" rel="noopener noreferrer">Scrapy</a></td><td>Binlerce sayfalık büyük taramalar</td><td>İleri</td></tr>
 <tr><td>Selenium</td><td>Eski otomasyon senaryoları</td><td>Orta</td></tr>
 <tr><td>pandas.read_html</td><td>Sayfadaki hazır tablolar</td><td>Kolay</td></tr>
 </table>
@@ -169,7 +169,7 @@ with sync_playwright() as p:
 
 <img src="../images/python-scraping-2026-4.svg?v=20261103-d" alt="Altı adımlık scraper kurulum paneli" width="800">
 
-<h2>Sıkça Sorulan Sorular</h2>
+<h2>Sorularla Konuyu Netleştirelim</h2>
 <ul>
 <li><strong>Web scraping yasal mı?</strong> Genel olarak kamuya açık verinin toplanması tartışmalıdır; sitenin kullanım şartları, kişisel veri kapsamı ve ülkenin mevzuatı belirleyicidir. Emin değilseniz hukuki görüş alın.</li>
 <li><strong>Scraping Google'ı yasak mı?</strong> Google, otomatik sorguları kısıtlar. Arama sonuçlarını toplamak için resmî API'leri kullanın.</li>
@@ -178,9 +178,42 @@ with sync_playwright() as p:
 <li><strong>Playwright mu, requests mi?</strong> Sayfa kaynak görünümünde (View Source) hedef metni görüyorsanız requests yeterlidir.</li>
 </ul>
 
-<h2>Sonuç</h2>
+<h2>Özet ve Öneriler</h2>
 <p>Python ile scraping, doğru kurulduğunda son derece güçlü bir araçtır: doğru kütüphaneyi seçin, seçicileri sağlam yazın, hata yönetimini atlamayın ve her zaman hız sınırına uyun. En iyi script, en çok veriyi toplayan değil; <strong>doğru veriyi, sunucuyu yormadan ve sınırlar içinde toplayan</strong> script'tir.</p>
 <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+<h2>Rate limiting ve nezaket kuralları</h2>
+<p>Scraping'in sürdürülebilir olabilmesi için sunucuya yük bindirmemek gerekir. Teknik olarak mümkün olması, yapmanız gerektiği anlamına gelmez; doğru yaklaşım, hem yasal hem etik sınırları baştan tanımlamaktır.</p>
+<table>
+  <thead><tr><th>Kural</th><th>Neden önemli</th><th>Pratik karşılığı</th></tr></thead>
+  <tbody>
+    <tr><td>robots.txt kontrolü</td><td>Site neyin taranmasına izin veriyor belirtir</td><td>Tarama öncesi okuyun</td></tr>
+    <tr><td>Gecikme koyun</td><td>Sunucuyu serideki isteklerle boğmayın</td><td>Her istek arasında rastgele bekleme</td></tr>
+    <tr><td>User-Agent tanımlayın</td><td>Kim olduğunuzu ve iletişim bilginizi gösterir</td><td>Gerçek, şeffaf bir etiket</td></tr>
+    <tr><td>İstek sınırı belirleyin</td><td>Aynı kaynaktan günlük üst sınır</td><td>İhtiyaçtan fazlasını toplamayın</td></tr>
+    <tr><td>Önbellek kullanın</td><td>Aynı sayfayı tekrar indirmeyin</td><td>Yeniden çalıştırırken tasarruf</td></tr>
+  </tbody>
+</table>
+<p>Pratikte her istek arasında bir ile üç saniyelik rastgele bir bekleme, çoğu küçük ölçekli iş için yeterlidir. Test sırasında hızlandırmak için gecikmeyi düşürmek cazip görünür; ancak gerçek çalıştırmada bu, hem sunucuyu hem de kendi IP'nizi riske atar.</p>
+
+<h2>Yasal ve etik çerçeve</h2>
+<p>Teknik rehberin sınırı burada başlar. Genel ilkeler şunlardır:</p>
+<ul>
+  <li><strong>Herkese açık veri:</strong> Görüntülenebilir bilgiyi toplamak çoğu durumda sorun çıkarmaz; şifreli veya yetki gerektiren içeriğe erişim ise sınırdır.</li>
+  <li><strong>Kullanım şartları:</strong> Site kuralları otomatik erişimi kısıtlayabilir; şartları okumak, tarama öncesi yapılacak ilk şeydir.</li>
+  <li><strong>Kişisel veri:</strong> Gerçek kişilerle ilgili veriyi toplamak ve saklamak ayrı bir hukuki çerçeveye tabidir; bu tür verileri kapsam dışında tutun.</li>
+  <li><strong>Amacın sınırları:</strong> Topladığınız veriyi yalnızca belirlediğiniz amaç için kullanın; yeniden yayma ve yeniden satma niyetini önceden netleştirin.</li>
+</ul>
+<p>Bu ilkeler, işinizi durdurmaz; aksine kapsamı daraltır ve sürdürülebilir bir akış kurmanızı sağlar. Belirsiz bir alanda fazlasını toplamak, hem hukuki hem teknik riski büyütür.</p>
+
+<h2>Hata yönetimi: scraper'ı dayanıklı yapmak</h2>
+<p>Üretimde çalışan bir toplayıcı, beklenmedik durumlarla karşılaşır. Dayanıklılık üç katmanda kurulur:</p>
+<ol>
+  <li><strong>Yeniden deneme:</strong> Zaman aşımı ve geçici HTTP hataları için sınırlı sayıda, artan bekleme süreli yeniden deneme ekleyin.</li>
+  <li><strong>Doğrulama:</strong> Çekilen kaydın beklenen alanları içerdiğini kontrol edin; boş veya eksik kayıt üretmek yerine atlayıp işaretleyin.</li>
+  <li><strong>Kayıt tutma:</strong> Hangi URL'de ne zaman hangi yanıt alındığını yazın; sorun gidermek için tek kanıt bu kayıttır.</li>
+</ol>
+<p>Ayrıca çıkış noktalarını hazırlayın: CSV/JSON yazma, eksik kayıt raporu ve çalıştırma özeti. Bu üçü olduğunda, toplayıcıyı gece boyunca çalıştırıp sabah sonucu kontrol edebilirsiniz; aksi halde her adımda manuel müdahale gerekir.</p>
 </div></div></article>
 
 <footer class="site-footer">

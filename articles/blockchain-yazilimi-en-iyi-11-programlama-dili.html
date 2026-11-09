@@ -84,7 +84,7 @@
         <h1 class="article-title">Blockchain Yazılımında En İyi 11 Programlama Dili</h1>
         <div class="article-meta">
           <span>📅 16 Eylül 2026</span>
-          <span>⏱️ 6 dk okuma</span>
+          <span>⏱️ 8 dk okuma</span>
           <span>✍️ Çağlar ÇELİK</span>
         </div>
       </div>
@@ -128,18 +128,68 @@
         <h2>11. Ink!</h2>
         <p>Substrate ekosistemi için Rust tabanlı akıllı sözleşme dili. Polkadot parachain'lerinde akıllı sözleşme geliştirmek için kullanılır.</p>
 
-        <h2>Sonuç</h2>
+        <h2>Karar Özeti</h2>
         <p>Blockchain geliştirme için dil seçimi, hedeflediğiniz platforma ve projenin gereksinimlerine bağlıdır. Ethereum ekosistemi için Solidity, yüksek performans için Rust, Web3 frontend için JavaScript/TypeScript en iyi başlangıç noktalarıdır.</p>
-      </div>
+      
+<h2>Dil seçimi neden yalnızca teknik bir karar değil?</h2>
+<p>Blockchain geliştirmede dil seçimi, üretkenlikten önce <strong>güvenlik kararıdır</strong>. Akıllı sözleşme bir kez ağa dağıtıldığında geri alınamaz; fonlar kilitletilir, kod değiştirilemez. Bu yüzden hata yüzeyi dar, denetim araçları olgun diller öne çıkar. Ayrıca dil, ekosistemin dayattığı bir kısıttır: kendi seçtiğiniz dili yazmak yerine, hedef zincirin sanal makinesinde çalışan dili yazarsınız.</p>
+<p>Pratikte bir ekip için asıl mesele, dilin arkasındaki <strong>denetim ve test olgunluğudur</strong>. Biçimsel doğrulama (formal verification) ve fuzzing desteği olan bir dil, deneme-yanılma maliyetini düşürür. Gas/fee optimizasyonu ise dilin soyutlamasıyla çelişebilir; bu nedenle ölçüm araçları olmayan dillerde performans işi sonradan ciddi bir yeniden yazım gerektirir.</p>
+
+<h2>Platforma göre dil ve ekosistem eşleşmesi</h2>
+<p>Her dil her zincirde çalışmaz. Aşağıdaki tablo, en sık karşılaşılan hedeflerle başlıca dilleri eşleştirir.</p>
+<table>
+  <thead><tr><th>Hedef</th><th>Birincil dil</th><th>Alternatif</th><th>Neden</th></tr></thead>
+  <tbody>
+    <tr><td>Ethereum akıllı sözleşmesi</td><td>Solidity</td><td>Vyper</td><td>EVM uyumu, en geniş denetim ekosistemi</td></tr>
+    <tr><td>Solana / yüksek performans</td><td>Rust</td><td>—</td><td>Bellek güvenliği, düşük gecikme</td></tr>
+    <tr><td>Polkadot parachain</td><td>Rust (Substrate)</td><td>Ink!</td><td>Çekirdek çerçeve Rust ile yazılmıştır</td></tr>
+    <tr><td>Cardano</td><td>Haskell (Plutus)</td><td>Marlowe</td><td>Biçimsel doğrulama odaklı tasarım</td></tr>
+    <tr><td>Aptos / Sui</td><td>Move</td><td>—</td><td>Kaynak odaklı model, varlık güvenliği</td></tr>
+    <tr><td>Layer 2 / zk-rollup</td><td>Cairo</td><td>Rust</td><td>Sıfır bilgi kanıtı için özel tasarlandı</td></tr>
+    <tr><td>Web3 arayüzü</td><td>TypeScript</td><td>JavaScript</td><td>Web3.js / Ethers.js ekosistemi</td></tr>
+    <tr><td>Node ve altyapı</td><td>Go</td><td>Rust</td><td>Go-Ethereum referans uygulaması</td></tr>
+    <tr><td>Bitcoin çekirdeği</td><td>C++</td><td>—</td><td>Düşük seviye performans ve tarihî birikim</td></tr>
+  </tbody>
+</table>
+
+<h2>Yeni başlayanlar için öğrenme sırası</h2>
+<p>Blockchain'e yeni giren bir geliştirici için en kısa yol, önce genel programlama temelini kurmak, ardından hedef zincirin diline geçmektir. Sıradaki öneri, hedefinize göre şekillenir.</p>
+<ul>
+  <li><strong>Merkeziyetsiz uygulama (dApp) geliştiriciyseniz:</strong> TypeScript ile başlayın. Arayüz, sözleşme etkileşimi ve zincir üstü okuma aynı dilde birleşir; ilk prototipinizi gün içinde çıkarabilirsiniz.</li>
+  <li><strong>Akıllı sözleşme denetimi yapacaksanız:</strong> Solidity öğrenin, ardından EVM assembly seviyesine kadar inin. Denetim işi, kodu yazmaktan çok kodun beklenmedik davranışlarını aramayı gerektirir.</li>
+  <li><strong>Altyapı ve node tarafında çalışacaksanız:</strong> Go veya Rust. Bellek yönetimi, eşzamanlılık ve hata toleransı bu alanda günlük işin parçasıdır.</li>
+  <li><strong>Akademik veya biçimsel doğrulama ilginizi çekiyorsa:</strong> Haskell ve Move. Modelleme ve ispat araçları bu dillerde daha yaygındır.</li>
+</ul>
+<p>Öğrenme sürecinde tek bir dilde derinleşmek, beş dilde yüzeysel kalmaktan daha hızlı sonuç verir. İlk dilinizi seçtikten sonra en az bir tam proje (bir sözleşme, bir test paketi ve bir dağıtım) bitirin; ancak ondan sonra ikinci dile geçin.</p>
+
+<h2>Ekipler için dil seçiminin pratik sonuçları</h2>
+<p>Tek geliştirici için dil tercihi kişisel bir karardır; ekip için ise işe alım, bakım ve denetim maliyetini doğrudan etkiler.</p>
+<ul>
+  <li><strong>İşgücü havuzu:</strong> Solidity ve Rust için topluluk kaynakları, denetim rehberleri ve eğitim materyalleri daha geniştir. Nadir bir dil, ilk ekip üyesini bulmayı zorlaştırır.</li>
+  <li><strong>Denetim maliyeti:</strong> Yaygın dillerde denetim firmaları hazır kontrol listeleri kullanır; nadir dillerde denetim daha uzun sürer ve daha pahalıya gelir.</li>
+  <li><strong>Bakım süresi:</strong> Projeler yıllarca yaşar. Dilin topluluğunun sürdürülebilirliği, kodun beş yıl sonra hâlâ derlenebilir olması demektir.</li>
+  <li><strong>Geçiş maliyeti:</strong> Zincir değiştirmek, dili değiştirmek anlamına gelebilir. Baştan çok zincirli tasarlamak yerine, ilk hedefi netleştirip sonra genişletmek daha ucuzdur.</li>
+</ul>
+
+<h2>Karar verirken kullanılan kısa çerçeve</h2>
+<p>Seçiminizi dört soruyla daraltabilirsiniz.</p>
+<ol>
+  <li><strong>Hedef zincir hangisi?</strong> Zincir, dili büyük ölçüde belirler; EVM dışına çıktıysanız Solidity seçeneği kapanır.</li>
+  <li><strong>Projenin önceliği güvenlik mi, hız mı?</strong> Güvenlik önceliğinde biçimsel doğrulama desteği olan diller; hız önceliğinde Rust ve C++ öne çıkar.</li>
+  <li><strong>Ekipte bu dili kim bilecek?</strong> Var olan yetenek, öğrenme süresinden daha değerlidir.</li>
+  <li><strong>Denetim ve test planınız var mı?</strong> Plan yoksa, en güçlü dil bile yetersiz kalır.</li>
+</ol>
+<p>Bu dört sorunun yanıtı, çoğu zaman on bir dilin listesini iki veya üç adaya indirir. Kalan adaylar arasında ise topluluk büyüklüğü ve denetim olgunluğu belirleyici olur.</p>
+</div>
 
         <h2>Blockchain geliştirmede dil seçimi neden bu kadar kritik?</h2>
         <p>Blockchain yazılımında dil seçimi, yalnızca üretkenlik değil güvenlik kararıdır; akıllı sözleşme kodu bir kez dağıtıldığında geri alınamaz. Bu yüzden hata yüzeyi dar, denetim araçları olgun diller öne çıkıyor. Dil, ekosistemin dayattığı bir kısıttır: ağaç üstünde değil, hedef zincirin VM'inde çalışırsınız.</p>
         <p>Solidity, Ethereum ve uyumlu ağlar için standarttır; en zengin kütüphane ve denetim ekosistemi buna aittir. Rust, Solana ve performance-critical zincirlerde bellek güvenliği nedeniyle tercih edilir. Move, kaynak modeliyle varlık transferinde güvenlik odaklı bir alternatiftir. WebAssembly destekli zincirler ise TypeScript, Go ve hatta C++ koduna kapı açar.</p>
         <p>Pratikte bir ekip için asıl mesele, dilin arkasındaki denetim ve test olgunluğudur. Formal verification ve fuzzing desteği olan bir dil, deneme-yanılma maliyetini düşürür. Ayrıca gas/fee optimizasyonu, dilin soyutlamasıyla çelişebilir; bu yüzden ölçüm araçları olmadan optimizyon yapılmamalıdır.</p>
         <p>Karar çerçevesi: hedef ekosistem, güvenlik denetim olgunluğu ve ekip deneyimi. Yeni bir projede nadiren kendi dilinizi seçersiniz; ekosistem sizi seçer. En iyi dil, denetim geçmişinizi büyüten dildir.</p>
-        <h2>Sıkça Sorulan Sorular</h2>
+        <h2>Okuyuculardan Gelen Sorular</h2>
 
-        <h2>Sıkça Sorulan Sorular</h2>
+        
         <h3>Yeni başlayan hangi dili öğrenmeli?</h3><p>Ethereum ekosisteminde Solidity, yüksek performanslı zincirlerde Rust standarttır; WebAssembly destekli ağlarda TypeScript kapısı açıktır. Ortak çerçeve, hedef ekosistemi seçip o dilin denetim olgunluğunu değerlendirmektir; ekosistem sizi seçer.</p>
         <h3>Denetim (audit) neden zorunlu?</h3><p>Akıllı sözleşme dağıtıldıktan sonra geri alınamaz; bu yüzden hata yüzeyi dar ve denetim araçları olgun diller öne çıkar. Formal verification ve fuzzing desteği olan bir dil, deneme-yanılma maliyetini düşürür ve denetim sürecini kısaltır.</p>
         <h3>Gas/fee optimizasyonu ne zaman yapılmalı?</h3><p>Ölçüm sonrasına. Dilin soyutlamasıyla gas optimizasyonu çelişebilir; bu yüzden önce işlevsellik doğrulanmalı, ardından profil çıkarılıp iyileştirme yapılmalıdır. Körü körüne yapılan optimizasyon, okunabilirliği bozup güvenlik riskini artırabilir.</p>

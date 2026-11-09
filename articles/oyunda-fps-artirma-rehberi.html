@@ -45,7 +45,7 @@
 </header>
 
 <article class="article-page"><div class="container">
-<div class="article-header"><span class="card-tag" data-category="Oyun">Oyun</span><h1 class="article-title">Oyunda FPS Artırma Rehberi: 2026'da 12 Etkili Çözüm</h1><div class="article-meta"><span>📅 4 Kasım 2026</span><span>⏱ 12 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-header"><span class="card-tag" data-category="Oyun">Oyun</span><h1 class="article-title">Oyunda FPS Artırma Rehberi: 2026'da 12 Etkili Çözüm</h1><div class="article-meta"><span>📅 4 Kasım 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
 <div class="article-hero"><img src="../images/fps-artirma-2026-1.svg?v=20261104-hero" alt="144 FPS kare hızı sayacını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
 <div class="article-content">
 <p><strong>Oyun akıcı gitmediğinde ilk refleks “donanımım yetersiz” demek olur; ama çoğu durumda sorun donanım değil, ayarlardır.</strong> Doğru sırayla yapıldığında, hiçbir şey satın almadan kare hızında ciddi bir sıçrama elde etmek mümkün. Bu rehberde FPS düşüren nedenleri tek tek ele alıyor ve her biri için ölçülebilir bir çözüm sunuyoruz.</p>
@@ -81,7 +81,7 @@
 <li><strong>Gölgeleri kısın:</strong> en pahalı ayar genelde gölgedir; “düşük” ile “orta” arasındaki fark çoğu zaman görünmez.</li>
 <li><strong>Yerçekimi ve hareket bulanıklığını kapatın:</strong> göz yorulmasını da azaltır.</li>
 <li><strong>Kare hızını sınırlayın:</strong> VSync yerine ekran kartının kendi limitini kullanın; 144 Hz ekranda 144 kilidi kararlılık sağlar.</li>
-<li><strong>Görüntü ölçeklemeyi (DLSS/FSR/XeSS) açın:</strong> düşük çözünürlükte render alıp yükseltir; kalite kaybı genelde fark edilmez.</li>
+<li><strong>Görüntü ölçeklemeyi (<a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" target="_blank" rel="noopener noreferrer">DLSS</a>/FSR/XeSS) açın:</strong> düşük çözünürlükte render alıp yükseltir; kalite kaybı genelde fark edilmez.</li>
 <li><strong>Ekran kartı sürücüsünü güncelleyin:</strong> yeni çıkan oyunlar için optimize sürücü profilleri gelir.</li>
 <li><strong>Sürücü profilini sıfırlayın:</strong> eski elle yapılandırılmış ayarlar oyunu bozabilir.</li>
 <li><strong>Güç planını “Yüksek Performans” yapın:</strong> özellikle dizüstü bilgisayarlarda belirleyicidir.</li>
@@ -123,7 +123,7 @@
 <p>Bir diğer nokta: <strong>kararlılık, yüksek sayıdan daha değerlidir.</strong> 144 ile 90 arasında salınan bir görüntü, sabit 100 FPS'ten daha kötü hissettirir. Kare hızı sınırını, ekranınızın tazeleme hızına yaklaştırmak çoğu zaman en iyi dengeyi verir.</p>
 <p>Göz konforunu da atlamayın: hareket bulanıklığı ve film greni gibi efektler bazı oyuncuları rahatsız eder. Bu ayarları kapatmak hem netliği artırır hem de kare başına iş yükünü azaltır — yani kazan-kazan bir durumdur.</p>
 
-<h2>Sıkça Sorulan Sorular</h2>
+<h2>Okuyuculardan Gelen Sorular</h2>
 <ul>
 <li><strong>FPS artırıcı programlar işe yarıyor mu?</strong> Çoğu, zaten var olan ayarları değiştirir veya sistem kaynaklarını meşgul eder. Ücretsiz ve ölçülebilir olanlar dışında güvenmeyin.</li>
 <li><strong>DLSS bulanıklık yapar mı?</strong> Dengeli modda çoğu kullanıcı fark etmez; performans modunda düşebilir. Oyununuza göre deneyin.</li>
@@ -132,9 +132,41 @@
 <li><strong>Dizüstü bilgisayarda ne yapmalıyım?</strong> Prize takın, güç planını değiştirin, fanı temizleyin; masaüstü ipuçlarının çoğu burada daha kritiktir.</li>
 </ul>
 
-<h2>Sonuç</h2>
+<h2>Önemli Noktalar</h2>
 <p>FPS artırmak bir donanım yarışı değil, <strong>sıralı bir teşhis</strong>tir: önce ayarlar, sonra yazılım, ardından ısı ve ancak ondan sonra parça. Çözünürlük ve gölge gibi iki madde çoğu oyunda işin büyük kısmını çözer. Kalanı ise doğru ölçüm ve küçük iyileştirmeler halleder.</p>
 <p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+
+<h2>Ölçüm yapmadan değişiklik yapmayın</h2>
+<p>En pahalı hata, ölçmeden ayar değiştirmektir. Değişikliklerin etkisini karşılaştırmak için sabit bir ölçüm protokolü gerekir; aksi halde sonuçlar rastgele dalgalanır ve doğru karar verilemez.</p>
+<table>
+  <thead><tr><th>Ölçüm adımı</th><th>Nasıl yapılır</th><th>Neden önemli</th></tr></thead>
+  <tbody>
+    <tr><td>Sabit sahne seç</td><td>Aynı haritada aynı rotayı üç kez çalıştırın</td><td>Farklı sahneler farklı yük üretir</td></tr>
+    <tr><td>Ortalama ve düşük yüzdeci</td><td>Ortalama FPS kadar 1% low değerini de not edin</td><td>Donmalar ortalamanın içinde saklanır</td></tr>
+    <tr><td>Tek değişken</td><td>Her turda yalnızca bir ayarı değiştirin</td><td>Aksi halde etki karışır</td></tr>
+    <tr><td>Isıyı kaydedin</td><td>Çalışma sırasında sıcaklık ve frekansı izleyin</td><td>Isınma, ayar etkisini gölgeleyebilir</td></tr>
+  </tbody>
+</table>
+<p>Ölçüm protokolü on dakika sürer ama tüm oturum boyunca size zaman kazandırır: hangi ayarın gerçekten işe yaradığını bilirsiniz, gereksiz ayar değişimlerinden kaçınırsınız.</p>
+
+<h2>DLSS, FSR ve XeSS ne zaman işe yarar?</h2>
+<p><a href="https://www.amd.com/en/products/graphics/technologies/fidelityfx.html" target="_blank" rel="noopener noreferrer">Görüntü ölçekleme teknolojileri</a>, düşük çözünürlükte render alıp kareyi büyütür. Faydası, GPU'nun piksel yükünü doğrudan azaltmasından gelir; ancak sonuç üç faktöre bağlıdır.</p>
+<ul>
+  <li><strong>Donanım desteği:</strong> DLSS belirli kartlarda çalışır; FSR daha geniş bir yelpazeyi kapsar. Kartınız desteklemiyorsa seçenek görünmez.</li>
+  <li><strong>Ölçekleme kalitesi:</strong> Yüksek kare hızında kalite düşüşü az fark edilir; düşük kare hızında ve ince detaylı sahnelerde görünür hâle gelebilir.</li>
+  <li><strong>Çözünürlük oranı:</strong> Agresif ölçekleme (örneğin 1080p'den 4K'ya) daha fazla FPS verir ama görüntüyü belirgin şekilde yumuşatır.</li>
+</ul>
+<p>Pratik öneri: ölçeklemeyi "Denge" modunda açıp önce oyunu oynayın. Görüntü sizi rahatsız etmiyorsa FPS kazancı bedavadır; rahatsız oluyorsanız "Kalite" moduna geçin. "Performans" modu genellikle metin ve arayüz detaylarını okunmaz hâle getirir.</p>
+
+<h2>Donanım yükseltmeden önce sırayı tamamlayın</h2>
+<ol>
+  <li>Yukarıdaki yazılım adımlarının tamamını uygulayın ve ölçün.</li>
+  <li>Sıcaklık ve frekans değerlerini kontrol edin; ısınma kaynaklı kısılma varsa önce bakım yapın.</li>
+  <li>Bellek ve depolama durumunu gözden geçirin; 8 GB bellek, bazı oyunlarda karttan önce darboğaz olur.</li>
+  <li>Yükseltme gerekiyorsa, darboğazın nerede olduğunu belirleyin: ekran kartı mı, işlemci mi, bellek mi?</li>
+  <li>Yükseltmeden önce bütçenizi yalnızca bu oyun için değil, iki-üç yıl sonrasıyla birlikte planlayın.</li>
+</ol>
+<p>Çoğu oyuncu, ölçüm yapmadan doğrudan donanıma yönelir. Oysa yukarıdaki sıralama tamamlandığında, çoğu durumda satın alma gerekmez; kalan durumlarda ise hangi bileşene yatırım yapılacağı netleşir.</p>
 </div></div></article>
 
 <footer class="site-footer">
