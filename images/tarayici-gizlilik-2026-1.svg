@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#22d3ee" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#22d3ee"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#67e8f9" letter-spacing="3">TARAYICI GİZLİLİĞİ</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">İzleyicileri Kapatın</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">Chrome · Firefox · Edge</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Çerez · Parmak izi · Zombi çerez</text>
+
+  <!-- tarayici penceresi -->
+  <rect x="620" y="120" width="510" height="360" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+  <rect x="620" y="120" width="510" height="46" rx="18" fill="#132033"/>
+  <rect x="620" y="148" width="510" height="18" fill="#132033"/>
+  <circle cx="652" cy="143" r="8" fill="#f87171"/>
+  <circle cx="680" cy="143" r="8" fill="#f59e0b"/>
+  <circle cx="708" cy="143" r="8" fill="#4ade80"/>
+  <rect x="736" y="132" width="372" height="22" rx="11" fill="#0b1220" stroke="#1e3a5f"/>
+  <text x="752" y="148" font-family="Inter, Arial, sans-serif" font-size="14" fill="#64748b">https://site.com.tr</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="650" y="192" width="450" height="72" rx="12" fill="#132033" stroke="#f87171" stroke-width="2"/>
+      <text x="674" y="224" font-size="21" font-weight="800" fill="#fca5a5">Üçüncü taraf çerez</text>
+      <text x="674" y="252" font-size="17" fill="#94a3b8">siteler arası takip → engellendi</text>
+      <path d="M1058 214 l18 18 M1076 214 l-18 18" stroke="#f87171" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g>
+      <rect x="650" y="278" width="450" height="72" rx="12" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+      <text x="674" y="310" font-size="21" font-weight="800" fill="#fbbf24">Parmak izi</text>
+      <text x="674" y="338" font-size="17" fill="#94a3b8">donanım kimliği → standart yanıta düşürüldü</text>
+      <path d="M1058 300 l18 18 M1076 300 l-18 18" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g>
+      <rect x="650" y="364" width="450" height="72" rx="12" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="674" y="396" font-size="21" font-weight="800" fill="#86efac">Gizlilik modu</text>
+      <text x="674" y="424" font-size="17" fill="#94a3b8">izleyici engelleyici aktif</text>
+      <path d="M1052 400 l12 12 l22 -24" stroke="#4ade80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <g fill="#22d3ee" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

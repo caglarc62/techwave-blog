@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">30 Dakikalık Kontrol Listesi</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Kurulum bir kez yapılır, koruma sürekli çalışır</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="196" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="116" cy="249" r="20" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="116" y="257" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">1</text>
+      <text x="152" y="240" font-size="22" font-weight="700" fill="#e2e8f0">Çerez izinlerini temizleyin</text>
+      <text x="152" y="272" font-size="17" fill="#94a3b8">Site verilerini silin, yalnızca gerekenlere izin</text>
+    </g>
+    <g>
+      <rect x="70" y="318" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="116" cy="371" r="20" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="116" y="379" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">2</text>
+      <text x="152" y="362" font-size="22" font-weight="700" fill="#e2e8f0">İzleme önleyiciyi sıkılaştırın</text>
+      <text x="152" y="394" font-size="17" fill="#94a3b8">Firefox: Sıkı · Chrome: 3. taraf engeli · Edge: Sıkı</text>
+    </g>
+    <g>
+      <rect x="70" y="440" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="116" cy="493" r="20" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="116" y="501" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">3</text>
+      <text x="152" y="484" font-size="22" font-weight="700" fill="#e2e8f0">Cihaz izinlerini gözden geçirin</text>
+      <text x="152" y="516" font-size="17" fill="#94a3b8">Kamera, mikrofon, konum → "sor" konumu</text>
+    </g>
+
+    <g>
+      <rect x="610" y="196" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="656" cy="249" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="257" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">4</text>
+      <text x="692" y="240" font-size="22" font-weight="700" fill="#e2e8f0">Senkronizasyonu sorgulayın</text>
+      <text x="692" y="272" font-size="17" fill="#94a3b8">Geçmiş bulut hesabına bağlı mı? Gerekmıyorsa kapat</text>
+    </g>
+    <g>
+      <rect x="610" y="318" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="656" cy="371" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="379" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">5</text>
+      <text x="692" y="362" font-size="22" font-weight="700" fill="#e2e8f0">Parmak izi testi yapın</text>
+      <text x="692" y="394" font-size="17" fill="#94a3b8">Cover Your Tracks: ölç → ayarla → yeniden ölç</text>
+    </g>
+    <g>
+      <rect x="610" y="440" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="656" cy="493" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="501" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">6</text>
+      <text x="692" y="484" font-size="22" font-weight="700" fill="#e2e8f0">Uzantıları azaltın</text>
+      <text x="692" y="516" font-size="17" fill="#94a3b8">Yalnızca izleyici engelleyici + şifre yöneticisi</text>
+    </g>
+  </g>
+
+  <g fill="#22d3ee" opacity="0.8"><circle cx="1160" cy="130" r="3"/><circle cx="360" cy="176" r="3"/></g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Üç Tarayıcı, Aynı Hedef</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Ayar yolları farklı, sonuç aynı: sıkı izleme önleyici</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="200" width="340" height="330" rx="18" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <circle cx="116" cy="248" r="14" fill="#22d3ee"/>
+      <text x="146" y="256" font-size="26" font-weight="800" fill="#67e8f9">Chrome</text>
+      <text x="98" y="308" font-size="19" fill="#e2e8f0">1. Çerezler → 3. taraf engeli</text>
+      <text x="98" y="344" font-size="19" fill="#e2e8f0">2. Reklam gizliliği kapat</text>
+      <text x="98" y="380" font-size="19" fill="#e2e8f0">3. Geliştirilmiş koruma</text>
+      <text x="98" y="416" font-size="19" fill="#e2e8f0">4. Site izinlerini toparla</text>
+      <text x="98" y="464" font-size="17" font-weight="700" fill="#94a3b8">Menü: Ayarlar → Gizlilik</text>
+      <text x="98" y="500" font-size="17" font-weight="700" fill="#67e8f9">Sıkıya çekilen: 3 ayar</text>
+    </g>
+    <g>
+      <rect x="430" y="200" width="340" height="330" rx="18" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <circle cx="476" cy="248" r="14" fill="#a855f7"/>
+      <text x="506" y="256" font-size="26" font-weight="800" fill="#c4b5fd">Firefox</text>
+      <text x="458" y="308" font-size="19" fill="#e2e8f0">1. İzleyici koruması: Sıkı</text>
+      <text x="458" y="344" font-size="19" fill="#e2e8f0">2. Toplam çerez koruması</text>
+      <text x="458" y="380" font-size="19" fill="#e2e8f0">3. DNS over HTTPS</text>
+      <text x="458" y="416" font-size="19" fill="#e2e8f0">4. Parmak izi koruması</text>
+      <text x="458" y="464" font-size="17" font-weight="700" fill="#94a3b8">Menü: Gizlilik ve güvenlik</text>
+      <text x="458" y="500" font-size="17" font-weight="700" fill="#c4b5fd">Varsayılan: en sıkı</text>
+    </g>
+    <g>
+      <rect x="790" y="200" width="340" height="330" rx="18" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <circle cx="836" cy="248" r="14" fill="#4ade80"/>
+      <text x="866" y="256" font-size="26" font-weight="800" fill="#86efac">Edge</text>
+      <text x="818" y="308" font-size="19" fill="#e2e8f0">1. İzleme önleyici: Sıkı</text>
+      <text x="818" y="344" font-size="19" fill="#e2e8f0">2. Çerez izinlerini yönet</text>
+      <text x="818" y="380" font-size="19" fill="#e2e8f0">3. InPrivate ile ayır</text>
+      <text x="818" y="416" font-size="19" fill="#e2e8f0">4. Hesap senkronunu kapat</text>
+      <text x="818" y="464" font-size="17" font-weight="700" fill="#94a3b8">Menü: Gizlilik ve hizmetler</text>
+      <text x="818" y="500" font-size="17" font-weight="700" fill="#86efac">Dikkat: varsayılan orta</text>
+    </g>
+  </g>
+
+  <g fill="#4ade80" opacity="0.8"><circle cx="1155" cy="140" r="3"/><circle cx="400" cy="176" r="3"/></g>
+</svg>
