@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#a855f7" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">URL Sağdan Okunur</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Gerçek alan adı, adresin sağında saklıdır</text>
+
+  <!-- sahte url -->
+  <rect x="70" y="200" width="1060" height="86" rx="16" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+  <text x="100" y="253" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#e2e8f0"><tspan fill="#64748b">https://</tspan><tspan fill="#f87171" font-weight="800">banka.com.tr</tspan><tspan fill="#e2e8f0">.guvenlik-portal.xyz</tspan><tspan fill="#64748b">/onay</tspan></text>
+  <text x="100" y="330" font-family="Inter, Arial, sans-serif" font-size="20" fill="#fca5a5">Gerçek alan adı: guvenlik-portal.xyz — marka adı sadece süstür (alt alan adı)</text>
+
+  <!-- dogru url -->
+  <rect x="70" y="356" width="1060" height="86" rx="16" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+  <text x="100" y="409" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#e2e8f0"><tspan fill="#64748b">https://</tspan><tspan fill="#4ade80" font-weight="800">kurum.com.tr</tspan><tspan fill="#64748b">/guvenlik-onay</tspan></text>
+  <text x="100" y="486" font-family="Inter, Arial, sans-serif" font-size="20" fill="#86efac">Gerçek alan adı: kurum.com.tr — soldaki kurum, adresin sahibidir</text>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="19" font-weight="600">
+    <rect x="70" y="516" width="250" height="46" rx="10" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="94" y="546" fill="#67e8f9">1. Sağdan oku</text>
+    <rect x="344" y="516" width="300" height="46" rx="10" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="368" y="546" fill="#67e8f9">2. Tıklamadan önizle</text>
+    <rect x="668" y="516" width="300" height="46" rx="10" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="692" y="546" fill="#67e8f9">3. https ≠ güvenli</text>
+    <rect x="992" y="516" width="138" height="46" rx="10" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="1016" y="546" fill="#67e8f9">4. Elle gir</text>
+  </g>
+
+  <g fill="#a855f7" opacity="0.8"><circle cx="1150" cy="140" r="4"/><circle cx="420" cy="176" r="3"/></g>
+</svg>
