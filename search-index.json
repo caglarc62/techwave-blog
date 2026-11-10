@@ -1,5 +1,15 @@
 [
  {
+  "t": "Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol",
+  "s": "git-github-baslangic-rehberi-versiyon-kontrol",
+  "c": "Yazılım",
+  "e": "Git kurulumundan push'a: çalışma döngüsü, 10 temel komut, branch ve merge conflict; ilk haftada yapılan 5 hata.",
+  "d": "10 Kasım 2026",
+  "i": "https://techwaveblog.site/images/git-github-2026-1.svg",
+  "h": "Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol | Yazılım Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol 📅 10 Kasım 2026 ⏱ 12 dk okuma 👤 Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. Projenizi \"son_son_kesin_versiyon2.html\" diye adlandırmak, versiyon kontrol değildir. Değişikliği geri alamaz, kimin neyi ne zaman değiştirdiğini göremez ve bozduğunuz kodun iki gün önceki hâlini kurtaramazsınız. Git, bu sorunun standart çözümüdür;",
+  "x": "git, github, versiyon kontrol, commit, branch, push, pull, yazılım"
+ },
+ {
   "t": "Phishing Rehberi: Sahte E-postayı 60 Saniyede Tanıma",
   "s": "phishing-rehberi-2026-sahte-eposta-tanima",
   "c": "Siber Güvenlik",

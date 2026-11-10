@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#f59e0b" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineA" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#f59e0b"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#fbbf24" letter-spacing="3">VERSİYON KONTROL</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Git &amp; GitHub</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">Sıfırdan Başlangıç Rehberi</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Commit · Branch · Push · Merge</text>
+
+  <!-- yerel / uzak kutulari -->
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="620" y="130" width="230" height="150" rx="16" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+    <text x="646" y="172" font-size="20" font-weight="800" fill="#fbbf24">GIT (yerel)</text>
+    <text x="646" y="210" font-size="17" fill="#e2e8f0">· çalışma dizini</text>
+    <text x="646" y="238" font-size="17" fill="#e2e8f0">· alan (staging)</text>
+    <text x="646" y="266" font-size="17" fill="#e2e8f0">· yerel geçmiş</text>
+
+    <rect x="900" y="130" width="230" height="150" rx="16" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+    <text x="926" y="172" font-size="20" font-weight="800" fill="#67e8f9">GITHUB (bulut)</text>
+    <text x="926" y="210" font-size="17" fill="#e2e8f0">· yedek + vitrin</text>
+    <text x="926" y="238" font-size="17" fill="#e2e8f0">· iş birliği</text>
+    <text x="926" y="266" font-size="17" fill="#e2e8f0">· pull request</text>
+
+    <path d="M856 175 H896" stroke="url(#lineA)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M896 175 l-12 -8 v16 z" fill="#22d3ee"/>
+    <path d="M896 238 H856" stroke="url(#lineA)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M856 238 l12 -8 v16 z" fill="#f59e0b"/>
+    <text x="862" y="160" font-size="16" font-weight="700" fill="#67e8f9" text-anchor="middle">push</text>
+    <text x="862" y="270" font-size="16" font-weight="700" fill="#fbbf24" text-anchor="middle">pull</text>
+
+    <rect x="620" y="320" width="510" height="150" rx="16" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="646" y="362" font-size="20" font-weight="700" fill="#94a3b8" letter-spacing="2">GÜNLÜK RİTİM</text>
+    <text x="646" y="404" font-size="21" font-weight="700" fill="#e2e8f9">status → diff → add → commit</text>
+    <text x="646" y="440" font-size="21" font-weight="700" fill="#e2e8f9">→ pull → push</text>
+  </g>
+
+  <g fill="#f59e0b" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

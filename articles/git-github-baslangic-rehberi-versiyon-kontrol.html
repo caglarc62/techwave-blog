@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light"><head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="Git ve GitHub başlangıç rehberi: kurulum, commit ve push akışı,10 temel komut, branch ile çalışmak, merge conflict çözme ve ilk hafta hataları.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol — TechWave</title>
+<meta property="og:title" content="Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol">
+<meta property="og:description" content="Git kurulumundan push'a: çalışma döngüsü, 10 temel komut, branch ve merge conflict; ilk haftada yapılan 5 hatanın çözümü.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/git-github-2026-1.svg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol"><meta name="twitter:description" content="Git kurulumundan push'a: çalışma döngüsü, 10 temel komut, branch ve merge conflict; ilk haftada yapılan 5 hatanın çözümü."><meta name="twitter:image" content="https://techwaveblog.site/images/git-github-2026-1.svg">
+<link rel="canonical" href="https://techwaveblog.site/articles/git-github-baslangic-rehberi-versiyon-kontrol.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261107-seo">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol","author":{"@type":"Person","name":"Çağlar ÇELİK"},"datePublished":"2026-11-10","dateModified":"2026-11-10","description":"Git ve GitHub kurulumu, commit/push akışı, temel komutlar, branch yönetimi ve merge conflict çözümü rehberi.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/git-github-baslangic-rehberi-versiyon-kontrol.html","image":"https://techwaveblog.site/images/git-github-2026-1.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Çağlar ÇELİK","jobTitle":"Teknoloji ve Yapay Zeka Yazarı","url":"https://techwaveblog.site","sameAs":[],"worksFor":{"@type":"Organization","name":"TechWave"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<article class="article-page"><div class="container">
+<div class="article-header"><span class="card-tag" data-category="Yazılım">Yazılım</span><h1 class="article-title">Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol</h1><div class="article-meta"><span>📅 10 Kasım 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/git-github-2026-1.svg?v=20261110-hero" alt="Git ve GitHub çalışma modelini gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Projenizi "son_son_kesin_versiyon2.html" diye adlandırmak, versiyon kontrol değildir.</strong> Değişikliği geri alamaz, kimin neyi ne zaman değiştirdiğini göremez ve bozduğunuz kodun iki gün önceki hâlini kurtaramazsınız. Git, bu sorunun standart çözümüdür; GitHub ise onu ekibinize ve dünyaya açan vitrindir.</p>
+<p>Bu rehberde sıfırdan başlıyoruz: kurulumdan ilk commit'e, en sık kullanılan 10 komuttan branch ve çakışma çözümüne kadar ilk haftada işinize yarayacak her şey burada.</p>
+
+<h2>Git ile GitHub arasındaki fark</h2>
+<p>İki isim çoğu zaman eşanlımlı kullanılıyor ama farklı şeyler:</p>
+<table>
+<tr><th></th><th><strong>Git</strong></th><th><strong>GitHub</strong></th></tr>
+<tr><td><strong>Ne olduğu</strong></td><td>Versiyon kontrol programı — bilgisayarınızda çalışır</td><td>Git depolarının barındırıldığı bulut platformu</td></tr>
+<tr><td><strong>Çalışma yeri</strong></td><td>Yerel; internet gerekmez</td><td>Çevrimiçi; hesap ve internet gerektirir</td></tr>
+<tr><td><strong>Görevi</strong></td><td>Değişiklik geçmişi, dal (branch), birleştirme</td><td>Yedekleme, iş birliği, kod inceleme, açık kaynak</td></tr>
+</table>
+<p>Kısaca: <strong>Git olmadan GitHub işe yaramaz, Git tek başına da yeterlidir</strong> — ama yedeklemek ve paylaşmak için GitHub (ya da alternatifi GitLab, Bitbucket) gerekir. Git'in kendisi ücretsizdir ve <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">resmî dokümanı</a> her yerde erişilebilirdir.</p>
+
+<h2>Kurulum ve ilk yapılandırma</h2>
+<p>Kurulum bir kez yapılır. Resmî siteden (git-scm.com) işletim sisteminize uygun paketi indirin; Windows'ta Git Bash programını da kurar. Ardından terminalde kimliğinizi tanımlayın:</p>
+<ul>
+<li><code>git config --global user.name "Adınız"</code> — commit'lere yazan isim.</li>
+<li><code>git config --global user.email "ornek@eposta.com"</code> — GitHub hesabınızla <strong>aynı</strong> e-posta olmalı; yoksa commit'ler hesabınıza bağlanmaz.</li>
+<li><code>git config --global init.defaultBranch main</code> — yeni depoların varsayılan dalını <code>main</code> yapar; artık <code>master</code> yerine sektör standardı kullanılır.</li>
+</ul>
+<p>Yapılandırma <code>git config --list</code> ile kontrol edilir. Bu üç satır, ilk commit'inizden önce atılması gereken adımdır; sonra değiştirmek geçmiş commit'leri düzeltmez.</p>
+
+<img src="../images/git-github-2026-2.svg?v=20261110-a" alt="Git çalışma döngüsünü gösteren TechWave çizimi" width="800">
+
+<h2>Temel çalışma döngüsü</h2>
+<p>Git'in zorlaştığı yer burasıdır; oysa model üç kutudan ibarettir:</p>
+<ol>
+<li><strong>Çalışma dizini (working directory):</strong> dosyalarınızın düzenlediğiniz gerçek hâli.</li>
+<li><strong>Alan (staging area):</strong> bir sonraki commit'e <em>ne gireceğini</em> seçtiğiniz bekleme alanı. <code>git add</code> ile oraya taşırırsınız.</li>
+<li><strong>Depo (repository):</strong> <code>git commit</code> ile anlık görüntü buraya yazılır; artık geri dönülebilir bir kayıttır.</li>
+</ol>
+<p>Ve dördüncü adım: <code>git push</code> ile yerel kaydı GitHub'daki uzak depoya göndermek. Bu akışı bir kez kavradıktan sonra gerisi komut ezberi değil, aynı döngünün tekrarıdır. Resmî <a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener noreferrer">Pro Git kitabının</a> ilk bölümü bu modeli ayrıntılı anlatır.</p>
+
+<h2>İlk deponuzu kurmak: beş komut</h2>
+<p>Boş bir klasörde ya da mevcut projenizde:</p>
+<ul>
+<li><code>git init</code> — klasörü Git deposuna dönüştürür; gizli <code>.git</code> klasörü oluşur.</li>
+<li><code>git status</code> — her belirsizlik anında çekilecek ilk komut; neyin değiştiğini, neyin alan dışında olduğunu gösterir.</li>
+<li><code>git add .</code> — değişikliklerin tamamını alanına taşır. İleri aşamada tek dosya eklemek için <code>git add dosya.py</code> daha güvenlidir.</li>
+<li><code>git commit -m "anlamlı mesaj"</code> — anlık görüntüyü kaydeder.</li>
+<li><code>git remote add origin https://github.com/kullanici/proje.git</code> + <code>git push -u origin main</code> — uzak depoyu bağlar ve ilk gönderimi yapar.</li>
+</ul>
+<p>Commit mesajı, gelecekteki sizin okuyacağı bir nottur: <strong>ne yaptığını</strong> (kodu değil) yazın. "düzenleme", "son", "fix" gibi mesajlar bir yıl sonra hiçbir şey ifade etmez.</p>
+
+<h2>En sık kullanılan 10 komut</h2>
+<table>
+<tr><th>Komut</th><th>Ne yapar</th></tr>
+<tr><td><code>git status</code></td><td>Değişen, eklenen ve bekleyen dosyaları listeler</td></tr>
+<tr><td><code>git add &lt;dosya&gt;</code></td><td>Değişikliği alanına taşır</td></tr>
+<tr><td><code>git commit -m "..."</code></td><td>Anlık görüntü oluşturur</td></tr>
+<tr><td><code>git log --oneline</code></td><td>Geçmişi tek satır özetler; nerede kaybolduğunuzu bulursunuz</td></tr>
+<tr><td><code>git diff</code></td><td>Commit öncesi satır düzeyinde farkı gösterir</td></tr>
+<tr><td><code>git pull origin main</code></td><td>Uzak depodaki güncellemeleri indirir — <strong>push'tan önce hep</strong></td></tr>
+<tr><td><code>git push origin main</code></td><td>Yerel commit'leri GitHub'a gönderir</td></tr>
+<tr><td><code>git branch &lt;ad&gt;</code></td><td>Yeni dal oluşturur</td></tr>
+<tr><td><code>git switch &lt;ad&gt;</code></td><td>Dal değiştirir (eski <code>checkout</code>un modern hâli)</td></tr>
+<tr><td><code>git restore &lt;dosya&gt;</code></td><td>Commit edilmemiş değişikliği geri alır — <strong>geri dönüşü yok, dikkatli olun</strong></td></tr>
+</table>
+<p>Günlük ritim genelde şudur: <code>status</code> → <code>diff</code> → <code>add</code> → <code>commit</code> → <code>pull</code> → <code>push</code>. Bu altı adımı ezberlemek, Git'i "korkutucu" olmaktan çıkarır.</p>
+
+<img src="../images/git-github-2026-3.svg?v=20261110-b" alt="Branch ve birleştirme modelini gösteren TechWave çizimi" width="800">
+
+<h2>Branch ile çalışmak</h2>
+<p>Dal (branch), deponun kopyası değil, <strong>imlecinizin bulunduğu ayrı bir hattır</strong>. Böylece ana daldaki projeyi bozmadan deneme yapabilirsiniz:</p>
+<ul>
+<li><code>git switch -c ozellik-ekleme</code> — yeni dal oluşturup oraya geçin.</li>
+<li>Çalışın, commit'leyin; gerektiğinde <code>git switch main</code> ile ana dala dönüp işinize devam edin.</li>
+<li><code>git merge ozellik-ekleme</code> — çalışmayı ana dala birleştirin.</li>
+</ul>
+<p>Pratik kural: <strong>tek bir iş = tek bir dal = tek bir birleştirme.</strong> "Hafta boyunca aynı dala her şeyi yazmak" dalın amacını yok eder. GitHub tarafında dal, <em>Pull Request</em> ile incelendikten sonra birleşir — tek kişilik projelerde bile bu alışkanlık, yanlış commit'leri ana dala ulaşmadan yakalar.</p>
+
+<h2>Merge conflict: çakışma nasıl çözülür?</h2>
+<p>İki dal aynı satırı değiştirdiğinde Git karar veremez ve dosyaya işaretler koyar:</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; main
+eski sürüm
+=======
+yeni sürüm
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; ozellik-ekleme</code></pre>
+<p>Çözüm üç adımdır:</p>
+<ol>
+<li><strong>Sakin olun:</strong> hiçbir dosya çökmedi; yalnızca iki seçenek arasında seçim bekleniyor.</li>
+<li><strong>İşaretli bölgeyi düzenleyin:</strong> korunacak metni yazıp <code>&lt;&lt;&lt;</code>, <code>=======</code> ve <code>&gt;&gt;&gt;</code> satırlarının tamamını silin.</li>
+<li><code>git add</code> + <code>git commit</code> — çakışma çözülmüş sayılır ve geçmişe yazılır.</li>
+</ol>
+<p>Çakışma yaşamamak için <strong>push'tan önce hep <code>git pull</code> yapın</strong>; güncellemeleri erken indirmek, aynı satırı iki kişinin değiştirmesini ciddi ölçüde azaltır. Çözüm gerçekten zorsa <code>git merge --abort</code> ile birleştirmeyi iptal edip dalda çalışmaya devam edebilirsiniz.</p>
+
+<h2>İlk haftada yapılan 5 hata</h2>
+<ul>
+<li><strong>Push öncesi pull unutulması:</strong> uzak depo sizden ileriyse ret yersiniz. Daima önce <code>pull</code>.</li>
+<li><strong>Commit edilmemiş işi silmek:</strong> <code>git restore</code> ve <code>git clean</code> geri alınamaz. Denemeden önce <code>git status</code> çekin.</li>
+<li><strong>Hassas bilgiyi commit'lemek:</strong> API anahtarı, parola veya <code>.env</code> dosyası bir kez geçmişe girerse silmek zordur. <a href="python-ile-web-sitesi-yapma-rehberi-2026.html">Web geliştirme rehberimizde</a> anlattığımız gibi, gizli anahtarlar kodun parçası değildir; <code>.gitignore</code> listesine ilk günden ekleyin.</li>
+<li><strong>Çok büyük dosyalar:</strong> video, veri seti ve <code>node_modules</code> gibi klasörler depoyu şişirir; GitHub dosya boyutu sınırını aşan push'ları reddeder.</li>
+<li><strong>Anlamsız commit mesajları:</strong> "dosyaları güncelle" yazmak, kod incelemesini ve geri dönüşü imkânsızlaştırır. Mesaj düzeni için <a href="https://conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener noreferrer">Conventional Commits</a> iyi bir başlangıçtır.</li>
+</ul>
+
+<h2>Depo düzeni: README, .gitignore ve lisans</h2>
+<p>GitHub'da ilk izlenim, dosya listesinden önce README'ye bakılarak oluşur. İyi bir README üç soruyu ilk ekranda yanıtlar: bu proje ne yapar, nasıl kurulur, nasıl çalıştırılır. Uzun manifesto değil; tek paragraflık açıklama, üç-beş komut ve varsa bir ekran görüntüsü yeterlidir.</p>
+<p><code>.gitignore</code> ise hata önleme aracıdır: <code>node_modules</code>, <code>.env</code>, derleme çıktıları ve IDE ayar dosyaları ilk commit'ten itibaren listede olmalı. Çoğu dil için hazır şablonlar GitHub'ın depo oluştururken sunduğu seçenekler arasında bulunur; boş bırakmak yerine dilinizi seçin. Açık kaynak yayınlıyorsanız lisans dosyasını da ekleyin — lisans yoksa teknik olarak "herkese açık" ama hukuki olarak "kullanılamaz" demektir. Bu üç dosya, deponuzun en çok okunan parçasıdır ve beş dakikalık bir işten ibarettir.</p>
+
+<h2>İlk 30 dakikalık plan</h2>
+<ol>
+<li><strong>Kurulum + kimlik (5 dk):</strong> Git'i indirin, <code>user.name</code> ve <code>user.email</code> tanımlayın.</li>
+<li><strong>GitHub'da boş depo (5 dk):</strong> Yeni repo oluşturun; README ve <code>.gitignore</code> seçeneğini açın.</li>
+<li><strong>Yerelde ilk commit (10 dk):</strong> Bir klasöre <code>git init</code> ile başlayın, bir dosya ekleyin, <code>add</code> → <code>commit</code>.</li>
+<li><strong>İlk push (5 dk):</strong> <code>remote add</code> + <code>push -u origin main</code>. Dosyanın GitHub'da göründüğünü doğrulayın.</li>
+<li><strong>Koparıp geri bağlama (5 dk):</strong> Bir dosyayı silin, <code>git restore</code> ile geri getirin. Geri dönüşün çalıştığını görünce korku kaybolur.</li>
+</ol>
+
+<img src="../images/git-github-2026-4.svg?v=20261110-c" alt="Git başlangıç kontrol listesini gösteren TechWave çizimi" width="800">
+
+<h2>Merak edilenler</h2>
+<ul>
+<li><strong>İnternet yoksa Git çalışır mı?</strong> — Evet. Git yerel çalışır; internet yalnızca push/pull anında gerekir.</li>
+<li><strong>Her değişikliği commit'lemeli miyim?</strong> — Anlamlı her adımı evet. Kural: commit, tek başına anlaşılabilir ve geri alınabilir olmalı.</li>
+<li><strong>Yanlış commit'i nasıl düzeltirim?</strong> — Push edilmediyse <code>git commit --amend</code>; paylaşıldıysa <code>git revert</code> ile geri alma işlemi yapılır — geçmişi <strong>silmek yerine</strong> üzerine yeni kayıt eklenir.</li>
+<li><strong>GitHub'a kodum çalınır mı?</strong> — Halka açık depolar herkese açıktır. Hassas projelerde özel (private) depo seçin ve erişim anahtarlarını <a href="2026nin-en-iyi-10-parola-yoneticisi-hesap-guvenligi.html">parola yöneticinizde</a> saklayın.</li>
+<li><strong>GUI mı, terminal mi?</strong> — Başlangıçta terminal önerilir; ne yaptığınızı görürsünüz. Sonrasında VS Code'un yerleşik Git paneli veya GitHub Desktop günlük işleri hızlandırır.</li>
+</ul>
+
+<h2>Sonuç: geçmiş, projenin sigortasıdır</h2>
+<p>Git'in gücü tek komutunda değil, <strong>her değişikliğin geri dönülebilir bir kayıt olmasındadır</strong>. İlk gün beş komut (init, status, add, commit, push), ilk hafta branch ve pull/push disiplini — hepsi bu. Kurulum yarım saat sürer; kurtardığı saatler ise saymakla bitmez.</p>
+<p>Bugün tek bir proje klasörü seçin, <code>git init</code> deyin ve ilk commit'inizi atın. Kod yazmaya <a href="yapay-zeka-ile-kod-yazma-cursor-github-copilot-windsurf-karsilastirma.html">yapay zekâ araçlarıyla</a> başlıyorsanız bile, o üretilen kodun geçmişini Git tutmadan ilerlemek mümkün değil — versiyon kontrol, AI çağında daha da zorunlu hâle geldi.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</div></div></article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=18efba2"></script>
+</body></html>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#a855f7" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Branch: Ana Hat ve Özekil</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Ana dali bozmadan deneme yapın, sonra birleştirin</text>
+
+  <!-- commit dolleri -->
+  <g stroke-linecap="round">
+    <path d="M120 300 H1080" stroke="#1e3a5f" stroke-width="6"/>
+    <path d="M300 300 C 420 300, 440 400, 540 400 H760 C 860 400, 880 300, 980 300" stroke="#a855f7" stroke-width="5" fill="none"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g fill="#22d3ee">
+      <circle cx="160" cy="300" r="14"/><circle cx="300" cy="300" r="14"/><circle cx="440" cy="300" r="14"/>
+      <circle cx="720" cy="300" r="14"/><circle cx="860" cy="300" r="14"/><circle cx="1020" cy="300" r="14"/>
+    </g>
+    <g fill="#a855f7">
+      <circle cx="540" cy="400" r="14"/><circle cx="650" cy="400" r="14"/><circle cx="760" cy="400" r="14"/>
+    </g>
+    <circle cx="980" cy="300" r="20" fill="none" stroke="#4ade80" stroke-width="4"/>
+
+    <text x="130" y="252" font-size="22" font-weight="800" fill="#67e8f9">main</text>
+    <text x="470" y="452" font-size="22" font-weight="800" fill="#c4b5fd">git switch -c ozellik</text>
+    <text x="912" y="252" font-size="20" font-weight="800" fill="#86efac">git merge</text>
+
+    <text x="70" y="540" font-size="19" fill="#94a3b8">Tek iş = tek dal = tek birleştirme · push öncesi hep git pull</text>
+  </g>
+
+  <g fill="#a855f7" opacity="0.8"><circle cx="1155" cy="140" r="4"/><circle cx="600" cy="180" r="3"/></g>
+</svg>

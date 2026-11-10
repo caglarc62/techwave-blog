@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#f59e0b" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">İlk 30 Dakikalık Plan</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Kurulumdan ilk push'a beş adım</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="196" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="116" cy="249" r="20" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+      <text x="116" y="257" font-size="20" font-weight="800" fill="#fbbf24" text-anchor="middle">1</text>
+      <text x="152" y="240" font-size="22" font-weight="700" fill="#e2e8f0">Kurulum + kimlik</text>
+      <text x="152" y="272" font-size="17" fill="#94a3b8">Git indir, user.name / user.email tanımla (5 dk)</text>
+    </g>
+    <g>
+      <rect x="70" y="318" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="116" cy="371" r="20" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+      <text x="116" y="379" font-size="20" font-weight="800" fill="#fbbf24" text-anchor="middle">2</text>
+      <text x="152" y="362" font-size="22" font-weight="700" fill="#e2e8f0">GitHub'da boş depo</text>
+      <text x="152" y="394" font-size="17" fill="#94a3b8">README + .gitignore ile oluştur (5 dk)</text>
+    </g>
+    <g>
+      <rect x="70" y="440" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="116" cy="493" r="20" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+      <text x="116" y="501" font-size="20" font-weight="800" fill="#fbbf24" text-anchor="middle">3</text>
+      <text x="152" y="484" font-size="22" font-weight="700" fill="#e2e8f0">İlk commit</text>
+      <text x="152" y="516" font-size="17" fill="#94a3b8">git init → add → commit (10 dk)</text>
+    </g>
+
+    <g>
+      <rect x="610" y="196" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="656" cy="249" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="257" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">4</text>
+      <text x="692" y="240" font-size="22" font-weight="700" fill="#e2e8f0">İlk push</text>
+      <text x="692" y="272" font-size="17" fill="#94a3b8">remote add + push -u origin main, GitHub'da doğrula (5 dk)</text>
+    </g>
+    <g>
+      <rect x="610" y="318" width="520" height="106" rx="14" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <circle cx="656" cy="371" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="379" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">5</text>
+      <text x="692" y="362" font-size="22" font-weight="700" fill="#e2e8f0">Geri getirme testi</text>
+      <text x="692" y="394" font-size="17" fill="#94a3b8">Bir dosyayı sil, git restore ile kurtar (5 dk)</text>
+    </g>
+    <g>
+      <rect x="610" y="440" width="520" height="106" rx="14" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="640" y="484" font-size="22" font-weight="800" fill="#86efac">Korku kaybolur</text>
+      <text x="640" y="516" font-size="17" fill="#94a3b8">Geri dönüşün çalıştığını görünce Git eğlenceli hâle gelir</text>
+    </g>
+  </g>
+
+  <g fill="#f59e0b" opacity="0.8"><circle cx="1160" cy="130" r="3"/><circle cx="360" cy="176" r="3"/></g>
+</svg>

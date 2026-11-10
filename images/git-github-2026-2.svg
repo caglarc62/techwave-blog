@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 470) rotate(90) scale(280)">
+      <stop stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Çalışma Döngüsü: Üç Kutu</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Her değişiklik bu akıştan geçer</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="230" width="300" height="180" rx="18" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="100" y="282" font-size="26" font-weight="800" fill="#fbbf24">1. Çalışma dizini</text>
+      <text x="100" y="324" font-size="18" fill="#e2e8f0">Düzenlediğiniz gerçek</text>
+      <text x="100" y="352" font-size="18" fill="#e2e8f0">dosyalar burada</text>
+      <text x="100" y="390" font-size="17" font-weight="700" fill="#64748b">git status · git diff</text>
+    </g>
+    <g>
+      <rect x="450" y="230" width="300" height="180" rx="18" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="480" y="282" font-size="26" font-weight="800" fill="#c4b5fd">2. Alan (staging)</text>
+      <text x="480" y="324" font-size="18" fill="#e2e8f0">Sonraki commit'e ne</text>
+      <text x="480" y="352" font-size="18" fill="#e2e8f0">gireceğinin seçildiği yer</text>
+      <text x="480" y="390" font-size="17" font-weight="700" fill="#64748b">git add</text>
+    </g>
+    <g>
+      <rect x="830" y="230" width="300" height="180" rx="18" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="860" y="282" font-size="26" font-weight="800" fill="#86efac">3. Depo + uzak</text>
+      <text x="860" y="324" font-size="18" fill="#e2e8f0">Geri dönülebilir anlık</text>
+      <text x="860" y="352" font-size="18" fill="#e2e8f0">görüntü + GitHub'a gönderim</text>
+      <text x="860" y="390" font-size="17" font-weight="700" fill="#64748b">git commit · git push</text>
+    </g>
+
+    <path d="M376 320 H442" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M444 320 l-14 -9 v18 z" fill="#e2e8f0"/>
+    <path d="M756 320 H822" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M824 320 l-14 -9 v18 z" fill="#e2e8f0"/>
+    <text x="410" y="300" font-size="16" font-weight="700" fill="#94a3b8" text-anchor="middle">add</text>
+    <text x="790" y="300" font-size="16" font-weight="700" fill="#94a3b8" text-anchor="middle">commit</text>
+  </g>
+
+  <rect x="70" y="452" width="1060" height="76" rx="14" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="100" y="499" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#e2e8f9">Unutmayın: push'tan önce her zaman git pull — uzak depo sizden ileriyse ret yersiniz.</text>
+
+  <g fill="#22d3ee" opacity="0.8"><circle cx="1155" cy="140" r="4"/><circle cx="420" cy="180" r="3"/></g>
+</svg>
