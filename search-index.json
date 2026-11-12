@@ -1,5 +1,25 @@
 [
  {
+  "t": "Bilgisayar Isınması ve Termal Bakım Rehberi",
+  "s": "bilgisayar-isinma-termal-bakim-rehberi",
+  "c": "Donanım",
+  "e": "Normal sıcaklık değerleri, toz temizliği, termal macun değişimi, hava akışı ve fan eğrisi.",
+  "d": "12 Kasım 2026",
+  "i": "https://techwaveblog.site/images/termal-bakim-2026-1.svg",
+  "h": "Bilgisayar Isınması ve Termal Bakım Rehberi | Donanım Bilgisayar Isınması ve Termal Bakım Rehberi 📅 12 Kasım 2026 ⏱ 8 dk okuma 👤 Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. Bilgisayar yavaşladıysa ilk bakılacak yer yazılım değil, sıcaklıktır. İşlemci ve ekran kartı belirli bir eşiği aştığında kendini korumak için saat hızını düşürür — buna termal yavaşlama (thermal throttling) denir. Sonuç: daha az gürültü değil, daha az performanstı",
+  "x": "termal bakım, bilgisayar ısınması, termal macun, fan, hava akışı, thermal throttling"
+ },
+ {
+  "t": "Prompt Mühendisliği Rehberi: Yapay Zekâdan İstediğinizi Almak",
+  "s": "prompt-muhendisligi-rehberi-2026",
+  "c": "Yapay Zeka",
+  "e": "Rol, bağlam, görev, kısıt, format ve örnek: iyi promptun altı bileşeni ve yaygın hatalar.",
+  "d": "11 Kasım 2026",
+  "i": "https://techwaveblog.site/images/prompt-muhendisligi-2026-1.svg",
+  "h": "Prompt Mühendisliği Rehberi: Yapay Zekâdan İstediğinizi Almak | Yapay Zeka Prompt Mühendisliği Rehberi: Yapay Zekâdan İstediğinizi Almak 📅 11 Kasım 2026 ⏱ 7 dk okuma 👤 Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. Aynı modele iki farklı prompt veren iki kişi, bambaşka kalitede sonuç alır. Fark modelin \"ruh hâli\" değil, girdinin yapısıdır. Yapay zekâ bir asistan gibi davranır; ama ne yapacağını, hangi sırayla ve hangi formatta söylemezseniz, ortalama bir",
+  "x": "prompt mühendisliği, prompt yazma, yapay zeka, llm, zincirleme düşünme"
+ },
+ {
   "t": "Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol",
   "s": "git-github-baslangic-rehberi-versiyon-kontrol",
   "c": "Yazılım",

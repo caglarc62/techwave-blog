@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#a855f7" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Şablon: Görev + Kısıt + Format</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Kopyalayıp kullanın — üç yüksek frekanslı görev</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="200" width="340" height="300" rx="16" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="98" y="248" font-size="24" font-weight="800" fill="#67e8f9">Özet</text>
+      <text x="98" y="292" font-size="17" fill="#e2e8f0">"Metni [N] kelimeye indir.</text>
+      <text x="98" y="322" font-size="17" fill="#e2e8f0">Yalnızca ana fikirleri tut,</text>
+      <text x="98" y="352" font-size="17" fill="#e2e8f0">örnekleri atla, madde madde</text>
+      <text x="98" y="382" font-size="17" fill="#e2e8f0">ver. Metin: [...]"</text>
+      <text x="98" y="440" font-size="16" font-weight="700" fill="#64748b">görev: indir · kısıt: örnek yok</text>
+      <text x="98" y="468" font-size="16" font-weight="700" fill="#64748b">format: madde madde</text>
+    </g>
+    <g>
+      <rect x="430" y="200" width="340" height="300" rx="16" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="458" y="248" font-size="24" font-weight="800" fill="#c4b5fd">Kod İnceleme</text>
+      <text x="458" y="292" font-size="17" fill="#e2e8f0">"Kıdemli geliştirici gibi</text>
+      <text x="458" y="322" font-size="17" fill="#e2e8f0">incele. Önce ciddiyet</text>
+      <text x="458" y="352" font-size="17" fill="#e2e8f0">sırasına göre hataları listele,</text>
+      <text x="458" y="382" font-size="17" fill="#e2e8f0">sonra düzelt. Kod: [...]"</text>
+      <text x="458" y="440" font-size="16" font-weight="700" fill="#64748b">görev: incele · kısıt: sıralı</text>
+      <text x="458" y="468" font-size="16" font-weight="700" fill="#64748b">format: hata + düzeltme</text>
+    </g>
+    <g>
+      <rect x="790" y="200" width="340" height="300" rx="16" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="818" y="248" font-size="24" font-weight="800" fill="#86efac">E-posta</text>
+      <text x="818" y="292" font-size="17" fill="#e2e8f0">"Alıcı: [kim], amaç: [ne],</text>
+      <text x="818" y="322" font-size="17" fill="#e2e8f0">ton: resmi/kısa. En fazla</text>
+      <text x="818" y="352" font-size="17" fill="#e2e8f0">100 kelime, tek çağrı</text>
+      <text x="818" y="382" font-size="17" fill="#e2e8f0">cümlesiyle bitir."</text>
+      <text x="818" y="440" font-size="16" font-weight="700" fill="#64748b">görev: yaz · kısıt: 100 kelime</text>
+      <text x="818" y="468" font-size="16" font-weight="700" fill="#64748b">format: tek çağrı cümlesi</text>
+    </g>
+  </g>
+
+  <text x="70" y="552" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#64748b">Aynı omurga, farklı görev — üçü de doğrudan uygulanabilir</text>
+  <g fill="#a855f7" opacity="0.8"><circle cx="1155" cy="140" r="4"/><circle cx="600" cy="176" r="3"/></g>
+</svg>

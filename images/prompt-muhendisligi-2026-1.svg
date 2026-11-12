@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#a855f7" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#a855f7"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">YAPAY ZEKÂ İLE ÜRETİM</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Prompt Mühendisliği</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">İstediğinizi Almanın Yolu</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Rol · Bağlam · Görev · Kısıt · Format · Örnek</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="620" y="120" width="510" height="170" rx="16" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+    <text x="650" y="162" font-size="19" font-weight="700" fill="#fca5a5" letter-spacing="2">ZAYIF PROMPT</text>
+    <text x="650" y="204" font-size="24" font-weight="800" fill="#e2e8f0">"Bir e-posta yaz"</text>
+    <text x="650" y="244" font-size="17" fill="#94a3b8">→ kime? hangi ton? kaç cümle?</text>
+    <text x="650" y="272" font-size="17" fill="#94a3b8">→ sonuç: ortalama, genel geçer</text>
+
+    <rect x="620" y="312" width="510" height="170" rx="16" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+    <text x="650" y="354" font-size="19" font-weight="700" fill="#86efac" letter-spacing="2">GÜÇLÜ PROMPT</text>
+    <text x="650" y="394" font-size="21" font-weight="800" fill="#e2e8f0">"Tedarikçiye ödeme hatırlatması:</text>
+    <text x="650" y="424" font-size="21" font-weight="800" fill="#e2e8f0">resmi ton, 100 kelime, tek çağrı"</text>
+    <text x="650" y="458" font-size="17" fill="#94a3b8">→ sonuç: doğrudan kullanılabilir</text>
+  </g>
+
+  <g fill="#a855f7" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

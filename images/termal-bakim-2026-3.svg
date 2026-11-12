@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Hava Akışı: Tek Yön İlkesi</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Ön/alttan serin girer, üstten/arkadan sıcak çıkar</text>
+
+  <!-- kasa gorseli -->
+  <rect x="360" y="190" width="480" height="330" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="3"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <!-- giris oklari -->
+    <path d="M250 300 H352" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+    <path d="M356 300 l-18 -11 v22 z" fill="#22d3ee"/>
+    <text x="150" y="284" font-size="20" font-weight="700" fill="#67e8f9">Serin hava</text>
+    <text x="150" y="340" font-size="17" fill="#94a3b8">ön / alt fanlar</text>
+
+    <path d="M250 420 H352" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+    <path d="M356 420 l-18 -11 v22 z" fill="#22d3ee"/>
+
+    <!-- cikis oklari -->
+    <path d="M848 280 H950" stroke="#f87171" stroke-width="6" stroke-linecap="round"/>
+    <path d="M954 280 l-18 -11 v22 z" fill="#f87171"/>
+    <text x="972" y="264" font-size="20" font-weight="700" fill="#fca5a5">Sıcak hava</text>
+    <text x="972" y="320" font-size="17" fill="#94a3b8">arka / üst fanlar</text>
+
+    <path d="M600 190 V140" stroke="#f87171" stroke-width="6" stroke-linecap="round"/>
+    <path d="M600 132 l-11 18 h22 z" fill="#f87171"/>
+    <text x="624" y="150" font-size="17" fill="#fca5a5">üst panel</text>
+
+    <!-- ic denge -->
+    <rect x="410" y="240" width="150" height="90" rx="12" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+    <text x="432" y="278" font-size="18" font-weight="800" fill="#86efac">CPU + GPU</text>
+    <text x="432" y="308" font-size="15" fill="#94a3b8">ısı kaynağı</text>
+
+    <rect x="640" y="240" width="150" height="90" rx="12" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+    <text x="662" y="278" font-size="18" font-weight="800" fill="#67e8f9">Filtreler</text>
+    <text x="662" y="308" font-size="15" fill="#94a3b8">temiz + kuru</text>
+
+    <rect x="410" y="380" width="380" height="110" rx="12" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+    <text x="436" y="420" font-size="19" font-weight="800" fill="#fbbf24">Kablo düzeni</text>
+    <text x="436" y="452" font-size="16" fill="#e2e8f9">hava yolunu tıkayan demetleri toplayın</text>
+    <text x="436" y="478" font-size="16" fill="#94a3b8">duvar/mobilyadan birkaç santim uzak</text>
+  </g>
+
+  <text x="70" y="566" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="600" fill="#64748b">Negatif basınç (çok çıkan hava) tozu sürekli içeri çeker — filtre + fan yönü dengesi şart</text>
+</svg>
