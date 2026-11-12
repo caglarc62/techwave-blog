@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light"><head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="Python otomasyon rehberi: pathlib ile dosya işlemleri, toplu yeniden adlandırma, subprocess, zamanlama, hata yönetimi ve test ile sık tekrarlanan işleri otomatikleştirin.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>Python ile Otomasyon Rehberi: Sık İşleri Kendi Kendine Yaptır — TechWave</title>
+<meta property="og:title" content="Python ile Otomasyon Rehberi: Sık İşleri Kendi Kendine Yaptır">
+<meta property="og:description" content="pathlib, toplu dosya işlemleri, subprocess, zamanlama ve test: haftada saatlerinizi kurtaran Python otomasyon iskeleti.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/python-otomasyon-2026-1.svg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Python ile Otomasyon Rehberi: Sık İşleri Kendi Kendine Yaptır"><meta name="twitter:description" content="pathlib, toplu dosya işlemleri, subprocess, zamanlama ve test: haftada saatlerinizi kurtaran Python otomasyon iskeleti."><meta name="twitter:image" content="https://techwaveblog.site/images/python-otomasyon-2026-1.svg">
+<link rel="canonical" href="https://techwaveblog.site/articles/python-otomasyon-rehberi-sik-isleri-kendiliginden.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261107-seo">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Python ile Otomasyon Rehberi: Sık İşleri Kendi Kendine Yaptır","author":{"@type":"Person","name":"Çağlar ÇELİK"},"datePublished":"2026-11-13","dateModified":"2026-11-13","description":"pathlib ile dosya işlemleri, toplu yeniden adlandırma, subprocess, zamanlama, hata yönetimi ve pytest ile Python otomasyon rehberi.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/python-otomasyon-rehberi-sik-isleri-kendiliginden.html","image":"https://techwaveblog.site/images/python-otomasyon-2026-1.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Çağlar ÇELİK","jobTitle":"Teknoloji ve Yapay Zeka Yazarı","url":"https://techwaveblog.site","sameAs":[],"worksFor":{"@type":"Organization","name":"TechWave"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<article class="article-page"><div class="container">
+<div class="article-header"><span class="card-tag" data-category="Python">Python</span><h1 class="article-title">Python ile Otomasyon Rehberi: Sık İşleri Kendi Kendine Yaptır</h1><div class="article-meta"><span>📅 13 Kasım 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/python-otomasyon-2026-1.svg?v=20261113-hero" alt="Otomasyonun tekrar eden işleri nasıl kırdığını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Haftada bir saat harcadığınız bir iş, yılda 50 saattir.</strong> Dosyaları yeniden adlandırmak, tabloyu birleştirip raporu göndermek, klasörleri düzenlemek — hiçbiri zor değil, hepsi tekrar ediyor. Python'un gerçek gücü işte tam burada ortaya çıkar: <strong>öğrenmesi kolay bir dil olmasında değil, siz öğrenirken bile size zaman kazandırmasında.</strong></p>
+<p>Bu rehberde otomasyonun mantığını, <code>pathlib</code> ile dosya işlemlerini, toplu yeniden adlandırmayı, dış programları çağırma ve zamanlamayı, hata yönetimini ve test ile güvenli otomasyonu adım adım ele alıyoruz. Dilsel temel için <a href="python-nedir-bilmeniz-gereken-her-sey.html">Python Nedir? rehberimiz</a>, proje kurulumu için <a href="python-ile-web-sitesi-yapma-rehberi-2026.html">web sitesi yapma rehberimiz</a> iyi bir başlangıçtır.</p>
+
+<h2>Otomasyon ne zaman anlamlıdır?</h2>
+<p>Her tekrar otomasyon gerektirmez. Üç ölçüt, doğru kararı vermenizi sağlar:</p>
+<ul>
+<li><strong>Sıklık:</strong> Aynı işi haftada bir yapıyorsanız kod yazmaya değer. Ayda bir yapmakta ise Excel formülü çoğu zaman yeterlidir.</li>
+<li><strong>Kural netliği:</strong> İşin kuralını bir kâğıda yazabiliyorsanız kodlayabilirsiniz. "İyi görünen dosyaları al" gibi muhakeme gerektiren bir görev, otomasyona değil, insana aittir.</li>
+<li><strong>Hata maliyeti:</strong> Yanlış sonuç üreten otomasyon, hiç otomasyondan daha kötüdür. Para, silme ve gönderme işlemlerinde <strong>geri alma (undo) yolu</strong> şarttır.</li>
+</ul>
+<p>Üçü de tutuyorsa ilerleyin. Python'un standart kütüphanesi, çoğu görev için harici paket kurulumu bile gerektirmez — <a href="https://docs.python.org/3/tutorial/index.html" target="_blank" rel="noopener noreferrer">resmî tutorial</a> ile birlikte okuyabileceğiniz bu rehber, tam olarak o katmanı anlatır.</p>
+
+<img src="../images/python-otomasyon-2026-2.svg?v=20261113-a" alt="Otomasyon karar akışını gösteren TechWave çizimi" width="800">
+
+<h2>Temel iskelet: her otomasyonda aynı 5 adım</h2>
+<p>Yazdığınız her betik aynı iskeleti izler:</p>
+<ol>
+<li><strong>Hedefi belirle:</strong> Hangi klasördeki hangi dosyalar, ne yapılacak?</li>
+<li><strong>Önce oku:</strong> İşlem yapmadan önce dosya listesini yazdırın ve gözle doğrulayın.</li>
+<li><strong>Planla (dry run):</strong> "Ne yapacağım" listesini yazdırın, henüz hiçbir şeyi değiştirmeyin.</li>
+<li><strong>Uygula:</strong> Şimdi değişikliği yapın.</li>
+<li><strong>Raporla:</strong> Kaç dosya işlendi, kaçı atlandı, hata var mı — yazdırın.</li>
+</ol>
+<p>Bu beş adım, "script çalıştı, ama ne yaptığını bilmiyorum" sorununu baştan çözer. <strong>İlk çalıştırmada her zaman okuma ve planlama modunda kalın;</strong> onay verdikten sonra uygulama moduna geçin.</p>
+
+<h2>pathlib: dosyaların modern dili</h2>
+<p>Eski <code>os.path</code> yerine <code>pathlib</code> kullanın: nesne yönelimli, okunabilir ve işletim sistemi ayrımı yapmadan çalışır.</p>
+<pre><code>from pathlib import Path
+
+klasor = Path("~/Belgeler/faturalar").expanduser()
+
+for dosya in sorted(klasor.glob("*.pdf")):
+    print(dosya.name, dosya.stat().st_size)</code></pre>
+<ul>
+<li><strong>glob:</strong> <code>*.pdf</code>, <code>2026-*.xlsx</code> gibi kalıplarla dosya seçer.</li>
+<li><strong>iterdir:</strong> Klasörün doğrudan içindekileri döner; alt klasörler için <code>rglob</code>.</li>
+<li><strong>stat:</strong> Boyut, değişiklik tarihi — sıralama ve filtreleme için.</li>
+<li><strong>with_name / with_suffix:</strong> Yeniden adlandırmanın güvenli yolu; yol yapısını bozmaz.</li>
+</ul>
+<p>Yol birleştirmede klasör ayracını elle yazmak yerine her zaman <code>/</code> operatörünü kullanın: <code>klasor / "arşiv" / dosya.name</code>. Bu, betiğinizin Linux'ta da Windows'ta da çalışmasını sağlar. Dosya sistemi kavramları için <a href="https://docs.python.org/3/library/pathlib.html" target="_blank" rel="noopener noreferrer">pathlib dokümanı</a> referansınızdır.</p>
+
+<h2>Örnek 1: toplu yeniden adlandırma</h2>
+<p>Telefonunuzdan gelen <code>IMG_20260312_143322.jpg</code> dosyalarını tarihe göre düzenlemek:</p>
+<pre><code>from pathlib import Path
+import re
+
+kaynak = Path("~/İndirilenler").expanduser()
+sayac = {}
+
+for d in sorted(kaynak.glob("IMG_*.jpg")):
+    m = re.search(r"(\d{8})_(\d{6})", d.name)
+    if not m:
+        print("atlandı (kalıp yok):", d.name); continue
+    tarih = f"{m.group(1)[:4]}-{m.group(1)[4:6]}-{m.group(1)[6:]}"
+    yeni = d.with_name(f"fotograf-{tarih}-{d.stem[-4:]}.jpg")
+    # çakışma durumunda numara ekle
+    while yeni.exists():
+        sayac[tarih] = sayac.get(tarih, 0) + 1
+        yeni = d.with_name(f"fotograf-{tarih}-{sayac[tarih]:02d}.jpg")
+    print(f"{d.name}  ->  {yeni.name}")
+    # d.rename(yeni)   # ilk çalıştırmada yorum satırında tutun</code></pre>
+<p><strong><code>d.rename</code> satırını yorum satırında tutmak bilinçli bir adımdır:</strong> önce planı okuyun, doğruysa açın. Toplu işlemlerde "önizleme modu" bir alışkanlık değil, bir güvenlik katmanıdır.</p>
+
+<h2>Örnek 2: klasörleri kurala göre düzenlemek</h2>
+<p>İndirilenler klasörünü uzantıya göre ayırmak için tek döngü yeterlidir:</p>
+<pre><code>from pathlib import Path
+
+kurallar = {
+    "resim": [".jpg", ".png", ".webp"],
+    "belge": [".pdf", ".docx", ".xlsx"],
+    "video": [".mp4", ".mkv"],
+}
+
+indirilen = Path("~/İndirilenler").expanduser()
+for d in indirilen.iterdir():
+    if not d.is_file():
+        continue
+    hedef_adi = next((k for k, v in kurallar.items()
+                      if d.suffix.lower() in v), "diger")
+    hedef = indirilen / hedef_adi
+    hedef.mkdir(exist_ok=True)
+    print(f"{d.name} -> {hedef_adi}/")
+    # d.rename(hedef / d.name)</code></pre>
+<p>Kural değiştiğinde tek yapmanız gereken sözlüğü düzenlemek. Kuralları kodun içinden çıkarıp üstte bir sözlük olarak tutmak, betiği <strong>yeniden kullanılabilir</strong> yapar.</p>
+
+<img src="../images/python-otomasyon-2026-3.svg?v=20261113-b" alt="Toplu dosya işleme iskeletini gösteren TechWave çizimi" width="800">
+
+<h2>Dış programları çağırma: subprocess</h2>
+<p>Bazı işler Python'un işi değildir: video kesmek, dosyayı sıkıştırmak, Git'i çalıştırmak. Bunları <code>subprocess</code> ile çağırırsınız:</p>
+<pre><code>import subprocess
+
+sonuc = subprocess.run(
+    ["git", "status", "--short"],
+    capture_output=True, text=True, encoding="utf-8"
+)
+
+if sonuc.returncode == 0:
+    print(sonuc.stdout)
+else:
+    print("hata:", sonuc.stderr)</code></pre>
+<ul>
+<li><strong>shell=True kullanmayın:</strong> Liste biçimi, enjeksiyona kapalıdır ve daha okunaklıdır.</li>
+<li><strong>returncode kontrol edin:</strong> Programın "başarılı" döndüğünü varsaymayın.</li>
+<li><strong>timeout verin:</strong> Sonsuz bekleyen bir betik, otomasyonun değil, bilgisayarınızın suçudur.</li>
+</ul>
+<p>Çağırma biçimi için <a href="https://docs.python.org/3/library/subprocess.html" target="_blank" rel="noopener noreferrer">subprocess dokümanı</a>; dosya ve klasör komutları için <a href="https://docs.python.org/3/library/os.html" target="_blank" rel="noopener noreferrer">os modülü</a> başucu kaynağınızdır.</p>
+
+<h2>Zamanlama: betiği kendiliğinden çalıştırın</h2>
+<p>Betik elde çalıştıkça tamamlanmamıştır. Üç seçenek:</p>
+<ul>
+<li><strong>Windows:</strong> <a href="https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page" target="_blank" rel="noopener noreferrer">Görev Zamanlayıcı</a>'da "Günlük 09:00" görevi oluşturun; betiği <code>python C:\betik\rapor.py</code> komutuyla bağlayın.</li>
+<li><strong>Linux/macOS:</strong> <code>crontab -e</code> ile <code>0 9 * * * /usr/bin/python3 /betik/rapor.py</code> satırı.</li>
+<li><strong>Not defteri yerine log:</strong> Betiğin çıktısını bir dosyaya yazın: <code>print(..., file=open("otomasyon.log", "a"))</code>. Görev başarısız olduğunda tek kanıtınız odur.</li>
+</ul>
+<p>Görevi oluştururken <strong>çalışma dizinini</strong> da ayarlayın; betikteki göreli yollar (örneğin <code>Path("veri.xlsx")</code>) aksi halde görev çalıştığında bulunamaz.</p>
+
+<h2>Hata yönetimi: kırılgan olmayan otomasyon</h2>
+<p>Toplu işlemde tek dosyanın hatası, tüm betiği durdurmamalı:</p>
+<pre><code>basarili, atlanan = 0, []
+for d in klasor.glob("*.csv"):
+    try:
+        isle(d)
+        basarili += 1
+    except PermissionError:
+        atlanan.append((d.name, "dosya açık"))
+    except Exception as hata:
+        atlanan.append((d.name, str(hata)))
+
+print(f"başarılı: {basarili} | atlanan: {len(atlanan)}")
+for isim, sebep in atlanan:
+    print(" -", isim, ":", sebep)</code></pre>
+<ul>
+<li><strong>Genel <code>except</code> yerine spesifik istisnaları</strong> yakalayın; <code>KeyboardInterrupt</code>'ı asla yutmayın.</li>
+<li><strong>Sessizce geçmeyin:</strong> Atlanan her dosyayı listeleyin, toplam sayı yerine nedenleri gösterin.</li>
+<li><strong>Yedeklemeden toplu silmeyin:</strong> Silme yerine <code>arşiv/</code> klasörüne taşıma yapın. <a href="veri-yedekleme-rehberi-3-2-1-kurali.html">3-2-1 yedekleme kuralımızda</a> da vurguladığımız gibi, geri dönüşü olmayan işlem en son adımdır.</li>
+</ul>
+
+<h2>Güvenlik kontrol listesi</h2>
+<table>
+<tr><th>Yapmayın</th><th>Yapın</th></tr>
+<tr><td><code>rmtree</code> ile doğrudan silme</td><td>Önce <code>arşiv/</code>'e taşıma, sonra temizlik</td></tr>
+<tr><td>İlk çalıştırmada tüm klasörü işleme</td><td>Tek dosyayla deneme, sonra genişletme</td></tr>
+<tr><td>Yolu elle yazmak (<code>"C:/veri/..."</code>)</td><td><code>Path.home()</code> ile taşınabilir yol</td></tr>
+<tr><td>Hatayı yutmak</td><td>Log dosyasına satır satır yazma</td></tr>
+<tr><td><code>shell=True</code> ile kullanıcı girdisi</td><td>Liste biçimi + girdi doğrulama</td></tr>
+</table>
+
+<h2>Test: otomasyonu güvenilir kılan 10 dakika</h2>
+<p>Betik üç kez doğru çalışsa dördüncüsünde sürpriz yapabilir. Basit bir doğrulama fonksiyonu, <code>pytest</code>'i kurmadan önce attığınız en iyi adımdır:</p>
+<pre><code>def dogrula(yeni_adlar):
+    assert len(yeni_adlar) == len(set(yeni_adlar)), "yinelenen ad!"
+    assert all(a.endswith(".jpg") for a in yeni_adlar), "yanlış uzantı!"
+    return True</code></pre>
+<p>Daha ciddi işler için <a href="https://docs.pytest.org/en/stable/getting-started.html" target="_blank" rel="noopener noreferrer">pytest başlangıç kılavuzu</a> beş satırla test yazmanızı sağlar. Testi olan otomasyon, kural değiştiğinde korkmadan güncellenir — <a href="git-github-baslangic-rehberi-versiyon-kontrol.html">Git rehberimizdeki</a> sürüm mantığı da tam olarak bunu korur.</p>
+
+<img src="../images/python-otomasyon-2026-4.svg?v=20261113-c" alt="Güvenli otomasyon adımlarını gösteren TechWave çizimi" width="800">
+
+<h2>Bir haftalık başlangıç planı</h2>
+<ol>
+<li><strong>Pazartesi — gözlem:</strong> Bir hafta boyunca tekrar ettiğiniz işleri not edin. Kaç dakika sürüyor, ne sıklıkta?</li>
+<li><strong>Salı — ilk betik:</strong> En sık işi seçin, sadece okuma ve yazdırma modunda bir betik yazın.</li>
+<li><strong>Çarşamba — pathlib:</strong> <code>glob</code> ve <code>with_name</code> ile dosya seçimini otomatikleştirin.</li>
+<li><strong>Perşembe — plan/uygula:</strong> Dry run modu ekleyin, tek dosyada deneyin.</li>
+<li><strong>Cuma — zamanlama:</strong> Görev Zamanlayıcı veya cron ile günlük çalıştırın, log tutun.</li>
+<li><strong>Cumartesi — hata:</strong> Kilitli bir dosya, izin hatası ve bozuk bir girdi simüle edin; betik çökmemeli.</li>
+<li><strong>Pazar — arşiv:</strong> Betiği Git'e alın, işleyeceğiniz klasörün yedeğini kontrol edin.</li>
+</ol>
+
+<h2>Merak edilenler</h2>
+<ul>
+<li><strong>Hangi sürümü kurmalıyım?</strong> — Güncel kararlı sürüm (3.12+). Eğitim videolarının eski sürümleri çoğu görevde sorun çıkarmaz; yeni özellikler (daha iyi hata mesajları, performans) sizin lehinizedir.</li>
+<li><strong>Kurulum gerektirmeyen görevler hangileri?</strong> — Dosya yeniden adlandırma, klasör düzenleme, metin birleştirme, CSV işleme — tamamı standart kütüphaneyle.</li>
+<li><strong>Excel işleri için ne kullanayım?</strong> — Basit okuma/yazma için <code>openpyxl</code>; karmaşık veri için pandas. Ama önce sorun: formülle çözülebilir mi?</li>
+<li><strong>Betik çökerse dosyalarım ne olur?</strong> — <code>rename</code> işlemi ya gerçekleşir ya gerçekleşmez; yarım kalan bir işlem yoktur. Yine de önce yedek, sonra işlem kuralı değişmez.</li>
+<li><strong>Otomasyon işimi elimden alır mı?</strong> — Hayır; tekrar eden kısmı alır. <a href="2026-isletim-sistemi-ve-kodlama-teknoloji-trendleri.html">2026 trendlerinde</a> de gördüğümüz gibi, araçlar uzmanlığın yerini değil, hızını artırıyor.</li>
+</ul>
+
+<h2>Sonuç: ilk betiğinizi bugün yazın</h2>
+<p>Otomasyon bir proje değil, bir <strong>alışkanlıktır</strong>. Küçük başlayın: Tek bir klasörü tek bir kurala göre düzenleyin, planı yazdırın, onaylayın, uygulayın. Yarın aynı betik sizin yerinize çalışacak.</p>
+<p>Bugün yapacağınız tek şey: En çok tekrar ettiğiniz işi seçin ve sadece dosyaları <strong>listeleyen</strong> on satırlık bir betik yazın. Liste doğruysa, gerisi mühendisliktir.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</div></div></article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=18efba2"></script>
+</body></html>

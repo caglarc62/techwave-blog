@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#38bdf8"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#7dd3fc" letter-spacing="3">PYTHON İLE OTOMASYON</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Sık İşleri Kendine Yaptır</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">Dosya · Zamanlama · Hata · Test</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Haftada 1 saat = yılda 50 saat</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="620" y="120" width="510" height="340" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="652" y="168" font-size="20" font-weight="700" fill="#64748b" letter-spacing="3">OTOMASYON KARAR AKIŞI</text>
+
+    <g>
+      <rect x="652" y="196" width="446" height="52" rx="10" fill="#132033" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="676" y="229" font-size="19" fill="#e2e8f0">1 · Sık tekrar ediyor mu?</text>
+      <rect x="652" y="260" width="446" height="52" rx="10" fill="#132033" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="676" y="293" font-size="19" fill="#e2e8f0">2 · Kuralı kâğıda yazabiliyor musun?</text>
+      <rect x="652" y="324" width="446" height="52" rx="10" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="676" y="357" font-size="19" fill="#e2e8f0">3 · Hata maliyeti düşük mü?</text>
+      <rect x="652" y="388" width="446" height="52" rx="10" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="676" y="421" font-size="20" font-weight="700" fill="#86efac">Evet → betiği yaz, zamanla</text>
+    </g>
+  </g>
+
+  <g fill="#38bdf8" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

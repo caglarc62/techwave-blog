@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 470) rotate(90) scale(280)">
+      <stop stop-color="#4ade80" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Her Betikte Aynı 5 Adım</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Oku → planla → uygula; asla körlemesine değiştirmeyin</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="200" width="210" height="200" rx="14" fill="#0c1526" stroke="#38bdf8" stroke-width="2"/>
+      <text x="98" y="252" font-size="34" font-weight="800" fill="#7dd3fc">1</text>
+      <text x="98" y="298" font-size="22" font-weight="700" fill="#e2e8f0">Hedefi belirle</text>
+      <text x="98" y="332" font-size="16" fill="#94a3b8">hangi klasör,</text>
+      <text x="98" y="356" font-size="16" fill="#94a3b8">hangi dosyalar,</text>
+      <text x="98" y="380" font-size="16" fill="#94a3b8">ne yapılacak?</text>
+    </g>
+    <g>
+      <rect x="300" y="200" width="210" height="200" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="328" y="252" font-size="34" font-weight="800" fill="#c4b5fd">2</text>
+      <text x="328" y="298" font-size="22" font-weight="700" fill="#e2e8f0">Önce oku</text>
+      <text x="328" y="332" font-size="16" fill="#94a3b8">dosya listesini</text>
+      <text x="328" y="356" font-size="16" fill="#94a3b8">yazdırın,</text>
+      <text x="328" y="380" font-size="16" fill="#94a3b8">gözle doğrulayın</text>
+    </g>
+    <g>
+      <rect x="530" y="200" width="210" height="200" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="558" y="252" font-size="34" font-weight="800" fill="#fbbf24">3</text>
+      <text x="558" y="298" font-size="22" font-weight="700" fill="#e2e8f0">Planla</text>
+      <text x="558" y="332" font-size="16" fill="#94a3b8">dry run: ne</text>
+      <text x="558" y="356" font-size="16" fill="#94a3b8">yapacağınızı</text>
+      <text x="558" y="380" font-size="16" fill="#94a3b8">henüz değiştirmeden</text>
+    </g>
+    <g>
+      <rect x="760" y="200" width="210" height="200" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="788" y="252" font-size="34" font-weight="800" fill="#86efac">4</text>
+      <text x="788" y="298" font-size="22" font-weight="700" fill="#e2e8f0">Uygula</text>
+      <text x="788" y="332" font-size="16" fill="#94a3b8">onaydan sonra</text>
+      <text x="788" y="356" font-size="16" fill="#94a3b8">gerçek</text>
+      <text x="788" y="380" font-size="16" fill="#94a3b8">değişiklik</text>
+    </g>
+    <g>
+      <rect x="990" y="200" width="140" height="200" rx="14" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="1014" y="252" font-size="34" font-weight="800" fill="#67e8f9">5</text>
+      <text x="1014" y="298" font-size="20" font-weight="700" fill="#e2e8f0">Raporla</text>
+      <text x="1014" y="332" font-size="15" fill="#94a3b8">kaç dosya,</text>
+      <text x="1014" y="354" font-size="15" fill="#94a3b8">kaç atlandı,</text>
+      <text x="1014" y="376" font-size="15" fill="#94a3b8">hata var mı?</text>
+    </g>
+
+    <rect x="70" y="436" width="1060" height="88" rx="14" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="100" y="478" font-size="21" font-weight="700" fill="#7dd3fc">İlk çalıştırmada her zaman okuma + planlama modunda kalın</text>
+    <text x="100" y="508" font-size="18" fill="#94a3b8">"Script çalıştı ama ne yaptığını bilmiyorum" sorunu böyle çözülür</text>
+  </g>
+
+  <g fill="#4ade80" opacity="0.8"><circle cx="1155" cy="140" r="3"/><circle cx="420" cy="176" r="3"/></g>
+</svg>

@@ -1,5 +1,15 @@
 [
  {
+  "t": "Python ile Otomasyon Rehberi: Sık İşleri Kendine Yaptır",
+  "s": "python-otomasyon-rehberi-sik-isleri-kendiliginden",
+  "c": "Python",
+  "e": "pathlib, toplu dosya işlemleri, subprocess, zamanlama ve test: haftada saatlerinizi kurtaran otomasyon iskeleti.",
+  "d": "13 Kasım 2026",
+  "i": "https://techwaveblog.site/images/python-otomasyon-2026-1.svg",
+  "h": "Python ile Otomasyon Rehberi: Sık İşleri Kendine Yaptır | Python Python ile Otomasyon Rehberi: Sık İşleri Kendi Kendine Yaptır 📅 13 Kasım 2026 ⏱ 8 dk okuma 👤 Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. Haftada bir saat harcadığınız bir iş, yılda 50 saattir. Dosyaları yeniden adlandırmak, tabloyu birleştirip raporu göndermek, klasörleri düzenlemek — hiçbiri zor değil, hepsi tekrar ediyor. Python'un gerçek gücü işte tam burada ortaya çıkar: öğrenm",
+  "x": "python otomasyon, pathlib, toplu dosya işlemi, subprocess, görev zamanlayıcı, betik"
+ },
+ {
   "t": "Bilgisayar Isınması ve Termal Bakım Rehberi",
   "s": "bilgisayar-isinma-termal-bakim-rehberi",
   "c": "Donanım",
@@ -752,7 +762,7 @@
  {
   "t": "Python ile Ren'Py Oyun Çevirisi Nasıl Yapılır? Voorhees ve Otomatik Çeviri Rehberi",
   "s": "python-renpy-oyun-ceviri-araci-voorhees-rehberi",
-  "c": "Genel",
+  "c": "Python",
   "e": "Ren'Py tabanlı oyunları Türkçe'ye çevirmek için Voorhees aracı ve Python scriptleri kullanım rehberi. Tüm detaylar, kodlar ve ipuçları TechWave'de!",
   "d": "28 Eylül 2026",
   "i": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200",
