@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Seed Phrase Saklama Sırası</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">4 adım, 1 kural: çevrimdışı kalsın</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="196" width="255" height="260" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <circle cx="116" cy="244" r="22" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="116" y="253" font-size="22" font-weight="800" fill="#86efac" text-anchor="middle">1</text>
+      <text x="96" y="304" font-size="21" font-weight="800" fill="#e2e8f0">Elle yazın</text>
+      <g font-size="16" fill="#94a3b8">
+        <text x="96" y="340">kâğıda, çevrimdışı</text>
+        <text x="96" y="366">fotoğraf yok</text>
+        <text x="96" y="392">not uygulaması yok</text>
+        <text x="96" y="418">bulut yok</text>
+      </g>
+    </g>
+    <g>
+      <rect x="345" y="196" width="255" height="260" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <circle cx="391" cy="244" r="22" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="391" y="253" font-size="22" font-weight="800" fill="#67e8f9" text-anchor="middle">2</text>
+      <text x="371" y="304" font-size="21" font-weight="800" fill="#e2e8f0">İki kopya</text>
+      <g font-size="16" fill="#94a3b8">
+        <text x="371" y="340">ana: evde kasada</text>
+        <text x="371" y="366">yedek: başka yer</text>
+        <text x="371" y="392">su/yangın riski</text>
+        <text x="371" y="418">dağıtılsın</text>
+      </g>
+    </g>
+    <g>
+      <rect x="620" y="196" width="255" height="260" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="666" cy="244" r="22" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+      <text x="666" y="253" font-size="22" font-weight="800" fill="#fbbf24" text-anchor="middle">3</text>
+      <text x="646" y="304" font-size="21" font-weight="800" fill="#e2e8f0">Parçalayın</text>
+      <g font-size="16" fill="#94a3b8">
+        <text x="646" y="340">3 bölgeden 2'si</text>
+        <text x="646" y="366">tek yer yangında</text>
+        <text x="646" y="392">gitmez; tek hırsız</text>
+        <text x="646" y="418">hepsini alamaz</text>
+      </g>
+    </g>
+    <g>
+      <rect x="895" y="196" width="255" height="260" rx="14" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <circle cx="941" cy="244" r="22" fill="#132033" stroke="#f87171" stroke-width="2"/>
+      <text x="941" y="253" font-size="22" font-weight="800" fill="#fca5a5" text-anchor="middle">4</text>
+      <text x="921" y="304" font-size="21" font-weight="800" fill="#e2e8f0">Asla paylaşmayın</text>
+      <g font-size="16" fill="#94a3b8">
+        <text x="921" y="340">destek kelime istemez</text>
+        <text x="921" y="366">ödül/kurtarma yok</text>
+        <text x="921" y="392">doğrulama diye</text>
+        <text x="921" y="418">istemek = dolandırıcı</text>
+      </g>
+    </g>
+
+    <rect x="70" y="486" width="1080" height="70" rx="14" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+    <text x="100" y="528" font-size="22" font-weight="800" fill="#86efac">Kurtarma testi yapın:</text>
+    <text x="340" y="528" font-size="20" fill="#e2e8f0">mikro tutarla yeni cüzdana taşıyıp kelimeyi doğrulayın</text>
+  </g>
+
+  <g fill="#4ade80" opacity="0.8"><circle cx="1160" cy="140" r="3"/><circle cx="600" cy="176" r="3"/></g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 470) rotate(90) scale(280)">
+      <stop stop-color="#22d3ee" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Sıcak mı, Soğuk mu?</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Kural: harcanacak bakiye sıcakta, birikim soğukta</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="200" width="510" height="300" rx="16" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+    <text x="100" y="246" font-size="26" font-weight="800" fill="#fbbf24">SICAK CÜZDAN</text>
+    <text x="100" y="282" font-size="17" fill="#94a3b8">tarayıcı eklentisi · mobil · çevrimiçi</text>
+    <g font-size="17" fill="#e2e8f0">
+      <text x="100" y="330">✓ Günlük işlemler, hızlı onay</text>
+      <text x="100" y="366">✓ Küçük bakiyeler için pratik</text>
+      <text x="100" y="402">✗ Malware ve phishing'e açık</text>
+      <text x="100" y="438">✗ Bağlantı yetkisi = risk kaynağı</text>
+    </g>
+    <rect x="100" y="456" width="450" height="30" rx="8" fill="#132033"/>
+    <text x="116" y="477" font-size="16" font-weight="700" fill="#fcd34d">önerilen: 1–2 haftalık harcama</text>
+
+    <rect x="620" y="200" width="510" height="300" rx="16" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+    <text x="650" y="246" font-size="26" font-weight="800" fill="#67e8f9">SOĞUK CÜZDAN</text>
+    <text x="650" y="282" font-size="17" fill="#94a3b8">donanım cihazı · kâğıt · tamamen çevrimdışı</text>
+    <g font-size="17" fill="#e2e8f0">
+      <text x="650" y="330">✓ İnternete bağlı değil: uzak saldırı yok</text>
+      <text x="650" y="366">✓ İmza cihazın içinde doğrulanır</text>
+      <text x="650" y="402">✗ Fiziksel kayıp / kötü yedek riski</text>
+      <text x="650" y="438">✗ Her işlemde cihaz gerekir</text>
+    </g>
+    <rect x="650" y="456" width="450" height="30" rx="8" fill="#132033"/>
+    <text x="666" y="477" font-size="16" font-weight="700" fill="#67e8f9">önerilen: birikim + uzun vadeli tutar</text>
+  </g>
+
+  <text x="70" y="552" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#64748b">Donanım cüzdanını yalnızca üreticinin resmî sitesinden alın</text>
+  <g fill="#22d3ee" opacity="0.8"><circle cx="1155" cy="140" r="3"/><circle cx="420" cy="176" r="3"/></g>
+</svg>
