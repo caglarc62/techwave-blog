@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light"><head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="Oyun yayını rehberi: OBS kurulumu, bitrate ve çözünürlük seçimi, ses dengesi, yayın sahnesi, donma sorunları, Twitch ve YouTube yayını için adım adım ayarlar.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>Oyun Yayını Nasıl Yapılır: OBS ile Twitch ve YouTube Rehberi — TechWave</title>
+<meta property="og:title" content="Oyun Yayını Nasıl Yapılır: OBS ile Twitch ve YouTube Rehberi">
+<meta property="og:description" content="OBS kurulumu, doğru bitrate ve çözünürlük, ses dengesi, yayın sahnesi ve donma çözümleri: ilk yayınıza bugün başlayın.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/oyun-yayini-obs-rehberi-2026-1.svg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Oyun Yayını Nasıl Yapılır: OBS ile Twitch ve YouTube Rehberi"><meta name="twitter:description" content="OBS kurulumu, doğru bitrate ve çözünürlük, ses dengesi, yayın sahnesi ve donma çözümleri."><meta name="twitter:image" content="https://techwaveblog.site/images/oyun-yayini-obs-rehberi-2026-1.svg">
+<link rel="canonical" href="https://techwaveblog.site/articles/oyun-yayini-obs-rehberi-twitch-youtube.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261107-seo">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Oyun Yayını Nasıl Yapılır: OBS ile Twitch ve YouTube Rehberi","author":{"@type":"Person","name":"Çağlar ÇELİK"},"datePublished":"2026-11-16","dateModified":"2026-11-16","description":"OBS kurulumu, bitrate ve çözünürlük seçimi, ses dengesi, yayın sahnesi ve donma sorunlarının çözümü.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/oyun-yayini-obs-rehberi-twitch-youtube.html","image":"https://techwaveblog.site/images/oyun-yayini-obs-rehberi-2026-1.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Çağlar ÇELİK","jobTitle":"Teknoloji ve Yapay Zeka Yazarı","url":"https://techwaveblog.site","sameAs":[],"worksFor":{"@type":"Organization","name":"TechWave"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<article class="article-page"><div class="container">
+<div class="article-header"><span class="card-tag" data-category="Oyun">Oyun</span><h1 class="article-title">Oyun Yayını Nasıl Yapılır: OBS ile Twitch ve YouTube Rehberi</h1><div class="article-meta"><span>📅 16 Kasım 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/oyun-yayini-obs-rehberi-2026-1.svg?v=20261116-hero" alt="Oyun yayını kurulumunu gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Yayın kurmak, oyun oynamaktan kolaydır — ama doğru ayarları bilmiyorsanız ilk yayın, donma ve bozuk sesle biter.</strong> İyi haber: profesyonel bir kurulum için stüdyo gerekmez. Bir oyun bilgisayarı, OBS ve doğru bitrate değerleri, ilk yayınıza başlamak için yeterlidir.</p>
+<p>Bu rehberde OBS kurulumunu, çözünürlük ve bitrate kararını, ses dengesini, yayın sahnesini, en sık görülen donma sorunlarını ve Twitch/YouTube tarafındaki temel ayarları adım adım ele alıyoruz. Donanım tarafındaki FPS sorunlarını <a href="oyunda-fps-artirma-rehberi.html">FPS artırma rehberimizde</a> çözmüştünüz; buradaki odak, <strong>oyunu izleyiciye temiz ulaştırmak.</strong></p>
+
+<h2>Yayın öncesi: 10 dakikalık kontrol</h2>
+<p>Yayına basmadan önce dört şeyi doğrulayın:</p>
+<ul>
+<li><strong>İnternet kararlı mı?</strong> <a href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer">Speedtest</a> ile hem hız hem kararlılık (jitter) testi yapın. Yükleme hızı, yayın kalitesinin tavanını belirler.</li>
+<li><strong>Kamera ve mikrofon bağlı mı?</strong> OBS'i açmadan önce donanımları takın; takma sırasında algılanmazlar.</li>
+<li><strong>Oyunun penceresi hazır mı?</strong> Pencere modu (borderless), kaynak seçimini kolaylaştırır.</li>
+<li><strong>Bildirimler kapalı mı?</strong> Sistem bildirimleri, Discord sesleri ve telefon sesleri yayına düşer.</li>
+</ul>
+
+<h2>OBS kurulumu: ilk 15 dakika</h2>
+<p><a href="https://obsproject.com/tr" target="_blank" rel="noopener noreferrer">OBS Studio</a> ücretsiz ve açık kaynakdır; <a href="https://github.com/obsproject/obs-studio" target="_blank" rel="noopener noreferrer">GitHub deposu</a> üzerinde geliştirilmeye devam ediyor. Kurulumdan sonra sırasıyla:</p>
+<ol>
+<li><strong>Sihirbazı çalıştırın:</strong> "Ayarlar Sihirbazı" ile optimal ayarlar önerilir; çözünürlük ve bitrate'i burada netleştirin.</li>
+<li><strong>Kaynak ekleyin:</strong> "Oyun Yakalama" (oyun tam ekranlarda) veya "Pencere Yakalama" (borderless).</li>
+<li><strong>Mikrofonu ekleyin:</strong> "Ses Yakalama → Mikrofon" olarak ekleyin, masaüstü sesini ayrı kaynak olarak bırakın.</li>
+<li><strong>Sahne düzenleyin:</strong> Kamera köşede, oyun tam ekran, alt üçte birde sohbet kutusu — klasik düzen yeterlidir.</li>
+</ol>
+<p>Kurulum videoları yerine <a href="https://www.twitch.tv/broadcaster-tools" target="_blank" rel="noopener noreferrer">Twitch yayıncı araçları</a> sayfasındaki resmî kılavuzları da takip edebilirsiniz.</p>
+
+<img src="../images/oyun-yayini-obs-rehberi-2026-2.svg?v=20261116-a" alt="Yayın donanım ve yazılım zincirini gösteren TechWave çizimi" width="800">
+
+<h2>Çözünürlük ve bitrate: en kritik karar</h2>
+<p>Yayın kalitesini üçlü belirler: <strong>çözünürlük, kare hızı ve bitrate.</strong> İnternetinizin yükleme hızına göre tabloyu izleyin:</p>
+<table>
+<tr><th>Yükleme hızı</th><th>Önerilen yayın</th><th>Bitrate aralığı</th><th>Yorum</th></tr>
+<tr><td>10 Mbps ve üzeri</td><td>1080p60</td><td>6000 – 8000 Kbps</td><td>İdeal; hızlı hareketli oyunlarda akıcı</td></tr>
+<tr><td>6 – 10 Mbps</td><td>1080p30 / 720p60</td><td>4500 – 6000 Kbps</td><td>Çoğu kullanıcı için dengeli nokta</td></tr>
+<tr><td>3 – 6 Mbps</td><td>720p60</td><td>3000 – 4500 Kbps</td><td>Netlikten çok akıcılık önceliklidir</td></tr>
+<tr><td>3 Mbps altı</td><td>720p30 / 540p</td><td>1800 – 3000 Kbps</td><td>Önce interneti iyileştirin, kaliteyi değil</td></tr>
+</table>
+<p>Üç kural:</p>
+<ul>
+<li><strong>Yükleme hızının en fazla %70-80'ini kullanın</strong> — kalan pay, oyun trafiğine ve dalgalanmalara ayrılmıştır.</li>
+<li><strong>Bitrate'i düşündüğünüzden yüksek seçmeyin:</strong> Fazlası izleyicide donma yapar, size değil.</li>
+<li><strong>Kare hızı mı, çözünürlük mü?</strong> Rekabetçi oyunlarda 720p60, 1080p30'dan daha iyi izlenir. Hızlı hareket, düşük FPS'i daha görünür kılar.</li>
+</ul>
+<p>NVIDIA kullanıcıları için <a href="https://www.nvidia.com/en-us/geforce/broadcasting/broadcast-app/" target="_blank" rel="noopener noreferrer">NVIDIA Broadcast</a>, gürültü giderme ve arka plan temizliği gibi katmanları ekleyerek işi kolaylaştırır — ama donanım gücünden yer kaplar; yayın bilgisayarında ölçülü kullanın.</p>
+
+<h2>Ses: izleyiciyi kaçıran asıl unsur</h2>
+<p>Kötü görüntü izlenir; kötü ses izlenmez. Öncelik sırası:</p>
+<ol>
+<li><strong>Mikrofon, kulaklığa göre önce gelir:</strong> Oyun sesini hoparlörden verip mikrofona kaçırmak yankı üretir. Yayında <strong>mutlaka kulaklık</strong> kullanın.</li>
+<li><strong>Ses seviyeleri:</strong> Konuşma –6 dB civarında, oyun sesi –10 ila –15 dB, müzik –20 dB altında kalsın. OBS'in ses miksajında kaynakları tek tek kısarak denge kurun.</li>
+<li><strong>Gürültü kesici:</strong> OBS'te "Gürültü Giderici" filtresini ekleyin; klavye ve fan sesini belirgin biçimde azaltır.</li>
+<li><strong>Ağzı kapatma (push-to-talk):</strong> Eviniz sesliyse, yalnızca konuştuğunuzda açılan bir mikrofon en temiz yoldur.</li>
+</ol>
+
+<h2>Yayın sahnesi: az ama düzgün</h2>
+<p>İlk yayın için gereken üç katman:</p>
+<ul>
+<li><strong>Oyun katmanı:</strong> Tam ekran, üstte.</li>
+<li><strong>Kamera katmanı:</strong> Köşede, 320×180 civarı; yüzün ışığı karşıdan, arkadan değil.</li>
+<li><strong>Bilgi katmanı:</strong> Sohbet (chat overlay), abone/ödül bildirimi ve alt bant (sonraki hedef gibi tek satır).</li>
+</ul>
+<p>Çok fazla overlay, hem izleyiciyi hem bilgisayarı yorar. <a href="https://streamlabs.com/" target="_blank" rel="noopener noreferrer">Streamlabs</a> veya <a href="https://www.elgato.com/" target="_blank" rel="noopener noreferrer">Elgato</a> gibi araçlar bildirim ve sahne yönetimini kolaylaştırır; ama ilk hafta <strong>üst üste iki yeni araç kurmayın.</strong></p>
+
+<img src="../images/oyun-yayini-obs-rehberi-2026-3.svg?v=20261116-b" alt="Bitrate ve çözünürlük seçim tablosunu gösteren TechWave çizimi" width="800">
+
+<h2>En sık 6 sorun ve çözümü</h2>
+<table>
+<tr><th>Sorun</th><th>Olası neden</th><th>Çözüm</th></tr>
+<tr><td>Yayın donuyor</td><td>Bitrate yükün üstünde</td><td>Bitrate'i 1000 Kbps düşürün</td></tr>
+<tr><td>Ekran siyah</td><td>Yakalama modu yanlış</td><td>Oyun → Pencere yakalama arasında geçin</td></tr>
+<tr><td>Kendini duyuyor</td><td>Yankı / çift mikrofon</td><td>Kulaklık takın, gereksiz ses kaynaklarını kapatın</td></tr>
+<tr><td>Kareler dalgalı</td><td>Görüntü kodlayıcı yükü</td><td>NVENC/AMF donanım kodlayıcıya geçin</td></tr>
+<tr><td>Oyun FPS düşüyor</td><td>Yayın oyunu yarışıyor</td><td>Oyun FPS'ini sınırlayın, 2. monitörden izleyin</td></tr>
+<tr><td>İzleyici sesi kesik</td><td>İnternet kararsız</td><td>Kablolu bağlantı, hız yerine kararlılık önemli</td></tr>
+</table>
+<p>Oyun tarafındaki FPS sorunları için <a href="oyunda-fps-artirma-rehberi.html">FPS artırma rehberimizdeki</a> 12 çözümü de uygulayabilirsiniz — yayın açıkken oyun bilgisayarı iki iş yapar.</p>
+
+<h2>Twitch ve YouTube: hangisi ne için?</h2>
+<ul>
+<li><strong>Twitch:</strong> Oyun izleyicisinin doğal toplandığı yer. Sohbet kültürü güçlü, keşif zor; <strong>düzenli yayın takvimi</strong> olmadan büyüme yavaş olur.</li>
+<li><strong>YouTube Live:</strong> Kayıtlar kalıcı olarak arşivde kalır ve arama ile bulunur. Tekrar izlenme getirisi Twitch'ten yüksektir; canlı akış ile kanal kitlesi birlikte büyür.</li>
+<li><strong>Strateji:</strong> Aynı içeriği iki platformda da deneyin; 4 hafta sonra hangisinde etkileşim yüksekse ağırlığı oraya verin. Yayın saatini, izleyicinin çevrimiçi olduğu saatlere göre seçin.</li>
+</ul>
+<p>Kayıt/kliplere geçiş için <a href="https://youtube.com/live" target="_blank" rel="noopener noreferrer">YouTube canlı yayın</a> dokümanları yeterli bir başlangıçtır.</p>
+
+<h2>Yayın güvenliği ve gizlilik</h2>
+<p>Canlı yayında her şey görünür durur; üç kural baş ağrılarını önler:</p>
+<ul>
+<li><strong>IP sızıntısına dikkat:</strong> Sohbet başlıkları, bağlantı istekleri ve oyun içi davetler yoluyla kişisel bilgiler görünebilir. Twitch sohbetini yalnızca <strong>takipçiler</strong> veya <strong>aboneler</strong> için sınırlandırın; ilk aylarda gerekirse sohbeti tamamen kapatın.</li>
+<li><strong>Adres ve kişisel veri:</strong> Kamerada ev adresi, kimlik, fatura gibi belgeler görünmesin. Masaüstünüzü yayından önce temizleyin — dosya adları, bildirimler ve tarayıcı sekmeleri ekrana düşebilir.</li>
+<li><strong>Bildirim ve Discord sesleri:</strong> Bilgisayar ve telefon bildirimlerini kapatın; özel mesaj sesleri bile yayına girer. <a href="windows-11-gizlilik-ayarlari-veri-toplama-kapatma.html">Windows 11 gizlilik ayarları</a> rehberimizdeki adımlar, yayıncılar için de geçerlidir.</li>
+<li><strong>İzleyiciyle sınır:</strong> Bağış mesajlarında ve sohbette hakaret içerikli metinleri otomatik filtreleyin; ilk aylarda moderasyon aracına gerek kalmadan sohbeti yavaş modda tutmak yeterlidir.</li>
+</ul>
+
+<h2>Bir haftalık başlangıç planı</h2>
+<ol>
+<li><strong>1. gün:</strong> OBS kurulumu + kaynaklar + sadece kayıt (yayın yok), 10 dakikalık test videosu izleyin.</li>
+<li><strong>2. gün:</strong> Ses dengesi: konuşma, oyun, müzik seviyelerini ayarlayın.</li>
+<li><strong>3. gün:</strong> İlk canlı yayın — sadece 30 dakika, tek oyun, tanıdıklarınızla.</li>
+<li><strong>4. gün:</strong> Kaydı izleyin; ses, kadraj ve tempo sorunlarını not edin.</li>
+<li><strong>5. gün:</strong> Donma varsa bitrate/çözünürlük tablosuna dönün, tek değişken değiştirin.</li>
+<li><strong>6. gün:</strong> Sahneyi sadeleştirin: kamera, sohbet, alt bant.</li>
+<li><strong>7. gün:</strong> Haftalık yayın programını yazın ve duyurun — tutarlılık, kaliteden önce gelir.</li>
+</ol>
+
+<h2>Merak edilenler</h2>
+<ul>
+<li><strong>Yayın için kaç FPS gerekiyor?</strong> — 60 FPS oyun için ideal; ama yayıncının kendi oyunu 60 FPS'te sabitse izleyici için yeterlidir. Önce oyunun kararlılığı, sonra yayının parlaklığı.</li>
+<li><strong>Işık gerekli mi?</strong> — Evet ama pahalı olması gerekmez. Yüzünüzün önünde pencere veya ucuz bir ring light, kameranın otomatik ayarını iyileştirir.</li>
+<li><strong>Oyun kaydını ayrı mı tutayım?</strong> — Twitch/YouTube için ayrı yerel kayıt, kliplere ve özet videolara kaynak olur. Diskiniz yeterliyse açık bırakın.</li>
+<li><strong>İlk yayında kimse yoksa ne yapmalıyım?</strong> — Normaldir. Yayın arşivi kalıcıdır; sohbet olmadan anlatma prizması kazanmak, ilk ayların işidir.</li>
+<li><strong>Donanım yükseltmek şart mı?</strong> — Önce yazılım ayarları. Çoğu donma, yanlış bitrate veya yanlış yakalama modundan kaynaklanır.</li>
+<li><strong>Yayın sırasında kayıt dosyası nereye gider?</strong> — Varsayılan olarak Vidyolar/OBS klasörüne. Kayıt diskini yayın diskinden ayrı tutmak, kare düşüşünü azaltır; mümkün değilse en azından kaydı harici bir diske yazın.</li>
+<li><strong>Yayın sırasında oyun içi sohbeti açabilir miyim?</strong> — Takım arkadaşlarınızın sesi yayına girerse mahremiyet sorunu olur; takım sohbetini ayrı bir kanala alıp yalnızca kendi mikrofonunuzu yayına verin.</li>
+<li><strong>Bitrate'i platform mu sınırlıyor?</strong> — Evet, her platformun önerdiği üst sınır vardır. Önerilen değerin üzerine çıkmak kaliteyi artırmaz, izleyicide takılma yaratır; platformun resmî önerisini referans alın.</li>
+<li><strong>Oyun ile yayını aynı ekran mı izlemeliyim?</strong> — İlk haftalarda evet; ama ikinci bir ekran (hatta telefondan yayın önizlemesi) hem kadrajı hem sohbeti takip etmeyi kolaylaştırır.</li>
+</ul>
+
+<h2>Sonuç: yayın, bir alışkanlıktır</h2>
+<p>İlk yayının kusursuz olması gerekmiyor; <strong>ilk yayının yapılması</strong> gerekiyor. Ayarları küçük tutun, tek değişkenle oynayın ve her yayın sonrası tek bir şeyi düzeltin.</p>
+<p>Bugün yapacağınız tek şey: OBS'i indirin, oyununuzu yakalayın ve 10 dakikalık <strong>yerel kayıt</strong> alın. Kaydı izlediğinizde eksik olanı göreceksiniz — canlı yayına geçmek, o noktada çok daha kolay olacak.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</div></div></article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=18efba2"></script>
+</body></html>

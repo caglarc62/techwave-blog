@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 320) rotate(90) scale(320)">
+      <stop stop-color="#a855f7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">En Sık 6 Yayın Sorunu</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Çoğu donma, yanlış ayar değil; yanlış değerden gelir</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="200" width="510" height="110" rx="14" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="98" y="242" font-size="21" font-weight="800" fill="#fca5a5">Yayın donuyor</text>
+      <text x="98" y="274" font-size="17" fill="#94a3b8">neden: bitrate yükün üstünde</text>
+      <text x="98" y="300" font-size="17" font-weight="700" fill="#e2e8f0">çözüm: 1000 Kbps düşürün</text>
+    </g>
+    <g>
+      <rect x="70" y="326" width="510" height="110" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="98" y="368" font-size="21" font-weight="800" fill="#fbbf24">Ekran siyah çıkıyor</text>
+      <text x="98" y="400" font-size="17" fill="#94a3b8">neden: yakalama modu yanlış</text>
+      <text x="98" y="426" font-size="17" font-weight="700" fill="#e2e8f0">çözüm: oyun ↔ pencere yakalama</text>
+    </g>
+    <g>
+      <rect x="70" y="452" width="510" height="110" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="98" y="494" font-size="21" font-weight="800" fill="#c4b5fd">Kendini duyuyor</text>
+      <text x="98" y="526" font-size="17" fill="#94a3b8">neden: yankı / çift mikrofon</text>
+      <text x="98" y="552" font-size="17" font-weight="700" fill="#e2e8f0">çözüm: kulaklık + kaynakları kısın</text>
+    </g>
+
+    <g>
+      <rect x="620" y="200" width="510" height="110" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="648" y="242" font-size="21" font-weight="800" fill="#67e8f9">Kareler dalgalı</text>
+      <text x="648" y="274" font-size="17" fill="#94a3b8">neden: yazılım kodlayıcı yükü</text>
+      <text x="648" y="300" font-size="17" font-weight="700" fill="#e2e8f0">çözüm: NVENC / AMF'e geçin</text>
+    </g>
+    <g>
+      <rect x="620" y="326" width="510" height="110" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="648" y="368" font-size="21" font-weight="800" fill="#86efac">Oyun FPS düşüyor</text>
+      <text x="648" y="400" font-size="17" fill="#94a3b8">neden: yayın oyunla yarışıyor</text>
+      <text x="648" y="426" font-size="17" font-weight="700" fill="#e2e8f0">çözüm: FPS sınırı + 2. ekran</text>
+    </g>
+    <g>
+      <rect x="620" y="452" width="510" height="110" rx="14" fill="#0c1526" stroke="#a3e635" stroke-width="2"/>
+      <text x="648" y="494" font-size="21" font-weight="800" fill="#bef264">İzleyicide kesik ses</text>
+      <text x="648" y="526" font-size="17" fill="#94a3b8">neden: internet kararsız</text>
+      <text x="648" y="552" font-size="17" font-weight="700" fill="#e2e8f0">çözüm: kablolu bağlantı</text>
+    </g>
+  </g>
+</svg>
