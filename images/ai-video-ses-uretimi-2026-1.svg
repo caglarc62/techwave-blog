@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#ec4899" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#ec4899"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#f9a8d4" letter-spacing="3">AI ARAÇLARI · GÖRSEL-İŞİTSEL</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Video ve Ses Üretimi</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">2026 Rehberi</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Senaryo · Prompt · Tutarlılık · Kurgu · Telif</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="620" y="130" width="510" height="330" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="652" y="176" font-size="20" font-weight="700" fill="#64748b" letter-spacing="3">METİNDEN VİDEOYA AKIŞ</text>
+
+    <g>
+      <rect x="652" y="200" width="446" height="56" rx="10" fill="#132033" stroke="#ec4899" stroke-width="1.5"/>
+      <text x="676" y="235" font-size="19" fill="#e2e8f0">1 · Senaryo: tek cümlelik hedef</text>
+      <rect x="652" y="268" width="446" height="56" rx="10" fill="#132033" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="676" y="303" font-size="19" fill="#e2e8f0">2 · Prompt: 5 eleman (konu, kamera...)</text>
+      <rect x="652" y="336" width="446" height="56" rx="10" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="676" y="371" font-size="19" fill="#e2e8f0">3 · Üretim: her sahne 3 tur</text>
+      <rect x="652" y="404" width="446" height="40" rx="10" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="676" y="431" font-size="19" font-weight="700" fill="#86efac">4 · Ses + kurgu + telif denetimi</text>
+    </g>
+  </g>
+
+  <g fill="#ec4899" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

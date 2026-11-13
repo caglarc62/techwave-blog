@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 300) rotate(90) scale(320)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Bir Günlük Üretim Akışı</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Temiz bir klip için yaklaşık 2 saat</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="196" width="520" height="94" rx="14" fill="#0c1526" stroke="#ec4899" stroke-width="2"/>
+      <circle cx="116" cy="243" r="20" fill="#132033" stroke="#ec4899" stroke-width="2"/>
+      <text x="116" y="251" font-size="20" font-weight="800" fill="#f9a8d4" text-anchor="middle">1</text>
+      <text x="152" y="236" font-size="22" font-weight="700" fill="#e2e8f0">Senaryo</text>
+      <text x="152" y="268" font-size="17" fill="#94a3b8">tek cümlelik hedef + sahne satırları (15 dk)</text>
+    </g>
+    <g>
+      <rect x="70" y="306" width="520" height="94" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <circle cx="116" cy="353" r="20" fill="#132033" stroke="#a855f7" stroke-width="2"/>
+      <text x="116" y="361" font-size="20" font-weight="800" fill="#c4b5fd" text-anchor="middle">2</text>
+      <text x="152" y="346" font-size="22" font-weight="700" fill="#e2e8f0">Referans</text>
+      <text x="152" y="378" font-size="17" fill="#94a3b8">karakter/ürün için tek kare onayı (10 dk)</text>
+    </g>
+    <g>
+      <rect x="70" y="416" width="520" height="94" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="116" cy="463" r="20" fill="#132033" stroke="#f59e0b" stroke-width="2"/>
+      <text x="116" y="471" font-size="20" font-weight="800" fill="#fbbf24" text-anchor="middle">3</text>
+      <text x="152" y="456" font-size="22" font-weight="700" fill="#e2e8f0">Üretim</text>
+      <text x="152" y="488" font-size="17" fill="#94a3b8">her sahne 3 tur, en iyisini seç (30 dk)</text>
+    </g>
+
+    <g>
+      <rect x="610" y="196" width="520" height="94" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <circle cx="656" cy="243" r="20" fill="#132033" stroke="#22d3ee" stroke-width="2"/>
+      <text x="656" y="251" font-size="20" font-weight="800" fill="#67e8f9" text-anchor="middle">4</text>
+      <text x="692" y="236" font-size="22" font-weight="700" fill="#e2e8f0">Ses</text>
+      <text x="692" y="268" font-size="17" fill="#94a3b8">anlatım + müzik + seviye (–18…–24 dB) (20 dk)</text>
+    </g>
+    <g>
+      <rect x="610" y="306" width="520" height="94" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <circle cx="656" cy="353" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="361" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">5</text>
+      <text x="692" y="346" font-size="22" font-weight="700" fill="#e2e8f0">Kurgu</text>
+      <text x="692" y="378" font-size="17" fill="#94a3b8">kesim, altyazı, renk, geçiş (45 dk)</text>
+    </g>
+    <g>
+      <rect x="610" y="416" width="520" height="94" rx="14" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <circle cx="656" cy="463" r="20" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+      <text x="656" y="471" font-size="20" font-weight="800" fill="#86efac" text-anchor="middle">6</text>
+      <text x="692" y="456" font-size="22" font-weight="700" fill="#e2e8f0">Denetim</text>
+      <text x="692" y="488" font-size="17" fill="#94a3b8">telif + format + yazı kontrolü (10 dk)</text>
+    </g>
+
+    <rect x="70" y="530" width="1060" height="46" rx="12" fill="#132033" stroke="#4ade80" stroke-width="2"/>
+    <text x="98" y="560" font-size="20" font-weight="700" fill="#86efac">Hız, ilk üç turdan sonra gelir — ilk hedef kusursuz klibi değil, kontrollü klibi üretmektir</text>
+  </g>
+</svg>
