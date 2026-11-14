@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 320) rotate(90) scale(320)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Kullanıcı Kontrol Listesi</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Parayı vermeden önce 5 soru</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="196" width="1060" height="64" rx="12" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <circle cx="112" cy="228" r="16" fill="#14532d"/>
+      <text x="112" y="235" font-size="19" font-weight="800" fill="#86efac" text-anchor="middle">1</text>
+      <text x="148" y="235" font-size="21" font-weight="700" fill="#e2e8f0">Kontrat doğrulanmış mı? (Etherscan "Verified" rozeti)</text>
+    </g>
+    <g>
+      <rect x="70" y="274" width="1060" height="64" rx="12" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <circle cx="112" cy="306" r="16" fill="#164e63"/>
+      <text x="112" y="313" font-size="19" font-weight="800" fill="#67e8f9" text-anchor="middle">2</text>
+      <text x="148" y="313" font-size="21" font-weight="700" fill="#e2e8f0">Bağımsız denetim raporu yayımlanmış mı?</text>
+    </g>
+    <g>
+      <rect x="70" y="352" width="1060" height="64" rx="12" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="112" cy="384" r="16" fill="#78350f"/>
+      <text x="112" y="391" font-size="19" font-weight="800" fill="#fbbf24" text-anchor="middle">3</text>
+      <text x="148" y="391" font-size="21" font-weight="700" fill="#e2e8f0">Token onayında tutar sınırı koydum mu?</text>
+    </g>
+    <g>
+      <rect x="70" y="430" width="1060" height="64" rx="12" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <circle cx="112" cy="462" r="16" fill="#581c87"/>
+      <text x="112" y="469" font-size="19" font-weight="800" fill="#c4b5fd" text-anchor="middle">4</text>
+      <text x="148" y="469" font-size="21" font-weight="700" fill="#e2e8f0">Ekip ve multisig yönetimi şeffaf mı?</text>
+    </g>
+    <g>
+      <rect x="70" y="508" width="1060" height="64" rx="12" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <circle cx="112" cy="540" r="16" fill="#7f1d1d"/>
+      <text x="112" y="547" font-size="19" font-weight="800" fill="#fca5a5" text-anchor="middle">5</text>
+      <text x="148" y="547" font-size="21" font-weight="700" fill="#e2e8f0">Önce küçük tutarla test ettim mi?</text>
+    </g>
+  </g>
+</svg>

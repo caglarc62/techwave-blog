@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 320) rotate(90) scale(320)">
+      <stop stop-color="#22d3ee" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Klasik Sözleşme vs Akıllı Sözleşme</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Güven kurumdan koda taşındı</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="200" width="510" height="330" rx="16" fill="#0c1526" stroke="#64748b" stroke-width="2"/>
+    <text x="98" y="246" font-size="24" font-weight="800" fill="#94a3b8">KLASİK</text>
+    <g font-size="19" fill="#e2e8f0">
+      <text x="98" y="292">Uygulayan: mahkeme, icra</text>
+      <text x="98" y="332">Arabulucu: noter, banka</text>
+      <text x="98" y="372">Değişiklik: ek protokolle</text>
+      <text x="98" y="412">Hız: günler / haftalar</text>
+      <text x="98" y="452">Şeffaflık: taraflara özel</text>
+      <text x="98" y="492" fill="#f87171">Güven: kurumdadır</text>
+    </g>
+
+    <rect x="620" y="200" width="510" height="330" rx="16" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+    <text x="648" y="246" font-size="24" font-weight="800" fill="#fbbf24">AKILLI</text>
+    <g font-size="19" fill="#e2e8f0">
+      <text x="648" y="292">Uygulayan: zincir düğümleri</text>
+      <text x="648" y="332">Arabulucu: yok</text>
+      <text x="648" y="372">Değişiklik: genelde imkânsız</text>
+      <text x="648" y="412">Hız: saniyeler</text>
+      <text x="648" y="452">Şeffaflık: herkese açık</text>
+      <text x="648" y="492" fill="#4ade80">Güven: koda geçti</text>
+    </g>
+  </g>
+</svg>

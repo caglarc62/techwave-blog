@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light"><head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="Akıllı sözleşme rehberi: blok zincirde nasıl çalıştığı, Solidity ve diğer diller, DeFi ve sigorta gibi gerçek kullanım alanları, 6 temel riski, güvenli geliştirme ilkeleri ve kullanıcı kontrol listesi.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>Akıllı Sözleşme Nedir? Nasıl Çalışır ve Riskleri Rehberi (2026) — TechWave</title>
+<meta property="og:title" content="Akıllı Sözleşme Nedir? Nasıl Çalışır ve Riskleri">
+<meta property="og:description" content="Blok zincirde kodla çalışan sözleşmeler: adım adım çalışma mantığı, gerçek kullanım alanları, 6 risk ve güvenli geliştirme ilkeleri.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/akilli-sozlesme-2026-1.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Akıllı Sözleşme Nedir? Nasıl Çalışır ve Riskleri"><meta name="twitter:description" content="Blok zincirde kodla çalışan sözleşmeler: çalışma mantığı, kullanım alanları, riskler ve güvenli geliştirme ilkeleri."><meta name="twitter:image" content="https://techwaveblog.site/images/akilli-sozlesme-2026-1.png">
+<link rel="canonical" href="https://techwaveblog.site/articles/akilli-sozlesme-nasil-calisir-rehberi.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261107-seo">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Akıllı Sözleşme Nedir? Nasıl Çalışır ve Riskleri Rehberi","author":{"@type":"Person","name":"Çağlar ÇELİK"},"datePublished":"2026-11-14","dateModified":"2026-11-14","description":"Akıllı sözleşmelerin blok zincirde çalışma mantığı, Solidity, gerçek kullanım alanları, riskleri ve güvenli geliştirme ilkeleri.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/akilli-sozlesme-nasil-calisir-rehberi.html","image":"https://techwaveblog.site/images/akilli-sozlesme-2026-1.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Çağlar ÇELİK","jobTitle":"Teknoloji ve Yapay Zeka Yazarı","url":"https://techwaveblog.site","sameAs":[],"worksFor":{"@type":"Organization","name":"TechWave"}}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<article class="article-page"><div class="container">
+<div class="article-header"><span class="card-tag" data-category="Blockchain">Blockchain</span><h1 class="article-title">Akıllı Sözleşme Nedir? Nasıl Çalışır ve Riskleri Rehberi</h1><div class="article-meta"><span>📅 14 Kasım 2026</span><span>⏱ 8 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/akilli-sozlesme-2026-1.svg?v=20261114-hero" alt="Akıllı sözleşmenin blok zincirdeki çalışma akışını gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Akıllı sözleşme, sonuçları kendiliğinden uygulanan bir anlaşmadır: şartlar sağlandığında kod çalışır, para hareket eder, ortada noter yoktur.</strong> Bu basit fikir, DeFi'den sigortaya kadar milyarlarca dolarlık sistemin omurgası oldu — ama "akıllı" kelimesi sizi yanıltmasın: sözleşme değil, <strong>koddur</strong> ve koddaki her hata, geri alınamaz biçimde çalışır.</p>
+<p>Bu rehberde akıllı sözcelerin blok zincirde adım adım nasıl çalıştığını, hangi dillerle yazıldığını, gerçek hayattaki kullanım alanlarını, en sık görülen 6 riski ve hem geliştirici hem kullanıcı tarafındaki kontrol listelerini ele alıyoruz. Kontratların altındaki zinciri merak ediyorsanız <a href="blockchain-yazilimi-en-iyi-11-programlama-dili.html">blockchain programlama dilleri</a> rehberimizdeki dil karşılaştırmasını, cüzdan tarafını ise <a href="web3-kripto-cuzdan-guvenlik-rehberi.html">Web3 cüzdan güvenliği</a> rehberimizde görmüştünüz.</p>
+
+<h2>Akıllı sözleşme nedir: klasik sözleşmeyle farkı</h2>
+<p>Klasik bir sözleşme, mahkemenin yorumlayıp uyguladığı bir metindir. Akıllı sözleşme ise <strong>blok zincirde çalışan ve koşulları kod olarak ifade eden</strong> bir programdır; koşul gerçekleştiğinde sonucu zincirin kendisi uygular. <a href="https://ethereum.org/tr/smart-contracts/" target="_blank" rel="noopener noreferrer">Ethereum belgelerinin</a> tanımı nettir: kuraların doğrudan kodla yazıldığı, arabulucu olmadan çalışan bir sözleşme.</p>
+<table>
+<tr><th>Özellik</th><th>Klasik sözleşme</th><th>Akıllı sözleşme</th></tr>
+<tr><td>Uygulama</td><td>Mahkeme, icra daireleri</td><td>Blok zincir düğümleri otomatik</td></tr>
+<tr><td>Arabulucu</td><td>Noter, avukat, banka</td><td>Yok (güven, koda kayar)</td></tr>
+<tr><td>Değiştirilebilirlik</td><td>Ek protokolle değişir</td><td>Yayından sonra genelde değişmez</td></tr>
+<tr><td>Şeffaflık</td><td>Tarafara özel</td><td>Kod ve işlemler herkese açık</td></tr>
+<tr><td>Hız</td><td>Günler / haftalar</td><td>Saniyeler</td></tr>
+<tr><td>Yetki alanı</td><td>Ülke yasaları</td><td>Zincirin kuralları (yargı boşluğu)</td></tr>
+</table>
+<p>Özetle: geleneksel sözleşmede güven kurumdadır, akıllı sözleşmede <strong>kod ve kriptografiye</strong> kayar. Bu, gücü olduğu kadar riski de taşır.</p>
+
+<h2>Nasıl çalışır: blok zincirde dört adım</h2>
+<ol>
+<li><strong>Yazım:</strong> Geliştirici sözleşmeyi Solidity gibi bir dilde yazar (örnek: "bakiye 10 ETH'ten fazlaysa ödeme yap").</li>
+<li><strong>Derleme ve dağıtım:</strong> Kaynak kod, zincire gönderilecek makine koduna derlenir; işlem ücreti (gas) karşılığında zincire yerleştirilir. Sözleşmenin adresi — bir tür IBAN — burada doğar.</li>
+<li><strong>Doğrulama:</strong> Kod adresine bağlanır; <a href="https://etherscan.io/" target="_blank" rel="noopener noreferrer">Etherscan</a> gibi tarayıcılar, kaynak kodun gerçekten o adresle çalıştığını herkese gösterebilir.</li>
+<li><strong>Yürütme:</strong> Bir kullanıcı (veya başka bir sözleşme) işlem gönderdiğinde, zincir düğümleri aynı sonucu doğrular ve uygular. Sonuç geri alınamaz.</li>
+</ol>
+<p>Kritik ayrım: sözleşme <strong>"çalışmaya başladığında" bağlanır</strong>. Yani kod, gönderilmeden önce doğru olmalıdır; "sonra düzeltirim" mantığı burada işlemez. Düzeltme gerekiyorsa, en baştan güncelleyilebilir (upgradeable) tasarım yazılır — ki bu da ayrı bir risktir.</p>
+
+<img src="../images/akilli-sozlesme-2026-2.svg?v=20261114-a" alt="Akıllı sözleşme yürütme adımlarını gösteren TechWave çizimi" width="800">
+
+<h2>Gerçek hayattan kullanım alanları</h2>
+<ul>
+<li><strong>DeFi (merkeziyetsiz finans):</strong> Kredi, takas ve faiz havuzları. Bir likidasyon tetiklenince, insan müdahalesi olmadan varlık el değiştirir.</li>
+<li><strong>Sigorta:</strong> Uçuş gecikmesi gibi açık veriler (oracle) koşulu sağlarsa ödeme otomatik başlar — dosya, bekleme, inceleme yok.</li>
+<li><strong>Tedarik zinciri:</strong> Ürün fabrikadan depoya, ordan müşteriye geçtikçe kayıt zincire işlenir; sahtecilik izlenebilir hâle gelir.</li>
+<li><strong>Gayrimenkul ve tokenleştirme:</strong> Bir mülk, parça parça tokenlara bölünüp paylaşılabiliyor; kira geliri sözleşmeye yazılı oranla dağıtılıyor.</li>
+<li><strong>Oylama ve DAO'lar:</strong> Token bazlı oylama, sonuçların şeffaf ve otomatik sayımını sağlar.</li>
+<li><strong>Oyun ve dijital mülkiyet:</strong> Oyun içi varlıkların sahipliği ve ekonomisi, sözleşme kurallarıyla yönetiliyor.</li>
+</ul>
+<p>Ortak nokta: <strong>tekrarlanan, güven gerektiren ve arabulucu maliyeti yüksek</strong> işlemler. Buna karşılık tek seferlik, duygusal veya yoruma açık işlemler akıllı sözleşmeye pek uygun değildir.</p>
+
+<h2>Oracle: zincirin gerçek dünyayla köprüsü</h2>
+<p>Akıllı sözleşme kendi kendine dışarıyı <strong>göremez</strong>: fiyatı, hava durumunu, uçuş saatini bilemez. İşte <strong>oracle</strong>, bu bilgiyi zincire taşıyan aracıdır — ve sistemin en zayıf halkasıdır. Tek bir fiyat kaynağı manipüle edildiğinde, üzerine kurulu krediler ve likidasyonlar yanlış veriyle tetiklenir. Bu yüzden üretimdeki protokoller şunları zorunlu tutar:</p>
+<ul>
+<li><strong>Birden fazla bağımsız kaynak:</strong> Fiyat, tek borsadan değil, havuzlanmış birkaç kaynaktan ortalamalanır.</li>
+<li><strong>Tazelik sınırı:</strong> Eski fiyat kabul edilmez; sapma eşiği aşılırsa sözleşme durur, yanlışla çalışmaz.</li>
+<li><strong>Yedeklilik:</strong> Ana kaynak cevap vermezse ikinci bir sağlayıcı devreye girer; yoksa işlem ertelenir.</li>
+</ul>
+<p>Oracle katmanı aslında blockchain'in en ironik yeridir: merkeziyetsizlik iddiası, merkezi bir veri noktasına bağlılığı kadar güçlüdür. Projeyi incelerken kontrat kodundan önce, <strong>fiyatın nereden geldiğini</strong> sorun.</p>
+
+<h2>Hangi dil: Solidity, Rust, Vyper</h2>
+<p>En yaygın dil <strong>Solidity</strong>; Ethereum ve EVM uyumlu zincirlerin standartı. <a href="https://docs.soliditylang.org/en/latest/" target="_blank" rel="noopener noreferrer">Resmî dokümanları</a> dili, JavaScript'e benzeyen yapısıyla öğretiyor. Karşı tarafda:</p>
+<ul>
+<li><strong>Rust:</strong> Solana gibi yeni nesil zincirlerde; bellek güvenliğiyle öne çıkar.</li>
+<li><strong>Vyper:</strong> Kasıtlı olarak sade tutulmuş dil; okunabilirlik ve denetim kolaylığı hedefler.</li>
+<li><strong>Yeni nesil:</strong> Move (Aptos/Sui) gibi diller, dijital varlık hareketini dil seviyesinde güvenceye alır.</li>
+</ul>
+<p>Dil seçimi, hedef zincire bağlıdır; hangisinin "en iyi" olduğu yerine <strong>hangi ekosistemin size uyduğu</strong> doğru sorudur.</p>
+
+<h2>6 temel risk</h2>
+<table>
+<tr><th>Risk</th><th>Ne olur</th><th>Karşı önlem</th></tr>
+<tr><td>Kod açığı</td><td>Para sözleşme yerine saldırgana akar</td><td>Denetim, test, hazır kütüphane</td></tr>
+<tr><td>Değiştirilemezlik</td><td>Hata yayında kalır</td><td>Baştan upgradeable tasarım</td></tr>
+<tr><td>Oracle manipülasyonu</td><td>Yanlış fiyat/veriyle tetiklenme</td><td>Birden fazla bağımsız kaynak</td></tr>
+<tr><td>Gas ve tıkanma</td><td>İşlem ücreti fırlar, işlem sıkışır</td><td>Ağ tıkanıklığında beklemek</td></tr>
+<tr><td>Anahtar kaybı / hırsızlık</td><td>Sözleşme sahipliği ele geçirilir</td><td>Çoklu imza, kasaya bağlama</td></tr>
+<tr><td>Yasal boşluk</td><td>Anlaşmazlıkta muhatap belirsiz</td><td>Juridik metin + şeffaf kod</td></tr>
+</table>
+<p>En pahalısı ilk satır: 2016'daki The DAO olayında, kod hatası yüzünden milyonlarca ETH boşaltıldı; zincirin tarihi, bu olayın etkisiyle ikiye ayrıldı. O günden beri sektörün ilk kuralı aynı: <strong>yayına almadan önce denetlenmiş kod.</strong></p>
+
+<img src="../images/akilli-sozlesme-2026-3.svg?v=20261114-b" alt="Akıllı sözleşme risk haritasını gösteren TechWave çizimi" width="800">
+
+<h2>Güvenli geliştirme ilkeleri</h2>
+<ol>
+<li><strong>Hazır blokları kullanın:</strong> <a href="https://www.openzeppelin.com/" target="_blank" rel="noopener noreferrer">OpenZeppelin</a> gibi denetlenmiş <a href="https://docs.openzeppelin.com/contracts/5.x/" target="_blank" rel="noopener noreferrer">kütüphaneler</a>, token ve erişim kontrolünü sıfırdan yazmaktan kurtarır.</li>
+<li><strong>Küçük tutun:</strong> Tek sözleşme, tek sorumluluk. 500 satırlık "her şeyi yapan" kontrat denetimi imkânsızlaştırır.</li>
+<li><strong>Test edin, sonra denetlettirin:</strong> Birim testleri + test ağı; ardından bağımsız güvenlik denetimi.</li>
+<li><strong>Acil durum düğmesi düşünün:</strong> Büyük tutarlarda, zamanlayıcı (timelock) ve çoklu imza ile durdurma mekanizması bırakın.</li>
+<li><strong>Gözlemlenebilirlik:</strong> Olay (event) loglarını zengin yazın; saldırı sonrası zinciri ancak loglarla okuyabilirsiniz.</li>
+<li><strong>Sade kalın:</strong> Her güncellemeyi yeni sözleşme üzerinden yapın; eski kontratta biriken fonları "göç" (migration) ile taşıyın ve göçü de test edin. Karmaşık yamalar, yeni hata yüzeyi açar.</li>
+</ol>
+<p>Bu ilkelerin ortak amacı tek: <strong>hata yapmayı pahalı ve zor hâle getirmek.</strong> Denetim masrafı yüksek görünür; oysa yayın sonrası bir açığın maliyeti ondan kat kat büyüktür.</p>
+
+<h2>Kullanıcı tarafı: 5 maddelik kontrol listesi</h2>
+<ul>
+<li><strong>Kodu doğrulayın:</strong> Etherscan'da kontrat adresi "Verified" mi? Değilse, kaynak kodu bilinmiyor demektir.</li>
+<li><strong>Denetim raporunu arayın:</strong> Proje ekibi bağımsız denetim raporunu yayınlıyor mu? Yayınlamıyorsa büyük tutar girmeyin.</li>
+<li><strong>İzinlere dikkat:</strong> Cüzdanınızdan token onayı verirken "sınırsız" yetki yerine tutar sınırı koyun; gereken onayı zaman zaman geri çekin.</li>
+<li><strong>Topluluk ve şeffaflık:</strong> Sözleşme adresi, ekip ve anahtar yönetimi (multisig var mı?) açıkça paylaşılmış mı?</li>
+<li><strong>Küçük başlayın:</strong> Önce minimal tutarla deneyin; işlemi bir test cüzdanıyla tekrar edin, sonra büyütün.</li>
+</ul>
+
+<h2>Merak edilenler</h2>
+<ul>
+<li><strong>Akıllı sözleşme bağlayıcı mı?</strong> — Kod olarak evet; ama birçok ülkede "tarafların iradesi" hâlâ geçerli. Yargı, kodun kendisini değil, tarafların niyetini okur.</li>
+<li><strong>Yanlışlıkla gönderilen para geri alınır mı?</strong> — Genelde hayır. Geri alınamazlık, sistemin temelidir; bu yüzden adres doğrulama hayati.</li>
+<li><strong>Sözleşme değişebilir mi?</strong> — Varsayılan olarak hayır. Upgradeable tasarım ise yöneticilere yetki verir; bu yetkinin sınırlı ve zamanlayıcılı olması gerekir.</li>
+<li><strong>Akıllı sözleşme ile normal uygulama arasındaki fark nedir?</strong> — Normal uygulamanın verisi ve kararı sunucudadır; sahibi onu değiştirebilir veya kapatabilir. Akıllı sözleşmede karar, zincirdeki herkesin aynı doğruladığı kurala göre verilir; hiçbir tek taraf tek başına sonucu değiştiremez.</li>
+<li><strong>Güvenli bir sözleşmeyi ne zaman anlarız?</strong> — Tek bir özellikle değil, üçlüyle: doğrulanmış kaynak kod, bağımsız denetim raporu ve çoklu imzalı yönetim. Bu üçü bir arada değilse, ne kadar büyük proje olursa olsun beklemede kalmak en doğru karardır.</li>
+<li><strong>Gas ücreti neden var?</strong> — Kaynak tüketimini ölçen ve spam'i engelleyen mekanizmadır; işlem yoğunluğuna göre dalgalanır.</li>
+<li><strong>Küçük bütçeyle başlangıç mümkün mü?</strong> — Eğitim tarafında evet: test ağı, yerel kurulum ve <a href="blockchain-yazilimi-en-iyi-11-programlama-dili.html">Solidity temelleri</a> ile sıfır maliyetle denenebilir.</li>
+</ul>
+
+<h2>Sonuç: güven, kurumdan koda taşındı</h2>
+<p>Akıllı sözleşme, arabulucuyu ortadan kaldırıp hız ve şeffaflık kazandırır; karşılığında size <strong>kodu anlama sorumluluğunu</strong> yükler. Sistem "güvenli" değil, "doğrulanabilir"dir — fark bu.</p>
+<p>Bugün yapacağınız tek şey: Elinizdeki bir DeFi projesinin kontrat adresini Etherscan'da açın ve "Verified" rozetini, denetim raporu bağlantısını ve multisig yönetimini arayın. Bu üçü yoksa, ister yeni ister deneyimli olun, o projeye girmek için bir sebep yok. İlk kez deneyecekseniz tutarı küçük tutun; sistemi önce okuyun, sonra büyütün — bu iki adım, öğrenme sürecindeki en pahalı hataları engeller.</p>
+<p>Bu makale TechWave tarafından hazırlanmıştır.</p>
+</div></div></article>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0891b2;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=18efba2"></script>
+</body></html>
