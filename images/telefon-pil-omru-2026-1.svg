@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#4ade80" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#4ade80"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#86efac" letter-spacing="3">MOBİL · BATARYA</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Pil Ömrü Nasıl Uzatılır?</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">Batarya Sağlığı Rehberi</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Şarj kuralları · Hızlı şarj · Sıcaklık · Ölçüm</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="640" y="130" width="490" height="330" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="672" y="176" font-size="20" font-weight="700" fill="#64748b" letter-spacing="3">PİLİ YIPRATAN 3 ŞEY</text>
+
+    <g>
+      <rect x="672" y="200" width="426" height="80" rx="12" fill="#132033" stroke="#f87171" stroke-width="1.5"/>
+      <text x="696" y="234" font-size="21" font-weight="800" fill="#fca5a5">Yüksek gerilim</text>
+      <text x="696" y="264" font-size="17" fill="#94a3b8">%100'de uzun beklemek</text>
+
+      <rect x="672" y="296" width="426" height="80" rx="12" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="696" y="330" font-size="21" font-weight="800" fill="#fbbf24">Isı</text>
+      <text x="696" y="360" font-size="17" fill="#94a3b8">güneş + şarj + oyun aynı anda</text>
+
+      <rect x="672" y="392" width="426" height="44" rx="12" fill="#132033" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="696" y="421" font-size="19" font-weight="700" fill="#c4b5fd">Derin boşalma — %0'a inmek</text>
+    </g>
+  </g>
+
+  <g fill="#4ade80" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

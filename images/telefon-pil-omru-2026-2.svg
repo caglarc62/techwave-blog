@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 380) rotate(90) scale(300)">
+      <stop stop-color="#4ade80" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Şarj Altın Aralığı: %20 – %80</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Pilin dostu ılımlılıktır — tam dolum zorunlu değil</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <!-- skala cubugu -->
+    <rect x="70" y="220" width="1060" height="64" rx="16" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <rect x="70" y="220" width="212" height="64" rx="16" fill="#334155"/>
+    <rect x="282" y="220" width="636" height="64" fill="#14532d"/>
+    <rect x="918" y="220" width="212" height="64" rx="16" fill="#334155"/>
+    <text x="140" y="262" font-size="24" font-weight="800" fill="#94a3b8">%0–20</text>
+    <text x="530" y="262" font-size="26" font-weight="800" fill="#86efac">ALTIN ARALIK %20–80</text>
+    <text x="975" y="262" font-size="24" font-weight="800" fill="#94a3b8">%80–100</text>
+
+    <g font-size="19" fill="#e2e8f0">
+      <rect x="70" y="330" width="510" height="150" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="98" y="372" font-size="22" font-weight="800" fill="#86efac">YAPIN</text>
+      <text x="98" y="410">• Gündüz kısa ara şarjları</text>
+      <text x="98" y="442">• Optimize dolma özelliği açık</text>
+      <text x="98" y="474">• Serin ortam + sertifikalı alet</text>
+
+      <rect x="620" y="330" width="510" height="150" rx="14" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="648" y="372" font-size="22" font-weight="800" fill="#fca5a5">YAPMAYIN</text>
+      <text x="648" y="410">• Gece boyu %100'de bekletmek</text>
+      <text x="648" y="442">• Şarjda oyun / yayın</text>
+      <text x="648" y="474">• %0'a inip saatlerce bırakmak</text>
+    </g>
+
+    <rect x="70" y="514" width="1060" height="52" rx="12" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="98" y="547" font-size="20" font-weight="700" fill="#e2e8f9">Hızlı şarj gündüz ve serin ortamda; gece uzun şarj standart hızda kalsın</text>
+  </g>
+</svg>

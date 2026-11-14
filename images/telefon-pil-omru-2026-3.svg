@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 340) rotate(90) scale(320)">
+      <stop stop-color="#22d3ee" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Günlük Tüketim Dağılımı</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">İlk iki kalem sabittir: ekran ve konum servisleri</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <!-- yatay cubuklar -->
+    <g>
+      <text x="70" y="228" font-size="20" font-weight="700" fill="#e2e8f0">Ekran (parlaklık + 120 Hz)</text>
+      <rect x="360" y="206" width="640" height="30" rx="8" fill="#132033"/>
+      <rect x="360" y="206" width="448" height="30" rx="8" fill="#22d3ee"/>
+      <text x="1024" y="229" font-size="20" font-weight="800" fill="#67e8f9">%35</text>
+    </g>
+    <g>
+      <text x="70" y="300" font-size="20" font-weight="700" fill="#e2e8f0">Konum (GPS arka plan)</text>
+      <rect x="360" y="278" width="640" height="30" rx="8" fill="#132033"/>
+      <rect x="360" y="278" width="288" height="30" rx="8" fill="#a855f7"/>
+      <text x="1024" y="301" font-size="20" font-weight="800" fill="#c4b5fd">%22</text>
+    </g>
+    <g>
+      <text x="70" y="372" font-size="20" font-weight="700" fill="#e2e8f0">Mobil veri / zayıf sinyal</text>
+      <rect x="360" y="350" width="640" height="30" rx="8" fill="#132033"/>
+      <rect x="360" y="350" width="224" height="30" rx="8" fill="#f59e0b"/>
+      <text x="1024" y="373" font-size="20" font-weight="800" fill="#fbbf24">%17</text>
+    </g>
+    <g>
+      <text x="70" y="444" font-size="20" font-weight="700" fill="#e2e8f0">Uygulama + bildirim</text>
+      <rect x="360" y="422" width="640" height="30" rx="8" fill="#132033"/>
+      <rect x="360" y="422" width="192" height="30" rx="8" fill="#4ade80"/>
+      <text x="1024" y="445" font-size="20" font-weight="800" fill="#86efac">%15</text>
+    </g>
+    <g>
+      <text x="70" y="516" font-size="20" font-weight="700" fill="#e2e8f0">Diğer (sistem, senkron)</text>
+      <rect x="360" y="494" width="640" height="30" rx="8" fill="#132033"/>
+      <rect x="360" y="494" width="112" height="30" rx="8" fill="#64748b"/>
+      <text x="1024" y="517" font-size="20" font-weight="800" fill="#94a3b8">%11</text>
+    </g>
+
+    <text x="70" y="566" font-size="19" font-weight="600" fill="#64748b">Ölçüm: Android → Ayarlar → Batarya · iOS → Ayarlar → Pil</text>
+  </g>
+</svg>
