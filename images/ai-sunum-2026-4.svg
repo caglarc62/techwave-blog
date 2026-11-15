@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 340) rotate(90) scale(320)">
+      <stop stop-color="#f87171" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f87171" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Sık Yapılan 6 Hata</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">AI "hazır" dedi diye sunum hazır olmaz</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="200" width="510" height="110" rx="14" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="98" y="242" font-size="21" font-weight="800" fill="#fca5a5">İlk çıktıyı sunmak</text>
+      <text x="98" y="274" font-size="17" fill="#94a3b8">yanlış sayı, zayıf sıralama</text>
+      <text x="98" y="300" font-size="17" font-weight="700" fill="#e2e8f0">doğrusu: taslağı editör gibi yeniden yaz</text>
+    </g>
+    <g>
+      <rect x="70" y="326" width="510" height="110" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="98" y="368" font-size="21" font-weight="800" fill="#fbbf24">15+ slayt</text>
+      <text x="98" y="400" font-size="17" fill="#94a3b8">dinleyici kaybı</text>
+      <text x="98" y="426" font-size="17" font-weight="700" fill="#e2e8f0">doğrusu: 10 dakika = 10 slayt</text>
+    </g>
+    <g>
+      <rect x="70" y="452" width="510" height="110" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="98" y="494" font-size="21" font-weight="800" fill="#c4b5fd">Slayttan okumak</text>
+      <text x="98" y="526" font-size="17" fill="#94a3b8">sunucu gereksizleşir</text>
+      <text x="98" y="552" font-size="17" font-weight="700" fill="#e2e8f0">doğrusu: slayt özet, anlatım detay</text>
+    </g>
+
+    <g>
+      <rect x="620" y="200" width="510" height="110" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="648" y="242" font-size="21" font-weight="800" fill="#67e8f9">Her slaytta farklı tema</text>
+      <text x="648" y="274" font-size="17" fill="#94a3b8">görsel kaos</text>
+      <text x="648" y="300" font-size="17" font-weight="700" fill="#e2e8f0">doğrusu: tek tema, tek vurgu rengi</text>
+    </g>
+    <g>
+      <rect x="620" y="326" width="510" height="110" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="648" y="368" font-size="21" font-weight="800" fill="#86efac">Veri kaynağını kontrol etmemek</text>
+      <text x="648" y="400" font-size="17" fill="#94a3b8">toplantıda güven kaybı</text>
+      <text x="648" y="426" font-size="17" font-weight="700" fill="#e2e8f0">doğrusu: her rakam kaynakla eşleşir</text>
+    </g>
+    <g>
+      <rect x="620" y="452" width="510" height="110" rx="14" fill="#0c1526" stroke="#94a3b8" stroke-width="2"/>
+      <text x="648" y="494" font-size="21" font-weight="800" fill="#cbd5e1">Hassas veriyi yapıştırmak</text>
+      <text x="648" y="526" font-size="17" fill="#94a3b8">gizlilik ihlali</text>
+      <text x="648" y="552" font-size="17" font-weight="700" fill="#e2e8f0">doğrusu: kurumsal araç + onay</text>
+    </g>
+  </g>
+</svg>

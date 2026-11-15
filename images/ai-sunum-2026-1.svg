@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 300) rotate(90) scale(300)">
+      <stop stop-color="#a855f7" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="160" rx="4" fill="#a855f7"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#c4b5fd" letter-spacing="3">AI ARAÇLARI · REHBER</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">AI ile Sunum Hazırlama</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">Adım Adım 30 Dakikada</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Araç seçimi · Prompt kalıbı · Tasarım · Prova</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="640" y="130" width="490" height="330" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="672" y="176" font-size="20" font-weight="700" fill="#64748b" letter-spacing="3">7 ADIMLI AKIŞ</text>
+
+    <g>
+      <rect x="672" y="196" width="426" height="42" rx="8" fill="#132033" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="694" y="224" font-size="17" fill="#e2e8f0">1 · Amaç tek cümle · 2 · Ham malzeme</text>
+      <rect x="672" y="246" width="426" height="42" rx="8" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="694" y="274" font-size="17" fill="#e2e8f0">3 · Taslak ürettir · 4 · Veri doğrula</text>
+      <rect x="672" y="296" width="426" height="42" rx="8" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="694" y="324" font-size="17" fill="#e2e8f0">5 · Tasarımı sadeleştir · 6 · Konuşma notu</text>
+      <rect x="672" y="346" width="426" height="42" rx="8" fill="#132033" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="694" y="374" font-size="17" fill="#e2e8f0">7 · Yüksek sesle prova + PDF yedek</text>
+      <rect x="672" y="404" width="426" height="42" rx="8" fill="#132033" stroke="#f87171" stroke-width="1.5"/>
+      <text x="694" y="432" font-size="17" font-weight="700" fill="#fca5a5">Kural: her rakam tek tek kaynağa bakılır</text>
+    </g>
+  </g>
+
+  <g fill="#a855f7" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="500" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

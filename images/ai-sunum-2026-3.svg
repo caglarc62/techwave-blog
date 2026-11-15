@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 320) rotate(90) scale(320)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Sunum Tasarımının 6 Kuralı</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Araç iskeleti kurar, kaliteyi siz sabitlersiniz</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="200" width="340" height="150" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="98" y="244" font-size="22" font-weight="800" fill="#86efac">1 · Tek fikir</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="98" y="282">1 slayt = 1 fikir</text>
+        <text x="98" y="312">iki fikir varsa iki slayt</text>
+      </g>
+    </g>
+    <g>
+      <rect x="430" y="200" width="340" height="150" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="458" y="244" font-size="22" font-weight="800" fill="#67e8f9">2 · Az metin</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="458" y="282">6 satırdan fazlası okunmaz</text>
+        <text x="458" y="312">sahnede 28 punto altı</text>
+      </g>
+    </g>
+    <g>
+      <rect x="790" y="200" width="340" height="150" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="818" y="244" font-size="22" font-weight="800" fill="#c4b5fd">3 · Görsel ya da sayı</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="818" y="282">güçlü bir rakam yeter</text>
+        <text x="818" y="312">üçü bir arada olmasın</text>
+      </g>
+    </g>
+    <g>
+      <rect x="70" y="370" width="340" height="150" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="98" y="414" font-size="22" font-weight="800" fill="#fbbf24">4 · Tutarlılık</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="98" y="452">tek tema, tek vurgu rengi</text>
+        <text x="98" y="482">tema değiştiyse sabitle</text>
+      </g>
+    </g>
+    <g>
+      <rect x="430" y="370" width="340" height="150" rx="14" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="458" y="414" font-size="22" font-weight="800" fill="#fca5a5">5 · Boşluk</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="458" y="452">beyaz alan nefestir</text>
+        <text x="458" y="482">her yeri doldurma</text>
+      </g>
+    </g>
+    <g>
+      <rect x="790" y="370" width="340" height="150" rx="14" fill="#0c1526" stroke="#94a3b8" stroke-width="2"/>
+      <text x="818" y="414" font-size="22" font-weight="800" fill="#cbd5e1">6 · Telif</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="818" y="452">görsel kullanım hakkı açık mı</text>
+        <text x="818" y="482">AI görseline iddia ekleme</text>
+      </g>
+    </g>
+
+    <rect x="70" y="540" width="1060" height="44" rx="12" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="98" y="569" font-size="19" font-weight="700" fill="#e2e8f9">Sıralama: üret → doğrula → sadeleştir → prova → PDF yedek</text>
+  </g>
+</svg>

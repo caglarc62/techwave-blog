@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 330) rotate(90) scale(320)">
+      <stop stop-color="#22d3ee" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="110" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Hangi Araç Kime Göre?</text>
+  <text x="70" y="152" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Dosyanız neredeyse, orada üretin</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="196" width="510" height="80" rx="12" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="96" y="230" font-size="21" font-weight="800" fill="#67e8f9">PowerPoint + Copilot</text>
+      <text x="96" y="260" font-size="17" fill="#94a3b8">Kurumsal dosyada çalışır · M365 aboneliği</text>
+    </g>
+    <g>
+      <rect x="70" y="288" width="510" height="80" rx="12" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="96" y="322" font-size="21" font-weight="800" fill="#86efac">Google Slides + Gemini</text>
+      <text x="96" y="352" font-size="17" fill="#94a3b8">Ortak düzenleme · okul ve ekip işleri</text>
+    </g>
+    <g>
+      <rect x="70" y="380" width="510" height="80" rx="12" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="96" y="414" font-size="21" font-weight="800" fill="#c4b5fd">Gamma / Presentations.ai</text>
+      <text x="96" y="444" font-size="17" fill="#94a3b8">Hızlı, modern tasarım · marka şablonu</text>
+    </g>
+    <g>
+      <rect x="70" y="472" width="510" height="80" rx="12" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="96" y="506" font-size="21" font-weight="800" fill="#fbbf24">Canva / Notion AI</text>
+      <text x="96" y="536" font-size="17" fill="#94a3b8">Görsel kütüphanesi · not → slayt akışı</text>
+    </g>
+
+    <g>
+      <rect x="620" y="196" width="510" height="356" rx="16" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+      <text x="650" y="242" font-size="22" font-weight="800" fill="#e2e8f9">Karar Kuralı</text>
+      <g font-size="19" fill="#e2e8f0">
+        <text x="650" y="290">• Kurumdaysanız: mevcut dosya</text>
+        <text x="650" y="330">• Tarayıcıda yaşıyorsanız: Slides</text>
+        <text x="650" y="370">• Hızlı demo: Gamma benzeri</text>
+        <text x="650" y="410">• Görsel ağırlıklı: Canva</text>
+      </g>
+      <g font-size="17" fill="#94a3b8">
+        <text x="650" y="456">Yeni platform öğrenmek,</text>
+        <text x="650" y="482">kazandığı zamanı siler.</text>
+        <text x="650" y="520" fill="#67e8f9" font-weight="700">AI %80'i bitirir, %20 sizin</text>
+      </g>
+    </g>
+  </g>
+</svg>
