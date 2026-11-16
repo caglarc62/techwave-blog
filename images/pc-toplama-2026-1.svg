@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(890 300) rotate(90) scale(310)">
+      <stop stop-color="#4ade80" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgA)"/>
+  <rect width="1200" height="600" fill="url(#glowA)"/>
+
+  <rect x="70" y="204" width="8" height="170" rx="4" fill="#4ade80"/>
+  <text x="104" y="246" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#86efac" letter-spacing="3">OYUN · TOPLAMA REHBERİ</text>
+  <text x="104" y="310" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Oyun Bilgisayarı Toplama</text>
+  <text x="104" y="362" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">2026: Bütçeye Göre 3 Sistem</text>
+  <text x="104" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Hedef · Parça seçimi · Uyumluluk · Montaj · Test</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="640" y="130" width="490" height="340" rx="18" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="672" y="176" font-size="20" font-weight="700" fill="#64748b" letter-spacing="3">3 SEGMENT</text>
+
+    <g>
+      <rect x="672" y="196" width="426" height="72" rx="10" fill="#132033" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="694" y="226" font-size="18" font-weight="800" fill="#86efac">GİRİŞ · 1080p 60-100 fps</text>
+      <text x="694" y="254" font-size="16" fill="#94a3b8">RTX 5060 sınıfı · 16 GB · 1 TB · 35-45 bin TL</text>
+      <rect x="672" y="278" width="426" height="72" rx="10" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="694" y="308" font-size="18" font-weight="800" fill="#67e8f9">ORTA · 1440p 100+ fps</text>
+      <text x="694" y="336" font-size="16" fill="#94a3b8">RTX 5070 sınıfı · 32 GB · 2 TB · 60-75 bin TL</text>
+      <rect x="672" y="360" width="426" height="72" rx="10" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="694" y="390" font-size="18" font-weight="800" fill="#fbbf24">ÜST · 4K 60+ / 1440p 240</text>
+      <text x="694" y="418" font-size="16" fill="#94a3b8">RTX 5080-5090 · 32-64 GB · 110 bin TL+</text>
+      <rect x="672" y="442" width="426" height="30" rx="8" fill="#0f2b1e" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="694" y="463" font-size="16" font-weight="700" fill="#86efac">Kural: GPU bütçenin %35-45'i</text>
+    </g>
+  </g>
+
+  <g fill="#4ade80" opacity="0.85"><circle cx="150" cy="130" r="4"/><circle cx="540" cy="510" r="4"/><circle cx="1160" cy="120" r="3"/></g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 330) rotate(90) scale(330)">
+      <stop stop-color="#22d3ee" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Parça Seçiminin 6 Kuralı</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Uyumsuz parça, en pahalı hatadır</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="190" width="340" height="150" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="98" y="234" font-size="22" font-weight="800" fill="#67e8f9">1 · CPU + Soket</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="98" y="272">işlemci soketi = anakart</text>
+        <text x="98" y="302">6-8 çekirdek standart</text>
+      </g>
+    </g>
+    <g>
+      <rect x="430" y="190" width="340" height="150" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="458" y="234" font-size="22" font-weight="800" fill="#86efac">2 · GPU bütçesi</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="458" y="272">toplamın %35-45'i</text>
+        <text x="458" y="302">VRAM: 8 taban, 12 konfor</text>
+      </g>
+    </g>
+    <g>
+      <rect x="790" y="190" width="340" height="150" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="818" y="234" font-size="22" font-weight="800" fill="#c4b5fd">3 · RAM çift kanal</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="818" y="272">32 GB (2×16) yeni standart</text>
+        <text x="818" y="302">XMP/EXPO'yu açmayı unutma</text>
+      </g>
+    </g>
+    <g>
+      <rect x="70" y="360" width="340" height="150" rx="14" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="98" y="404" font-size="22" font-weight="800" fill="#fbbf24">4 · PSU</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="98" y="442">en ucuzlanmayan parça</text>
+        <text x="98" y="472">80+ Gold · watt + %30 pay</text>
+      </g>
+    </g>
+    <g>
+      <rect x="430" y="360" width="340" height="150" rx="14" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="458" y="404" font-size="22" font-weight="800" fill="#fca5a5">5 · Soğutma + hava</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="458" y="442">kule/AIO, mesh ön panel</text>
+        <text x="458" y="472">GPU 85°C altı hedefi</text>
+      </g>
+    </g>
+    <g>
+      <rect x="790" y="360" width="340" height="150" rx="14" fill="#0c1526" stroke="#94a3b8" stroke-width="2"/>
+      <text x="818" y="404" font-size="22" font-weight="800" fill="#cbd5e1">6 · SSD 1-2 TB</text>
+      <g font-size="17" fill="#94a3b8">
+        <text x="818" y="442">NVMe zorunlu, 100 GB'lık</text>
+        <text x="818" y="472">kurulumlar yaygınlaştı</text>
+      </g>
+    </g>
+
+    <rect x="70" y="534" width="1060" height="44" rx="12" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+    <text x="98" y="563" font-size="19" font-weight="700" fill="#e2e8f9">Uyumluluk: soket · RAM tipi · GPU boyutu · PSU watt · kasa formu · BIOS sürümü</text>
+  </g>
+</svg>
