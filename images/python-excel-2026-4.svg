@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 340) rotate(90) scale(330)">
+      <stop stop-color="#f87171" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#f87171" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Sık Yapılan 7 Hata</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Hepsi ilk gün yakalanabilir</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="188" width="510" height="84" rx="12" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="96" y="222" font-size="19" font-weight="800" fill="#fca5a5">openpyxl kurulu değil</text>
+      <text x="96" y="250" font-size="16" fill="#e2e8f0">çözüm: pip install openpyxl</text>
+      <rect x="70" y="284" width="510" height="84" rx="12" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="96" y="318" font-size="19" font-weight="800" fill="#fbbf24">encoding / sep yanlış</text>
+      <text x="96" y="346" font-size="16" fill="#e2e8f0">çözüm: utf-8 · sep=";"</text>
+      <rect x="70" y="380" width="510" height="84" rx="12" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="96" y="414" font-size="19" font-weight="800" fill="#c4b5fd">Tarih string kalır</text>
+      <text x="96" y="442" font-size="16" fill="#e2e8f0">çözüm: pd.to_datetime · dayfirst</text>
+      <rect x="70" y="476" width="510" height="84" rx="12" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="96" y="510" font-size="19" font-weight="800" fill="#67e8f9">Ham dosyanın üstüne yazmak</text>
+      <text x="96" y="538" font-size="16" fill="#e2e8f0">çözüm: her zaman yeni dosya adı</text>
+    </g>
+    <g>
+      <rect x="620" y="188" width="510" height="84" rx="12" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="646" y="222" font-size="19" font-weight="800" fill="#86efac">index=False unutuldu</text>
+      <text x="646" y="250" font-size="16" fill="#e2e8f0">çözüm: yazma komutuna ekle</text>
+      <rect x="620" y="284" width="510" height="84" rx="12" fill="#0c1526" stroke="#94a3b8" stroke-width="2"/>
+      <text x="646" y="318" font-size="19" font-weight="800" fill="#cbd5e1">SettingWithCopyWarning</text>
+      <text x="646" y="346" font-size="16" fill="#e2e8f0">çözüm: df.loc[mask, "sütun"] = değer</text>
+      <rect x="620" y="380" width="510" height="84" rx="12" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="646" y="414" font-size="19" font-weight="800" fill="#fca5a5">1 GB dosyayı olduğu gibi okumak</text>
+      <text x="646" y="442" font-size="16" fill="#e2e8f0">çözüm: chunksize + usecols</text>
+      <rect x="620" y="476" width="510" height="84" rx="12" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="646" y="510" font-size="19" font-weight="800" fill="#fbbf24">Eksik hücreyi sessiz atlamak</text>
+      <text x="646" y="538" font-size="16" fill="#e2e8f0">çözüm: isna().sum() ile önce say</text>
+    </g>
+  </g>
+</svg>

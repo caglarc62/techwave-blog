@@ -1,5 +1,15 @@
 [
  {
+  "t": "Python ile Excel ve CSV: Veri İşleme Rehberi (2026)",
+  "s": "python-excel-csv-veri-isleme-rehberi",
+  "c": "Python",
+  "e": "pandas mı openpyxl mı, kurulum, okuma-temizleme-özetleme, çok sayfalı Excel yazma, aylık dosya birleştirme, büyük dosya ipuçları ve 7 sık hata.",
+  "d": "17 Kasım 2026",
+  "i": "https://techwaveblog.site/images/python-excel-2026-1.png",
+  "h": "Python ile Excel ve CSV: Veri İşleme Rehberi (2026) | Python Python ile Excel ve CSV: Veri İşleme Rehberi (2026) 📅 17 Kasım 2026 ⏱ 9 dk okuma 👤 Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. Tabloda bir satır elle taşımak yerine, aynı işi 20 satırlık bir kodla bitirmek — veri işleme, Python'un en hızlı geri dönüş aldığı alandır. Aylık raporu 3 dakikada birleştirmek, bin satırlık CSV'de hatalı kayıtları ayıklamak, aynı formülü yüz dosyaya uygula",
+  "x": "python excel, python csv okuma, pandas rehber, openpyxl, read_excel, groupby, pivot_table, excel rapor otomasyonu"
+ },
+ {
   "t": "Oyun Bilgisayarı Toplama Rehberi 2026: Bütçeye Göre 3 Sistem",
   "s": "oyun-bilgisayari-toplama-rehberi-2026",
   "c": "Oyun",
