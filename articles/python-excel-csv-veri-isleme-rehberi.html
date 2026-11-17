@@ -73,9 +73,9 @@ df = pd.read_excel("satislar.xlsx", sheet_name="Ocak")
 print(df.head())      # ilk 5 satır
 print(df.shape)       # (satır, sütun)
 print(df.dtypes)      # her sütunun tipi</code></pre>
-<p>CSV için tek fark: <code>pd.read_csv("veri.csv", encoding="utf-8", sep=";")</code>. Türkiye kaynaklı CSV'lerde noktalı virgül ayırıcıdır ve eski dosyalarda <code>cp1254</code> encoding'i gerekir — <code>UnicodeDecodeError</code> görürseniz ilk bakacağınız yer budur. CSV modülünün kendi davranışı için <a href="https://docs.python.org/3/library/csv.html" target="_blank" rel="noopener noreferrer">resmî csv sayfasına</a> bakabilirsiniz.</p>
+<p>CSV için tek fark: <code>pd.read_csv("veri.csv", encoding="utf-8", sep=";")</code>. Türkiye kaynaklı CSV'lerde noktalı virgül ayırıcıdır ve eski dosyalarda <code>cp1254</code> encoding'i gerekir — <code>UnicodeDecodeError</code> görürseniz ilk bakacağınız yer budur. Hızlı başlangıç için <a href="https://pandas.pydata.org/docs/user_guide/10min.html" target="_blank" rel="noopener noreferrer">pandas'ın 10 dakikalık tanıtımına</a> da bakın; CSV modülünün kendi davranışı için <a href="https://docs.python.org/3/library/csv.html" target="_blank" rel="noopener noreferrer">resmî csv sayfasına</a> başvurabilirsiniz.</p>
 
-<img src="../images/python-excel-2026-2.svg?v=20261117-a" alt="Veri temizleme adımlarını gösteren TechWave çizimi" width="800">
+<img src="../images/python-excel-2026-2.svg?v=20261117-a" alt="Hangi aracın ne yaptığını ve kurulum adımlarını gösteren TechWave çizimi" width="800">
 
 <h2>Adım adım: oku, temizle, özetle</h2>
 <p>Ham dosya her zaman kirli olur. Standart dört adım:</p>
@@ -134,7 +134,7 @@ hepsi.to_excel("yillik_birlesik.xlsx", index=False)
 print(len(parcalar), "dosya birleşti →", hepsi.shape)</code></pre>
 <p>Bu kalıp, "12 ayrı CSV'yi elle Excel'e yapıştırma" işini kalıcı olarak bitirir. Benzer dosya bulma mantığı scraping rehberimizdeki <a href="python-web-scraping-rehberi-2026.html">requests/BeautifulSoup akışıyla</a> birleşince, veri toplama-birleştirme hattı komple kurulmuş olur.</p>
 
-<img src="../images/python-excel-2026-3.svg?v=20261117-b" alt="Sık yapılan Excel hatalarını gösteren TechWave çizimi" width="800">
+<img src="../images/python-excel-2026-3.svg?v=20261117-b" alt="Veri temizlemenin 4 kontrolünü ve sık tuzakları gösteren TechWave çizimi" width="800">
 
 <h2>Veriyi görmek: tek satırlık grafik</h2>
 <p>Özeti tablo olarak okumak yerine grafik, ayırt edici tespitleri hızlandırır:</p>
@@ -155,6 +155,9 @@ plt.savefig("sehirler.png", dpi=150)</code></pre>
 </ul>
 
 <h2>Sık yapılan 7 hata</h2>
+
+<img src="../images/python-excel-2026-4.svg?v=20261117-c" alt="Sık yapılan 7 Excel hatasını ve çözümlerini gösteren TechWave çizimi" width="800">
+
 <table>
 <tr><th>Hata</th><th>Belirti</th><th>Çözüm</th></tr>
 <tr><td>openpyxl'ı kurmamak</td><td>ExcelWriter hata verir</td><td><code>pip install openpyxl</code></td></tr>
