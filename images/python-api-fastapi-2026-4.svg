@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 340) rotate(90) scale(330)">
+      <stop stop-color="#f87171" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f87171" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">En Az 3 Test</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">TestClient sunucuyu başlatmadan istek atar</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="190" width="510" height="96" rx="12" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="96" y="228" font-size="20" font-weight="800" fill="#86efac">1 · Başarılı yol</text>
+      <text x="96" y="256" font-size="17" fill="#94a3b8">POST geçerli veri → 201 + id döner</text>
+      <rect x="70" y="298" width="510" height="96" rx="12" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="96" y="336" font-size="20" font-weight="800" fill="#fca5a5">2 · Geçersiz girdi</text>
+      <text x="96" y="364" font-size="17" fill="#94a3b8">fiyat = -5 → 422 ile reddedilir</text>
+      <rect x="70" y="406" width="510" height="96" rx="12" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="96" y="444" font-size="20" font-weight="800" fill="#fbbf24">3 · Bulunamayan kayıt</text>
+      <text x="96" y="472" font-size="17" fill="#94a3b8">GET /urunler/999 → 404</text>
+    </g>
+
+    <g>
+      <rect x="620" y="190" width="510" height="96" rx="12" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="646" y="228" font-size="20" font-weight="800" fill="#67e8f9">Yayınlama sırası</text>
+      <text x="646" y="256" font-size="17" fill="#94a3b8">yerel deneme → test → ortam değişkeni</text>
+      <rect x="620" y="298" width="510" height="96" rx="12" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="646" y="336" font-size="20" font-weight="800" fill="#c4b5fd">Üretim sunucusu</text>
+      <text x="646" y="364" font-size="17" fill="#94a3b8">--reload KAPALI · çok süreçli · günlükleme</text>
+      <rect x="620" y="406" width="510" height="96" rx="12" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="646" y="444" font-size="20" font-weight="800" fill="#86efac">İzlenecekler</text>
+      <text x="646" y="472" font-size="17" fill="#94a3b8">istek süresi · hata oranı · 5xx sayısı</text>
+    </g>
+
+    <rect x="70" y="530" width="1060" height="48" rx="12" fill="#2a1215" stroke="#f87171" stroke-width="2"/>
+    <text x="98" y="561" font-size="19" font-weight="700" fill="#fca5a5">Sözleşme sabit kalır: URL ve JSON değişmez, altındaki mekanizma değişebilir</text>
+  </g>
+</svg>

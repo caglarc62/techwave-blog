@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 330) rotate(90) scale(330)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Pydantic Tek Model, Üç İş</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Doğrulama mantığını uç noktada değil, modelde yazın</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="190" width="510" height="130" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="96" y="232" font-size="21" font-weight="800" fill="#67e8f9">1 · Tip kontrolü</text>
+      <text x="96" y="266" font-size="17" fill="#94a3b8">fiyat: float olmalı</text>
+      <text x="96" y="296" font-size="17" fill="#94a3b8">metin gelirse çevrilir ya da reddedilir</text>
+
+      <rect x="70" y="336" width="510" height="130" rx="14" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="96" y="378" font-size="21" font-weight="800" fill="#c4b5fd">2 · Sınır denetimi</text>
+      <text x="96" y="412" font-size="17" fill="#94a3b8">fiyat &gt; 0 · stok ≥ 0</text>
+      <text x="96" y="442" font-size="17" fill="#94a3b8">ad 2-100 karakter arası</text>
+
+      <rect x="70" y="482" width="510" height="88" rx="14" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="96" y="522" font-size="21" font-weight="800" fill="#86efac">3 · Dönüşüm</text>
+      <text x="96" y="552" font-size="17" fill="#94a3b8">varsayılan değerler uygulanır</text>
+    </g>
+
+    <g>
+      <rect x="620" y="190" width="510" height="196" rx="14" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+      <text x="646" y="232" font-size="20" font-weight="800" fill="#e2e8f9">Reddedilen istek</text>
+      <g font-size="18" fill="#e2e8f0">
+        <text x="646" y="274">HTTP <tspan font-weight="800" fill="#fca5a5">422</tspan> · Unprocessable Entity</text>
+        <text x="646" y="312" fill="#94a3b8">alan adı + beklenen tip + alınan tip</text>
+        <text x="646" y="348" fill="#94a3b8">istemci hatayı anında görür</text>
+      </g>
+
+      <rect x="620" y="402" width="510" height="168" rx="14" fill="#0f2b1e" stroke="#4ade80" stroke-width="2"/>
+      <text x="646" y="444" font-size="20" font-weight="800" fill="#86efac">Kazancı</text>
+      <g font-size="18" fill="#e2e8f0">
+        <text x="646" y="486">• Doğrulama kodu tek yerde</text>
+        <text x="646" y="522">• Uç nokta temiz kalır</text>
+        <text x="646" y="558">• Dokümanda şema otomatik</text>
+      </g>
+    </g>
+  </g>
+</svg>

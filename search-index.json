@@ -1,5 +1,15 @@
 [
  {
+  "t": "Python ile API Geliştirme: FastAPI ile REST Servis Yazma Rehberi",
+  "s": "python-api-fastapi-rehberi",
+  "c": "Python",
+  "e": "FastAPI ile REST servis yazma rehberi: Pydantic modelleme, girdi doğrulama, hata kodları, OpenAPI dokümantasyonu, TestClient ile test ve yayınlama akışı.",
+  "d": "18 Kasım 2026",
+  "i": "https://techwaveblog.site/images/python-api-fastapi-2026-1.png",
+  "h": "Python ile API Geliştirme: FastAPI ile REST Servis Yazma Rehberi | Python Python ile API Geliştirme: FastAPI ile REST Servis Yazma Rehberi 📅 18 Kasım 2026 ⏱ 9 dk okuma 👤 Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. API, iki programın konuştuğu dildir; Python'da bu dili en akıcı konuşan çerçeve FastAPI'dir. Bir mobil uygulama, bir web arayüzü ve bir veritabanı aynı veriyi paylaşmak zorunda kaldığında arada duran şey tam olarak budur — doğru tasarlanmış bir",
+  "x": "python api, fastapi, rest api, pydantic, endpoint, openapi, swagger, uvicorn, api doğrulama, http kodları"
+ },
+ {
   "t": "DeFi (Merkeziyetsiz Finans) Nedir? Nasıl Çalışır ve Riskleri",
   "s": "defi-merkeziyetsiz-finans-rehberi",
   "c": "Blockchain",

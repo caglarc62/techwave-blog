@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 330) rotate(90) scale(330)">
+      <stop stop-color="#a855f7" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">İstek 6 Adımda İşlenir</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">FastAPI, girdiyi sizin yerinize doğrular</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="190" width="660" height="64" rx="12" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="96" y="230" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#67e8f9">1 · </tspan>İstemci isteği gönderir (JSON gövde)</text>
+      <rect x="70" y="266" width="660" height="64" rx="12" fill="#132033" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="96" y="306" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#c4b5fd">2 · </tspan>Yönlendirici (routing) doğru fonksiyonu bulur</text>
+      <rect x="70" y="342" width="660" height="64" rx="12" fill="#132033" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="96" y="382" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#86efac">3 · </tspan>Pydantic modeli girdiyi doğrular · hata = 422</text>
+      <rect x="70" y="418" width="660" height="64" rx="12" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="96" y="458" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#fbbf24">4 · </tspan>İş mantığı çalışır · gerekirse 404 yükseltilir</text>
+      <rect x="70" y="494" width="660" height="64" rx="12" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="96" y="534" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#67e8f9">5-6 · </tspan>JSON yanıt · HTTP kodu · OpenAPI'ye yazılır</text>
+    </g>
+
+    <g>
+      <rect x="770" y="190" width="360" height="368" rx="16" fill="#132033" stroke="#1e3a5f" stroke-width="2"/>
+      <text x="800" y="234" font-size="22" font-weight="800" fill="#e2e8f9">Uç Nokta</text>
+      <g font-size="18" fill="#e2e8f0">
+        <text x="800" y="282">POST</text>
+        <text x="870" y="282" fill="#67e8f9">/urunler</text>
+        <text x="800" y="318" fill="#94a3b8">başarı kodu: 201</text>
+        <text x="800" y="366">GET</text>
+        <text x="870" y="366" fill="#67e8f9">/urunler/42</text>
+        <text x="800" y="402" fill="#94a3b8">bulunamazsa: 404</text>
+        <text x="800" y="450">DELETE</text>
+        <text x="900" y="450" fill="#67e8f9">/urunler/42</text>
+        <text x="800" y="486" fill="#94a3b8">gövde boş · 204</text>
+      </g>
+      <rect x="800" y="512" width="300" height="30" rx="8" fill="#0f2b1e" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="824" y="533" font-size="16" font-weight="700" fill="#86efac">/docs otomatik üretilir</text>
+    </g>
+  </g>
+</svg>
