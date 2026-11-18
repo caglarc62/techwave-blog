@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 330) rotate(90) scale(330)">
+      <stop stop-color="#4ade80" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgC)"/>
+  <rect width="1200" height="600" fill="url(#glowC)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">İşlem Öncesi 8 Kontrol</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Yıldızlı yorum değil, belge bak</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="190" width="510" height="96" rx="12" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="96" y="228" font-size="20" font-weight="800" fill="#c4b5fd">1 · Protokol yaşı</text>
+      <text x="96" y="256" font-size="17" fill="#94a3b8">ana ağda en az bir-iki dönem kesintisiz</text>
+      <rect x="70" y="298" width="510" height="96" rx="12" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+      <text x="96" y="336" font-size="20" font-weight="800" fill="#67e8f9">2 · Denetim raporu</text>
+      <text x="96" y="364" font-size="17" fill="#94a3b8">bağımsız firma, mümkünse birden fazla</text>
+      <rect x="70" y="406" width="510" height="96" rx="12" fill="#0c1526" stroke="#4ade80" stroke-width="2"/>
+      <text x="96" y="444" font-size="20" font-weight="800" fill="#86efac">3 · Likidite kilidi</text>
+      <text x="96" y="472" font-size="17" fill="#94a3b8">havuz token'ları kilitli mi, süresi ne?</text>
+    </g>
+    <g>
+      <rect x="620" y="190" width="510" height="96" rx="12" fill="#0c1526" stroke="#f59e0b" stroke-width="2"/>
+      <text x="646" y="228" font-size="20" font-weight="800" fill="#fbbf24">4 · Doğrulanmış kod</text>
+      <text x="646" y="256" font-size="17" fill="#94a3b8">doğrulanmamış sözleşme = kara kutu</text>
+      <rect x="620" y="298" width="510" height="96" rx="12" fill="#0c1526" stroke="#f87171" stroke-width="2"/>
+      <text x="646" y="336" font-size="20" font-weight="800" fill="#fca5a5">5 · Oracle kaynağı</text>
+      <text x="646" y="364" font-size="17" fill="#94a3b8">tek kaynak mı, çoklu kaynak mı?</text>
+      <rect x="620" y="406" width="510" height="96" rx="12" fill="#0c1526" stroke="#a855f7" stroke-width="2"/>
+      <text x="646" y="444" font-size="20" font-weight="800" fill="#c4b5fd">6-8 · Marj · tutar · cüzdan</text>
+      <text x="646" y="472" font-size="17" fill="#94a3b8">likidasyon mesafesi · kaybetmeyeceğin</text>
+    </g>
+
+    <rect x="70" y="530" width="1060" height="48" rx="12" fill="#0f2b1e" stroke="#4ade80" stroke-width="2"/>
+    <text x="98" y="561" font-size="19" font-weight="700" fill="#86efac">DeFi cüzdanını günlük cüzdanından ayır — her imza penceresi binlerce dolar gönderebilir</text>
+  </g>
+</svg>
