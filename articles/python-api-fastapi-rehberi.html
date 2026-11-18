@@ -157,7 +157,7 @@ def urun_getir(urun_id: int):
 <li><strong>İnsan için:</strong> denenebilir, etkileşimli bir arayüz — parametre girin, "Execute" deyin, canlı yanıtı görün</li>
 <li><strong>Makine için:</strong> <code>/openapi.json</code> üzerinden standart OpenAPI şeması — bu dosyadan istemci kodu üretilebilir</li>
 </ul>
-<p>Bu, ayrı bir doküman yazma yükünü tamamen ortadan kaldırır: <strong>kod değiştiğinde doküman da değişir, çünkü ikisi aynı kaynaktan doğar.</strong> Şemanın resmî tanımı için <a href="https://spec.openapis.org/oas/v3.1.0" target="_blank" rel="noopener noreferrer">OpenAPI 3.1 şartnamesine</a> ve araç ekosistemi için <a href="https://swagger.io/specification/" target="_blank" rel="noopener noreferrer">Swagger spesifikasyonuna</a> bakılabilir.</p>
+<p>Bu, ayrı bir doküman yazma yükünü tamamen ortadan kaldırır: <strong>kod değiştiğinde doküman da değişir, çünkü ikisi aynı kaynaktan doğar.</strong> Şemanın resmî tanımı için <a href="https://spec.openapis.org/oas/v3.1.0" target="_blank" rel="noopener noreferrer">OpenAPI 3.1 şartnamesine</a> ve araç ekosistemi için <a href="https://swagger.io/specification/" target="_blank" rel="noopener noreferrer">Swagger spesifikasyonuna</a> bakılabilir. Servis bir kez çalışır hâle geldiğinde, onu betiklerle kullanmak isteyenler için <a href="python-otomasyon-rehberi-sik-isleri-kendiliginden.html">Python otomasyon rehberimiz</a>; yanıtı CSV'ye döküp raporlamaya bağlamak isteyenler için <a href="python-excel-csv-veri-isleme-rehberi.html">Excel/CSV veri işleme rehberimiz</a> bir sonraki adımdır.</p>
 
 <h2>Test yazmak: değişiklikten korkmayın</h2>
 <p>FastAPI, <code>TestClient</code> ile sunucuyu gerçekten başlatmadan istek atmanıza izin verir. Bu, testleri hızlı ve deterministik yapar:</p>
@@ -173,7 +173,7 @@ def test_urun_olustur():
 def test_eksik_alan_red():
     r = client.post("/urunler", json={"fiyat": -5})
     assert r.status_code == 422</code></pre>
-<p>En az üç testi hep yazın: <strong>başarılı yol, geçersiz girdi, bulunamayan kayıt.</strong> Bunlar, API'nizin sözleşme tarafını korur. Testin kurulumu için <a href="https://docs.python.org/3/library/json.html" target="_blank" rel="noopener noreferrer">json modülü</a> dokümanı ve Python test ekosistemi başlangıç için yeterlidir.</p>
+<p>En az üç testi hep yazın: <strong>başarılı yol, geçersiz girdi, bulunamayan kayıt.</strong> Bunlar, API'nizin sözleşme tarafını korur. Testin kurulumu için <a href="https://docs.python.org/3/library/json.html" target="_blank" rel="noopener noreferrer">json modülü</a> dokümanı ve Python test ekosistemi başlangıç için yeterlidir. Servisten gelen veriyi kazıyarak toplamanız gerekirse <a href="python-web-scraping-rehberi-2026.html">web scraping rehberimiz</a> aynı Python becerisini başka bir kapıda kullanır.</p>
 
 <img src="../images/python-api-fastapi-2026-4.svg?v=20261118-c" alt="API test senaryolarını gösteren TechWave çizimi" width="800">
 
