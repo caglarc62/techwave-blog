@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowD" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 340) rotate(90) scale(330)">
+      <stop stop-color="#4ade80" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgD)"/>
+  <rect width="1200" height="600" fill="url(#glowD)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Bir Daha Dolmasın</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Kalıcı çözüm: tek seferlik kurulum, aylık 10 dakika</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="70" y="190" width="660" height="64" rx="12" fill="#132033" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="96" y="230" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#86efac">1 · </tspan>Otomatik temizlemeyi açın (Akıllı Depolama / Kullanılmayanları Kaldır)</text>
+      <rect x="70" y="266" width="660" height="64" rx="12" fill="#132033" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="96" y="306" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#67e8f9">2 · </tspan>Otomatik indirmeleri kapatın (WhatsApp, Telegram, müzik)</text>
+      <rect x="70" y="342" width="660" height="64" rx="12" fill="#132033" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="96" y="382" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#c4b5fd">3 · </tspan>Çekim kalitesini 1080p'ye indirin — dosya birkaç kat küçülür</text>
+      <rect x="70" y="418" width="660" height="64" rx="12" fill="#132033" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="96" y="458" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#fbbf24">4 · </tspan>Her ay 10 dakika: Son Silinenler + İndirilenler + uygulamalar</text>
+      <rect x="70" y="494" width="660" height="64" rx="12" fill="#132033" stroke="#f87171" stroke-width="1.5"/>
+      <text x="96" y="534" font-size="19" fill="#e2e8f0"><tspan font-weight="800" fill="#fca5a5">5 · </tspan>Bulut 5 GB'ın farkında olun: kota dolunca yedek DURUR</text>
+    </g>
+
+    <g>
+      <rect x="770" y="190" width="360" height="368" rx="16" fill="#0c1526" stroke="#1e3a5f" stroke-width="2"/>
+      <text x="800" y="234" font-size="22" font-weight="800" fill="#e2e8f9">Sık Yapılan Hatalar</text>
+      <g font-size="17" fill="#e2e8f0">
+        <text x="800" y="282"><tspan font-weight="800" fill="#fca5a5">✗ </tspan>"Diğer"i silmeye çalışmak</text>
+        <text x="800" y="330"><tspan font-weight="800" fill="#fca5a5">✗ </tspan>Tüm veriyi silen düğmeye basmak</text>
+        <text x="800" y="378"><tspan font-weight="800" fill="#fca5a5">✗ </tspan>Yedekleri görmeden silmek</text>
+        <text x="800" y="426"><tspan font-weight="800" fill="#fca5a5">✗ </tspan>Silinenler klasörünü unutmak</text>
+        <text x="800" y="474"><tspan font-weight="800" fill="#fca5a5">✗ </tspan>Yılda bir büyük temizlik</text>
+        <text x="800" y="522"><tspan font-weight="800" fill="#86efac">✓ </tspan>Aylık kısa rutin + otomasyon</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1a2e"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 330) rotate(90) scale(330)">
+      <stop stop-color="#a855f7" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgB)"/>
+  <rect width="1200" height="600" fill="url(#glowB)"/>
+
+  <text x="70" y="106" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff">Önce Haritayı Çıkarın</text>
+  <text x="70" y="148" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">Yanlış yeri silmeyin — alan gerçekten nereye gidiyor?</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="190" width="510" height="368" rx="16" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+    <text x="98" y="236" font-size="24" font-weight="800" fill="#67e8f9">ANDROID</text>
+    <text x="98" y="272" font-size="18" fill="#94a3b8">Ayarlar → Depolama alanı</text>
+    <g font-size="18" fill="#e2e8f0">
+      <text x="98" y="320">1 · Kategori kategori kullanım</text>
+      <text x="98" y="358">2 · "Yer Aç" aracını çalıştırın</text>
+      <text x="98" y="396">3 · Akıllı Depolama'yı açın</text>
+      <text x="98" y="434">4 · Uygulama önbelleklerini temizleyin</text>
+      <text x="98" y="472">5 · Kullanılmayanları arşivleyin</text>
+      <text x="98" y="510">6 · İndirilen dosyaları süzün</text>
+    </g>
+
+    <rect x="620" y="190" width="510" height="368" rx="16" fill="#132033" stroke="#a855f7" stroke-width="2"/>
+    <text x="648" y="236" font-size="24" font-weight="800" fill="#c4b5fd">IPHONE</text>
+    <text x="648" y="272" font-size="18" fill="#94a3b8">Ayarlar → Genel → iPhone Saklama Alanı</text>
+    <g font-size="18" fill="#e2e8f0">
+      <text x="648" y="320">1 · Apple önerilerini değerlendirin</text>
+      <text x="648" y="358">2 · Kaldır mı Sil mi ayrımını bilin</text>
+      <text x="648" y="396">3 · Kullanılmayanları kaldırın</text>
+      <text x="648" y="434">4 · Son Silinenler'i boşaltın</text>
+      <text x="648" y="472">5 · İndirilmiş videoları kontrol edin</text>
+      <text x="648" y="510">6 · En İyi Saklama'yı açın</text>
+    </g>
+
+    <rect x="70" y="568" width="1060" height="10" rx="5" fill="#1e3a5f"/>
+  </g>
+</svg>
