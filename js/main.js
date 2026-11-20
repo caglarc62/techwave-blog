@@ -315,26 +315,51 @@
 
   initComments();
 
-  /* ---------- Populer Makaleler (Metrica) ---------- */
+  /* ---------- Son Yazılar (kenar widget) ----------
+     popular.json yerine deploy edilen küçük latest.json kullanılır;
+     her sayfada 404 hatası üretmez. Yeni yazı sonrası adsense_fix.py
+     tekrar çalıştırılarak latest.json tazelenir. */
   function initPopular() {
     var list = document.querySelector('.popular-list');
     if (!list) return;
 
-    fetch(PATH + 'popular.json')
-      .then(function (r) { return r.json(); })
+    fetch(PATH + 'latest.json')
+      .then(function (r) { if (!r.ok) throw new Error('latest'); return r.json(); })
       .then(function (items) {
         if (!items || !items.length) return;
         list.innerHTML = items.map(function (it, i) {
           return '<li><a href="' + PATH + 'articles/' + it.s + '.html">' +
             '<span class="popular-num">' + (i + 1) + '</span>' +
             '<span class="popular-body"><span class="popular-t">' + it.t + '</span>' +
-            '<span class="popular-v">' + it.v + ' okuma</span></span></a></li>';
+            '<span class="popular-v">' + (it.d || '') + '</span></span></a></li>';
         }).join('');
       })
       .catch(function () {});
   }
 
   initPopular();
+
+  /* ---------- Çerez Bildirimi (KVKK) ---------- */
+  function initCookieNotice() {
+    try { if (localStorage.getItem('tw-cookie-ok')) return; } catch (e) { return; }
+    var bar = document.createElement('div');
+    bar.className = 'cookie-notice';
+    bar.setAttribute('role', 'dialog');
+    bar.setAttribute('aria-label', 'Çerez bildirimi');
+    bar.innerHTML =
+      '<p>Bu site, deneyimi geliştirmek ve reklamları ölçmek için çerez kullanır. ' +
+      'Ayrıntılar için <a href="' + PATH + 'gizlilik-politikasi.html">Gizlilik Politikası</a>' +
+      ' sayfasına bakabilirsiniz.</p>' +
+      '<button type="button" class="cookie-ok">Tamam</button>';
+    document.body.appendChild(bar);
+    bar.querySelector('.cookie-ok').addEventListener('click', function () {
+      try { localStorage.setItem('tw-cookie-ok', '1'); } catch (e) {}
+      bar.classList.add('is-hidden');
+      setTimeout(function () { bar.remove(); }, 400);
+    });
+  }
+
+  initCookieNotice();
 
   /* ---------- Başlat ---------- */
   insertAdSlots();
