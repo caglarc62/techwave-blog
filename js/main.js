@@ -16,7 +16,7 @@
     if (toggle) toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
   }
 
-  setTheme(localStorage.getItem(STORAGE_KEY) || 'light');
+  setTheme(localStorage.getItem(STORAGE_KEY) || 'dark');
 
   if (toggle) {
     toggle.addEventListener('click', function () {
@@ -360,6 +360,57 @@
   }
 
   initCookieNotice();
+
+  /* ---------- Scroll Reveal (Neon Dark v3) ----------
+     JS html'e tw-anim ekler; CSS yalnizca o durumda animasyon uygular,
+     boylece JS olmayan ziyaretci icerigi kaybetmez.
+     Guvenlik: bastan gorunen ogeler aninda acilir (observer'a bagli kalmaz),
+     observer tetiklenmezse 3 sn sonunda gorunur alan acilir. */
+  function initReveal() {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.documentElement.classList.add('tw-anim');
+
+    var targets = document.querySelectorAll(
+      '.card, .catalog-card, .related-card, .sidebar-widget, .popular-widget, ' +
+      '.author-box, .related-posts, .follow-x, .comments-box, .site-page section'
+    );
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var pending = [];
+
+    Array.prototype.forEach.call(targets, function (el, i) {
+      el.classList.add('tw-reveal');
+      el.style.setProperty('--d', (Math.min(i % 6, 5) * 70) + 'ms');
+      var rect = el.getBoundingClientRect();
+      if (rect.top < vh * 0.92 && rect.bottom > 0) {
+        el.classList.add('tw-in');
+      } else {
+        pending.push(el);
+      }
+    });
+
+    if (!pending.length) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('tw-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -7% 0px', threshold: 0.06 });
+    pending.forEach(function (el) { io.observe(el); });
+
+    // Observer hic tetiklenmezse gorunur alani garantiye al
+    setTimeout(function () {
+      pending.forEach(function (el) {
+        if (el.classList.contains('tw-in')) return;
+        var rect = el.getBoundingClientRect();
+        if (rect.top < vh * 0.92 && rect.bottom > 0) el.classList.add('tw-in');
+      });
+    }, 3000);
+  }
+
+  initReveal();
 
   /* ---------- Başlat ---------- */
   insertAdSlots();
