@@ -1563,7 +1563,7 @@ input, textarea { border-color: var(--border); border-radius: 10px; background: 
   --success: #34d399;
   --border: rgba(148, 163, 255, .14);
   --border-strong: rgba(148, 163, 255, .28);
-  --glass: rgba(13, 18, 38, .72);
+  --glass: rgba(13, 18, 38, .88);
   --glass-border: rgba(148, 163, 255, .16);
   --neon-cyan: rgba(34, 211, 238, .45);
   --neon-violet: rgba(167, 139, 250, .45);
@@ -1598,14 +1598,15 @@ input, textarea { border-color: var(--border); border-radius: 10px; background: 
   --tw-header-bg: rgba(255, 255, 255, .8);
 }
 
-/* ---------- Zemin: derin uzay + aurora dokusu ---------- */
+/* ---------- Zemin: derin uzay + aurora dokusi ----------
+   NOT: background-attachment: fixed iOS/Android'de her karede yeniden
+   boyama yapar (kaydirma takilmasi) — kullanilmaz. */
 body {
   background:
     radial-gradient(900px 500px at 85% -5%, rgba(34, 211, 238, .08), transparent 60%),
     radial-gradient(800px 520px at -10% 30%, rgba(167, 139, 250, .09), transparent 62%),
     radial-gradient(700px 500px at 55% 115%, rgba(232, 121, 249, .06), transparent 60%),
     var(--bg);
-  background-attachment: fixed;
 }
 
 ::selection { background: rgba(34, 211, 238, .32); color: #fff; }
@@ -1655,13 +1656,15 @@ nav a.active { color: var(--primary); }
   transform: translateY(-1px);
 }
 
-/* ---------- Kartlar: cam + neon ---------- */
+/* ---------- Kartlar: cam gorunumlu + neon ----------
+   PERFORMANS: backdrop-filter içerik kartlarinda KULLANILMAZ — mobil GPU'da
+   her kart icin ayri kompozit katman olusturup kaydirmayi kastirir. Cam
+   hissi yari saydam koyu zemin + kenarlikla verilir. Blur yalnizca header,
+   arama ve cerez cubugu gibi kucuk sabit ogelerde kalir. */
 .card, .catalog-card, .sidebar-widget, .popular-widget, .newsletter-cta,
 .contact-form, .author-box, .related-card, .cookie-notice {
   background: var(--glass);
   border: 1px solid var(--glass-border);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 .card {
   position: relative;
@@ -1870,4 +1873,20 @@ html.tw-anim body { animation: twPageIn .5s ease both; }
   html.tw-anim body { animation: none !important; }
   .hero-showcase h1, .hero-showcase h2 { animation: none; }
   .hero-showcase::before { animation: none; }
+}
+
+/* ---------- Mobil performans paketi ----------
+   Kucuk GPU'larda pahali efektleri kis: gradient sayisini azalt,
+   hero float animasyonunu durdur, maske gradyanlarini basitlestir. */
+@media (max-width: 768px) {
+  body {
+    background:
+      radial-gradient(620px 360px at 85% -5%, rgba(34, 211, 238, .07), transparent 60%),
+      radial-gradient(560px 380px at -10% 22%, rgba(167, 139, 250, .07), transparent 62%),
+      var(--bg);
+  }
+  .card::before { display: none; }
+  .hero-visual img { animation: none !important; }
+  .hero-showcase::before { animation: none !important; }
+  .hero-showcase h1, .hero-showcase h2 { animation: none; }
 }

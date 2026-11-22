@@ -5,8 +5,12 @@
 (function () {
   'use strict';
 
-  /* ---------- Tema ---------- */
-  const STORAGE_KEY = 'teknoblog-theme';
+  /* ---------- Tema ----------
+     STORAGE_KEY v2: eski anahtar ('teknoblog-theme') eski temanin otomatik
+     'light' kaydini tasiyordu ve herkesi acik modda kilitliyordu. Yeni
+     anahtarla birlikte varsayilan koyu; kullanici sonrasinda serbestce
+     degistirebilir. */
+  const STORAGE_KEY = 'teknoblog-theme-v2';
   const toggle = document.querySelector('.theme-toggle');
   const html = document.documentElement;
 
