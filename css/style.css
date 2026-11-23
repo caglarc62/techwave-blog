@@ -1890,3 +1890,34 @@ html.tw-anim body { animation: twPageIn .5s ease both; }
   .hero-showcase::before { animation: none !important; }
   .hero-showcase h1, .hero-showcase h2 { animation: none; }
 }
+
+/* ---------- Mobil gorsel duzeltmeleri (2026-11-23) ----------
+   Sorun: kart gorselleri 116px kutucuklara sikisiyordu (okunmaz),
+   makale hero'su object-fit: cover ile kenarlardan kirpiliyordu.
+   Cozum:
+   - Kartlar dikey duzene gecer; gorsel tam genislik 2:1 banner olur
+   - Makale hero'su ekran kenarlarina yaslanir (full-bleed), kirpilma yok
+   - Ilgili yazi kartlarindaki ic bosluk kaldirilir */
+@media (max-width: 640px) {
+  .card { display: block; }
+  .card-image { aspect-ratio: 2 / 1; height: auto; min-height: 0; }
+  .card-image img { width: 100%; height: 100%; object-fit: cover; }
+  .card-content { padding: 16px 16px 14px; }
+  .related-card img { padding: 0; object-fit: cover; }
+}
+
+@media (max-width: 768px) {
+  .article-hero img {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    max-height: none;
+    margin-left: calc(50% - 50vw);
+    object-fit: contain;
+    border-radius: 0;
+  }
+  html, body { overflow-x: hidden; }
+}
+
+/* Makale icindeki gorseller hicbir zaman tasmasin */
+.article-content img { max-width: 100%; height: auto; }
