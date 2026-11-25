@@ -1,5 +1,15 @@
 [
  {
+  "t": "GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi",
+  "s": "github-actions-ci-cd-rehberi",
+  "c": "Yazılım",
+  "e": "İlk workflow'unu 10 dakikada kur: tetikleyiciler, matrix ile çok sürüm test, cache ile hız, secrets güvenliği ve branch protection — yaygın 5 hatayla birlikte.",
+  "d": "25 Kasım 2026",
+  "i": "https://techwaveblog.site/images/github-actions-2026-1.svg",
+  "h": "GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi | Yazılım GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi ⚑ 25 Kasım 2026 ⚑ 9 dk okuma ⚑ Çağlar ÇELİK Görsel: TechWave tarafından hazırlandı. Her push'tan sonra elle test koşturan geliştirici, en yakında bir hatayı üretimde keşfeder. GitHub Actions ile CI/CD zinciri kurma: workflow anatomisi, on tetikleyicileri, jobs ve steps, matrix ile çok sürüm test, actions cache ile hızlandırma, secrets güvenliği, branch protection kuralları ve yaygın 5 hata. pytest ruff ubuntu-latest checkout setup-python workflow_dispatch paths filtresi timeout-minutes.",
+  "x": "github actions, ci cd, sürekli entegrasyon, sürekli dağıtım, workflow yaml, pytest pipeline, branch protection, matrix test, actions cache, github secrets"
+ },
+ {
   "t": "Telefon Depolama Alanı Nasıl Temizlenir? Android ve iPhone Rehberi",
   "s": "telefon-depolama-alani-temizleme-rehberi",
   "c": "Mobil",

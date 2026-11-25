@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="bgA3" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgA3)"/>
+
+  <text x="50" y="72" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#ffffff">PR koruması: yeşil tik olmadan merge yok</text>
+  <text x="50" y="104" font-family="Inter, Arial, sans-serif" font-size="18" fill="#94a3b8">Branch protection + required status checks zinciri</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="50" y="150" width="180" height="90" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+    <text x="140" y="190" font-size="20" text-anchor="middle" font-weight="800" fill="#67e8f9">PR açılır</text>
+    <text x="140" y="218" font-size="15" text-anchor="middle" fill="#94a3b8">feature → main</text>
+
+    <rect x="290" y="150" width="180" height="90" rx="14" fill="#0c1526" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="380" y="190" font-size="20" text-anchor="middle" font-weight="800" fill="#e2e8f0">Kontroller</text>
+    <text x="380" y="218" font-size="15" text-anchor="middle" fill="#94a3b8">test + lint koşar</text>
+
+    <rect x="530" y="96" width="220" height="84" rx="14" fill="#0c1526" stroke="#34d399" stroke-width="2"/>
+    <text x="640" y="132" font-size="20" text-anchor="middle" font-weight="800" fill="#6ee7b7">Tikler yeşil ✓</text>
+    <text x="640" y="158" font-size="15" text-anchor="middle" fill="#94a3b8">merge açılır</text>
+
+    <rect x="530" y="220" width="220" height="84" rx="14" fill="#0c1526" stroke="#ef4444" stroke-width="2"/>
+    <text x="640" y="256" font-size="20" text-anchor="middle" font-weight="800" fill="#fca5a5">Kırmızı ✕</text>
+    <text x="640" y="282" font-size="15" text-anchor="middle" fill="#94a3b8">merge kilitli</text>
+
+    <line x1="230" y1="195" x2="290" y2="195" stroke="#475569" stroke-width="2"/>
+    <path d="M470 185 L530 140" stroke="#34d399" stroke-width="2"/>
+    <path d="M470 205 L530 260" stroke="#ef4444" stroke-width="2"/>
+
+    <text x="50" y="330" font-size="17" fill="#94a3b8">Settings → Branches → Require status checks: "test" işini zorunlu işaretle.</text>
+    <text x="50" y="360" font-size="17" fill="#94a3b8">Böylece kırık kod, main dalına giremez — inceleme disiplini otomasyona geçer.</text>
+  </g>
+</svg>

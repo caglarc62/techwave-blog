@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112858721', 'ym');
+
+    ym(112858721, 'init', {ssr:true, webvisor:false, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112858721" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="-7pHgAzQSH7HXgUgc7cpgCXlwHivhN9X5MWaniE68Go" />
+<meta name="description" content="GitHub Actions ile ilk CI/CD zincirini kur: workflow anatomisi, matrix ile çok sürüm test, cache ile hız, secrets güvenliği ve branch protection — adım adım.">
+<meta name="author" content="Çağlar ÇELİK"><meta name="robots" content="index, follow">
+<title>GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi — TechWave</title>
+<meta property="og:title" content="GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi">
+<meta property="og:description" content="İlk workflow'unu 10 dakikada kur: tetikleyiciler, matrix test, cache, secrets ve branch protection — yaygın hatalarla birlikte.">
+<meta property="og:type" content="article"><meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://techwaveblog.site/images/github-actions-2026-1.svg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi"><meta name="twitter:description" content="İlk workflow'unu 10 dakikada kur: tetikleyiciler, matrix test, cache, secrets ve branch protection."><meta name="twitter:image" content="https://techwaveblog.site/images/github-actions-2026-1.svg">
+<link rel="canonical" href="https://techwaveblog.site/articles/github-actions-ci-cd-rehberi.html">
+<link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+<link rel="alternate" type="application/rss+xml" title="TechWave RSS" href="https://techwaveblog.site/rss.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css?v=20261125-a">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi","author":{"@type":"Person","name":"Çağlar ÇELİK","sameAs":["https://x.com/blogTechWave"]},"datePublished":"2026-11-25","description":"İlk workflow, tetikleyiciler, matrix test, cache, secrets, branch protection ve yaygın hatalar: GitHub Actions'a sıfırdan giriş.","publisher":{"@type":"Organization","name":"TechWave","url":"https://techwaveblog.site"},"mainEntityOfPage":"https://techwaveblog.site/articles/github-actions-ci-cd-rehberi.html","image":"https://techwaveblog.site/images/github-actions-2026-1.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://techwaveblog.site/"},{"@type":"ListItem","position":2,"name":"Yazılım","item":"https://techwaveblog.site/kategori.html?kategori=yazilim"},{"@type":"ListItem","position":3,"name":"GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi"}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3459052960619900" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+      <button class="mobile-menu-btn" aria-label="Menü">☰</button>
+      <nav>
+        <a href="../index.html">Ana Sayfa</a>
+        <a href="../kategori.html">Kategoriler</a>
+        <a href="../iletisim.html">İletişim</a>
+        <a href="../hakkimizda.html">Hakkımızda</a>
+        <button class="theme-toggle" aria-label="Tema Değiştir">🌙</button>
+      </nav>
+    </div>
+</header>
+
+<main class="article-page"><div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../index.html">Ana Sayfa</a></li><li><a href="../kategori.html?kategori=yazilim">Yazılım</a></li><li aria-current="page">GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi</li></ol></nav>
+<div class="article-header"><span class="card-tag" data-category="Yazılım">Yazılım</span><h1 class="article-title">GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi</h1><div class="article-meta"><span>📅 25 Kasım 2026</span><span>⏱ 9 dk okuma</span><span>👤 Çağlar ÇELİK</span></div></div>
+<div class="article-hero"><img src="../images/github-actions-2026-1.svg" alt="Commit'ten deploy'a uzanan GitHub Actions CI/CD zincirini gösteren TechWave çizimi" width="1200" height="600" fetchpriority="high"><p class="image-credit">Görsel: TechWave tarafından hazırlandı.</p></div>
+<div class="article-content">
+<p><strong>Her push'tan sonra elle test koşturan, zip'i elle yükleyen, "acaba çalışır mı" diye deploy eden geliştirici, en yakında bir hatayı üretimde keşfeder.</strong> Bu döngünün çözümü on yıl önce kurumsal ekiplerin lüksüydü; bugün GitHub hesabı olan herkes için birkaç satır YAML uzağında.</p>
+<p>Bu rehberde GitHub Actions'ı sıfırdan kuruyoruz: ilk workflow'unu 10 dakikada çalıştıracaksın, tetikleyicileri, çok sürümlü testi, önbellekle hızlandırmayı, anahtarları güvende tutmayı ve kırık kodun main dalına girmesini engelleyen korumayı öğreneceksin. Git'e henüz hakim değilsen <a href="git-github-baslangic-rehberi-versiyon-kontrol.html">Git ve GitHub başlangıç rehberimizle</a> başlaman iyi olur; buradaki örnekler Python projesi üzerinden gider ama aynı iskelet Node, Go ve statik siteler için de geçerlidir.</p>
+
+<h2>CI/CD ve Actions'ın parçaları</h2>
+<p><strong>CI (sürekli entegrasyon)</strong>, her değişiklikte kodun otomatik derlenip test edilmesidir; <strong>CD (sürekli dağıtım)</strong>, testleri geçen kodun otomatik yayına alınmasıdır. GitHub Actions bu iki işi, repoda yaptığın her olaya bağlı olarak sanal makinelerde ("runner") koşan iş tanımlarıyla yapar. Beş kavram bütün sistemi taşır:</p>
+<table>
+<tr><th>Kavram</th><th>Nedir</th><th>Örnek</th></tr>
+<tr><td><strong>Workflow</strong></td><td>Bütün tanım; <code>.github/workflows/</code> altındaki YAML dosyası</td><td><code>ci.yml</code></td></tr>
+<tr><td><strong>Event (on)</strong></td><td>Workflow'u tetikleyen olay</td><td><code>push</code>, <code>pull_request</code></td></tr>
+<tr><td><strong>Job</strong></td><td>Bağımsız koşan iş birimi; ayrı sanal makine</td><td><code>test</code>, <code>build</code></td></tr>
+<tr><td><strong>Step</strong></td><td>Job içindeki sıralı adım</td><td><code>run: pytest</code></td></tr>
+<tr><td><strong>Runner</strong></td><td>Job'ı koşan makine</td><td><code>ubuntu-latest</code></td></tr>
+</table>
+<p>İşlerin tamamı bu hiyerarşiden ibarettir. Bir dosya yazarsın, GitHub olayı yakalar, uygun runner'da adımları sırayla koşar; adımlardan biri başarısız olursa job kırmızı biter.</p>
+
+<h2>İlk workflow'unu 10 dakikada kur</h2>
+<p>Örnek senaryo: testleri pytest ile koşan, lint'i ruff ile denetleyen klasik bir Python projesi. Repoda şu dosyayı oluştur:</p>
+<pre><code># .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: Lint (ruff)
+        run: ruff check .
+
+      - name: Testler (pytest)
+        run: pytest -q</code></pre>
+<p>Bu dosyayı commit edip main'e pushladığında zincir çalışmaya başlar. Repodaki <strong>Actions</strong> sekmesinde job'ı canlı izleyebilirsin; her step'in çıktısı satır satır görünür. Buradaki dört adımın anlamı basittir: kodu runner'a indir, Python'u kur, bağımlılıkları yükle, denetle. <code>uses:</code> satırları hazır topluluk aksiyonlarını, <code>run:</code> satırları kabuk komutlarını çalıştırır.</p>
+
+<img src="../images/github-actions-2026-2.svg" alt="GitHub Actions workflow dosyasının on, jobs ve steps bölümlerini gösteren TechWave çizimi" width="800" loading="lazy">
+
+<h2>Tetikleyiciler: ne zaman çalışsın?</h2>
+<p><code>on:</code> bloğu zincirin beynidir. En sık kullanılan dört tetikleyici:</p>
+<ul>
+<li><strong>push:</strong> Belirli dallara her push'ta çalışır — <code>branches: [main]</code> ile sınırlanabilir.</li>
+<li><strong>pull_request:</strong> Her PR'da çalışır; incelemecinin "testleri geçiyor" diyebilmesi için temeldir.</li>
+<li><strong>schedule:</strong> cron ifadesiyle periyodik çalışır — örneğin gece bağımlılık denetimi.</li>
+<li><strong>workflow_dispatch:</strong> Actions sekmesinden elle çalıştırma düğmesi ekler.</li>
+</ul>
+<p>Büyük depolarda her push'a her şeyi koşmak israftır. <code>paths:</code> filtresiyle job'ı yalnızca ilgili klasör değiştiğinde çalıştırabilirsin:</p>
+<pre><code>on:
+  push:
+    branches: [main]
+    paths:
+      - "uygulama/**"
+      - "requirements.txt"</code></pre>
+<p>Aynı mantıkla dokümantasyon değişikliklerinde test koşmamak, dakika bütçeni korumanın en kolay yoludur.</p>
+
+<h2>Matrix ile çok sürüm test</h2>
+<p>Kütüphane geliştiriyorsan kodun tek Python sürümünde çalışması yetmez. <code>strategy.matrix</code> aynı job'ı birden çok ortamda kopyalar:</p>
+<pre><code>jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -r requirements.txt
+      - run: pytest -q</code></pre>
+<p>Bu tanım üç paralel job üretir; biri 3.10'da, biri 3.11'de, biri 3.12'de koşar. <code>fail-fast: false</code>, bir sürüm kırıldığında diğerlerinin sonucunu görmeni sağlar — sürüm uyumluluğunu tek push'ta haritalarsın.</p>
+
+<h2>Yavaşlamayı önle: önbellek</h2>
+<p>İlk koşular yavaş gelir; çünkü her job bağımlılıkları sıfırdan indirir. <code>setup-python</code> aksiyonunun gömülü önbelleği pip paketlerini anahtarlar:</p>
+<pre><code>- uses: actions/setup-python@v5
+  with:
+    python-version: "3.12"
+    cache: "pip"</code></pre>
+<p>Tek satır: <code>requirements.txt</code> değişmediyse paketler önbellekten gelir. Orta boyutlu bir projede bu, job süresini dakikalardan saniyelere indirir; dakika bütçesi kullanan ekipler için doğrudan paradır.</p>
+
+<h2>Secrets: anahtarları güvende tut</h2>
+<p>Deploy anahtarları, API token'ları ve veritabanı şifreleri koda yazılmaz. Repo ayarlarındaki <strong>Settings → Secrets and variables → Actions</strong> bölümüne eklediğin değerler workflow içinde <code>${{ secrets.ANAHTAR_ADI }}</code> ile okunur ve loglarda otomatik maskelenir. Dört kural yeterlidir:</p>
+<ul>
+<li>Anahtarı asla <code>echo</code> ile yazdırma; maskelense de log dosyalarında gezinmek istemezsin.</li>
+<li>Örnek: <code>run: ./deploy.sh</code> + <code>env: API_KEY: ${{ secrets.API_KEY }}</code> — anahtar yalnızca o adımın ortamında yaşar.</li>
+<li><code>GITHUB_TOKEN</code> her workflow'a hazır verilir; <code>permissions:</code> bloğuyla yalnızca gereken yetkiyi ver (ör. <code>contents: read</code>).</li>
+<li>Fork'lardan gelen PR'lerde secrets varsayılan olarak paylaşılmaz — bu korumayı kendi tanımlarınla zayıflatma.</li>
+</ul>
+<p>Güvenlik tarafını derinleştirmek istersen <a href="passkey-nedir-sifresiz-giris-rehberi.html">şifresiz giriş (passkey) rehberimiz</a> ve <a href="ev-wifi-guvenlik-rehberi.html">ev ağı güvenlik rehberimiz</a> iyi tamamlayıcılardır.</p>
+
+<img src="../images/github-actions-2026-3.svg" alt="Pull request açılınca kontrollerin koşması ve yeşil tik olmadan merge kilitlenmesini gösteren TechWave çizimi" width="800" loading="lazy">
+
+<h2>Kırık kod main'e girmesin: branch protection</h2>
+<p>Zincirin gerçek değeri, insan disiplininden otomatik disipline geçtiğinde ortaya çıkar. Ayarlamak için: <strong>Settings → Branches → Add branch protection rule</strong>. Kritik üç seçenek:</p>
+<ol>
+<li><strong>Require a pull request before merging:</strong> Doğrudan main'e push kapatılır.</li>
+<li><strong>Require status checks:</strong> <code>test</code> job'ını zorunlu seç — yeşil tik olmadan merge düğmesi kilitlenir.</li>
+<li><strong>Require branches to be up to date:</strong> PR eski main üzerine kurulduysa önce güncellenmek zorunda kalır.</li>
+</ol>
+<p>Bu üçlüyle ekip arkadaşın (ya da gelecekteki sen) testleri kıran bir değişikliği main'e fiziksel olarak sokamaz. Statik site dağıtımlarında bu zincir, <a href="python-otomasyon-rehberi-sik-isleri-kendiliginden.html">yerel otomasyon alışkanlıklarınızın</a> bulut uzantısıdır.</p>
+
+<h2>Yaygın 5 hata</h2>
+<ol>
+<li><strong>Her şeyi tek job'a yığmak:</strong> Lint, test ve build'i ayrı job yap; biri kırılınca hangi katmanın sorumlu olduğunu anında görürsün.</li>
+<li><strong>Sürüm pinlememek:</strong> <code>checkout@v4</code> yerine <code>@main</code> kullanmak, bir gün başkasının breaking change'iyle job'ını kırdırır. Büyük sürümü sabitle.</li>
+<li><strong>Secrets'ı loga düşürmek:</strong> <code>echo $API_KEY</code> hata ayıklama değil, sızıntı davetidir; maskelendiğine güvenme, yazdırma.</li>
+<li><strong>Önbelleği yanlış kilitlemek:</strong> Cache anahtarını koda değil bağımlılık dosyasının karmasına bağla; yoksa eski paketlerle "yeşil" test koşarsın.</li>
+<li><strong>Uzun testleri her push'ta koşmak:</strong> Ağır uçtan uca testleri <code>schedule</code>'a veya yalnızca main'e push'a taşı; PR'de hızlı testler kalsın.</li>
+</ol>
+
+<h2>Maliyet ve limitler</h2>
+<p>Public repolarda Actions ücretsizdir. Private repolarda aylık ücretsiz dakika ve depolama kotası vardır; kota hesabı, işletim sistemine göre çarpanla yapılır (Linux 1x, Windows 2x, macOS 10x). Bu yazıdaki örnek Linux runner kullandığı için bütçe dostudur. Güncel kota ve fiyat tablosu değişebileceği için <a href="https://docs.github.com/en/billing/concepts/product-billing/github-actions" target="_blank" rel="noopener noreferrer">GitHub'ın resmî faturalandırma dokümanından</a> teyit et; kendi kullanımını <strong>Settings → Billing</strong> sayfasından canlı izleyebilirsin.</p>
+
+<h2>Merak edilenler</h2>
+<ul>
+<li><strong>Actions'ı yerelde test edebilir miyim?</strong> — <a href="https://github.com/nektos/act" target="_blank" rel="noopener noreferrer">act</a> gibi araçlar workflow'u Docker konteynerinde koşturur; hızlı deneme için faydalıdır ama runner farkları yüzünden nihai doğrulama hep GitHub üzerinde yapılmalıdır.</li>
+<li><strong>Workflow dosyası hangi daldan okunur?</strong> — <code>push</code> için pushlanan daldan, <code>pull_request</code> için merge sonucunu simüle eden özel bir ref'ten okunur; PR'de gelmeyen değişiklikler koşmaz.</li>
+<li><strong>Job'lar birbirini bekler mi?</strong> — Hayır, job'lar paralel koşar; sıra gerekirse <code>needs:</code> ile bağımlılık tanımlanır (ör. <code>deploy:</code> job'ına <code>needs: test</code>).</li>
+<li><strong>Monorepo'da nasıl ayrıştırırım?</strong> — <code>paths:</code> filtresiyle her klasör için ayrı workflow tanımlanır; yalnızca ilgili paket değişince ilgili zincir koşar.</li>
+<li><strong>Zaman aşımı unutulursa?</strong> — Askıda kalan job 6 saate kadar bekleyebilir; <code>timeout-minutes:</code> ile job başına makul bir tavan koy, dakika bütçeni yanlışlıkla yakmazsın.</li>
+</ul>
+
+<h2>Sonuç: ilk zincirini bugün kur</h2>
+<p>CI/CD, bir kere kurulup her push'ta sessizce çalışan tek yatırımdır: hatayı üretimden önce yakalar, yayını monotonlaştırır, "benim makinemde çalışıyordu" cümlesini emekli eder. Bugün için plan basit: mevcut bir projeye yukarıdaki <code>ci.yml</code>'i ekle (10 dk), Actions sekmesinde ilk yeşil tiki gör (2 dk), branch protection ile merge'i kilitle (5 dk). Bir sonraki adım olarak <a href="python-api-fastapi-rehberi.html">FastAPI rehberimizdeki</a> <code>TestClient</code> testlerini bu zincire bağlamak güzel bir egzersizdir.</p>
+<p>Otomasyon kültürünün yarısı araç, yarısı alışkanlıktır. Zincir kurulduktan sonra kural nettir: main'e giren her şey, koşulmadan da çalışacağından emin olunan koddur.</p>
+<div class="author-box" id="yazar"><div class="author-avatar">ÇÇ</div><div class="author-info"><div class="author-name">Çağlar ÇELİK</div><p class="author-bio">TechWave'in kurucusu ve editörü. Yapay zekâ, yazılım ve dijital güvenlik konularında Türkçe rehberler hazırlar; yazıları kaynaklara dayalı araştırmayla üretir.</p><div class="author-links"><a href="https://x.com/blogTechWave" target="_blank" rel="noopener">𝕏 @blogTechWave</a><span aria-hidden="true">·</span><a href="../hakkimizda.html">Hakkımızda</a></div></div></div><section class="related-posts"><h3>📚 İlgili Yazılar</h3><div class="related-grid"><a class="related-card" href="git-github-baslangic-rehberi-versiyon-kontrol.html"><img src="../images/git-github-2026-1.svg" alt="" loading="lazy" width="400" height="200"><span class="related-card-body"><span class="related-card-cat">Yazılım</span><strong>Git ve GitHub Başlangıç Rehberi: Sıfırdan Versiyon Kontrol</strong></span></a><a class="related-card" href="python-web-scraping-rehberi-2026.html"><img src="../images/python-scraping-2026-1.svg" alt="" loading="lazy" width="400" height="200"><span class="related-card-body"><span class="related-card-cat">Yazılım</span><strong>Python ile Web Scraping: 2026&#x27;da Güncel ve Etik Rehber</strong></span></a><a class="related-card" href="programlama-dili-secimi-2026-hedefe-gore-karar-rehberi.html"><img src="../images/https://images.pexels.com/photos/27427258/pexels-photo-27427258.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="" loading="lazy" width="400" height="200"><span class="related-card-body"><span class="related-card-cat">Yazılım</span><strong>Programlama Dili Seçimi 2026: Hedefine Göre Doğru Dili Bulma Rehberi</strong></span></a></div></section></div></div></main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="../index.html" class="logo"><img src="../images/logo.svg" alt="TechWave"></a>
+        <p>Teknoloji, yapay zeka ve yazılım dünyasından güncel yazılar ve rehberler. 2026'dan beri aktif.</p>
+        <a href="https://x.com/blogTechWave" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-weight:600; color:#0e7490;">🐦 X'te takip et: @blogTechWave</a>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Sayfalar</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../kategori.html">Kategoriler</a></li>
+          <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+          <li><a href="../gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="../kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:.95rem; margin-bottom:12px;">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="../kategori.html">Yapay Zeka</a></li>
+          <li><a href="../kategori.html">Yazılım</a></li>
+          <li><a href="../kategori.html">Python</a></li>
+          <li><a href="../kategori.html">AI Araçları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWave. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js?v=20261125-a"></script>
+</body></html>

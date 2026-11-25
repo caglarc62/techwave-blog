@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="bgA2" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#122740"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgA2)"/>
+
+  <text x="50" y="72" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Workflow dosyasının anatomisi</text>
+  <text x="50" y="104" font-family="Inter, Arial, sans-serif" font-size="18" fill="#94a3b8">.github/workflows/ci.yml — üç kavram yeter: on, jobs, steps</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="50" y="140" width="220" height="210" rx="14" fill="#0c1526" stroke="#22d3ee" stroke-width="2"/>
+    <text x="74" y="180" font-size="22" font-weight="800" fill="#67e8f9">on: tetikleyici</text>
+    <text x="74" y="216" font-size="16" fill="#e2e8f0">push: branches [main]</text>
+    <text x="74" y="246" font-size="16" fill="#e2e8f0">pull_request</text>
+    <text x="74" y="276" font-size="16" fill="#e2e8f0">workflow_dispatch</text>
+    <text x="74" y="316" font-size="14" fill="#94a3b8">ne zaman çalışsın?</text>
+
+    <rect x="290" y="140" width="220" height="210" rx="14" fill="#0c1526" stroke="#a78bfa" stroke-width="2"/>
+    <text x="314" y="180" font-size="22" font-weight="800" fill="#c4b5fd">jobs: işler</text>
+    <text x="314" y="216" font-size="16" fill="#e2e8f0">test:</text>
+    <text x="330" y="246" font-size="16" fill="#94a3b8">runs-on: ubuntu-latest</text>
+    <text x="314" y="276" font-size="16" fill="#e2e8f0">build:</text>
+    <text x="330" y="306" font-size="14" fill="#94a3b8">paralel koşabilir</text>
+
+    <rect x="530" y="140" width="220" height="210" rx="14" fill="#0c1526" stroke="#34d399" stroke-width="2"/>
+    <text x="554" y="180" font-size="22" font-weight="800" fill="#6ee7b7">steps: adımlar</text>
+    <text x="554" y="216" font-size="16" fill="#e2e8f0">- uses: checkout@v4</text>
+    <text x="554" y="246" font-size="16" fill="#e2e8f0">- run: pip install</text>
+    <text x="554" y="276" font-size="16" fill="#e2e8f0">- run: pytest</text>
+    <text x="554" y="316" font-size="14" fill="#94a3b8">sırayla çalışır</text>
+
+    <line x1="270" y1="245" x2="290" y2="245" stroke="#475569" stroke-width="2"/>
+    <line x1="510" y1="245" x2="530" y2="245" stroke="#475569" stroke-width="2"/>
+  </g>
+</svg>

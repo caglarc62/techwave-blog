@@ -1,5 +1,11 @@
 [
  {
+  "s": "github-actions-ci-cd-rehberi",
+  "t": "GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi",
+  "d": "25 Kasım 2026",
+  "c": "Yazılım"
+ },
+ {
   "s": "telefon-depolama-alani-temizleme-rehberi",
   "t": "Telefon Depolama Alanı Nasıl Temizlenir? Android ve iPhone Rehberi",
   "d": "19 Kasım 2026",
@@ -28,11 +34,5 @@
   "t": "Oyun Bilgisayarı Toplama Rehberi 2026: Bütçeye Göre 3 Sistem",
   "d": "16 Kasım 2026",
   "c": "Oyun"
- },
- {
-  "s": "yapay-zeka-ile-sunum-hazirlama-rehberi",
-  "t": "Yapay Zeka ile Sunum Hazırlama Rehberi: Adım Adım (2026)",
-  "d": "15 Kasım 2026",
-  "c": "AI Araçları"
  }
 ]

@@ -1900,8 +1900,8 @@ html.tw-anim body { animation: twPageIn .5s ease both; }
    - Ilgili yazi kartlarindaki ic bosluk kaldirilir */
 @media (max-width: 640px) {
   .card { display: block; }
-  .card-image { aspect-ratio: 2 / 1; height: auto; min-height: 0; }
-  .card-image img { width: 100%; height: 100%; object-fit: cover; }
+  .card-image, .card-img { aspect-ratio: 2 / 1; height: auto; min-height: 0; }
+  .card-image img, .card-img img { width: 100%; height: 100%; object-fit: cover; }
   .card-content { padding: 16px 16px 14px; }
   .related-card img { padding: 0; object-fit: cover; }
 }
