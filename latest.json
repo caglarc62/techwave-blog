@@ -1,5 +1,11 @@
 [
  {
+  "s": "hollow-knight-silksong-sea-of-sorrow-cherry-time-27-kasim-2026",
+  "t": "Silksong Sea of Sorrow: Cherry Time Yayını Türkiye Saati ve Bilinenler",
+  "d": "27 Kasım 2026",
+  "c": "Oyun"
+ },
+ {
   "s": "github-actions-ci-cd-rehberi",
   "t": "GitHub Actions ile İlk Otomasyonun: CI/CD Rehberi",
   "d": "25 Kasım 2026",
@@ -28,11 +34,5 @@
   "t": "Python ile Excel ve CSV: Veri İşleme Rehberi (2026)",
   "d": "17 Kasım 2026",
   "c": "Python"
- },
- {
-  "s": "oyun-bilgisayari-toplama-rehberi-2026",
-  "t": "Oyun Bilgisayarı Toplama Rehberi 2026: Bütçeye Göre 3 Sistem",
-  "d": "16 Kasım 2026",
-  "c": "Oyun"
  }
 ]
